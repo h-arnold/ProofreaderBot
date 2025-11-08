@@ -73,20 +73,34 @@ class MarkerConverter(PdfToMarkdownConverter):
 
     def convert(self, pdf_path: Path) -> ConversionResult:
         """Convert a PDF using marker."""
-        from marker.renderers.markdown import MarkdownRenderer
-        
-        # The converter returns a Document object
-        document = self._converter(str(pdf_path))
-        
-        # Use the MarkdownRenderer to convert the document to markdown
-        renderer = MarkdownRenderer()
-        result = renderer(document)
+        # PdfConverter can return either a full Document (old API) or a MarkdownOutput
+        rendered = self._converter(str(pdf_path))
 
-        # MarkdownOutput has markdown, images, and metadata fields
-        return ConversionResult(
-            markdown=result.markdown,
-            metadata={"images": result.images, "metadata": result.metadata}
-        )
+        if hasattr(rendered, "markdown"):
+            markdown_output = rendered
+        else:
+            # Fallback for older versions that require an explicit renderer
+            from marker.renderers.markdown import MarkdownRenderer
+
+            renderer = MarkdownRenderer()
+            markdown_output = renderer(rendered)
+
+        markdown_text = getattr(markdown_output, "markdown", None)
+        if markdown_text is None:  # pragma: no cover - defensive guard
+            raise ValueError("Marker conversion did not return markdown output")
+
+        metadata: dict[str, Any] | None = None
+        images = getattr(markdown_output, "images", None)
+        details = getattr(markdown_output, "metadata", None)
+
+        if images is not None or details is not None:
+            metadata = {}
+            if images is not None:
+                metadata["images"] = images
+            if details is not None:
+                metadata["metadata"] = details
+
+        return ConversionResult(markdown=markdown_text, metadata=metadata)
 
     def close(self) -> None:
         """Clean up marker resources if needed."""
