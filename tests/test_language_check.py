@@ -142,3 +142,40 @@ def test_csv_report_generated(tmp_path: Path) -> None:
     assert "This" in rows[1][7]  # suggestions
     assert "Thiss is a test" in rows[1][8]  # context
 
+
+def test_ignored_words_filtering(tmp_path: Path) -> None:
+    """Test that ignored words are filtered from results."""
+    root = tmp_path
+    subject_dir = root / "Subject" / "markdown"
+    subject_dir.mkdir(parents=True)
+    document = subject_dir / "test-doc.md"
+    document.write_text("WJEC CBAC test document.", encoding="utf-8")
+
+    # Create matches for WJEC and CBAC
+    wjec_match = DummyMatch()
+    wjec_match.ruleId = "MORFOLOGIK_RULE_EN_GB"
+    wjec_match.message = "Possible spelling mistake"
+    wjec_match.matchedText = "WJEC"
+    
+    cbac_match = DummyMatch()
+    cbac_match.ruleId = "MORFOLOGIK_RULE_EN_GB"
+    cbac_match.message = "Possible spelling mistake"
+    cbac_match.matchedText = "CBAC"
+
+    tool = DummyTool([wjec_match, cbac_match])
+
+    report_path = root / "report.md"
+    
+    # Run with default ignored words (should filter out WJEC and CBAC)
+    run_language_checks(
+        root,
+        report_path=report_path,
+        tool=tool,
+        ignored_words={"wjec", "cbac"},
+    )
+
+    # Check that issues were filtered
+    report_text = report_path.read_text(encoding="utf-8")
+    assert "Total issues found: 0" in report_text
+
+
