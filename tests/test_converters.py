@@ -10,10 +10,13 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
+from types import SimpleNamespace
+
 from converters import (
     ConversionResult,
     PdfToMarkdownConverter,
     MarkItDownConverter,
+    MarkerConverter,
     create_converter,
 )
 
@@ -99,3 +102,85 @@ def test_converter_close_is_safe() -> None:
     converter = MarkItDownConverter()
     converter.close()
     converter.close()  # Should not raise
+
+
+def test_marker_converter_handles_markdown_output(monkeypatch, tmp_path: Path) -> None:
+    """Marker should accept MarkdownOutput objects without a renderer."""
+
+    class DummyMarkdownOutput:
+        def __init__(self) -> None:
+            self.markdown = "# Converted"
+            self.images = {"image.png": object()}
+            self.metadata = {"source": "test"}
+
+    class DummyPdfConverter:
+        def __init__(self, artifact_dict):
+            assert artifact_dict == {"fake": True}
+
+        def __call__(self, path: str):
+            return DummyMarkdownOutput()
+
+    class FailingRenderer:
+        def __call__(self, document):  # pragma: no cover - guard
+            raise AssertionError("MarkdownRenderer should not be used")
+
+    monkeypatch.setattr("marker.models.create_model_dict", lambda: {"fake": True})
+    monkeypatch.setattr("marker.converters.pdf.PdfConverter", DummyPdfConverter)
+    monkeypatch.setattr("marker.renderers.markdown.MarkdownRenderer", FailingRenderer)
+
+    converter = MarkerConverter()
+    try:
+        fake_pdf = tmp_path / "dummy.pdf"
+        fake_pdf.write_bytes(b"%PDF-1.4\n")
+
+        result = converter.convert(fake_pdf)
+
+        assert isinstance(result, ConversionResult)
+        assert result.markdown == "# Converted"
+        assert result.metadata is not None
+        assert result.metadata.get("metadata") == {"source": "test"}
+        assert "images" in result.metadata
+        assert isinstance(result.metadata["images"], dict)
+    finally:
+        converter.close()
+
+
+def test_marker_converter_falls_back_to_renderer(monkeypatch, tmp_path: Path) -> None:
+    """Marker should fall back to MarkdownRenderer when needed."""
+
+    dummy_document = SimpleNamespace(name="doc")
+
+    class DummyPdfConverter:
+        def __init__(self, artifact_dict):
+            assert artifact_dict == {"fake": True}
+
+        def __call__(self, path: str):
+            return dummy_document
+
+    class DummyMarkdownOutput:
+        def __init__(self) -> None:
+            self.markdown = "# Rendered"
+            self.images = None
+            self.metadata = {"renderer": "used"}
+
+    class CapturingRenderer:
+        def __call__(self, document):
+            assert document is dummy_document
+            return DummyMarkdownOutput()
+
+    monkeypatch.setattr("marker.models.create_model_dict", lambda: {"fake": True})
+    monkeypatch.setattr("marker.converters.pdf.PdfConverter", DummyPdfConverter)
+    monkeypatch.setattr("marker.renderers.markdown.MarkdownRenderer", CapturingRenderer)
+
+    converter = MarkerConverter()
+    try:
+        fake_pdf = tmp_path / "dummy.pdf"
+        fake_pdf.write_bytes(b"%PDF-1.4\n")
+
+        result = converter.convert(fake_pdf)
+
+        assert isinstance(result, ConversionResult)
+        assert result.markdown == "# Rendered"
+        assert result.metadata == {"metadata": {"renderer": "used"}}
+    finally:
+        converter.close()
