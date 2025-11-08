@@ -3,8 +3,9 @@ from __future__ import annotations
 import os
 import sys
 from pathlib import Path
-from typing import cast
+from typing import Any, cast
 
+import pytest
 from google import genai
 from google.genai import types
 
@@ -16,22 +17,23 @@ from gemini_llm import GeminiLLM
 
 
 class _DummyResponse:
-    def __init__(self, text: str) -> None:
+    def __init__(self, text: Any) -> None:
         self.text = text
 
 
 class _DummyModels:
-    def __init__(self) -> None:
+    def __init__(self, response_text: Any = "mock-response") -> None:
         self.calls: list[dict[str, object]] = []
+        self._response_text = response_text
 
     def generate_content(self, **kwargs: object) -> _DummyResponse:
         self.calls.append(kwargs)
-        return _DummyResponse(text="mock-response")
+        return _DummyResponse(text=self._response_text)
 
 
 class _DummyClient:
-    def __init__(self) -> None:
-        self.models = _DummyModels()
+    def __init__(self, response_text: Any = "mock-response") -> None:
+        self.models = _DummyModels(response_text=response_text)
 
 
 def test_generate_joins_prompts_and_sets_config(tmp_path: Path) -> None:
@@ -86,3 +88,47 @@ def test_loads_dotenv_when_path_provided(tmp_path: Path) -> None:
             os.environ.pop("GEMINI_API_KEY", None)
         else:
             os.environ["GEMINI_API_KEY"] = previous_value
+
+
+def test_generate_returns_repaired_json_when_filter_enabled(tmp_path: Path) -> None:
+    system_prompt_path = tmp_path / "system.md"
+    system_prompt_path.write_text("System", encoding="utf-8")
+    response_text = "Noise before {\"key\": \"value\",} and after"
+    client = _DummyClient(response_text=response_text)
+    llm = GeminiLLM(
+        system_prompt_path=system_prompt_path,
+        client=cast(genai.Client, client),
+        filter_json=True,
+    )
+
+    result = llm.generate(["Prompt"])
+
+    assert result == {"key": "value"}
+
+
+def test_generate_raises_when_json_delimiters_missing(tmp_path: Path) -> None:
+    system_prompt_path = tmp_path / "system.md"
+    system_prompt_path.write_text("System", encoding="utf-8")
+    client = _DummyClient(response_text="No JSON here")
+    llm = GeminiLLM(
+        system_prompt_path=system_prompt_path,
+        client=cast(genai.Client, client),
+        filter_json=True,
+    )
+
+    with pytest.raises(ValueError):
+        llm.generate(["Prompt"])
+
+
+def test_generate_raises_when_response_has_no_text(tmp_path: Path) -> None:
+    system_prompt_path = tmp_path / "system.md"
+    system_prompt_path.write_text("System", encoding="utf-8")
+    client = _DummyClient(response_text=None)
+    llm = GeminiLLM(
+        system_prompt_path=system_prompt_path,
+        client=cast(genai.Client, client),
+        filter_json=True,
+    )
+
+    with pytest.raises(AttributeError):
+        llm.generate(["Prompt"])
