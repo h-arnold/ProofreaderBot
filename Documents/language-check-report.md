@@ -1,10 +1,10 @@
 # Language Check Report
 
 - Checked 2 document(s)
-- Total issues found: 71
+- Total issues found: 44
 
 ## Totals by Subject
-- Integrated-Science-Single-Award: 71 issue(s) across 2 document(s) (running total: 71)
+- Integrated-Science-Single-Award: 44 issue(s) across 2 document(s) (running total: 44)
 
 ---
 
@@ -12,40 +12,11 @@
 
 ### Integrated-Science-Single-Award / september-2025.md
 
-Found 26 issue(s).
-
-| Filename | Line | Column | Rule | Type | Message | Suggestions | Context |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| september-2025.md | 1 | 1 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Possible spelling mistake found. | TAU, TGA, TGU (+2 more) | ...r-Wales GCSEs - Professional Learning \| **TGAU** Gwneud-i-Gymru -](https://www.wjec.co.u... |
-| september-2025.md | 1 | 1 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Possible spelling mistake found. | Owned-i-Gymru, Gwneud-i-Cymru | ...es GCSEs - Professional Learning \| TGAU **Gwneud-i-Gymru** -](https://www.wjec.co.uk/home/professi... |
-| september-2025.md | 1 | 1 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Possible spelling mistake found. | DSG, DSU, Daegu (+2 more) | ...s-gcses-professional-learning/#tab_1)  [**Dysgu** Proffesiynol](https://www.wjec.co.uk/ho... |
-| september-2025.md | 1 | 1 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Possible spelling mistake found. | — | ...s-professional-learning/#tab_1)  [Dysgu **Proffesiynol**](https://www.wjec.co.uk/home/profession... |
-| september-2025.md | 1 | 1 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Possible spelling mistake found. | Canola, Canolas | ...ng a consultation under the guidance of **Canolfan** Bedwyr, which is Bangor University's Ce... |
-| september-2025.md | 1 | 1 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Possible spelling mistake found. | Bedder, Berwyn, Bedward | ...ultation under the guidance of Canolfan **Bedwyr**, which is Bangor University's Centre fo... |
-| september-2025.md | 1 | 1 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Possible spelling mistake found. | Terminus, Terminator | ...d Technology (who are responsible for Y **Termiadur** Addysg), a decision was made to change ... |
-| september-2025.md | 1 | 1 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Possible spelling mistake found. | Adding, Adds, Addis (+2 more) | ...gy (who are responsible for Y Termiadur **Addysg**), a decision was made to change the Wel... |
-| september-2025.md | 1 | 1 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Possible spelling mistake found. | Canola, Canolas | ...An important point to make here is that **Canolfan** Bedwyr consulted with WJEC, mathematics... |
-| september-2025.md | 1 | 1 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Possible spelling mistake found. | Bedder, Berwyn, Bedward | ...ant point to make here is that Canolfan **Bedwyr** consulted with WJEC, mathematics and ph... |
-| september-2025.md | 1 | 1 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Possible spelling mistake found. | cylinder | ... in common, everyday use:   - The word '**cyflymder**' is used for 'speed' outside school inc... |
-| september-2025.md | 1 | 1 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Possible spelling mistake found. | Burned, Branded, Banded (+1 more) | ...cussion relating to speed limits etc). '**Buanedd**' is an old historical term which doesn'... |
-| september-2025.md | 1 | 1 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Possible spelling mistake found. | cylinder | ...y education:   - Pupils learn the term '**cyflymder**' for 'speed' in primary school. - Secon... |
-| september-2025.md | 1 | 1 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Possible spelling mistake found. | burned, branded, banded (+1 more) | ...school, pupils need to change to using '**buanedd**' for 'speed' without understanding why ... |
-| september-2025.md | 1 | 1 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Possible spelling mistake found. | cylinder | ...g why that is. Years later, the use of '**cyflymder**' for 'velocity' is introduced. - Educat... |
-| september-2025.md | 1 | 1 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Possible spelling mistake found. | Cylinder | ...ntroduced. - Educational subjects:   - '**Cyflymder**' is used for 'speed' in subjects like P... |
-| september-2025.md | 1 | 1 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Possible spelling mistake found. | cylinder | ...on and Information Technology but then '**cyflymder**' is also used for 'velocity' in the sub... |
-| september-2025.md | 1 | 1 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Possible spelling mistake found. | cylinder | ...ears.  #### The change  - **•** To use '**cyflymder**' for 'speed' across all levels of educa... |
-| september-2025.md | 1 | 1 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Possible spelling mistake found. | closed, beloved, deposed (+14 more) | ...mmon speech) - **•** Coin the new term '**felosedd**' for 'velocity' - **•** Dispose of the ... |
-| september-2025.md | 1 | 1 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Possible spelling mistake found. | burned, branded, banded (+1 more) | ...'velocity' - **•** Dispose of the term '**buanedd**' as a technical term  #### Arguments fo... |
-| september-2025.md | 1 | 1 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Possible spelling mistake found. | Canola, Canolas | .../2026)  Based on the recommendations of **Canolfan** Bedwyr therefore, 'cyflymder' (speed) a... |
-| september-2025.md | 1 | 1 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Possible spelling mistake found. | Bedder, Berwyn, Bedward | ...ased on the recommendations of Canolfan **Bedwyr** therefore, 'cyflymder' (speed) and 'fel... |
-| september-2025.md | 1 | 1 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Possible spelling mistake found. | cylinder | ...ndations of Canolfan Bedwyr therefore, '**cyflymder**' (speed) and 'felosedd' (velocity) will... |
-| september-2025.md | 1 | 1 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Possible spelling mistake found. | closed, beloved, deposed (+14 more) | ...wyr therefore, 'cyflymder' (speed) and '**felosedd**' (velocity) will be used in the followi... |
-| september-2025.md | 1 | 1 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Possible spelling mistake found. | Burned, Branded, Banded (+1 more) | ...s used in the current specifications.  '**Buanedd**' (speed) and 'cyflymder' (velocity) wil... |
-| september-2025.md | 1 | 1 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Possible spelling mistake found. | cylinder | ...specifications.  'Buanedd' (speed) and '**cyflymder**' (velocity) will continue to be used in... |
+_No issues found._
 
 ### Integrated-Science-Single-Award / wjec-gcse-integrated-science-specification.md
 
-Found 45 issue(s).
+Found 44 issue(s).
 
 | Filename | Line | Column | Rule | Type | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -92,5 +63,4 @@ Found 45 issue(s).
 | wjec-gcse-integrated-science-specification.md | 1 | 1 | `OUTSIDE_OF` | style | This phrase is redundant. Consider using “outside”. | outside | ...entific facilities - engage in learning **outside of** the classroom to further develop scient... |
 | wjec-gcse-integrated-science-specification.md | 1 | 1 | `ENGLISH_WORD_REPEAT_BEGINNING_RULE` | style | Three successive sentences begin with the same word. Consider rewording the sentence or use a thesaurus to find a synonym. | — | ...ble in 2028 (and each year thereafter). **Unit** 3 will be available in the spring term ... |
 | wjec-gcse-integrated-science-specification.md | 1 | 1 | `COMMA_COMPOUND_SENTENCE_2` | uncategorized | Use a comma before “and” if it connects two independent clauses (unless they are closely connected and short). | , and | ...arks obtained for each unit are added up** and** the qualification grade is based on thi... |
-| wjec-gcse-integrated-science-specification.md | 1 | 1 | `PROBLEM_SOLVE_HYPHEN` | grammar | This noun or verb “Problem-Solving” is spelled with a hyphen. | Problem-Solving | ... ✓      \|  \|  \| \| Critical Thinking and **Problem Solving** \| ✓ \| ✓ \| ✓ \|  \|  \| \| Planning and Orga... |
 | wjec-gcse-integrated-science-specification.md | 1 | 1 | `MISSING_HYPHEN` | uncategorized | When a number forms part of an adjectival compound, use a hyphen. | 1-metre | ...n be observed. For example, ± 1 mm on a **1 metre** ruler or + 10C on a thermometer. \|  \| \|... |
