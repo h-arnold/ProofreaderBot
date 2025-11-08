@@ -4,11 +4,13 @@ Small CLI tool to download GCSE PDF documents from WJEC “Made for Wales” pag
 
 Read this primer first, then consult the linked focus docs before changing code in those areas.
 
-## Do this first (must-follow)
+## Prime Directives (must-follow - non-negotiable)
 
-- Always use uv for everything (run, deps, tests). Do not use pip/venv directly.
+**Always follow these steps first** - you will fail in your task if you do not.
+
+- Always use `uv` for everything (run, deps, tests). **NEVER** use pip/venv directly.
 - Before editing scraping logic or filenames, you must read: docs/ARCHITECTURE.md.
-- Before running commands or changing dependencies, you must read: docs/UV_GUIDE.md.
+- Before running commands or changing dependencies, you **must** read: docs/UV_GUIDE.md.
 - For testing, debugging, or quick checks, you must read: docs/DEV_WORKFLOWS.md.
 
 ## Runtime facts
@@ -47,3 +49,5 @@ If you need details or examples for any of the above, see docs/ARCHITECTURE.md (
 - Network/IO failures are logged without halting other downloads.
 
 For deeper context (function-by-function), see docs/ARCHITECTURE.md.
+
+**IMPORTANT**: Remember your prime directives! Always follow them.
