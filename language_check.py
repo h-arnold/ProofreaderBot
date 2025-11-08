@@ -16,28 +16,10 @@ from typing import Iterable, Optional
 
 import language_tool_python
 
+from language_check_config import DEFAULT_DISABLED_RULES, DEFAULT_IGNORED_WORDS
+
 
 LOGGER = logging.getLogger(__name__)
-
-# Default rules to disable (can be overridden via command-line arguments)
-DEFAULT_DISABLED_RULES = {
-	"WHITESPACE_RULE",
-	"CONSECUTIVE_SPACES",
-	"SENTENCE_WHITESPACE",
-    "OXFORD_SPELLING_Z_NOT_S",
-    "UPPERCASE_SENTENCE_START",
-    "HYPHEN_TO_EN"
-}
-
-# Default words to ignore (case-insensitive, can be extended via command-line)
-DEFAULT_IGNORED_WORDS = {
-	"wjec",
-	"cbac",
-	"fitzalan",
-	"llanwern",
-	"gcse",
-	"tkinter",
-}
 
 
 @dataclass
@@ -97,8 +79,6 @@ def build_language_tool(
 	
 	# Disable specified rules
 	if rules_to_disable:
-		for rule_id in rules_to_disable:
-			tool.disable_spellchecking()  # Disable if whitespace-related
 		tool.disabled_rules = list(rules_to_disable)
 		LOGGER.info("Disabled rules: %s", ", ".join(sorted(rules_to_disable)))
 	
@@ -148,6 +128,22 @@ def _highlight_context(context: str, context_offset: int, error_length: int) -> 
 	return f"{context[:start]}**{context[start:end]}**{context[end:]}"
 
 
+def _format_suggestions(replacements: list[str] | None, max_suggestions: int = 3) -> str:
+	"""Return a human-friendly, truncated suggestions string.
+
+	If there are no replacements returns the em-dash used in the Markdown output.
+	If there are more than ``max_suggestions`` replacements, the first
+	``max_suggestions`` are shown followed by "(+N more)".
+	"""
+	if not replacements:
+		return "—"
+	if len(replacements) <= max_suggestions:
+		return ", ".join(replacements)
+	visible = ", ".join(replacements[:max_suggestions])
+	remaining = len(replacements) - max_suggestions
+	return f"{visible} (+{remaining} more)"
+
+
 def _make_issue(match: object, filename: str) -> LanguageIssue:
 	line = int(getattr(match, "line", 0)) + 1
 	column = int(getattr(match, "column", 0)) + 1
@@ -191,12 +187,13 @@ def check_document(
 	text = document_path.read_text(encoding="utf-8")
 	filename = document_path.name
 	
-	# Merge ignored words with defaults
+	# Merge ignored words with defaults.
+	# NOTE: matching is case-sensitive — we use the words as provided in the
+	# configuration because many entries are case-specific (proper nouns,
+	# acronyms, product names, etc.).
 	words_to_ignore = set(DEFAULT_IGNORED_WORDS)
 	if ignored_words:
 		words_to_ignore.update(ignored_words)
-	# Convert to lowercase for case-insensitive matching
-	words_to_ignore_lower = {word.lower() for word in words_to_ignore}
 	
 	try:
 		matches = tool.check(text)
@@ -215,14 +212,41 @@ def check_document(
 		)
 		return DocumentReport(subject=subject, path=document_path, issues=[failure])
 
-	# Filter out issues for ignored words
+	# Filter out issues for ignored words.
+	# Behaviour:
+	# - If the token in the document appears to be an acronym (uppercase
+	#   letters, possibly with a trailing 's' for plural or punctuation), we
+	#   only ignore it when the lowercase form is in the ignore list. This
+	#   prevents ignoring Titlecase names like "Nic" while still ignoring
+	#   "NIC" and "NICs".
+	# - If the token appears entirely lowercase in the document, we ignore
+	#   it when its lowercase form is in the ignore list (preserves existing behaviour
+	#   for words like "ethernet").
 	filtered_matches = []
 	for match in matches:
-		# Check if this is a spelling error for an ignored word
 		if hasattr(match, "matchedText"):
-			matched_text = str(getattr(match, "matchedText", "")).strip().lower()
-			if matched_text in words_to_ignore_lower:
-				continue
+			original_text = str(getattr(match, "matchedText", "")).strip()
+			if original_text:
+				# letters-only projection to detect acronyms like "NIC" or "S/PDIF"
+				letters = "".join(ch for ch in original_text if ch.isalpha())
+				is_acronym_form = False
+				if letters:
+					# treat uppercased letters (or uppercased letters with trailing 's') as acronym form
+					if letters.isupper() or letters.rstrip("s").isupper():
+						is_acronym_form = True
+
+				if is_acronym_form:
+					# Only ignore if the exact form (case-sensitive) is present in the
+					# ignore list. Also allow singular form (strip trailing 's') if
+					# that exact string is in the list.
+					if letters in words_to_ignore or letters.rstrip("s") in words_to_ignore:
+						continue
+				else:
+					# For non-acronym tokens, ignore only on an exact (case-sensitive)
+					# match with the configured ignore words. This avoids suppressing
+					# Titlecase names unless the Titlecase form is explicitly listed.
+					if original_text in words_to_ignore:
+						continue
 		filtered_matches.append(match)
 	
 	issues = [_make_issue(match, filename) for match in filtered_matches]
@@ -314,7 +338,8 @@ def build_report_markdown(reports: Iterable[DocumentReport]) -> str:
 		lines.append("| --- | --- | --- | --- | --- | --- | --- | --- |")
 		for issue in report.issues:
 			message = issue.message.replace("|", "\\|")
-			suggestions = ", ".join(issue.replacements) if issue.replacements else "—"
+			# Truncate suggestions to a small, readable number
+			suggestions = _format_suggestions(issue.replacements)
 			suggestions = suggestions.replace("|", "\\|")
 			context = issue.highlighted_context.replace("|", "\\|") if issue.highlighted_context else "—"
 			lines.append(
@@ -355,8 +380,13 @@ def build_report_csv(reports: Iterable[DocumentReport]) -> list[list[str]]:
 	# Add each issue as a row
 	for report in report_list:
 		for issue in report.issues:
-			suggestions = ", ".join(issue.replacements) if issue.replacements else ""
-			context = issue.highlighted_context if issue.highlighted_context else ""
+			# CSV: use the same truncation, but prefer an empty string when there
+			# are no suggestions (unlike Markdown which uses an em-dash).
+			txt = _format_suggestions(issue.replacements)
+			suggestions = "" if txt == "—" else txt
+			# For CSV output prefer the raw context (unhighlighted) so the
+			# field contains the original snippet as seen in the document.
+			context = issue.context if issue.context else ""
 			
 			rows.append([
 				report.subject,
