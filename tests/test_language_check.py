@@ -300,26 +300,28 @@ def test_case_sensitive_ignored_words_with_plural(tmp_path: Path) -> None:
 
 
 def test_case_sensitive_ignored_words_singular_strips_s(tmp_path: Path) -> None:
-    """Test that singular acronym (NIC) is also filtered when plural (NICs) is in list."""
+    """Test that plural acronym is filtered when only the singular form is in the ignored words list (tests plural-stripping logic)."""
     root = tmp_path
     subject_dir = root / "Subject" / "markdown"
     subject_dir.mkdir(parents=True)
     document = subject_dir / "test-doc.md"
-    document.write_text("One NIC is sufficient.", encoding="utf-8")
+    document.write_text("Multiple CUSTOMWORDs are sufficient.", encoding="utf-8")
 
-    # Create match for "NIC" (singular)
-    nic_match = DummyMatch()
-    nic_match.matchedText = "NIC"
+    # Create match for "CUSTOMWORDs" (plural with lowercase 's' - treated as acronym)
+    customwords_match = DummyMatch()
+    customwords_match.matchedText = "CUSTOMWORDs"
 
-    tool = DummyTool([nic_match])
+    tool = DummyTool([customwords_match])
     report_path = root / "report.md"
     
-    # "NIC" is in DEFAULT_IGNORED_WORDS, so it should be filtered
-    # Also tests that the code checks both with and without trailing 's'
+    # Only the singular "CUSTOMWORD" is in the ignored words list
+    # The plural "CUSTOMWORDs" should still be filtered due to plural-stripping logic
+    # (The code checks: "CUSTOMWORD" in list OR "CUSTOMWORDs".rstrip("s") = "CUSTOMWORD" in list)
     run_language_checks(
         root,
         report_path=report_path,
         tool=tool,
+        ignored_words={"CUSTOMWORD"},
     )
 
     report_text = report_path.read_text(encoding="utf-8")
