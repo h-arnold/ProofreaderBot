@@ -13,7 +13,8 @@ DEFAULT_DISABLED_RULES = {
     "UPPERCASE_SENTENCE_START",
     "HYPHEN_TO_EN",
     "COMMA_PARENTHESIS_WHITESPACE",
-    "PROBLEM_SOLVE_HYPHEN"
+    "PROBLEM_SOLVE_HYPHEN",
+    "UP_TO_DATE_HYPHEN"
 }
 
 # Default words to ignore (case-sensitive; can be extended via command-line)
@@ -84,3 +85,33 @@ DEFAULT_IGNORED_WORDS = {
     "whitehat",
     "nano",
 }
+
+# Welsh words frequently seen in WJEC documents; add both common case variants
+# and hyphenated forms found in the language report so the checker won't flag them.
+DEFAULT_IGNORED_WELSH = {
+    # acronyms / subject name
+    "TGAU",
+
+    # hyphenated / title strings
+    "Gwneud-i-Gymru",
+
+    # general Welsh words / proper nouns
+    "Dysgu",
+    "Proffesiynol",
+    "proffesiynol",
+    "Canolfan",
+    "Bedwyr",
+    "Termiadur",
+    "Addysg",
+
+    # scientific terminology examples seen in docs
+    "cyflymder",
+    "Cyflymder",
+    "Buanedd",
+    "buanedd",
+    "felosedd",
+    "Felosedd",
+}
+
+# Merge Welsh ignore words into the main default set (preserves case-sensitivity)
+DEFAULT_IGNORED_WORDS.update(DEFAULT_IGNORED_WELSH)
