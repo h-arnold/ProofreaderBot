@@ -22,9 +22,9 @@ QUALIFICATION_URLS = {
     "Business": "https://www.wjec.co.uk/qualifications/gcse-business-teaching-from-2025/#tab_keydocuments",
     "Computer Science": "https://www.wjec.co.uk/qualifications/gcse-computer-science-teaching-from-2025/#tab_keydocuments",
     "Core Cymraeg": "https://www.wjec.co.uk/qualifications/gcse-core-cymraeg-teaching-from-2025/#tab_keydocuments",
-    "Cymraeg Language and Literature": "https://www.wjec.co.uk/qualifications/gcse-cymraeg-language-and-literature-single-and-double-award-teaching-from-2025/#tab_keydocuments",
+    "Cymraeg Language and Literature": "https://www.wjec.co.uk/qualifications/gcse-iaith-a-llenyddiaeth-gymraeg-teaching-from-2025/#tab_keydocuments",
     "Drama": "https://www.wjec.co.uk/qualifications/gcse-drama-teaching-from-2025/#tab_keydocuments",
-    "English Language and Literature": "https://www.wjec.co.uk/qualifications/gcse-english-language-and-literature-single-and-double-award-teaching-from-2025/#tab_keydocuments",
+    "English Language and Literature": "https://www.wjec.co.uk/qualifications/gcse-english-language-and-literature-double-and-single-award-teaching-from-2025/#tab_keydocuments",
     "Food and Nutrition": "https://www.wjec.co.uk/qualifications/gcse-food-and-nutrition-teaching-from-2025/#tab_keydocuments",
     "French": "https://www.wjec.co.uk/qualifications/gcse-french-teaching-from-2025/#tab_keydocuments",
     "Geography": "https://www.wjec.co.uk/qualifications/gcse-geography-teaching-from-2025/#tab_keydocuments",
@@ -33,7 +33,7 @@ QUALIFICATION_URLS = {
     "Music": "https://www.wjec.co.uk/qualifications/gcse-music-teaching-from-2025/#tab_keydocuments",
     "Religious Studies": "https://www.wjec.co.uk/qualifications/gcse-religious-studies-teaching-from-2025/#tab_keydocuments",
     "Spanish": "https://www.wjec.co.uk/qualifications/gcse-spanish-teaching-from-2025/#tab_keydocuments",
-    "Level 2 Additional Core Cymraeg": "https://www.wjec.co.uk/qualifications/level-2-award-in-additional-core-cymraeg-teaching-from-2025/#tab_keydocuments",
+    "Level 2 Additional Core Cymraeg": "https://www.wjec.co.uk/qualifications/level-2-additional-core-cymraeg-teaching-from-2025/#tab_keydocuments",
     "Dance": "https://www.wjec.co.uk/qualifications/gcse-dance-teaching-from-2026/#tab_keydocuments",
     "Design and Technology": "https://www.wjec.co.uk/qualifications/gcse-design-and-technology-teaching-from-2026/#tab_keydocuments",
     "Digital Media and Film": "https://www.wjec.co.uk/qualifications/gcse-digital-media-and-film-teaching-from-2026/#tab_keydocuments",
@@ -44,7 +44,7 @@ QUALIFICATION_URLS = {
     "Physical Education and Health": "https://www.wjec.co.uk/qualifications/gcse-physical-education-and-health-teaching-from-2026/#tab_keydocuments",
     "Social Studies": "https://www.wjec.co.uk/qualifications/gcse-social-studies-teaching-from-2026/#tab_keydocuments",
     "The Sciences (Double Award)": "https://www.wjec.co.uk/qualifications/gcse-the-sciences-double-award-teaching-from-2026/#tab_keydocuments",
-    "Level 2 Additional Mathematics": "https://www.wjec.co.uk/qualifications/level-2-award-in-additional-mathematics-teaching-from-2026/#tab_keydocuments",
+    "Level 2 Additional Mathematics": "https://www.wjec.co.uk/qualifications/level-2-additional-mathematics-teaching-from-2026/#tab_keydocuments",
 }
 
 DownloadReporter = Callable[[str, Path, str], None]
