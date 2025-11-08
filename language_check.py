@@ -8,6 +8,7 @@ summarises the findings per subject and per document.
 from __future__ import annotations
 
 import argparse
+import csv
 import logging
 from dataclasses import dataclass
 from pathlib import Path
@@ -18,11 +19,32 @@ import language_tool_python
 
 LOGGER = logging.getLogger(__name__)
 
+# Default rules to disable (can be overridden via command-line arguments)
+DEFAULT_DISABLED_RULES = {
+	"WHITESPACE_RULE",
+	"CONSECUTIVE_SPACES",
+	"SENTENCE_WHITESPACE",
+    "OXFORD_SPELLING_Z_NOT_S",
+    "UPPERCASE_SENTENCE_START",
+    "HYPHEN_TO_EN"
+}
+
+# Default words to ignore (case-insensitive, can be extended via command-line)
+DEFAULT_IGNORED_WORDS = {
+	"wjec",
+	"cbac",
+	"fitzalan",
+	"llanwern",
+	"gcse",
+	"tkinter",
+}
+
 
 @dataclass
 class LanguageIssue:
 	"""Represents a single language issue detected in a document."""
 
+	filename: str
 	line: int
 	column: int
 	rule_id: str
@@ -42,17 +64,57 @@ class DocumentReport:
 	issues: list[LanguageIssue]
 
 
-def build_language_tool(language: str) -> language_tool_python.LanguageTool | language_tool_python.LanguageToolPublicAPI:
+def build_language_tool(
+	language: str,
+	*,
+	disabled_rules: set[str] | None = None,
+	ignored_words: set[str] | None = None,
+) -> language_tool_python.LanguageTool | language_tool_python.LanguageToolPublicAPI:
 	"""Instantiate a LanguageTool checker for the requested language.
 
 	Falls back to the public API when the local Java runtime is unavailable.
+	
+	Args:
+		language: Language code (e.g., "en-GB")
+		disabled_rules: Set of rule IDs to disable
+		ignored_words: Set of words to add to the spell-check whitelist (case-insensitive)
 	"""
+	
+	# Merge with defaults
+	rules_to_disable = set(DEFAULT_DISABLED_RULES)
+	if disabled_rules:
+		rules_to_disable.update(disabled_rules)
+	
+	words_to_ignore = set(DEFAULT_IGNORED_WORDS)
+	if ignored_words:
+		words_to_ignore.update(ignored_words)
 
 	try:
-		return language_tool_python.LanguageTool(language)
+		tool = language_tool_python.LanguageTool(language)
 	except language_tool_python.JavaError:
 		LOGGER.warning("Falling back to LanguageTool public API for %s", language)
-		return language_tool_python.LanguageToolPublicAPI(language)
+		tool = language_tool_python.LanguageToolPublicAPI(language)
+	
+	# Disable specified rules
+	if rules_to_disable:
+		for rule_id in rules_to_disable:
+			tool.disable_spellchecking()  # Disable if whitespace-related
+		tool.disabled_rules = list(rules_to_disable)
+		LOGGER.info("Disabled rules: %s", ", ".join(sorted(rules_to_disable)))
+	
+	# Add words to ignore list
+	if words_to_ignore:
+		# Convert to list and add to tool's ignore list
+		# Note: Some versions use addIgnoreTokens, others might not support it
+		# We'll filter these in post-processing if the API doesn't support it
+		try:
+			if hasattr(tool, "_ignore_words"):
+				tool._ignore_words.update(words_to_ignore)
+			LOGGER.info("Ignoring words: %s", ", ".join(sorted(words_to_ignore)))
+		except AttributeError:
+			LOGGER.info("Will filter ignored words in post-processing: %s", ", ".join(sorted(words_to_ignore)))
+	
+	return tool
 
 
 def iter_markdown_documents(root: Path, *, subject_path: Path | None = None) -> list[tuple[str, Path]]:
@@ -86,7 +148,7 @@ def _highlight_context(context: str, context_offset: int, error_length: int) -> 
 	return f"{context[:start]}**{context[start:end]}**{context[end:]}"
 
 
-def _make_issue(match: object) -> LanguageIssue:
+def _make_issue(match: object, filename: str) -> LanguageIssue:
 	line = int(getattr(match, "line", 0)) + 1
 	column = int(getattr(match, "column", 0)) + 1
 	rule_id = getattr(match, "ruleId", "UNKNOWN") or "UNKNOWN"
@@ -94,10 +156,11 @@ def _make_issue(match: object) -> LanguageIssue:
 	issue_type = getattr(match, "ruleIssueType", "unknown") or "unknown"
 	replacements = list(getattr(match, "replacements", []) or [])
 	context = getattr(match, "context", "")
-	context_offset = int(getattr(match, "contextoffset", 0))
+	context_offset = int(getattr(match, "offsetInContext", 0))
 	error_length = int(getattr(match, "errorLength", 0))
 	highlighted_context = _highlight_context(context, context_offset, error_length)
 	return LanguageIssue(
+		filename=filename,
 		line=line,
 		column=column,
 		rule_id=rule_id,
@@ -109,15 +172,38 @@ def _make_issue(match: object) -> LanguageIssue:
 	)
 
 
-def check_document(document_path: Path, subject: str, tool: object) -> DocumentReport:
-	"""Run language checks on a single Markdown document."""
+def check_document(
+	document_path: Path,
+	subject: str,
+	tool: object,
+	*,
+	ignored_words: set[str] | None = None,
+) -> DocumentReport:
+	"""Run language checks on a single Markdown document.
+	
+	Args:
+		document_path: Path to the Markdown file
+		subject: Subject name for the report
+		tool: LanguageTool instance
+		ignored_words: Additional words to filter from results
+	"""
 
 	text = document_path.read_text(encoding="utf-8")
+	filename = document_path.name
+	
+	# Merge ignored words with defaults
+	words_to_ignore = set(DEFAULT_IGNORED_WORDS)
+	if ignored_words:
+		words_to_ignore.update(ignored_words)
+	# Convert to lowercase for case-insensitive matching
+	words_to_ignore_lower = {word.lower() for word in words_to_ignore}
+	
 	try:
 		matches = tool.check(text)
 	except Exception as exc:  # LanguageTool can raise generic RuntimeError/IOError
 		LOGGER.exception("Language check failed for %s", document_path)
 		failure = LanguageIssue(
+			filename=filename,
 			line=1,
 			column=1,
 			rule_id="CHECK_FAILURE",
@@ -129,7 +215,17 @@ def check_document(document_path: Path, subject: str, tool: object) -> DocumentR
 		)
 		return DocumentReport(subject=subject, path=document_path, issues=[failure])
 
-	issues = [_make_issue(match) for match in matches]
+	# Filter out issues for ignored words
+	filtered_matches = []
+	for match in matches:
+		# Check if this is a spelling error for an ignored word
+		if hasattr(match, "matchedText"):
+			matched_text = str(getattr(match, "matchedText", "")).strip().lower()
+			if matched_text in words_to_ignore_lower:
+				continue
+		filtered_matches.append(match)
+	
+	issues = [_make_issue(match, filename) for match in filtered_matches]
 	return DocumentReport(subject=subject, path=document_path, issues=issues)
 
 
@@ -147,14 +243,16 @@ def check_single_document(
 	subject: Optional[str] = None,
 	language: str = "en-GB",
 	tool: object | None = None,
+	disabled_rules: set[str] | None = None,
+	ignored_words: set[str] | None = None,
 ) -> DocumentReport:
 	"""Convenience wrapper that runs checks for a single document."""
 
 	resolved_subject = subject or derive_subject_from_path(document_path)
 	created_tool = tool is None
-	tool_instance = tool or build_language_tool(language)
+	tool_instance = tool or build_language_tool(language, disabled_rules=disabled_rules, ignored_words=ignored_words)
 	try:
-		return check_document(document_path, resolved_subject, tool_instance)
+		return check_document(document_path, resolved_subject, tool_instance, ignored_words=ignored_words)
 	finally:
 		if created_tool and hasattr(tool_instance, "close"):
 			tool_instance.close()
@@ -212,18 +310,67 @@ def build_report_markdown(reports: Iterable[DocumentReport]) -> str:
 
 		lines.append(f"Found {len(report.issues)} issue(s).")
 		lines.append("")
-		lines.append("| Line | Column | Rule | Type | Message | Suggestions | Context |")
-		lines.append("| --- | --- | --- | --- | --- | --- | --- |")
+		lines.append("| Filename | Line | Column | Rule | Type | Message | Suggestions | Context |")
+		lines.append("| --- | --- | --- | --- | --- | --- | --- | --- |")
 		for issue in report.issues:
 			message = issue.message.replace("|", "\\|")
 			suggestions = ", ".join(issue.replacements) if issue.replacements else "—"
 			suggestions = suggestions.replace("|", "\\|")
 			context = issue.highlighted_context.replace("|", "\\|") if issue.highlighted_context else "—"
 			lines.append(
-				f"| {issue.line} | {issue.column} | `{issue.rule_id}` | {issue.issue_type} | {message} | {suggestions} | {context} |"
+				f"| {issue.filename} | {issue.line} | {issue.column} | `{issue.rule_id}` | {issue.issue_type} | {message} | {suggestions} | {context} |"
 			)
 
 	return "\n".join(lines)
+
+
+def build_report_csv(reports: Iterable[DocumentReport]) -> list[list[str]]:
+	"""Convert the collected document reports into CSV data.
+
+	Returns a list of rows, where each row is a list of string values.
+	The first row contains the column headers.
+	"""
+	
+	rows: list[list[str]] = []
+	
+	# CSV header
+	rows.append([
+		"Subject",
+		"Filename",
+		"Line",
+		"Column",
+		"Rule ID",
+		"Type",
+		"Message",
+		"Suggestions",
+		"Context"
+	])
+	
+	# Sort reports by subject and filename
+	report_list = sorted(
+		reports,
+		key=lambda item: (item.subject.lower(), item.path.name.lower())
+	)
+	
+	# Add each issue as a row
+	for report in report_list:
+		for issue in report.issues:
+			suggestions = ", ".join(issue.replacements) if issue.replacements else ""
+			context = issue.highlighted_context if issue.highlighted_context else ""
+			
+			rows.append([
+				report.subject,
+				issue.filename,
+				str(issue.line),
+				str(issue.column),
+				issue.rule_id,
+				issue.issue_type,
+				issue.message,
+				suggestions,
+				context
+			])
+	
+	return rows
 
 
 def run_language_checks(
@@ -234,8 +381,21 @@ def run_language_checks(
 	subject: Path | str | None = None,
 	document: Path | None = None,
 	tool: object | None = None,
+	disabled_rules: set[str] | None = None,
+	ignored_words: set[str] | None = None,
 ) -> Path:
-	"""Run language checks across all Markdown documents and write a report."""
+	"""Run language checks across all Markdown documents and write a report.
+	
+	Args:
+		root: Root directory containing subject folders
+		report_path: Path to write the Markdown report
+		language: Language code for LanguageTool
+		subject: Subject folder to check
+		document: Single document to check
+		tool: Pre-configured LanguageTool instance (optional)
+		disabled_rules: Set of rule IDs to disable
+		ignored_words: Set of words to ignore in spell-checking
+	"""
 
 	if document is not None:
 		document_path = document if document.is_absolute() else (root / document)
@@ -266,13 +426,13 @@ def run_language_checks(
 			LOGGER.warning("Document %s is not inside subject folder %s", document_path, subject_path)
 
 	created_tool = tool is None
-	tool_instance = tool or build_language_tool(language)
+	tool_instance = tool or build_language_tool(language, disabled_rules=disabled_rules, ignored_words=ignored_words)
 	try:
 		reports: list[DocumentReport] = []
 		running_total = 0
 		for subject_name, document_path in documents:
 			LOGGER.info("Checking %s / %s", subject_name, document_path.name)
-			report = check_document(document_path, subject_name, tool_instance)
+			report = check_document(document_path, subject_name, tool_instance, ignored_words=ignored_words)
 			running_total += len(report.issues)
 			LOGGER.info(
 				"Completed %s / %s: %d issue(s) (running total: %d)",
@@ -289,9 +449,18 @@ def run_language_checks(
 	if report_path is None:
 		report_path = root / "language-check-report.md"
 
+	# Write Markdown report
 	report_markdown = build_report_markdown(reports)
 	report_path.parent.mkdir(parents=True, exist_ok=True)
 	report_path.write_text(report_markdown, encoding="utf-8")
+	
+	# Write CSV report
+	csv_path = report_path.with_suffix(".csv")
+	csv_rows = build_report_csv(reports)
+	with csv_path.open("w", encoding="utf-8", newline="") as csv_file:
+		writer = csv.writer(csv_file)
+		writer.writerows(csv_rows)
+	
 	return report_path
 
 
@@ -326,12 +495,54 @@ def parse_args(argv: Optional[Iterable[str]] = None) -> argparse.Namespace:
 		default=None,
 		help="Single Markdown document to check (relative to root unless absolute).",
 	)
+	parser.add_argument(
+		"--disable-rule",
+		action="append",
+		dest="disabled_rules",
+		help="Disable a specific LanguageTool rule (can be specified multiple times). "
+		     f"Default disabled rules: {', '.join(sorted(DEFAULT_DISABLED_RULES))}",
+	)
+	parser.add_argument(
+		"--ignore-word",
+		action="append",
+		dest="ignored_words",
+		help="Add a word to the spell-check ignore list (case-insensitive, can be specified multiple times). "
+		     f"Default ignored words: {', '.join(sorted(DEFAULT_IGNORED_WORDS))}",
+	)
+	parser.add_argument(
+		"--no-default-rules",
+		action="store_true",
+		help="Don't apply default disabled rules (only use rules specified with --disable-rule)",
+	)
+	parser.add_argument(
+		"--no-default-words",
+		action="store_true",
+		help="Don't apply default ignored words (only use words specified with --ignore-word)",
+	)
 	return parser.parse_args(list(argv) if argv is not None else None)
 
 
 def main(argv: Optional[Iterable[str]] = None) -> int:
 	logging.basicConfig(level=logging.INFO)
 	args = parse_args(argv)
+	
+	# Build sets of disabled rules and ignored words
+	disabled_rules: set[str] | None = None
+	if args.no_default_rules:
+		disabled_rules = set(args.disabled_rules or [])
+	elif args.disabled_rules:
+		disabled_rules = set(DEFAULT_DISABLED_RULES) | set(args.disabled_rules)
+	else:
+		disabled_rules = set(DEFAULT_DISABLED_RULES)
+	
+	ignored_words: set[str] | None = None
+	if args.no_default_words:
+		ignored_words = set(args.ignored_words or [])
+	elif args.ignored_words:
+		ignored_words = set(DEFAULT_IGNORED_WORDS) | set(args.ignored_words)
+	else:
+		ignored_words = set(DEFAULT_IGNORED_WORDS)
+	
 	try:
 		report_path = run_language_checks(
 			args.root,
@@ -339,11 +550,15 @@ def main(argv: Optional[Iterable[str]] = None) -> int:
 			language=args.language,
 			subject=args.subject,
 			document=args.document,
+			disabled_rules=disabled_rules,
+			ignored_words=ignored_words,
 		)
 	except FileNotFoundError as exc:
 		LOGGER.error("%s", exc)
 		return 1
+	csv_path = report_path.with_suffix(".csv")
 	print(f"Language check report written to {report_path.resolve()}")
+	print(f"CSV report written to {csv_path.resolve()}")
 	return 0
 
 
