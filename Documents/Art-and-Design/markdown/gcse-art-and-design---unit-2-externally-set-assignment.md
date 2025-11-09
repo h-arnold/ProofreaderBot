@@ -1,1750 +1,656 @@
-WJEC GCSE
-Art and Design
+![](_page_0_Picture_0.jpeg)
+
+![](_page_0_Picture_1.jpeg)
+
+# WJEC GCSE Art and Design
 
 Approved by Qualifications Wales
-Sample Assessment
-Materials
-Unit 2: Externally Set Assignment
-Teaching from 2025
-For award from 2027
 
-GCSEMade for Wales. Ready for the world.This Qualifications Wales regulated qualification is not available to centres in England.WJEC would like to thank the students and teachers of Fitzalan High School, Cardiff and Llanwern
-High School, Newport for their participation in the creation of these covers.
+# Sample Assessment Materials
 
-Contents
+Unit 2: Externally Set Assignment Teaching from 2025 For award from 2027
 
-About this pack: information for teachers ......................................................................... 1
+Ready for the world. This Qualifications Wales regulated qualification is not available to centres in England.
 
-Managing the assessment .................................................................................................. 1
+Made for Wales.
 
-Unit 2 – Externally Set Assignment ..................................................................................... 4
+![](_page_1_Picture_0.jpeg)
 
-Part 1 (preparatory period) .................................................................................................. 4
+# Contents
 
-Part 2 (sustained focus period) ........................................................................................... 5
+| About this pack: information for teachers  |    |
+|--------------------------------------------|----|
+| Managing the assessment                    | 1  |
+| Unit 2 – Externally Set Assignment         | 4  |
+| Part 1 (preparatory period)                | 4  |
+| Part 2 (sustained focus period)            | 5  |
+| What should be included in the Unit 2 ESA? | 5  |
+| Submitting the ESA                         | 5  |
+| Internal Standardisation                   | 6  |
+| Mark Scheme                                | 7  |
+| Condidate Accessment Book                  | 42 |
 
-What should be included in the Unit 2 ESA? ....................................................................... 5
+![](_page_2_Picture_2.jpeg)
 
-Submitting the ESA ............................................................................................................. 5
-
-Internal Standardisation ...................................................................................................... 6
-
-Mark Scheme ......................................................................................................................... 7
-
-Candidate Assessment Pack ............................................................................................. 12
-
-Copyright © WJEC CBAC Limited 2024.
-
-WJEC GCSE Art and Design Unit 2 – Externally set assignment
-
-© WJEC CBAC Ltd, 2024
-
-About this pack: information for teachers
+# <span id="page-3-0"></span>About this pack: information for teachers
 
 This pack contains the assessment materials for Unit 2 – Externally Set Assignment.
 
-information for teachers on how to manage arrangements for assessment
-
 Within this pack, you will find:
-•
-•  a mark record sheet
-•  a candidate pack which includes:
 
-•  details of the assignment
-•
+- information for teachers on how to manage arrangements for assessment
+- a mark record sheet
+- a **candidate pack** which includes:
+  - details of the assignment
+  - information for candidates, which tells candidates about things that they must and must not do when they are completing the assessment
+  - the mark scheme which must be used to assess candidate work
+  - a Candidate Declaration Form
+  - a Candidate Time Record sheet.
 
-information for candidates, which tells candidates about things that they must and
-must not do when they are completing the assessment
-the mark scheme which must be used to assess candidate work
+#### **You must provide each candidate with a copy of the complete candidate assessment pack.**
 
-•
-•  a Candidate Declaration Form
-•  a Candidate Time Record sheet.
+# <span id="page-3-1"></span>Managing the assessment
 
-You must provide each candidate with a copy of the complete candidate assessment
-pack.
+This is a centre-marked (internal) non-examination assessment. The following arrangements must be followed when managing and marking the assessment.
 
-Managing the assessment
+### **Supervision**
 
-This is a centre-marked (internal) non-examination assessment. The following arrangements
-must be followed when managing and marking the assessment.
+Unit 2, Part 1, no controls. Work may be completed outside of the centre without direct supervision. Where no supervision is specified, candidates may normally:
 
-Supervision
-Unit 2, Part 1, no controls. Work may be completed outside of the centre without direct
-supervision. Where no supervision is specified, candidates may normally:
-•  have unlimited access to electronic and printed resources
-•  use the internet without restriction
-•  work in groups.
+- have unlimited access to electronic and printed resources
+- use the internet without restriction
+- work in groups.
 
-Unit 2, Part 2, direct supervision. The use of resources is tightly prescribed to the work done
-in Part 1.
+Unit 2, Part 2, direct supervision. The use of resources is tightly prescribed to the work done in Part 1.
+
 The centre must ensure that:
-•  all candidates are within direct sight of the supervisor throughout the session(s)
-•  display materials which might provide assistance are removed or covered
-•
-•  candidates complete their work independently
-•
-•  no assistance of any description is provided.
-•  candidates' work must remain within the centre at all times and must be stored securely
 
-there is no access to e-mail, the internet or mobile phones
+- all candidates are within direct sight of the supervisor throughout the session(s)
+- display materials which might provide assistance are removed or covered
+- there is no access to e-mail, the internet or mobile phones
+- candidates complete their work independently
+- interaction with other candidates does not occur
+- no assistance of any description is provided.
+- candidates' work must remain within the centre at all times and must be stored securely between timetabled sessions.
 
-interaction with other candidates does not occur
+#### **Guidance**
 
-between timetabled sessions.
+You should not provide input or guidance to candidates during the assessment time. This includes providing formative feedback on the evidence being produced. You can provide guidance on the requirements of the task and remind candidates of the mark bands and how they can be interpreted.
 
-Guidance
+Candidates can review and redraft evidence independently within the time controls for the assessment.
 
-You should not provide input or guidance to candidates during the assessment time. This
-includes providing formative feedback on the evidence being produced. You can provide
-guidance on the requirements of the task and remind candidates of the mark bands and how
-they can be interpreted.
+#### **Resources**
 
-Candidates can review and redraft evidence independently within the time controls for the
-assessment.
+In Unit 2, Part 1 candidates will need to gather information from published sources when researching and planning their tasks.
 
-WJEC GCSE Art and Design Unit 2 – Externally set assignment
+Candidates are allowed access to the internet and any electronic and printed resources available to them during Unit 2, Part 1.
 
-© WJEC CBAC Ltd, 2024
-
-1
-
-Resources
-
-In Unit 2, Part 1 candidates will need to gather information from published sources when
-researching and planning their tasks.
-
-Candidates are allowed access to the internet and any electronic and printed resources
-available to them during Unit 2, Part 1.
-
-Collaboration
+#### **Collaboration**
 
 Collaboration is not permitted in Unit 2.
 
-Time
+#### **Time**
 
 The total time candidates are allowed to spend on Unit 2, Part 2 assessment is 10 hours.
 
-There are no set timings for Unit 2, Part 1, but centres are encouraged to follow the
-suggested framework in the specification to ensure that time for learners is manageable.
+There are no set timings for Unit 2, Part 1, but centres are encouraged to follow the suggested framework in the specification to ensure that time for learners is manageable.
 
-Authentication
+#### **Authentication**
 
-Supervision must be in place to ensure the authenticity of evidence produced for summative
-assessment.
+Supervision must be in place to ensure the authenticity of evidence produced for summative assessment.
 
-Candidates must sign the declaration to confirm that all evidence submitted for moderation is
-their own work and that any sources used have been acknowledged.
+Candidates must sign the declaration to confirm that all evidence submitted for moderation is their own work and that any sources used have been acknowledged.
 
-Assessors must sign the declaration to confirm that evidence submitted for moderation was
-completed under the controlled conditions set out in this assessment.
+Assessors must sign the declaration to confirm that evidence submitted for moderation was completed under the controlled conditions set out in this assessment.
 
-Summary of controls
+#### **Summary of controls**
 
-Controls
+| Controls | Unit 2 – Externally set assignment |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Supervision | Part 1 - no controls Part 2 – direct |
+| Guidance | Not permitted – teachers cannot tell learners what intention to pursue, though teachers may support a candidate to ensure that their chosen intention is appropriate in terms of themes, practicality, access to resources and, health and safety. |
+| Resources | Part 1 - no controls Part 2 – permitted |
+| Collaboration | Not permitted                                                                                                                                                                                                                                                  |
+| Timing | Part 1 - not controlled Part 2 – controlled |
 
-Unit 2 – Externally set assignment
-
-Supervision
-
-Part 1 - no controls
-Part 2 – direct
-
-Guidance
-
-Not permitted – teachers cannot tell learners what intention to
-pursue, though teachers may support a candidate to ensure that
-their chosen intention is appropriate in terms of themes, practicality,
-access to resources and, health and safety.
-
-Resources
-
-Part 1 - no controls
-Part 2 – permitted
-
-Collaboration
-
-Not permitted
-
-Timing
-
-Part 1 - not controlled
-Part 2 – controlled
-
-WJEC GCSE Art and Design Unit 2 – Externally set assignment
-
-© WJEC CBAC Ltd, 2024
-
-2
-
-Marking the assessment
+#### **Marking the assessment**
 
 The marking scheme for this assessment are included in the candidate pack.
 
-All marking of evidence must be made against the marking scheme provided. Evidence
-marked must comply with any requirements set out in the assessment pack.
-Written evidence must be annotated to show how it relates to the mark band requirements.
-Marking should only be undertaken by a designated assessor. An assessor should have
-appropriate expertise in the subject and level for a specified unit. The assessor is
-responsible for ensuring that:
-•  assessment is conducted under the controls specified in the task table
-•
+All marking of evidence must be made against the marking scheme provided. Evidence marked must comply with any requirements set out in the assessment pack. Written evidence must be annotated to show how it relates to the mark band requirements. Marking should only be undertaken by a designated assessor. An assessor should have appropriate expertise in the subject and level for a specified unit. The assessor is responsible for ensuring that:
 
-they are clear about the requirements of the assessment and marking scheme prior to
-commencing assessment
-
-•  evidence presented for assessment is valid, authentic; reliable and credible
-•  assessment decisions are accurately recorded
-•  evidence is appropriately annotated
-•
-
-judgements are only made against the mark band statements
+- assessment is conducted under the controls specified in the task table
+- they are clear about the requirements of the assessment and marking scheme prior to commencing assessment
+- evidence presented for assessment is valid, authentic; reliable and credible
+- assessment decisions are accurately recorded
+- evidence is appropriately annotated
+- judgements are only made against the mark band statements
 
 A mark record sheet must be completed for each candidate.
 
-Further information
+#### **Further information**
 
-You should refer the JCQ Instructions for conducting non-examination assessment for
-further information on managing assessment within our GCSE Qualifications.
+You should refer the JCQ Instructions for conducting non-examination assessment for further information on managing assessment within our GCSE Qualifications.
 
-This pack is a sample. It must not be used for live assessment.
+**This pack is a sample. It must not be used for live assessment.**
 
-WJEC GCSE Art and Design Unit 2 – Externally set assignment
+# <span id="page-6-0"></span>Unit 2 – Externally Set Assignment
 
-© WJEC CBAC Ltd, 2024
+#### **Assessment details**
 
-3
+#### **Unit 2: Externally Set Assignment**
 
-Unit 2 – Externally Set Assignment
+Non-examination assessment **40% of qualification 80 marks**
 
-Assessment details
+The externally set assignment will be set by WJEC, marked by centres and moderated by WJEC.
 
-Unit 2: Externally Set Assignment
-10 hours sustained focus, plus preparatory study
-Non-examination assessment
-40% of qualification
+#### **Overview of unit**
 
-80 marks
+The Unit 2 Externally Set Assignment (ESA) builds on the knowledge, understanding and skills used and developed in Unit 1.
 
-The externally set assignment will be set by WJEC, marked by centres and moderated
-by WJEC.
+The ESA has two parts. The centre must monitor the learners' work throughout both parts of the ESA to ensure that work is entirely their own.
 
-Overview of unit
+# <span id="page-6-1"></span>Part 1 (preparatory period)
 
-The Unit 2 Externally Set Assignment (ESA) builds on the knowledge, understanding and
-skills used and developed in Unit 1.
+In Part 1 (the preparatory period) the learner is presented with five big ideas set by WJEC. The ESA will be released to centres via in a digital format on Portal on December 1 in the final year of study. This will give teachers/assessors the opportunity to plan and prepare only.
 
-The ESA has two parts. The centre must monitor the learners’ work throughout both parts of
-the ESA to ensure that work is entirely their own.
+The ESA must then be presented to learners during the spring term of the final year of study. Learners should choose one of the big ideas. They may use any of the stimuli in the chosen big idea. The preparatory work during this period must be used to inform the personal response produced in Part 2.
 
-Part 1 (preparatory period)
+The duration of the preparatory period is determined by the centre. During this period learners will need to research, plan and develop preparatory work from one of the big ideas relevant to their chosen pathway. Teachers must not tell learners what intention to pursue, though teachers may support a candidate to ensure that their chosen intention is appropriate in terms of themes, practicality, access to resources and, health and safety.
 
-In Part 1 (the preparatory period) the learner is presented with five big ideas set by WJEC.
-The ESA will be released to centres via in a digital format on Portal on December 1 in the
-final year of study. This will give teachers/assessors the opportunity to plan and prepare only.
+It is important that the learner selects their work carefully at the end of the preparatory period, which should then be stored securely, as this is the only work they can use to support Part 2. Work cannot be amended after Part 2 begins.
 
-The ESA must then be presented to learners during the spring term of the final year of study.
-Learners should choose one of the big ideas. They may use any of the stimuli in the chosen
-big idea. The preparatory work during this period must be used to inform the personal
-response produced in Part 2.
+## <span id="page-7-0"></span>Part 2 (sustained focus period)
 
-The duration of the preparatory period is determined by the centre. During this period
-learners will need to research, plan and develop preparatory work from one of the big ideas
-relevant to their chosen pathway. Teachers must not tell learners what intention to pursue,
-though teachers may support a candidate to ensure that their chosen intention is appropriate
-in terms of themes, practicality, access to resources and, health and safety.
+In Part 2 (sustained focus period) the learner has 10 hours in supervised time to produce a personal response. The supervised time must start with at least a consecutive two-hour session.
 
-It is important that the learner selects their work carefully at the end of the preparatory
-period, which should then be stored securely, as this is the only work they can use to support
-Part 2. Work cannot be amended after Part 2 begins.
+The learner must not access any of their work outside of the designated sustained focus work sessions. No additional work can be added during the supervised sessions.
 
-WJEC GCSE Art and Design Unit 2 – Externally set assignment
-
-© WJEC CBAC Ltd, 2024
-
-4
-
-Part 2 (sustained focus period)
-
-In Part 2 (sustained focus period) the learner has 10 hours in supervised time to produce a
-personal response. The supervised time must start with at least a consecutive two-hour
-session.
-
-The learner must not access any of their work outside of the designated sustained focus
-work sessions. No additional work can be added during the supervised sessions.
-
-All selected work for the unit, from both Part 1 and Part 2, must be submitted for the
-assessment. Learners should ensure that their submission clearly covers all four
-assessment objectives.
+All selected work for the unit, from both Part 1 and Part 2, must be submitted for the assessment. Learners should ensure that their submission clearly covers all four assessment objectives.
 
 As in Unit 1, learners must identify and acknowledge any sources that are not their own.
 
-What should be included in the Unit 2 ESA?
+## <span id="page-7-1"></span>What should be included in the Unit 2 ESA?
 
 The following needs to be taken into consideration when developing the ESA:
-•
 
-the work submitted from Part 1 and Part 2 must contain evidence of how the learner has
-met each of the assessment objectives
-•
-the learner must complete the final response during Part 2 (sustained focus period)
-•  annotating their work will help learners meet elements of the assessment objectives
-•  work must be selected and presented for assessment by the learner.
+- the work submitted from Part 1 and Part 2 must contain evidence of how the learner has met each of the assessment objectives
+- the learner must complete the final response during Part 2 (sustained focus period)
+- annotating their work will help learners meet elements of the assessment objectives
+- work must be selected and presented for assessment by the learner.
 
-Submitting the ESA
+# <span id="page-7-2"></span>Submitting the ESA
 
-•  The outcome does not have to be a finished piece of work but there should be enough
-completed to demonstrate the learner’s ability to take the assignment through to a
-resolved conclusion.
+- The outcome does not have to be a finished piece of work but there should be enough completed to demonstrate the learner's ability to take the assignment through to a resolved conclusion.
+- Each piece of work must be clearly identified with centre and candidate names and numbers. The work produced during the sustained focus period must be identified in the submission.
+- If a learner is entered for more than one pathway, they must undertake a different assignment for each one.
+- Using the *Candidate Declaration Form* the learner should declare that their work was completed independently and without any assistance beyond what should be permitted. They should clearly reference any sources and any Artificial Intelligence tools used in the work. The learner should understand that a false declaration should be considered a form of malpractice. All work should be their own, except for any non-original material that should be clearly credited in the form. This work should not be submitted for any other qualification.
 
-•  Each piece of work must be clearly identified with centre and candidate names and
+## <span id="page-8-0"></span>Internal Standardisation
 
-numbers. The work produced during the sustained focus period must be identified in the
-submission.
-If a learner is entered for more than one pathway, they must undertake a different
-assignment for each one.
+Centres should ensure consistency in marking across all pathways and teaching groups. This helps maintain a uniform understanding and application of the marking criteria. Centres must carry out internal standardisation to make sure that the marks given by different teachers are accurate and consistent for all learners taking the unit/qualification. The WJEC website will include exemplar material to support standardisation.
 
-•
+| Controls | Unit 2 – Externally set assignment |  |
+|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--|
+| Supervision | Part 1 - no controls Part 2 – direct |  |
+| Guidance | Not permitted – teachers cannot tell learners what intention to pursue, though teachers may support a candidate to ensure that their chosen intention is appropriate in terms of themes, practicality, access to resources and, health and safety. |  |
+| Resources | Part 1 - no controls Part 2 - permitted |  |
+| Collaboration | Not permitted                                                                                                                                                                                                                                                  |  |
+| Timing | Part 1 - not controlled Part 2 - controlled |  |
 
-•  Using the Candidate Declaration Form the learner should declare that their work was
+#### **Mark Scheme**
 
-completed independently and without any assistance beyond what should be permitted.
-They should clearly reference any sources and any Artificial Intelligence tools used in the
-work. The learner should understand that a false declaration should be considered a
-form of malpractice. All work should be their own, except for any non-original material
-that should be clearly credited in the form. This work should not be submitted for any
-other qualification.
+#### **Guidance for Assessors**
 
-WJEC GCSE Art and Design Unit 2 – Externally set assignment
+#### <span id="page-9-0"></span>**Generic marking principles**
 
-© WJEC CBAC Ltd, 2024
+- Marks awarded are always whole marks (not half marks, or other fractions).
+- Marks should be awarded using the full range of marks defined in the mark scheme for the question (however; the use of the full mark range may be limited according to the quality of the candidate responses seen).
+- Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should not be awarded with grade thresholds or grade descriptors in mind.
 
-5
+#### **Positive marking**
 
-Internal Standardisation
+It should be remembered that candidates are producing responses under high control conditions and credit should be given for what the candidate produces, rather than adopting the approach of penalising candidates for any omissions. It should be possible for a very good response to achieve full marks and a very poor one to achieve zero marks. Marks should not be deducted for a less than perfect response if it satisfies the criteria of the mark scheme.
 
-Centres should ensure consistency in marking across all pathways and teaching groups.
-This helps maintain a uniform understanding and application of the marking criteria. Centres
-must carry out internal standardisation to make sure that the marks given by different
-teachers are accurate and consistent for all learners taking the unit/qualification. The WJEC
-website will include exemplar material to support standardisation.
+#### **Banded mark schemes**
 
-Controls
+To reach the highest level of the mark scheme a candidate must meet the requirements of the highest mark band. Where a response is not creditworthy, that is, it contains nothing of any significance to the mark scheme, or where no response has been provided, no marks should be awarded.
 
-Unit 2 – Externally set assignment
+Marking should always be positive. This means that, for each candidate's response, marks are accumulated for the demonstration of relevant skills, knowledge and understanding: they are not deducted from a maximum on the basis of errors or omissions.
 
-Supervision
+An assessor should first look at and make notes about the candidate's response holistically to pick out the evidence that is being assessed. The mark scheme can then be applied. This is done as a two-stage process.
 
-Part 1 - no controls
-Part 2 – direct
+#### **Stage 1 – Deciding on the band**
 
-Guidance
+Beginning at the lowest band, Assessors should look at the candidate's response and check whether it matches the descriptors for that band. If the descriptors at the lowest band are satisfied, Assessors should move up to the next band and repeat this process for each band until the descriptors most closely match the work.
 
-Not permitted – teachers cannot tell learners what intention to
-pursue, though teachers may support a candidate to ensure that
-their chosen intention is appropriate in terms of themes, practicality,
-access to resources and, health and safety.
+#### **Stage 2 – Deciding on the mark**
 
-Resources
+Having determined the appropriate band, deciding on the mark within a band will be made on the basis of a 'best fit' procedure, weaknesses in some areas being compensated for by strengths in others.
 
-Part 1 - no controls
-Part 2 - permitted
+Assessors should use the full range of marks available to them. The awarding of marks must be directly related to the marking criteria, and all responses must be marked according to the banded levels provided.
 
-Collaboration
-
-Not permitted
-
-Timing
-
-Part 1 - not controlled
-Part 2 - controlled
-
-WJEC GCSE Art and Design Unit 2 – Externally set assignment
-
-© WJEC CBAC Ltd, 2024
-
-6
-
-Mark Scheme
-
-Guidance for Assessors
-
-Generic marking principles
-
-•  Marks awarded are always whole marks (not half marks, or other fractions).
-
-•  Marks should be awarded using the full range of marks defined in the mark scheme for
-the question (however; the use of the full mark range may be limited according to the
-quality of the candidate responses seen).
-
-•  Marks awarded are based solely on the requirements as defined in the mark scheme.
-Marks should not be awarded with grade thresholds or grade descriptors in mind.
-
-Positive marking
-
-It should be remembered that candidates are producing responses under high control
-conditions and credit should be given for what the candidate produces, rather than adopting
-the approach of penalising candidates for any omissions. It should be possible for a very
-good response to achieve full marks and a very poor one to achieve zero marks.  Marks
-should not be deducted for a less than perfect response if it satisfies the criteria of the mark
-scheme.
-
-Banded mark schemes
-
-To reach the highest level of the mark scheme a candidate must meet the requirements of
-the highest mark band. Where a response is not creditworthy, that is, it contains nothing of
-any significance to the mark scheme, or where no response has been provided, no marks
-should be awarded.
-
-Marking should always be positive. This means that, for each candidate’s response, marks
-are accumulated for the demonstration of relevant skills, knowledge and understanding: they
-are not deducted from a maximum on the basis of errors or omissions.
-
-An assessor should first look at and make notes about the candidate’s response holistically
-to pick out the evidence that is being assessed. The mark scheme can then be applied.  This
-is done as a two-stage process.
-
-Stage 1 – Deciding on the band
-
-Beginning at the lowest band, Assessors should look at the candidate’s response and check
-whether it matches the descriptors for that band.  If the descriptors at the lowest band are
-satisfied, Assessors should move up to the next band and repeat this process for each band
-until the descriptors most closely match the work.
-
-Stage 2 – Deciding on the mark
-
-Having determined the appropriate band, deciding on the mark within a band will be made
-on the basis of a ‘best fit’ procedure, weaknesses in some areas being compensated for by
-strengths in others.
-
-WJEC GCSE Art and Design Unit 2 – Externally set assignment
-
-© WJEC CBAC Ltd, 2024
-
-7
-
-Assessors should use the full range of marks available to them. The awarding of marks must
-be directly related to the marking criteria, and all responses must be marked according to the
-banded levels provided.
-
-Standardising material that has already been awarded a mark will be provided during
-standardising and this should be used as a reference material when assessing work.
-Assessors are reminded of the need to revisit the standardising material as they apply the
-mark scheme in order to confirm that the band and the mark allocated is appropriate to the
-work submitted.
+Standardising material that has already been awarded a mark will be provided during standardising and this should be used as a reference material when assessing work. Assessors are reminded of the need to revisit the standardising material as they apply the mark scheme in order to confirm that the band and the mark allocated is appropriate to the work submitted.
 
 Candidates are free to choose any approach that is relevant to the set task.
 
-WJEC GCSE Art and Design Unit 2 – Externally set assignment
-
-© WJEC CBAC Ltd, 2024
-
-8
-
-Mark Scheme for GCSE ART AND DESIGN
-
-Unit Two: Externally Set Assignment  (Total Marks = 80)
-
-Band
-
-AO1
-
-AO2
-
-AO3
-
-AO4
-
-Develop ideas and demonstrate
-critical and contextual
-understanding of sources
-
-Refine work by exploring ideas,
-selecting and experimenting with
-appropriate media, techniques,
-tools, digital technologies, and
-processes
-
-Reflect on own work, and record
-ideas, observations and insights
-relevant to intentions as work
-progresses
-
-Present a personal and meaningful
-response that realises intentions
-and demonstrates understanding of
-visual language
-
-5
-
-17-20 marks
-
-17-20 marks
-
-17-20 marks
-
-17-20 marks
-
-Sophisticated and thorough
-development of ideas through
-sustained, focused and coherent
-investigations.
-
-Perceptive and rigorous critical
-analysis of sources, providing the
-basis for assured, independent
-responses.
-
-Ideas are refined and explored through
-rigorous selection and purposeful,
-creative experimentation.
-
-Perceptive and sophisticated use of
-media, materials, techniques and
-processes that are skilfully controlled
-and imaginatively exploited.
-
-Perceptive and discriminating ongoing
-review and evaluation consistently
-informs the refinement and
-development of work as it progresses.
-
-Sophisticated recording of ideas,
-observations and insights through
-extensive, coherent research and
-enquiry that is highly relevant to
-personal intentions.
-
-Perceptive, rigorous and effective
-critical reflection as work progresses,
-demonstrating depth of understanding
-and meaning.
-
-Highly imaginative, personal and
-meaningful response which realises
-intentions in a sophisticated, coherent
-and assured manner.
-
-The presentation shows a perceptive
-and thorough understanding of visual
-language and the purpose and
-intention of the work is very clearly and
-convincingly conveyed.
-
-4
-
-13-16 marks
-
-13-16 marks
-
-13-16 marks
-
-13-16 marks
-
-Effective and thorough development of
-ideas through sustained and focused
-investigations.
-
-Ideas are refined and explored through
-relevant selection and creative
-experimentation.
-
-Confident and rigorous critical analysis
-of sources, providing the basis for
-purposeful, independent responses.
-
-Effective use of media, materials,
-techniques and processes are that
-confidently controlled and exploited.
-
-Effective and thorough ongoing review
-and evaluation informs the refinement
-and development of work as it
-progresses.
-
-Confident recording of ideas,
-observations and insights by
-appropriate means through effective
-research and enquiry that is relevant to
-personal intentions.
-
-Rigorous and effective critical
-reflection as work progresses,
-demonstrating a good level of
-understanding and meaning.
-
-Imaginative, personal and meaningful
-response which realises intentions in a
-confident and effective manner.
-
-The presentation shows a good
-understanding of visual language and
-the purpose and intention of the work
-is clearly and convincingly conveyed.
-
-WJEC GCSE Art and Design Unit 2 – Externally set assignment
-
-© WJEC CBAC Ltd, 2024
-
-9
-
-3
-
-9-12 marks
-
-9-12 marks
-
-9-12 marks
-
-9-12 marks
-
-Reasonable development of ideas
-through investigations which are
-generally sustained.
-
-Reasonable critical analysis of
-sources, providing the basis for
-satisfactory and generally independent
-responses.
-
-Ideas are refined and explored through
-relevant selection and experimentation.
-
-Appropriate use of media, materials,
-techniques and processes are
-reasonably controlled and exploited.
-
-Reasonable ongoing review and
-evaluation of explorations supports the
-refinement and development of work as
-it progresses.
-
-Reasonable recording of ideas,
-observations and insights by
-appropriate means through research
-and enquiry that is generally relevant to
-personal intentions.
-
-Reasonably critical reflection on work
-as it progresses, generally
-demonstrating understanding and
-meaning.
-
-Reasonably imaginative personal and
-meaningful response which realises
-intentions in a satisfactory manner.
-
-The presentation shows a reasonable
-understanding of visual language and
-the purpose and intention of the work
-is reasonably conveyed.
-
-2
-
-5-8 marks
-
-5-8 marks
-
-5-8 marks
-
-5-8 marks
-
-Some development of ideas through
-partially sustained investigations.
-
-Ideas are partially refined and explored
-through selection and experimentation.
-
-Some analysis of sources, partially
-informing basic responses.
-
-Some attempt to control and exploit
-media, materials, techniques and
-processes.
-
-Some ongoing review and evaluation
-partially informs the work as it
-progresses.
-
-Basic recording of ideas, observations
-and insights by appropriate means
-through research and enquiry that is
-sometimes relevant to personal
-intentions.
-
-The response is to some extent,
-personal and meaningful and
-intentions are realised in a basic
-manner.
-
-Some reflection on work as it progresses,
-which sometimes demonstrates
-understanding and meaning.
-
-The presentation shows some
-understanding of visual language and the
-purpose and intention of the work is
-conveyed in a partly convincing way.
-
-WJEC GCSE Art and Design Unit 2 – Externally set assignment
-
-© WJEC CBAC Ltd, 2024
-
-10
-
-1
-
-1–4  marks
-
-1–4  marks
-
-1–4  marks
-
-1–4  marks
-
-Limited development of ideas through
-investigations.
-
-Limited refinement and exploration of
-ideas.
-
-Limited analysis of sources which
-have had minimal influence on
-responses.
-
-Limited attempt to control and exploit
-media, materials, techniques and
-processes.
-
-Limited ongoing review and
-evaluation, with minimal impact on
-the work as it progresses.
-
-Limited recording of ideas, observations
-and insights by appropriate means
-through research and enquiry that has
-limited relevance to personal intentions.
-
-A limited personal response, with minimal
-attempts to show meaning, and which
-realises intentions in a limited manner.
-
-Limited reflection on work as it
-progresses, which demonstrates limited
-understanding and meaning.
-
-The presentation shows limited
-understanding of visual language and the
-purpose and intention of the work is
-conveyed in a limited way.
-
-0
-
-0 marks
-
-0 marks
-
-0 marks
-
-0 marks
-
-Response not worthy of credit or not
-attempted.
-
-Response not worthy of credit or not
-attempted.
-
-Response not worthy of credit or not
-attempted.
-
-Response not worthy of credit or not
-attempted.
-
-WJEC GCSE Art and Design Unit 2 – Externally set assignment
-
-© WJEC CBAC Ltd, 2024
-
-11
-
-WJEC Art and Design
-
-Candidate Assessment Pack
+![](_page_10_Picture_3.jpeg)
+
+| Mark Scheme for GCSE ART AND DESIGN Unit Two: Externally Set Assignment (Total Marks = 80) |  |  |  |  |
+|--------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Band                                                                                                   | AO1                                                                                                                                                                                                                                              | AO2                                                                                                                                                                                                                                                                                                                                                                                                                            | AO3                                                                                                                                                                                                                                                                                                                  | AO4                                                                                                                                                                                                                                                                                                                            |
+|  | Develop ideas and demonstrate critical and contextual understanding of sources | Refine work by exploring ideas, selecting and experimenting with appropriate media, techniques, tools, digital technologies, and processes | Reflect on own work, and record ideas, observations and insights relevant to intentions as work progresses | Present a personal and meaningful response that realises intentions and demonstrates understanding of visual language |
+| 5                                                                                                      | 17-20 marks                                                                                                                                                                                                                                      | 17-20 marks                                                                                                                                                                                                                                                                                                                                                                                                                    | 17-20 marks                                                                                                                                                                                                                                                                                                          | 17-20 marks                                                                                                                                                                                                                                                                                                                    |
+|  | Sophisticated and thorough development of ideas through sustained, focused and coherent investigations. Perceptive and rigorous critical analysis of sources, providing the basis for assured, independent responses. | Ideas are refined and explored through rigorous selection and purposeful, creative experimentation. Perceptive and sophisticated use of media, materials, techniques and processes that are skilfully controlled and imaginatively exploited. Perceptive and discriminating ongoing review and evaluation consistently informs the refinement and development of work as it progresses. | Sophisticated recording of ideas, observations and insights through extensive, coherent research and enquiry that is highly relevant to personal intentions. Perceptive, rigorous and effective critical reflection as work progresses, demonstrating depth of understanding and meaning. | Highly imaginative, personal and meaningful response which realises intentions in a sophisticated, coherent and assured manner. The presentation shows a perceptive and thorough understanding of visual language and the purpose and intention of the work is very clearly and convincingly conveyed. |
+| 4 | 13-16 marks | 13-16 marks | 13-16 marks | 13-16 marks |
+|  | Effective and thorough development of ideas through sustained and focused investigations. Confident and rigorous critical analysis of sources, providing the basis for purposeful, independent responses. | Ideas are refined and explored through relevant selection and creative experimentation. Effective use of media, materials, techniques and processes are that confidently controlled and exploited. Effective and thorough ongoing review and evaluation informs the refinement and development of work as it progresses. | Confident recording of ideas, observations and insights by appropriate means through effective research and enquiry that is relevant to personal intentions. Rigorous and effective critical reflection as work progresses, demonstrating a good level of understanding and meaning. | Imaginative, personal and meaningful response which realises intentions in a confident and effective manner. The presentation shows a good understanding of visual language and the purpose and intention of the work is clearly and convincingly conveyed. |
+
+| 3 | 9-12                                                                                                                                                                                                                       | 9-12                                                                                                                                                                                                                                                                                                                                     | 9-12                                                                                                                                                                                                                                                                                                    | 9-12                                                                                                                                                                                                                                                                       |
+|---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|   | marks                                                                                                                                                                                                                      | marks                                                                                                                                                                                                                                                                                                                                    | marks                                                                                                                                                                                                                                                                                                   | marks                                                                                                                                                                                                                                                                      |
+|  | Reasonable development of ideas through investigations which are generally sustained. Reasonable critical analysis of sources, providing the basis for satisfactory and generally independent responses. | Ideas are refined and explored through relevant selection and experimentation. Appropriate use of media, materials, techniques and processes are reasonably controlled and exploited. Reasonable ongoing review and evaluation of explorations supports the refinement and development of work as it progresses. | Reasonable recording of ideas, observations and insights by appropriate means through research and enquiry that is generally relevant to personal intentions. Reasonably critical reflection on work as it progresses, generally demonstrating understanding and meaning. | Reasonably imaginative personal and meaningful response which realises intentions in a satisfactory manner. The presentation shows a reasonable understanding of visual language and the purpose and intention of the work is reasonably conveyed. |
+| 2 | 5-8                                                                                                                                                                                                                        | 5-8                                                                                                                                                                                                                                                                                                                                      | 5-8                                                                                                                                                                                                                                                                                                     | 5-8                                                                                                                                                                                                                                                                        |
+|   | marks                                                                                                                                                                                                                      | marks                                                                                                                                                                                                                                                                                                                                    | marks                                                                                                                                                                                                                                                                                                   | marks                                                                                                                                                                                                                                                                      |
+|  | Some development of ideas through partially sustained investigations. Some analysis of sources, partially informing basic responses. | Ideas are partially refined and explored through selection and experimentation. Some attempt to control and exploit media, materials, techniques and processes. Some ongoing review and evaluation partially informs the work as it progresses. | Basic recording of ideas, observations and insights by appropriate means through research and enquiry that is sometimes relevant to personal intentions. Some reflection on work as it progresses, which sometimes demonstrates understanding and meaning. | The response is to some extent, personal and meaningful and intentions are realised in a basic manner. The presentation shows some understanding of visual language and the purpose and intention of the work is conveyed in a partly convincing way. |
+
+| 1 | 1–4 marks                                                                        | 1–4 marks                                                                                                                                                                                  | 1–4 marks                                                                                                                                             | 1–4 marks                                                                                                                                        |
+|---|----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+|  | Limited development of ideas through investigations. | Limited refinement and exploration of ideas. | Limited recording of ideas, observations and insights by appropriate means through research and enquiry that has | A limited personal response, with minimal attempts to show meaning, and which realises intentions in a limited manner. |
+|  | Limited analysis of sources which have had minimal influence on responses. | Limited attempt to control and exploit media, materials, techniques and processes. Limited ongoing review and evaluation, with minimal impact on the work as it progresses. | limited relevance to personal intentions. Limited reflection on work as it progresses, which demonstrates limited understanding and meaning. | The presentation shows limited understanding of visual language and the purpose and intention of the work is conveyed in a limited way. |
+| 0 | 0 marks                                                                          | 0 marks                                                                                                                                                                                    | 0 marks                                                                                                                                               | 0 marks                                                                                                                                          |
+|  | Response not worthy of credit or not attempted. | Response not worthy of credit or not attempted. | Response not worthy of credit or not attempted. | Response not worthy of credit or not attempted. |
+
+![](_page_14_Picture_0.jpeg)
+
+# WJEC Art and Design
+
+# <span id="page-14-0"></span>Candidate Assessment Pack
 
 Unit 2: Externally Set Assignment
 
-Art, Craft and Design (3610QSL-2)
-Fine Art (3611QSL-2)
-Textile Design (3612QSL-2)
-Graphic Communication (3613QSL-2)
-Three-Dimensional Design (3614QSL-2)
-Photography (3615QSL-2)
+Art, Craft and Design **(3610QSL-2)** Fine Art **(3611QSL-2)** Textile Design **(3612QSL-2)**  Graphic Communication **(3613QSL-2)** Three-Dimensional Design **(3614QSL-2)**  Photography **(3615QSL-2)** 
 
-WJEC GCSE Art and Design Unit 2 – Externally set assignment
+## About this pack: information and instructions for candidates
 
-© WJEC CBAC Ltd, 2024
-
-About this pack: information and instructions for candidates
-
-This candidate assessment pack is for candidates completing Unit 2 – Externally Set
-Assignment.
+This candidate assessment pack is for candidates completing Unit 2 – Externally Set Assignment.
 
 Within this pack, you will find details of:
-•  what you should include in your work
-•
 
-•
-•  a Candidate Declaration Form
-•  a Time Record sheet.
+- what you should include in your work
+- information for candidates, which tells you about things that you must and must not do when you are completing the assessment
+- the mark scheme which will be used to assess your work
+- a Candidate Declaration Form
+- a Time Record sheet.
 
-information for candidates, which tells you about things that you must and must not do
-when you are completing the assessment
-the mark scheme which will be used to assess your work
+Your teacher is allowed to help you to understand the assessment requirements, but there are rules about the kind of help and how much they can give you. You should speak to your teacher if you have any questions about what you are and are not allowed to do as you are completing the tasks, as they will know how much help they are allowed to give you.
 
-Your teacher is allowed to help you to understand the assessment requirements, but there
-are rules about the kind of help and how much they can give you. You should speak to your
-teacher if you have any questions about what you are and are not allowed to do as you are
-completing the tasks, as they will know how much help they are allowed to give you.
-
-It is important that you work independently from other candidates and the work produced
-should be your own unaided work. You and your teacher will be required to sign a
-declaration that all work presented is your own work.
+It is important that you work independently from other candidates and the work produced should be your own unaided work. You and your teacher will be required to sign a declaration that all work presented is your own work.
 
 You are advised to check your work carefully to make sure that it is accurate and correct.
 
-What is the Unit 2 Externally Set Assignment (ESA)?
+# What is the Unit 2 Externally Set Assignment (ESA)?
 
-The Unit 2 Externally Set Assignment (ESA) builds on the knowledge, understanding and
-skills that you have developed through the qualification and in Unit 1.
+The Unit 2 Externally Set Assignment (ESA) builds on the knowledge, understanding and skills that you have developed through the qualification and in Unit 1.
 
-The ESA has two parts. You should speak to your teacher if you have any questions about
-what you are and are not allowed to do as you are completing the portfolio, as they will know
-how much help they are allowed to give you.
+The ESA has two parts. You should speak to your teacher if you have any questions about what you are and are not allowed to do as you are completing the portfolio, as they will know how much help they are allowed to give you.
 
-It is important that you work independently from other candidates and the work produced
-must be your own unaided work. You and your teacher will be required to sign a declaration
-that all work presented is your own work.
+It is important that you work independently from other candidates and the work produced must be your own unaided work. You and your teacher will be required to sign a declaration that all work presented is your own work.
 
-Part 1 (preparatory period)
+# Part 1 (preparatory period)
 
-In Part 1 (the preparatory period) you will be presented with five big ideas set by WJEC. You
-should choose one of the big ideas. You may use any of the stimuli as a prompt to respond
-to your chosen big idea if you wish. The preparatory work during this period must be used to
-inform the outcome produced in Part 2. Any work produced during the preparatory period
-cannot be amended after Part 2 begins.
+In Part 1 (the preparatory period) you will be presented with five big ideas set by WJEC. You should choose one of the big ideas. You may use any of the stimuli as a prompt to respond to your chosen big idea if you wish. The preparatory work during this period must be used to inform the outcome produced in Part 2. Any work produced during the preparatory period cannot be amended after Part 2 begins.
 
 The duration of the preparatory period is determined by the centre.
 
 You will need to produce preparatory work relevant to your chosen pathway.
 
-WJEC GCSE Art and Design Unit 2 – Externally set assignment
+#### Part 2 (sustained focus period)
 
-© WJEC CBAC Ltd, 2024
-
-1
-
-Part 2 (sustained focus period)
-
-In Part 2 (sustained focus period) you will have 10 hours of supervised time to produce an
-outcome. The supervised time must start with at least a consecutive two-hour session.
+In Part 2 (sustained focus period) you will have 10 hours of supervised time to produce an outcome. The supervised time must start with at least a consecutive two-hour session.
 
 You cannot access any of your work outside the designated sustained focus work sessions.
 
-What should be included in the Unit 2 ESA?
+#### What should be included in the Unit 2 ESA?
 
 The following needs to be taken into consideration when developing the ESA:
-•  Work must be selected and presented for assessment by you, the learner
-•  You must complete your outcome during Part 2 (sustained focus period)
-•  You must annotate your work.  This will help you meet elements of the assessment
 
-objectives
-
-•  The work submitted must contain evidence of how you have met each of the assessment
-
-objectives below.
+- · Work must be selected and presented for assessment by you, the learner
+- You must complete your outcome during Part 2 (sustained focus period)
+- You must annotate your work. This will help you meet elements of the assessment objectives
+- The work submitted must contain evidence of how you have met each of the assessment objectives below.
 
 The guidance in the graphic below will outlines what your work should include.
 
-AO4
+![](_page_16_Figure_10.jpeg)
 
-AO3
+## Submitting the Portfolio
 
-Produce a personal response
-Select work that demonstrates
-your meanings and intentions
-Communicate using
-appropriate elements of visual
-language
-Explain and realise your
-intentions, making connections
-between the different parts of
-the work and work of others
-Select a suitable format for
-presenting work to engage the
-audience
+- The outcome does not have to be a finished piece of work but there should be enough completed to demonstrate your ability to take the assignment through to a resolved conclusion.
+- Each piece of work must be clearly identified with your centre and candidate names and numbers. The work produced during the sustained focus period must be identified in the submission.
+- If you are entered for more than one title you must undertake a different assignment for each one.
+- Using the *Candidate Declaration Form* you should declare that the work was completed independently and without any assistance beyond what should be permitted. You should clearly reference any sources and any Artificial Intelligence tools used in the work. A false declaration should be considered a form of malpractice. All work must be your own, except for any non-original material that should be clearly credited in the form. This work should not be submitted for any other qualification.
 
-Generate ideas
-Show awareness of methods
-and approaches used in
-other people’s work
-Analyse why the work was
-produced (intentions) and
-what it was made for
-(purpose)
-Generate further creative
-ideas from your reflections
-Show how your ideas have
-formed
+![](_page_17_Picture_5.jpeg)
 
-Record ideas in visual and/or
-written forms (such as
-drawing, writing,
-photographs, speaking etc...)
-Make observations and
-insights about your
-intentions/work
-Identify the areas of your
-work that are personal and
-meaningful
-Reflect as your work
-progresses
-Review what you have
-learned and how you might
-use it.
+## Information for candidates
 
-Explore ideas
-Make informed choices
-through exploring a breadth
-of media, techniques and
-processes
-Demonstrate control of
-creative skills, whilst using
-them imaginatively
-Review and refine your work
-to take it forward
+The following information has been taken from the [JCQ Information for candidates –](https://www.jcq.org.uk/wp-content/uploads/2021/08/IFC-NE_Assessments_2021_v4.pdf) non[examination assessments](https://www.jcq.org.uk/wp-content/uploads/2021/08/IFC-NE_Assessments_2021_v4.pdf) and the [JCQ Artificial Intelligence \(AI\) Use in Assessments:](https://www.jcq.org.uk/exams-office/malpractice/artificial-intelligence/)  [Protecting the Integrity of Qualifications.](https://www.jcq.org.uk/exams-office/malpractice/artificial-intelligence/) This tells you about things that you **must** and **must not** do when you are completing your assessment. If there is anything that you do not understand, you **must** ask your teacher.
 
-WJEC GCSE Art and Design Unit 2 – Externally set assignment
+#### **Preparing your work**
 
-© WJEC CBAC Ltd, 2024
+- When you submit your work and sign your candidate declaration form, you need to ensure that your final product reflects your own independent work and isn't copied or paraphrased from another source such as an AI tool.
+- If you receive help and guidance from someone other than your teacher, you **must** tell your teacher who will then record the nature of the assistance given to you.
+- If you worked as part of a group on a task, you **must** each write up your own account of the assignment. Even if the data you have is the same, you **must** describe in your own words how that data was obtained, and you **must** independently draw your own conclusions from the data.
+- Take care of your work and keep it safe. **Do not** leave it lying around where your classmates can find it or share it with anyone, including posting it on social media. You **must** always keep your work secure and confidential whilst you are preparing it; **do not** share it with your classmates. If it is stored on the computer network, keep your password secure. Collect all copies from the printer and destroy those you do not need.
+- **Do not** be tempted to use pre-prepared online solutions (such as those produced by AI tools and chatbots) – this is cheating. Electronic tools used by WJEC can detect this sort of copying.
+- You **must not** write inappropriate, offensive or obscene material.
 
-AO1
+#### **Plagiarism**
 
-AO2
+Plagiarism involves taking someone else's words, thoughts or ideas and trying to pass them off as your own. **It is a form of cheating which is taken very seriously.** Don't think you won't be caught; there are many ways to detect plagiarism:
 
-2
+- Markers can spot changes in the style of writing and use of language.
+- Markers are highly experienced subject specialists they may have read the source you are using, or even marked the work you have copied from!
+- Internet search engines and specialised computer software can be used to match phrases or pieces of text with original sources and to detect changes in the grammar and style of writing or punctuation.
 
-Submitting the Portfolio
+#### **Penalties for breaking the regulations**
 
-•  The outcome does not have to be a finished piece of work but there should be enough
-completed to demonstrate your ability to take the assignment through to a resolved
-conclusion.
+If it is discovered that you have broken the regulations, one of the following penalties will be applied:
 
-•  Each piece of work must be clearly identified with your centre and candidate names and
-numbers. The work produced during the sustained focus period must be identified in the
-submission.
-If you are entered for more than one title you must undertake a different assignment for
-each one.
-
-•
-
-•  Using the Candidate Declaration Form you should declare that the work was completed
-independently and without any assistance beyond what should be permitted. You should
-clearly reference any sources and any Artificial Intelligence tools used in the work. A
-false declaration should be considered a form of malpractice. All work must be your own,
-except for any non-original material that should be clearly credited in the form. This work
-should not be submitted for any other qualification.
-
-WJEC GCSE Art and Design Unit 2 – Externally set assignment
-
-© WJEC CBAC Ltd, 2024
-
-3
-
-Information for candidates
-
-The following information has been taken from the JCQ Information for candidates – non-
-examination assessments and the JCQ Artificial Intelligence (AI) Use in Assessments:
-Protecting the Integrity of Qualifications. This tells you about things that you must and must
-not do when you are completing your assessment. If there is anything that you do not
-understand, you must ask your teacher.
-
-Preparing your work
-
-•  When you submit your work and sign your candidate declaration form, you need to
-
-•
-
-•
-
-ensure that your final product reflects your own independent work and isn’t copied or
-paraphrased from another source such as an AI tool.
-If you receive help and guidance from someone other than your teacher, you must tell
-your teacher who will then record the nature of the assistance given to you.
-If you worked as part of a group on a task, you must each write up your own account of
-the assignment. Even if the data you have is the same, you must describe in your own
-words how that data was obtained, and you must independently draw your own
-conclusions from the data.
-
-•  Take care of your work and keep it safe. Do not leave it lying around where your
-
-classmates can find it or share it with anyone, including posting it on social media. You
-must always keep your work secure and confidential whilst you are preparing it; do not
-share it with your classmates. If it is stored on the computer network, keep your
-password secure. Collect all copies from the printer and destroy those you do not need.
-•  Do not be tempted to use pre-prepared online solutions (such as those produced by AI
-
-tools and chatbots) – this is cheating. Electronic tools used by WJEC can detect this sort
-of copying.
-
-•  You must not write inappropriate, offensive or obscene material.
-
-Plagiarism
-
-Plagiarism involves taking someone else’s words, thoughts or ideas and trying to pass them
-off as your own. It is a form of cheating which is taken very seriously. Don’t think you
-won’t be caught; there are many ways to detect plagiarism:
-•  Markers can spot changes in the style of writing and use of language.
-•  Markers are highly experienced subject specialists – they may have read the source you
-
-•
-
-are using, or even marked the work you have copied from!
-Internet search engines and specialised computer software can be used to match
-phrases or pieces of text with original sources and to detect changes in the grammar and
-style of writing or punctuation.
-
-Penalties for breaking the regulations
-
-the piece of work will be awarded zero marks
-
-If it is discovered that you have broken the regulations, one of the following penalties will be
-applied:
-•
-•  you will be disqualified from that unit for the assessment series in question
-•  you will be disqualified from the whole subject for that assessment series
-•  you will be disqualified from all subjects and barred from entering again for a period of
-
-time.
+- the piece of work will be awarded zero marks
+- you will be disqualified from that unit for the assessment series in question
+- you will be disqualified from the whole subject for that assessment series
+- you will be disqualified from all subjects and barred from entering again for a period of time.
 
 WJEC will decide which penalty is appropriate.
 
-Remember – it’s your qualification so it needs to be your own work.
+**Remember – it's your qualification so it needs to be your own work.**
 
-WJEC GCSE Art and Design Unit 2 – Externally set assignment
+![](_page_19_Picture_0.jpeg)
 
-© WJEC CBAC Ltd, 2024
+# **GCSE Art and Design**
 
-4
+# **GCSE Art and Design – Unit 2 Externally Set Assignment**
 
-GCSE Art and Design
+# **SAMPLE ASSESSMENT MATERIALS**
 
-GCSE Art and Design – Unit 2
-Externally Set Assignment
+#### **Part 1: PREPARATORY STUDY PERIOD**
 
-SAMPLE ASSESSMENT MATERIALS
-
-Part 1: PREPARATORY STUDY PERIOD
 Time allocated to be determined by the centre.
 
-Part 2: SUSTAINED FOCUS WORK
-10 hours under supervised examination conditions.
+#### **Part 2: SUSTAINED FOCUS WORK 10 hours under supervised examination conditions.**
 
 Both Part 1 and Part 2 of the assignment must be submitted for assessment.
 
-Additional materials
-•  Appropriate Art, Craft and Design Materials
+#### **Additional materials**
 
-Instructions to candidates
-•  This paper contains 5 big ideas. Choose ONE big idea only. You may use any of the
+• Appropriate Art, Craft and Design Materials
 
-stimuli from the big idea to inform your work. You should produce a response
-demonstrating development, refinement, reflection and presentation.
+#### **Instructions to candidates**
 
-•  The 5 big ideas cover the following pathways:
+- This paper contains 5 big ideas. Choose ONE big idea only. You may use any of the stimuli from the big idea to inform your work. You should produce a response demonstrating development, refinement, reflection and presentation.
+- The 5 big ideas cover the following pathways:
 
-Art, Craft & Design
-Fine Art
-Graphic Communication
-Textile Design
-Three-Dimensional Design
-Photography.
+Art, Craft & Design Fine Art Graphic Communication Textile Design Three-Dimensional Design Photography.
 
-WJEC GCSE Art and Design Unit 2 – Externally set assignment
+# **1. Big Idea – Habitat**
 
-© WJEC CBAC Ltd, 2024
+#### **HABITAT**
 
-5
+**A habitat is a natural home or environment of an animal, plant, or other [organism.](https://www.google.com/search?safe=active&sca_esv=6182fbdd58dbe34a&rlz=1C1GCEU_en-GBGB921GB929&q=organism&si=ACC90nwZKElgOcNXBU934ENhMNgqFByXnAmb40hQi8sJ_4Q7KS59YpdO92tg6yW9suQSkkpmXwQ49KVCvl7SO1AWkACmtfD4ot5PEdHFhAHTulbI_P_3d0w%3D&expnd=1&sa=X&ved=2ahUKEwir5rHy7fSGAxXvWkEAHZdXB2MQyecJegQIEBAO) A habitat can be diverse, offering unique features and supporting different forms of life**. **The main components of a habitat are shelter, water, food, and space**. **What does it mean to you?**
 
-1.
+The following five threads are designed to help you explore and develop your own ideas based on the concept of Habitat.
 
-Big Idea – Habitat
+![](_page_20_Picture_4.jpeg)
 
-HABITAT
-A habitat is a natural home or environment of an animal, plant, or other organism. A
-habitat can be diverse, offering unique features and supporting different forms of life .
-The main components of a habitat are shelter, water, food, and space.
-What does it mean to you?
+The following visuals are prompts to help you to explore and develop your own ideas based on the concept of Habitat.
 
-The following five threads are designed to help you explore and develop your own ideas based on
-the concept of Habitat.
+![](_page_20_Picture_6.jpeg)
 
-The following visuals are prompts to help you to explore and develop your own ideas based on the
-concept of Habitat.
+![](_page_20_Picture_7.jpeg)
+
+![](_page_20_Picture_8.jpeg)
 
 WJEC GCSE Art and Design Unit 2 – Externally set assignment
 
-© WJEC CBAC Ltd, 2024
+The following written brief is to help you to explore and develop your own ideas in a specific direction.
 
-6
+#### **Written Brief A local character**
 
-The following written brief is to help you to explore and develop your own ideas in a specific
-direction.
+Communities often have key individuals who, through their actions and attitudes, help support groups and encourage people to work together to improve the local environment. From your research, create a personal response that reflects your chosen character and their achievements.
 
-Written Brief
+#### **Contextual References** • Efa Lois
 
-A local character
-Communities often have key individuals who, through their
-actions and attitudes, help support groups and encourage
-people to work together to improve the local environment. From
-your research, create a personal response that reflects your
-chosen character and their achievements.
+- Sirkka-Liisa Konttinen
+- Neville Brody
+- Grayson Perry
+- The Singh Twins
 
-Contextual References
+# **2. Big Idea – Collections**
 
-•  Efa Lois
-•  Sirkka-Liisa Konttinen
-•  Neville Brody
-•  Grayson Perry
-•  The Singh Twins
+**A collection means a group of objects, or an amount of material accumulated in one location, especially for some purpose or as a result of some purpose.**
 
-WJEC GCSE Art and Design Unit 2 – Externally set assignment
+The following five threads are designed to help you explore and develop your own ideas based on the concept of Collections.
 
-© WJEC CBAC Ltd, 2024
+![](_page_22_Picture_3.jpeg)
 
-7
+The following visuals are prompts to help you to explore and develop your own ideas based on the concept of Collections.
 
-2.
+![](_page_22_Picture_5.jpeg)
 
-Big Idea – Collections
+![](_page_22_Picture_6.jpeg)
 
-A collection means a group of objects, or an amount of material accumulated in one
-location, especially for some purpose or as a result of some purpose.
+![](_page_22_Picture_7.jpeg)
 
-The following five threads are designed to help you explore and develop your own ideas based on
-the concept of Collections.
+![](_page_22_Picture_8.jpeg)
 
-The following visuals are prompts to help you to explore and develop your own ideas based on the
-concept of Collections.
+The following written brief is to help you to explore and develop your own ideas in a specific direction.
 
-WJEC GCSE Art and Design Unit 2 – Externally set assignment
+#### **Written Brief A museum collection**
 
-© WJEC CBAC Ltd, 2024
+Investigate a local exhibition, gallery, or museum that you are familiar with and use this information to produce a creative response using materials of your choice.
 
-8
+#### **Contextual References** • Lisa Milroy
 
-The following written brief is to help you to explore and develop your own ideas in a specific
-direction.
-Written Brief
+- Wayne Thiebaud
+- Lee John Phillips
+- El Anatsui
+- Nick Cave
 
-A museum collection
-Investigate a local exhibition, gallery, or museum that you are
-familiar with and use this information to produce a creative
-response using materials of your choice.
+![](_page_23_Picture_10.jpeg)
 
-Contextual References
+# **3. Big Idea - Structures**
 
-•  Lisa Milroy
-•  Wayne Thiebaud
-•  Lee John Phillips
-•  El Anatsui
-•  Nick Cave
+**A structure is something of many parts that is put together.**
 
-WJEC GCSE Art and Design Unit 2 – Externally set assignment
+The following five threads are designed to help you explore and develop your own ideas based on the concept of x
 
-© WJEC CBAC Ltd, 2024
+![](_page_24_Picture_3.jpeg)
 
-9
+The following visuals are prompts to help you to explore and develop your own ideas based on the concept of x
 
-3.
+![](_page_24_Picture_5.jpeg)
 
-Big Idea - Structures
+![](_page_24_Picture_6.jpeg)
 
-A structure is something of many parts that is put together.
+![](_page_24_Picture_7.jpeg)
 
-The following five threads are designed to help you explore and develop your own ideas based on
-the concept of x
+![](_page_24_Picture_8.jpeg)
 
-The following visuals are prompts to help you to explore and develop your own ideas based on the
-concept of x
+The following written brief is to help you to explore and develop your own ideas in a specific direction.
 
-WJEC GCSE Art and Design Unit 2 – Externally set assignment
+#### **Written Brief Celebrate a structure**
 
-© WJEC CBAC Ltd, 2024
+Investigate a structure which is important to you and from your investigations produce a personal response which celebrates its history and purpose.
 
-10
+#### **Contextual References** • Andrea Joseph
 
-The following written brief is to help you to explore and develop your own ideas in a specific
-direction.
+- Richard Estes
+- Ian Murphy
+- Harriet Popham
+- Sally Blake
 
-Written Brief
+![](_page_25_Picture_10.jpeg)
 
-Celebrate a structure
-Investigate a structure which is important to you and from your
-investigations produce a personal response which celebrates its
-history and purpose.
+# **4. Big Idea - Belonging**
 
-Contextual References
+**Belonging is a feeling of being happy or comfortable as part of a particular group or having an affinity for a place or situation***.*
 
-•  Andrea Joseph
-•  Richard Estes
-Ian Murphy
-•
-•  Harriet Popham
-•  Sally Blake
+The following five threads are designed to help you explore and develop your own ideas based on the concept of Belonging.
 
-WJEC GCSE Art and Design Unit 2 – Externally set assignment
+![](_page_26_Picture_3.jpeg)
 
-© WJEC CBAC Ltd, 2024
+The following visuals are prompts to help you to explore and develop your own ideas based on the concept of Belonging.
 
-11
+![](_page_26_Picture_5.jpeg)
 
-4.
+![](_page_26_Picture_6.jpeg)
 
-Big Idea - Belonging
+![](_page_26_Picture_7.jpeg)
 
-Belonging is a feeling of being happy or comfortable as part of a particular group or having
-an affinity for a place or situation.
+![](_page_26_Picture_8.jpeg)
 
-The following five threads are designed to help you explore and develop your own ideas based on
-the concept of Belonging.
+The following written brief is to help you to explore and develop your own ideas in a specific direction.
 
-The following visuals are prompts to help you to explore and develop your own ideas based on the
-concept of Belonging.
+#### **Written Brief A community event**
 
-WJEC GCSE Art and Design Unit 2 – Externally set assignment
+Research a community event, such as a carnival, an eisteddfod, a music festival, or a pride rally, and celebrate the occasion by creating a personal response which reflects its atmosphere and ideals.
 
-© WJEC CBAC Ltd, 2024
+#### **Contextual References** • Alfred Conteh
 
-12
+- Lubaina Himid
+- Andrew Mashigo
+- Irene Hoff
+- L.S. Lowry
+
+![](_page_27_Picture_10.jpeg)
 
-The following written brief is to help you to explore and develop your own ideas in a specific
-direction.
+# **5. Big Idea - Perspective**
 
-Written Brief
+**Perspective can be how objects are represented, such as angle, depth or dimension. It can also mean a point of view or attitude of a person or group.**
 
-A community event
-Research a community event, such as a carnival, an eisteddfod,
-a music festival, or a pride rally, and celebrate the occasion by
-creating a personal response which reflects its atmosphere and
-ideals.
+The following five threads are designed to help you explore and develop your own ideas based on the concept of x
 
-Contextual References
+![](_page_28_Picture_3.jpeg)
 
-•  Alfred Conteh
-•  Lubaina Himid
-•  Andrew Mashigo
-•
-Irene Hoff
-•  L.S. Lowry
+The following visuals are prompts to help you to explore and develop your own ideas based on the concept of Perspective
 
-WJEC GCSE Art and Design Unit 2 – Externally set assignment
+![](_page_28_Picture_5.jpeg)
 
-© WJEC CBAC Ltd, 2024
+![](_page_28_Picture_6.jpeg)
 
-13
+![](_page_28_Picture_7.jpeg)
 
-5.
+![](_page_28_Picture_8.jpeg)
 
-Big Idea - Perspective
+The following written brief is to help you to explore and develop your own ideas in a specific direction.
 
-Perspective can be how objects are represented, such as angle, depth or dimension. It can
-also mean a point of view or attitude of a person or group.
+#### **Written Brief Changing Perspective**
 
-The following five threads are designed to help you explore and develop your own ideas based on
-the concept of x
+How could you change the perspective of an individual or group for positive change. Develop work in response to changing perspectives.
 
-The following visuals are prompts to help you to explore and develop your own ideas based on the
-concept of Perspective
+- **Contextual References**  Andreas Gursky
+  - Lorna Simpson
+  - Giorgio de Chirico
+  - Issy Miyake
+  - Banksy
 
-WJEC GCSE Art and Design Unit 2 – Externally set assignment
+|  | Mark Scheme for GCSE ART AND DESIGN Unit Two: Externally Set Assignment (Total Marks = 80) |  |  |  |  |  |  |
+|------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--|--|--|
+| Band | AO1                                                                                                                                                                                                                                              | AO2                                                                                                                                                                                                                                                                                                                                                                                                                            | AO3                                                                                                                                                                                                                                                                                                                  | AO4                                                                                                                                                                                                                                                                                                                            |  |  |  |
+|  | Develop ideas and demonstrate critical and contextual understanding of sources | Refine work by exploring ideas, selecting and experimenting with appropriate media, techniques, tools, digital technologies, and processes | Reflect on own work, and record ideas, observations and insights relevant to intentions as work progresses | Present a personal and meaningful response that realises intentions and demonstrates understanding of visual language |  |  |  |
+| 5    | 17-20 marks                                                                                                                                                                                                                                      | 17-20 marks                                                                                                                                                                                                                                                                                                                                                                                                                    | 17-20 marks                                                                                                                                                                                                                                                                                                          | 17-20 marks                                                                                                                                                                                                                                                                                                                    |  |  |  |
+|  | Sophisticated and thorough development of ideas through sustained, focused and coherent investigations. Perceptive and rigorous critical analysis of sources, providing the basis for assured, independent responses. | Ideas are refined and explored through rigorous selection and purposeful, creative experimentation. Perceptive and sophisticated use of media, materials, techniques and processes that are skilfully controlled and imaginatively exploited. Perceptive and discriminating ongoing review and evaluation consistently informs the refinement and development of work as it progresses. | Sophisticated recording of ideas, observations and insights through extensive, coherent research and enquiry that is highly relevant to personal intentions. Perceptive, rigorous and effective critical reflection as work progresses, demonstrating depth of understanding and meaning. | Highly imaginative, personal and meaningful response which realises intentions in a sophisticated, coherent and assured manner. The presentation shows a perceptive and thorough understanding of visual language and the purpose and intention of the work is very clearly and convincingly conveyed. |  |  |  |
+| 4 | 13-16 marks | 13-16 marks | 13-16 marks | 13-16 marks |  |  |  |
+|  | Effective and thorough development of ideas through sustained and focused investigations. Confident and rigorous critical analysis of sources, providing the basis for purposeful, independent responses. | Ideas are refined and explored through relevant selection and creative experimentation. Effective use of media, materials, techniques and processes are that confidently controlled and exploited. Effective and thorough ongoing review and evaluation informs the refinement and development of work as it progresses. | Confident recording of ideas, observations and insights by appropriate means through effective research and enquiry that is relevant to personal intentions. Rigorous and effective critical reflection as work progresses, demonstrating a good level of understanding and meaning. | Imaginative, personal and meaningful response which realises intentions in a confident and effective manner. The presentation shows a good understanding of visual language and the purpose and intention of the work is clearly and convincingly conveyed. |  |  |  |
 
-© WJEC CBAC Ltd, 2024
+| 3 | 9-12                                                                                                                                                                                                                       | 9-12                                                                                                                                                                                                                                                                                                                                     | 9-12                                                                                                                                                                                                                                                                                                    | 9-12                                                                                                                                                                                                                                                                       |
+|---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|   | marks                                                                                                                                                                                                                      | marks                                                                                                                                                                                                                                                                                                                                    | marks                                                                                                                                                                                                                                                                                                   | marks                                                                                                                                                                                                                                                                      |
+|  | Reasonable development of ideas through investigations which are generally sustained. Reasonable critical analysis of sources, providing the basis for satisfactory and generally independent responses. | Ideas are refined and explored through relevant selection and experimentation. Appropriate use of media, materials, techniques and processes are reasonably controlled and exploited. Reasonable ongoing review and evaluation of explorations supports the refinement and development of work as it progresses. | Reasonable recording of ideas, observations and insights by appropriate means through research and enquiry that is generally relevant to personal intentions. Reasonably critical reflection on work as it progresses, generally demonstrating understanding and meaning. | Reasonably imaginative personal and meaningful response which realises intentions in a satisfactory manner. The presentation shows a reasonable understanding of visual language and the purpose and intention of the work is reasonably conveyed. |
+| 2 | 5-8                                                                                                                                                                                                                        | 5-8                                                                                                                                                                                                                                                                                                                                      | 5-8                                                                                                                                                                                                                                                                                                     | 5-8                                                                                                                                                                                                                                                                        |
+|   | marks                                                                                                                                                                                                                      | marks                                                                                                                                                                                                                                                                                                                                    | marks                                                                                                                                                                                                                                                                                                   | marks                                                                                                                                                                                                                                                                      |
+|  | Some development of ideas through partially sustained investigations. Some analysis of sources, partially informing basic responses. | Ideas are partially refined and explored through selection and experimentation. Some attempt to control and exploit media, materials, techniques and processes. Some ongoing review and evaluation partially informs the work as it progresses. | Basic recording of ideas, observations and insights by appropriate means through research and enquiry that is sometimes relevant to personal intentions. Some reflection on work as it progresses, which sometimes demonstrates understanding and meaning. | The response is to some extent, personal and meaningful and intentions are realised in a basic manner. The presentation shows some understanding of visual language and the purpose and intention of the work is conveyed in a partly convincing way. |
 
-14
+| 1 | 1–4 marks                                                                        | 1–4 marks                                                                                                                                                                                  | 1–4 marks                                                                                                                                             | 1–4 marks                                                                                                                                        |
+|---|----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+|  | Limited development of ideas through investigations. | Limited refinement and exploration of ideas. | Limited recording of ideas, observations and insights by appropriate means through research and enquiry that has | A limited personal response, with minimal attempts to show meaning, and which realises intentions in a limited manner. |
+|  | Limited analysis of sources which have had minimal influence on responses. | Limited attempt to control and exploit media, materials, techniques and processes. Limited ongoing review and evaluation, with minimal impact on the work as it progresses. | limited relevance to personal intentions. Limited reflection on work as it progresses, which demonstrates limited understanding and meaning. | The presentation shows limited understanding of visual language and the purpose and intention of the work is conveyed in a limited way. |
+| 0 | 0 marks                                                                          | 0 marks                                                                                                                                                                                    | 0 marks                                                                                                                                               | 0 marks                                                                                                                                          |
+|  | Response not worthy of credit or not attempted. | Response not worthy of credit or not attempted. | Response not worthy of credit or not attempted. | Response not worthy of credit or not attempted. |
 
-The following written brief is to help you to explore and develop your own ideas in a specific
-direction.
+## Candidate Declaration Form
 
-Written Brief
+#### **You must complete Part A and Part B of this form**
 
-Changing Perspective
-How could you change the perspective of an individual or group
-for positive change. Develop work in response to changing
-perspectives.
+| Centre No:                                                                                                                                                                                                                                                                                                                                                                                                                                                          |  |  |  |  | Centre Name:       |  |       |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--|--|--|--|--------------------|--|-------|
+| Candidate No: |  |  |  |  | Candidate Name: |  |  |
+| Unit Title:                                                                                                                                                                                                                                                                                                                                                                                                                                                         |  |  |  |  |                    |  |       |
+| Part A: Candidate Declaration                                                                                                                                                                                                                                                                                                                                                                                                                                       |  |  |  |  |                    |  |       |
+| List of software packages/AI tools/chatbots1 References: Give details of the exact source of : any non-original material used in the assignment. Give brief details of how these have been used in the assignment. |  |  |  |  |  |  |  |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |  |  |  |  |                    |  |       |
+| Authentication Declaration I declare that my work was completed independently and without any assistance beyond that which was permitted. All work is my own, except for any non-original material clearly credited above. This work has not been submitted for any other qualification. I have clearly referenced any sources and any Artificial Intelligence tools used in the work. I understand that false declaration is a form of malpractice. |  |  |  |  |  |  |  |
+| Candidate Signature:                                                                                                                                                                                                                                                                                                                                                                                                                                                |  |  |  |  |                    |  | Date: |
 
-Contextual References
+<span id="page-33-0"></span><sup>1</sup> Where you have used AI tools as a source of information, you must show the name of the AI source used and the date the content was generated. For example: ChatGPT 3.5 [\(https://openai.com/blog/chatgpt/\)](https://openai.com/blog/chatgpt/), 25/01/2023. You must, retain a copy of the question(s) and computer-generated content for reference and authentication purposes, in a noneditable format (such as a screenshot) and provide a brief explanation of how it has been used. This must be submitted with your work, so your teacher/assessor is able to review the work, the AI-generated content and how it has been used.
 
-•  Andreas Gursky
-•  Lorna Simpson
-•  Giorgio de Chirico
-•
-•  Banksy
+#### **Part B: GDPR Consent**
 
-Issy Miyake
+- WJEC may select your work for use at teacher training events and subsequently upload it onto WJEC's secure website (accessible only to teachers via a secure login). Your name would be removed from your work before we use it. All materials are reviewed regularly and are removed when no longer relevant to our qualifications.
+- WJEC may select your work for use in teaching and learning resources published on the WJEC public website. Your name would be removed from your work before we use it. All materials are reviewed regularly and are removed when no longer relevant to our qualifications.
+- You understand that this agreement may be terminated at any time through written request<sup>2</sup> [.](#page-34-0)
+- For further details about how we process your data please read WJEC's [privacy notice.](http://www.eduqas.co.uk/home/privacy-policy/)
 
-WJEC GCSE Art and Design Unit 2 – Externally set assignment
+| use your work in this way, please tick here: ☐ If you prefer that WJEC does not |
+|------------------------------------------------------------------------------------|
+|                                                                                    |
+|                                                                                    |
+|                                                                                    |
+|                                                                                    |
+|                                                                                    |
+|                                                                                    |
+|                                                                                    |
+|                                                                                    |
+|                                                                                    |
+|                                                                                    |
+|                                                                                    |
+|                                                                                    |
+|                                                                                    |
+|                                                                                    |
+|                                                                                    |
+|                                                                                    |
+|                                                                                    |
+|                                                                                    |
+|                                                                                    |
 
-© WJEC CBAC Ltd, 2024
+<span id="page-34-0"></span><sup>2</sup> You must be over 13 to provide consent. You may withdraw your consent at any time by contacting WJEC on [qualifications@wjec.co.uk.](mailto:qualifications@wjec.co.uk) Please include the title of the work, the year of assessment, centre name and number, candidate name and the unit title in the communication. The work will then be removed from the secure website.
 
-15
+## Candidate Time Record Sheet
 
-Mark Scheme for GCSE ART AND DESIGN
+**(for centre use for Unit 2 Part B)**
 
-Unit Two: Externally Set Assignment  (Total Marks = 80)
-
-Band
-
-AO1
-
-AO2
-
-AO3
-
-AO4
-
-Develop ideas and demonstrate
-critical and contextual
-understanding of sources
-
-Refine work by exploring ideas,
-selecting and experimenting with
-appropriate media, techniques,
-tools, digital technologies, and
-processes
-
-Reflect on own work, and record
-ideas, observations and insights
-relevant to intentions as work
-progresses
-
-Present a personal and meaningful
-response that realises intentions
-and demonstrates understanding of
-visual language
-
-5
-
-17-20 marks
-
-17-20 marks
-
-17-20 marks
-
-17-20 marks
-
-Sophisticated and thorough
-development of ideas through
-sustained, focused and coherent
-investigations.
-
-Perceptive and rigorous critical
-analysis of sources, providing the
-basis for assured, independent
-responses.
-
-Ideas are refined and explored through
-rigorous selection and purposeful,
-creative experimentation.
-
-Perceptive and sophisticated use of
-media, materials, techniques and
-processes that are skilfully controlled
-and imaginatively exploited.
-
-Perceptive and discriminating ongoing
-review and evaluation consistently
-informs the refinement and
-development of work as it progresses.
-
-Sophisticated recording of ideas,
-observations and insights through
-extensive, coherent research and
-enquiry that is highly relevant to
-personal intentions.
-
-Perceptive, rigorous and effective
-critical reflection as work progresses,
-demonstrating depth of understanding
-and meaning.
-
-Highly imaginative, personal and
-meaningful response which realises
-intentions in a sophisticated, coherent
-and assured manner.
-
-The presentation shows a perceptive
-and thorough understanding of visual
-language and the purpose and
-intention of the work is very clearly and
-convincingly conveyed.
-
-4
-
-13-16 marks
-
-13-16 marks
-
-13-16 marks
-
-13-16 marks
-
-Effective and thorough development of
-ideas through sustained and focused
-investigations.
-
-Ideas are refined and explored through
-relevant selection and creative
-experimentation.
-
-Confident and rigorous critical analysis
-of sources, providing the basis for
-purposeful, independent responses.
-
-Effective use of media, materials,
-techniques and processes are that
-confidently controlled and exploited.
-
-Effective and thorough ongoing review
-and evaluation informs the refinement
-and development of work as it
-progresses.
-
-Confident recording of ideas,
-observations and insights by
-appropriate means through effective
-research and enquiry that is relevant to
-personal intentions.
-
-Rigorous and effective critical
-reflection as work progresses,
-demonstrating a good level of
-understanding and meaning.
-
-Imaginative, personal and meaningful
-response which realises intentions in a
-confident and effective manner.
-
-The presentation shows a good
-understanding of visual language and
-the purpose and intention of the work
-is clearly and convincingly conveyed.
-
-WJEC GCSE Art and Design Unit 2 – Externally set assignment
-
-© WJEC CBAC Ltd, 2024
-
-16
-
-3
-
-9-12 marks
-
-9-12 marks
-
-9-12 marks
-
-9-12 marks
-
-Reasonable development of ideas
-through investigations which are
-generally sustained.
-
-Reasonable critical analysis of
-sources, providing the basis for
-satisfactory and generally independent
-responses.
-
-Ideas are refined and explored through
-relevant selection and experimentation.
-
-Appropriate use of media, materials,
-techniques and processes are
-reasonably controlled and exploited.
-
-Reasonable ongoing review and
-evaluation of explorations supports the
-refinement and development of work as
-it progresses.
-
-Reasonable recording of ideas,
-observations and insights by
-appropriate means through research
-and enquiry that is generally relevant to
-personal intentions.
-
-Reasonably critical reflection on work
-as it progresses, generally
-demonstrating understanding and
-meaning.
-
-Reasonably imaginative personal and
-meaningful response which realises
-intentions in a satisfactory manner.
-
-The presentation shows a reasonable
-understanding of visual language and
-the purpose and intention of the work
-is reasonably conveyed.
-
-2
-
-5-8 marks
-
-5-8 marks
-
-5-8 marks
-
-5-8 marks
-
-Some development of ideas through
-partially sustained investigations.
-
-Ideas are partially refined and explored
-through selection and experimentation.
-
-Some analysis of sources, partially
-informing basic responses.
-
-Some attempt to control and exploit
-media, materials, techniques and
-processes.
-
-Some ongoing review and evaluation
-partially informs the work as it
-progresses.
-
-Basic recording of ideas, observations
-and insights by appropriate means
-through research and enquiry that is
-sometimes relevant to personal
-intentions.
-
-The response is to some extent,
-personal and meaningful and
-intentions are realised in a basic
-manner.
-
-Some reflection on work as it progresses,
-which sometimes demonstrates
-understanding and meaning.
-
-The presentation shows some
-understanding of visual language and the
-purpose and intention of the work is
-conveyed in a partly convincing way.
-
-WJEC GCSE Art and Design Unit 2 – Externally set assignment
-
-© WJEC CBAC Ltd, 2024
-
-17
-
-1
-
-1–4  marks
-
-1–4  marks
-
-1–4  marks
-
-1–4  marks
-
-Limited development of ideas through
-investigations.
-
-Limited refinement and exploration of
-ideas.
-
-Limited analysis of sources which
-have had minimal influence on
-responses.
-
-Limited attempt to control and exploit
-media, materials, techniques and
-processes.
-
-Limited ongoing review and
-evaluation, with minimal impact on
-the work as it progresses.
-
-Limited recording of ideas, observations
-and insights by appropriate means
-through research and enquiry that has
-limited relevance to personal intentions.
-
-A limited personal response, with minimal
-attempts to show meaning, and which
-realises intentions in a limited manner.
-
-Limited reflection on work as it
-progresses, which demonstrates limited
-understanding and meaning.
-
-The presentation shows limited
-understanding of visual language and the
-purpose and intention of the work is
-conveyed in a limited way.
-
-0
-
-0 marks
-
-0 marks
-
-0 marks
-
-0 marks
-
-Response not worthy of credit or not
-attempted.
-
-Response not worthy of credit or not
-attempted.
-
-Response not worthy of credit or not
-attempted.
-
-Response not worthy of credit or not
-attempted.
-
-WJEC GCSE Art and Design Unit 2 – Externally set assignment
-
-© WJEC CBAC Ltd, 2024
-
-18
-
-Candidate Declaration Form
-
-You must complete Part A and Part B of this form
-
-Centre No:
-
-  Centre Name:
-
-Candidate
-No:
-
-Unit Title:
-
-Candidate
-Name:
-
-Part A: Candidate Declaration
-
-References: Give details of the exact source of
-any non-original material used in the assignment.
-
-List of software packages/AI tools/chatbots1:
-Give brief details of how these have been used in
-the assignment.
-
-Authentication Declaration
-I declare that my work was completed independently and without any assistance beyond that which was
-permitted. All work is my own, except for any non-original material clearly credited above. This work has
-not been submitted for any other qualification. I have clearly referenced any sources and any Artificial
-Intelligence tools used in the work. I understand that false declaration is a form of malpractice.
-
-Candidate Signature:
-
-Date:
-
-1 Where you have used AI tools as a source of information, you must show the name of the AI source used and the date the
-content was generated. For example: ChatGPT 3.5 (https://openai.com/blog/chatgpt/), 25/01/2023. You must, retain a copy of the
-question(s) and computer-generated content for reference and authentication purposes, in a noneditable format (such as a
-screenshot) and provide a brief explanation of how it has been used.  This must be submitted with your work, so your
-teacher/assessor is able to review the work, the AI-generated content and how it has been used.
-
-WJEC GCSE Art and Design Unit 2 – Externally set assignment
-
-© WJEC CBAC Ltd, 2024
-
-19
-
-Part B: GDPR Consent
-
-•  WJEC may select your work for use at teacher training events and subsequently upload it onto
-
-WJEC's secure website (accessible only to teachers via a secure login). Your name would be
-removed from your work before we use it. All materials are reviewed regularly and are removed when
-no longer relevant to our qualifications.
-
-•  WJEC may select your work for use in teaching and learning resources published on the WJEC public
-website. Your name would be removed from your work before we use it. All materials are reviewed
-regularly and are removed when no longer relevant to our qualifications.
-
-•  You understand that this agreement may be terminated at any time through written request2.
-•  For further details about how we process your data please read WJEC's privacy notice.
-
-If you prefer that WJEC does not use your work in this way, please tick here:  ☐
-
-2 You must be over 13 to provide consent. You may withdraw your consent at any time by contacting WJEC on
-qualifications@wjec.co.uk.  Please include the title of the work, the year of assessment, centre name and number, candidate name
-and the unit title in the communication. The work will then be removed from the secure website.
-
-WJEC GCSE Art and Design Unit 2 – Externally set assignment
-
-© WJEC CBAC Ltd, 2024
-
-20
-
-Candidate Time Record Sheet
-
-(for centre  use for Unit 2 Part B)
-
-Centre No:
-
-  Centre Name:
-
-Candidate No:
-
-  Candidate Name:
-
-Unit Name:
-
-GCSE Art and Design, Unit 2 – Externally Set Assignment, Part B.
+| Centre No:                                                                        | Centre Name:    |  |  |  |
+|-----------------------------------------------------------------------------------|-----------------|--|--|--|
+| Candidate No:                                                                     | Candidate Name: |  |  |  |
+| Unit Name: GCSE Art and Design, Unit 2 – Externally Set Assignment, Part B. |  |  |  |  |
 
 The timed, supervised hours took place as follows:
 
-Tasks
+| Tasks | Dates          | Time            |
+|-------|----------------|-----------------|
+|  | DD MM YY | Hour Minutes |
+|       |                |                 |
+|       |                |                 |
+|       |                |                 |
+|       |                |                 |
+|       |                |                 |
+|       |                |                 |
+|       |                |                 |
+|       |                |                 |
+|       |                |                 |
+|       | Total          | (10 hours)      |
 
-Dates
+#### **End of Candidate Assessment Pack**
 
-Time
-
-DD
-
-MM
-
-YY
-
-Hour
-
-Minutes
-
-Total
-
-(10 hours)
-
-WJEC GCSE Art and Design Unit 2 – Externally set assignment
-
-© WJEC CBAC Ltd, 2024
-
-21
-
-End of Candidate Assessment Pack
-
-WJEC GCSE Art and Design Unit 2 – Externally set assignment
-
-© WJEC CBAC Ltd, 2024
-
-22
-
+![](_page_36_Picture_1.jpeg)
