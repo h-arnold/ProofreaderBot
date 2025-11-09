@@ -161,19 +161,19 @@ def build_parser() -> argparse.ArgumentParser:
         epilog="""
 Examples:
   # Start processing all subjects (or resume if previously interrupted)
-  python scripts/process_all_subjects.py
+  uv run python scripts/process_all_subjects.py
 
   # Use a different branch name
-  python scripts/process_all_subjects.py --branch myBranch
+  uv run python scripts/process_all_subjects.py --branch myBranch
 
   # Reset and start from scratch
-  python scripts/process_all_subjects.py --reset
+  uv run python scripts/process_all_subjects.py --reset
 
   # Dry run to see what would be processed
-  python scripts/process_all_subjects.py --dry-run
+  uv run python scripts/process_all_subjects.py --dry-run
 
   # Use markitdown converter instead of marker
-  python scripts/process_all_subjects.py --converter markitdown
+  uv run python scripts/process_all_subjects.py --converter markitdown
         """,
     )
     
