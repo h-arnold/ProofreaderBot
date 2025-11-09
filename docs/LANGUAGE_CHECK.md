@@ -108,7 +108,21 @@ The tool generates two reports:
 
 Both reports include:
 - Subject and filename
-- Line and column numbers
+- Page number (extracted from page markers in the format `{N}------------------------------------------------`)
 - Rule ID and issue type
 - Error message and suggestions
 - Context showing the error
+
+### Page Number Extraction
+
+The tool automatically extracts page numbers from documents that include page markers. These markers follow the format used in the converted Markdown documents:
+
+```markdown
+{0}------------------------------------------------
+Content on page 0...
+
+{1}------------------------------------------------
+Content on page 1...
+```
+
+When a language issue is detected, the tool determines which page it appears on by finding the most recent page marker before the issue's location in the document. If no page markers are found, the page number field will be empty in reports.

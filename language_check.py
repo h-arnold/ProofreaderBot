@@ -33,6 +33,7 @@ class LanguageIssue:
 	replacements: list[str]
 	context: str
 	highlighted_context: str
+	page_number: int | None = None
 
 
 @dataclass
@@ -142,7 +143,89 @@ def _format_suggestions(replacements: list[str] | None, max_suggestions: int = 3
 	return f"{visible} (+{remaining} more)"
 
 
-def _make_issue(match: object, filename: str) -> LanguageIssue:
+def _build_page_number_map(text: str) -> dict[int, int]:
+	"""Build a map from character position to page number.
+	
+	Scans the text for page markers in the format {N}------------------------------------------------
+	and creates a mapping where each character position maps to its page number.
+	
+	Args:
+		text: The document text to scan
+		
+	Returns:
+		A dictionary mapping character positions to page numbers
+	"""
+	import re
+	
+	# Find all page markers and their positions
+	page_pattern = re.compile(r'^\{(\d+)\}[-]+\s*$', re.MULTILINE)
+	page_markers: list[tuple[int, int]] = []  # (position, page_number)
+	
+	for match in page_pattern.finditer(text):
+		page_num = int(match.group(1))
+		position = match.start()
+		page_markers.append((position, page_num))
+	
+	# Sort by position to ensure correct ordering
+	page_markers.sort(key=lambda x: x[0])
+	
+	# Build position-to-page map
+	# Strategy: find which page each position belongs to by finding the last marker before it
+	position_to_page: dict[int, int] = {}
+	
+	if not page_markers:
+		# No page markers found
+		return position_to_page
+	
+	# Everything before the first marker is on the first page found (or implicitly page 0)
+	# Everything after a marker until the next marker is on that page
+	for i in range(len(text)):
+		# Find the last marker that comes before or at this position
+		current_page = None
+		for pos, page_num in page_markers:
+			if pos <= i:
+				current_page = page_num
+			else:
+				break
+		
+		if current_page is not None:
+			position_to_page[i] = current_page
+	
+	return position_to_page
+
+
+def _get_page_number_for_match(match: object, text: str, page_map: dict[int, int]) -> int | None:
+	"""Determine the page number for a language issue match.
+	
+	Args:
+		match: The LanguageTool match object
+		text: The full document text
+		page_map: Map from character position to page number
+		
+	Returns:
+		The page number where the match occurs, or None if not found
+	"""
+	# Try to get the offset of the match in the text
+	offset = getattr(match, "offset", None)
+	
+	if offset is None:
+		# Try to find the match using context
+		context = getattr(match, "context", "")
+		if context:
+			# Search for the context in the text to find the offset
+			context_pos = text.find(context)
+			if context_pos >= 0:
+				# Add the offset within the context
+				context_offset = int(getattr(match, "offsetInContext", 0))
+				offset = context_pos + context_offset
+	
+	if offset is not None and offset in page_map:
+		return page_map[offset]
+	
+	return None
+
+
+def _make_issue(match: object, filename: str, text: str = "", page_map: dict[int, int] | None = None) -> LanguageIssue:
 	rule_id = getattr(match, "ruleId", "UNKNOWN") or "UNKNOWN"
 	message = str(getattr(match, "message", "")).strip()
 	issue_type = getattr(match, "ruleIssueType", "unknown") or "unknown"
@@ -151,6 +234,12 @@ def _make_issue(match: object, filename: str) -> LanguageIssue:
 	context_offset = int(getattr(match, "offsetInContext", 0))
 	error_length = int(getattr(match, "errorLength", 0))
 	highlighted_context = _highlight_context(context, context_offset, error_length)
+	
+	# Determine page number
+	page_number = None
+	if page_map is not None and text:
+		page_number = _get_page_number_for_match(match, text, page_map)
+	
 	return LanguageIssue(
 		filename=filename,
 		rule_id=rule_id,
@@ -159,6 +248,7 @@ def _make_issue(match: object, filename: str) -> LanguageIssue:
 		replacements=replacements,
 		context=context,
 		highlighted_context=highlighted_context,
+		page_number=page_number,
 	)
 
 
@@ -180,6 +270,9 @@ def check_document(
 
 	text = document_path.read_text(encoding="utf-8")
 	filename = document_path.name
+	
+	# Build page number map from the document text
+	page_map = _build_page_number_map(text)
 	
 	# Merge ignored words with defaults.
 	# NOTE: matching is case-sensitive — we use the words as provided in the
@@ -241,7 +334,7 @@ def check_document(
 						continue
 		filtered_matches.append(match)
 	
-	issues = [_make_issue(match, filename) for match in filtered_matches]
+	issues = [_make_issue(match, filename, text, page_map) for match in filtered_matches]
 	return DocumentReport(subject=subject, path=document_path, issues=issues)
 
 
@@ -326,16 +419,17 @@ def build_report_markdown(reports: Iterable[DocumentReport]) -> str:
 
 		lines.append(f"Found {len(report.issues)} issue(s).")
 		lines.append("")
-		lines.append("| Filename | Rule | Type | Message | Suggestions | Context |")
-		lines.append("| --- | --- | --- | --- | --- | --- |")
+		lines.append("| Filename | Page | Rule | Type | Message | Suggestions | Context |")
+		lines.append("| --- | --- | --- | --- | --- | --- | --- |")
 		for issue in report.issues:
 			message = issue.message.replace("|", "\\|")
 			# Truncate suggestions to a small, readable number
 			suggestions = _format_suggestions(issue.replacements)
 			suggestions = suggestions.replace("|", "\\|")
 			context = issue.highlighted_context.replace("|", "\\|") if issue.highlighted_context else "—"
+			page_num = str(issue.page_number) if issue.page_number is not None else "—"
 			lines.append(
-				f"| {issue.filename} | `{issue.rule_id}` | {issue.issue_type} | {message} | {suggestions} | {context} |"
+				f"| {issue.filename} | {page_num} | `{issue.rule_id}` | {issue.issue_type} | {message} | {suggestions} | {context} |"
 			)
 
 	return "\n".join(lines)
@@ -354,6 +448,7 @@ def build_report_csv(reports: Iterable[DocumentReport]) -> list[list[str]]:
 	rows.append([
 		"Subject",
 		"Filename",
+		"Page",
 		"Rule ID",
 		"Type",
 		"Message",
@@ -377,10 +472,12 @@ def build_report_csv(reports: Iterable[DocumentReport]) -> list[list[str]]:
 			# For CSV output prefer the raw context (unhighlighted) so the
 			# field contains the original snippet as seen in the document.
 			context = issue.context if issue.context else ""
+			page_num = str(issue.page_number) if issue.page_number is not None else ""
 			
 			rows.append([
 				report.subject,
 				issue.filename,
+				page_num,
 				issue.rule_id,
 				issue.issue_type,
 				issue.message,

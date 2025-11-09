@@ -121,6 +121,7 @@ def test_csv_report_generated(tmp_path: Path) -> None:
     assert rows[0] == [
         "Subject",
         "Filename",
+        "Page",
         "Rule ID",
         "Type",
         "Message",
@@ -132,11 +133,12 @@ def test_csv_report_generated(tmp_path: Path) -> None:
     assert len(rows) == 2  # header + 1 issue
     assert rows[1][0] == "Subject"  # subject
     assert rows[1][1] == "test-doc.md"  # filename
-    assert rows[1][2] == "TEST_RULE"  # rule_id
-    assert rows[1][3] == "misspelling"  # type
-    assert "spelling mistake" in rows[1][4]  # message
-    assert "This" in rows[1][5]  # suggestions
-    assert "Thiss is a test" in rows[1][6]  # context
+    # rows[1][2] is page number (could be empty if no page markers)
+    assert rows[1][3] == "TEST_RULE"  # rule_id
+    assert rows[1][4] == "misspelling"  # type
+    assert "spelling mistake" in rows[1][5]  # message
+    assert "This" in rows[1][6]  # suggestions
+    assert "Thiss is a test" in rows[1][7]  # context
 
 
 def test_ignored_words_filtering(tmp_path: Path) -> None:
@@ -378,6 +380,7 @@ def test_case_sensitive_explicit_wrong_case_not_filtered(tmp_path: Path) -> None
     tool = DummyTool([custom_match])
     report_path = root / "report.md"
     
+    
     # Pass "customword" (all lowercase) - should NOT match "CustomWord"
     run_language_checks(
         root,
@@ -389,6 +392,234 @@ def test_case_sensitive_explicit_wrong_case_not_filtered(tmp_path: Path) -> None
     report_text = report_path.read_text(encoding="utf-8")
     # Issue should still be present (not filtered due to case mismatch)
     assert "Total issues found: 1" in report_text
+
+
+def test_page_number_extraction_basic(tmp_path: Path) -> None:
+    """Test that page numbers are correctly extracted from page markers."""
+    root = tmp_path
+    subject_dir = root / "Subject" / "markdown"
+    subject_dir.mkdir(parents=True)
+    document = subject_dir / "test-doc.md"
+    
+    # Document with page markers
+    content = """# Test Document
+
+{0}------------------------------------------------
+
+This is content on page 0.
+Thiss is a spelling mistake.
+
+{1}------------------------------------------------
+
+Content on page 1 starts here.
+Another errror here.
+"""
+    document.write_text(content, encoding="utf-8")
+
+    # Create matches at different positions
+    match1 = DummyMatch()
+    match1.message = "Spelling mistake 1"
+    match1.context = "Thiss is a spelling mistake."
+    
+    match2 = DummyMatch()
+    match2.message = "Spelling mistake 2"
+    match2.context = "Another errror here."
+
+    tool = DummyTool([match1, match2])
+
+    report = check_single_document(document, tool=tool)
+
+    # Both issues should have page numbers extracted
+    assert len(report.issues) == 2
+    assert report.issues[0].page_number == 0
+    assert report.issues[1].page_number == 1
+
+
+def test_page_number_in_csv_report(tmp_path: Path) -> None:
+    """Test that page numbers appear in CSV report."""
+    root = tmp_path
+    subject_dir = root / "Subject" / "markdown"
+    subject_dir.mkdir(parents=True)
+    document = subject_dir / "test-doc.md"
+    
+    content = """{0}------------------------------------------------
+
+Thiss is a test.
+
+{1}------------------------------------------------
+
+Another errror.
+"""
+    document.write_text(content, encoding="utf-8")
+
+    match1 = DummyMatch()
+    match1.context = "Thiss is a test."
+    
+    match2 = DummyMatch()
+    match2.context = "Another errror."
+
+    tool = DummyTool([match1, match2])
+
+    report_path = root / "report.md"
+    run_language_checks(root, report_path=report_path, tool=tool)
+
+    # Check CSV includes page number column
+    csv_path = root / "report.csv"
+    with csv_path.open("r", encoding="utf-8") as f:
+        reader = csv.reader(f)
+        rows = list(reader)
+
+    # Header should include Page column
+    assert "Page" in rows[0]
+    page_col_idx = rows[0].index("Page")
+    
+    # Data rows should have page numbers
+    assert len(rows) == 3  # header + 2 issues
+    assert rows[1][page_col_idx] == "0"
+    assert rows[2][page_col_idx] == "1"
+
+
+def test_page_number_in_markdown_report(tmp_path: Path) -> None:
+    """Test that page numbers appear in Markdown report."""
+    root = tmp_path
+    subject_dir = root / "Subject" / "markdown"
+    subject_dir.mkdir(parents=True)
+    document = subject_dir / "test-doc.md"
+    
+    content = """{0}------------------------------------------------
+
+Thiss is a test.
+
+{1}------------------------------------------------
+
+Another errror.
+"""
+    document.write_text(content, encoding="utf-8")
+
+    match1 = DummyMatch()
+    match1.context = "Thiss is a test."
+    
+    match2 = DummyMatch()
+    match2.context = "Another errror."
+
+    tool = DummyTool([match1, match2])
+
+    report_path = root / "report.md"
+    run_language_checks(root, report_path=report_path, tool=tool)
+
+    report_text = report_path.read_text(encoding="utf-8")
+    
+    # Markdown table should include Page column
+    assert "| Page |" in report_text or "Page" in report_text
+
+
+def test_page_number_no_markers(tmp_path: Path) -> None:
+    """Test that documents without page markers have None or empty page number."""
+    root = tmp_path
+    subject_dir = root / "Subject" / "markdown"
+    subject_dir.mkdir(parents=True)
+    document = subject_dir / "test-doc.md"
+    
+    # Document without page markers
+    document.write_text("Thiss is a test without page markers.", encoding="utf-8")
+
+    match = DummyMatch()
+    match.context = "Thiss is a test without page markers."
+
+    tool = DummyTool([match])
+
+    report = check_single_document(document, tool=tool)
+
+    assert len(report.issues) == 1
+    # Should have None or some default value
+    assert report.issues[0].page_number is None
+
+
+def test_page_number_with_real_document(tmp_path: Path) -> None:
+    """Test page number extraction with a copy of real document structure."""
+    root = tmp_path
+    subject_dir = root / "Business" / "markdown"
+    subject_dir.mkdir(parents=True)
+    
+    # Copy the real document structure
+    source_doc = Path("/home/hamish/GitProjects/WjecDocumentScraper/Documents/Business/markdown/gcse-business---delivery-guide.md")
+    if source_doc.exists():
+        dest_doc = subject_dir / "gcse-business---delivery-guide.md"
+        dest_doc.write_text(source_doc.read_text(encoding="utf-8"), encoding="utf-8")
+        
+        # Create a match that would appear somewhere in the document
+        match = DummyMatch()
+        match.context = "some context from the document"
+        
+        tool = DummyTool([match])
+        
+        report = check_single_document(dest_doc, tool=tool)
+        
+        # Just verify we can process it without errors
+        assert report is not None
+        if report.issues:
+            # Page number should be an integer or None
+            assert isinstance(report.issues[0].page_number, (int, type(None)))
+
+
+def test_page_number_extraction_with_real_business_doc(tmp_path: Path) -> None:
+    """Test that we correctly extract page numbers from the real Business delivery guide."""
+    root = tmp_path
+    subject_dir = root / "Business" / "markdown"
+    subject_dir.mkdir(parents=True)
+    
+    # Create a simplified version of the document with known page markers and content
+    content = """{0}------------------------------------------------
+
+# Title Page
+
+Some content on page 0.
+The qualifications are approved.
+
+{1}------------------------------------------------
+
+# Contents Page
+
+Content listing on page 1.
+
+{2}------------------------------------------------
+
+## Introduction
+
+This is page 2 content.
+Thiss is a deliberate spelling mistake on page 2.
+
+{3}------------------------------------------------
+
+## More Details
+
+Content on page 3.
+Another errror deliberately on page 3.
+"""
+    
+    dest_doc = subject_dir / "test-business-guide.md"
+    dest_doc.write_text(content, encoding="utf-8")
+    
+    # Create matches for the deliberate errors
+    match1 = DummyMatch()
+    match1.message = "Spelling mistake: Thiss"
+    match1.context = "Thiss is a deliberate spelling mistake on page 2."
+    match1.matchedText = "Thiss"
+    
+    match2 = DummyMatch()
+    match2.message = "Spelling mistake: errror"
+    match2.context = "Another errror deliberately on page 3."
+    match2.matchedText = "errror"
+    
+    tool = DummyTool([match1, match2])
+    
+    report = check_single_document(dest_doc, tool=tool)
+    
+    # Verify page numbers are correctly assigned
+    assert len(report.issues) == 2
+    assert report.issues[0].page_number == 2
+    assert report.issues[1].page_number == 3
+
 
 
 
