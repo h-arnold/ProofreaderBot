@@ -244,7 +244,7 @@ def test_extract_pages_text_all() -> None:
     assert all(page in result for page in [0, 1, 2])
     
     for page_num in [0, 1, 2]:
-        assert f"{{" + f"{page_num}" + "}" in result[page_num]
+        assert f"{{{page_num}}}" in result[page_num]
         assert f"This is page {page_num}" in result[page_num]
 
 
