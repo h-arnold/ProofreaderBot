@@ -113,6 +113,39 @@ Keep function names, parameter orders, and behaviors stable unless you update al
   - Must call `reporter(label, destination, url)` when provided.
   - Must not crash on individual network/IO errors; continue with other files.
 
+### Page utilities (`page_utils.py`)
+
+Functions for working with page markers in Markdown documents. Page markers follow the format `{N}------------------------------------------------`.
+
+- `find_page_markers(text: str) -> list[PageMarker]`
+  - Returns all page markers sorted by position in text.
+  - `PageMarker` is a dataclass with `page_number: int` and `position: int`.
+
+- `build_page_number_map(text: str) -> dict[int, int]`
+  - Creates a mapping from character position to page number.
+  - Used by `language_check.py` to determine which page an issue occurs on.
+  - Returns empty dict if no page markers found.
+
+- `get_page_number_at_position(position: int, page_map: dict[int, int]) -> int | None`
+  - Helper to get page number at a specific character position.
+
+- `extract_page_text(text: str, page_number: int | None = None, start_page: int | None = None, end_page: int | None = None) -> str`
+  - Extracts text from a single page or range of pages.
+  - Extracted text includes the page markers.
+  - Returns empty string if requested pages not found.
+  - Either `page_number` or both `start_page` and `end_page` must be specified.
+
+- `extract_pages_text(text: str, page_numbers: Iterable[int]) -> dict[int, str]`
+  - Extracts multiple non-consecutive pages.
+  - Returns dict mapping page numbers to their text.
+  - Pages not found are omitted from result.
+
+**Invariants:**
+- Page markers are always included in extracted text to maintain context.
+- Page numbers can be non-sequential in the document.
+- Positions before the first marker have no page number (return None).
+- Functions are defensive: invalid page numbers return empty string/None rather than raising.
+
 ## Parsing rules and edge cases
 
 - Key-documents endpoint: Some subjects expose PDFs only via this endpoint; the scraper should attempt to fetch it and proceed if unavailable.
@@ -145,8 +178,9 @@ Keep function names, parameter orders, and behaviors stable unless you update al
 
 ## When to update this document
 
-- You add/remove public functions in `wjec_scraper.py`.
+- You add/remove public functions in `wjec_scraper.py` or `page_utils.py`.
 - You change filename or directory normalization.
 - You modify how subjects are configured or matched.
 - You change link-discovery strategies or title selection rules.
 - You alter the post-processing pipeline (new steps, different outputs, CLI behavior changes).
+- You modify page marker format or page extraction logic.

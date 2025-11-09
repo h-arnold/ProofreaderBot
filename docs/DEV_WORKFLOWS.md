@@ -47,6 +47,45 @@ react_links = list(iter_pdf_from_react_props(html))
 filename = sanitise_filename("Sample PDF", "https://example.com/sample.pdf", set())
 ```
 
+## Working with Page Utilities
+
+The `page_utils` module provides utilities for working with page markers in Markdown documents. Page markers follow the format `{N}------------------------------------------------`.
+
+Example usage:
+```python
+from page_utils import (
+    find_page_markers,
+    build_page_number_map,
+    extract_page_text,
+    extract_pages_text,
+)
+from pathlib import Path
+
+# Load a document
+doc = Path("Documents/Business/markdown/gcse-business---guidance-for-teaching-unit-1.md")
+text = doc.read_text()
+
+# Find all page markers
+markers = find_page_markers(text)
+print(f"Found {len(markers)} pages")
+
+# Extract a single page
+page_3 = extract_page_text(text, page_number=3)
+
+# Extract a range of pages
+pages_0_to_2 = extract_page_text(text, start_page=0, end_page=2)
+
+# Extract multiple non-consecutive pages
+pages = extract_pages_text(text, [0, 5, 10])
+for page_num, page_text in pages.items():
+    print(f"Page {page_num}: {len(page_text)} characters")
+
+# Build a position-to-page map (used by language_check.py)
+page_map = build_page_number_map(text)
+position = text.find("some text")
+page_num = page_map.get(position)
+```
+
 ## Minimal Test Scaffold
 
 We use pytest. Add it first if missing:

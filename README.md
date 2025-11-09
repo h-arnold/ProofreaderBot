@@ -105,6 +105,41 @@ uv run python scripts/process_all_subjects.py --root ./MyDocuments --state-file 
 
 The script discovers all subject directories in the Documents folder, processes each one using `main.py --post-process-only`, and commits the changes to a dedicated branch. If interrupted (e.g., server restart), simply run the script again to continue from where it left off.
 
+## Page utilities
+
+The `page_utils.py` module provides utilities for working with page markers in Markdown documents. After post-processing, Markdown files contain page markers in the format `{N}------------------------------------------------` where N is the page number.
+
+Key functions:
+
+- `find_page_markers(text)` - Find all page markers in a document
+- `build_page_number_map(text)` - Create a position-to-page-number mapping (used by language checking)
+- `extract_page_text(text, page_number=N)` - Extract text from a specific page
+- `extract_page_text(text, start_page=N, end_page=M)` - Extract a range of pages
+- `extract_pages_text(text, [N, M, ...])` - Extract multiple non-consecutive pages
+
+Example:
+
+```python
+from page_utils import extract_page_text, find_page_markers
+from pathlib import Path
+
+# Load a document
+doc = Path("Documents/Business/markdown/gcse-business---guidance-for-teaching-unit-1.md")
+text = doc.read_text()
+
+# Find all pages
+markers = find_page_markers(text)
+print(f"Document has {len(markers)} pages")
+
+# Extract a specific page (includes the page marker)
+page_3 = extract_page_text(text, page_number=3)
+
+# Extract a range of pages
+pages_0_to_2 = extract_page_text(text, start_page=0, end_page=2)
+```
+
+The extracted text includes the page markers themselves to maintain context. See `tests/test_page_utils.py` for comprehensive examples.
+
 ## Gemini LLM helper
 
 The `GeminiLLM` helper in `gemini_llm.py` wraps the Google GenAI SDK so you can reuse system prompts stored in Markdown files when calling the Gemini API.
