@@ -14,7 +14,11 @@ DEFAULT_DISABLED_RULES = {
     "HYPHEN_TO_EN",
     "COMMA_PARENTHESIS_WHITESPACE",
     "PROBLEM_SOLVE_HYPHEN",
-    "UP_TO_DATE_HYPHEN"
+    "UP_TO_DATE_HYPHEN",
+    "PHRASE_REPETITION",
+    "IN_A_X_MANNER",
+
+
 }
 
 # Default words to ignore (case-sensitive; can be extended via command-line)
@@ -121,6 +125,31 @@ ADDITIONAL_IGNORED = {
     # Vendor / product names
     "kitronik",
     "Kitronik",
+
+    # Place names, people and tokens seen in language-check reports
+    # (added as case-sensitive entries to avoid masking real errors)
+    "Machynlleth",
+    "Hwb",
+    "Cynon",
+    "Piech",
+    "Bracewell",
+    "Heatherwick",
+    "Kéré",
+    "Tregwynt",
+    "Melin",
+    "Haf",
+    "Weighton",
+    "Blant",
+    "Byd",
+    "Fairey",
+    "Hickman",
+    "Delita",
+    "Rego",
+    "Ekta",
+    "Kaul",
+    "Adfer",
+    "Felin",
+    "Fons",
 }
 
 # Merge the additional set into the main default set
