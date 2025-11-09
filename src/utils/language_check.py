@@ -12,7 +12,7 @@ import csv
 import logging
 from dataclasses import dataclass
 from pathlib import Path
-from typing import Iterable, Optional
+from typing import Any, Iterable, Optional
 
 import language_tool_python
 
@@ -73,25 +73,35 @@ def build_language_tool(
 
 	try:
 		tool = language_tool_python.LanguageTool(language)
-	except language_tool_python.JavaError:
+	except Exception:
+		# Fallback when a local Java runtime isn't available or other errors occur
 		LOGGER.warning("Falling back to LanguageTool public API for %s", language)
 		tool = language_tool_python.LanguageToolPublicAPI(language)
 	
 	# Disable specified rules
 	if rules_to_disable:
-		tool.disabled_rules = list(rules_to_disable)
+		# LanguageTool implementations commonly expect a set for disabled_rules
+		try:
+			tool.disabled_rules = set(rules_to_disable)
+		except Exception:
+			tool.disabled_rules = set(rules_to_disable)
 		LOGGER.info("Disabled rules: %s", ", ".join(sorted(rules_to_disable)))
 	
 	# Add words to ignore list
 	if words_to_ignore:
-		# Convert to list and add to tool's ignore list
-		# Note: Some versions use addIgnoreTokens, others might not support it
-		# We'll filter these in post-processing if the API doesn't support it
+		# Try to update an internal ignore set if present, otherwise try a
+		# public method (addIgnoreTokens) or fall back to post-processing.
 		try:
-			if hasattr(tool, "_ignore_words"):
-				tool._ignore_words.update(words_to_ignore)
+			_internal = getattr(tool, "_ignore_words", None)
+			if _internal is not None and hasattr(_internal, "update"):
+				_internal.update(words_to_ignore)
+			elif hasattr(tool, "addIgnoreTokens"):
+				try:
+					tool.addIgnoreTokens(list(words_to_ignore))
+				except Exception:
+					pass
 			LOGGER.info("Ignoring words: %s", ", ".join(sorted(words_to_ignore)))
-		except AttributeError:
+		except Exception:
 			LOGGER.info("Will filter ignored words in post-processing: %s", ", ".join(sorted(words_to_ignore)))
 	
 	return tool
