@@ -1,3 +1,7 @@
+
+
+{0}------------------------------------------------
+
 ![](_page_0_Picture_0.jpeg)
 
 ![](_page_0_Picture_1.jpeg)
@@ -16,35 +20,41 @@ Ready for the world. This Qualifications Wales regulated qualification is not av
 
 Made for Wales.
 
+{1}------------------------------------------------
+
 ![](_page_1_Picture_0.jpeg)
+
+{2}------------------------------------------------
 
 ## Contents
 
-| Aims of the Delivery Guide                    | 1  |
+| Aims of the Delivery Guide                    | .1 |
 |-----------------------------------------------|----|
-| Qualification Structure                       | 1  |
+| Qualification Structure                       | .1 |
 | Unit 1                                        | 1  |
 | Unit 2                                        | 2  |
 | Unit 3                                        | 3  |
 | Unit 4                                        | 4  |
-| Summary of assessment                         | 5  |
-| Assessment Objectives                         | 6  |
+| Summary of assessment                         | .5 |
+| Assessment Objectives                         | .6 |
 | Unit 1                                        | 6  |
 | Unit 2                                        | 6  |
 | Unit 3                                        | 6  |
 | Unit 4                                        | 6  |
-| Specification and Assessment Pack             | 7  |
+| Specification and Assessment Pack             | .7 |
 | Understanding the specification amplification | 7  |
 | Specification Stems                           | 7  |
 | Command words                                 | 8  |
 | Mark Schemes                                  | 13 |
 | Important Dates                               | 15 |
 
-# <span id="page-3-0"></span>Aims of the Delivery Guide
+{3}------------------------------------------------
+
+## <span id="page-3-0"></span>Aims of the Delivery Guide
 
 The aim of the Delivery Guide is to give an overview of the qualification and to help teachers understand how we assess the GCSE. It will offer an introduction to the specification, an assessment overview, and will support teachers in better understanding how to prepare their learners for the assessment of the different units. More information on each unit can be found in the separate unit guides.
 
-#### <span id="page-3-1"></span>Qualification Structure
+# <span id="page-3-1"></span>Qualification Structure
 
 #### WJEC GCSE Business consists of 4 units:
 
@@ -75,6 +85,8 @@ The unit will be based on the following concepts:
 - innovation
 - opportunities and challenges
 - sustainability.
+
+{4}------------------------------------------------
 
 #### <span id="page-4-0"></span>Unit 2
 
@@ -115,6 +127,8 @@ This assessment contributes to 15% of the overall qualification grade and will t
 
 This unit will be assessed through an externally set assignment and will be set and marked by WJEC. Assessments must be submitted digitally (they may be hand written and scanned, or completed digitally).
 
+{5}------------------------------------------------
+
 #### <span id="page-5-0"></span>Unit 3
 
 The purpose of this unit is to:
@@ -144,6 +158,8 @@ The unit will be based on the following concepts:
 - innovation
 - opportunities and challenges
 - sustainability.
+
+{6}------------------------------------------------
 
 #### <span id="page-6-0"></span>Unit 4
 
@@ -186,6 +202,8 @@ The assignment, which will include a brief and several tasks, will be issued to 
 This assessment contributes to 25% of the overall qualification grade and will take 8 hours to complete. The assignment could be completed in one sitting, or in multiple, shorter sessions. The assignment will be marked out of a total of 60 marks.
 
 This unit will be assessed through an externally set assignment and will be marked by the centre and moderated by WJEC. Assessments must be submitted digitally (they may be hand written and scanned, or completed digitally).
+
+{7}------------------------------------------------
 
 # <span id="page-7-0"></span>Summary of assessment
 
@@ -232,6 +250,8 @@ Non-examination assessment: 8 hours
 **60 marks**
 
 Set by WJEC, marked by the Centre and moderated by WJEC. The assignment, which will include a brief and several tasks, will be available via the WJEC Portal, and will remain the same for the lifetime of the specification.
+
+{8}------------------------------------------------
 
 # <span id="page-8-0"></span>Assessment Objectives
 
@@ -287,6 +307,8 @@ The distribution of the assessment objectives for this unit is:
 |-----|-----|-----|-----|-------|
 | -   | 5%  | 5%  | 15% | 25%   |
 
+{9}------------------------------------------------
+
 # <span id="page-9-0"></span>Specification and Assessment Pack
 
 When we develop new qualifications, we produce the following documents:
@@ -296,7 +318,7 @@ When we develop new qualifications, we produce the following documents:
 
 This guide builds upon the information in the specification and assessment pack to help further your understanding of said documents.
 
-## <span id="page-9-1"></span>Understanding the specification amplification
+#### <span id="page-9-1"></span>Understanding the specification amplification
 
 Learners should be made aware of:
 
@@ -307,7 +329,7 @@ Learners should be made aware of:
 
 When you look through the specification you will notice in the amplification column, we use a variety of wording before the list of content learners need to know; we call this a stem:
 
-![](_page_9_Picture_12.jpeg)
+![](_page_9_Figure_12.jpeg)
 
 Each stem is used for a slightly different reason:
 
@@ -317,6 +339,8 @@ Each stem is used for a slightly different reason:
 | Learners should know | When learners are required to demonstrate basic knowledge and understanding. |
 | Learners should understand | When learners are required to demonstrate greater depth of knowledge and understanding, application of knowledge to familiar or unfamiliar contexts and analysis and evaluation of information for a given purpose. |
 | Learners should be able to | When learners need to apply their knowledge and understanding to a practical situation or demonstrate application of practical skills and techniques. |
+
+{10}------------------------------------------------
 
 #### <span id="page-10-0"></span>Command words
 
@@ -350,6 +374,8 @@ The following tables are not exhaustive, but will give you a good idea of the co
 | Outline                           | Set out the main characteristics.                                                                                                                                                                                 |  |
 | Place                             | Put in a particular position.                                                                                                                                                                                     |  |
 
+{11}------------------------------------------------
+
 | Sort/ Order | Arrange systematically. |
 |-------------|-------------------------|
 | State       | Express in clear terms. |
@@ -379,6 +405,8 @@ The following tables are not exhaustive, but will give you a good idea of the co
 | Explain | Give reasons or causes. Show an understanding of how or why something has occurred. |  |
 | Explore                                                | Investigate without preconceptions about the outcome.                                                           |  |
 | Express | Use given information to rewrite a number or an expression in a specified form. |  |
+
+{12}------------------------------------------------
 
 | Illustrate/Show | Use a diagram or words to make clear how a concept or theory works in a particular context. Present clarifying examples. Refer to a case study or example. |
 |----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -411,6 +439,8 @@ The following tables are not exhaustive, but will give you a good idea of the co
 | Use                  | Apply the information provided to a particular theory or concept.                                                                                                   |
 |                      |                                                                                                                                                                     |
 
+{13}------------------------------------------------
+
 |       | Employ, take or hold something for a purpose.       |
 |-------|-----------------------------------------------------|
 | Write | Formulate and write down (for example an algorithm) |
@@ -440,6 +470,8 @@ The following tables are not exhaustive, but will give you a good idea of the co
 | Reflect                                    | To consider thoughts, experiences, situation or issue.                                                                                                                                                      |  |  |  |
 | Review | To consider something with the intention making changes if necessary. |  |  |  |
 
+{14}------------------------------------------------
+
 <span id="page-14-0"></span>
 
 | Solve | Obtain the answer(s) using a relevant or specified mathematical method. |
@@ -447,6 +479,8 @@ The following tables are not exhaustive, but will give you a good idea of the co
 | Suggest    | State a possible reason or course of action.                               |
 | Support    | To maintain or advocate.                                                   |
 | Synthesise | Combine information, objects or ideas.                                     |
+
+{15}------------------------------------------------
 
 # Mark Schemes
 
@@ -456,21 +490,22 @@ Mark schemes and/or assessment criteria test the intended learning outcomes for 
 
 For very short answer questions requiring one correct response.
 
-|  | Question |  | Answer | AO1 | AO2 | AO3 | Total Mark |
-|----|----------|-------------------------------------------------------------------------------|------------------------|-----|-----|-----|---------------|
-| 1. |  | Identify which one of the following is a secondary market research method. |  |  |  |  |  |
-|  |  |  | Award one mark for: |  |  |  | 1 |
-|    |          |                                                                               | Sales information.     |     |     |     |               |
+| Question |  | Answer | AO1 | AO2 | AO3 | Total Mark |  |
+|----------|-------------------------------------------------------------------------------|--------------------|-----|-----|-----|---------------|--|
+| 1. | Identify which one of the following is a secondary market research method. |  |  |  |  |  |  |
+|  | Award one mark for: |  | 1 |  |  | 1 |  |
+|          |                                                                               | Sales information. |     |     |     |               |  |
 
 #### **Points based mark scheme**
 
 For short answer questions with a range of possible responses
 
-|  | Answer | AO1 | AO2 | AO3 | Total Mark |  |  |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------|-----|-----|-------------------------------------------------------------------------|--|--|
-| Kyle is planning to start a new window cleaning business in his local area. He has identified the following items that he needs to buy to start his business: <ul><li>buckets</li><li>cleaning supplies</li><li>ladder</li><li>marketing material</li><li>van. Kyle has no savings so he will need to use external sources of finance.</li></ul> |  |  |  |  |  |  |  |
-|  | start his business. Award one mark for each external source of finance, up to a maximum of two marks: <ul><li>bank loans</li><li>government grants</li><li>leasing/hire purchase</li><li>new investors</li><li>overdraft</li><li>share issue</li><li>trade credit.</li></ul> | 2 |  |  | 2 |  |  |
-|  | Question (a) | Identify two Credit any other valid response. |  |  | external sources of finance Kyle could use to buy the items he needs to |  |  |
+| Question |  | Answer | AO1 | AO2 | AO3 | Total Mark |  |  |  |
+|----------|------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----|-----|-----|---------------|--|--|--|
+| 3. | <ul><li>(a)</li></ul> | Kyle is planning to start a new window cleaning business in his local area. He has identified the following items that he needs to buy to start his business: buckets cleaning supplies ladder marketing material van. Kyle has no savings so he will need to use external sources of finance. Identify two external sources of finance Kyle could use to buy the items he needs to |  |  |  |  |  |  |  |
+|  |  | start his business. Award one mark for each external source of finance, up to a maximum of two marks: <ul><li>bank loans</li><li>government grants</li><li>leasing/hire purchase</li><li>new investors</li><li>overdraft</li><li>share issue</li><li>trade credit. Credit any other valid response.</li></ul> | 2 |  |  | 2 |  |  |  |
+
+{16}------------------------------------------------
 
 #### **Levels based mark schemes**
 
@@ -483,6 +518,8 @@ For questions requiring extended responses
 | Marks available                                                                                                                                                                                                                                                                                     |                                                                                                                                                                                                                                                                                         |                                                                                                                                                                                                                                                                                             |                                                                                                                                                                                                                                                                                      |                                                                                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                                                    |  |
 | 1                                                                                                                                                                                                                                                                                                   | 2                                                                                                                                                                                                                                                                                       | 3                                                                                                                                                                                                                                                                                           | 4                                                                                                                                                                                                                                                                                    | 5                                                                                                                                                                                                                                                                                | 6                                                                                                                                                                                                                                                                                  |  |
 | Minimal evaluation of the potential success of the entrepreneurial proposal using Elkington's triple bottom line. Points are one-sided. Partial coverage of one or more elements of Elkington's triple bottom line model are considered but lack context. | Limited evaluation of the potential success of the entrepreneurial proposal using Elkington's triple bottom line. Points may be one-sided. At least two elements of Elkington's triple bottom line model are considered but may lack context. | Some evaluation of the potential success of the entrepreneurial proposal, using Elkington's triple bottom line. Points may be one-sided. At least two elements of Elkington's triple bottom line model are considered and most are in context. | Detailed evaluation of the potential success of the entrepreneurial proposal using Elkington's triple bottom line. Points may be one-sided. All elements of Elkington's triple bottom line model are considered and mostly are in context. | Effective and detailed evaluation of the potential success of the entrepreneurial proposal, using Elkington's triple bottom line, which may lack balance. All elements of Elkington's triple bottom line model are considered in context. | Highly effective, balanced and highly detailed evaluation of the potential success of the entrepreneurial proposal using Elkington's triple bottom line. All elements of Elkington's triple bottom line model are fully considered in context. |  |
+
+{17}------------------------------------------------
 
 # <span id="page-17-0"></span>Important Dates
 
