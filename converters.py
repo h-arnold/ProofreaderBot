@@ -201,7 +201,12 @@ class MarkerConverter(PdfToMarkdownConverter):
         from marker.models import create_model_dict
 
         self._model_dict = create_model_dict()
-        self._converter = PdfConverter(artifact_dict=self._model_dict)
+        # Enable page markers so output matches marker CLI --paginate flag.
+        self._config: dict[str, Any] = {"paginate_output": True}
+        self._converter = PdfConverter(
+            artifact_dict=self._model_dict,
+            config=self._config,
+        )
 
     def convert(self, pdf_path: Path) -> ConversionResult:
         """Convert a PDF using marker."""
@@ -214,7 +219,7 @@ class MarkerConverter(PdfToMarkdownConverter):
             # Fallback for older versions that require an explicit renderer
             from marker.renderers.markdown import MarkdownRenderer
 
-            renderer = MarkdownRenderer()
+            renderer = MarkdownRenderer(config=self._config)
             markdown_output = renderer(rendered)
 
         markdown_text = getattr(markdown_output, "markdown", None)

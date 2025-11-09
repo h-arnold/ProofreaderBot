@@ -115,13 +115,17 @@ def test_marker_converter_handles_markdown_output(monkeypatch, tmp_path: Path) -
             self.metadata = {"source": "test"}
 
     class DummyPdfConverter:
-        def __init__(self, artifact_dict):
+        def __init__(self, artifact_dict, config=None):
             assert artifact_dict == {"fake": True}
+            assert config == {"paginate_output": True}
 
         def __call__(self, path: str):
             return DummyMarkdownOutput()
 
     class FailingRenderer:
+        def __init__(self, config=None):
+            assert config == {"paginate_output": True}
+
         def __call__(self, document):  # pragma: no cover - guard
             raise AssertionError("MarkdownRenderer should not be used")
 
@@ -152,8 +156,9 @@ def test_marker_converter_falls_back_to_renderer(monkeypatch, tmp_path: Path) ->
     dummy_document = SimpleNamespace(name="doc")
 
     class DummyPdfConverter:
-        def __init__(self, artifact_dict):
+        def __init__(self, artifact_dict, config=None):
             assert artifact_dict == {"fake": True}
+            assert config == {"paginate_output": True}
 
         def __call__(self, path: str):
             return dummy_document
@@ -165,6 +170,9 @@ def test_marker_converter_falls_back_to_renderer(monkeypatch, tmp_path: Path) ->
             self.metadata = {"renderer": "used"}
 
     class CapturingRenderer:
+        def __init__(self, config=None):
+            assert config == {"paginate_output": True}
+
         def __call__(self, document):
             assert document is dummy_document
             return DummyMarkdownOutput()
