@@ -20,7 +20,7 @@ from pathlib import Path
 from typing import Iterable
 
 
-DEFAULT_EXCLUDES = {"art-and-design", "integrated-science-single-award"}
+DEFAULT_EXCLUDES = {"Art-and-Design", "Integrated-Science-Single-Award", "Business"}
 
 
 def find_subject_directories(root: Path) -> list[Path]:
@@ -29,8 +29,9 @@ def find_subject_directories(root: Path) -> list[Path]:
 
 def choose_subjects(root: Path, excludes: Iterable[str]) -> list[str]:
     all_dirs = [p for p in find_subject_directories(root)]
-    exclude_lower = {e.lower() for e in excludes}
-    return sorted(p.name for p in all_dirs if p.name.lower() not in exclude_lower)
+    # Compare directory names using exact case to match the folder names in Documents/.
+    exclude_set = set(excludes)
+    return sorted(p.name for p in all_dirs if p.name not in exclude_set)
 
 
 def build_parser() -> argparse.ArgumentParser:
