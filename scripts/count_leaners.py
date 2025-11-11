@@ -102,6 +102,10 @@ def main():
     # Count occurrences
     total_count = 0
     for file_path in files:
+        # Only count files in the Documents folder
+        if not file_path.startswith('Documents/'):
+            continue
+        
         # Skip badges directory
         if file_path.startswith('badges/'):
             continue
