@@ -271,7 +271,9 @@ def process_pdf_file(
             return False
     
     except Exception as exc:
+        import traceback
         print(f"\nException while processing PDF '{pdf_file}': {exc}", file=sys.stderr)
+        print(f"Stack trace:\n{traceback.format_exc()}", file=sys.stderr)
         return False
 
 
@@ -297,11 +299,15 @@ def process_subject(
             proc = subprocess.Popen(cmd, cwd=cwd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
 
             if proc.stdout is not None:
-                for _line in proc.stdout:
-                    pass
+                for line in proc.stdout:
+                    print(line, end='')
 
-            return getattr(proc, "returncode", None) == 0
-        except Exception:
+            proc.wait()
+            return proc.returncode == 0
+        except Exception as exc:
+            import traceback
+            print(f"\nException while processing subject '{subject}' via subprocess: {exc}", file=sys.stderr)
+            print(f"Stack trace:\n{traceback.format_exc()}", file=sys.stderr)
             return False
 
     # Fallback: process PDFs directly for the subject directory. This mirrors
