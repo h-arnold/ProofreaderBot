@@ -18,6 +18,7 @@ import language_tool_python
 
 from .language_check_config import DEFAULT_DISABLED_RULES, DEFAULT_IGNORED_WORDS
 from .page_utils import build_page_number_map
+from .report_utils import build_report_csv, build_report_markdown
 
 
 LOGGER = logging.getLogger(__name__)
@@ -146,22 +147,6 @@ def _highlight_context(context: str, context_offset: int, error_length: int) -> 
 	start = max(0, min(len(context), context_offset))
 	end = max(start, min(len(context), start + max(error_length, 1)))
 	return f"{context[:start]}**{context[start:end]}**{context[end:]}"
-
-
-def _format_suggestions(replacements: list[str] | None, max_suggestions: int = 3) -> str:
-	"""Return a human-friendly, truncated suggestions string.
-
-	If there are no replacements returns the em-dash used in the Markdown output.
-	If there are more than ``max_suggestions`` replacements, the first
-	``max_suggestions`` are shown followed by "(+N more)".
-	"""
-	if not replacements:
-		return "—"
-	if len(replacements) <= max_suggestions:
-		return ", ".join(replacements)
-	visible = ", ".join(replacements[:max_suggestions])
-	remaining = len(replacements) - max_suggestions
-	return f"{visible} (+{remaining} more)"
 
 
 def _get_page_number_for_match(match: object, text: str, page_map: dict[int, int]) -> int | None:
@@ -335,127 +320,6 @@ def check_single_document(
 	finally:
 		if created_tool and hasattr(tool_instance, "close"):
 			tool_instance.close()
-
-
-def build_report_markdown(reports: Iterable[DocumentReport]) -> str:
-	"""Convert the collected document reports into Markdown output."""
-
-	report_list = list(reports)
-	total_documents = len(report_list)
-	total_issues = sum(len(report.issues) for report in report_list)
-
-	subject_totals: dict[str, int] = {}
-	subject_documents: dict[str, int] = {}
-	for report in report_list:
-		subject_totals[report.subject] = subject_totals.get(report.subject, 0) + len(report.issues)
-		subject_documents[report.subject] = subject_documents.get(report.subject, 0) + 1
-
-	lines: list[str] = []
-	lines.append("# Language Check Report")
-	lines.append("")
-	lines.append(f"- Checked {total_documents} document(s)")
-	lines.append(f"- Total issues found: {total_issues}")
-
-	lines.append("")
-	lines.append("## Totals by Subject")
-	if subject_totals:
-		running_total = 0
-		for subject in sorted(subject_totals):
-			running_total += subject_totals[subject]
-			doc_count = subject_documents[subject]
-			lines.append(
-				f"- {subject}: {subject_totals[subject]} issue(s) across {doc_count} document(s) "
-				f"(running total: {running_total})"
-			)
-	else:
-		lines.append("- No subject folders found.")
-
-	lines.append("")
-	lines.append("---")
-	lines.append("")
-	lines.append("## Document Details")
-	if not report_list:
-		lines.append("")
-		lines.append("_No documents found for checking._")
-		return "\n".join(lines)
-
-	for report in sorted(report_list, key=lambda item: (item.subject.lower(), item.path.name.lower())):
-		lines.append("")
-		lines.append(f"### {report.subject} / {report.path.name}")
-		lines.append("")
-		if not report.issues:
-			lines.append("_No issues found._")
-			continue
-
-		lines.append(f"Found {len(report.issues)} issue(s).")
-		lines.append("")
-		lines.append("| Filename | Page | Rule | Type | Message | Suggestions | Context |")
-		lines.append("| --- | --- | --- | --- | --- | --- | --- |")
-		for issue in report.issues:
-			message = issue.message.replace("|", "\\|")
-			# Truncate suggestions to a small, readable number
-			suggestions = _format_suggestions(issue.replacements)
-			suggestions = suggestions.replace("|", "\\|")
-			context = issue.highlighted_context.replace("|", "\\|") if issue.highlighted_context else "—"
-			page_num = str(issue.page_number) if issue.page_number is not None else "—"
-			lines.append(
-				f"| {issue.filename} | {page_num} | `{issue.rule_id}` | {issue.issue_type} | {message} | {suggestions} | {context} |"
-			)
-
-	return "\n".join(lines)
-
-
-def build_report_csv(reports: Iterable[DocumentReport]) -> list[list[str]]:
-	"""Convert the collected document reports into CSV data.
-
-	Returns a list of rows, where each row is a list of string values.
-	The first row contains the column headers.
-	"""
-	
-	rows: list[list[str]] = []
-	
-	# CSV header
-	rows.append([
-		"Subject",
-		"Filename",
-		"Page",
-		"Rule ID",
-		"Type",
-		"Message",
-		"Suggestions",
-		"Context"
-	])
-	
-	# Sort reports by subject and filename
-	report_list = sorted(
-		reports,
-		key=lambda item: (item.subject.lower(), item.path.name.lower())
-	)
-	
-	# Add each issue as a row
-	for report in report_list:
-		for issue in report.issues:
-			# CSV: use the same truncation, but prefer an empty string when there
-			# are no suggestions (unlike Markdown which uses an em-dash).
-			txt = _format_suggestions(issue.replacements)
-			suggestions = "" if txt == "—" else txt
-			# For CSV output prefer the raw context (unhighlighted) so the
-			# field contains the original snippet as seen in the document.
-			context = issue.context if issue.context else ""
-			page_num = str(issue.page_number) if issue.page_number is not None else ""
-			
-			rows.append([
-				report.subject,
-				issue.filename,
-				page_num,
-				issue.rule_id,
-				issue.issue_type,
-				issue.message,
-				suggestions,
-				context
-			])
-	
-	return rows
 
 
 def run_language_checks(
