@@ -18,5 +18,5 @@
   },
   "postCreateCommand": "bash -lc '.devcontainer/post_create.sh'",
   "remoteUser": "vscode",
-  "workspaceFolder": "/workspace"
+  "workspaceFolder": "/workspace/WjecDocumentScraper"
 }
