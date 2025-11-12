@@ -81,15 +81,16 @@ def build_report_markdown(reports: Iterable["DocumentReport"]) -> str:
 
         lines.append(f"Found {len(report.issues)} issue(s).")
         lines.append("")
-        lines.append("| Filename | Page | Rule | Type | Message | Suggestions | Context |")
-        lines.append("| --- | --- | --- | --- | --- | --- | --- |")
+        lines.append("| Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |")
+        lines.append("| --- | --- | --- | --- | --- | --- | --- | --- |")
         for issue in report.issues:
             message = issue.message.replace("|", "\\|")
             suggestions = _format_suggestions(issue.replacements).replace("|", "\\|")
             context = issue.highlighted_context.replace("|", "\\|") if issue.highlighted_context else "—"
             page_num = str(issue.page_number) if issue.page_number is not None else "—"
+            issue_text = issue.issue.replace("|", "\\|") if issue.issue else "—"
             lines.append(
-                f"| {issue.filename} | {page_num} | `{issue.rule_id}` | {issue.issue_type} | {message} | {suggestions} | {context} |"
+                f"| {issue.filename} | {page_num} | `{issue.rule_id}` | {issue.issue_type} | {issue_text} | {message} | {suggestions} | {context} |"
             )
 
     return "\n".join(lines)
@@ -110,6 +111,7 @@ def build_report_csv(reports: Iterable["DocumentReport"]) -> list[list[str]]:
         "Page",
         "Rule ID",
         "Type",
+        "Issue",
         "Message",
         "Suggestions",
         "Context",
@@ -133,6 +135,7 @@ def build_report_csv(reports: Iterable["DocumentReport"]) -> list[list[str]]:
                 page_num,
                 issue.rule_id,
                 issue.issue_type,
+                issue.issue if issue.issue else "",
                 issue.message,
                 suggestions,
                 context,
