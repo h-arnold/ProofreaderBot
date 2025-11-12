@@ -12,10 +12,9 @@ from .language_check import (
     check_single_document,
     derive_subject_from_path,
     iter_markdown_documents,
-    build_report_markdown,
-    build_report_csv,
     run_language_checks,
 )
+from .report_utils import build_report_csv, build_report_markdown
 from .language_check_config import DEFAULT_DISABLED_RULES, DEFAULT_IGNORED_WORDS
 
 __all__ = [
