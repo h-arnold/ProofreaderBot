@@ -195,34 +195,12 @@ def commit_changes(subject: str, documents_root_or_cwd: Path, cwd: Path | None =
         print(f"No markdown directory for subject '{subject}' -> nothing to commit")
         return True
 
-    # Ask git for any changed files under the markdown directory
+    # Stage the entire markdown directory (includes untracked files)
+    # This ensures new markdown files are added, not just modified ones
     rel_path = str(markdown_dir)
-    exit_code, output = git_command(["status", "--porcelain", "--", rel_path], cwd)
+    exit_code, output = git_command(["add", "--", rel_path], cwd)
     if exit_code != 0:
-        print(f"Failed to query git status for '{rel_path}': {output}", file=sys.stderr)
-        return False
-
-    changed_files: list[str] = []
-    for line in output.splitlines():
-        if not line:
-            continue
-        # git status --porcelain format: XY <path>
-        parts = line.strip().split(maxsplit=1)
-        if len(parts) == 2:
-            path_part = parts[1]
-            # Only consider markdown files
-            if path_part.endswith('.md'):
-                changed_files.append(path_part)
-
-    if not changed_files:
-        print(f"No markdown changes to commit for subject '{subject}'")
-        return True
-
-    # Stage only the markdown files
-    cmd = ["add", "--"] + changed_files
-    exit_code, output = git_command(cmd, cwd)
-    if exit_code != 0:
-        print(f"Failed to stage markdown files: {output}", file=sys.stderr)
+        print(f"Failed to stage markdown directory '{rel_path}': {output}", file=sys.stderr)
         return False
 
     # Check if there are staged changes
