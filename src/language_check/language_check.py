@@ -35,6 +35,7 @@ class LanguageIssue:
 	replacements: list[str]
 	context: str
 	highlighted_context: str
+	issue: str
 	page_number: int | None = None
 
 
@@ -190,6 +191,9 @@ def _make_issue(match: object, filename: str, text: str = "", page_map: dict[int
 	error_length = int(getattr(match, "errorLength", 0))
 	highlighted_context = _highlight_context(context, context_offset, error_length)
 	
+	# Extract the matched issue text from the context
+	issue = context[context_offset:context_offset + error_length] if error_length > 0 else ""
+	
 	# Determine page number
 	page_number = None
 	if page_map is not None and text:
@@ -203,6 +207,7 @@ def _make_issue(match: object, filename: str, text: str = "", page_map: dict[int
 		replacements=replacements,
 		context=context,
 		highlighted_context=highlighted_context,
+		issue=issue,
 		page_number=page_number,
 	)
 
@@ -249,6 +254,7 @@ def check_document(
 			replacements=[],
 			context="",
 			highlighted_context="",
+			issue="",
 		)
 		return DocumentReport(subject=subject, path=document_path, issues=[failure])
 
