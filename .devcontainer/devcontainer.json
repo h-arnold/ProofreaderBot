@@ -18,5 +18,9 @@
   },
   "postCreateCommand": "bash -lc \"${containerWorkspaceFolder}/.devcontainer/post_create.sh\"",
   "remoteUser": "vscode",
+<<<<<<< HEAD
   "workspaceFolder": "${containerWorkspaceFolder}"
+=======
+  "workspaceFolder": "/workspace/WjecDocumentScraper"
+>>>>>>> 4b41edb (Refactor language check report generation and update workspace folder path)
 }
