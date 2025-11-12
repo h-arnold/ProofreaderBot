@@ -131,10 +131,6 @@ def main():
         if not file_path.endswith('.md'):
             continue
         
-        # Skip badges directory
-        if file_path.startswith('badges/'):
-            continue
-        
         # Skip if file doesn't exist or is binary
         if not os.path.isfile(file_path) or is_binary(file_path):
             continue
