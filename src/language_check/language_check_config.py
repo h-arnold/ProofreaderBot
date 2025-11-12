@@ -18,9 +18,7 @@ DEFAULT_DISABLED_RULES = {
     "PHRASE_REPETITION",
     "IN_A_X_MANNER",
     "DECISION_MAKING",
-    "EN_UNPAIRED_BRACKETS",
-    "ENGLISH_WORD_REPEAT_BEGINNING_RULE",
-    "DASH_RULE"
+    "EN_UNPAIRED_BRACKETS"
 
 
 }
@@ -160,32 +158,4 @@ DEFAULT_IGNORED_WORDS = {
 
     # Photography / film / animation terms seen in reports
     "time-lapse", "rotoscoping", "tweening",
-
-    # --- French words / common French tokens (flagged by MORFOLOGIK) ---
-    "acheter", "adorer", "aimer", "allais", "avec", "bien", "Bienvenue", "célébrer",
-    "commencer", "danser", "débarquement", "détester", "dix", "écouter", "entier",
-    "épinards", "époque", "espérer", "essayer", "est-ce", "faire", "française", "jeunes",
-    "le", "manger", "moins", "nager", "parler", "partager", "parisien", "préférer",
-    "protéger", "pu", "puissant", "qu'", "que", "regarder", "répéter", "savoir", "se",
-    "sûr", "tâche", "tien", "travailler", "visiter", "voyager",
-
-    # --- Sports / arts / media terms ---
-    "Boccia", "Camogie", "Goalball", "Trampolining", "storyboarding", "livestreamed", "food-related",
-
-    # --- Authors / people / proper names ---
-    "Crossan", "Haddon", "Kay", "Laird", "Magorian", "Morpurgo", "Newbery", "Sherald", "Swindells",
-    "Sirkka-Liisa",
-
-    # --- Acronyms / abbreviations ---
-    "Aos", "JCQ", "TNCs", "mpl",
-
-    # --- Technical / other terms ---
-    "creditworthy", "DeMorgan's", "microfinance", "nonexamination", "pseudocode", "Raspbian",
-    "Translanguage",
-
-    # --- Drama: proper nouns (practitioners, writers, companies) ---
-    "Adelayo", "Adedayo", "Artaud", "Artaudian", "Ayling", "Berkoff", "Berkoffian", "Boal", "Brecht", "Brechtian", "Buether", "Chickenshed", "Complicité", "Goch", "Habte", "Hijinx", "Kizer", "Lionboy", "Lolfa", "Macmillian", "Peakes", "Rafi", "RashDash", "Ravenhill", "Stanislavski", "Theatr", "Trezise", "Tsion", "Tunley", "Vickery", "Woyzeck", "Woza", "Wyddfa", "Zizou",
-
-    # --- Drama: technical / production terms ---
-    "arte", "berliner-ensemble", "crossfade", "Dramaturg", "freezeframes", "gestus", "gobo", "gobos", "multi-roling", "realia",
 }
