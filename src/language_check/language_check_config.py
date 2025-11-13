@@ -188,6 +188,24 @@ DEFAULT_IGNORED_WORDS = {
     # --- Authors / people / proper names ---
     "Crossan", "Haddon", "Kay", "Laird", "Magorian", "Morpurgo", "Newbery", "Sherald", "Swindells",
     "Sirkka-Liisa",
+    # --- Additional proper nouns requested by user ---
+    "Achebe", "Abse", "Acevedo", "Aitchison", "Bazin", "Christelle", "Chetty", "Fugard", "Fitzgeralds", "Forna", "Fraillon", "Heppenstall", "Kalhan", "Kelman", "Lefteri", "Lemn", "Maarten", "Macnamara", "McElhenney", "Meera", "Melhuish", "Mistry", "Monisha", "Nagra", "Parminder", "Pixley", "Reay", "Sathnam", "Syal", "Trivedy", "Troost", "Wilcock", "Yoon", "Zojceska",
+    # Characters / literary / mythical
+    "Birlings", "Egeus", "Pyramus", "Tsotsi",
+    # Places
+    "Copperopolis", "Deir Yassin", "Eynsford", "Ladbroke", "Malekula", "Nollywood",
+    # Publishers, Orgs & Brands
+    "Bloodaxe", "OpenLearn", "TalentLyft", "Transworld", "TriQuarterly",
+
+    # --- Welsh language words & names requested by user ---
+    "Clwb", "Dydd", "Gyda", "Helo", "Miwsig", "Taid", "Tyrd",
+    "Dafydd", "Efa", "Fforestfach", "Ifor", "Nain", "Radyr", "Senedd", "Urdd", "Ymlaen",
+
+    # --- Technical, literary and compound terms ---
+    "griots", "micropause", "obeah", "Sikhi", "translanguaging",
+
+    # --- Poetic / archaic / colloquial spellings ---
+    "faery", "gapèd", "gloam", "lullèd", "shoulda", "wert", "withereth",
 
     # --- Acronyms / abbreviations ---
     "Aos", "JCQ", "TNCs",
@@ -204,6 +222,10 @@ DEFAULT_IGNORED_WORDS = {
 
     # --- History: people and places seen in reports ---
     "Glyndwr", "Gruffudd", "Süleyman", "Sonni", "Jahan", "Askia", "Temujin", "Tyerman", "Babur", "Hardrada", "Llywelyn", "Cnut", "Nur", "Gruffydd", "Turvey", "Culpin", "Hanmer", "Breverton", "Genghis", "Swayer", "Deheubarth", "Songhai", "Harlech", "Khwarazmian", "Tondibi",
+    # --- Additional Welsh historical names and variants requested from recent reports ---
+    "Brough", "Pwll", "Melyn", "Ddu", "Dafydd", "Gam", "Hanmers", "Darogan", "Cadw", "Pennal", "Tywysog", "Mid Wales", "Mid-Wales",
+    # --- Further tokens from recent language-check outputs (history / place names) ---
+    "Hyddgen", "Ruthin", "Chevauchée", "Chevauchee", "Mynydd", "Glas", "Bryn Glas", "Brynglas", "Pilleth", "Ferch", "Triparte", "Elwyn", "Veysey", "Herberts", "Magor", "Glanmor", "Henrician", "Tintern", "Tretower", "Plas", "Mawr", "Plas Mawr", "Artemus", "Hywel", "Dda",
     # --- Additional historical / place names requested to be ignored ---
     "Henrician", "Forkbeard", "Harthacnut", "Jorvik", "Hyddgen", "Mynydd", "Djenne", "Panipat", "Byrom", "Woff",
 
