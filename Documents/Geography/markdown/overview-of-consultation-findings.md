@@ -27,7 +27,7 @@
 | GCSE Religious Studies                                           | 12        |
 | Health and Wellbeing Area of Learning and Experience             | 14        |
 | GCSE Food and Nutrition                                          | 14        |
-| Languages, Literacy and Communication Area of Learning and Exper | ience .15 |
+| Languages, Literacy and Communication Area of Learning and Experience | 15        |
 | Level 2 Award in Additional Core Cymraeg                         | 15        |
 | GCSE Cymraeg Language and Literature (Single and Double)         | 15        |
 | GCSE Core Cymraeg                                                | 16        |
