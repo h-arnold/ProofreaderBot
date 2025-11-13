@@ -27,7 +27,7 @@
 | GCSE Religious Studies                                           | 12        |
 | Health and Wellbeing Area of Learning and Experience             | 14        |
 | GCSE Food and Nutrition                                          | 14        |
-| Languages, Literacy and Communication Area of Learning and Exper | ience .15 |
+| Languages, Literacy and Communication Area of Learning and Experience | 15        |
 | Level 2 Award in Additional Core Cymraeg                         | 15        |
 | GCSE Cymraeg Language and Literature (Single and Double)         | 15        |
 | GCSE Core Cymraeg                                                | 16        |
@@ -43,7 +43,7 @@
 
 ## <span id="page-2-0"></span>Background
 
-In June 2023, Qualifications Wales published Approval Criteria for a suite of made-for-Wales GCSEs and related qualifications [\(https://qualifications.wales/regulation](https://qualifications.wales/regulation-reform/reforming/qualified-for-the-future/made-for-wales-gcses/#approval-criteria)[reform/reforming/qualified-for-the-future/made-for-wales-gcses/#approval-criteria\)](https://qualifications.wales/regulation-reform/reforming/qualified-for-the-future/made-for-wales-gcses/#approval-criteria).
+In June 2023, Qualifications Wales published Approval Criteria for a suite of made-for-Wales GCSEs and related qualifications (https://qualifications.wales/regulation-reform/reforming/qualified-for-the-future/made-for-wales-gcses/#approval-criteria).
 
 Qualifications Wales have decided that these qualifications will be introduced in a phased way; WJEC is now developing the qualifications that are to be available for first teaching from September 2025 to meet these requirements.
 
