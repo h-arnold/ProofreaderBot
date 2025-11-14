@@ -1,10 +1,10 @@
 # Language Check Report
 
 - Checked 19 document(s)
-- Total issues found: 356
+- Total issues found: 348
 
 ## Totals by Subject
-- Food-and-Nutrition: 356 issue(s) across 19 document(s) (running total: 356)
+- Food-and-Nutrition: 348 issue(s) across 19 document(s) (running total: 348)
 
 ---
 
@@ -53,7 +53,7 @@ Found 2 issue(s).
 
 ### Food-and-Nutrition / gcse-food-and-nutrition---guidance-for-teaching-unit-1.md
 
-Found 27 issue(s).
+Found 26 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -72,7 +72,6 @@ Found 27 issue(s).
 | gcse-food-and-nutrition---guidance-for-teaching-unit-1.md | 23 | `CAFE_DIACRITIC` | typographical | cafes | ‘Cafes’ is a foreign word which originally has a diacritic. | cafés | ...schools and nurseries - restaurants and **cafes**.  Teachers can write case studies linke... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-1.md | 24 | `EN_COMPOUNDS_MICRO_ORGANISMS` | misspelling | micro-organisms | This word is normally spelled as one. | microorganisms | ...ions required for the multiplication of **micro-organisms**: food, warmth, moisture and time. Learn... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-1.md | 24 | `COMMA_COMPOUND_SENTENCE_2` | uncategorized |  and | Use a comma before ‘and’ if it connects two independent clauses (unless they are closely connected and short). | , and | ...reduce food waste? - What is irradiation** and** how is it used to preserve food? - Use ... |
-| gcse-food-and-nutrition---guidance-for-teaching-unit-1.md | 25 | `MORFOLOGIK_RULE_EN_GB` | misspelling | e-coli | Possible spelling mistake found. | EcoRI, Ecole, emboli (+1 more) | ...a, including campylobacter, salmonella, **e-coli**, Staphylococcus Norovirus, listeria - t... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-1.md | 25 | `EN_COMPOUNDS_MICRO_ORGANISMS` | misspelling | micro-organisms | This word is normally spelled as one. | microorganisms | ..., with learners investigating the named **micro-organisms**, food sources, incubation period and sy... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-1.md | 26 | `EN_COMPOUNDS_FREE_RANGE` | misspelling | free range | This word is normally spelled with a hyphen. | free-range | ... nuts</li><li>reared: factory, organic, **free range**, extensive and intensive. Learners need... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-1.md | 27 | `MORFOLOGIK_RULE_EN_GB` | misspelling | crosscurricular | Possible spelling mistake found. | cross curricular | ...ers should be encouraged to apply their **crosscurricular** knowledge.  {28}-----------------------... |
@@ -287,7 +286,7 @@ Found 14 issue(s).
 
 ### Food-and-Nutrition / resources-for-new-gcse.md
 
-Found 66 issue(s).
+Found 62 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -351,11 +350,7 @@ Found 66 issue(s).
 | resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | oed | Possible spelling mistake found. | OED, led, old (+1555 more) | ...ut may be useful  [Gwyddor bwyd \(11-14 **oed**\) –](https://www.foodafactoflife.org.uk... |
 | resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Gwyddor | Possible spelling mistake found. | Fyodor, Gwalior, Wedder (+2 more) | ...is-11-14-years/) 'Food A Fact of Life' [**Gwyddor** bwyd \(14-16 oed\) –](https://www.fooda... |
 | resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | oed | Possible spelling mistake found. | OED, led, old (+1555 more) | ...d A Fact of Life' [Gwyddor bwyd \(14-16 **oed**\) –](https://www.foodafactoflife.org.uk... |
-| resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Ryseitiau | Possible spelling mistake found. | — | ...sis-14-16-years/) 'Food A Fact of Life' **Ryseitiau** – ['Food A Fact Of Life'](https://www.f... |
-| resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Fideos | Possible spelling mistake found. | Videos, Fides | ...//www.foodafactoflife.org.uk/recipes/) [**Fideos** coginio \(14-16 Years\) –](https://www.... |
 | resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | coginio | Possible spelling mistake found. | yogini, yoginis | ...oodafactoflife.org.uk/recipes/) [Fideos **coginio** \(14-16 Years\) –](https://www.foodafac... |
-| resources-for-new-gcse.md | 11 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Canllawiau | Possible spelling mistake found. | Callaway | ...------  ![](_page_11_Picture_1.jpeg)  # **Canllawiau** Addysgu Guidance for Teaching  # SAM/DA... |
-| resources-for-new-gcse.md | 11 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Addysgu | Possible spelling mistake found. | Addyson | ...(_page_11_Picture_1.jpeg)  # Canllawiau **Addysgu** Guidance for Teaching  # SAM/DAE  [GCSE... |
 | resources-for-new-gcse.md | 12 | `EN_UNPAIRED_QUOTES` | typographical | ' | Unpaired symbol: ‘'’ seems to be missing | — | ...1.jpeg)  Yn arbennig i Gymru. Yn barod i**'**r byd.  Made for Wales. Ready for the wo... |
 
 ### Food-and-Nutrition / techniques-summary.md
@@ -414,18 +409,15 @@ Found 47 issue(s).
 
 ### Food-and-Nutrition / unit-2---work-smarter-not-harder.md
 
-Found 15 issue(s).
+Found 12 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | unit-2---work-smarter-not-harder.md | 0 | `EN_UNPAIRED_QUOTES` | typographical | ' | Unpaired symbol: ‘'’ seems to be missing | — | ...1.jpeg)  Yn arbennig i Gymru. Yn barod i**'**r byd.  Made for Wales. Ready for the wo... |
 | unit-2---work-smarter-not-harder.md | 4 | `MORFOLOGIK_RULE_EN_GB` | misspelling | wjec-gcse-food-and-nutrition | Possible spelling mistake found. | AJEC-gcse-food-and-nutrition, wjec-GCSE-food-and-nutrition | ... adapted?  ![](_page_4_Figure_5.jpeg)  [**wjec-gcse-food-and-nutrition**](https://www.wjec.co.uk/media/kz4d5q2l/... |
-| unit-2---work-smarter-not-harder.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Munsell | Possible spelling mistake found. | Russell, Mussel, Mussels (+11 more) | ...hat can you use?.....**  Star diagrams  **Munsell** charts  Photographic evidence  Viscosit... |
 | unit-2---work-smarter-not-harder.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | MUNSELL | Possible spelling mistake found. | RUSSELL, MUSSEL, MUSSELS (+11 more) | ...-----------------------------------  ## **MUNSELL** CHARTS… GO TO YOUR LOCAL DIY STORE  ![]... |
-| unit-2---work-smarter-not-harder.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Munsell | Possible spelling mistake found. | Russell, Mussel, Mussels (+11 more) | ...e_4.jpeg)  ![](_page_9_Picture_5.jpeg)  **Munsell** charts are a really really good tool fo... |
 | unit-2---work-smarter-not-harder.md | 9 | `RB_RB_COMMA` | uncategorized | really really | Consider adding a comma between these intensifiers. | really, really, really | ...9_Picture_5.jpeg)  Munsell charts are a **really really** good tool for showing results. But, the... |
 | unit-2---work-smarter-not-harder.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | choux | Possible spelling mistake found. | Chou | ... a variable. For example bread, pastry, **choux**, biscuits, green vegetables. Use your o... |
-| unit-2---work-smarter-not-harder.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Munsell | Possible spelling mistake found. | Russell, Mussel, Mussels (+11 more) | ...iscuits, green vegetables. Use your own **Munsell** chart instead.  {10}-------------------... |
 | unit-2---work-smarter-not-harder.md | 11 | `EN_COMPOUNDS_CUP_CAKES` | misspelling | cup cakes | This word is normally spelled as one. | cupcakes | ... – not so much. Get yourself a batch of **cup cakes**, a desk lamp, different coloured plates... |
 | unit-2---work-smarter-not-harder.md | 11 | `MORFOLOGIK_RULE_EN_GB` | misspelling | softwear | Possible spelling mistake found. | soft wear | ...ks well, or wrap text, depending on the **softwear** you have in school. How would you label... |
 | unit-2---work-smarter-not-harder.md | 12 | `MORFOLOGIK_RULE_EN_GB` | misspelling | classbooks | Possible spelling mistake found. | class books | ...om wall or make a sheet to put in their **classbooks** to complete every time they cook.  {13}... |

@@ -48,6 +48,7 @@ Prepare a JSON manifest (e.g., `data/language-ignore/<subject>.json`) that follo
 
   ## Canonical Categories (use these exact names)
 
+  - REJECT: Anything that is incorrect. This should be your default assumption.
   - Proper Noun — capitalised names of people, places, organisations. Diacritics must be present when required.
   - Technical Term — subject-specific terminology or jargon (lowercase unless the term is normally capitalised).
   - Initialism/Acronym — acronyms and initialisms (typically ALL CAPS; preserve conventional punctuation only when idiomatic).
@@ -57,7 +58,7 @@ Prepare a JSON manifest (e.g., `data/language-ignore/<subject>.json`) that follo
 
   ## Quality Standards (non-negotiable)
 
-  - Spelling must be perfect. If in doubt, mark as REJECT or AMBIGUOUS and escalate—do not add.
+  - Spelling must be perfect. If in doubt, mark as REJECT or AMBIGUOUS and escalate—do not add. This includes non-British spellings of words.
   - Proper nouns must be correctly capitalised and accented where appropriate.
   - Allowed characters: letters, digits, spaces, hyphens (`-`), periods (`.`), apostrophes (`'`). No leading/trailing whitespace.
   - No possessive forms (e.g., `teacher's`) and avoid variants (prefer canonical dictionary form).
@@ -69,12 +70,7 @@ Prepare a JSON manifest (e.g., `data/language-ignore/<subject>.json`) that follo
   1. Normalize: trim and preserve internal punctuation. Do not auto-correct casing.
   2. Skip if already present in `DEFAULT_IGNORED_WORDS` (report as skipped).
   3. Validate characters against allowed set; if invalid → REJECT.
-  4. Category heuristics:
-     - If token is conventional ALL-CAPS or a known acronym → Initialism/Acronym.
-     - If token begins with a capital letter and looks like a name/place/org → Proper Noun.
-     - If token is subject-specific jargon (appears in spec or domain sources) → Technical Term.
-     - If token is a foreign-language token (e.g., Welsh) and orthographically correct → Other.
-  5. If spelling or form is uncertain (accent, casing, punctuation) → AMBIGUOUS (do not add; request clarification).
+  4. If spelling or form is uncertain (accent, casing, punctuation) → AMBIGUOUS (do not add; request clarification).
 
   Always include a one-line rationale for each classification (source or rule used).
 
@@ -91,8 +87,6 @@ Prepare a JSON manifest (e.g., `data/language-ignore/<subject>.json`) that follo
   ```bash
   uv run python scripts/manage_language_ignore.py data/language-ignore/<subject>.json
   ```
-
-  6. Record an audit entry (timestamp, batch index, counts, filename applied).
 
   Pause if >40% of the batch is AMBIGUOUS and request guidance.
 
