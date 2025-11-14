@@ -33,6 +33,21 @@ ALLOWED_PUNCTUATION = {".", "-", " ", "'", "’", "/"}
 VALID_SUBJECT_MAP = {subject.lower(): subject for subject in QUALIFICATION_URLS}
 HEADER_RE = re.compile(r"# --- (?P<subject>[^()]+) \((?P<category>[^)]+)\) ---")
 
+# Canonical category map: accepted aliases map to these canonical forms
+CATEGORY_MAP = {
+    "proper noun": "Proper Noun",
+    "proper": "Proper Noun",
+    "technical term": "Technical Term",
+    "technical": "Technical Term",
+    "initialism/acronym": "Initialism/Acronym",
+    "initialism": "Initialism/Acronym",
+    "acronym": "Initialism/Acronym",
+    "other": "Other",
+    "": "Other",
+}
+
+ALLOWED_CATEGORIES_DISPLAY = ", ".join(sorted(set(CATEGORY_MAP.values())))
+
 
 def is_allowed_char(char: str) -> bool:
     if char in ALLOWED_PUNCTUATION:
@@ -87,14 +102,22 @@ class InputWord(BaseModel):
     @field_validator("category", mode="before")
     def strip_category(cls, value: object) -> str:
         if value is None:
-            return "other"
+            value = "other"
         text = str(value).strip()
-        return text or "other"
+        if not text:
+            text = "other"
+        key = text.lower()
+        canonical = CATEGORY_MAP.get(key)
+        if canonical is None:
+            raise ValueError(
+                f"category '{text}' not recognised; must be one of: {ALLOWED_CATEGORIES_DISPLAY} (aliases allowed)"
+            )
+        return canonical
 
     @model_validator(mode="after")
     def enforce_proper_nouns(self) -> "InputWord":
-        category = (self.category or "").lower()
-        if category == "proper noun" and self.word and not str(self.word)[0].isupper():
+        # At this point `self.category` is canonicalised to one of the allowed forms.
+        if (self.category or "") == "Proper Noun" and self.word and not str(self.word)[0].isupper():
             raise ValueError("Proper nouns must start with a capital letter")
         return self
 
