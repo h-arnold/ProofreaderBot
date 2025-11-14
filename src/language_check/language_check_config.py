@@ -20,7 +20,8 @@ DEFAULT_DISABLED_RULES = {
     "DECISION_MAKING",
     "EN_UNPAIRED_BRACKETS",
     "ENGLISH_WORD_REPEAT_BEGINNING_RULE",
-    "DASH_RULE"
+    "DASH_RULE",
+    "ADMIT_ENJOY_VB"
 
 
 }
@@ -34,10 +35,10 @@ DEFAULT_IGNORED_WORDS = {
     "WJEC", "CBAC", "Fitzalan", "Llanwern", "GCSE", "tkinter", "TKINTER",
 
     # --- Hardware / acronyms ---
-    "CPU", "GPU", "RAM", "NIC", "NICs", "HDD", "SSD", "SD", "SDS", "DVD", "PC", "SCSI", "USB", "HDMI", "RCA",
+    "CPU", "GPU", "RAM", "NIC", "NICs", "HDD", "SSD", "SD", "DVD", "PC", "SCSI", "USB", "HDMI", "RCA",
 
     # --- Networking / bandwidth ---
-    "LAN", "WAN", "Ethernet", "Wi-Fi", "kbps", "mbps", "gbps", "bps", "MiTM", "MITM",
+    "LAN", "WAN", "Ethernet", "Wi-Fi", "kbps", "mbps", "gbps", "bps", "MITM",
 
     # --- Audio / connectors / formats ---
     "SPDIF", "S/PDIF", "TOSLINK",
@@ -67,7 +68,7 @@ DEFAULT_IGNORED_WORDS = {
     "Lubaina", "Himid", "Yinka", "Shonibare",
 
     # --- Dance subject proper nouns and technical terms (added from report) ---
-    "Rygbi", "Annwyl", "Fearghus", "Conchúir", "ZooNation", "Avant", "Garde", "Chor", "Adigun", "Vardimon", "Xin", "Boyz", "Motionhouse", "ronde", "jambe", "ABACADA", "choreographics",
+    "Rygbi", "Annwyl", "Fearghus", "Conchúir", "Conchuir", "ZooNation", "Avant-Garde", "Chor", "Chór", "Adigun", "Vardimon", "Xin", "Boyz", "Motionhouse", "rond de jambe", "jambe", "ABACADA",
 
     # --- Other acronyms and subject-specific tokens ---
     "CWRE", "AOs", "SAMs", "SAM",
@@ -121,7 +122,7 @@ DEFAULT_IGNORED_WORDS = {
     "AoLE", "BAME",
 
     # --- Brands / product names used in documents ---
-    "GymShark", "McDonalds",
+    "GymShark", "McDonald's",
 
     # --- Service / platform tokens flagged but valid in docs ---
     "YouTube",
@@ -149,17 +150,17 @@ DEFAULT_IGNORED_WORDS = {
     #     nouns that should not be flagged as misspellings or style issues.
     # Art & design: artists, designers and common proper nouns
     "Gauguin", "Paul Gauguin", "Herbert Bayer", "Amy Sherald", "Bridget Riley", "Banksy",
-    "Salvador Dalí", "Salvador Dali", "Dali", "Paul Peter Piech",
+    "Salvador Dalí", "Dali", "Paul Peter Piech",
 
     # Layout / UI / design terms and variants
-    "Wayfinding", "mock-ups", "mockups", "mock ups",
-    "two-dimensional", "three-dimensional", "2-dimensional",
+    "Wayfinding", "mockups",
+    "two-dimensional", "three-dimensional",
 
     # Sport / disability sport terms seen in specs
     "Powerchair", "Powerchair Football",
 
     # Photography / film / animation terms seen in reports
-    "time-lapse", "rotoscoping", "tweening",
+    "time-lapse",
 
     # --- French words / common French tokens (flagged by MORFOLOGIK) ---
     "acheter", "adorer", "aimer", "allais", "avec", "bien", "Bienvenue", "célébrer",
@@ -168,6 +169,8 @@ DEFAULT_IGNORED_WORDS = {
     "le", "manger", "moins", "nager", "parler", "partager", "parisien", "préférer",
     "protéger", "pu", "puissant", "qu'", "que", "regarder", "répéter", "savoir", "se",
     "sûr", "tâche", "tien", "travailler", "visiter", "voyager",
+    # Additional French tokens requested to be ignored
+    "bain", "marie", "bain-marie", "patissière", "bâton", "brunoise",
 
     # --- Additional false-positives / capitalised French words requested by user ---
     # examples and commonly-flagged tokens (keeps both lower and capitalised forms where useful)
@@ -186,12 +189,30 @@ DEFAULT_IGNORED_WORDS = {
     # --- Authors / people / proper names ---
     "Crossan", "Haddon", "Kay", "Laird", "Magorian", "Morpurgo", "Newbery", "Sherald", "Swindells",
     "Sirkka-Liisa",
+    # --- Additional proper nouns requested by user ---
+    "Achebe", "Abse", "Acevedo", "Aitchison", "Bazin", "Christelle", "Chetty", "Fugard", "Fitzgeralds", "Forna", "Fraillon", "Heppenstall", "Kalhan", "Kelman", "Lefteri", "Lemn", "Maarten", "Macnamara", "McElhenney", "Meera", "Melhuish", "Mistry", "Monisha", "Nagra", "Parminder", "Pixley", "Reay", "Sathnam", "Syal", "Trivedy", "Troost", "Wilcock", "Yoon", "Zojceska",
+    # Characters / literary / mythical
+    "Birlings", "Egeus", "Pyramus", "Tsotsi",
+    # Places
+    "Copperopolis", "Deir Yassin", "Eynsford", "Ladbroke", "Malekula", "Nollywood",
+    # Publishers, Orgs & Brands
+    "Bloodaxe", "OpenLearn", "TalentLyft", "Transworld", "TriQuarterly",
+
+    # --- Welsh language words & names requested by user ---
+    "Clwb", "Dydd", "Gyda", "Helo", "Miwsig", "Taid", "Tyrd",
+    "Dafydd", "Efa", "Fforestfach", "Ifor", "Nain", "Radyr", "Senedd", "Urdd", "Ymlaen",
+
+    # --- Technical, literary and compound terms ---
+    "griots", "micropause", "obeah", "Sikhi", "translanguaging",
+
+    # --- Poetic / archaic / colloquial spellings ---
+    "faery", "gapèd", "gloam", "lullèd", "shoulda", "wert", "withereth",
 
     # --- Acronyms / abbreviations ---
-    "Aos", "JCQ", "TNCs", "mpl",
+    "Aos", "JCQ", "TNCs",
 
     # --- Technical / other terms ---
-    "creditworthy", "DeMorgan's", "microfinance", "nonexamination", "pseudocode", "Raspbian",
+    "creditworthy", "De Morgan's", "microfinance", "nonexamination", "pseudocode", "Raspbian",
     "Translanguage",
 
     # --- Drama: proper nouns (practitioners, writers, companies) ---
@@ -199,4 +220,53 @@ DEFAULT_IGNORED_WORDS = {
 
     # --- Drama: technical / production terms ---
     "arte", "berliner-ensemble", "crossfade", "Dramaturg", "freezeframes", "gestus", "gobo", "gobos", "multi-roling", "realia",
+
+    # --- History: people and places seen in reports ---
+    "Glyndwr", "Gruffudd", "Süleyman", "Sonni", "Jahan", "Askia", "Temujin", "Tyerman", "Babur", "Hardrada", "Llywelyn", "Cnut", "Nur", "Gruffydd", "Turvey", "Culpin", "Hanmer", "Breverton", "Genghis", "Swayer", "Deheubarth", "Songhai", "Harlech", "Khwarazmian", "Tondibi",
+    # --- Additional history tokens discovered in later report chunks ---
+    # Crusades / Middle East / Anatolia
+    "Western Europe", "Byzantine Empire", "Alexius", "Alexios", "Komnenos", "Zengi", "Zengid", "Hattin", "Nur ad-Din", "Nurad", "Imad al-Din", "al-Din",
+    # Ayyubid / Mamluk / related names and places
+    "Ayyubid", "Ayyubids", "Mamluk", "Mamluks", "Baybars", "Baibars", "Akko",
+    # Central Asian / West African names seen in reports
+    "Central Asia", "Songhay", "Djenné", "Djenne", "Djinguereber", "Sankoré", "Mansa", "Mansa Munsa",
+    # Mughal / South Asian tokens
+    "Baburnama", "Babur", "Humayun", "Humayan", "Sher Shah", "Sher Shah Suri", "Suri", "Kannauj", "Akbarnama", "Fatehpur", "Fatehpur Sikri", "Mansabdars", "Zamindars", "Abul Fazl", "Abul", "Ibadat Khana", "Ustad Mansur", "Mansur", "Chittorgarh", "Akbar", "Taj", "Taj Mahal", "Shikoh", "Shikoh",
+    # Scholars / modern authors
+    "Truschke",
+    # --- Additional proper nouns / place names discovered in recent language-check reports ---
+    "Ghengis", "Gwenllian", "Tewdwr", "Hefin", "Dinefwr", "Kidwelly", "Crogen", "Ewloe", "Crug", "Crug Mawr", "Tenby", "Cadwaladr", "Maredudd", "Maelgwn", "Gryg", "Gethin", "Iorwerth", "Llansteffan", "Haverfordwest", "Laugharne", "Nevern", "Painscastle", "Colwyn", "Rhys", "Owain", "Anarawd", "Historynet", "Wiston", "Llandeilo", "Jamukha", "Ong", "Naiman", "Togrul", "Toghrul", "Anda", "Börte", "Borte", "Chinggis", "Merkit", "Kuchlug", "Ögodei", "Ogodei", "Baljuna", "Chakirmaut", "Kurultai", "Burkhan", "Yassa", "Kheshig", "Nokor", "Nökör", "Khitai", "Xianzong", "Zhangzong", "Tangut", "Tumen", "Mingghan", "Khwarazmians", "Khwarazm",
+    # --- Additional Welsh historical names and variants requested from recent reports ---
+    "Brough", "Pwll", "Melyn", "Ddu", "Dafydd", "Gam", "Hanmers", "Darogan", "Cadw", "Pennal", "Tywysog", "Mid Wales", "Mid-Wales",
+    # --- Further tokens from recent language-check outputs (history / place names) ---
+    "Hyddgen", "Ruthin", "Chevauchée", "Chevauchee", "Mynydd", "Glas", "Bryn Glas", "Brynglas", "Pilleth", "Ferch", "Triparte", "Elwyn", "Veysey", "Herberts", "Magor", "Glanmor", "Henrician", "Tintern", "Tretower", "Plas", "Mawr", "Plas Mawr", "Artemus", "Hywel", "Dda",
+    # --- Additional historical / place names requested to be ignored ---
+    "Forkbeard", "Harthacnut", "Jorvik", "Djenne", "Panipat", "Byrom", "Woff",
+
+    # --- Food-and-Nutrition ---
+    "Yn", "yn", "bwyd", "Gymru", "arbennig", "ddefnyddiol", "eu", "ardystio", "gan", "ond", "efallai", "byd", "Bwyd", "barod", "ar", "Adnoddau", "Gwyddor", "Eatwell",
+    "wholewheat", "Wholewheat", "roux", "Shortcrust", "trialing", "zesting", "Zesting", "dextrinization", "prereleased", "sucrée", "griddling", "spatchcock", "deseeding", "chiffonade",
+
+    # --- English-Language-and-Literature ---
+    "Alem", "Birling", "Iola", "Pinnock", "Meggarty", "Packham", "Conran", "Miquita", "Riz", "Atta", "Sissay", "Brumley", "Dharker", "Imtiaz", "Muffet", "Catrin", "Killay", "Miz", "Alys", "Taffia", "aloo", "parathas", "longlist", "coversheet", "PRUs",
+
+    # --- Geography ---
+    "Borth", "Abermule", "Forden", "Berriew", "Twyni", "Rheidol", "Conwy", "Hina", "Blaenau", "Hafren", "Ystwyth", "Bannau", "Teleférico", "Ferrel", "Digimap",
+    "LICs", "HICs", "Groynes", "OEBPS", "UNHDR", "isoline", "Throughflow", "skillset", "cumecs", "quadrats", "housebuilding", "socio-cultural", "skillfully", "Lasagne", "coginio",
+
+    # --- Additions from language-check-report (chunk lines 1501-2000) ---
+    # Proper nouns and tokens found in the report that should not be flagged
+    "Wolgemut", "Stigand", "Eadmer", "Rubenstein", "Tinchebrai", "Patcham",
+    "Warenne", "Cutestornes", "Phillipa", "Domesday", "Gytha", "Thorkilsdottir",
+    "Malet", "Orderic", "Vitalis", "Orderic Vitalis", "Historia Ecclesiastica",
+    "Brynmawr", "NUWSS", "WSPU", "Newsround", "Radway", "Whiskerd", "Pankhursts",
+    "Kilkeel", "Bygott", "Hereward", "Malcom", "Leyser", "Seebohm", "Whyman",
+    "Wykes", "Vreeland", "Econlib", "Pathé",
+
+    # --- Additions from language-check-report (chunk lines 2001-EOF) ---
+    # Proper nouns and tokens found in the final chunk of the report
+    "Jizya", "Ilahi", "llahi", "Ibadat", 
+    "McLynn", "Godwinson", "Sheppey", "Manzikert", "Ivar", "Ubba",
+    "Halfdan", "Ragnarsson", "Lodbrok", "Lionheart", "WASPs", "Duranty",
+    "Trueman", "Franklin D Roosevelt", "Kornilov", "Moorhouse", "Nimni", "OAAU",
 }
