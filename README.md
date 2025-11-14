@@ -29,7 +29,7 @@ American spellings found: <img src="badges/ize-suffixes.svg" alt="Ize suffixes c
 ### Document Acquisition and Processing
 
 1. ✅ [COMPLETE] Scrape all WJEC GCSE Made-for-Wales qualification pages for linked PDF documents.
-2. ⏳ [IN PROGRESS] Convert PDFs to Markdown format for easier reading and processing. See the [processedDocuments](https://github.com/h-arnold/WjecDocumentScraper/tree/processedDocuments) for progress.
+2. ✅ [COMPLETE] Convert PDFs to Markdown format for easier reading and processing. See the [processedDocuments](https://github.com/h-arnold/WjecDocumentScraper/tree/processedDocuments) for progress.
 
 ### Multi-pass copyediting and proofreading
 

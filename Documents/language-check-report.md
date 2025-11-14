@@ -1,10 +1,10 @@
 # Language Check Report
 
 - Checked 19 document(s)
-- Total issues found: 621
+- Total issues found: 356
 
 ## Totals by Subject
-- Food-and-Nutrition: 621 issue(s) across 19 document(s) (running total: 621)
+- Food-and-Nutrition: 356 issue(s) across 19 document(s) (running total: 356)
 
 ---
 
@@ -53,12 +53,11 @@ Found 2 issue(s).
 
 ### Food-and-Nutrition / gcse-food-and-nutrition---guidance-for-teaching-unit-1.md
 
-Found 29 issue(s).
+Found 27 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-1.md | 8 | `ENGLISH_WORD_REPEAT_RULE` | duplication | Macronutrients macronutrients | Possible typo: you repeated a word. | Macronutrients | ... 1.2.1 Learners should know the role of **Macronutrients macronutrients**, including: <ul><li>carbohydrates</li><... |
-| gcse-food-and-nutrition---guidance-for-teaching-unit-1.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | soya | Possible spelling mistake found. | soda, soy, sofa (+13 more) | ...and repair and can be found in eggs and **soya** beans.' Progression will see learners q... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-1.md | 10 | `EN_COMPOUNDS_WATER_SOLUBLE` | misspelling | water soluble | This word is normally spelled with a hyphen. | water-soluble | ...phasise the differences between fat and **water soluble** vitamins and learners need to know that... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-1.md | 11 | `EN_COMPOUNDS_SUGAR_FREE` | misspelling | sugar free | This word is normally spelled with a hyphen. | sugar-free | ...utter and strawberry jam and a glass of **sugar free** orange squash. - b) Use a nutritional a... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-1.md | 11 | `APOS_SPACE_CONTRACTION` | typographical | Part 'd | There probably shouldn’t be a space before the apostrophe. | Part'd | ...ts you wish the learners to comment on. **Part 'd**)' could be included or removed dependin... |
@@ -69,7 +68,6 @@ Found 29 issue(s).
 | gcse-food-and-nutrition---guidance-for-teaching-unit-1.md | 14 | `POSSESSIVE_APOSTROPHE` | typographical | notes | An apostrophe may be missing. | notes', note's | ...ow, adding your initial thoughts in the **notes** column.  \| Nutrient \| Amount \| % of rec... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-1.md | 15 | `POSSESSIVE_APOSTROPHE` | typographical | notes | An apostrophe may be missing. | notes', note's | ...ow, adding your initial thoughts in the **notes** column.  \| Nutrient \| Amount \| % of rec... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-1.md | 16 | `COMMA_COMPOUND_SENTENCE_2` | uncategorized |  so | Use a comma before ‘so’ if it connects two independent clauses (unless they are closely connected and short). | , so | ...res careful planning and differentiation** so** learners of all abilities have the info... |
-| gcse-food-and-nutrition---guidance-for-teaching-unit-1.md | 18 | `MORFOLOGIK_RULE_EN_GB` | misspelling | foodbank | Possible spelling mistake found. | food bank | ...tant. - Visiting speaker from the local **foodbank** to discuss food poverty. - Investigate ... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-1.md | 22 | `EN_COMPOUNDS_MICRO_ORGANISMS` | misspelling | micro-organisms | This word is normally spelled as one. | microorganisms | ...ions required for the multiplication of **micro-organisms**: food, warmth, moisture and time. This ... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-1.md | 23 | `CAFE_DIACRITIC` | typographical | cafes | ‘Cafes’ is a foreign word which originally has a diacritic. | cafés | ...schools and nurseries - restaurants and **cafes**.  Teachers can write case studies linke... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-1.md | 24 | `EN_COMPOUNDS_MICRO_ORGANISMS` | misspelling | micro-organisms | This word is normally spelled as one. | microorganisms | ...ions required for the multiplication of **micro-organisms**: food, warmth, moisture and time. Learn... |
@@ -89,7 +87,7 @@ Found 29 issue(s).
 
 ### Food-and-Nutrition / gcse-food-and-nutrition---guidance-for-teaching-unit-2.md
 
-Found 24 issue(s).
+Found 21 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -102,7 +100,6 @@ Found 24 issue(s).
 | gcse-food-and-nutrition---guidance-for-teaching-unit-2.md | 6 | `MORFOLOGIK_RULE_EN_GB` | misspelling | lorraine | Possible spelling mistake found. | Lorraine, Loraine, moraine (+4 more) | ...when making an egg custard tart, quiche **lorraine**. Create charts of the cooking process, ... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-2.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | - gelation | Possible spelling mistake found. | -g elation, - relation, - gelatin (+3 more) | ... and mechanical action - foam formation **- gelation** - gluten formation - Maillard reaction ... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-2.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ph | Possible spelling mistake found. | pH, PH, Ph (+100 more) | ...erminology by explaining terms, such as **ph**. and acidity and how the chemical prope... |
-| gcse-food-and-nutrition---guidance-for-teaching-unit-2.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | roux | Possible spelling mistake found. | Roux, roué, doux (+236 more) | ...the thickening properties of flour in a **roux** sauce and gelatinisation making popcorn... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-2.md | 11 | `ADVISE_VBG` | grammar | guiding | The verb ‘help’ is used with an infinitive. | to guide, guide | ...tanding the type of variables will help **guiding** through the process: independent, depen... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-2.md | 11 | `MORFOLOGIK_RULE_EN_GB` | misspelling | int | Possible spelling mistake found. | INT, in, it (+1503 more) | ...ould happen to the batter if it was put **int** the oven instead of fried? Explore pair... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-2.md | 13 | `KEY_WORDS` | misspelling | key words | Did you mean “keywords”? | keywords | ...Learners create their own word banks of **key words** to use in task.  Demonstrate sensory te... |
@@ -115,12 +112,10 @@ Found 24 issue(s).
 | gcse-food-and-nutrition---guidance-for-teaching-unit-2.md | 24 | `YOUTUBE` | uncategorized | youtube | The official name of this popular video platform is spelled with a capital “T”. | YouTube | ...ing ideas. Use of online platforms like **youtube**, where learners can learn from experts ... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-2.md | 24 | `RECOMMENDED_COMPOUNDS` | style | web sites | Nowadays, it’s more common to write this as one word. | websites | ...                               \| Online **web sites** from reliable sources such as the NHS. ... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-2.md | 27 | `EN_COMPOUNDS_CO_ORDINATING` | misspelling | co ordinating | This expression is normally spelled as one or with a hyphen. | co-ordinating, coordinating | .... Time management of experimental work, **co ordinating** multiple variables, track progress and ... |
-| gcse-food-and-nutrition---guidance-for-teaching-unit-2.md | 29 | `MORFOLOGIK_RULE_EN_GB` | misspelling | gliadin | Possible spelling mistake found. | gliding, Gladwin, Iliadic (+2 more) | ...Gluten \| Formed from two wheat proteins **gliadin** and glutenin in the presence of water. ... |
-| gcse-food-and-nutrition---guidance-for-teaching-unit-2.md | 29 | `MORFOLOGIK_RULE_EN_GB` | misspelling | glutenin | Possible spelling mistake found. | gluten in | ...med from two wheat proteins gliadin and **glutenin** in the presence of water. Gluten is dev... |
 
 ### Food-and-Nutrition / gcse-food-and-nutrition---guidance-for-teaching-unit-3.md
 
-Found 27 issue(s).
+Found 22 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -135,21 +130,16 @@ Found 27 issue(s).
 | gcse-food-and-nutrition---guidance-for-teaching-unit-3.md | 8 | `EN_COMPOUNDS_COST_EFFECTIVE` | misspelling | cost effective | This word is normally spelled with a hyphen. | cost-effective | ...foods with a longer shelf life are more **cost effective** due to them being able to be stored for... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-3.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Socio | Possible spelling mistake found. | Socko | ...preservation listed in Section 1.5.3. - **Socio** -economic influences:   - A person's in... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-3.md | 9 | `UNLIKELY_OPENING_PUNCTUATION` | uncategorized | : | Loose punctuation mark. |  | ...he local economy and food provenance .  **:**  #### **Example activities :**  Learner... |
-| gcse-food-and-nutrition---guidance-for-teaching-unit-3.md | 11 | `MORFOLOGIK_RULE_EN_GB` | misspelling | lasagne | Possible spelling mistake found. | lasagna | ... standard recipe for a cheesecake and a **lasagne**, and the learners would need to adapt t... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-3.md | 14 | `COMMA_COMPOUND_SENTENCE_2` | uncategorized |  and | Use a comma before “and” if it connects two independent clauses (unless they are closely connected and short). | , and | .... A range of textures have been provided** and** the lunchbox meets the requirements of ... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-3.md | 18 | `EN_DIACRITICS_REPLACE_ORTHOGRAPHY_SAUTEING` | misspelling | Sauteing | ‘Sauteing’ is an imported foreign name or expression, which originally has a diacritic. | Sautéing | ...ng * \| Slicing ** Peeling * Dicing ** \| **Sauteing** ** Boiling * \| \| Chilli con carne with ... |
-| gcse-food-and-nutrition---guidance-for-teaching-unit-3.md | 18 | `MORFOLOGIK_RULE_EN_GB` | misspelling | carne | Possible spelling mistake found. | care, cane, crane (+15 more) | ... \| Sauteing ** Boiling * \| \| Chilli con **carne** with rice \| Meat sauce: Knife skills – ... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-3.md | 18 | `EN_DIACRITICS_REPLACE_ORTHOGRAPHY_SAUTEING` | misspelling | Sauteing | ‘Sauteing’ is an imported foreign name or expression, which originally has a diacritic. | Sautéing | ...g ** \| Slicing ** Peeling * Dicing ** \| **Sauteing** ** Boiling * \| \| Apple crumble & custar... |
-| gcse-food-and-nutrition---guidance-for-teaching-unit-3.md | 19 | `MORFOLOGIK_RULE_EN_GB` | misspelling | sucree | Possible spelling mistake found. | scree, Sucre | ...pberry compote \| Shortcrust pastry/pate **sucree**: Rubbing-in. Mixing. Forming dough of c... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-3.md | 20 | `MORFOLOGIK_RULE_EN_GB` | misspelling | classroombased | Possible spelling mistake found. | classroom based | ... the dish. This could be completed as a **classroombased** exercise or be set as a homework task. ... |
-| gcse-food-and-nutrition---guidance-for-teaching-unit-3.md | 20 | `MORFOLOGIK_RULE_EN_GB` | misspelling | bakewell | Possible spelling mistake found. | bake well | ...ht food items (e.g. a teacake or cherry **bakewell**) and spend the lesson using garnishing ... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-3.md | 23 | `NOUN_AROUND_IT` | style | the environment around them | Consider using “the surrounding environment”. | the surrounding environment | ...ed Welsh produce will have an impact on **the environment around them**. By buying locally, it is better for th... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-3.md | 24 | `A_NNS` | grammar | a learners | The plural noun “learners” cannot be used with the article “a”. Did you mean “a learner” or “learners”? | a learner, learners | ...and how differing lifestyles can affect **a learners**' relationships and well being. \| Learne... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-3.md | 24 | `EN_COMPOUNDS_WELL_BEING` | misspelling | well being | This word is normally spelled with a hyphen. | well-being | ...an affect a learners' relationships and **well being**. \| Learners will have the opportunity t... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-3.md | 29 | `COMMA_COMPOUND_SENTENCE` | uncategorized |  and | Use a comma before ‘and’ if it connects two independent clauses (unless they are closely connected and short). | , and | ...y of the factors listed in Section 3.1.1** and** they will need to be able to provide wr... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-3.md | 33 | `MORFOLOGIK_RULE_EN_GB` | misspelling | esearch | Possible spelling mistake found. | research, search | ...ers because it will enable them to** r****esearch**, analyse, and present information effec... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-3.md | 35 | `MORFOLOGIK_RULE_EN_GB` | misspelling | glutenfree | Possible spelling mistake found. | gluten-free, gluten free | ...to meet specific dietary needs, such as **glutenfree**, vegan, or low-sugar diets. By thinking... |
-| gcse-food-and-nutrition---guidance-for-teaching-unit-3.md | 38 | `MORFOLOGIK_RULE_EN_GB` | misspelling | haemoglobin | Possible spelling mistake found. | hemoglobin | ...lacks enough healthy red blood cells or **haemoglobin**. \| \| Bacteria \| Microscopic single cell... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-3.md | 38 | `EN_COMPOUNDS_AUTO_IMMUNE` | misspelling | auto-immune | This word is normally spelled as one. | autoimmune | ...o 12. \| \| Coeliac disease \| A life-long **auto-immune** disorder that occurs when the body's im... |
 
 ### Food-and-Nutrition / gcse-food-and-nutrition---option-evening-flyer.md
@@ -163,7 +153,7 @@ Found 2 issue(s).
 
 ### Food-and-Nutrition / gcse-food-and-nutrition---unit-1-principles-of-food-and-nutrition.md
 
-Found 32 issue(s).
+Found 28 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -183,10 +173,7 @@ Found 32 issue(s).
 | gcse-food-and-nutrition---unit-1-principles-of-food-and-nutrition.md | 14 | `VITAMIN_C` | uncategorized | Vitamin C | The word ‘vitamin’ is normally not capitalized in the expression “vitamin C” | vitamin C | ...na</li><li>Vitamin A – Apricots</li><li>**Vitamin C** – Kiwi.</li></ul> \|  \|  \|  \|  \|  \|  {15... |
 | gcse-food-and-nutrition---unit-1-principles-of-food-and-nutrition.md | 15 | `ENGLISH_WORD_REPEAT_RULE` | duplication | the the | Possible typo: you repeated a word. | the | ...li><li>A highly effective discussion of **the the** environmental issues associated with in... |
 | gcse-food-and-nutrition---unit-1-principles-of-food-and-nutrition.md | 16 | `WORTHY_COMPOUNDS` | grammar | credit worthy | This adjective is normally spelled as one word. | creditworthy | ...</li></ul> \| \| 0 \| 0 marks Response not **credit worthy** or not attempted. \|  ![](_page_16_Pictu... |
-| gcse-food-and-nutrition---unit-1-principles-of-food-and-nutrition.md | 17 | `MORFOLOGIK_RULE_EN_GB` | misspelling | tikka | Possible spelling mistake found. | Tikki | ... State the amount of fat in the chicken **tikka** masala and basmati rice meal. \|  \|  \|  ... |
-| gcse-food-and-nutrition---unit-1-principles-of-food-and-nutrition.md | 17 | `MORFOLOGIK_RULE_EN_GB` | misspelling | tikka | Possible spelling mistake found. | Tikki | ...high-fat ingredient used in the chicken **tikka** masala and basmati rice meal and sugges... |
 | gcse-food-and-nutrition---unit-1-principles-of-food-and-nutrition.md | 17 | `EN_WORD_COHERENCY` | uncategorized | yoghurt | Do not mix variants of the same word (‘yoghurt’ and ‘yogurt’) within a single text. | yogurt | ...skimmed or skimmed milk</li><li>low fat **yoghurt**</li><li>low fat spread/reduced fat butt... |
-| gcse-food-and-nutrition---unit-1-principles-of-food-and-nutrition.md | 17 | `MORFOLOGIK_RULE_EN_GB` | misspelling | tikka | Possible spelling mistake found. | Tikki | ...Identify two ingredients in the chicken **tikka** masala and basmati rice meal which coul... |
 | gcse-food-and-nutrition---unit-1-principles-of-food-and-nutrition.md | 18 | `EN_COMPOUNDS_COST_EFFECTIVE` | misspelling | cost effective | This word is normally spelled with a hyphen. | cost-effective | ... buy ready meals because it can be more **cost effective**.</li></ul> \|  \| 3 \|  \| 3 \|  \|  \| \|  \| A... |
 | gcse-food-and-nutrition---unit-1-principles-of-food-and-nutrition.md | 18 | `EN_COMPOUNDS_COST_EFFECTIVE` | misspelling | cost effective | This word is normally spelled with a hyphen. | cost-effective | ... buy ready meals because it can be more **cost effective** as you don't have to buy lots of ingred... |
 | gcse-food-and-nutrition---unit-1-principles-of-food-and-nutrition.md | 19 | `MORFOLOGIK_RULE_EN_GB` | misspelling | flavor | Possible spelling mistake. ‘flavor’ is American English. | flavour | ...rtain vitamins to be absorbed. Develops **flavor** – enhancing aroma and texture. To preve... |
@@ -195,14 +182,13 @@ Found 32 issue(s).
 | gcse-food-and-nutrition---unit-1-principles-of-food-and-nutrition.md | 27 | `WORTHY_COMPOUNDS` | grammar | credit worthy | This adjective is normally spelled as one word. | creditworthy | ...                \| \| 0    \| Response not **credit worthy** or not attempted.                      ... |
 | gcse-food-and-nutrition---unit-1-principles-of-food-and-nutrition.md | 28 | `MORFOLOGIK_RULE_EN_GB` | misspelling | sti | Possible spelling mistake found. | STI, St, sit (+1494 more) | ...---\|-------------\|-----------\| \|  \| n o **sti** \|  \|  \|  \|  \|  \|  \|  \|  \|  \|  \| Topic a... |
 | gcse-food-and-nutrition---unit-1-principles-of-food-and-nutrition.md | 28 | `MORFOLOGIK_RULE_EN_GB` | misspelling | otal | Possible spelling mistake found. | total, oral, oval (+9 more) | .... 1. \| 3 6. 1. \| O1 A \| 2 O A \| 3 O A \| **otal** T \| \| 1           \| a             \|    ... |
-| gcse-food-and-nutrition---unit-1-principles-of-food-and-nutrition.md | 31 | `MORFOLOGIK_RULE_EN_GB` | misspelling | SecureClient | Possible spelling mistake found. | Secure Client | ...ass software. An application named WJEC **SecureClient** will need to be installed on candidate'... |
 | gcse-food-and-nutrition---unit-1-principles-of-food-and-nutrition.md | 31 | `EN_WORD_COHERENCY` | uncategorized | onscreen | Do not mix variants of the same word (‘onscreen’ and ‘on-screen’) within a single text. | on-screen | ...te User Guide for candidates completing **onscreen** assessments. The Surpass software will ... |
 | gcse-food-and-nutrition---unit-1-principles-of-food-and-nutrition.md | 31 | `EN_UNPAIRED_QUOTES` | typographical | ' | Unpaired symbol: ‘'’ seems to be missing | — | ...7 days before the date of the exam. The **'**Home 'screen of Surpass will contain inf... |
 | gcse-food-and-nutrition---unit-1-principles-of-food-and-nutrition.md | 31 | `EN_UNPAIRED_QUOTES` | typographical | ' | Unpaired symbol: ‘'’ seems to be missing | — | ... before the date of the exam. The 'Home **'**screen of Surpass will contain informati... |
 
 ### Food-and-Nutrition / gcse-food-and-nutrition---unit-2-food-investigation.md
 
-Found 6 issue(s).
+Found 4 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -210,12 +196,10 @@ Found 6 issue(s).
 | gcse-food-and-nutrition---unit-2-food-investigation.md | 4 | `SUBJECT_VERB_AGREEMENT` | grammar | are | The verb form ‘are’ does not seem to match the subject ‘assessment’. | is, was, were (+1 more) | ... The marking scheme for this assessment **are** included in the candidate pack.  All ma... |
 | gcse-food-and-nutrition---unit-2-food-investigation.md | 7 | `INDEPENDENTLY_FROM_OF` | grammar | independently from | The usual collocation for “independently” is “of”, not “from”. Did you mean “independently of”? | independently of | ...ive you.  It is important that you work **independently from** other candidates and the work produced ... |
 | gcse-food-and-nutrition---unit-2-food-investigation.md | 14 | `WORTHY_COMPOUNDS` | grammar | credit worthy | This adjective is normally spelled as one word. | creditworthy | ...o the work submitted. Where work is not **credit worthy**, that is, contains nothing of any signi... |
-| gcse-food-and-nutrition---unit-2-food-investigation.md | 28 | `MORFOLOGIK_RULE_EN_GB` | misspelling | noneditable | Possible spelling mistake found. | — | ...rence and authentication purposes, in a **noneditable** format (such as a screenshot) and provi... |
-| gcse-food-and-nutrition---unit-2-food-investigation.md | 28 | `MORFOLOGIK_RULE_EN_GB` | misspelling | AIgenerated | Possible spelling mistake found. | AI generated | ...ssessor is able to review the work, the **AIgenerated** content and how it has been used. |
 
 ### Food-and-Nutrition / gcse-food-and-nutrition---unit-2-non-exam-assessment-pack.md
 
-Found 6 issue(s).
+Found 4 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -223,12 +207,10 @@ Found 6 issue(s).
 | gcse-food-and-nutrition---unit-2-non-exam-assessment-pack.md | 4 | `SUBJECT_VERB_AGREEMENT` | grammar | are | The verb form ‘are’ does not seem to match the subject ‘assessment’. | is, was, were (+1 more) | ... The marking scheme for this assessment **are** included in the candidate pack.  All ma... |
 | gcse-food-and-nutrition---unit-2-non-exam-assessment-pack.md | 7 | `INDEPENDENTLY_FROM_OF` | grammar | independently from | The usual collocation for “independently” is “of”, not “from”. Did you mean “independently of”? | independently of | ...ive you.  It is important that you work **independently from** other candidates and the work produced ... |
 | gcse-food-and-nutrition---unit-2-non-exam-assessment-pack.md | 14 | `WORTHY_COMPOUNDS` | grammar | credit worthy | This adjective is normally spelled as one word. | creditworthy | ...o the work submitted. Where work is not **credit worthy**, that is, contains nothing of any signi... |
-| gcse-food-and-nutrition---unit-2-non-exam-assessment-pack.md | 28 | `MORFOLOGIK_RULE_EN_GB` | misspelling | noneditable | Possible spelling mistake found. | — | ...rence and authentication purposes, in a **noneditable** format (such as a screenshot) and provi... |
-| gcse-food-and-nutrition---unit-2-non-exam-assessment-pack.md | 28 | `MORFOLOGIK_RULE_EN_GB` | misspelling | AIgenerated | Possible spelling mistake found. | AI generated | ...ssessor is able to review the work, the **AIgenerated** content and how it has been used. |
 
 ### Food-and-Nutrition / gcse-food-and-nutrition---unit-3-food-and-nutrition-in-action.md
 
-Found 28 issue(s).
+Found 21 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -251,19 +233,12 @@ Found 28 issue(s).
 | gcse-food-and-nutrition---unit-3-food-and-nutrition-in-action.md | 31 | `MORFOLOGIK_RULE_EN_GB` | misspelling | colors | Possible spelling mistake. ‘colors’ is American English. | colours | ... \| \| Band 2 \| <ul><li>A good variety of **colors** may be evident within the food outcomes... |
 | gcse-food-and-nutrition---unit-3-food-and-nutrition-in-action.md | 31 | `MORFOLOGIK_RULE_EN_GB` | misspelling | skillfully | Possible spelling mistake. ‘skillfully’ is American English. | skilfully | ... \|  \| \|  \| <ul><li>Garnishes are mostly **skillfully** produced</li></ul> \|  \|  \|  \|  \|  \|  \| ... |
 | gcse-food-and-nutrition---unit-3-food-and-nutrition-in-action.md | 35 | `WORTHY_COMPOUNDS` | grammar | credit worthy | This adjective is normally spelled as one word. | creditworthy | ...--------------  **0 Award 0 marks** Not **credit worthy** or not attempted.  ![](_page_35_Picture... |
-| gcse-food-and-nutrition---unit-3-food-and-nutrition-in-action.md | 36 | `MORFOLOGIK_RULE_EN_GB` | misspelling | chiffonade | Possible spelling mistake found. | chiffon, chiffonier, chiffons | ...<li>bâton**</li><li>brunoise***</li><li>**chiffonade****</li><li>chopping*</li><li>deboning***... |
-| gcse-food-and-nutrition---unit-3-food-and-nutrition-in-action.md | 36 | `MORFOLOGIK_RULE_EN_GB` | misspelling | deseeding | Possible spelling mistake found. | reseeding | ...i>chopping*</li><li>deboning***</li><li>**deseeding****</li><li>dicing**</li><li>filleting***... |
-| gcse-food-and-nutrition---unit-3-food-and-nutrition-in-action.md | 36 | `MORFOLOGIK_RULE_EN_GB` | misspelling | spatchcock | Possible spelling mistake found. | Hitchcock, patchwork, matchlock (+2 more) | ...segmenting***</li><li>slicing**</li><li>**spatchcock****</li><li>trimming*</li></ul> \| <ul><li... |
-| gcse-food-and-nutrition---unit-3-food-and-nutrition-in-action.md | 36 | `MORFOLOGIK_RULE_EN_GB` | misspelling | deglazing | Possible spelling mistake found. | deg lazing | ...ing*</li><li>deep fat frying***</li><li>**deglazing****</li><li>dehydrating*</li><li>emulsify... |
-| gcse-food-and-nutrition---unit-3-food-and-nutrition-in-action.md | 36 | `MORFOLOGIK_RULE_EN_GB` | misspelling | griddling | Possible spelling mistake found. | riddling, gridding, g riddling | ...><li>freezing*</li><li>frying**</li><li>**griddling****</li><li>grilling*</li><li>pickling**<... |
 | gcse-food-and-nutrition---unit-3-food-and-nutrition-in-action.md | 37 | `SPACE_BEFORE_PARENTHESIS` | typographical | ( | It appears that a white space is missing. |  ( | ...*\***  • **tenderising\***  • **toasting**(**nuts or seeds) \*\*** • **weighing\*\***... |
 | gcse-food-and-nutrition---unit-3-food-and-nutrition-in-action.md | 37 | `SPACE_BEFORE_PARENTHESIS` | typographical | ( | It appears that a white space is missing. |  ( | ... \*\*** • **weighing\*\***  • **whisking**(**aeration)\*\*\***  • **zesting\***  • re... |
-| gcse-food-and-nutrition---unit-3-food-and-nutrition-in-action.md | 38 | `MORFOLOGIK_RULE_EN_GB` | misspelling | noneditable | Possible spelling mistake found. | — | ...rence and authentication purposes, in a **noneditable** format (such as a screenshot) and provi... |
-| gcse-food-and-nutrition---unit-3-food-and-nutrition-in-action.md | 38 | `MORFOLOGIK_RULE_EN_GB` | misspelling | AIgenerated | Possible spelling mistake found. | AI generated | ...ssessor is able to review the work, the **AIgenerated** content and how it has been used.  {39}... |
 
 ### Food-and-Nutrition / gcse-food-and-nutrition---unit-3-non-exam-assessment-pack.md
 
-Found 28 issue(s).
+Found 21 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -286,26 +261,18 @@ Found 28 issue(s).
 | gcse-food-and-nutrition---unit-3-non-exam-assessment-pack.md | 31 | `MORFOLOGIK_RULE_EN_GB` | misspelling | colors | Possible spelling mistake. ‘colors’ is American English. | colours | ... \| \| Band 2 \| <ul><li>A good variety of **colors** may be evident within the food outcomes... |
 | gcse-food-and-nutrition---unit-3-non-exam-assessment-pack.md | 31 | `MORFOLOGIK_RULE_EN_GB` | misspelling | skillfully | Possible spelling mistake. ‘skillfully’ is American English. | skilfully | ... \|  \| \|  \| <ul><li>Garnishes are mostly **skillfully** produced</li></ul> \|  \|  \|  \|  \|  \|  \| ... |
 | gcse-food-and-nutrition---unit-3-non-exam-assessment-pack.md | 35 | `WORTHY_COMPOUNDS` | grammar | credit worthy | This adjective is normally spelled as one word. | creditworthy | ...--------------  **0 Award 0 marks** Not **credit worthy** or not attempted.  ![](_page_35_Picture... |
-| gcse-food-and-nutrition---unit-3-non-exam-assessment-pack.md | 36 | `MORFOLOGIK_RULE_EN_GB` | misspelling | chiffonade | Possible spelling mistake found. | chiffon, chiffonier, chiffons | ...<li>bâton**</li><li>brunoise***</li><li>**chiffonade****</li><li>chopping*</li><li>deboning***... |
-| gcse-food-and-nutrition---unit-3-non-exam-assessment-pack.md | 36 | `MORFOLOGIK_RULE_EN_GB` | misspelling | deseeding | Possible spelling mistake found. | reseeding | ...i>chopping*</li><li>deboning***</li><li>**deseeding****</li><li>dicing**</li><li>filleting***... |
-| gcse-food-and-nutrition---unit-3-non-exam-assessment-pack.md | 36 | `MORFOLOGIK_RULE_EN_GB` | misspelling | spatchcock | Possible spelling mistake found. | Hitchcock, patchwork, matchlock (+2 more) | ...segmenting***</li><li>slicing**</li><li>**spatchcock****</li><li>trimming*</li></ul> \| <ul><li... |
-| gcse-food-and-nutrition---unit-3-non-exam-assessment-pack.md | 36 | `MORFOLOGIK_RULE_EN_GB` | misspelling | deglazing | Possible spelling mistake found. | deg lazing | ...ing*</li><li>deep fat frying***</li><li>**deglazing****</li><li>dehydrating*</li><li>emulsify... |
-| gcse-food-and-nutrition---unit-3-non-exam-assessment-pack.md | 36 | `MORFOLOGIK_RULE_EN_GB` | misspelling | griddling | Possible spelling mistake found. | riddling, gridding, g riddling | ...><li>freezing*</li><li>frying**</li><li>**griddling****</li><li>grilling*</li><li>pickling**<... |
 | gcse-food-and-nutrition---unit-3-non-exam-assessment-pack.md | 37 | `SPACE_BEFORE_PARENTHESIS` | typographical | ( | It appears that a white space is missing. |  ( | ...*\***  • **tenderising\***  • **toasting**(**nuts or seeds) \*\*** • **weighing\*\***... |
 | gcse-food-and-nutrition---unit-3-non-exam-assessment-pack.md | 37 | `SPACE_BEFORE_PARENTHESIS` | typographical | ( | It appears that a white space is missing. |  ( | ... \*\*** • **weighing\*\***  • **whisking**(**aeration)\*\*\***  • **zesting\***  • re... |
-| gcse-food-and-nutrition---unit-3-non-exam-assessment-pack.md | 38 | `MORFOLOGIK_RULE_EN_GB` | misspelling | noneditable | Possible spelling mistake found. | — | ...rence and authentication purposes, in a **noneditable** format (such as a screenshot) and provi... |
-| gcse-food-and-nutrition---unit-3-non-exam-assessment-pack.md | 38 | `MORFOLOGIK_RULE_EN_GB` | misspelling | AIgenerated | Possible spelling mistake found. | AI generated | ...ssessor is able to review the work, the **AIgenerated** content and how it has been used.  {39}... |
 
 ### Food-and-Nutrition / overview-of-consultation-findings.md
 
-Found 15 issue(s).
+Found 14 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | overview-of-consultation-findings.md | 1 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Exper | Possible spelling mistake found. | Expert, Expel, Esper | ... and Communication Area of Learning and **Exper** \| ience .15 \| \| Level 2 Award in Additi... |
 | overview-of-consultation-findings.md | 1 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ience | Possible spelling mistake found. | hence, fence, pence (+1 more) | ...munication Area of Learning and Exper \| **ience** .15 \| \| Level 2 Award in Additional Cor... |
 | overview-of-consultation-findings.md | 2 | `MORFOLOGIK_RULE_EN_GB` | misspelling | made-for-wales-gcses | Possible spelling mistake found. | made-for-wales-GCSEs | ...form/reforming/qualified-for-the-future/**made-for-wales-gcses**/#approval-criteria\)](https://qualifica... |
-| overview-of-consultation-findings.md | 4 | `MORFOLOGIK_RULE_EN_GB` | misspelling | maximalise | Possible spelling mistake found. | maximalist, maximalism | ...ather than coursework or mini-tests, to **maximalise** equity. This group felt that controls s... |
 | overview-of-consultation-findings.md | 5 | `COMMA_COMPOUND_SENTENCE` | uncategorized |  and | Use a comma before ‘and’ if it connects two independent clauses (unless they are closely connected and short). | , and | ...greater detail with Qualifications Wales** and** we will also be discussing the issue wi... |
 | overview-of-consultation-findings.md | 6 | `ALL_OF_THE` | style | all of the | Consider removing “of” to be more concise | all the | ...ications will provide stakeholders with **all of the** information they require in due course.... |
 | overview-of-consultation-findings.md | 9 | `COMMA_COMPOUND_SENTENCE` | uncategorized |  and | Use a comma before ‘and’ if it connects two independent clauses (unless they are closely connected and short). | , and | ...hat the content is teachable in the time** and** we will strengthen our focus on reviewi... |
@@ -320,103 +287,15 @@ Found 15 issue(s).
 
 ### Food-and-Nutrition / resources-for-new-gcse.md
 
-Found 242 issue(s).
+Found 66 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| resources-for-new-gcse.md | 0 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Yn | Possible spelling mistake found. | In, On, An (+49 more) | ...e_0.jpeg)  ![](_page_0_Picture_1.jpeg)  **Yn** arbennig i Gymru. Yn barod i'r byd.  Ma... |
-| resources-for-new-gcse.md | 0 | `MORFOLOGIK_RULE_EN_GB` | misspelling | arbennig | Possible spelling mistake found. | Armenia, gardening, arsenic (+17 more) | ....jpeg)  ![](_page_0_Picture_1.jpeg)  Yn **arbennig** i Gymru. Yn barod i'r byd.  Made for Wa... |
-| resources-for-new-gcse.md | 0 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Yn | Possible spelling mistake found. | In, On, An (+49 more) | ...0_Picture_1.jpeg)  Yn arbennig i Gymru. **Yn** barod i'r byd.  Made for Wales. Ready f... |
-| resources-for-new-gcse.md | 0 | `MORFOLOGIK_RULE_EN_GB` | misspelling | barod | Possible spelling mistake found. | baron, bard, Baroda (+4 more) | ...icture_1.jpeg)  Yn arbennig i Gymru. Yn **barod** i'r byd.  Made for Wales. Ready for the... |
 | resources-for-new-gcse.md | 0 | `EN_UNPAIRED_QUOTES` | typographical | ' | Unpaired symbol: ‘'’ seems to be missing | — | ...1.jpeg)  Yn arbennig i Gymru. Yn barod i**'**r byd.  Made for Wales. Ready for the wo... |
-| resources-for-new-gcse.md | 0 | `MORFOLOGIK_RULE_EN_GB` | misspelling | byd | Possible spelling mistake found. | BYD, by, bye (+1297 more) | ...peg)  Yn arbennig i Gymru. Yn barod i'r **byd**.  Made for Wales. Ready for the world. ... |
-| resources-for-new-gcse.md | 1 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Bwyd | Possible spelling mistake found. | Boyd, BWD, BWY (+1 more) | ...--------------------  TGAU GCSE  # TGAU **Bwyd** a Maeth GCSE Food & Nutrition  ![](_pag... |
-| resources-for-new-gcse.md | 1 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Maeth | Possible spelling mistake found. | Meath, Meth | ...-------------  TGAU GCSE  # TGAU Bwyd a **Maeth** GCSE Food & Nutrition  ![](_page_1_Pict... |
-| resources-for-new-gcse.md | 1 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ADNODDAU | Possible spelling mistake found. | NORDAU, ADENOIDAL, ANODAL (+1 more) | ...rition  ![](_page_1_Picture_2.jpeg)  ## **ADNODDAU**/ RESOURCES  ![](_page_1_Picture_4.jpeg)... |
-| resources-for-new-gcse.md | 2 | `MORFOLOGIK_RULE_EN_GB` | misspelling | UNED | Possible spelling mistake found. | USED, TUNED, UNWED (+8 more) | ...-----------------------------------  ## **UNED** 1/UNIT 1  ![](_page_2_Picture_2.jpeg)  ... |
-| resources-for-new-gcse.md | 2 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Uned | Possible spelling mistake found. | Used, Tuned, Unwed (+9 more) | ...d spoilage - 1.6 From field to fork  ## **Uned** 1  - 1.1 Grwpiau cynwyddau bwyd - 1.2 M... |
-| resources-for-new-gcse.md | 2 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Grwpiau | Possible spelling mistake found. | Rupiah, Gratian, Grecian (+12 more) | ....6 From field to fork  ## Uned 1  - 1.1 **Grwpiau** cynwyddau bwyd - 1.2 Maetholion ar gyfe... |
-| resources-for-new-gcse.md | 2 | `MORFOLOGIK_RULE_EN_GB` | misspelling | cynwyddau | Possible spelling mistake found. | — | ...field to fork  ## Uned 1  - 1.1 Grwpiau **cynwyddau** bwyd - 1.2 Maetholion ar gyfer deiet cy... |
-| resources-for-new-gcse.md | 2 | `MORFOLOGIK_RULE_EN_GB` | misspelling | bwyd | Possible spelling mistake found. | Boyd, BWD, BWY (+1 more) | ...ork  ## Uned 1  - 1.1 Grwpiau cynwyddau **bwyd** - 1.2 Maetholion ar gyfer deiet cytbwys... |
-| resources-for-new-gcse.md | 2 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Maetholion | Possible spelling mistake found. | Aetolian | ...d 1  - 1.1 Grwpiau cynwyddau bwyd - 1.2 **Maetholion** ar gyfer deiet cytbwys - 1.3 Deiet ac i... |
-| resources-for-new-gcse.md | 2 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ar | Possible spelling mistake found. | AR, Ar, a (+176 more) | ...Grwpiau cynwyddau bwyd - 1.2 Maetholion **ar** gyfer deiet cytbwys - 1.3 Deiet ac iech... |
-| resources-for-new-gcse.md | 2 | `MORFOLOGIK_RULE_EN_GB` | misspelling | gyfer | Possible spelling mistake found. | gofer | ...piau cynwyddau bwyd - 1.2 Maetholion ar **gyfer** deiet cytbwys - 1.3 Deiet ac iechyd - 1... |
-| resources-for-new-gcse.md | 2 | `MORFOLOGIK_RULE_EN_GB` | misspelling | deiet | Possible spelling mistake found. | diet, deist, DEET | ...ynwyddau bwyd - 1.2 Maetholion ar gyfer **deiet** cytbwys - 1.3 Deiet ac iechyd - 1.4 Cog... |
-| resources-for-new-gcse.md | 2 | `MORFOLOGIK_RULE_EN_GB` | misspelling | cytbwys | Possible spelling mistake found. | cymbals, cowboys, cutaways (+1 more) | ...au bwyd - 1.2 Maetholion ar gyfer deiet **cytbwys** - 1.3 Deiet ac iechyd - 1.4 Coginio bwy... |
-| resources-for-new-gcse.md | 2 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Deiet | Possible spelling mistake found. | Diet, Deist, DEET | ...Maetholion ar gyfer deiet cytbwys - 1.3 **Deiet** ac iechyd - 1.4 Coginio bwyd - 1.5 Diry... |
-| resources-for-new-gcse.md | 2 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ac | Possible spelling mistake found. | AC, Ac, a (+167 more) | ...lion ar gyfer deiet cytbwys - 1.3 Deiet **ac** iechyd - 1.4 Coginio bwyd - 1.5 Dirywia... |
-| resources-for-new-gcse.md | 2 | `MORFOLOGIK_RULE_EN_GB` | misspelling | iechyd | Possible spelling mistake found. | inked, irked, itchy (+6 more) | ...n ar gyfer deiet cytbwys - 1.3 Deiet ac **iechyd** - 1.4 Coginio bwyd - 1.5 Dirywiad bwyd ... |
-| resources-for-new-gcse.md | 2 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Coginio | Possible spelling mistake found. | Yogini, Yoginis | ...iet cytbwys - 1.3 Deiet ac iechyd - 1.4 **Coginio** bwyd - 1.5 Dirywiad bwyd - 1.6 O'r ffer... |
-| resources-for-new-gcse.md | 2 | `MORFOLOGIK_RULE_EN_GB` | misspelling | bwyd | Possible spelling mistake found. | Boyd, BWD, BWY (+1 more) | ...wys - 1.3 Deiet ac iechyd - 1.4 Coginio **bwyd** - 1.5 Dirywiad bwyd - 1.6 O'r fferm i'r... |
-| resources-for-new-gcse.md | 2 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Dirywiad | Possible spelling mistake found. | Dryad, Dirtied, Dairymaid | ...eiet ac iechyd - 1.4 Coginio bwyd - 1.5 **Dirywiad** bwyd - 1.6 O'r fferm i'r fforc  {3}----... |
-| resources-for-new-gcse.md | 2 | `MORFOLOGIK_RULE_EN_GB` | misspelling | bwyd | Possible spelling mistake found. | Boyd, BWD, BWY (+1 more) | ...echyd - 1.4 Coginio bwyd - 1.5 Dirywiad **bwyd** - 1.6 O'r fferm i'r fforc  {3}---------... |
-| resources-for-new-gcse.md | 2 | `MORFOLOGIK_RULE_EN_GB` | misspelling | fferm | Possible spelling mistake found. | ff erm | ...inio bwyd - 1.5 Dirywiad bwyd - 1.6 O'r **fferm** i'r fforc  {3}-------------------------... |
-| resources-for-new-gcse.md | 2 | `MORFOLOGIK_RULE_EN_GB` | misspelling | fforc | Possible spelling mistake found. | ff orc | ...- 1.5 Dirywiad bwyd - 1.6 O'r fferm i'r **fforc**  {3}-----------------------------------... |
-| resources-for-new-gcse.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Grwpiau | Possible spelling mistake found. | Rupiah, Gratian, Grecian (+12 more) | ...-------------------------------  ## 1.1 **Grwpiau** cynwyddau Bwyd/Food commodity groups  !... |
-| resources-for-new-gcse.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | cynwyddau | Possible spelling mistake found. | — | ...-----------------------  ## 1.1 Grwpiau **cynwyddau** Bwyd/Food commodity groups  ![](_page_3... |
-| resources-for-new-gcse.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Bwyd | Possible spelling mistake found. | Boyd, BWD, BWY (+1 more) | ...-------------  ## 1.1 Grwpiau cynwyddau **Bwyd**/Food commodity groups  ![](_page_3_Pict... |
-| resources-for-new-gcse.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | eu | Possible spelling mistake found. | EU, Eu, ex (+94 more) | ...roups  ![](_page_3_Picture_2.jpeg)  Heb **eu** ardystio gan CBAC ond efallai yn ddefny... |
-| resources-for-new-gcse.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ardystio | Possible spelling mistake found. | artistic, Ariosto, Andy Timo | ...ps  ![](_page_3_Picture_2.jpeg)  Heb eu **ardystio** gan CBAC ond efallai yn ddefnyddiol. No... |
-| resources-for-new-gcse.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | gan | Possible spelling mistake found. | an, can, man (+78 more) | ...page_3_Picture_2.jpeg)  Heb eu ardystio **gan** CBAC ond efallai yn ddefnyddiol. Not en... |
-| resources-for-new-gcse.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ond | Possible spelling mistake found. | OND, and, on (+1315 more) | ...cture_2.jpeg)  Heb eu ardystio gan CBAC **ond** efallai yn ddefnyddiol. Not endorsed by... |
-| resources-for-new-gcse.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | efallai | Possible spelling mistake found. | Falla | ...e_2.jpeg)  Heb eu ardystio gan CBAC ond **efallai** yn ddefnyddiol. Not endorsed by WJEC bu... |
-| resources-for-new-gcse.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | yn | Possible spelling mistake found. | in, on, an (+53 more) | ...)  Heb eu ardystio gan CBAC ond efallai **yn** ddefnyddiol. Not endorsed by WJEC but m... |
-| resources-for-new-gcse.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ddefnyddiol | Possible spelling mistake found. | — | ...Heb eu ardystio gan CBAC ond efallai yn **ddefnyddiol**. Not endorsed by WJEC but may be useful... |
-| resources-for-new-gcse.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Bwydydd | Possible spelling mistake found. | Gwynedd | ...es-14-16-years/) Food A Fact Of Life  - **Bwydydd** carbohydrad, fel ffibr, startsh a siwgr... |
-| resources-for-new-gcse.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | carbohydrad | Possible spelling mistake found. | carbohydrate, carbohydrase | ...-years/) Food A Fact Of Life  - Bwydydd **carbohydrad**, fel ffibr, startsh a siwgr - Bwydydd l... |
-| resources-for-new-gcse.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | fel | Possible spelling mistake found. | few, fell, del (+50 more) | ... A Fact Of Life  - Bwydydd carbohydrad, **fel** ffibr, startsh a siwgr - Bwydydd llaeth... |
-| resources-for-new-gcse.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ffibr | Possible spelling mistake found. | fair, fibre, FIBA (+21 more) | ...act Of Life  - Bwydydd carbohydrad, fel **ffibr**, startsh a siwgr - Bwydydd llaeth a dew... |
-| resources-for-new-gcse.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | startsh | Possible spelling mistake found. | starts | ...Life  - Bwydydd carbohydrad, fel ffibr, **startsh** a siwgr - Bwydydd llaeth a dewisiadau e... |
-| resources-for-new-gcse.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | siwgr | Possible spelling mistake found. | singer, sign, siege (+27 more) | ...ydydd carbohydrad, fel ffibr, startsh a **siwgr** - Bwydydd llaeth a dewisiadau eraill - ... |
-| resources-for-new-gcse.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Bwydydd | Possible spelling mistake found. | Gwynedd | ...rbohydrad, fel ffibr, startsh a siwgr - **Bwydydd** llaeth a dewisiadau eraill - Brasterau ... |
-| resources-for-new-gcse.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | llaeth | Possible spelling mistake found. | Plath, lath, loath (+1 more) | ...d, fel ffibr, startsh a siwgr - Bwydydd **llaeth** a dewisiadau eraill - Brasterau ac olew... |
-| resources-for-new-gcse.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | dewisiadau | Possible spelling mistake found. | — | ...ibr, startsh a siwgr - Bwydydd llaeth a **dewisiadau** eraill - Brasterau ac olewau - Bwydydd ... |
-| resources-for-new-gcse.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | eraill | Possible spelling mistake found. | era ill | ...h a siwgr - Bwydydd llaeth a dewisiadau **eraill** - Brasterau ac olewau - Bwydydd protein... |
-| resources-for-new-gcse.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Brasterau | Possible spelling mistake found. | Raster, Blaster, Blasters (+12 more) | ... - Bwydydd llaeth a dewisiadau eraill - **Brasterau** ac olewau - Bwydydd protein fel wyau, p... |
-| resources-for-new-gcse.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ac | Possible spelling mistake found. | AC, Ac, a (+167 more) | ... llaeth a dewisiadau eraill - Brasterau **ac** olewau - Bwydydd protein fel wyau, pysg... |
-| resources-for-new-gcse.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | olewau | Possible spelling mistake found. | lead, clear, legal (+145 more) | ...aeth a dewisiadau eraill - Brasterau ac **olewau** - Bwydydd protein fel wyau, pysgod a ch... |
-| resources-for-new-gcse.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Bwydydd | Possible spelling mistake found. | Gwynedd | ...wisiadau eraill - Brasterau ac olewau - **Bwydydd** protein fel wyau, pysgod a chig - Ffrwy... |
-| resources-for-new-gcse.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | fel | Possible spelling mistake found. | few, fell, del (+50 more) | ...- Brasterau ac olewau - Bwydydd protein **fel** wyau, pysgod a chig - Ffrwythau a llysi... |
-| resources-for-new-gcse.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | wyau | Possible spelling mistake found. | WYA | ...asterau ac olewau - Bwydydd protein fel **wyau**, pysgod a chig - Ffrwythau a llysiau  -... |
-| resources-for-new-gcse.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | pysgod | Possible spelling mistake found. | period, passed, God (+80 more) | ...u ac olewau - Bwydydd protein fel wyau, **pysgod** a chig - Ffrwythau a llysiau  - Carbohy... |
-| resources-for-new-gcse.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | chig | Possible spelling mistake found. | king, kg, chip (+24 more) | ...au - Bwydydd protein fel wyau, pysgod a **chig** - Ffrwythau a llysiau  - Carbohydrate f... |
-| resources-for-new-gcse.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Ffrwythau | Possible spelling mistake found. | — | ...ydydd protein fel wyau, pysgod a chig - **Ffrwythau** a llysiau  - Carbohydrate foods, such a... |
-| resources-for-new-gcse.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | llysiau | Possible spelling mistake found. | elysian, Elysian, Lysias | ...n fel wyau, pysgod a chig - Ffrwythau a **llysiau**  - Carbohydrate foods, such as fibre, s... |
-| resources-for-new-gcse.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | NFU | Possible spelling mistake found. | NFL, NFC, NU (+25 more) | ...o](https://www.egginfo.co.uk/)  Home - [**NFU** Education \(nfuonline.com\)](https://ed... |
-| resources-for-new-gcse.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Quorn | Possible spelling mistake found. | Quern, Quoin, Quora | ...an Products, Meat Free Recipes & News \| **Quorn**](https://www.quorn.co.uk/)  [The Vegeta... |
-| resources-for-new-gcse.md | 4 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Maetholion | Possible spelling mistake found. | Aetolian | ...-------------------------------  ## 1.2 **Maetholion** ar gyfer deiet cytbwys/Nutrients for a ... |
-| resources-for-new-gcse.md | 4 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ar | Possible spelling mistake found. | AR, Ar, a (+176 more) | ...--------------------  ## 1.2 Maetholion **ar** gyfer deiet cytbwys/Nutrients for a bal... |
-| resources-for-new-gcse.md | 4 | `MORFOLOGIK_RULE_EN_GB` | misspelling | gyfer | Possible spelling mistake found. | gofer | ...-----------------  ## 1.2 Maetholion ar **gyfer** deiet cytbwys/Nutrients for a balanced ... |
-| resources-for-new-gcse.md | 4 | `MORFOLOGIK_RULE_EN_GB` | misspelling | deiet | Possible spelling mistake found. | diet, deist, DEET | ...-----------  ## 1.2 Maetholion ar gyfer **deiet** cytbwys/Nutrients for a balanced diet  ... |
-| resources-for-new-gcse.md | 4 | `MORFOLOGIK_RULE_EN_GB` | misspelling | cytbwys | Possible spelling mistake found. | cymbals, cowboys, cutaways (+1 more) | ...-----  ## 1.2 Maetholion ar gyfer deiet **cytbwys**/Nutrients for a balanced diet  ![](_pag... |
-| resources-for-new-gcse.md | 4 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Macrofaetholion | Possible spelling mistake found. | — | ...iet  ![](_page_4_Picture_2.jpeg)  ### • **Macrofaetholion**  - Microfaetholion - Dŵr a ffibr - Macr... |
-| resources-for-new-gcse.md | 4 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Microfaetholion | Possible spelling mistake found. | — | ...cture_2.jpeg)  ### • Macrofaetholion  - **Microfaetholion** - Dŵr a ffibr - Macronutrients - Micron... |
-| resources-for-new-gcse.md | 4 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Dŵr | Possible spelling mistake found. | Dr, DDR, DLR (+28 more) | ... • Macrofaetholion  - Microfaetholion - **Dŵr** a ffibr - Macronutrients - Micronutrien... |
-| resources-for-new-gcse.md | 4 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ffibr | Possible spelling mistake found. | fair, fibre, FIBA (+21 more) | ...rofaetholion  - Microfaetholion - Dŵr a **ffibr** - Macronutrients - Micronutrients - Wat... |
-| resources-for-new-gcse.md | 4 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Adnoddau | Possible spelling mistake found. | Nordau, Adenoidal, Anodal (+1 more) | ... - Micronutrients - Water & Fibre  #### **Adnoddau** CBAC/WJEC Resources  [https://resource.... |
-| resources-for-new-gcse.md | 4 | `MORFOLOGIK_RULE_EN_GB` | misspelling | eu | Possible spelling mistake found. | EU, Eu, ex (+94 more) | ..._1-43/diet-and-lifestyle.pdf)  #### Heb **eu** ardystio gan CBAC ond efallai yn ddefny... |
-| resources-for-new-gcse.md | 4 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ardystio | Possible spelling mistake found. | artistic, Ariosto, Andy Timo | ...43/diet-and-lifestyle.pdf)  #### Heb eu **ardystio** gan CBAC ond efallai yn ddefnyddiol. No... |
-| resources-for-new-gcse.md | 4 | `MORFOLOGIK_RULE_EN_GB` | misspelling | gan | Possible spelling mistake found. | an, can, man (+78 more) | ...nd-lifestyle.pdf)  #### Heb eu ardystio **gan** CBAC ond efallai yn ddefnyddiol. Not en... |
-| resources-for-new-gcse.md | 4 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ond | Possible spelling mistake found. | OND, and, on (+1315 more) | ...yle.pdf)  #### Heb eu ardystio gan CBAC **ond** efallai yn ddefnyddiol. Not endorsed by... |
-| resources-for-new-gcse.md | 4 | `MORFOLOGIK_RULE_EN_GB` | misspelling | efallai | Possible spelling mistake found. | Falla | ...pdf)  #### Heb eu ardystio gan CBAC ond **efallai** yn ddefnyddiol. Not endorsed by WJEC bu... |
-| resources-for-new-gcse.md | 4 | `MORFOLOGIK_RULE_EN_GB` | misspelling | yn | Possible spelling mistake found. | in, on, an (+53 more) | ...## Heb eu ardystio gan CBAC ond efallai **yn** ddefnyddiol. Not endorsed by WJEC but m... |
-| resources-for-new-gcse.md | 4 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ddefnyddiol | Possible spelling mistake found. | — | ...Heb eu ardystio gan CBAC ond efallai yn **ddefnyddiol**. Not endorsed by WJEC but may be useful... |
-| resources-for-new-gcse.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Deiet | Possible spelling mistake found. | Diet, Deist, DEET | ...-------------------------------  ## 1.3 **Deiet** ac Iechyd/Diet and Health  ![](_page_5_... |
-| resources-for-new-gcse.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ac | Possible spelling mistake found. | AC, Ac, a (+167 more) | ...-------------------------  ## 1.3 Deiet **ac** Iechyd/Diet and Health  ![](_page_5_Pic... |
-| resources-for-new-gcse.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Iechyd | Possible spelling mistake found. | Inked, Irked, Itchy (+6 more) | ...----------------------  ## 1.3 Deiet ac **Iechyd**/Diet and Health  ![](_page_5_Picture_2.... |
-| resources-for-new-gcse.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Sut | Possible spelling mistake found. | But, Out, Set (+61 more) | ... Health  ![](_page_5_Picture_2.jpeg)  - **Sut** mae anghenion maeth yn newid dros gamau... |
-| resources-for-new-gcse.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | mae | Possible spelling mistake found. | make, MAE, may (+1981 more) | ...lth  ![](_page_5_Picture_2.jpeg)  - Sut **mae** anghenion maeth yn newid dros gamau byw... |
-| resources-for-new-gcse.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | anghenion | Possible spelling mistake found. | infection, inferior, affection (+11 more) | ... ![](_page_5_Picture_2.jpeg)  - Sut mae **anghenion** maeth yn newid dros gamau bywyd. - Angh... |
-| resources-for-new-gcse.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | maeth | Possible spelling mistake found. | Meath, meth | ..._5_Picture_2.jpeg)  - Sut mae anghenion **maeth** yn newid dros gamau bywyd. - Anghenion ... |
-| resources-for-new-gcse.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | yn | Possible spelling mistake found. | in, on, an (+53 more) | ...ture_2.jpeg)  - Sut mae anghenion maeth **yn** newid dros gamau bywyd. - Anghenion mae... |
-| resources-for-new-gcse.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | newid | Possible spelling mistake found. | new id | ...e_2.jpeg)  - Sut mae anghenion maeth yn **newid** dros gamau bywyd. - Anghenion maeth uni... |
-| resources-for-new-gcse.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | gamau | Possible spelling mistake found. | Gama, Gamay | ...- Sut mae anghenion maeth yn newid dros **gamau** bywyd. - Anghenion maeth unigolion ag a... |
 | resources-for-new-gcse.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | bywyd | Possible spelling mistake found. | Boyd, Byrd, bowed (+12 more) | ...mae anghenion maeth yn newid dros gamau **bywyd**. - Anghenion maeth unigolion ag angheni... |
 | resources-for-new-gcse.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Anghenion | Possible spelling mistake found. | Infection, Inferior, Affection (+11 more) | ...nion maeth yn newid dros gamau bywyd. - **Anghenion** maeth unigolion ag anghenion dietegol n... |
-| resources-for-new-gcse.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | maeth | Possible spelling mistake found. | Meath, meth | ... yn newid dros gamau bywyd. - Anghenion **maeth** unigolion ag anghenion dietegol neu ddi... |
 | resources-for-new-gcse.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | unigolion | Possible spelling mistake found. | Univision, Nicolson, ungolden | ...wid dros gamau bywyd. - Anghenion maeth **unigolion** ag anghenion dietegol neu ddiffygion pe... |
 | resources-for-new-gcse.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ag | Possible spelling mistake found. | AG, Ag, a (+166 more) | ...amau bywyd. - Anghenion maeth unigolion **ag** anghenion dietegol neu ddiffygion penod... |
-| resources-for-new-gcse.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | anghenion | Possible spelling mistake found. | infection, inferior, affection (+11 more) | ...u bywyd. - Anghenion maeth unigolion ag **anghenion** dietegol neu ddiffygion penodol. - Tued... |
 | resources-for-new-gcse.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | dietegol | Possible spelling mistake found. | diesel, Diego, dieters (+7 more) | ... Anghenion maeth unigolion ag anghenion **dietegol** neu ddiffygion penodol. - Tueddiadau pr... |
 | resources-for-new-gcse.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | neu | Possible spelling mistake found. | new, EU, net (+41 more) | ...n maeth unigolion ag anghenion dietegol **neu** ddiffygion penodol. - Tueddiadau presen... |
 | resources-for-new-gcse.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ddiffygion | Possible spelling mistake found. | diffusion | ...eth unigolion ag anghenion dietegol neu **ddiffygion** penodol. - Tueddiadau presennol sy'n ym... |
@@ -426,37 +305,15 @@ Found 242 issue(s).
 | resources-for-new-gcse.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | sy | Possible spelling mistake found. | SY, by, my (+82 more) | ...ffygion penodol. - Tueddiadau presennol **sy**'n ymwneud â materion deiet yng Nghymru ... |
 | resources-for-new-gcse.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ymwneud | Possible spelling mistake found. | yawned | ...on penodol. - Tueddiadau presennol sy'n **ymwneud** â materion deiet yng Nghymru  - How nut... |
 | resources-for-new-gcse.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | materion | Possible spelling mistake found. | — | .... - Tueddiadau presennol sy'n ymwneud â **materion** deiet yng Nghymru  - How nutritional ne... |
-| resources-for-new-gcse.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | deiet | Possible spelling mistake found. | diet, deist, DEET | ...iadau presennol sy'n ymwneud â materion **deiet** yng Nghymru  - How nutritional needs ch... |
 | resources-for-new-gcse.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | yng | Possible spelling mistake found. | CNG, LNG, PNG (+23 more) | ...presennol sy'n ymwneud â materion deiet **yng** Nghymru  - How nutritional needs change... |
 | resources-for-new-gcse.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Nghymru | Possible spelling mistake found. | Nehru, Cymru | ...ennol sy'n ymwneud â materion deiet yng **Nghymru**  - How nutritional needs change over th... |
-| resources-for-new-gcse.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | eu | Possible spelling mistake found. | EU, Eu, ex (+94 more) | ...elating to dietary issues in Wales  Heb **eu** ardystio gan CBAC ond efallai yn ddefny... |
-| resources-for-new-gcse.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ardystio | Possible spelling mistake found. | artistic, Ariosto, Andy Timo | ...ting to dietary issues in Wales  Heb eu **ardystio** gan CBAC ond efallai yn ddefnyddiol. No... |
-| resources-for-new-gcse.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | gan | Possible spelling mistake found. | an, can, man (+78 more) | ...ietary issues in Wales  Heb eu ardystio **gan** CBAC ond efallai yn ddefnyddiol. Not en... |
-| resources-for-new-gcse.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ond | Possible spelling mistake found. | OND, and, on (+1315 more) | ...sues in Wales  Heb eu ardystio gan CBAC **ond** efallai yn ddefnyddiol. Not endorsed by... |
-| resources-for-new-gcse.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | efallai | Possible spelling mistake found. | Falla | ... in Wales  Heb eu ardystio gan CBAC ond **efallai** yn ddefnyddiol. Not endorsed by WJEC bu... |
-| resources-for-new-gcse.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | yn | Possible spelling mistake found. | in, on, an (+53 more) | ...s  Heb eu ardystio gan CBAC ond efallai **yn** ddefnyddiol. Not endorsed by WJEC but m... |
-| resources-for-new-gcse.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ddefnyddiol | Possible spelling mistake found. | — | ...Heb eu ardystio gan CBAC ond efallai yn **ddefnyddiol**. Not endorsed by WJEC but may be useful... |
-| resources-for-new-gcse.md | 6 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Coginio | Possible spelling mistake found. | Yogini, Yoginis | ...-------------------------------  ## 1.4 **Coginio** bwyd/ Cooking food  ![](_page_6_Picture... |
-| resources-for-new-gcse.md | 6 | `MORFOLOGIK_RULE_EN_GB` | misspelling | bwyd | Possible spelling mistake found. | Boyd, BWD, BWY (+1 more) | ...-----------------------  ## 1.4 Coginio **bwyd**/ Cooking food  ![](_page_6_Picture_2.jp... |
 | resources-for-new-gcse.md | 6 | `MORFOLOGIK_RULE_EN_GB` | misspelling | rydym | Possible spelling mistake found. | Ryder, Rudy, Radom (+2 more) | ...ood  ![](_page_6_Picture_2.jpeg)  - Pam **rydym** yn coginio bwyd. - Dulliau trosglwyddo ... |
-| resources-for-new-gcse.md | 6 | `MORFOLOGIK_RULE_EN_GB` | misspelling | yn | Possible spelling mistake found. | in, on, an (+53 more) | ...[](_page_6_Picture_2.jpeg)  - Pam rydym **yn** coginio bwyd. - Dulliau trosglwyddo gwr... |
 | resources-for-new-gcse.md | 6 | `MORFOLOGIK_RULE_EN_GB` | misspelling | coginio | Possible spelling mistake found. | yogini, yoginis | ..._page_6_Picture_2.jpeg)  - Pam rydym yn **coginio** bwyd. - Dulliau trosglwyddo gwres. - Du... |
-| resources-for-new-gcse.md | 6 | `MORFOLOGIK_RULE_EN_GB` | misspelling | bwyd | Possible spelling mistake found. | Boyd, BWD, BWY (+1 more) | ...Picture_2.jpeg)  - Pam rydym yn coginio **bwyd**. - Dulliau trosglwyddo gwres. - Dulliau... |
 | resources-for-new-gcse.md | 6 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Dulliau | Possible spelling mistake found. | Dulling, Dullish | ...2.jpeg)  - Pam rydym yn coginio bwyd. - **Dulliau** trosglwyddo gwres. - Dulliau coginio.  ... |
 | resources-for-new-gcse.md | 6 | `MORFOLOGIK_RULE_EN_GB` | misspelling | trosglwyddo | Possible spelling mistake found. | — | ... - Pam rydym yn coginio bwyd. - Dulliau **trosglwyddo** gwres. - Dulliau coginio.  - Why we coo... |
 | resources-for-new-gcse.md | 6 | `MORFOLOGIK_RULE_EN_GB` | misspelling | gwres | Possible spelling mistake found. | gores, gyres | ... yn coginio bwyd. - Dulliau trosglwyddo **gwres**. - Dulliau coginio.  - Why we cook food... |
 | resources-for-new-gcse.md | 6 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Dulliau | Possible spelling mistake found. | Dulling, Dullish | ...io bwyd. - Dulliau trosglwyddo gwres. - **Dulliau** coginio.  - Why we cook food. - Methods... |
 | resources-for-new-gcse.md | 6 | `MORFOLOGIK_RULE_EN_GB` | misspelling | coginio | Possible spelling mistake found. | yogini, yoginis | ... - Dulliau trosglwyddo gwres. - Dulliau **coginio**.  - Why we cook food. - Methods of heat... |
-| resources-for-new-gcse.md | 6 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Adnoddau | Possible spelling mistake found. | Nordau, Adenoidal, Anodal (+1 more) | ...heat transfer. - Cooking methods.  #### **Adnoddau** CBAC/WJEC Resources  [effect-of-cooking... |
-| resources-for-new-gcse.md | 6 | `MORFOLOGIK_RULE_EN_GB` | misspelling | eu | Possible spelling mistake found. | EU, Eu, ex (+94 more) | ...ages/ResourceSingle.aspx?rIid=871)  Heb **eu** ardystio gan CBAC ond efallai yn ddefny... |
-| resources-for-new-gcse.md | 6 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ardystio | Possible spelling mistake found. | artistic, Ariosto, Andy Timo | ...s/ResourceSingle.aspx?rIid=871)  Heb eu **ardystio** gan CBAC ond efallai yn ddefnyddiol. No... |
-| resources-for-new-gcse.md | 6 | `MORFOLOGIK_RULE_EN_GB` | misspelling | gan | Possible spelling mistake found. | an, can, man (+78 more) | ...eSingle.aspx?rIid=871)  Heb eu ardystio **gan** CBAC ond efallai yn ddefnyddiol. Not en... |
-| resources-for-new-gcse.md | 6 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ond | Possible spelling mistake found. | OND, and, on (+1315 more) | ...spx?rIid=871)  Heb eu ardystio gan CBAC **ond** efallai yn ddefnyddiol. Not endorsed by... |
-| resources-for-new-gcse.md | 6 | `MORFOLOGIK_RULE_EN_GB` | misspelling | efallai | Possible spelling mistake found. | Falla | ...rIid=871)  Heb eu ardystio gan CBAC ond **efallai** yn ddefnyddiol. Not endorsed by WJEC bu... |
-| resources-for-new-gcse.md | 6 | `MORFOLOGIK_RULE_EN_GB` | misspelling | yn | Possible spelling mistake found. | in, on, an (+53 more) | ...)  Heb eu ardystio gan CBAC ond efallai **yn** ddefnyddiol. Not endorsed by WJEC but m... |
-| resources-for-new-gcse.md | 6 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ddefnyddiol | Possible spelling mistake found. | — | ...Heb eu ardystio gan CBAC ond efallai yn **ddefnyddiol**. Not endorsed by WJEC but may be useful... |
-| resources-for-new-gcse.md | 7 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Dirywiad | Possible spelling mistake found. | Dryad, Dirtied, Dairymaid | ...-------------------------------  ## 1.5 **Dirywiad** Bwyd/Food Spoilage  ![](_page_7_Picture... |
-| resources-for-new-gcse.md | 7 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Bwyd | Possible spelling mistake found. | Boyd, BWD, BWY (+1 more) | ...----------------------  ## 1.5 Dirywiad **Bwyd**/Food Spoilage  ![](_page_7_Picture_2.jp... |
 | resources-for-new-gcse.md | 7 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Storio | Possible spelling mistake found. | Story, Stories, Studio (+34 more) | ...poilage  ![](_page_7_Picture_2.jpeg)  - **Storio** a rheoli tymheredd. - Hylendid a diogel... |
 | resources-for-new-gcse.md | 7 | `MORFOLOGIK_RULE_EN_GB` | misspelling | rheoli | Possible spelling mistake found. | Sheol, RHEL | ...![](_page_7_Picture_2.jpeg)  - Storio a **rheoli** tymheredd. - Hylendid a diogelwch. - Ca... |
 | resources-for-new-gcse.md | 7 | `MORFOLOGIK_RULE_EN_GB` | misspelling | tymheredd | Possible spelling mistake found. | tempered, tethered, timbered (+2 more) | ...ge_7_Picture_2.jpeg)  - Storio a rheoli **tymheredd**. - Hylendid a diogelwch. - Cadwoli. - G... |
@@ -464,126 +321,57 @@ Found 242 issue(s).
 | resources-for-new-gcse.md | 7 | `MORFOLOGIK_RULE_EN_GB` | misspelling | diogelwch | Possible spelling mistake found. | Diogenic, dirgelike | ...Storio a rheoli tymheredd. - Hylendid a **diogelwch**. - Cadwoli. - Gwenwyn bwyd.  Adnoddau C... |
 | resources-for-new-gcse.md | 7 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Cadwoli | Possible spelling mistake found. | Cannoli | ...li tymheredd. - Hylendid a diogelwch. - **Cadwoli**. - Gwenwyn bwyd.  Adnoddau CBAC/WJEC Re... |
 | resources-for-new-gcse.md | 7 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Gwenwyn | Possible spelling mistake found. | Twenty, Glenn, Gwen (+14 more) | ...d. - Hylendid a diogelwch. - Cadwoli. - **Gwenwyn** bwyd.  Adnoddau CBAC/WJEC Resources  [h... |
-| resources-for-new-gcse.md | 7 | `MORFOLOGIK_RULE_EN_GB` | misspelling | bwyd | Possible spelling mistake found. | Boyd, BWD, BWY (+1 more) | ...endid a diogelwch. - Cadwoli. - Gwenwyn **bwyd**.  Adnoddau CBAC/WJEC Resources  [https:... |
-| resources-for-new-gcse.md | 7 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Adnoddau | Possible spelling mistake found. | Nordau, Adenoidal, Anodal (+1 more) | ... diogelwch. - Cadwoli. - Gwenwyn bwyd.  **Adnoddau** CBAC/WJEC Resources  [https://resource.... |
-| resources-for-new-gcse.md | 7 | `MORFOLOGIK_RULE_EN_GB` | misspelling | eu | Possible spelling mistake found. | EU, Eu, ex (+94 more) | ... - Preservation. - Food poisoning.  Heb **eu** ardystio gan CBAC ond efallai yn ddefny... |
-| resources-for-new-gcse.md | 7 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ardystio | Possible spelling mistake found. | artistic, Ariosto, Andy Timo | ...Preservation. - Food poisoning.  Heb eu **ardystio** gan CBAC ond efallai yn ddefnyddiol. No... |
-| resources-for-new-gcse.md | 7 | `MORFOLOGIK_RULE_EN_GB` | misspelling | gan | Possible spelling mistake found. | an, can, man (+78 more) | ...ion. - Food poisoning.  Heb eu ardystio **gan** CBAC ond efallai yn ddefnyddiol. Not en... |
-| resources-for-new-gcse.md | 7 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ond | Possible spelling mistake found. | OND, and, on (+1315 more) | ...od poisoning.  Heb eu ardystio gan CBAC **ond** efallai yn ddefnyddiol. Not endorsed by... |
-| resources-for-new-gcse.md | 7 | `MORFOLOGIK_RULE_EN_GB` | misspelling | efallai | Possible spelling mistake found. | Falla | ...oisoning.  Heb eu ardystio gan CBAC ond **efallai** yn ddefnyddiol. Not endorsed by WJEC bu... |
-| resources-for-new-gcse.md | 7 | `MORFOLOGIK_RULE_EN_GB` | misspelling | yn | Possible spelling mistake found. | in, on, an (+53 more) | ....  Heb eu ardystio gan CBAC ond efallai **yn** ddefnyddiol. Not endorsed by WJEC but m... |
-| resources-for-new-gcse.md | 7 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ddefnyddiol | Possible spelling mistake found. | — | ...Heb eu ardystio gan CBAC ond efallai yn **ddefnyddiol**. Not endorsed by WJEC but may be useful... |
-| resources-for-new-gcse.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | fferm | Possible spelling mistake found. | ff erm | ...---------------------------  ## 1.6 O'r **fferm** i'r fforc/From field to fork  ![](_page... |
-| resources-for-new-gcse.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | fforc | Possible spelling mistake found. | ff orc | ...-----------------  ## 1.6 O'r fferm i'r **fforc**/From field to fork  ![](_page_8_Picture... |
 | resources-for-new-gcse.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Tarddiad | Possible spelling mistake found. | Cardiac, Parodied, Triad (+9 more) | ...to fork  ![](_page_8_Picture_2.jpeg)  - **Tarddiad** bwyd. - Bwyd a'r amgylchedd. - Prosesu ... |
-| resources-for-new-gcse.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | bwyd | Possible spelling mistake found. | Boyd, BWD, BWY (+1 more) | ...![](_page_8_Picture_2.jpeg)  - Tarddiad **bwyd**. - Bwyd a'r amgylchedd. - Prosesu bwyd ... |
-| resources-for-new-gcse.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Bwyd | Possible spelling mistake found. | Boyd, BWD, BWY (+1 more) | ...e_8_Picture_2.jpeg)  - Tarddiad bwyd. - **Bwyd** a'r amgylchedd. - Prosesu bwyd cynradd ... |
 | resources-for-new-gcse.md | 8 | `EN_UNPAIRED_QUOTES` | typographical | ' | Unpaired symbol: ‘'’ seems to be missing | — | ...cture_2.jpeg)  - Tarddiad bwyd. - Bwyd a**'**r amgylchedd. - Prosesu bwyd cynradd ac ... |
 | resources-for-new-gcse.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | amgylchedd | Possible spelling mistake found. | — | ...re_2.jpeg)  - Tarddiad bwyd. - Bwyd a'r **amgylchedd**. - Prosesu bwyd cynradd ac eilaidd.  - ... |
 | resources-for-new-gcse.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Prosesu | Possible spelling mistake found. | Proses, Pros esu | ...Tarddiad bwyd. - Bwyd a'r amgylchedd. - **Prosesu** bwyd cynradd ac eilaidd.  - Food origin... |
-| resources-for-new-gcse.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | bwyd | Possible spelling mistake found. | Boyd, BWD, BWY (+1 more) | ... bwyd. - Bwyd a'r amgylchedd. - Prosesu **bwyd** cynradd ac eilaidd.  - Food origin. - F... |
 | resources-for-new-gcse.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | cynradd | Possible spelling mistake found. | Conrad | .... - Bwyd a'r amgylchedd. - Prosesu bwyd **cynradd** ac eilaidd.  - Food origin. - Food and ... |
-| resources-for-new-gcse.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ac | Possible spelling mistake found. | AC, Ac, a (+167 more) | ... a'r amgylchedd. - Prosesu bwyd cynradd **ac** eilaidd.  - Food origin. - Food and the... |
 | resources-for-new-gcse.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | eilaidd | Possible spelling mistake found. | laid, Elaine, inlaid (+30 more) | ...r amgylchedd. - Prosesu bwyd cynradd ac **eilaidd**.  - Food origin. - Food and the environ... |
-| resources-for-new-gcse.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Adnoddau | Possible spelling mistake found. | Nordau, Adenoidal, Anodal (+1 more) | ...ry and secondary food processing.  #### **Adnoddau** CBAC/WJEC Resources  [GCSE Food and Nut... |
-| resources-for-new-gcse.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | eu | Possible spelling mistake found. | EU, Eu, ex (+94 more) | ...l=digital-resources#tab_resources)  Heb **eu** ardystio gan CBAC ond efallai yn ddefny... |
-| resources-for-new-gcse.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ardystio | Possible spelling mistake found. | artistic, Ariosto, Andy Timo | ...igital-resources#tab_resources)  Heb eu **ardystio** gan CBAC ond efallai yn ddefnyddiol. No... |
-| resources-for-new-gcse.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | gan | Possible spelling mistake found. | an, can, man (+78 more) | ...sources#tab_resources)  Heb eu ardystio **gan** CBAC ond efallai yn ddefnyddiol. Not en... |
-| resources-for-new-gcse.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ond | Possible spelling mistake found. | OND, and, on (+1315 more) | ...ab_resources)  Heb eu ardystio gan CBAC **ond** efallai yn ddefnyddiol. Not endorsed by... |
-| resources-for-new-gcse.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | efallai | Possible spelling mistake found. | Falla | ...esources)  Heb eu ardystio gan CBAC ond **efallai** yn ddefnyddiol. Not endorsed by WJEC bu... |
-| resources-for-new-gcse.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | yn | Possible spelling mistake found. | in, on, an (+53 more) | ...)  Heb eu ardystio gan CBAC ond efallai **yn** ddefnyddiol. Not endorsed by WJEC but m... |
-| resources-for-new-gcse.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ddefnyddiol | Possible spelling mistake found. | — | ...Heb eu ardystio gan CBAC ond efallai yn **ddefnyddiol**. Not endorsed by WJEC but may be useful... |
-| resources-for-new-gcse.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | NFU | Possible spelling mistake found. | NFL, NFC, NU (+25 more) | ...revision/3) AQA - BBC Bitesize  Home - [**NFU** Education \(nfuonline.com\)](https://ed... |
-| resources-for-new-gcse.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Uned | Possible spelling mistake found. | Used, Tuned, Unwed (+9 more) | ...-----------------------------------  ## **Uned** 2 Yr Ymchwiliad Bwyd/Unit 2 The Food In... |
 | resources-for-new-gcse.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Ymchwiliad | Possible spelling mistake found. | Chiliad | ...-------------------------  ## Uned 2 Yr **Ymchwiliad** Bwyd/Unit 2 The Food Investigation  ![]... |
-| resources-for-new-gcse.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Bwyd | Possible spelling mistake found. | Boyd, BWD, BWY (+1 more) | ...--------------  ## Uned 2 Yr Ymchwiliad **Bwyd**/Unit 2 The Food Investigation  ![](_pag... |
 | resources-for-new-gcse.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Gwyddor | Possible spelling mistake found. | Fyodor, Gwalior, Wedder (+2 more) | ...igation  ![](_page_9_Picture_2.jpeg)  - **Gwyddor** bwyd. - Cynllunio arbrofion gwyddor bwy... |
-| resources-for-new-gcse.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | bwyd | Possible spelling mistake found. | Boyd, BWD, BWY (+1 more) | ... ![](_page_9_Picture_2.jpeg)  - Gwyddor **bwyd**. - Cynllunio arbrofion gwyddor bwyd. - ... |
 | resources-for-new-gcse.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Cynllunio | Possible spelling mistake found. | — | ...ge_9_Picture_2.jpeg)  - Gwyddor bwyd. - **Cynllunio** arbrofion gwyddor bwyd. - Gwyddor bwyd ... |
 | resources-for-new-gcse.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | arbrofion | Possible spelling mistake found. | abortion, abrasion, acromion (+1 more) | ...re_2.jpeg)  - Gwyddor bwyd. - Cynllunio **arbrofion** gwyddor bwyd. - Gwyddor bwyd ar waith. ... |
 | resources-for-new-gcse.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | gwyddor | Possible spelling mistake found. | Fyodor, Gwalior, wedder (+2 more) | ...  - Gwyddor bwyd. - Cynllunio arbrofion **gwyddor** bwyd. - Gwyddor bwyd ar waith.  - The s... |
-| resources-for-new-gcse.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | bwyd | Possible spelling mistake found. | Boyd, BWD, BWY (+1 more) | ...dor bwyd. - Cynllunio arbrofion gwyddor **bwyd**. - Gwyddor bwyd ar waith.  - The scienc... |
 | resources-for-new-gcse.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Gwyddor | Possible spelling mistake found. | Fyodor, Gwalior, Wedder (+2 more) | .... - Cynllunio arbrofion gwyddor bwyd. - **Gwyddor** bwyd ar waith.  - The science of food. ... |
-| resources-for-new-gcse.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | bwyd | Possible spelling mistake found. | Boyd, BWD, BWY (+1 more) | ...lunio arbrofion gwyddor bwyd. - Gwyddor **bwyd** ar waith.  - The science of food. - Pla... |
-| resources-for-new-gcse.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ar | Possible spelling mistake found. | AR, Ar, a (+176 more) | ... arbrofion gwyddor bwyd. - Gwyddor bwyd **ar** waith.  - The science of food. - Planni... |
 | resources-for-new-gcse.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | waith | Possible spelling mistake found. | with, wait, faith (+5 more) | ...brofion gwyddor bwyd. - Gwyddor bwyd ar **waith**.  - The science of food. - Planning foo... |
-| resources-for-new-gcse.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Adnoddau | Possible spelling mistake found. | Nordau, Adenoidal, Anodal (+1 more) | ...iments. - Food science in action.  #### **Adnoddau** CBAC/WJEC Resources  #### [GCSE Food an... |
-| resources-for-new-gcse.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | eu | Possible spelling mistake found. | EU, Eu, ex (+94 more) | ...der-nea-1-wjec-final-version.pptx>  Heb **eu** ardystio gan CBAC ond efallai yn ddefny... |
-| resources-for-new-gcse.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ardystio | Possible spelling mistake found. | artistic, Ariosto, Andy Timo | ...-nea-1-wjec-final-version.pptx>  Heb eu **ardystio** gan CBAC ond efallai yn ddefnyddiol. No... |
-| resources-for-new-gcse.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | gan | Possible spelling mistake found. | an, can, man (+78 more) | ...ec-final-version.pptx>  Heb eu ardystio **gan** CBAC ond efallai yn ddefnyddiol. Not en... |
-| resources-for-new-gcse.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ond | Possible spelling mistake found. | OND, and, on (+1315 more) | ...version.pptx>  Heb eu ardystio gan CBAC **ond** efallai yn ddefnyddiol. Not endorsed by... |
-| resources-for-new-gcse.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | efallai | Possible spelling mistake found. | Falla | ...ion.pptx>  Heb eu ardystio gan CBAC ond **efallai** yn ddefnyddiol. Not endorsed by WJEC bu... |
-| resources-for-new-gcse.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | yn | Possible spelling mistake found. | in, on, an (+53 more) | ...>  Heb eu ardystio gan CBAC ond efallai **yn** ddefnyddiol. Not endorsed by WJEC but m... |
-| resources-for-new-gcse.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ddefnyddiol | Possible spelling mistake found. | — | ...Heb eu ardystio gan CBAC ond efallai yn **ddefnyddiol**. Not endorsed by WJEC but may be useful... |
 | resources-for-new-gcse.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Gwyddor | Possible spelling mistake found. | Fyodor, Gwalior, Wedder (+2 more) | ...ot endorsed by WJEC but may be useful  [**Gwyddor** bwyd \(14-16 oed\) –](https://www.fooda... |
-| resources-for-new-gcse.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | bwyd | Possible spelling mistake found. | Boyd, BWD, BWY (+1 more) | ...sed by WJEC but may be useful  [Gwyddor **bwyd** \(14-16 oed\) –](https://www.foodafacto... |
 | resources-for-new-gcse.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | oed | Possible spelling mistake found. | OED, led, old (+1555 more) | ...ut may be useful  [Gwyddor bwyd \(14-16 **oed**\) –](https://www.foodafactoflife.org.uk... |
-| resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Uned | Possible spelling mistake found. | Used, Tuned, Unwed (+9 more) | ...-----------------------------------  ## **Uned** 3 Bwyd a Maeth ar waith/Unit 3 Food & N... |
-| resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Bwyd | Possible spelling mistake found. | Boyd, BWD, BWY (+1 more) | ...----------------------------  ## Uned 3 **Bwyd** a Maeth ar waith/Unit 3 Food & Nutritio... |
-| resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Maeth | Possible spelling mistake found. | Meath, Meth | ...---------------------  ## Uned 3 Bwyd a **Maeth** ar waith/Unit 3 Food & Nutrition in act... |
-| resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ar | Possible spelling mistake found. | AR, Ar, a (+176 more) | ...---------------  ## Uned 3 Bwyd a Maeth **ar** waith/Unit 3 Food & Nutrition in action... |
 | resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | waith | Possible spelling mistake found. | with, wait, faith (+5 more) | ...------------  ## Uned 3 Bwyd a Maeth ar **waith**/Unit 3 Food & Nutrition in action  ![](... |
 | resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Ffactorau | Possible spelling mistake found. | Factor, Factors, Factory (+4 more) | ...action  ![](_page_10_Picture_2.jpeg)  - **Ffactorau** sy'n effeithio ar ddewisiadau bwyd. - T... |
 | resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | sy | Possible spelling mistake found. | SY, by, my (+82 more) | ...](_page_10_Picture_2.jpeg)  - Ffactorau **sy**'n effeithio ar ddewisiadau bwyd. - Tech... |
 | resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | effeithio | Possible spelling mistake found. | — | ...ge_10_Picture_2.jpeg)  - Ffactorau sy'n **effeithio** ar ddewisiadau bwyd. - Technegau cynllu... |
-| resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ar | Possible spelling mistake found. | AR, Ar, a (+176 more) | ...ure_2.jpeg)  - Ffactorau sy'n effeithio **ar** ddewisiadau bwyd. - Technegau cynllunio... |
 | resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ddewisiadau | Possible spelling mistake found. | — | ..._2.jpeg)  - Ffactorau sy'n effeithio ar **ddewisiadau** bwyd. - Technegau cynllunio, paratoi a ... |
-| resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | bwyd | Possible spelling mistake found. | Boyd, BWD, BWY (+1 more) | ...Ffactorau sy'n effeithio ar ddewisiadau **bwyd**. - Technegau cynllunio, paratoi a chogi... |
 | resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Technegau | Possible spelling mistake found. | Technical, Technetium, Tokelau | ...u sy'n effeithio ar ddewisiadau bwyd. - **Technegau** cynllunio, paratoi a choginio bwyd - Co... |
 | resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | cynllunio | Possible spelling mistake found. | — | ...eithio ar ddewisiadau bwyd. - Technegau **cynllunio**, paratoi a choginio bwyd - Coginio ar g... |
 | resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | paratoi | Possible spelling mistake found. | paradox, Marathi, paranoia (+9 more) | ...dewisiadau bwyd. - Technegau cynllunio, **paratoi** a choginio bwyd - Coginio ar gyfer cynu... |
 | resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | choginio | Possible spelling mistake found. | Chopin, choking, hominid (+15 more) | ... bwyd. - Technegau cynllunio, paratoi a **choginio** bwyd - Coginio ar gyfer cynulleidfa a p... |
-| resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | bwyd | Possible spelling mistake found. | Boyd, BWD, BWY (+1 more) | ...Technegau cynllunio, paratoi a choginio **bwyd** - Coginio ar gyfer cynulleidfa a phwrpa... |
-| resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Coginio | Possible spelling mistake found. | Yogini, Yoginis | ...au cynllunio, paratoi a choginio bwyd - **Coginio** ar gyfer cynulleidfa a phwrpas.  - Fact... |
-| resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ar | Possible spelling mistake found. | AR, Ar, a (+176 more) | ...unio, paratoi a choginio bwyd - Coginio **ar** gyfer cynulleidfa a phwrpas.  - Factors... |
-| resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | gyfer | Possible spelling mistake found. | gofer | ...o, paratoi a choginio bwyd - Coginio ar **gyfer** cynulleidfa a phwrpas.  - Factors affec... |
 | resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | cynulleidfa | Possible spelling mistake found. | — | ...atoi a choginio bwyd - Coginio ar gyfer **cynulleidfa** a phwrpas.  - Factors affecting food ch... |
 | resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | phwrpas | Possible spelling mistake found. | Sherpas, fraps | ...o bwyd - Coginio ar gyfer cynulleidfa a **phwrpas**.  - Factors affecting food choices. - F... |
-| resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Adnoddau | Possible spelling mistake found. | Nordau, Adenoidal, Anodal (+1 more) | ...king for an audience and purpose.  #### **Adnoddau** CBAC/WJEC Resources  <https://www.wjec.... |
-| resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | eu | Possible spelling mistake found. | EU, Eu, ex (+94 more) | ...l=digital-resources#tab_resources)  Heb **eu** ardystio gan CBAC ond efallai yn ddefny... |
-| resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ardystio | Possible spelling mistake found. | artistic, Ariosto, Andy Timo | ...igital-resources#tab_resources)  Heb eu **ardystio** gan CBAC ond efallai yn ddefnyddiol. No... |
-| resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | gan | Possible spelling mistake found. | an, can, man (+78 more) | ...sources#tab_resources)  Heb eu ardystio **gan** CBAC ond efallai yn ddefnyddiol. Not en... |
-| resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ond | Possible spelling mistake found. | OND, and, on (+1315 more) | ...ab_resources)  Heb eu ardystio gan CBAC **ond** efallai yn ddefnyddiol. Not endorsed by... |
-| resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | efallai | Possible spelling mistake found. | Falla | ...esources)  Heb eu ardystio gan CBAC ond **efallai** yn ddefnyddiol. Not endorsed by WJEC bu... |
-| resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | yn | Possible spelling mistake found. | in, on, an (+53 more) | ...)  Heb eu ardystio gan CBAC ond efallai **yn** ddefnyddiol. Not endorsed by WJEC but m... |
-| resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ddefnyddiol | Possible spelling mistake found. | — | ...Heb eu ardystio gan CBAC ond efallai yn **ddefnyddiol**. Not endorsed by WJEC but may be useful... |
 | resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Gwyddor | Possible spelling mistake found. | Fyodor, Gwalior, Wedder (+2 more) | ...ot endorsed by WJEC but may be useful  [**Gwyddor** bwyd \(11-14 oed\) –](https://www.fooda... |
-| resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | bwyd | Possible spelling mistake found. | Boyd, BWD, BWY (+1 more) | ...sed by WJEC but may be useful  [Gwyddor **bwyd** \(11-14 oed\) –](https://www.foodafacto... |
 | resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | oed | Possible spelling mistake found. | OED, led, old (+1555 more) | ...ut may be useful  [Gwyddor bwyd \(11-14 **oed**\) –](https://www.foodafactoflife.org.uk... |
 | resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Gwyddor | Possible spelling mistake found. | Fyodor, Gwalior, Wedder (+2 more) | ...is-11-14-years/) 'Food A Fact of Life' [**Gwyddor** bwyd \(14-16 oed\) –](https://www.fooda... |
-| resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | bwyd | Possible spelling mistake found. | Boyd, BWD, BWY (+1 more) | ...-years/) 'Food A Fact of Life' [Gwyddor **bwyd** \(14-16 oed\) –](https://www.foodafacto... |
 | resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | oed | Possible spelling mistake found. | OED, led, old (+1555 more) | ...d A Fact of Life' [Gwyddor bwyd \(14-16 **oed**\) –](https://www.foodafactoflife.org.uk... |
 | resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Ryseitiau | Possible spelling mistake found. | — | ...sis-14-16-years/) 'Food A Fact of Life' **Ryseitiau** – ['Food A Fact Of Life'](https://www.f... |
 | resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Fideos | Possible spelling mistake found. | Videos, Fides | ...//www.foodafactoflife.org.uk/recipes/) [**Fideos** coginio \(14-16 Years\) –](https://www.... |
 | resources-for-new-gcse.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | coginio | Possible spelling mistake found. | yogini, yoginis | ...oodafactoflife.org.uk/recipes/) [Fideos **coginio** \(14-16 Years\) –](https://www.foodafac... |
 | resources-for-new-gcse.md | 11 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Canllawiau | Possible spelling mistake found. | Callaway | ...------  ![](_page_11_Picture_1.jpeg)  # **Canllawiau** Addysgu Guidance for Teaching  # SAM/DA... |
 | resources-for-new-gcse.md | 11 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Addysgu | Possible spelling mistake found. | Addyson | ...(_page_11_Picture_1.jpeg)  # Canllawiau **Addysgu** Guidance for Teaching  # SAM/DAE  [GCSE... |
-| resources-for-new-gcse.md | 11 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Bwyd | Possible spelling mistake found. | Boyd, BWD, BWY (+1 more) | ...ing-from-2025/#tab_keydocuments)  [TGAU **Bwyd**](https://www.cbac.co.uk/cymwysterau/tga... |
-| resources-for-new-gcse.md | 11 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Maeth | Possible spelling mistake found. | Meath, Meth | ...maeth-dysgu-o-2025/#tab_keydocuments) a **Maeth**  {12}----------------------------------... |
-| resources-for-new-gcse.md | 12 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Yn | Possible spelling mistake found. | In, On, An (+49 more) | ..._0.jpeg)  ![](_page_12_Picture_1.jpeg)  **Yn** arbennig i Gymru. Yn barod i'r byd.  Ma... |
-| resources-for-new-gcse.md | 12 | `MORFOLOGIK_RULE_EN_GB` | misspelling | arbennig | Possible spelling mistake found. | Armenia, gardening, arsenic (+17 more) | ...jpeg)  ![](_page_12_Picture_1.jpeg)  Yn **arbennig** i Gymru. Yn barod i'r byd.  Made for Wa... |
-| resources-for-new-gcse.md | 12 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Yn | Possible spelling mistake found. | In, On, An (+49 more) | ...2_Picture_1.jpeg)  Yn arbennig i Gymru. **Yn** barod i'r byd.  Made for Wales. Ready f... |
-| resources-for-new-gcse.md | 12 | `MORFOLOGIK_RULE_EN_GB` | misspelling | barod | Possible spelling mistake found. | baron, bard, Baroda (+4 more) | ...icture_1.jpeg)  Yn arbennig i Gymru. Yn **barod** i'r byd.  Made for Wales. Ready for the... |
 | resources-for-new-gcse.md | 12 | `EN_UNPAIRED_QUOTES` | typographical | ' | Unpaired symbol: ‘'’ seems to be missing | — | ...1.jpeg)  Yn arbennig i Gymru. Yn barod i**'**r byd.  Made for Wales. Ready for the wo... |
-| resources-for-new-gcse.md | 12 | `MORFOLOGIK_RULE_EN_GB` | misspelling | byd | Possible spelling mistake found. | BYD, by, bye (+1297 more) | ...peg)  Yn arbennig i Gymru. Yn barod i'r **byd**.  Made for Wales. Ready for the world. ... |
 
 ### Food-and-Nutrition / techniques-summary.md
 
-Found 66 issue(s).
+Found 47 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | techniques-summary.md | 0 | `ALONG_SIDE` | misspelling | along side | Did you mean “alongside”? | alongside | ...s document has been produced to be used **along side** the Appendix A from the Specification. ... |
 | techniques-summary.md | 1 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Barbeque | Possible spelling mistake found. | Barbecue | ...       \|                            \| \| **Barbeque** chicken wings \| Applying ready-made sau... |
 | techniques-summary.md | 1 | `EN_DIACRITICS_REPLACE_ORTHOGRAPHY_SAUTEING` | misspelling | Sauteing | ‘Sauteing’ is an imported foreign name or expression, which originally has a diacritic. | Sautéing | ...duced sauce ** \| Dicing ** Trimming * \| **Sauteing** ** Roasting ** \| \|  \| Trimming fish to ... |
-| techniques-summary.md | 2 | `MORFOLOGIK_RULE_EN_GB` | misspelling | griddling | Possible spelling mistake found. | riddling, gridding, g riddling | ...ixing ** \| Dicing ** Peeling * \| Frying/**griddling** ** \| \| Beef (or other meat) curry (mari... |
 | techniques-summary.md | 2 | `EN_DIACRITICS_REPLACE_ORTHOGRAPHY_SAUTEING` | misspelling | Sauteing | ‘Sauteing’ is an imported foreign name or expression, which originally has a diacritic. | Sautéing | ...g ** \| Dicing ** Slicing ** Peeling * \| **Sauteing** ** Boiling */Steaming ** \| \| Beef in bl... |
 | techniques-summary.md | 2 | `EN_COMPOUNDS_READY_MADE` | misspelling | ready made | This word is normally spelled with a hyphen. | ready-made | ...auce with rice noodles \| (assuming it's **ready made** black bean sauce, although this can eas... |
 | techniques-summary.md | 2 | `EN_DIACRITICS_REPLACE_ORTHOGRAPHY_SAUTEING` | misspelling | Sauteing | ‘Sauteing’ is an imported foreign name or expression, which originally has a diacritic. | Sautéing | ...g ** \| Dicing ** Slicing ** Peeling * \| **Sauteing** **/Stir frying ** Boiling * \|  {3}-----... |
 | techniques-summary.md | 3 | `EN_DIACRITICS_REPLACE_ORTHOGRAPHY_RAGU` | misspelling | ragu | ‘ragu’ is an imported foreign name or expression, which originally has a diacritic. | ragù | ...--------\| \| Beef Lasagne (or any \| Meat **ragu**: Knife skills –                        ... |
 | techniques-summary.md | 3 | `EN_DIACRITICS_REPLACE_ORTHOGRAPHY_SAUTEING` | misspelling | Sauteing | ‘Sauteing’ is an imported foreign name or expression, which originally has a diacritic. | Sautéing | ...     \| Weighing **       \| Dicing **  \| **Sauteing** **                \| \| meat or vegetable... |
-| techniques-summary.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | roux | Possible spelling mistake found. | Roux, roué, doux (+236 more) | ... pasta: Making a \| dough) ***) \|  \| for **roux***** \| \|                      \| pasta dou... |
-| techniques-summary.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | roux | Possible spelling mistake found. | Roux, roué, doux (+236 more) | ...    \|                            \| \|  \| **roux**. Thickening without lumps – sauce shoul... |
 | techniques-summary.md | 3 | `EN_DIACRITICS_REPLACE_ORTHOGRAPHY_RAGU` | misspelling | ragu | ‘ragu’ is an imported foreign name or expression, which originally has a diacritic. | ragù | ...\|  \| \|                      \| layers of **ragu**, pasta and                             ... |
 | techniques-summary.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | gratinated | Possible spelling mistake found. | gravitated, patinated | ...    \| \|                      \| and well **gratinated**                                        ... |
 | techniques-summary.md | 3 | `EN_DIACRITICS_REPLACE_ORTHOGRAPHY_SAUTEING` | misspelling | Sauteing | ‘Sauteing’ is an imported foreign name or expression, which originally has a diacritic. | Sautéing | ...     \| Weighing **       \| Dicing **  \| **Sauteing** **                \| \| basmati rice     ... |
@@ -593,33 +381,21 @@ Found 66 issue(s).
 | techniques-summary.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Panéing | Possible spelling mistake found. | Panning, Panting | ...              \| \|                     \| **Panéing**                       \|              \| ... |
 | techniques-summary.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | griddled | Possible spelling mistake found. | riddled, griddle, gridded (+2 more) | ...ghing ** \| Dicing ** \| Griddling ** \| \| **griddled** chicken)   \| dicing salad ingredients. ... |
 | techniques-summary.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | caesar | Possible spelling mistake found. | Caesar, Cesar, Caesars (+25 more) | ...     \| De-boning *** \| Emulsifying *** (**caesar** \| \|                     \| Making crouto... |
-| techniques-summary.md | 6 | `MORFOLOGIK_RULE_EN_GB` | misspelling | roux | Possible spelling mistake found. | Roux, roué, doux (+236 more) | ... not overcooking Cheese sauce: Making a **roux** Thickening without lumps – sauce should... |
 | techniques-summary.md | 6 | `MORFOLOGIK_RULE_EN_GB` | misspelling | gratinated | Possible spelling mistake found. | gravitated, patinated | ...m scratch, and finished Product is well **gratinated** \| Weighing ** Measuring ** Grating * Bl... |
-| techniques-summary.md | 6 | `MORFOLOGIK_RULE_EN_GB` | misspelling | roux | Possible spelling mistake found. | Roux, roué, doux (+236 more) | ...illing * Emulsifying/gelatinisation for **roux***** \|  {7}------------------------------... |
-| techniques-summary.md | 7 | `MORFOLOGIK_RULE_EN_GB` | misspelling | roux | Possible spelling mistake found. | Roux, roué, doux (+236 more) | ... \| Cheese soufflé \| Panada sauce with a **roux** Separating egg white and yolk Whisking ... |
-| techniques-summary.md | 7 | `MORFOLOGIK_RULE_EN_GB` | misspelling | roux | Possible spelling mistake found. | Roux, roué, doux (+236 more) | ...aking ** Emulsifying/gelatinisation for **roux***** \| \| Chicken and mushroom pie \| Short... |
 | techniques-summary.md | 7 | `EN_DIACRITICS_REPLACE_ORTHOGRAPHY_SAUTEING` | misspelling | Sauteing | ‘Sauteing’ is an imported foreign name or expression, which originally has a diacritic. | Sautéing | ... ** Peeling * Chopping * Deboning *** \| **Sauteing** ** Baking ** Baking blind *** Emulsifyi... |
-| techniques-summary.md | 7 | `MORFOLOGIK_RULE_EN_GB` | misspelling | roux | Possible spelling mistake found. | Roux, roué, doux (+236 more) | ...lind *** Emulsifying/gelatinisation for **roux***** \|  {8}------------------------------... |
-| techniques-summary.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | roux | Possible spelling mistake found. | Roux, roué, doux (+236 more) | ... \| \|                         \| Making a **roux**            \|             \|            \|... |
 | techniques-summary.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | chasseur | Possible spelling mistake found. | chaser, masseur, kaiser (+7 more) | ...----------------------------\| \| Chicken **chasseur** \| Chicken (could also make a stock usin... |
 | techniques-summary.md | 9 | `EN_DIACRITICS_REPLACE_ORTHOGRAPHY_SAUTEING` | misspelling | Sauteing | ‘Sauteing’ is an imported foreign name or expression, which originally has a diacritic. | Sautéing | ...* \| Deboning *** Slicing ** Peeling * \| **Sauteing** ** Boiling * Reduction ** \| \| Chicken c... |
 | techniques-summary.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | mein | Possible spelling mistake found. | main, men, mean (+15 more) | ...Boiling * Reduction ** \| \| Chicken chow **mein** \| (assuming ready-made sauce and pre-pr... |
 | techniques-summary.md | 10 | `EN_DIACRITICS_REPLACE_ORTHOGRAPHY_SAUTEING` | misspelling | Sauteing | ‘Sauteing’ is an imported foreign name or expression, which originally has a diacritic. | Sautéing | ...red     \| Marinating * \| Dicing **    \| **Sauteing** **                  \| \|----------------... |
 | techniques-summary.md | 10 | `EN_DIACRITICS_REPLACE_ORTHOGRAPHY_SAUTEING` | misspelling | Sauteing | ‘Sauteing’ is an imported foreign name or expression, which originally has a diacritic. | Sautéing | ...red     \| Weighing **  \| Deboning *** \| **Sauteing** **                  \| \|                ... |
-| techniques-summary.md | 11 | `MORFOLOGIK_RULE_EN_GB` | misspelling | carne | Possible spelling mistake found. | care, cane, crane (+15 more) | ...-------------------------  \| Chilli con **carne** with rice \| Meat sauce: Knife skills – ... |
 | techniques-summary.md | 11 | `EN_DIACRITICS_REPLACE_ORTHOGRAPHY_SAUTEING` | misspelling | Sauteing | ‘Sauteing’ is an imported foreign name or expression, which originally has a diacritic. | Sautéing | ...g ** \| Slicing ** Peeling * Dicing ** \| **Sauteing** ** Boiling * \| \|-----------------------... |
 | techniques-summary.md | 12 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Daking | Possible spelling mistake found. | Making, Taking, Dating (+8 more) | ...ng *            \| Dicing **           \| **Daking**                     \| \|                ... |
 | techniques-summary.md | 12 | `ENGLISH_WORD_REPEAT_RULE` | duplication | Service Service | Possible typo: you repeated a word. | Service | ...chance \|                            \| \| **Service Service**                                        ... |
 | techniques-summary.md | 12 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Fibilig | Possible spelling mistake found. | Failing, Firing, Filling (+38 more) | ...         \| vegetables, crushing       \| **Fibilig**              \|                     \|   ... |
-| techniques-summary.md | 12 | `MORFOLOGIK_RULE_EN_GB` | misspelling | roux | Possible spelling mistake found. | Roux, roué, doux (+236 more) | ...                                      \| **roux** (for binding)         \| *              ... |
-| techniques-summary.md | 12 | `MORFOLOGIK_RULE_EN_GB` | misspelling | roux | Possible spelling mistake found. | Roux, roué, doux (+236 more) | ...            \|                     \| for **roux*****                \| \|                  ... |
 | techniques-summary.md | 13 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Panéing | Possible spelling mistake found. | Panning, Panting | ...        \| \|                           \| **Panéing**                    \|                   ... |
 | techniques-summary.md | 13 | `EN_DIACRITICS_REPLACE_ORTHOGRAPHY_SAUTEING` | misspelling | Sauteing | ‘Sauteing’ is an imported foreign name or expression, which originally has a diacritic. | Sautéing | ...– peeling, \| Weighing ** \| Slicing ** \| **Sauteing** ** \| \|                           \| dici... |
-| techniques-summary.md | 14 | `MORFOLOGIK_RULE_EN_GB` | misspelling | roux | Possible spelling mistake found. | Roux, roué, doux (+236 more) | ...l dente Draining Cheese sauce: Making a **roux** Thickening without lumps – sauce should... |
-| techniques-summary.md | 14 | `MORFOLOGIK_RULE_EN_GB` | misspelling | roux | Possible spelling mistake found. | Roux, roué, doux (+236 more) | ...lling * Emulsifying/ gelatinisation for **roux***** \| \| Welsh trout cooked en papillote ... |
 | techniques-summary.md | 14 | `MORFOLOGIK_RULE_EN_GB` | misspelling | papillote | Possible spelling mistake found. | papillate, papillose | ...n for roux*** \| \| Welsh trout cooked en **papillote** \| gratinated Flesh has been removed cle... |
 | techniques-summary.md | 14 | `MORFOLOGIK_RULE_EN_GB` | misspelling | gratinated | Possible spelling mistake found. | gravitated, patinated | ...* \| \| Welsh trout cooked en papillote \| **gratinated** Flesh has been removed cleanly from the... |
-| techniques-summary.md | 15 | `MORFOLOGIK_RULE_EN_GB` | misspelling | roux | Possible spelling mistake found. | Roux, roué, doux (+236 more) | ...ng and slicing vegetables Making sauce (**roux** or reduction) Sautéing, simmering Dumpl... |
 | techniques-summary.md | 15 | `EN_DIACRITICS_REPLACE_ORTHOGRAPHY_SAUTEING` | misspelling | Sauteing | ‘Sauteing’ is an imported foreign name or expression, which originally has a diacritic. | Sautéing | ...e ** \| Slicing ** Peeling * Dicing ** \| **Sauteing** ** Baking ** Boiling * \| \| Pasta carbon... |
 | techniques-summary.md | 15 | `EN_DIACRITICS_REPLACE_ORTHOGRAPHY_SAUTEING` | misspelling | Sauteing | ‘Sauteing’ is an imported foreign name or expression, which originally has a diacritic. | Sautéing | ...ng (pasta) *** Mixing ** \|  \| Boiling * **Sauteing** ** Emulsifying *** \|  {16}-------------... |
 | techniques-summary.md | 16 | `EN_DIACRITICS_REPLACE_ORTHOGRAPHY_SAUTEING` | misspelling | Sauteing | ‘Sauteing’ is an imported foreign name or expression, which originally has a diacritic. | Sautéing | ...icing *** Crushing garlic * \| Baking ** **Sauteing** ** Boiling * \| \| Potato salad (focus is... |
@@ -630,28 +406,19 @@ Found 66 issue(s).
 | techniques-summary.md | 19 | `EN_DIACRITICS_REPLACE_ORTHOGRAPHY_SAUTEING` | misspelling | Sauteing | ‘Sauteing’ is an imported foreign name or expression, which originally has a diacritic. | Sautéing | ...ming pre -prepared Mixing ** Slicing ** **Sauteing** ** fajitas chicken breast portion Fryin... |
 | techniques-summary.md | 19 | `EN_COMPOUNDS_READY_MADE` | misspelling | ready -made | This word is normally spelled with a hyphen. | ready-made | ...as chicken breast portion Frying ** and **ready -made** tortillas Dicing ** are used) (higher s... |
 | techniques-summary.md | 21 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Bakewell | Possible spelling mistake found. | Bake well | ...------------------------------------\| \| **Bakewell** tart (raspberry) \| Correct viscosity Sh... |
-| techniques-summary.md | 21 | `MORFOLOGIK_RULE_EN_GB` | misspelling | sucree | Possible spelling mistake found. | scree, Sucre | ...orrect viscosity Shortcrust pastry/pate **sucree**: Rubbing-in Mixing Forming dough of cor... |
 | techniques-summary.md | 22 | `EN_DIACRITICS_REPLACE_ORTHOGRAPHY_BLACK_FOREST_GATEAU` | misspelling | Black Forest gateau | ‘Black Forest gateau’ is an imported foreign name or expression, which originally has a diacritic. | Black Forest gâteau | ...          \|                         \| \| **Black Forest gateau**      \| Cake base made from        \| Wei... |
 | techniques-summary.md | 22 | `EN_DIACRITICS_REPLACE_ORTHOGRAPHY_GATEAU` | misspelling | gateau | ‘gateau’ is an imported foreign name or expression, which originally has a diacritic. | gâteau | ...ative finishes        \| Shaping (of the **gateau**) \|                 \|                   ... |
 | techniques-summary.md | 24 | `MORFOLOGIK_RULE_EN_GB` | misspelling | squidgy | Possible spelling mistake found. | squid, squids, squishy (+5 more) | ...     \| \|                         \| have **squidgy** texture      \|                    \|    ... |
-| techniques-summary.md | 24 | `MORFOLOGIK_RULE_EN_GB` | misspelling | sucree | Possible spelling mistake found. | scree, Sucre | ...**        \| \| crème patissière)       \| **sucree**:                   \| Measuring **      ... |
-| techniques-summary.md | 26 | `MORFOLOGIK_RULE_EN_GB` | misspelling | sucree | Possible spelling mistake found. | scree, Sucre | ...*              \| \|                    \| **sucree**:                    \| Measuring **     ... |
-| techniques-summary.md | 27 | `MORFOLOGIK_RULE_EN_GB` | misspelling | sucree | Possible spelling mistake found. | scree, Sucre | ...----------------\| \| raspberry compote \| **sucree**:                     \| Measuring **    ... |
 | techniques-summary.md | 28 | `MORFOLOGIK_RULE_EN_GB` | misspelling | choux | Possible spelling mistake found. | Chou | ...ghing **              \| Boiling *  \| \| (**choux** pastry)       \| mix come to a rolling  ... |
 | techniques-summary.md | 28 | `MORFOLOGIK_RULE_EN_GB` | misspelling | choux | Possible spelling mistake found. | Chou | ... \|                      \| Producing raw **choux**                                        ... |
 
 ### Food-and-Nutrition / unit-2---work-smarter-not-harder.md
 
-Found 24 issue(s).
+Found 15 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| unit-2---work-smarter-not-harder.md | 0 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Yn | Possible spelling mistake found. | In, On, An (+49 more) | ...e_0.jpeg)  ![](_page_0_Picture_1.jpeg)  **Yn** arbennig i Gymru. Yn barod i'r byd.  Ma... |
-| unit-2---work-smarter-not-harder.md | 0 | `MORFOLOGIK_RULE_EN_GB` | misspelling | arbennig | Possible spelling mistake found. | Armenia, gardening, arsenic (+17 more) | ....jpeg)  ![](_page_0_Picture_1.jpeg)  Yn **arbennig** i Gymru. Yn barod i'r byd.  Made for Wa... |
-| unit-2---work-smarter-not-harder.md | 0 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Yn | Possible spelling mistake found. | In, On, An (+49 more) | ...0_Picture_1.jpeg)  Yn arbennig i Gymru. **Yn** barod i'r byd.  Made for Wales. Ready f... |
-| unit-2---work-smarter-not-harder.md | 0 | `MORFOLOGIK_RULE_EN_GB` | misspelling | barod | Possible spelling mistake found. | baron, bard, Baroda (+4 more) | ...icture_1.jpeg)  Yn arbennig i Gymru. Yn **barod** i'r byd.  Made for Wales. Ready for the... |
 | unit-2---work-smarter-not-harder.md | 0 | `EN_UNPAIRED_QUOTES` | typographical | ' | Unpaired symbol: ‘'’ seems to be missing | — | ...1.jpeg)  Yn arbennig i Gymru. Yn barod i**'**r byd.  Made for Wales. Ready for the wo... |
-| unit-2---work-smarter-not-harder.md | 0 | `MORFOLOGIK_RULE_EN_GB` | misspelling | byd | Possible spelling mistake found. | BYD, by, bye (+1297 more) | ...peg)  Yn arbennig i Gymru. Yn barod i'r **byd**.  Made for Wales. Ready for the world. ... |
 | unit-2---work-smarter-not-harder.md | 4 | `MORFOLOGIK_RULE_EN_GB` | misspelling | wjec-gcse-food-and-nutrition | Possible spelling mistake found. | AJEC-gcse-food-and-nutrition, wjec-GCSE-food-and-nutrition | ... adapted?  ![](_page_4_Figure_5.jpeg)  [**wjec-gcse-food-and-nutrition**](https://www.wjec.co.uk/media/kz4d5q2l/... |
 | unit-2---work-smarter-not-harder.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Munsell | Possible spelling mistake found. | Russell, Mussel, Mussels (+11 more) | ...hat can you use?.....**  Star diagrams  **Munsell** charts  Photographic evidence  Viscosit... |
 | unit-2---work-smarter-not-harder.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | MUNSELL | Possible spelling mistake found. | RUSSELL, MUSSEL, MUSSELS (+11 more) | ...-----------------------------------  ## **MUNSELL** CHARTS… GO TO YOUR LOCAL DIY STORE  ![]... |
@@ -665,24 +432,15 @@ Found 24 issue(s).
 | unit-2---work-smarter-not-harder.md | 13 | `MORFOLOGIK_RULE_EN_GB` | misspelling | wnload | Possible spelling mistake found. | unload | ...face/blobstorage/download?nodeId=5384) [**wnload**?nodeId=5384](https://www.wjec.co.uk/umb... |
 | unit-2---work-smarter-not-harder.md | 13 | `MORFOLOGIK_RULE_EN_GB` | misspelling | nodeId | Possible spelling mistake found. | node Id | ...obstorage/download?nodeId=5384) [wnload?**nodeId**=5384](https://www.wjec.co.uk/umbraco/su... |
 | unit-2---work-smarter-not-harder.md | 16 | `EXTREME_ADJECTIVES` | style | really good | Consider using an extreme adjective for ‘good’. | perfect, excellent, superb (+2 more) | ...or the comparisons. Cocktail sticks are **really good** when it comes to measuring the depth  {... |
-| unit-2---work-smarter-not-harder.md | 18 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Yn | Possible spelling mistake found. | In, On, An (+49 more) | ..._0.jpeg)  ![](_page_18_Picture_1.jpeg)  **Yn** arbennig i Gymru. Yn barod i'r byd.  Ma... |
-| unit-2---work-smarter-not-harder.md | 18 | `MORFOLOGIK_RULE_EN_GB` | misspelling | arbennig | Possible spelling mistake found. | Armenia, gardening, arsenic (+17 more) | ...jpeg)  ![](_page_18_Picture_1.jpeg)  Yn **arbennig** i Gymru. Yn barod i'r byd.  Made for Wa... |
-| unit-2---work-smarter-not-harder.md | 18 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Yn | Possible spelling mistake found. | In, On, An (+49 more) | ...8_Picture_1.jpeg)  Yn arbennig i Gymru. **Yn** barod i'r byd.  Made for Wales. Ready f... |
 | unit-2---work-smarter-not-harder.md | 18 | `EN_UNPAIRED_QUOTES` | typographical | a | Unpaired symbol: ‘'’ seems to be missing | — | ...cture_1.jpeg)  Yn arbennig i Gymru. Yn b**a**rod i'r byd.  Made for Wales. Ready for ... |
-| unit-2---work-smarter-not-harder.md | 18 | `MORFOLOGIK_RULE_EN_GB` | misspelling | byd | Possible spelling mistake found. | BYD, by, bye (+1297 more) | ...peg)  Yn arbennig i Gymru. Yn barod i'r **byd**.  Made for Wales. Ready for the world. ... |
 
 ### Food-and-Nutrition / unit-3---presenting-food-outcomes.md
 
-Found 20 issue(s).
+Found 10 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| unit-3---presenting-food-outcomes.md | 0 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Yn | Possible spelling mistake found. | In, On, An (+49 more) | ...e_0.jpeg)  ![](_page_0_Picture_1.jpeg)  **Yn** arbennig i Gymru. Yn barod i'r byd.  Ma... |
-| unit-3---presenting-food-outcomes.md | 0 | `MORFOLOGIK_RULE_EN_GB` | misspelling | arbennig | Possible spelling mistake found. | Armenia, gardening, arsenic (+17 more) | ....jpeg)  ![](_page_0_Picture_1.jpeg)  Yn **arbennig** i Gymru. Yn barod i'r byd.  Made for Wa... |
-| unit-3---presenting-food-outcomes.md | 0 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Yn | Possible spelling mistake found. | In, On, An (+49 more) | ...0_Picture_1.jpeg)  Yn arbennig i Gymru. **Yn** barod i'r byd.  Made for Wales. Ready f... |
-| unit-3---presenting-food-outcomes.md | 0 | `MORFOLOGIK_RULE_EN_GB` | misspelling | barod | Possible spelling mistake found. | baron, bard, Baroda (+4 more) | ...icture_1.jpeg)  Yn arbennig i Gymru. Yn **barod** i'r byd.  Made for Wales. Ready for the... |
 | unit-3---presenting-food-outcomes.md | 0 | `EN_UNPAIRED_QUOTES` | typographical | ' | Unpaired symbol: ‘'’ seems to be missing | — | ...1.jpeg)  Yn arbennig i Gymru. Yn barod i**'**r byd.  Made for Wales. Ready for the wo... |
-| unit-3---presenting-food-outcomes.md | 0 | `MORFOLOGIK_RULE_EN_GB` | misspelling | byd | Possible spelling mistake found. | BYD, by, bye (+1297 more) | ...peg)  Yn arbennig i Gymru. Yn barod i'r **byd**.  Made for Wales. Ready for the world. ... |
 | unit-3---presenting-food-outcomes.md | 5 | `COMMA_COMPOUND_SENTENCE` | uncategorized |  or | Use a comma before ‘or’ if it connects two independent clauses (unless they are closely connected and short). | , or | ... find professionals to come into schools** or** you can take your learners out to their... |
 | unit-3---presenting-food-outcomes.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | dem | Possible spelling mistake found. | them, DEM, Dem (+1590 more) | ...e is chef who can spare an hour to do a **dem** with your Year 10? Many learners may ha... |
 | unit-3---presenting-food-outcomes.md | 5 | `EN_COMPOUNDS_PART_TIME` | misspelling | part time | This word is normally spelled with a hyphen. | part-time | ... your Year 10? Many learners may have a **part time** job in a local hospitality business, ca... |
@@ -691,33 +449,19 @@ Found 20 issue(s).
 | unit-3---presenting-food-outcomes.md | 16 | `YOUTUBE` | uncategorized | youtube | The official name of this popular video platform is spelled with a capital “T”. | YouTube | ...lating Techniques - [Plate like a Pro \(**youtube**.com\)](https://www.youtube.com/watch?v=... |
 | unit-3---presenting-food-outcomes.md | 16 | `YOUTUBE` | uncategorized | youtube | The official name of this popular video platform is spelled with a capital “T”. | YouTube | ...xoQk)  [13 Sauce Plating Skills/Ideas \(**youtube**.com\)](https://www.youtube.com/watch?v=... |
 | unit-3---presenting-food-outcomes.md | 16 | `YOUTUBE` | uncategorized | youtube | The official name of this popular video platform is spelled with a capital “T”. | YouTube | ...Chocolate Techniques You Need To Know \(**youtube**.com\)](https://www.youtube.com/watch?v=... |
-| unit-3---presenting-food-outcomes.md | 17 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Yn | Possible spelling mistake found. | In, On, An (+49 more) | ..._0.jpeg)  ![](_page_17_Picture_1.jpeg)  **Yn** arbennig i Gymru. Yn barod i'r byd.  Ma... |
-| unit-3---presenting-food-outcomes.md | 17 | `MORFOLOGIK_RULE_EN_GB` | misspelling | arbennig | Possible spelling mistake found. | Armenia, gardening, arsenic (+17 more) | ...jpeg)  ![](_page_17_Picture_1.jpeg)  Yn **arbennig** i Gymru. Yn barod i'r byd.  Made for Wa... |
-| unit-3---presenting-food-outcomes.md | 17 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Yn | Possible spelling mistake found. | In, On, An (+49 more) | ...7_Picture_1.jpeg)  Yn arbennig i Gymru. **Yn** barod i'r byd.  Made for Wales. Ready f... |
-| unit-3---presenting-food-outcomes.md | 17 | `MORFOLOGIK_RULE_EN_GB` | misspelling | barod | Possible spelling mistake found. | baron, bard, Baroda (+4 more) | ...icture_1.jpeg)  Yn arbennig i Gymru. Yn **barod** i'r byd.  Made for Wales. Ready for the... |
 | unit-3---presenting-food-outcomes.md | 17 | `EN_UNPAIRED_QUOTES` | typographical | ' | Unpaired symbol: ‘'’ seems to be missing | — | ...1.jpeg)  Yn arbennig i Gymru. Yn barod i**'**r byd.  Made for Wales. Ready for the wo... |
-| unit-3---presenting-food-outcomes.md | 17 | `MORFOLOGIK_RULE_EN_GB` | misspelling | byd | Possible spelling mistake found. | BYD, by, bye (+1297 more) | ...peg)  Yn arbennig i Gymru. Yn barod i'r **byd**.  Made for Wales. Ready for the world. ... |
 
 ### Food-and-Nutrition / unit-3---upskilling.md
 
-Found 34 issue(s).
+Found 21 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| unit-3---upskilling.md | 0 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Yn | Possible spelling mistake found. | In, On, An (+49 more) | ...e_0.jpeg)  ![](_page_0_Picture_1.jpeg)  **Yn** arbennig i Gymru. Yn barod i'r byd.  Ma... |
-| unit-3---upskilling.md | 0 | `MORFOLOGIK_RULE_EN_GB` | misspelling | arbennig | Possible spelling mistake found. | Armenia, gardening, arsenic (+17 more) | ....jpeg)  ![](_page_0_Picture_1.jpeg)  Yn **arbennig** i Gymru. Yn barod i'r byd.  Made for Wa... |
-| unit-3---upskilling.md | 0 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Yn | Possible spelling mistake found. | In, On, An (+49 more) | ...0_Picture_1.jpeg)  Yn arbennig i Gymru. **Yn** barod i'r byd.  Made for Wales. Ready f... |
-| unit-3---upskilling.md | 0 | `MORFOLOGIK_RULE_EN_GB` | misspelling | barod | Possible spelling mistake found. | baron, bard, Baroda (+4 more) | ...icture_1.jpeg)  Yn arbennig i Gymru. Yn **barod** i'r byd.  Made for Wales. Ready for the... |
 | unit-3---upskilling.md | 0 | `EN_UNPAIRED_QUOTES` | typographical | ' | Unpaired symbol: ‘'’ seems to be missing | — | ...1.jpeg)  Yn arbennig i Gymru. Yn barod i**'**r byd.  Made for Wales. Ready for the wo... |
-| unit-3---upskilling.md | 0 | `MORFOLOGIK_RULE_EN_GB` | misspelling | byd | Possible spelling mistake found. | BYD, by, bye (+1297 more) | ...peg)  Yn arbennig i Gymru. Yn barod i'r **byd**.  Made for Wales. Ready for the world. ... |
 | unit-3---upskilling.md | 2 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Tas | Possible spelling mistake found. | Ta's, Ta, TAS (+2095 more) | ...----------------------  ## TGAU GCSE  \| **Tas** \| k 3                                  ... |
 | unit-3---upskilling.md | 4 | `DOUBLE_PUNCTUATION` | typographical | .. | Two consecutive dots | ., … | ...g. \|  This is for the cooking techniques**..** You can see that the MS notes the need ... |
 | unit-3---upskilling.md | 5 | `SPACE_BEFORE_PARENTHESIS` | typographical | ( | It appears that a white space is missing. |  ( | ...ing, rolling, rub-in, skinning, toasting**(**nuts/seeds), weighing. - \*\*\* crimping... |
 | unit-3---upskilling.md | 5 | `SPACE_BEFORE_PARENTHESIS` | typographical | ( | It appears that a white space is missing. |  ( | ...ng bain-marie, piping, shaping, whisking**(**aeration)  ### Knife Techniques (Circle ... |
-| unit-3---upskilling.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | chiffonade | Possible spelling mistake found. | chiffon, chiffonier, chiffons | ...opping, peeling, trimming - \*\* bâton, **chiffonade**, deseeding, dicing, slicing, spatchcock... |
-| unit-3---upskilling.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | deseeding | Possible spelling mistake found. | reseeding | ...ing, trimming - \*\* bâton, chiffonade, **deseeding**, dicing, slicing, spatchcock - \*\*\* b... |
-| unit-3---upskilling.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | spatchcock | Possible spelling mistake found. | Hitchcock, patchwork, matchlock (+2 more) | ...chiffonade, deseeding, dicing, slicing, **spatchcock** - \*\*\* brunoise, deboning, filleting,... |
-| unit-3---upskilling.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | griddling | Possible spelling mistake found. | riddling, gridding, g riddling | ...\* baking, blanching, braising, frying, **griddling**, pickling, reduction, roasting, sautein... |
 | unit-3---upskilling.md | 5 | `EN_DIACRITICS_REPLACE_ORTHOGRAPHY_SAUTEING` | misspelling | sauteing | ‘sauteing’ is an imported foreign name or expression, which originally has a diacritic. | sautéing | ...iddling, pickling, reduction, roasting, **sauteing**, setting, steaming, stir frying, water ... |
 | unit-3---upskilling.md | 5 | `EN_COMPOUNDS_STIR_FRYING` | misspelling | stir frying | This word is normally spelled with a hyphen. | stir-frying | ... roasting, sauteing, setting, steaming, **stir frying**, water bath(sous-vide) - \*\*\* baking ... |
 | unit-3---upskilling.md | 7 | `EN_DIACRITICS_REPLACE_ORTHOGRAPHY_SAUTEING` | misspelling | Sauteing | ‘Sauteing’ is an imported foreign name or expression, which originally has a diacritic. | Sautéing | ...ce: Slicing \*\* Peeling \* Dicing \*\* **Sauteing** \*\*  Many candidates choose a pasta di... |
@@ -733,15 +477,11 @@ Found 34 issue(s).
 | unit-3---upskilling.md | 12 | `COMMA_COMPOUND_SENTENCE` | uncategorized |  or | Use a comma before ‘or’ if it connects two independent clauses (unless they are closely connected and short). | , or | ... find professionals to come into schools** or** you can take your learners out to their... |
 | unit-3---upskilling.md | 12 | `MORFOLOGIK_RULE_EN_GB` | misspelling | dem | Possible spelling mistake found. | them, DEM, Dem (+1590 more) | ...e is chef who can spare an hour to do a **dem** with your Year 10? Many learners may ha... |
 | unit-3---upskilling.md | 12 | `EN_COMPOUNDS_PART_TIME` | misspelling | part time | This word is normally spelled with a hyphen. | part-time | ... your Year 10? Many learners may have a **part time** job in a local hospitality business, ca... |
-| unit-3---upskilling.md | 14 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Yn | Possible spelling mistake found. | In, On, An (+49 more) | ..._0.jpeg)  ![](_page_14_Picture_1.jpeg)  **Yn** arbennig i Gymru. Yn barod i'r byd.  Ma... |
-| unit-3---upskilling.md | 14 | `MORFOLOGIK_RULE_EN_GB` | misspelling | arbennig | Possible spelling mistake found. | Armenia, gardening, arsenic (+17 more) | ...jpeg)  ![](_page_14_Picture_1.jpeg)  Yn **arbennig** i Gymru. Yn barod i'r byd.  Made for Wa... |
-| unit-3---upskilling.md | 14 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Yn | Possible spelling mistake found. | In, On, An (+49 more) | ...4_Picture_1.jpeg)  Yn arbennig i Gymru. **Yn** barod i'r byd.  Made for Wales. Ready f... |
 | unit-3---upskilling.md | 14 | `EN_UNPAIRED_QUOTES` | typographical | a | Unpaired symbol: ‘'’ seems to be missing | — | ...cture_1.jpeg)  Yn arbennig i Gymru. Yn b**a**rod i'r byd.  Made for Wales. Ready for ... |
-| unit-3---upskilling.md | 14 | `MORFOLOGIK_RULE_EN_GB` | misspelling | byd | Possible spelling mistake found. | BYD, by, bye (+1297 more) | ...peg)  Yn arbennig i Gymru. Yn barod i'r **byd**.  Made for Wales. Ready for the world. ... |
 
 ### Food-and-Nutrition / wjec-gcse-food-and-nutrition-specification.md
 
-Found 18 issue(s).
+Found 13 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -756,10 +496,5 @@ Found 18 issue(s).
 | wjec-gcse-food-and-nutrition-specification.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | socio-cultural | Possible spelling mistake found. | sociocultural | ...tional, and international cuisines, and **socio-cultural** influences on food availability.  <span... |
 | wjec-gcse-food-and-nutrition-specification.md | 16 | `MORFOLOGIK_RULE_EN_GB` | misspelling | E-coli | Possible spelling mistake found. | EcoRI, Ecole, Emboli (+1 more) | ...a, including Campylobacter, Salmonella, **E-coli**, Staphylococcus Norovirus and Listeria<... |
 | wjec-gcse-food-and-nutrition-specification.md | 19 | `MORFOLOGIK_RULE_EN_GB` | misspelling | - gelation | Possible spelling mistake found. | -g elation, - relation, - gelatin (+3 more) | ... and mechanical action - foam formation **- gelation** - gluten formation - Maillard reaction ... |
-| wjec-gcse-food-and-nutrition-specification.md | 31 | `MORFOLOGIK_RULE_EN_GB` | misspelling | chiffonade | Possible spelling mistake found. | chiffon, chiffonier, chiffons | ...<li>bâton**</li><li>brunoise***</li><li>**chiffonade****</li><li>chopping*</li><li>deboning***... |
-| wjec-gcse-food-and-nutrition-specification.md | 31 | `MORFOLOGIK_RULE_EN_GB` | misspelling | deseeding | Possible spelling mistake found. | reseeding | ...i>chopping*</li><li>deboning***</li><li>**deseeding****</li><li>dicing**</li><li>filleting***... |
-| wjec-gcse-food-and-nutrition-specification.md | 31 | `MORFOLOGIK_RULE_EN_GB` | misspelling | deglazing | Possible spelling mistake found. | deg lazing | ...ing*</li><li>deep fat frying***</li><li>**deglazing****</li></ul> \| \| <ul><li>marinating*</li... |
-| wjec-gcse-food-and-nutrition-specification.md | 31 | `MORFOLOGIK_RULE_EN_GB` | misspelling | spatchcock | Possible spelling mistake found. | Hitchcock, patchwork, matchlock (+2 more) | ...segmenting***</li><li>slicing**</li><li>**spatchcock****</li><li>trimming*</li></ul> \| <ul><li... |
-| wjec-gcse-food-and-nutrition-specification.md | 31 | `MORFOLOGIK_RULE_EN_GB` | misspelling | griddling | Possible spelling mistake found. | riddling, gridding, g riddling | ...><li>freezing*</li><li>frying**</li><li>**griddling****</li><li>grilling*</li><li>pickling**<... |
 | wjec-gcse-food-and-nutrition-specification.md | 32 | `SPACE_BEFORE_PARENTHESIS` | typographical | ( | It appears that a white space is missing. |  ( | ...<li>stir-frying**</li></ul> \| \| toasting**(**nuts/seeds) ** \| <ul><li>tempering***</l... |
 | wjec-gcse-food-and-nutrition-specification.md | 32 | `SPACE_BEFORE_PARENTHESIS` | typographical | ( | It appears that a white space is missing. |  ( | ...<ul><li>toasting*</li></ul> \| \| whisking**(**aeration)*** \| <ul><li>water-bath (sous-... |
