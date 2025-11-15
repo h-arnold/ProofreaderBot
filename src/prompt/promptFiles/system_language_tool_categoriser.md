@@ -54,7 +54,7 @@ Always return the enum values exactly as written above (UPPER_SNAKE_CASE).
 
 ## Output Format
 
-Return a **single JSON object**. Do not include backticks or commentary. The JSON must group entries by page key using the format `"page_<number>"`.
+Return a **single JSON array** (no surrounding object, no page keys). Do not include backticks or commentary. Each array element represents one issue from the table.
 
 IMPORTANT: the categoriser only needs to provide the LLM results for each issue — the detection fields are already known from the input CSV and are re-applied server-side. For each issue, return exactly the following fields and nothing more:
 
@@ -63,32 +63,22 @@ IMPORTANT: the categoriser only needs to provide the LLM results for each issue 
 - `confidence_score`: integer 0–100 (if you prefer to provide 0–1 floats, the runner will convert them)
 - `reasoning`: single-sentence justification
 
-Group the results by page as before (`"page_5": [ { ... } ]`). Any additional fields (rule IDs, context, suggestions) are unnecessary and will be ignored; returning them may cause the output to be rejected by the validator.
-
 Example minimal output:
 ```json
-{
-  "page_5": [
-    {
-      "issue_id": 0,
-      "error_category": "POSSIBLE_AMBIGUOUS_GRAMMATICAL_ERROR",
-      "confidence_score": 70,
-      "reasoning": "Comma improves clarity but omission is not a factual error."
-    }
-  ],
-  "page_6": [
-    {
-      "rule_from_tool": "EN_COMPOUNDS_USER_FRIENDLY",
-      "type_from_tool": "misspelling",
-      "message_from_tool": "This word is normally spelled with a hyphen.",
-      "suggestions_from_tool": ["user-friendly"],
-      "context_from_tool": "...made more user friendly?",
-      "error_category": "PARSING_ERROR",
-      "confidence_score": 90,
-      "reasoning": "Hyphenation required for compound adjective in UK English."
-    }
-  ]
-}
+[
+  {
+    "issue_id": 0,
+    "error_category": "POSSIBLE_AMBIGUOUS_GRAMMATICAL_ERROR",
+    "confidence_score": 70,
+    "reasoning": "Comma improves clarity but omission is not a factual error."
+  },
+  {
+    "issue_id": 1,
+    "error_category": "PARSING_ERROR",
+    "confidence_score": 90,
+    "reasoning": "Hyphenation required for compound adjective in UK English."
+  }
+]
 ```
 
 Each error object **must** include only the four fields described above — `issue_id`, `error_category`, `confidence_score`, and `reasoning`. The runner will map `issue_id` back to the original detection row and attach the LLM fields to that issue.

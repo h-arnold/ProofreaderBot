@@ -152,7 +152,7 @@ class CategoriserRunner:
         print(f"  Batch {batch.index}: Processing {len(batch.issues)} issue(s)...")
         
         remaining_issues = batch.issues.copy()
-        all_results: dict[str, list[dict[str, Any]]] = {}
+        all_results: dict[int, dict[str, Any]] = {}
 
         agg_failed_errors: dict[object, list[str]] = {}
 
@@ -194,16 +194,17 @@ class CategoriserRunner:
             
             # Validate and collect results
             validated, failed, errors = self._validate_response(response, remaining_issues)
-            
-            # Add validated results to our collection
-            for page_key, page_issues in validated.items():
-                if page_key in all_results:
-                    # Avoid adding duplicate issues by issue_id
-                    existing_ids = {issue["issue_id"] for issue in all_results[page_key]}
-                    new_issues = [issue for issue in page_issues if issue.get("issue_id") not in existing_ids]
-                    all_results[page_key].extend(new_issues)
-                else:
-                    all_results[page_key] = list(page_issues)
+
+            # Add validated results to our collection, deduplicating by issue_id
+            for issue_dict in validated:
+                issue_id = issue_dict.get("issue_id") if isinstance(issue_dict, dict) else None
+                if issue_id is None:
+                    continue
+                try:
+                    iid_int = int(issue_id)
+                except Exception:
+                    continue
+                all_results[iid_int] = issue_dict
             
             # Update remaining issues for next retry
             remaining_issues = [issue for issue in remaining_issues if issue.issue_id in failed]
@@ -235,7 +236,7 @@ class CategoriserRunner:
         # Persist results
         if all_results:
             try:
-                output_path = save_batch_results(key, all_results, merge=True)
+                output_path = save_batch_results(key, list(all_results.values()), merge=True)
                 print(f"    Saved results to {output_path}")
                 return True
             except Exception as e:
@@ -249,21 +250,26 @@ class CategoriserRunner:
         self,
         response: Any,
         issues: list[LanguageIssue],
-    ) -> tuple[dict[str, list[dict[str, Any]]], set[int], dict]:
+    ) -> tuple[list[dict[str, Any]], set[int], dict]:
         """Validate LLM response and return validated results, failed ids and error messages.
 
         Returns:
             (validated_results, failed_issue_ids, error_messages)
         """
-        validated_results: dict[str, list[dict[str, Any]]] = {}
+        validated_results: list[dict[str, Any]] = []
         failed_issue_ids: set[int] = set(issue.issue_id for issue in issues)
 
         # Map of issue ids or 'batch_errors' to lists of messages
         error_messages: dict[object, list[str]] = {issue.issue_id: [] for issue in issues}
         error_messages.setdefault("batch_errors", [])
 
-        if not isinstance(response, dict):
-            msg = f"Response is not a dict (got {type(response)})"
+        # Normalise provider response: prefer flat list but support old dict-of-pages format.
+        if isinstance(response, list):
+            response_groups: list[tuple[str | None, list[Any]]] = [(None, response)]
+        elif isinstance(response, dict):
+            response_groups = list(response.items())
+        else:
+            msg = f"Response is not a list or dict (got {type(response)})"
             print(f"    Error: {msg}")
             error_messages.setdefault("batch_errors", []).append(msg)
             return validated_results, failed_issue_ids, error_messages
@@ -272,20 +278,20 @@ class CategoriserRunner:
         filename = issues[0].filename if issues else ""
 
         if not response:
-            msg = "Response is an empty dict; no pages to validate"
+            msg = "Response is empty; no issues to validate"
             print(f"    Warning: {msg}")
             error_messages.setdefault("batch_errors", []).append(msg)
             return validated_results, failed_issue_ids, error_messages
 
-        # Process each page in the response
-        for page_key, page_issues in response.items():
+        # Process each group in the response
+        for page_key, page_issues in response_groups:
             if not isinstance(page_issues, list):
-                warn = f"Page '{page_key}' value is not a list"
+                label = page_key if page_key is not None else "response"
+                warn = f"Entry '{label}' is not a list"
                 print(f"    Warning: {warn}")
                 error_messages.setdefault("batch_errors", []).append(warn)
                 continue
 
-            valid_issues = []
             for issue_dict in page_issues:
                 try:
                     # Allow minimal LLM output — only categorisation fields — and
@@ -347,7 +353,7 @@ class CategoriserRunner:
                         validated = LanguageIssue.from_llm_response(merged, filename=filename)
                     else:
                         validated = LanguageIssue.from_llm_response(issue_dict, filename=filename)
-                    valid_issues.append(validated.model_dump())
+                    validated_results.append(validated.model_dump())
 
                     if validated.issue_id >= 0:
                         failed_issue_ids.discard(validated.issue_id)
@@ -360,7 +366,8 @@ class CategoriserRunner:
                                 break
 
                 except ValidationError as e:
-                    msg = f"Validation error for page '{page_key}': {e}"
+                    label = page_key if page_key is not None else "response"
+                    msg = f"Validation error for entry '{label}': {e}"
                     print(f"    Warning: {msg}")
                     iid = issue_dict.get("issue_id") if isinstance(issue_dict, dict) else None
                     if iid is not None:
@@ -377,10 +384,6 @@ class CategoriserRunner:
                     else:
                         error_messages.setdefault("batch_errors", []).append(str(e))
                     continue
-
-            if valid_issues:
-                validated_results[page_key] = valid_issues
-
         return validated_results, failed_issue_ids, error_messages
     
     def _enforce_rate_limit(self) -> None:

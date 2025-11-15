@@ -165,32 +165,39 @@ def test_persistence_saves_and_loads(tmp_path: Path) -> None:
     """Test persistence saves and loads results correctly."""
     key = DocumentKey(subject="Test", filename="test.md")
     
-    results = {
-        "page_1": [
-            {
-                "rule_from_tool": "RULE1",
-                "type_from_tool": "error",
-                "message_from_tool": "Test",
-                "suggestions_from_tool": ["fix"],
-                "context_from_tool": "ctx",
-                "error_category": "SPELLING_ERROR",
-                "confidence_score": 90,
-                "reasoning": "Test reason"
-            }
-        ]
-    }
+    results = [
+        {
+            "issue_id": 0,
+            "page_number": 1,
+            "issue": "word",
+            "highlighted_context": "ctx",
+            "error_category": "SPELLING_ERROR",
+            "confidence_score": 90,
+            "reasoning": "Test reason",
+        }
+    ]
     
     # Save results
     output_path = save_batch_results(key, results, output_dir=tmp_path)
     
     # Verify file was created
     assert output_path.exists()
-    expected_path = tmp_path / "Test" / "document_reports" / "test.json"
+    expected_path = tmp_path / "Test" / "document_reports" / "test.csv"
     assert output_path == expected_path
     
     # Load and verify
     loaded = load_document_results(key, output_dir=tmp_path)
-    assert loaded == results
+    assert loaded == [
+        {
+            "issue_id": "0",
+            "page_number": "1",
+            "issue": "word",
+            "highlighted_context": "ctx",
+            "error_category": "SPELLING_ERROR",
+            "confidence_score": "90",
+            "reasoning": "Test reason",
+        }
+    ]
 
 
 def test_persistence_merges_results(tmp_path: Path) -> None:
@@ -198,23 +205,37 @@ def test_persistence_merges_results(tmp_path: Path) -> None:
     key = DocumentKey(subject="Test", filename="test.md")
     
     # Save first batch
-    results1 = {
-        "page_1": [{"rule_from_tool": "RULE1", "confidence_score": 90}]
-    }
+    results1 = [
+        {
+            "issue_id": 0,
+            "page_number": 1,
+            "issue": "first",
+            "highlighted_context": "ctx1",
+            "error_category": "SPELLING_ERROR",
+            "confidence_score": 90,
+            "reasoning": "reason1",
+        }
+    ]
     save_batch_results(key, results1, merge=True, output_dir=tmp_path)
     
     # Save second batch with different page
-    results2 = {
-        "page_2": [{"rule_from_tool": "RULE2", "confidence_score": 85}]
-    }
+    results2 = [
+        {
+            "issue_id": 1,
+            "page_number": 2,
+            "issue": "second",
+            "highlighted_context": "ctx2",
+            "error_category": "ABSOLUTE_GRAMMATICAL_ERROR",
+            "confidence_score": 85,
+            "reasoning": "reason2",
+        }
+    ]
     save_batch_results(key, results2, merge=True, output_dir=tmp_path)
     
     # Load and verify merged
     loaded = load_document_results(key, output_dir=tmp_path)
-    assert "page_1" in loaded
-    assert "page_2" in loaded
-    assert len(loaded["page_1"]) == 1
-    assert len(loaded["page_2"]) == 1
+    assert len(loaded) == 2
+    assert {row["issue_id"] for row in loaded} == {"0", "1"}
 
 
 def test_batch_handles_no_page_numbers(tmp_path: Path) -> None:
@@ -261,76 +282,52 @@ def test_persistence_deduplicates_on_merge(tmp_path: Path) -> None:
     key = DocumentKey(subject="Test", filename="test.md")
     
     # Save first batch with some issues (using unified model field names)
-    results1 = {
-        "page_1": [
-            {
-                "filename": "test.md",
-                "rule_id": "RULE1",
-                "issue_type": "error",
-                "message": "Test",
-                "replacements": ["fix"],
-                "context": "context1",
-                "highlighted_context": "context1",
-                "issue": "context1",
-                "error_category": "SPELLING_ERROR",
-                "confidence_score": 90,
-                "reasoning": "Test reason"
-            },
-            {
-                "filename": "test.md",
-                "rule_id": "RULE2",
-                "issue_type": "error",
-                "message": "Test2",
-                "replacements": ["fix2"],
-                "context": "context2",
-                "highlighted_context": "context2",
-                "issue": "context2",
-                "error_category": "ABSOLUTE_GRAMMATICAL_ERROR",
-                "confidence_score": 85,
-                "reasoning": "Test reason 2"
-            }
-        ]
-    }
+    results1 = [
+        {
+            "issue_id": 0,
+            "issue": "context1",
+            "highlighted_context": "context1",
+            "page_number": 1,
+            "error_category": "SPELLING_ERROR",
+            "confidence_score": 90,
+            "reasoning": "Test reason",
+        },
+        {
+            "issue_id": 1,
+            "issue": "context2",
+            "highlighted_context": "context2",
+            "page_number": 2,
+            "error_category": "ABSOLUTE_GRAMMATICAL_ERROR",
+            "confidence_score": 85,
+            "reasoning": "Test reason 2",
+        },
+    ]
     save_batch_results(key, results1, merge=True, output_dir=tmp_path)
     
     # Try to save the same issues again (simulating a reprocess)
-    results2 = {
-        "page_1": [
-            {
-                "filename": "test.md",
-                "rule_id": "RULE1",
-                "issue_type": "error",
-                "message": "Test",
-                "replacements": ["fix"],
-                "context": "context1",
-                "highlighted_context": "context1",  # Same as before - should be deduplicated
-                "issue": "context1",
-                "error_category": "SPELLING_ERROR",
-                "confidence_score": 90,
-                "reasoning": "Test reason"
-            },
-            {
-                "filename": "test.md",
-                "rule_id": "RULE3",  # New issue
-                "issue_type": "error",
-                "message": "Test3",
-                "replacements": ["fix3"],
-                "context": "context3",
-                "highlighted_context": "context3",
-                "issue": "context3",
-                "error_category": "ABSOLUTE_GRAMMATICAL_ERROR",
-                "confidence_score": 80,
-                "reasoning": "Test reason 3"
-            }
-        ]
-    }
+    results2 = [
+        {
+            "issue_id": 0,
+            "issue": "context1",
+            "highlighted_context": "context1",
+            "page_number": 1,
+            "error_category": "SPELLING_ERROR",
+            "confidence_score": 90,
+            "reasoning": "Test reason",
+        },
+        {
+            "issue_id": 2,
+            "issue": "context3",
+            "highlighted_context": "context3",
+            "page_number": 3,
+            "error_category": "ABSOLUTE_GRAMMATICAL_ERROR",
+            "confidence_score": 80,
+            "reasoning": "Test reason 3",
+        },
+    ]
     save_batch_results(key, results2, merge=True, output_dir=tmp_path)
     
-    # Load and verify - should have 3 issues (RULE1 deduplicated, RULE2 and RULE3 kept)
+    # Load and verify - should have 3 issues (issue_id 0 deduped, 1 and 2 kept)
     loaded = load_document_results(key, output_dir=tmp_path)
-    assert "page_1" in loaded
-    assert len(loaded["page_1"]) == 3
-    
-    # Verify the rules present
-    rules = {issue["rule_id"] for issue in loaded["page_1"]}
-    assert rules == {"RULE1", "RULE2", "RULE3"}
+    issue_ids = [row["issue_id"] for row in loaded]
+    assert issue_ids == ["0", "1", "2"]

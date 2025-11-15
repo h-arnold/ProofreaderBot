@@ -1,11 +1,13 @@
-"""Persist categorised results as JSON files.
+"""Persist categorised results as per-document CSV files.
 
-This module handles atomic writes of JSON output files and merging of batch results
-when resuming work on partially-processed documents.
+This module handles atomic writes of CSV output files and merging of batch results
+when resuming work on partially processed documents. Rows are deduplicated by
+`issue_id`, so reruns simply overwrite the most recent categorisation for each issue.
 """
 
 from __future__ import annotations
 
+import csv
 import json
 from pathlib import Path
 from typing import Any
@@ -15,74 +17,77 @@ from src.models.language_issue import LanguageIssue
 from datetime import datetime
 from typing import Iterable
 
+CSV_HEADERS = [
+    "issue_id",
+    "page_number",
+    "issue",
+    "highlighted_context",
+    "error_category",
+    "confidence_score",
+    "reasoning",
+]
+
 
 def save_batch_results(
     key: DocumentKey,
-    batch_results: dict[str, list[dict[str, Any]]],
+    batch_results: list[dict[str, Any]],
     *,
     merge: bool = True,
     output_dir: Path = Path("Documents"),
 ) -> Path:
-    """Save batch results to a JSON file.
+    """Save batch results to a CSV file.
     
     Args:
         key: DocumentKey identifying the document
-        batch_results: Dictionary with page keys (e.g., "page_5") mapping to lists of issue dicts
-        merge: If True and file exists, merge with existing content (deduplicating by rule_id+highlighted_context)
+        batch_results: List of issue dictionaries (must include issue_id)
+        merge: If True and file exists, merge with existing rows (deduplicating by issue_id)
         output_dir: Base directory for output (default: "Documents")
         
     Returns:
         Path to the saved file
         
     Notes:
-        - Results are saved to: Documents/<subject>/document_reports/<filename>.json
+        - Results are saved to: Documents/<subject>/document_reports/<filename>.csv
         - Writes are atomic (temp file + replace)
-        - When merging, issues are deduplicated using (rule_id, highlighted_context) as key
+        - When merging, issues are deduplicated using `issue_id` as the primary key
         - Force mode (--force CLI flag) clears both state and results to prevent duplicates
     """
     # Construct output path
     report_dir = output_dir / key.subject / "document_reports"
     report_dir.mkdir(parents=True, exist_ok=True)
     
-    output_file = report_dir / key.filename.replace(".md", ".json")
-    
-    # Load existing data if merging
-    existing_data: dict[str, list[dict[str, Any]]] = {}
+    output_file = report_dir / key.filename.replace(".md", ".csv")
+
+    existing_rows: dict[int, dict[str, str]] = {}
     if merge and output_file.exists():
+        existing_rows = _read_existing_rows(output_file)
+
+    # Build new rows keyed by issue_id
+    new_rows: dict[int, dict[str, str]] = {}
+    for issue in batch_results:
         try:
-            with open(output_file, "r", encoding="utf-8") as f:
-                existing_data = json.load(f)
-        except (json.JSONDecodeError, OSError) as e:
-            import sys
-            print(f"Warning: Could not load existing file {output_file}: {e}", file=sys.stderr)
-    
-    # Merge batch results with existing data, deduplicating by rule+context
-    merged_data = existing_data.copy()
-    for page_key, issues in batch_results.items():
-        if page_key in merged_data:
-            # Deduplicate: use (rule_id, highlighted_context) as unique key
-            existing_keys = {
-                (issue.get("rule_id"), issue.get("highlighted_context"))
-                for issue in merged_data[page_key]
-            }
-            # Only add issues that don't already exist
-            new_issues = [
-                issue for issue in issues
-                if (issue.get("rule_id"), issue.get("highlighted_context")) not in existing_keys
-            ]
-            merged_data[page_key].extend(new_issues)
-        else:
-            # New page
-            merged_data[page_key] = issues
-    
+            iid, row = _normalise_issue_row(issue)
+        except ValueError as exc:
+            print(f"    Warning: Skipping issue without valid issue_id: {exc}")
+            continue
+        new_rows[iid] = row
+
+    if not new_rows and not existing_rows:
+        return output_file
+
+    merged_rows = existing_rows | new_rows
+
     # Write atomically
     temp_file = output_file.with_suffix(".tmp")
     try:
-        with open(temp_file, "w", encoding="utf-8") as f:
-            json.dump(merged_data, f, indent=2)
-        
+        with open(temp_file, "w", encoding="utf-8", newline="") as f:
+            writer = csv.DictWriter(f, fieldnames=CSV_HEADERS)
+            writer.writeheader()
+            for issue_id in sorted(merged_rows):
+                writer.writerow(merged_rows[issue_id])
+
         temp_file.replace(output_file)
-        
+
     except OSError as e:
         print(f"Error writing to {output_file}: {e}")
         if temp_file.exists():
@@ -96,28 +101,20 @@ def load_document_results(
     key: DocumentKey,
     *,
     output_dir: Path = Path("Documents"),
-) -> dict[str, list[dict[str, Any]]]:
-    """Load existing results for a document.
-    
-    Args:
-        key: DocumentKey identifying the document
-        output_dir: Base directory for output (default: "Documents")
-        
-    Returns:
-        Dictionary with page keys mapping to lists of issue dicts, or empty dict if not found
+) -> list[dict[str, str]]:
+    """Load existing CSV results for a document.
+
+    Returns a list of row dictionaries (strings) ordered by `issue_id`. If the
+    file does not exist, an empty list is returned.
     """
     report_dir = output_dir / key.subject / "document_reports"
-    output_file = report_dir / key.filename.replace(".md", ".json")
-    
+    output_file = report_dir / key.filename.replace(".md", ".csv")
+
     if not output_file.exists():
-        return {}
-    
-    try:
-        with open(output_file, "r", encoding="utf-8") as f:
-            return json.load(f)
-    except (json.JSONDecodeError, OSError) as e:
-        print(f"Warning: Could not load {output_file}: {e}")
-        return {}
+        return []
+
+    rows = _read_existing_rows(output_file)
+    return [rows[iid] for iid in sorted(rows)]
 
 
 def clear_document_results(
@@ -132,7 +129,7 @@ def clear_document_results(
         output_dir: Base directory for output (default: "Documents")
     """
     report_dir = output_dir / key.subject / "document_reports"
-    output_file = report_dir / key.filename.replace(".md", ".json")
+    output_file = report_dir / key.filename.replace(".md", ".csv")
     
     if output_file.exists():
         try:
@@ -195,3 +192,51 @@ def save_failed_issues(
         raise
 
     return output_file
+
+
+def _read_existing_rows(path: Path) -> dict[int, dict[str, str]]:
+    """Read an existing CSV file into a mapping keyed by issue_id."""
+    rows: dict[int, dict[str, str]] = {}
+    try:
+        with open(path, "r", encoding="utf-8", newline="") as f:
+            reader = csv.DictReader(f)
+            for row in reader:
+                raw_id = row.get("issue_id")
+                if raw_id is None:
+                    continue
+                try:
+                    iid = int(raw_id)
+                except ValueError:
+                    continue
+                rows[iid] = row
+    except OSError as e:
+        print(f"Warning: Could not read existing CSV {path}: {e}")
+    return rows
+
+
+def _normalise_issue_row(issue: dict[str, Any]) -> tuple[int, dict[str, str]]:
+    """Normalise a validated issue dict into a CSV row keyed by issue_id."""
+    raw_id = issue.get("issue_id")
+    if raw_id is None:
+        raise ValueError("missing issue_id")
+    try:
+        issue_id = int(raw_id)
+    except Exception as exc:
+        raise ValueError(f"invalid issue_id {raw_id!r}") from exc
+
+    def _clean(value: Any) -> str:
+        if value is None:
+            return ""
+        return str(value)
+
+    row = {
+        "issue_id": str(issue_id),
+        "page_number": _clean(issue.get("page_number")),
+        "issue": _clean(issue.get("issue") or issue.get("context") or issue.get("context_from_tool")),
+        "highlighted_context": _clean(issue.get("highlighted_context") or issue.get("context_from_tool")),
+        "error_category": _clean(issue.get("error_category")),
+        "confidence_score": _clean(issue.get("confidence_score")),
+        "reasoning": _clean(issue.get("reasoning")),
+    }
+
+    return issue_id, row

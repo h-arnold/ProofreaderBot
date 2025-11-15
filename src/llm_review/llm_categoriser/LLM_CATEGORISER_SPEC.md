@@ -1,6 +1,6 @@
 **LLM Categoriser – Detailed Implementation Blueprint**
 
-- **Scope**: Build a standalone categoriser that ingests `Documents/language-check-report.csv`, batches issues per document, prompts an LLM (via templates in `src/prompt/promptFiles/`) with per-batch tables and page context, retries malformed responses, and stores JSON outputs per document under `Documents/<subject>/document_reports/`.
+- **Scope**: Build a standalone categoriser that ingests `Documents/language-check-report.csv`, batches issues per document, prompts an LLM (via templates in `src/prompt/promptFiles/`) with per-batch tables and page context, retries malformed responses, and stores CSV outputs per document under `Documents/<subject>/document_reports/`.
 - **Tech Constraints**: Stay single-threaded for API requests (this is a toy project using free-tier LLMs, so no point attempting concurrency); respect provider-specific minimum request intervals; default batch size 10 (env/CLI override); maximum two retries on JSON parse/validation failure per batch; persistence happens per batch (redo the batch if interrupted).
 - **Primary Dependencies**: `src.models.language_issue.LanguageIssue` (unified model), `src.models.document_key.DocumentKey`, `src.utils.page_utils.extract_pages_text`, `src.prompt.render_prompt.render_template`, `src.llm.provider_registry.create_provider_chain`, `src.llm.service.LLMService`, `src.models.ErrorCategory`.
 
@@ -16,7 +16,7 @@
    - Appends a “Page context” section listing the raw Markdown for each referenced page.
 4. **Send to LLM**: Use `LLMService` to call the configured provider (chat or batch endpoint). Enforce provider min-request intervals to respect quotas.
 5. **Validate output**: Parse the returned JSON, repair it when needed, and validate each record using `LanguageIssue.from_llm_response()`. On failure, isolate the problematic issues and re-ask the provider (up to two retries). Any remaining failures are logged and skipped.
-6. **Persist results**: Write valid responses into `Documents/<Subject>/document_reports/<filename>.json`, grouped by page (`"page_5": [ ... ]`). Track completed batches in a state file so restarts skip successful work unless `--force` is used.
+6. **Persist results**: Write valid responses into `Documents/<Subject>/document_reports/<filename>.csv`. Each row captures a single issue (identified by `issue_id`) along with the LLM categorisation fields. Track completed batches in a state file so restarts skip successful work unless `--force` is used.
 7. **Manual testing**: Optional `--emit-batch-payload` flag writes batch payloads to `data/` and exits, enabling manual submission to provider batch consoles.
 
 ---
@@ -40,38 +40,36 @@ Important: The LLM is only asked to return the categorisation results. The origi
 
 ### Expected Output Structure
 
-The categoriser writes one JSON file per document. Example (trimmed for brevity). The output is grouped by page and each issue includes minimal LLM fields:
+**LLM response** – The provider must return a single JSON array (no root object) where each element contains exactly `issue_id`, `error_category`, `confidence_score`, and `reasoning`.
 
 ```json
-{
-  "page_5": [
-    {
-      "issue_id": 0,
-      "error_category": "POSSIBLE_AMBIGUOUS_GRAMMATICAL_ERROR",
-      "confidence_score": 68,
-      "reasoning": "Sentence is understandable without the comma; optional stylistic choice."
-    }
-  ],
-  "page_6": [
-    {
-      "rule_from_tool": "EN_COMPOUNDS_USER_FRIENDLY",
-      "type_from_tool": "misspelling",
-      "message_from_tool": "This word is normally spelled with a hyphen.",
-      "suggestions_from_tool": ["user-friendly"],
-      "context_from_tool": "...made more user friendly?",
-      "error_category": "PARSING_ERROR",
-      "confidence_score": 90,
-      "reasoning": "Hyphenation aligns with Collins Dictionary for compound adjective." 
-    }
-  ]
-}
+[
+  {
+    "issue_id": 0,
+    "error_category": "POSSIBLE_AMBIGUOUS_GRAMMATICAL_ERROR",
+    "confidence_score": 68,
+    "reasoning": "Sentence is understandable without the comma; optional stylistic choice."
+  },
+  {
+    "issue_id": 1,
+    "error_category": "PARSING_ERROR",
+    "confidence_score": 90,
+    "reasoning": "Hyphenation aligns with Collins Dictionary for compound adjective."
+  }
+]
 ```
 
-Notes:
-- Keys are always `"page_<n>"` where `<n>` is the numeric page index.
-- `suggestions_from_tool` is stored as a list (even if one suggestion was provided).
-- Multiple issues per page append to that page’s array.
-- If a batch produced no valid outputs (after retries), it is omitted and the CLI logs which rows need manual handling.
+**Persisted artifact** – After validation, the runner writes a CSV per document at `Documents/<Subject>/document_reports/<filename>.csv`. Each row contains:
+
+- `issue_id`
+- `page_number`
+- `issue`
+- `highlighted_context`
+- `error_category`
+- `confidence_score`
+- `reasoning`
+
+Rows are deduplicated by `issue_id`, so reruns simply overwrite the latest categorisation for that issue. The CSV header is always emitted, even when appending.
 
 ---
 
@@ -113,7 +111,7 @@ Notes:
   - Logging: Use idiomatic Python print statements for progress/status reporting.
 
 - **`llm_categoriser/persistence.py`**
-  - Write per-document JSON atomically (temp file + replace); merge batches when rerunning without `--force`.
+  - Write per-document CSV files atomically (temp file + replace); merge batches when rerunning without `--force` by deduplicating on `issue_id`.
   - Create `document_reports/` directory if it doesn't exist.
 
 - **`llm_categoriser/state.py`**
@@ -170,9 +168,9 @@ Notes:
 
 ### Persistence & Output
 
-- Results stored in `Documents/<Subject>/document_reports/<filename>.json`.
+- Results stored in `Documents/<Subject>/document_reports/<filename>.csv` (one row per issue, deduped by `issue_id`).
 - Each write is atomic (temporary file + replace).
-- Existing files are merged unless `--force` is set.
+- Existing files are merged unless `--force` is set, with later batches overwriting duplicate `issue_id`s.
 - Optional state/resume support prevents duplicate calls when restarting the CLI.
 
 ---

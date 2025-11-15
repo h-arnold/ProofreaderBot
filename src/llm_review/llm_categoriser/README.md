@@ -2,7 +2,7 @@
 
 
 
-This folder contains the LLM-driven categoriser for LanguageTool issues. It ingests the `Documents/language-check-report.csv`, batches the issues per-document, builds contextual prompts using templates in `src/prompt/promptFiles`, calls configured LLM providers (via `src/llm.service`), validates the JSON response using `src/models/language_issue.LanguageIssue`, and persists the categorised issues.- **Scope**: Build a standalone categoriser that ingests `Documents/language-check-report.csv`, batches issues per document, prompts an LLM (via templates in `src/prompt/promptFiles/`) with per-batch tables and page context, retries malformed responses, and stores JSON outputs per document under `Documents/<subject>/document_reports/`.
+This folder contains the LLM-driven categoriser for LanguageTool issues. It ingests the `Documents/language-check-report.csv`, batches the issues per-document, builds contextual prompts using templates in `src/prompt/promptFiles`, calls configured LLM providers (via `src/llm.service`), validates the JSON response using `src/models/language_issue.LanguageIssue`, and persists the categorised issues.- **Scope**: Build a standalone categoriser that ingests `Documents/language-check-report.csv`, batches issues per document, prompts an LLM (via templates in `src/prompt/promptFiles/`) with per-batch tables and page context, retries malformed responses, and stores CSV outputs per document under `Documents/<subject>/document_reports/`.
 
 - **Tech Constraints**: Stay single-threaded for API requests (this is a toy project using free-tier LLMs, so no point attempting concurrency); respect provider-specific minimum request intervals; default batch size 10 (env/CLI override); maximum two retries on JSON parse/validation failure per batch; persistence happens per batch (redo the batch if interrupted).
 
@@ -18,7 +18,7 @@ This README summarises each module, data flow, contracts, error handling, where 
 
 - Top-level flow: load CSV -> batch issues -> build prompt -> call LLM -> validate -> save results
 
-- Output location: `Documents/<Subject>/document_reports/<filename>.json`1. **Load issues**: Parse the LanguageTool CSV report into `LanguageIssue` objects grouped by subject and filename.
+- Output location: `Documents/<Subject>/document_reports/<filename>.csv`1. **Load issues**: Parse the LanguageTool CSV report into `LanguageIssue` objects grouped by subject and filename.
 
 - Failed validations: written to `data/llm_categoriser_errors/<subject>/<filename>.batch-<index>.errors.json`2. **Batch issues**: Slice each document’s issues into manageable batches (default 10). For every batch, collect the relevant page snippets from the Markdown source so the LLM gets only the necessary context.
 
@@ -34,7 +34,7 @@ This README summarises each module, data flow, contracts, error handling, where 
 
   - Assigns `issue_id` per-document (auto-increment starting at 0).5. **Validate output**: Parse the returned JSON, repair it when needed, and validate each record using `LanguageIssue.from_llm_response()`. On failure, isolate the problematic issues and re-ask the provider (up to two retries). Any remaining failures are logged and skipped.
 
-  - Validates the corresponding Markdown file exists at `Documents/<subject>/markdown/<filename>`.6. **Persist results**: Write valid responses into `Documents/<Subject>/document_reports/<filename>.json`, grouped by page (`"page_5": [ ... ]`). Track completed batches in a state file so restarts skip successful work unless `--force` is used.
+  - Validates the corresponding Markdown file exists at `Documents/<subject>/markdown/<filename>`.6. **Persist results**: Write valid responses into `Documents/<Subject>/document_reports/<filename>.csv`, one row per `issue_id`. Track completed batches in a state file so restarts skip successful work unless `--force` is used.
 
   - Returns a dict: `DocumentKey -> list[LanguageIssue]`.7. **Manual testing**: Optional `--emit-batch-payload` flag writes batch payloads to `data/` and exits, enabling manual submission to provider batch consoles.
 
@@ -74,87 +74,31 @@ This README summarises each module, data flow, contracts, error handling, where 
 
   - If validation fails for some issues, re-prompts only those failures (by `issue_id`) up to the configured number of retries.
 
-  - Persists validated results per-page using `persistence.save_batch_results()`.### Expected Output Structure
+  - Persists validated results as flat batches using `persistence.save_batch_results()`.
 
   - If a batch cannot be validated after retries, saves failure details with `persistence.save_failed_issues()`.
 
-The categoriser writes one JSON file per document. Example (trimmed for brevity):
+### Expected Output Structure
 
-- `persistence.py`
+- **LLM response**: A single JSON array (no root object) where each element contains exactly `issue_id`, `error_category`, `confidence_score`, and `reasoning`.
 
-  - `save_batch_results()` writes document-level JSON to `Documents/<Subject>/document_reports/<filename>.json`.```json
+- **Persisted artifact**: After validation, each document gets a CSV at `Documents/<Subject>/document_reports/<filename>.csv` with columns `issue_id`, `page_number`, `issue`, `highlighted_context`, `error_category`, `confidence_score`, and `reasoning`. Rows are deduplicated by `issue_id`, so reruns simply overwrite the latest categorisation.
 
-  - Writes are atomic (temp file + replace), and merging avoids duplicates.{
+- **`persistence.py`**
 
-  - `save_failed_issues()` writes failed validation logs to `data/llm_categoriser_errors/<subject>/...`.  "page_5": [
+  - `save_batch_results()` writes/merges CSV rows atomically (temp file + replace) and deduplicates by `issue_id`.
 
-    - New optional parameter: `error_messages: dict | None` where keys are `issue_id` or the string `batch_errors`.    {
+  - `save_failed_issues()` writes failed validation logs to `data/llm_categoriser_errors/<subject>/...`, including collected `error_messages` metadata for debugging.
 
-    - The written JSON payload now includes `errors` (mapping of issue IDs and 'batch_errors' to lists of messages) in addition to the `issues` list.      "rule_from_tool": "COMMA_COMPOUND_SENTENCE",
+- **`state.py`**
 
-      "type_from_tool": "uncategorized",
+  - Tracks progress per document in a persistable state file so reruns can skip completed batches unless `--force` is set.
 
-- `state.py`      "message_from_tool": "Use a comma before ‘and’...",
+- **`cli.py` & `__main__.py`**
 
-  - Tracks progress per document in a persistable state file. This is used to avoid reprocessing completed batches.      "suggestions_from_tool": [", and"],
+  - Provide the CLI. Key options include subject/document filters, batch size, `--max-retries`, `--state-file`, `--force`, `--emit-batch-payload`, `--dotenv`, and `--dry-run`.
 
-      "context_from_tool": "...they are then used in marking the work...",
-
-- `cli.py` & `__main__.py`      "error_category": "POSSIBLE_AMBIGUOUS_GRAMMATICAL_ERROR",
-
-  - Provide the CLI. Key options include: subject/document filters, batch size, `--max-retries`, `--state-file`, `--force`, `--emit-batch-payload` (for troubleshooting), `--dotenv` (for provider credentials), and `--dry-run`.      "confidence_score": 68,
-
-      "reasoning": "Sentence is understandable without the comma; optional stylistic choice."
-
-## Error logging and debugging    }
-
-  ],
-
-- When a batch fails to validate after all retry attempts, we now write a diagnostic JSON file with extra details to `data/llm_categoriser_errors`.  "page_6": [
-
-    {
-
-- Example path:      "rule_from_tool": "EN_COMPOUNDS_USER_FRIENDLY",
-
-  - `data/llm_categoriser_errors/Art-and-Design/gcse-test.md.batch-0.errors.json`      "type_from_tool": "misspelling",
-
-      "message_from_tool": "This word is normally spelled with a hyphen.",
-
-- The file structure is:      "suggestions_from_tool": ["user-friendly"],
-
-      "context_from_tool": "...made more user friendly?",
-
-  ```json      "error_category": "PARSING_ERROR",
-
-  {      "confidence_score": 90,
-
-    "timestamp": "2025-11-15T12:34:56Z",      "reasoning": "Hyphenation aligns with Collins Dictionary for compound adjective." 
-
-    "subject": "Art-and-Design",    }
-
-    "filename": "gcse-test.md",  ]
-
-    "batch_index": 0,}
-
-    "issues": [ { /* LanguageIssue.model_dump for each failed issue */ } ],```
-
-    "errors": {
-
-      "5": ["Validation error: confidence_score must be between 0 and 100"],Notes:
-
-      "batch_errors": ["Response is not a dict (got <class 'str'>)"]- Keys are always `"page_<n>"` where `<n>` is the numeric page index.
-
-    }- `suggestions_from_tool` is stored as a list (even if one suggestion was provided).
-
-  }- Multiple issues per page append to that page’s array.
-
-  ```- If a batch produced no valid outputs (after retries), it is omitted and the CLI logs which rows need manual handling.
-
-
-
-  - `issues` contains the `LanguageIssue.model_dump()` objects which include the original detection context.---
-
-  - `errors` contains the validation/LLM error messages, keyed by `issue_id` (stringified for JSON) when possible and `batch_errors` for general problems (malformed JSON, empty response, parse errors, etc.).
+## Error logging and debugging
 
 ### Core Modules & Responsibilities
 
@@ -287,7 +231,7 @@ If you want me to expand any of these sections into a developer-facing doc (with
 
 ### Persistence & Output
 
-- Results stored in `Documents/<Subject>/document_reports/<filename>.json`.
+- Results stored in `Documents/<Subject>/document_reports/<filename>.csv`.
 - Each write is atomic (temporary file + replace).
 - Existing files are merged unless `--force` is set.
 - Optional state/resume support prevents duplicate calls when restarting the CLI.
