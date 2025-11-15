@@ -49,6 +49,19 @@ American spellings found: <img src="badges/ize-suffixes.svg" alt="Ize suffixes c
 10. ❌ [NOT STARTED] Take the eventual json file containing the fully cleansed data and create some pretty graphs to illustrate the issues found.
 11. ❌ [NOT STARTED] Send this report to the Welsh Education Minister and the national press.
 
+## Limitations
+
+The goal of this project is to shine a light on the absence of quality assurance at the WJEC. It is not designed to be a fully comprehensive copy-editing solution, nor will it come close in accuracy or quality of a proper, human-led proofreading process.
+
+### False Negatives
+
+False positives will undermine this tools credibility. There are *so* many errors across the different documents that missing a few will not affect the overall picture. Remember, that for public facing, natinal documents, the only acceptable number of errors is zero.
+
+False negatives will certainly result from:
+
+ - **The PDF Conversion Process**: [Marker](https://github.com/datalab-to/marker) is great, but it combine words, miss hyphens, misinterpret characters and break some tables. As a result, I've had to filter out any of those types of errors, whether they exist or not.
+ - **Lack of specialist knowledge**: I'm reliant on LLMs to correctly identify specialist terminology. I don't have the skills, subject knowledge or time to verify each item in each subject. That is what the WJEC should be doing.
+
 # Technical Details
 
 American spellings found: <img src="badges/ize-suffixes.svg" alt="Ize suffixes count" />
