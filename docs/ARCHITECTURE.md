@@ -47,7 +47,7 @@ Python >= 3.12. Dependencies are managed with uv (see `docs/UV_GUIDE.md`).
 6. Downloading
    - `download_file(url: str, dest: Path) -> None`
      - Uses `requests` to download bytes; partial files are removed on error.
-   - `download_subject_pdfs(subject: str, output_dir: Path, reporter: Callable[[str, Path, str], None] | None = None) -> None`
+  - `download_subject_pdfs(subject: str, url: str, output_root: Path, reporter: Callable[[str, Path, str], None] | None = None) -> tuple[int, Path]`
      - Drives the end-to-end process for a subject.
      - Calls `reporter(label, destination, url)` for progress if provided.
 
@@ -117,6 +117,7 @@ Keep function names, parameter orders, and behaviors stable unless you update al
 - `download_subject_pdfs(subject, output_dir, reporter=None) -> None`
   - Must call `reporter(label, destination, url)` when provided.
   - Must not crash on individual network/IO errors; continue with other files.
+  - Returns a tuple `(count, subject_dir)` where `count` is number of PDFs downloaded and `subject_dir` is the directory the files were saved into.
 
 ### Page utilities (`src/utils/page_utils.py`)
 
