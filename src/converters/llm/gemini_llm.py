@@ -16,6 +16,7 @@ class GeminiLLM:
     The system prompt can be provided either as a string directly or as a Path to a file.
     """
 
+    name = "gemini"
     MODEL = "gemini-flash-2.5"
     MAX_THINKING_BUDGET = 24_576
 
@@ -58,9 +59,16 @@ class GeminiLLM:
     def system_prompt(self) -> str:
         return self._system_prompt
 
-    def generate(self, user_prompts: Sequence[str]) -> Any:
+    def generate(
+        self,
+        user_prompts: Sequence[str],
+        *,
+        filter_json: bool | None = None,
+    ) -> Any:
         if not user_prompts:
             raise ValueError("user_prompts must not be empty.")
+
+        apply_filter = self._filter_json if filter_json is None else filter_json
 
         contents = "\n".join(user_prompts)
         config = types.GenerateContentConfig(
@@ -72,10 +80,21 @@ class GeminiLLM:
             contents=contents,
             config=config,
         )
-        if not self._filter_json:
+        if not apply_filter:
             return response
 
         return self._parse_response_json(response)
+
+    def batch_generate(
+        self,
+        batch_payload: Sequence[Sequence[str]],
+        *,
+        filter_json: bool = False,
+    ) -> Sequence[Any]:
+        raise NotImplementedError("Gemini batch generation is not implemented yet.")
+
+    def health_check(self) -> bool:
+        return True
 
     def _parse_response_json(self, response: Any) -> Any:
         """Extract and repair JSON content from a Gemini response."""

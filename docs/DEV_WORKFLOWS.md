@@ -41,9 +41,12 @@ from src.scraper import (
     sanitise_filename,
     subject_directory_name,
 )
-html = fetch_html("https://example.com/subject")
-links = list(iter_pdf_links(html))
-react_links = list(iter_pdf_from_react_props(html))
+    html = fetch_html("https://example.com/subject")
+    from bs4 import BeautifulSoup
+    soup = BeautifulSoup(html, "html.parser")
+    # Provide the `soup` and the base URL to the helpers
+    links = list(iter_pdf_links(soup, "https://example.com/subject"))
+    react_links = list(iter_pdf_from_react_props(soup, "https://example.com/subject"))
 filename = sanitise_filename("Sample PDF", "https://example.com/sample.pdf", set())
 ```
 

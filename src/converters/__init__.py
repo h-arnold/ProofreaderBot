@@ -10,6 +10,14 @@ from .converters import (
     create_converter,
 )
 from .llm.gemini_llm import GeminiLLM
+from .llm.provider import (
+    LLMProvider,
+    LLMProviderConfigurationError,
+    LLMProviderError,
+    LLMQuotaError,
+)
+from .llm.provider_registry import create_provider_chain
+from .llm.service import LLMService
 
 __all__ = [
     "ConversionResult",
@@ -18,4 +26,10 @@ __all__ = [
     "MarkerConverter",
     "create_converter",
     "GeminiLLM",
+    "LLMProvider",
+    "LLMProviderConfigurationError",
+    "LLMProviderError",
+    "LLMQuotaError",
+    "LLMService",
+    "create_provider_chain",
 ]

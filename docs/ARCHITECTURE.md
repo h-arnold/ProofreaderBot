@@ -10,6 +10,7 @@ The tool downloads GCSE PDF documents from WJEC "Made for Wales" qualification p
 - Post-processing: `src.postprocessing` module (functions in `src/postprocessing/__init__.py`)
 - Converters: `src.converters.converters` module (PDF to Markdown conversion)
 - Gemini helper: `src.converters.gemini_llm` module — wraps the Google GenAI client, reads system instructions from Markdown, and loads `.env` values (such as `GEMINI_API_KEY`)
+- LLM orchestration: `src/converters/llm/provider.py`, `src/converters/llm/service.py`, and `src/converters/llm/provider_registry.py` describe the shared `LLMProvider` contract, a quota-aware `LLMService` orchestrator, and a registry that builds the active provider list (defaulting to Gemini plus a placeholder Mistral) while honoring `LLM_PRIMARY`/`LLM_FALLBACK` hints; `tests/test_llm_service.py` verifies fallback, quota handling, and reporting behavior.
 - Page utilities: `src.utils.page_utils` module (page marker extraction and navigation)
 - Language check: `src.language_check.language_check` module (spelling and grammar checking) with report builders in `src.language_check.report_utils`
 
@@ -27,21 +28,21 @@ Python >= 3.12. Dependencies are managed with uv (see `docs/UV_GUIDE.md`).
    - For some subjects, an additional site-specific key-documents endpoint is probed; absence or failure is non-fatal.
 
 3. Link discovery (two strategies combined)
-   - `iter_pdf_links(html: str) -> Iterable[tuple[url, title]]`
-     - Anchors with href ending in `.pdf`.
-   - `iter_pdf_from_react_props(html: str) -> Iterable[tuple[url, title]]`
+  - `iter_pdf_links(soup: BeautifulSoup, base_url: str) -> Iterable[tuple[title, url]]`
+  - Anchors with href ending in `.pdf`. This function accepts a pre-parsed `BeautifulSoup` object and a base URL; it yields tuples `(title, absolute_url)`.
+  - `iter_pdf_from_react_props(soup: BeautifulSoup, base_url: str) -> Iterable[tuple[title, url]]`
      - Parses embedded React props JSON inside `textarea.react-component--props`.
      - Extracts `listItems` entries with `Link` (URL) and `Name` (title).
 
 4. Coalescing and title choice
-   - `collect_pdf_links(html_or_pages: ...) -> dict[url, best_title]`
-   - URLs are de-duplicated; the “best” title is chosen by preferring the longest non-empty title per URL.
+  - `collect_pdf_links(url: str) -> list[tuple[pdf_url, title]]`
+  - HTML for the provided landing URL is fetched; the function extracts links from the landing page and (where available) the Key Documents tab. URLs are de-duplicated; the “best” title is chosen by preferring the longest non-empty title per URL. The function returns a list of `(pdf_url, title)` pairs (not a map) to preserve ordering for callers.
 
 5. Filenames and directories
    - `subject_directory_name(subject: str) -> str`
-     - Normalises to filesystem-safe dir name (non-alphanumerics → `-`).
+     - Normalises to filesystem-safe dir name by replacing runs of characters not in [A-Za-z0-9._-] with `-` and trimming leading/trailing hyphens. Note: `.` and `_` are allowed and preserved.
    - `sanitise_filename(title: str, url: str, existing: set[str]) -> str`
-     - Lowercase, hyphenated, suffix `-N` added if needed to avoid collisions.
+     - Returns a filesystem-safe filename. It lowercases and replaces runs of characters not in [A-Za-z0-9._-] with `-`, ensures the filename ends with `.pdf`, and appends `-N` when collisions occur (N starting from 2). The function also falls back to a name derived from the URL path if the title is empty.
 
 6. Downloading
    - `download_file(url: str, dest: Path) -> None`
@@ -98,17 +99,17 @@ Keep function names, parameter orders, and behaviors stable unless you update al
 - `fetch_html(url) -> str`
   - Must raise for non-recoverable HTTP errors; may return empty string only on explicitly handled non-fatal conditions.
 
-- `iter_pdf_links(html) -> Iterable[(url, title)]`
-  - Must ignore non-PDF links; return absolute URLs when possible.
+- `iter_pdf_links(soup, base_url) -> Iterable[(title, url)]`
+  - Accepts a `BeautifulSoup` object and the page's base URL. Must ignore non-PDF links and return absolute URLs when possible; yields `(title, absolute_url)` where `title` may be empty (caller falls back to URL basename).
 
-- `iter_pdf_from_react_props(html) -> Iterable[(url, title)]`
-  - Must be resilient to missing/invalid JSON; return an empty iterator on failure.
+- `iter_pdf_from_react_props(soup, base_url) -> Iterable[(title, url)]`
+  - Parses embedded JSON in `textarea.react-component--props`. Must be resilient to missing/invalid JSON and return an empty iterator on failure; yields `(title, absolute_url)`.
 
-- `collect_pdf_links(...) -> dict[url, title]`
-  - Must deduplicate URLs and choose the longest non-empty title per URL.
+- `collect_pdf_links(url) -> list[tuple[pdf_url, title]]`
+  - Fetches the landing page and optionally the Key Documents endpoint; must deduplicate URLs and choose the longest non-empty title per URL. Returns a list of `(pdf_url, title)` tuples (order is deterministic based on the page contents and title sorting used by callers).
 
 - `subject_directory_name(subject) -> str`
-  - Must replace non-alphanumeric with `-`, coalesce repeats, and trim leading/trailing `-`.
+  - Must replace runs of characters not in the set `[A-Za-z0-9._-]` with `-`, coalesce repeats, and trim leading/trailing `-`. Note that `.` and `_` are preserved.
 
 - `sanitise_filename(title, url, existing) -> str`
   - Must be lowercase, hyphenated; must avoid collisions by appending `-N` where N ≥ 2.
