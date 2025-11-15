@@ -49,7 +49,8 @@ def save_batch_results(
             with open(output_file, "r", encoding="utf-8") as f:
                 existing_data = json.load(f)
         except (json.JSONDecodeError, OSError) as e:
-            print(f"Warning: Could not load existing file {output_file}: {e}")
+            import sys
+            print(f"Warning: Could not load existing file {output_file}: {e}", file=sys.stderr)
     
     # Merge batch results with existing data
     merged_data = existing_data.copy()
