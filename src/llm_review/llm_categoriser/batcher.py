@@ -97,7 +97,7 @@ def iter_batches(
             else:
                 # No page numbers specified but document has markers
                 # This shouldn't happen, but handle gracefully
-                print(f"Warning: Document has page markers but issues have no page numbers")
+                print(f"Warning: Document has page markers but issues have no page numbers", file=sys.stderr)
                 page_context = {0: markdown_content}
         
         # Build simplified Markdown table
