@@ -15,9 +15,8 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Any, Iterable, Optional
 
-import language_tool_python
-
 from .language_check_config import DEFAULT_DISABLED_RULES, DEFAULT_IGNORED_WORDS
+from .language_tool_manager import LanguageToolManager
 from .page_utils import build_page_number_map
 from .report_utils import build_report_csv, build_report_markdown
 from .language_issue import LanguageIssue
@@ -120,96 +119,47 @@ class DocumentReport:
 	issues: list[LanguageIssue]
 
 
+def _collect_disabled_rules(additional_rules: set[str] | None) -> set[str]:
+	"""Merge default disabled rules with any additional entries."""
+	rules = set(DEFAULT_DISABLED_RULES)
+	if additional_rules:
+		rules.update(additional_rules)
+	return rules
+
+
+def _collect_ignored_words(extra_words: set[str] | None) -> set[str]:
+	"""Return the union of default ignored words and any extras."""
+	words = set(DEFAULT_IGNORED_WORDS)
+	if extra_words:
+		words.update(extra_words)
+	return words
+
+
+def _create_language_tool_manager(
+	*,
+	ignored_words: set[str] | None = None,
+	disabled_rules: set[str] | None = None,
+) -> LanguageToolManager:
+	"""Instantiate a shared LanguageToolManager for the current run."""
+	return LanguageToolManager(
+		ignored_words=_collect_ignored_words(ignored_words),
+		disabled_rules=_collect_disabled_rules(disabled_rules),
+		logger=LOGGER,
+	)
+
+
 def build_language_tool(
 	language: str,
 	*,
 	disabled_rules: set[str] | None = None,
 	ignored_words: set[str] | None = None,
 ) -> Any:
-	"""Instantiate a LanguageTool checker for the requested language.
-
-	Falls back to the public API when the local Java runtime is unavailable.
-	
-	Args:
-		language: Language code (e.g., "en-GB", "auto" for auto-detection)
-		disabled_rules: Set of rule IDs to disable
-		ignored_words: Set of words to add to the spell-check whitelist (case-sensitive)
-	"""
-	
-	# Merge with defaults
-	rules_to_disable = set(DEFAULT_DISABLED_RULES)
-	if disabled_rules:
-		rules_to_disable.update(disabled_rules)
-	
-	words_to_ignore = set(DEFAULT_IGNORED_WORDS)
-	if ignored_words:
-		words_to_ignore.update(ignored_words)
-
-	try:
-		tool_language = "en-GB"
-		if language != tool_language:
-			LOGGER.debug("Overriding requested language %s with %s", language, tool_language)
-
-		# Use LanguageTool configuration options to improve local performance
-		# and caching as described in the upstream library docs.
-		# - maxCheckThreads: number of threads to use during checks
-		# - pipelineCaching: enable caching of processing pipeline to speed up repeated checks
-		# Note: LanguageTool's config keys use camelCase. The authoritative
-		# keys are documented in language_tool_python; use `maxCheckThreads`
-		# rather than snake_case.
-		config = {"maxCheckThreads": 6, "pipelineCaching": True}
-
-		# Some language_tool_python versions accept a 'config' keyword to control
-		# underlying pipeline options. If this fails (older versions), fall back to
-		# the simple constructor to preserve compatibility.
-		try:
-			tool = language_tool_python.LanguageTool(tool_language, config=config)
-		except TypeError:
-			# Older versions may not accept config; try without it
-			LOGGER.info("LanguageTool does not accept 'config' — falling back to default constructor")
-			tool = language_tool_python.LanguageTool(tool_language)
-	except Exception as exc:
-		# Do not silently fall back to the public API. If a local Java runtime
-		# isn't available or another error occurs, surface the original
-		# exception so the caller can decide how to proceed. This prevents
-		# unexpected use of the public LanguageTool API in environments where
-		# network access or rate limits are undesired.
-		LOGGER.exception("Failed to create local LanguageTool for %s: %s", tool_language, exc)
-		raise
-	
-	# Disable specified rules
-	if rules_to_disable:
-		# LanguageTool implementations commonly expect a set for disabled_rules
-		try:
-			tool.disabled_rules = set(rules_to_disable)
-		except Exception:
-			tool.disabled_rules = set(rules_to_disable)
-		LOGGER.info("Disabled rules: %s", ", ".join(sorted(rules_to_disable)))
-	
-	# Add words to ignore list
-	if words_to_ignore:
-		# Try to update an internal ignore set if present, otherwise try a
-		# public method (addIgnoreTokens) or fall back to post-processing.
-		try:
-			_internal = getattr(tool, "_ignore_words", None)
-			if _internal is not None and hasattr(_internal, "update"):
-				_internal.update(words_to_ignore)
-			else:
-				# Prefer calling a public API if present. Use getattr to avoid
-				# static-analysis errors when the upstream stubs don't include
-				# this method name or when different implementations expose
-				# different method names.
-				_add = getattr(tool, "addIgnoreTokens", None)
-				if callable(_add):
-					try:
-						_add(list(words_to_ignore))
-					except Exception:
-						pass
-			LOGGER.info("Ignoring words: %s", ", ".join(sorted(words_to_ignore)))
-		except Exception:
-			LOGGER.info("Will filter ignored words in post-processing: %s", ", ".join(sorted(words_to_ignore)))
-	
-	return tool
+	"""Instantiate a LanguageTool checker for the requested language."""
+	manager = _create_language_tool_manager(
+		ignored_words=ignored_words,
+		disabled_rules=disabled_rules,
+	)
+	return manager.build_tool(language)
 
 
 def iter_markdown_documents(root: Path, *, subject_path: Path | None = None) -> list[tuple[str, Path]]:
@@ -332,9 +282,7 @@ def check_document(
 	# NOTE: matching is case-sensitive — we use the words as provided in the
 	# configuration because many entries are case-specific (proper nouns,
 	# acronyms, product names, etc.).
-	words_to_ignore = set(DEFAULT_IGNORED_WORDS)
-	if ignored_words:
-		words_to_ignore.update(ignored_words)
+	words_to_ignore = _collect_ignored_words(ignored_words)
 	
 	# Normalize tool to a list for uniform processing
 	tools = [tool] if not isinstance(tool, list) else tool
@@ -464,40 +412,39 @@ def build_language_tools_for_subject(
 	*,
 	disabled_rules: set[str] | None = None,
 	ignored_words: set[str] | None = None,
+	manager: LanguageToolManager | None = None,
 ) -> list[Any]:
 	"""Build LanguageTool instances for a subject.
-	
-	For language subjects (French, German), creates tools for both the subject
-	language and English. For other subjects, creates only an English tool.
-	
+
 	Args:
 		subject: Subject name (e.g., "French", "German", "Computer-Science")
-		disabled_rules: Set of rule IDs to disable
-		ignored_words: Set of words to ignore
-		
+		disabled_rules: Additional rules to disable
+		ignored_words: Additional words to add to the dictionary ignore list
+		manager: Optional preconfigured LanguageToolManager (used when provided)
+
 	Returns:
-		List of LanguageTool instances (may contain one or more tools)
+		List of LanguageTool instances
 	"""
 	languages = get_languages_for_subject(subject)
-	tools = []
+	tool_manager = manager or _create_language_tool_manager(
+		ignored_words=ignored_words,
+		disabled_rules=disabled_rules,
+	)
 
 	# For language subjects, add language-specific extra disabled rules
-	# on top of the defaults defined in `language_check_config.DEFAULT_DISABLED_RULES`.
-	# We ignore any externally-provided `disabled_rules` (CLI no longer controls this).
 	morfologik_rule = "MORFOLOGIK_RULE_EN_GB"
 	extra_disabled: set[str] | None = None
 	if subject in {"French", "German", "Spanish"}:
 		extra_disabled = {morfologik_rule}
 
+	tools: list[Any] = []
 	for language in languages:
-		tool = build_language_tool(
+		tool = tool_manager.build_tool(
 			language,
-			disabled_rules=extra_disabled,
-			ignored_words=ignored_words,
+			extra_disabled_rules=extra_disabled,
 		)
 		tools.append(tool)
 		LOGGER.info("Created LanguageTool for language: %s (subject: %s)", language, subject)
-	
 	return tools
 
 
@@ -535,14 +482,19 @@ def check_single_document(
 		finally:
 			# Don't close externally provided tools
 			pass
-	
-	# Otherwise, create tools based on subject
+
+	# Otherwise, create tools based on subject using the manager abstraction
+	local_manager = _create_language_tool_manager(
+		ignored_words=ignored_words,
+		disabled_rules=disabled_rules,
+	)
 	tools = build_language_tools_for_subject(
 		resolved_subject,
 		disabled_rules=disabled_rules,
-		ignored_words=ignored_words
+		ignored_words=ignored_words,
+		manager=local_manager,
 	)
-	
+
 	try:
 		# If only one tool, pass it directly (not in a list) for backward compatibility
 		tool_arg = tools[0] if len(tools) == 1 else tools
@@ -629,6 +581,12 @@ def run_language_checks(
 
 	reports: list[DocumentReport] = []
 	running_total = 0
+	tool_manager: LanguageToolManager | None = None
+	if tool is None:
+		tool_manager = _create_language_tool_manager(
+			ignored_words=ignored_words,
+			disabled_rules=disabled_rules,
+		)
 
 	# If tool is provided, use it directly (backward compatibility for single-language checking)
 	if tool is not None:
@@ -661,7 +619,8 @@ def run_language_checks(
 					current_tools = build_language_tools_for_subject(
 						subject_name,
 						disabled_rules=disabled_rules,
-						ignored_words=ignored_words
+						ignored_words=ignored_words,
+						manager=tool_manager,
 					)
 				
 				# Pass tools as list or single tool depending on count

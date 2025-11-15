@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import sys
-from types import SimpleNamespace
 from pathlib import Path
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
@@ -9,7 +8,7 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 import src.language_check as lc
-import src.language_check.language_check as lc_mod
+import src.language_check.language_tool_manager as manager_mod
 
 
 def test_build_language_tool_passes_config(monkeypatch) -> None:
@@ -33,7 +32,7 @@ def test_build_language_tool_passes_config(monkeypatch) -> None:
     # Monkeypatch the import used by language_check by patching the imported module
     # within the language_check module. This avoids relying on import path
     # resolution and is robust during the test run.
-    monkeypatch.setattr(lc_mod.language_tool_python, "LanguageTool", DummyLanguageTool)
+    monkeypatch.setattr(manager_mod.language_tool_python, "LanguageTool", DummyLanguageTool)
 
     tool = lc.build_language_tool("en-GB")
 
@@ -51,3 +50,7 @@ def test_build_language_tool_passes_config(monkeypatch) -> None:
     else:
         # No config passed - this is allowed for older language_tool_python versions
         assert True
+
+    new_spellings = captured.get("kwargs", {}).get("newSpellings")
+    assert new_spellings is not None
+    assert len(new_spellings) == len(lc.DEFAULT_IGNORED_WORDS)

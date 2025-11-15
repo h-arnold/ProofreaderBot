@@ -16,6 +16,7 @@ from .language_check import (
     iter_markdown_documents,
     run_language_checks,
 )
+from .language_tool_manager import LanguageToolManager
 from .report_utils import build_report_csv, build_report_markdown
 from .language_check_config import DEFAULT_DISABLED_RULES, DEFAULT_IGNORED_WORDS
 
@@ -30,6 +31,7 @@ __all__ = [
     "build_report_markdown",
     "build_report_csv",
     "run_language_checks",
+    "LanguageToolManager",
     "DEFAULT_DISABLED_RULES",
     "DEFAULT_IGNORED_WORDS",
 ]
