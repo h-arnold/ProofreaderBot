@@ -1,33 +1,33 @@
 # Language Check Report
 
 - Checked 238 document(s)
-- Total issues found: 5974
+- Total issues found: 5831
 
 ## Totals by Subject
-- Art-and-Design: 110 issue(s) across 8 document(s) (running total: 110)
-- Business: 246 issue(s) across 13 document(s) (running total: 356)
-- Computer-Science: 138 issue(s) across 10 document(s) (running total: 494)
-- Dance: 17 issue(s) across 2 document(s) (running total: 511)
-- Design-and-Technology: 50 issue(s) across 2 document(s) (running total: 561)
-- Digital-Media-and-Film: 31 issue(s) across 2 document(s) (running total: 592)
-- Digital-Technology: 15 issue(s) across 2 document(s) (running total: 607)
-- Drama: 352 issue(s) across 13 document(s) (running total: 959)
-- English-Language-and-Literature: 402 issue(s) across 22 document(s) (running total: 1361)
-- Food-and-Nutrition: 348 issue(s) across 19 document(s) (running total: 1709)
-- French: 356 issue(s) across 13 document(s) (running total: 2065)
-- Geography: 515 issue(s) across 19 document(s) (running total: 2580)
-- German: 129 issue(s) across 13 document(s) (running total: 2709)
-- Health-and-Social-Care-and-Childcare: 30 issue(s) across 2 document(s) (running total: 2739)
-- History: 731 issue(s) across 35 document(s) (running total: 3470)
-- Integrated-Science-Single-Award: 40 issue(s) across 2 document(s) (running total: 3510)
-- Level-2-Additional-Mathematics: 89 issue(s) across 3 document(s) (running total: 3599)
-- Mathematics-and-Numeracy: 1051 issue(s) across 14 document(s) (running total: 4650)
-- Music: 179 issue(s) across 11 document(s) (running total: 4829)
-- Physical-Education-and-Health: 20 issue(s) across 2 document(s) (running total: 4849)
-- Religious-Studies: 911 issue(s) across 14 document(s) (running total: 5760)
-- Social-Studies: 25 issue(s) across 2 document(s) (running total: 5785)
-- Spanish: 134 issue(s) across 13 document(s) (running total: 5919)
-- The-Sciences-Double-Award: 55 issue(s) across 2 document(s) (running total: 5974)
+- Art-and-Design: 91 issue(s) across 8 document(s) (running total: 91)
+- Business: 217 issue(s) across 13 document(s) (running total: 308)
+- Computer-Science: 110 issue(s) across 10 document(s) (running total: 418)
+- Dance: 14 issue(s) across 2 document(s) (running total: 432)
+- Design-and-Technology: 29 issue(s) across 2 document(s) (running total: 461)
+- Digital-Media-and-Film: 18 issue(s) across 2 document(s) (running total: 479)
+- Digital-Technology: 15 issue(s) across 2 document(s) (running total: 494)
+- Drama: 333 issue(s) across 13 document(s) (running total: 827)
+- English-Language-and-Literature: 402 issue(s) across 22 document(s) (running total: 1229)
+- Food-and-Nutrition: 347 issue(s) across 19 document(s) (running total: 1576)
+- French: 356 issue(s) across 13 document(s) (running total: 1932)
+- Geography: 510 issue(s) across 19 document(s) (running total: 2442)
+- German: 129 issue(s) across 13 document(s) (running total: 2571)
+- Health-and-Social-Care-and-Childcare: 30 issue(s) across 2 document(s) (running total: 2601)
+- History: 731 issue(s) across 35 document(s) (running total: 3332)
+- Integrated-Science-Single-Award: 40 issue(s) across 2 document(s) (running total: 3372)
+- Level-2-Additional-Mathematics: 89 issue(s) across 3 document(s) (running total: 3461)
+- Mathematics-and-Numeracy: 1048 issue(s) across 14 document(s) (running total: 4509)
+- Music: 177 issue(s) across 11 document(s) (running total: 4686)
+- Physical-Education-and-Health: 20 issue(s) across 2 document(s) (running total: 4706)
+- Religious-Studies: 911 issue(s) across 14 document(s) (running total: 5617)
+- Social-Studies: 25 issue(s) across 2 document(s) (running total: 5642)
+- Spanish: 134 issue(s) across 13 document(s) (running total: 5776)
+- The-Sciences-Double-Award: 55 issue(s) across 2 document(s) (running total: 5831)
 
 ---
 
@@ -56,7 +56,7 @@ Found 1 issue(s).
 
 ### Art-and-Design / gcse-art-and-design---guidance-for-teaching.md
 
-Found 64 issue(s).
+Found 55 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -76,8 +76,6 @@ Found 64 issue(s).
 | gcse-art-and-design---guidance-for-teaching.md | 28 | `EN_MULTITOKEN_SPELLING_TWO` | misspelling | Paul Gaugin | Possible spelling mistake found. | Paul Gauguin | ...riate way).  #### Examples could be:  - **Paul Gaugin** and the Tahitian women that he painted,... |
 | gcse-art-and-design---guidance-for-teaching.md | 33 | `EN_COMPOUNDS_NON_TOXIC` | misspelling | non toxic | This expression is normally spelled as one or with a hyphen. | non-toxic | .../li><li>Using eco-friendly pigments and **non toxic** materials wherever possible.</li><li>Wo... |
 | gcse-art-and-design---guidance-for-teaching.md | 33 | `COMMA_COMPOUND_SENTENCE` | uncategorized |  or | Use a comma before ‘or’ if it connects two independent clauses (unless they are closely connected and short). | , or | ...encourage learners to take this approach** or** we risk the methods and materials that ... |
-| gcse-art-and-design---guidance-for-teaching.md | 34 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Fach | Possible spelling mistake found. | Each, Face, Fact (+17 more) | ...terest. Textile specialists like [Felin **Fach**](https://www.felinfach.com/pages/natura... |
-| gcse-art-and-design---guidance-for-teaching.md | 34 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ie | Possible spelling mistake found. | i.e., IE, in (+115 more) | ... apply sustainable methodologies to it (**ie**: re-use, recycle, reclaim).  {35}------... |
 | gcse-art-and-design---guidance-for-teaching.md | 35 | `ALL_OF_THE` | style | all of the | Consider removing “of” to be more concise | all the | ... recycle, repair, rethink and refuse in **all of the** work that they create. - Consider their... |
 | gcse-art-and-design---guidance-for-teaching.md | 35 | `POSSESSIVE_APOSTROPHE` | typographical | products | An apostrophe may be missing. | products', product's | ...work that they create. - Consider their **products** life cycle how are materials sourced, h... |
 | gcse-art-and-design---guidance-for-teaching.md | 35 | `MORFOLOGIK_RULE_EN_GB` | misspelling | href | Possible spelling mistake found. | ref, pref, HEF (+1 more) | ...ls from sustainable sources such as: <a **href**="eco-craft">eco-craft</a> and <a href="... |
@@ -89,13 +87,8 @@ Found 64 issue(s).
 | gcse-art-and-design---guidance-for-teaching.md | 38 | `APOSTROPHE_IN_DATES` | typographical | 1980's | Apostrophes aren’t needed for decades. | 1980s | ...f stigma around sexual health since the **1980's** when the 'Don't Die of Ignorance' campa... |
 | gcse-art-and-design---guidance-for-teaching.md | 38 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Womens | Possible spelling mistake found. | Women's, Women, Omens (+1 more) | ...y relationships for young people. Welsh **Womens** Aid - Healthy Relationships \|  {39}----... |
 | gcse-art-and-design---guidance-for-teaching.md | 41 | `POSSIBILTY_POSSIBLE` | style | possibilities | Before ‘possible’, use a word such as “chances” or “opportunities”. Alternatively, keep ‘possibilities’ and replace ‘possible’. | chances, opportunities | ... engineering</li><li>UX designer. These **possibilities** are made possible through design thinki... |
-| gcse-art-and-design---guidance-for-teaching.md | 42 | `MORFOLOGIK_RULE_EN_GB` | misspelling | IDEO | Possible spelling mistake found. | VIDEO, IDEA, IDEM (+8 more) | ...om the international design consultancy **IDEO** identifies what this means: [design thi... |
 | gcse-art-and-design---guidance-for-teaching.md | 42 | `OUTSIDE_OF` | style | inside of | This phrase is redundant. Consider using “inside”. | inside | ...ains that the ability to find something **inside of** yourself to express creatively to the w... |
 | gcse-art-and-design---guidance-for-teaching.md | 43 | `SUBJECT_MATTER` | style | subject matter | This phrase is redundant. Consider using “subject” to avoid wordiness. | subject | ...nent form. I find inspiration in simple **subject matter**, women scrubbing steps, figures sitting... |
-| gcse-art-and-design---guidance-for-teaching.md | 44 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Aedas | Possible spelling mistake found. | Vedas, Adas | ...ounded international architectural firm **Aedas**, talks about the power of sketching in ... |
-| gcse-art-and-design---guidance-for-teaching.md | 44 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Kantha | Possible spelling mistake found. | Kant ha | ...: Rosie James, 'Stitch Draw' Ekta Kaul, **Kantha** Cas Holmes, Stitch Stories. \|  {45}----... |
-| gcse-art-and-design---guidance-for-teaching.md | 44 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Cas | Possible spelling mistake found. | Ca's, Ca, CAS (+2461 more) | ... James, 'Stitch Draw' Ekta Kaul, Kantha **Cas** Holmes, Stitch Stories. \|  {45}--------... |
-| gcse-art-and-design---guidance-for-teaching.md | 45 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Hallyu | Possible spelling mistake found. | Hall, Ally, Halls (+20 more) | ...liams. Ai Weiwei, 40th Ed. Rosalie Kim, **Hallyu**!: The Korean Wave. \| \|----------\|------... |
 | gcse-art-and-design---guidance-for-teaching.md | 45 | `COMMA_COMPOUND_SENTENCE_2` | uncategorized |  and | Use a comma before “and” if it connects two independent clauses (unless they are closely connected and short). | , and | ...ted that feedback should remain positive** and** the teacher should create guidelines to... |
 | gcse-art-and-design---guidance-for-teaching.md | 46 | `ALL_OF_THE` | style | all of the | Consider removing “of” to be more concise | all the | ...ve work \| In order to successfully meet **all of the** Assessment Objectives, it is important ... |
 | gcse-art-and-design---guidance-for-teaching.md | 46 | `IN_THE_MOMENT` | misspelling | in the moment | Did you mean “at the moment” (=currently)? | at the moment | ... to be in essay format – notes created '**in the moment**' can have as much fluency as paragraphs... |
@@ -104,9 +97,7 @@ Found 64 issue(s).
 | gcse-art-and-design---guidance-for-teaching.md | 47 | `NEITHER_NOR` | grammar | or | Use “nor” with neither. | nor | ...clusive. This helps neither the learner **or** subject and should be challenged.</li><... |
 | gcse-art-and-design---guidance-for-teaching.md | 48 | `SALVADOR_DALI` | uncategorized | Salvador Dali | Did you mean the Spanish surrealist artist “Salvador Dalí”? | Salvador Dalí | ...sts)</li><li>Giorgio de Chirico</li><li>**Salvador Dali**</li><li>Rene Magritte</li><li>Bridget R... |
 | gcse-art-and-design---guidance-for-teaching.md | 49 | `MORFOLOGIK_RULE_EN_GB` | misspelling | tryptichs | Possible spelling mistake found. | triptychs, tryptic | ...of stories from the Bible (sometimes as **tryptichs**), the sculptural forms of Barbara Hepwo... |
-| gcse-art-and-design---guidance-for-teaching.md | 50 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Planometric | Possible spelling mistake found. | Planimetric, Plano metric | ...i>Isometric</li><li>Axonometric</li><li>**Planometric**</li><li>Perspective</li><li>First or th... |
 | gcse-art-and-design---guidance-for-teaching.md | 50 | `MORFOLOGIK_RULE_EN_GB` | misspelling | modelmaking | Possible spelling mistake found. | model making | ...le', whether through drawing or through **modelmaking**, using appropriate scales from 1:2 for ... |
-| gcse-art-and-design---guidance-for-teaching.md | 50 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ie | Possible spelling mistake found. | i.e., IE, in (+115 more) | ..., using appropriate scales from 1:2 for **ie**: construction detail ideas for furnitur... |
 | gcse-art-and-design---guidance-for-teaching.md | 50 | `EN_COMPOUNDS_THREE_DIMENSIONAL` | misspelling | three dimensional | This word is normally spelled with a hyphen. | three-dimensional | ...graphy), using perspective to represent **three dimensional** shapes on a 2 dimensional plan (paper, ... |
 | gcse-art-and-design---guidance-for-teaching.md | 50 | `EN_COMPOUNDS___DIMENSIONAL` | misspelling | 2 dimensional | This word is normally spelled with a hyphen. | 2-dimensional | ...represent three dimensional shapes on a **2 dimensional** plan (paper, canvas etc) is a technique... |
 | gcse-art-and-design---guidance-for-teaching.md | 51 | `COMMA_COMPOUND_SENTENCE_2` | uncategorized |  and | Use a comma before “and” if it connects two independent clauses (unless they are closely connected and short). | , and | ...s in this area are developing frequently** and** communication design is a popular degre... |
@@ -139,7 +130,7 @@ Found 5 issue(s).
 
 ### Art-and-Design / gcse-art-and-design---unit-2-externally-set-assignment.md
 
-Found 19 issue(s).
+Found 9 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -151,16 +142,6 @@ Found 19 issue(s).
 | gcse-art-and-design---unit-2-externally-set-assignment.md | 15 | `INDEPENDENTLY_FROM_OF` | grammar | independently from | The usual collocation for “independently” is “of”, not “from”. Did you mean “independently of”? | independently of | ...ive you.  It is important that you work **independently from** other candidates and the work produced ... |
 | gcse-art-and-design---unit-2-externally-set-assignment.md | 16 | `MD_BASEFORM` | grammar | outlines | The modal verb ‘will’ requires the verb’s base form. | outline | ... The guidance in the graphic below will **outlines** what your work should include.  ![](_pa... |
 | gcse-art-and-design---unit-2-externally-set-assignment.md | 17 | `COMMA_COMPOUND_SENTENCE_2` | uncategorized |  but | Use a comma before ‘but’ if it connects two independent clauses (unless they are closely connected and short). | , but | ... not have to be a finished piece of work** but** there should be enough completed to dem... |
-| gcse-art-and-design---unit-2-externally-set-assignment.md | 21 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Konttinen | Possible spelling mistake found. | Contained, Container, Continent (+8 more) | ...References** • Efa Lois  - Sirkka-Liisa **Konttinen** - Neville Brody - Grayson Perry - The S... |
-| gcse-art-and-design---unit-2-externally-set-assignment.md | 23 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Milroy | Possible spelling mistake found. | McIlroy, Gilroy, Kilroy | ...  #### **Contextual References** • Lisa **Milroy**  - Wayne Thiebaud - Lee John Phillips -... |
-| gcse-art-and-design---unit-2-externally-set-assignment.md | 23 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Thiebaud | Possible spelling mistake found. | Thibaut, Thebaid | ...ual References** • Lisa Milroy  - Wayne **Thiebaud** - Lee John Phillips - El Anatsui - Nick... |
-| gcse-art-and-design---unit-2-externally-set-assignment.md | 23 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Anatsui | Possible spelling mistake found. | Anti, Amateur, Anatomy (+33 more) | ...Wayne Thiebaud - Lee John Phillips - El **Anatsui** - Nick Cave  ![](_page_23_Picture_10.jp... |
-| gcse-art-and-design---unit-2-externally-set-assignment.md | 25 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Popham | Possible spelling mistake found. | Topham, Pop ham | ... - Richard Estes - Ian Murphy - Harriet **Popham** - Sally Blake  ![](_page_25_Picture_10.... |
-| gcse-art-and-design---unit-2-externally-set-assignment.md | 27 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Conteh | Possible spelling mistake found. | Conte, Cont eh | ...#### **Contextual References** • Alfred **Conteh**  - Lubaina Himid - Andrew Mashigo - Ire... |
-| gcse-art-and-design---unit-2-externally-set-assignment.md | 27 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Mashigo | Possible spelling mistake found. | Massimo, Mashing, Mashie (+4 more) | ...Alfred Conteh  - Lubaina Himid - Andrew **Mashigo** - Irene Hoff - L.S. Lowry  ![](_page_27... |
-| gcse-art-and-design---unit-2-externally-set-assignment.md | 29 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Gursky | Possible spelling mistake found. | Gur sky | ...### **Contextual References** • Andreas **Gursky**  - Lorna Simpson - Giorgio de Chirico -... |
-| gcse-art-and-design---unit-2-externally-set-assignment.md | 29 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Issy | Possible spelling mistake found. | ISSN, Missy, Sissy (+1 more) | ... - Lorna Simpson - Giorgio de Chirico - **Issy** Miyake - Banksy  {30}------------------... |
-| gcse-art-and-design---unit-2-externally-set-assignment.md | 29 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Miyake | Possible spelling mistake found. | Make, Mistake, Mike (+5 more) | ...rna Simpson - Giorgio de Chirico - Issy **Miyake** - Banksy  {30}-------------------------... |
 | gcse-art-and-design---unit-2-externally-set-assignment.md | 35 | `MORFOLOGIK_RULE_EN_GB` | misspelling | YY | Possible spelling mistake found. | BY, MY, YE (+36 more) | ...----\|------------\|---------\| \|  \| DD MM **YY** \|  \| Hour \| Minutes \| \|       \|        ... |
 
 ### Art-and-Design / overview-of-consultation-findings.md
@@ -213,23 +194,19 @@ _No issues found._
 
 ### Business / gcse-business---guidance-for-teaching-unit-1.md
 
-Found 17 issue(s).
+Found 13 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | gcse-business---guidance-for-teaching-unit-1.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | inspirational-success-story-of-amazons-founder | Possible spelling mistake found. | inspirational-success-story-of-Amazons-founder | ...odaymagazine.com/2022/07/jeff-bezos-the **inspirational-success-story-of-amazons-founder**/ Learners to discuss how the entreprene... |
-| gcse-business---guidance-for-teaching-unit-1.md | 13 | `MORFOLOGIK_RULE_EN_GB` | misspelling | fayre | Possible spelling mistake found. | fare, Faye, Fabre (+5 more) | ... Opportunity to arrange careers talk or **fayre**/University open days/Public sector orga... |
 | gcse-business---guidance-for-teaching-unit-1.md | 14 | `MORFOLOGIK_RULE_EN_GB` | misspelling | deborah-coughlin | Possible spelling mistake found. | Deborah-coughlin, deborah-Coughlin | ...tion-success-stories-deborah-coughlin/)[**deborah-coughlin**/](https://iuk.ktn-uk.org/casestudy/wome... |
 | gcse-business---guidance-for-teaching-unit-1.md | 19 | `GOOGLE_PRODUCTS` | uncategorized | google | The name of this company should be capitalized. | Google | ...p research information could be done on **google** jam board or an interactive Canva white... |
 | gcse-business---guidance-for-teaching-unit-1.md | 22 | `MORFOLOGIK_RULE_EN_GB` | misspelling | new-lease-of-life-at-merthyr-tydfil-s-newest-re-use-shop | Possible spelling mistake found. | new-lease-of-life-at-Merthyr-tydfil-s-newest-re-use-shop | ...t-merthyr-tydfil-s-newest-re-use-shop/)[**new-lease-of-life-at-merthyr-tydfil-s-newest-re-use-shop**/](https://www.merthyr.gov.uk/news-and-e... |
-| gcse-business---guidance-for-teaching-unit-1.md | 30 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Nando | Possible spelling mistake found. | Lando, NAND, Nan do | ...ternational. Many restaurants, such as '**Nando**'s', promote their policies and practice... |
 | gcse-business---guidance-for-teaching-unit-1.md | 31 | `BOTH_AS_WELL_AS` | grammar | as well as | Probable usage error. Use “and” after ‘both’. | and | ...ets \| consumers from both within the UK **as well as** from a global market. Learners could be... |
 | gcse-business---guidance-for-teaching-unit-1.md | 34 | `POSSESSIVE_APOSTROPHE` | typographical | currents | An apostrophe may be missing. | currents', current's | ...trends and use this to reflect on their **currents** skill set and explore what skills may b... |
 | gcse-business---guidance-for-teaching-unit-1.md | 36 | `BOTH_AS_WELL_AS` | grammar | as well as | Probable usage error. Use “and” after ‘both’. | and | ... all topic areas, both in small groups, **as well as** a class. This not only enhances underst... |
 | gcse-business---guidance-for-teaching-unit-1.md | 36 | `EN_UNPAIRED_QUOTES` | typographical | ' | Unpaired symbol: ‘'’ seems to be missing | — | ...group working opportunity when teaching **'**The features of limited and unlimited \| ... |
 | gcse-business---guidance-for-teaching-unit-1.md | 39 | `MD_BASEFORM` | grammar | exploring | Modal verbs like ‘can’ or ‘will’ require the following verb to be in its base form. | explore, be exploring | ...t and industry figures. Learners should **exploring** the ONS website, reviewing relevant, up... |
-| gcse-business---guidance-for-teaching-unit-1.md | 46 | `MORFOLOGIK_RULE_EN_GB` | misspelling | YBL | Possible spelling mistake found. | NBL, PBL, YB (+23 more) | ...gital technology, for example, GymShark/**YBL**/Haia. \|  \|  {47}-----------------------... |
-| gcse-business---guidance-for-teaching-unit-1.md | 46 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Haia | Possible spelling mistake found. | Hair, Hail, AIA (+13 more) | ...l technology, for example, GymShark/YBL/**Haia**. \|  \|  {47}----------------------------... |
 | gcse-business---guidance-for-teaching-unit-1.md | 49 | `CLOSE_SCRUTINY` | style | close proximity | This phrase is a bit redundant. Consider using just “proximity”. | proximity | ...markets where buyers and sellers are in **close proximity** to each other. Certain businesses such ... |
 | gcse-business---guidance-for-teaching-unit-1.md | 51 | `GENERAL_XX` | style | general public | Consider using only “public” to avoid wordiness. | public | ...e available to others by selling to the **general public** often at the Stock Exchange. They are g... |
 | gcse-business---guidance-for-teaching-unit-1.md | 51 | `COMMA_COMPOUND_SENTENCE_2` | uncategorized |  but | Use a comma before ‘but’ if it connects two independent clauses (unless they are closely connected and short). | , but | ... liability. Other people can be employed** but** there is only one owner. \| \| STEEPLE \| ... |
@@ -237,7 +214,7 @@ Found 17 issue(s).
 
 ### Business / gcse-business---guidance-for-teaching-unit-2.md
 
-Found 44 issue(s).
+Found 40 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -251,7 +228,6 @@ Found 44 issue(s).
 | gcse-business---guidance-for-teaching-unit-2.md | 11 | `WHEN_WHERE` | style | years where | It might be better to use ‘years’ with the time-relative pronoun ‘when’. (Alternatively, use ‘in/on which’.) | years when | ...There have been several cases in recent **years where** international brands have been accused ... |
 | gcse-business---guidance-for-teaching-unit-2.md | 12 | `MORFOLOGIK_RULE_EN_GB` | misspelling | aging | Possible spelling mistake. ‘aging’ is American English. | ageing | ...d marketing strategies. For example, an **aging** population may lead companies to develo... |
 | gcse-business---guidance-for-teaching-unit-2.md | 13 | `MCDONALDS` | uncategorized | McDonalds | Did you mean the fast food chain “McDonald's” (always spelled with a possessive apostrophe)? | McDonald's | ...s throughout the UK. Another example is **McDonalds** letting customers redeem their points a... |
-| gcse-business---guidance-for-teaching-unit-2.md | 17 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Statswales | Possible spelling mistake found. | Stats wales | ...ve them justify their interpretations. [**Statswales**](https://statswales.gov.wales/Catalogue... |
 | gcse-business---guidance-for-teaching-unit-2.md | 18 | `EN_WORD_COHERENCY` | uncategorized | judgments | Do not mix variants of the same word (‘judgment’ and ‘judgement’) within a single text. | judgements | ... to analyse, draw conclusions, and make **judgments** based on their findings. This could inv... |
 | gcse-business---guidance-for-teaching-unit-2.md | 19 | `YOUTUBE` | uncategorized | youtube | The official name of this popular video platform is spelled with a capital “T”. | YouTube | ...ics   The Impact of Ethics on Business (**youtube**.com). As learners watch the video they ... |
 | gcse-business---guidance-for-teaching-unit-2.md | 22 | `YOUTUBE` | uncategorized | youtube | The official name of this popular video platform is spelled with a capital “T”. | YouTube | ... video, Business Ethics Nestle VS Lush (**youtube**.com) https://youtu.be/otH6Fz7GJDg, they... |
@@ -261,10 +237,8 @@ Found 44 issue(s).
 | gcse-business---guidance-for-teaching-unit-2.md | 24 | `ADOPT_TO` | misspelling | adopt to | Did you mean “adapt to”? | adapt to | ...port on strategies those businesses can **adopt to** minimise their impact on the natural en... |
 | gcse-business---guidance-for-teaching-unit-2.md | 25 | `MCDONALDS` | uncategorized | McDonalds | Did you mean the fast food chain “McDonald's” (always spelled with a possessive apostrophe)? | McDonald's | ...o behaving in a sustainable manner:  • [**McDonalds** Coffee Sustainability/](https://www.you... |
 | gcse-business---guidance-for-teaching-unit-2.md | 25 | `MCDONALDS` | uncategorized | McDonalds | Did you mean the fast food chain “McDonald's” (always spelled with a possessive apostrophe)? | McDonald's | ...://www.youtube.com/watch?v=r-ctYi_eipk)[**McDonalds** Change a little,](https://www.youtube.c... |
-| gcse-business---guidance-for-teaching-unit-2.md | 26 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ecoconscious | Possible spelling mistake found. | coconscious, eco conscious | ...image on sustainability, which attracts **ecoconscious** consumers. Their website highlights the... |
 | gcse-business---guidance-for-teaching-unit-2.md | 26 | `ENGLISH_WORD_REPEAT_RULE` | duplication | in in | Possible typo: you repeated a word. | in | ...hlights the work that they are involved **in in** your surrounding area. A class stimulus... |
 | gcse-business---guidance-for-teaching-unit-2.md | 27 | `EN_COMPOUNDS_E_COMMERCE` | misspelling | e commerce | This word is normally spelled with a hyphen. | e-commerce | ... robotics automation, etc.; marketing – **e commerce**, m-commerce, social media, EPOS, etc. L... |
-| gcse-business---guidance-for-teaching-unit-2.md | 28 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Rikke | Possible spelling mistake found. | Richie, Rikki, Rilke | ...ous ways in which technology is helping **Rikke** and her business.  Teachers can highlig... |
 | gcse-business---guidance-for-teaching-unit-2.md | 29 | `EN_COMPOUNDS_SELF_CHECKOUT` | misspelling | self -checkout | This word is normally spelled with a hyphen. | self-checkout | ... create new types of work. For example, **self -checkout** machines at grocery stores might reduce... |
 | gcse-business---guidance-for-teaching-unit-2.md | 29 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Lea rners | Possible spelling mistake found. | Learners, Lea RERS | ... needed to fix and manage the machines. **Lea rners** could then be asked to imagine what job... |
 | gcse-business---guidance-for-teaching-unit-2.md | 29 | `ALL_OF_THE` | style | all of the | Consider removing “of” to be more concise | all the | ...eting, learners could create a mind map **all of the** ways that they know of that a business ... |
@@ -275,7 +249,6 @@ Found 44 issue(s).
 | gcse-business---guidance-for-teaching-unit-2.md | 37 | `MORFOLOGIK_RULE_EN_GB` | misspelling | aging | Possible spelling mistake. ‘aging’ is American English. | ageing | ...changing population structures, like an **aging** population or growing youth market, and... |
 | gcse-business---guidance-for-teaching-unit-2.md | 37 | `MORFOLOGIK_RULE_EN_GB` | misspelling | aging | Possible spelling mistake. ‘aging’ is American English. | ageing | ... healthcare industry's expansion due to **aging** populations. \| \|  \|  \| To make learners... |
 | gcse-business---guidance-for-teaching-unit-2.md | 38 | `A_INFINITIVE` | grammar | the explore | The verb ‘explore’ does not usually follow articles like ‘the’. Check that ‘explore’ is spelled correctly; using ‘explore’ as a noun may be non-standard. | to explore, the explored, they explore | ...ridging the Gap. Learners could explore **the explore** the Co-op fairtrade webpage. \|  {39}---... |
-| gcse-business---guidance-for-teaching-unit-2.md | 38 | `MORFOLOGIK_RULE_EN_GB` | misspelling | fairtrade | Possible spelling mistake found. | Fairtrade, fair-trade, fair trade (+2 more) | ...ers could explore the explore the Co-op **fairtrade** webpage. \|  {39}-----------------------... |
 | gcse-business---guidance-for-teaching-unit-2.md | 39 | `POSSESSIVE_APOSTROPHE` | typographical | businesses | An apostrophe may be missing. | businesses', business's | ...2.3.1b \| Environmental issues caused by **businesses** activity \| For climate change, learners... |
 | gcse-business---guidance-for-teaching-unit-2.md | 41 | `NOUN_VERB_CONFUSION` | grammar | feedback | The word “feedback” is a noun. The verb is spelled with a space. | feed back | ...ronmental benefits. Learners could then **feedback** to the class explaining how their ideas... |
 | gcse-business---guidance-for-teaching-unit-2.md | 45 | `DIVERSITY_OF` | grammar | diversity action | The word “of” is missing between “diversity” and “action”. | diversity of action, diverse action | ...rs create a mock business and develop a **diversity action** plan. They should outline how they will... |
@@ -288,45 +261,34 @@ Found 44 issue(s).
 
 ### Business / gcse-business---guidance-for-teaching-unit-3.md
 
-Found 43 issue(s).
+Found 32 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | gcse-business---guidance-for-teaching-unit-3.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Lea rners | Possible spelling mistake found. | Learners, Lea RERS | ...--------------------------------------  **Lea rners** can be given one regulatory body and as... |
 | gcse-business---guidance-for-teaching-unit-3.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | senedd | Possible spelling mistake found. | Ended, Send, Seed (+23 more) | ...-spending-its-budget-in-2024-25/) -25? (**senedd**.wales) and the UK Spring Budget 2023 (H... |
 | gcse-business---guidance-for-teaching-unit-3.md | 10 | `UNLIKELY_OPENING_PUNCTUATION` | uncategorized | , | Loose punctuation mark. |  | ...ducation, healthcare, transport , etc . **,** and their own estimates can be compared... |
-| gcse-business---guidance-for-teaching-unit-3.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | developmentbank | Possible spelling mistake found. | development bank | .../developmentbank.wales/)  - Dev Bank [\(**developmentbank**.wales\)](https://developmentbank.wales/... |
 | gcse-business---guidance-for-teaching-unit-3.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Lea rners | Possible spelling mistake found. | Learners, Lea RERS | ...g businesses and those seeking to grow. **Lea rners** could be provided with case studies fro... |
-| gcse-business---guidance-for-teaching-unit-3.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | developmentbank | Possible spelling mistake found. | development bank | ...s)  Businesses Like Yours - [Dev Bank \(**developmentbank**.wales\)\)](https://developmentbank.wale... |
 | gcse-business---guidance-for-teaching-unit-3.md | 12 | `CONSEQUENCES_OF_FOR` | grammar | consequences to | The usual preposition to use after “consequences” is not “to”. Did you mean “consequences of”, “consequences for”, or “consequences on”? | consequences of, consequences for, consequences on | ...r video clips could be used to show the **consequences to** employers of failing to pay the specifi... |
 | gcse-business---guidance-for-teaching-unit-3.md | 12 | `A_NNS` | grammar | a trade union learners | The plural noun “learners” cannot be used with the article “a”. Did you mean “a trade union learner” or “trade union learners”? | a trade union learner, trade union learners | ...quirements are met. - The right to join **a trade union learners** should know that they have a legal righ... |
 | gcse-business---guidance-for-teaching-unit-3.md | 13 | `WHETHER` | style | as to whether | Consider shortening this phrase to just “whether”, or rephrase the sentence to avoid “as to”. | whether | ...had been dismissed and giving a verdict **as to whether** it was 'fair' or 'unfair' with their re... |
 | gcse-business---guidance-for-teaching-unit-3.md | 13 | `COMMA_COMPOUND_SENTENCE` | uncategorized |  and | Use a comma before ‘and’ if it connects two independent clauses (unless they are closely connected and short). | , and | ...n) can be allocated to pairs of learners** and** they can research and produce a summary... |
 | gcse-business---guidance-for-teaching-unit-3.md | 14 | `EN_COMPOUNDS_NET_ZERO` | misspelling | net zero | This word is normally spelled with a hyphen. | net-zero | ...ng Regulations 2024)   - the journey to **net zero** (such as the Environment (Wales) Act 20... |
-| gcse-business---guidance-for-teaching-unit-3.md | 14 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Tippex | Possible spelling mistake found. | Tipped, Tippet, Tipper | ... Hoover = to vacuum) or replaced nouns (**Tippex**, Kleenex, Sellotape etc). Learners shou... |
-| gcse-business---guidance-for-teaching-unit-3.md | 14 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Cariad | Possible spelling mistake found. | Caria, Carian | ...plain why trademarks are so important. [**Cariad**: Welsh word for love](https://www.bbc.c... |
 | gcse-business---guidance-for-teaching-unit-3.md | 14 | `EN_COMPOUNDS_NET_ZERO` | misspelling | net zero | This word is normally spelled with a hyphen. | net-zero | ...s in their local area. - The journey to **net zero** [WG44621 Working together to reach Net]... |
 | gcse-business---guidance-for-teaching-unit-3.md | 14 | `EN_COMPOUNDS_NET_ZERO` | misspelling | net zero | This word is normally spelled with a hyphen. | net-zero | ...local organisations are working towards **net zero**. Using some of the suggestions for orga... |
 | gcse-business---guidance-for-teaching-unit-3.md | 16 | `EN_COMPOUNDS_HIRE_PURCHASE` | misspelling | hire purchase | This word is normally spelled with a hyphen. | hire-purchase | ...i><li>government grants</li><li>leasing/**hire purchase**</li><li>new investors</li><li>share iss... |
 | gcse-business---guidance-for-teaching-unit-3.md | 20 | `MCDONALDS` | uncategorized | McDonalds | Did you mean the fast food chain “McDonald's” (always spelled with a possessive apostrophe)? | McDonald's | ...ways a business may segment its market. **McDonalds** could provide a good starting point for... |
 | gcse-business---guidance-for-teaching-unit-3.md | 21 | `PLURAL_THAT_AGREEMENT` | grammar | has | Possible subject-verb agreement error detected. | have | ...ovated over time and what benefits that **has** brought to the business. - Product port... |
-| gcse-business---guidance-for-teaching-unit-3.md | 22 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Dulux | Possible spelling mistake found. | Du lux | ...alisers (for example for paint colours [**Dulux** Visualizer App –](https://www.dulux.co.... |
 | gcse-business---guidance-for-teaching-unit-3.md | 22 | `EN_WORD_COHERENCY` | uncategorized | Visualizer | Do not mix variants of the same word (‘visualizer’ and ‘visualiser’) within a single text. | Visualiser | ...s (for example for paint colours [Dulux **Visualizer** App –](https://www.dulux.co.uk/en/artic... |
-| gcse-business---guidance-for-teaching-unit-3.md | 22 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Dulux | Possible spelling mistake found. | Du lux | ...sualizer-app) Colour Match [Your Home \| **Dulux**,](https://www.dulux.co.uk/en/articles/d... |
-| gcse-business---guidance-for-teaching-unit-3.md | 22 | `MORFOLOGIK_RULE_EN_GB` | misspelling | PictureIT | Possible spelling mistake found. | Picture IT | ...rticles/dulux-visualizer-app) flooring [**PictureIT**, the flooring visualiser \| Tapi](https:... |
-| gcse-business---guidance-for-teaching-unit-3.md | 22 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Tapi | Possible spelling mistake found. | TAPI, Tape, Taxi (+439 more) | ...g [PictureIT, the flooring visualiser \| **Tapi**](https://www.tapi.co.uk/visualiser)  [C... |
 | gcse-business---guidance-for-teaching-unit-3.md | 23 | `EN_COMPOUNDS_MULTI_CHANNEL` | misspelling | multi-channel | This word is normally spelled as one. | multichannel | ...ution   - retailing   - wholesalers   - **multi-channel** distribution - the growing importance o... |
-| gcse-business---guidance-for-teaching-unit-3.md | 23 | `MORFOLOGIK_RULE_EN_GB` | misspelling | mcommerce | Possible spelling mistake found. | commerce, Commerce, ecommerce (+1 more) | ...he growing importance of e-commerce and **mcommerce** in the distribution of goods.  Learners... |
 | gcse-business---guidance-for-teaching-unit-3.md | 23 | `EN_COMPOUNDS_MULTI_CHANNEL` | misspelling | multi-channel | This word is normally spelled as one. | multichannel | ...uce a diagram to illustrate and explain **multi-channel** distribution. - Learners could examine ... |
 | gcse-business---guidance-for-teaching-unit-3.md | 24 | `EN_COMPOUNDS_SHORT_LISTING` | misspelling | short-listing | This word is normally spelled as one. | shortlisting | ...ancies</li><li>job applications</li><li>**short-listing** and selection</li><li>references</li><l... |
 | gcse-business---guidance-for-teaching-unit-3.md | 24 | `EN_COMPOUNDS_SHORT_LISTING` | misspelling | Short-listing | This word is normally spelled as one. | Shortlisting | ...plication form for a local job vacancy. **Short-listing** and selection – take part in a paper-si... |
-| gcse-business---guidance-for-teaching-unit-3.md | 25 | `MORFOLOGIK_RULE_EN_GB` | misspelling | reskilling | Possible spelling mistake found. | deskilling | ... technology and the changing workplace (**reskilling**)</li><li>upskilling.</li></ul> \| Teache... |
 | gcse-business---guidance-for-teaching-unit-3.md | 27 | `A_NNS` | grammar | a range businesses | The plural noun “businesses” cannot be used with the article “a”. | a range business, range businesses | ...d market share. Learners could focus on **a range businesses** from their local area that are known fo... |
 | gcse-business---guidance-for-teaching-unit-3.md | 29 | `BOTH_AS_WELL_AS` | grammar | as well as | Probable usage error. Use “and” after ‘both’. | and | ...ners can explore both their own cynefin **as well as** other areas nationally to further their... |
 | gcse-business---guidance-for-teaching-unit-3.md | 30 | `MCDONALDS` | uncategorized | McDonalds | Did you mean the fast food chain “McDonald's” (always spelled with a possessive apostrophe)? | McDonald's | ...rent to others. For example, discussing **McDonalds** and their product range on an internati... |
 | gcse-business---guidance-for-teaching-unit-3.md | 37 | `EN_COMPOUNDS_PROOF_READING` | misspelling | proof-reading | This word is normally spelled as one. | proofreading | ...ng, punctuation and grammar, as well as **proof-reading** content to show professionalism and \| \|... |
 | gcse-business---guidance-for-teaching-unit-3.md | 38 | `EN_COMPOUNDS_HIRE_PURCHASE` | misspelling | hire purchase | This word is normally spelled with a hyphen. | hire-purchase | ...ompare rates of interest on overdrafts, **hire purchase** and loans to understand how the costs o... |
-| gcse-business---guidance-for-teaching-unit-3.md | 40 | `MORFOLOGIK_RULE_EN_GB` | misspelling | mcommerce | Possible spelling mistake found. | commerce, Commerce, ecommerce (+1 more) | ...e-commerce, knowledge of e-commerce and **mcommerce** platforms and digital marketing strateg... |
 | gcse-business---guidance-for-teaching-unit-3.md | 40 | `ENGLISH_WORD_REPEAT_RULE` | duplication | had had | Possible typo: you repeated a word. | had | ...ners could examine businesses that have **had had** their products replicated by companies ... |
 | gcse-business---guidance-for-teaching-unit-3.md | 40 | `PLURAL_THAT_AGREEMENT` | grammar | has | Possible subject-verb agreement error detected. | have | ... 'Shein'/'Temu' and the challenges that **has** brought the business. \| \|  \|  \| 3.4.3 \|... |
 | gcse-business---guidance-for-teaching-unit-3.md | 43 | `IN_OR_WITH_REGARDS_TO_OF` | misspelling | with regards to | Although “with regards to” is sometimes used in casual speech, it is typically considered a nonstandard phrase. | in regard to, with regard to, regarding | ...e more informed and justified decisions **with regards to** sources of finance, ensuring decisions ... |
@@ -338,20 +300,14 @@ Found 43 issue(s).
 
 ### Business / gcse-business---guidance-for-teaching-unit-4.md
 
-Found 19 issue(s).
+Found 13 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | gcse-business---guidance-for-teaching-unit-4.md | 6 | `EN_COMPOUNDS_HAND_WRITTEN` | misspelling | hand written | This word is normally spelled as one. | handwritten | ...ust be submitted digitally (they may be **hand written** and scanned, or completed digitally).  ... |
-| gcse-business---guidance-for-teaching-unit-4.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Kamani | Possible spelling mistake found. | Kazan, Mani, Romani (+20 more) | ...t, Mark Zuckerberg, Sara Davies, Mahmud **Kamani** and Elon Musk, or more established trad... |
-| gcse-business---guidance-for-teaching-unit-4.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Touker | Possible spelling mistake found. | Touched, Touches, Tourer (+2 more) | ...s such as Richard Branson, Peter Jones, **Touker** Suleymen and Deborah Meaden. Learners s... |
-| gcse-business---guidance-for-teaching-unit-4.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Suleymen | Possible spelling mistake found. | Suleiman, Salesmen, Supermen | ...as Richard Branson, Peter Jones, Touker **Suleymen** and Deborah Meaden. Learners should con... |
-| gcse-business---guidance-for-teaching-unit-4.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Meaden | Possible spelling mistake found. | Meade, Leaden, Deaden (+1 more) | ...eter Jones, Touker Suleymen and Deborah **Meaden**. Learners should consider how the entre... |
 | gcse-business---guidance-for-teaching-unit-4.md | 9 | `NUMBERS_IN_WORDS` | misspelling | tutor2u | Possible typo detected. | tutor, tutors | ... (CSR)   Reference Library   Business   **tutor2u** and summarise the main points. Learners... |
 | gcse-business---guidance-for-teaching-unit-4.md | 9 | `EN_SPLIT_WORDS_HYPHEN` | misspelling | Profit- Economic | This word seems to be formatted incorrectly. Consider fixing the spacing or removing the hyphen completely. | Profit-Economic, Profit - Economic | ...ments. Learners could consider: <ul><li>**Profit- Economic** Performance - for example: Is the enter... |
 | gcse-business---guidance-for-teaching-unit-4.md | 9 | `EN_SPLIT_WORDS_HYPHEN` | misspelling | People- Social | This word seems to be formatted incorrectly. Consider fixing the spacing or removing the hyphen completely. | People-Social, People - Social | ...t? What could be improved? How?</li><li>**People- Social** Performance - for example: Focus on the... |
-| gcse-business---guidance-for-teaching-unit-4.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Bizconsesh | Possible spelling mistake found. | — | ...t? Teachers could use resources such as **Bizconsesh** with learners to illustrate how element... |
-| gcse-business---guidance-for-teaching-unit-4.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Huel | Possible spelling mistake found. | Fuel, Duel, Hull (+9 more) | ...es such as Ben and Jerry's, North Face, **Huel** and many other Corp [B certified compan... |
 | gcse-business---guidance-for-teaching-unit-4.md | 14 | `MORFOLOGIK_RULE_EN_GB` | misspelling | TwoTeachers | Possible spelling mistake found. | Two Teachers | ...ld recap knowledge using videos such as **TwoTeachers** Marketing mix. Teachers could provide a... |
 | gcse-business---guidance-for-teaching-unit-4.md | 16 | `OUTSIDE_OF` | style | outside of | This phrase is redundant. Consider using “outside”. | outside | ...n be carried out live and face to face, **outside of** the educational setting. \| \|  \| Learner... |
 | gcse-business---guidance-for-teaching-unit-4.md | 23 | `NUMBERS_IN_WORDS` | misspelling | tutor2u | Possible typo detected. | tutor, tutors | ...-line)  [Reference Library \| Business \| **tutor2u**](https://www.tutor2u.net/business/refer... |
@@ -372,7 +328,7 @@ Found 1 issue(s).
 
 ### Business / gcse-business---unit-1-introduction-to-the-business-world.md
 
-Found 27 issue(s).
+Found 25 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -395,9 +351,7 @@ Found 27 issue(s).
 | gcse-business---unit-1-introduction-to-the-business-world.md | 10 | `MISSING_COMMA_AFTER_INTRODUCTORY_PHRASE` | uncategorized | 1998 | A comma is probably missing here. | 1998, | ...uses, began in 1971 in Seattle, USA. In **1998** it opened its first coffeehouse in the ... |
 | gcse-business---unit-1-introduction-to-the-business-world.md | 12 | `COMMA_COMPOUND_SENTENCE_2` | uncategorized |  and | Use a comma before “and” if it connects two independent clauses (unless they are closely connected and short). | , and | ...omers.  Demand for the gym has increased** and** the gym is often full, with all the fit... |
 | gcse-business---unit-1-introduction-to-the-business-world.md | 21 | `CAFE_DIACRITIC` | typographical | cafe | ‘Cafe’ is a foreign word which originally has a diacritic. | café | ...  \|                                 \| A **cafe** sold the following products last week: ... |
-| gcse-business---unit-1-introduction-to-the-business-world.md | 22 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Asda | Possible spelling mistake found. | Asia, ASA, USDA (+11 more) | ...National supermarkets such as Tesco and **Asda** have a range of different types of cons... |
 | gcse-business---unit-1-introduction-to-the-business-world.md | 22 | `BUY_TWO_GET_ONE_FREE` | grammar | buy one get one | It appears that a comma is missing. | buy one, get one | ...s could be a pricing strategy such as a **buy one get one** free (BOGOF) offer. Credit any other va... |
-| gcse-business---unit-1-introduction-to-the-business-world.md | 22 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Asda | Possible spelling mistake found. | Asia, ASA, USDA (+11 more) | ...ollowing:  - Supermarkets such as Tesco/**Asda** carry out primary and secondary researc... |
 | gcse-business---unit-1-introduction-to-the-business-world.md | 22 | `MORFOLOGIK_RULE_EN_GB` | misspelling | BOGOF or | Possible spelling mistake found. | BOGO For, BOGOR or, BOGO or (+2 more) | ...le prices. - Can include offers such as **BOGOF or** 3 for 2 so that customers are satisfied... |
 | gcse-business---unit-1-introduction-to-the-business-world.md | 22 | `COMMA_COMPOUND_SENTENCE_2` | uncategorized |  so | Use a comma before ‘so’ if it connects two independent clauses (unless they are closely connected and short). | , so | ...lent refund policies and loyalty schemes** so** customers are rewarded and feel valued.... |
 | gcse-business---unit-1-introduction-to-the-business-world.md | 22 | `MORFOLOGIK_RULE_EN_GB` | misspelling | instore | Possible spelling mistake found. | inshore, in-store, in store (+1 more) | ...d. - Customers are able to buy products **instore**, online, or through an app so that it i... |
@@ -502,7 +456,7 @@ Found 14 issue(s).
 
 ### Business / wjec-gcse-business-specification.md
 
-Found 23 issue(s).
+Found 21 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -524,9 +478,7 @@ Found 23 issue(s).
 | wjec-gcse-business-specification.md | 28 | `EN_COMPOUNDS_NET_ZERO` | misspelling | net zero | This word is normally spelled with a hyphen. | net-zero | ...egulations 2024)</li><li>the journey to **net zero** (such as the Environment (Wales) Act 20... |
 | wjec-gcse-business-specification.md | 29 | `EN_COMPOUNDS_HIRE_PURCHASE` | misspelling | hire purchase | This word is normally spelled with a hyphen. | hire-purchase | ...i><li>government grants</li><li>leasing/**hire purchase**</li><li>new investors</li><li>share iss... |
 | wjec-gcse-business-specification.md | 32 | `EN_COMPOUNDS_MULTI_CHANNEL` | misspelling | multi-channel | This word is normally spelled as one. | multichannel | ...ution   - retailing   - wholesalers   - **multi-channel** distribution - the growing importance o... |
-| wjec-gcse-business-specification.md | 32 | `MORFOLOGIK_RULE_EN_GB` | misspelling | mcommerce | Possible spelling mistake found. | commerce, Commerce, ecommerce (+1 more) | ...he growing importance of e-commerce and **mcommerce** in the distribution of goods.  Learners... |
 | wjec-gcse-business-specification.md | 33 | `EN_COMPOUNDS_SHORT_LISTING` | misspelling | short-listing | This word is normally spelled as one. | shortlisting | ...ancies</li><li>job applications</li><li>**short-listing** and selection</li><li>references</li><l... |
-| wjec-gcse-business-specification.md | 33 | `MORFOLOGIK_RULE_EN_GB` | misspelling | reskilling | Possible spelling mistake found. | deskilling | ... technology and the changing workplace (**reskilling**)</li><li>upskilling.</li></ul> \| \| 3.5.... |
 | wjec-gcse-business-specification.md | 40 | `EN_COMPOUNDS_HAND_WRITTEN` | misspelling | hand written | This word is normally spelled as one. | handwritten | ...ust be submitted digitally (they may be **hand written** and scanned, or completed digitally).  ... |
 | wjec-gcse-business-specification.md | 41 | `EN_COMPOUNDS_HAND_WRITTEN` | misspelling | hand written | This word is normally spelled as one. | handwritten | ...ust be submitted digitally (they may be **hand written** and scanned, or completed digitally).  ... |
 
@@ -552,32 +504,18 @@ Found 1 issue(s).
 
 ### Computer-Science / gcse-computer-science---guidance-for-teaching-unit-2.md
 
-Found 22 issue(s).
+Found 8 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| gcse-computer-science---guidance-for-teaching-unit-2.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Tkinter | Possible spelling mistake found. | Winter, Inter, Painter (+32 more) | ...e. Understanding the constraints of the **Tkinter** library for input and output facilities... |
 | gcse-computer-science---guidance-for-teaching-unit-2.md | 9 | `EN_COMPOUNDS_PSEUDO_CODE` | misspelling | pseudo code | This word is normally spelled as one. | pseudocode | ...st appropriate to use. \| \|  \| • \| using **pseudo code**, design and document the following rout... |
 | gcse-computer-science---guidance-for-teaching-unit-2.md | 9 | `EN_COMPOUNDS_PSEUDO_CODE` | misspelling | pseudo code | This word is normally spelled as one. | pseudocode | ...ners should be familiar with the use of **pseudo code** and must refrain from using any Python ... |
-| gcse-computer-science---guidance-for-teaching-unit-2.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Tkinter | Possible spelling mistake found. | Winter, Inter, Painter (+32 more) | ... basic Python library functions such as **Tkinter**. \| \|  \| <ul><li>create new and extend e... |
-| gcse-computer-science---guidance-for-teaching-unit-2.md | 11 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Elif | Possible spelling mistake found. | Elf, Elie, Elis (+6 more) | .... Selection:</li><li>Use of If , Else , **Elif** , Switch Statements to allow for making... |
-| gcse-computer-science---guidance-for-teaching-unit-2.md | 12 | `MORFOLOGIK_RULE_EN_GB` | misspelling | datatypes | Possible spelling mistake found. | data types | ...ensional Lists: Python allows different **datatypes** in the same list, e.g. int, string, rea... |
-| gcse-computer-science---guidance-for-teaching-unit-2.md | 12 | `MORFOLOGIK_RULE_EN_GB` | misspelling | int | Possible spelling mistake found. | INT, in, it (+1503 more) | ...ferent datatypes in the same list, e.g. **int**, string, real, list. Each element (item... |
-| gcse-computer-science---guidance-for-teaching-unit-2.md | 12 | `MORFOLOGIK_RULE_EN_GB` | misspelling | datatypes | Possible spelling mistake found. | data types | ...\|  \|  \| Tuples: Python allows different **datatypes** in the same tuple, e.g. int, string, fl... |
-| gcse-computer-science---guidance-for-teaching-unit-2.md | 12 | `MORFOLOGIK_RULE_EN_GB` | misspelling | int | Possible spelling mistake found. | INT, in, it (+1503 more) | ...erent datatypes in the same tuple, e.g. **int**, string, float, list. Each element (ite... |
-| gcse-computer-science---guidance-for-teaching-unit-2.md | 12 | `MORFOLOGIK_RULE_EN_GB` | misspelling | datatypes | Possible spelling mistake found. | data types | ...ensional Lists: Python allows different **datatypes** in the same list, e.g. int, string, rea... |
-| gcse-computer-science---guidance-for-teaching-unit-2.md | 12 | `MORFOLOGIK_RULE_EN_GB` | misspelling | int | Possible spelling mistake found. | INT, in, it (+1503 more) | ...ferent datatypes in the same list, e.g. **int**, string, real, list. Each element (item... |
-| gcse-computer-science---guidance-for-teaching-unit-2.md | 13 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Tkinter | Possible spelling mistake found. | Winter, Inter, Painter (+32 more) | ...faces (GUI) using the Python 3 built in **Tkinter** libraries, including: <ul><li>windows</... |
-| gcse-computer-science---guidance-for-teaching-unit-2.md | 13 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Tkinter | Possible spelling mistake found. | Winter, Inter, Painter (+32 more) | ...s</li><li>geometry managers</li></ul> \| **Tkinter** needs to be imported to be used within ... |
 | gcse-computer-science---guidance-for-teaching-unit-2.md | 18 | `EN_UNPAIRED_QUOTES` | typographical | ' | Unpaired symbol: ‘'’ seems to be missing | — | ...hers including Inside the CPU: Unplugged**'** and a card activity to introduce the co... |
 | gcse-computer-science---guidance-for-teaching-unit-2.md | 19 | `PLURAL_THAT_AGREEMENT` | grammar | meets | Possible subject-verb agreement error detected. | meet | ... To consider programming solutions that **meets** a set of requirements. \|  \| \| 2.2.1 Des... |
 | gcse-computer-science---guidance-for-teaching-unit-2.md | 20 | `PLURAL_THAT_AGREEMENT` | grammar | meets | Possible subject-verb agreement error detected. | meet | ... To consider programming solutions that **meets** a set of requirements. Learners should ... |
 | gcse-computer-science---guidance-for-teaching-unit-2.md | 22 | `EN_COMPOUNDS_PRE_RELEASE` | misspelling | pre release | This expression is normally spelled as one or with a hyphen. | pre-release, prerelease | ...ion making and reflective thinking. The **pre release** brief will give learners the opportunit... |
 | gcse-computer-science---guidance-for-teaching-unit-2.md | 28 | `DIE_DICE` | grammar | dice | ‘die’ is the singular form of ‘dice’. Consider using “die”. | die | ...l game. For example, randomisation of a **dice** roll, rock/paper/scissors. Games that c... |
 | gcse-computer-science---guidance-for-teaching-unit-2.md | 33 | `MORFOLOGIK_RULE_EN_GB` | misspelling | groupwork | Possible spelling mistake found. | group work | ... with different ideas and  By promoting **groupwork** to implement and solve problems, this c... |
-| gcse-computer-science---guidance-for-teaching-unit-2.md | 39 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Tkinter | Possible spelling mistake found. | Winter, Inter, Painter (+32 more) | ...led when needed. \| \| Geometry Manager \| **Tkinter** provides three geometry managers (pack,... |
-| gcse-computer-science---guidance-for-teaching-unit-2.md | 41 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Tkinter | Possible spelling mistake found. | Winter, Inter, Painter (+32 more) | ... \| General term for all GUI elements in **Tkinter**, including buttons, labels, entry field... |
-| gcse-computer-science---guidance-for-teaching-unit-2.md | 41 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Tkinter | Possible spelling mistake found. | Winter, Inter, Painter (+32 more) | ...  \| \| Window \| A top-level container in **Tkinter** that represents a main application wind... |
 
 ### Computer-Science / gcse-computer-science---option-evening-flyer.md
 
@@ -589,13 +527,10 @@ Found 1 issue(s).
 
 ### Computer-Science / gcse-computer-science---unit-1-understanding-computer-science.md
 
-Found 30 issue(s).
+Found 21 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| gcse-computer-science---unit-1-understanding-computer-science.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Ysgol | Possible spelling mistake found. | ALGOL, STOL, Gogol (+10 more) | ...---------\|--\| \| 1. \| • • \| CPU: • • • \| **Ysgol** Parc Glyncoed hardware specification. D... |
-| gcse-computer-science---unit-1-understanding-computer-science.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Parc | Possible spelling mistake found. | PARC, Part, Park (+561 more) | ...---\|--\| \| 1. \| • • \| CPU: • • • \| Ysgol **Parc** Glyncoed hardware specification. Deskto... |
-| gcse-computer-science---unit-1-understanding-computer-science.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Glyncoed | Possible spelling mistake found. | Glyn coed | ...-\| \| 1. \| • • \| CPU: • • • \| Ysgol Parc **Glyncoed** hardware specification. Desktop Quad-co... |
 | gcse-computer-science---unit-1-understanding-computer-science.md | 5 | `ALL_OF_THE` | style | all of the | Consider removing “of” to be more concise | all the | ...wing: <ul><li>The PSU provides power to **all of the** components.</li></ul> \|  \| 1 \|  \|  \| 1 ... |
 | gcse-computer-science---unit-1-understanding-computer-science.md | 8 | `EN_A_VS_AN` | misspelling | a | Use “an” instead of ‘a’ if the following word starts with a vowel sound, e.g. ‘an article’, ‘an hour’. | an | ...(e.g. Flash memory is more durable than **a** HDD as it has no moving parts)</li><li>... |
 | gcse-computer-science---unit-1-understanding-computer-science.md | 13 | `POSSESSIVE_APOSTROPHE` | typographical | systems | An apostrophe may be missing. | systems', system's | ...that ensures efficient and high-quality **systems** delivery. \|  \|  \|  \|  \|  \|  \|  \|  \|  \| ... |
@@ -604,16 +539,10 @@ Found 30 issue(s).
 | gcse-computer-science---unit-1-understanding-computer-science.md | 19 | `LICENCE_LICENSE_NOUN_PLURAL` | locale-violation | licenses | licenses must be spelled with a “c” when used as a noun in British English. Use “licences”. | licences | ...tual Property  • Respect copyrights and **licenses**, attribute sources correctly, and ensur... |
 | gcse-computer-science---unit-1-understanding-computer-science.md | 22 | `COMMA_COMPOUND_SENTENCE_2` | uncategorized |  so | Use a comma before ‘so’ if it connects two independent clauses (unless they are closely connected and short). | , so | ... registers and program counter, is saved** so** the task can resume later without losin... |
 | gcse-computer-science---unit-1-understanding-computer-science.md | 23 | `COMMA_COMPOUND_SENTENCE_2` | uncategorized |  so | Use a comma before ‘so’ if it connects two independent clauses (unless they are closely connected and short). | , so | ...ks, handling input and output operations** so** tasks do not interfere with each other.... |
-| gcse-computer-science---unit-1-understanding-computer-science.md | 24 | `MORFOLOGIK_RULE_EN_GB` | misspelling | cleanup | Possible spelling mistake found. | clean-up, clean up | ...rvices to prevent data loss.  #### Disk **cleanup**  • Optimises disk space usage by removi... |
-| gcse-computer-science---unit-1-understanding-computer-science.md | 24 | `MORFOLOGIK_RULE_EN_GB` | misspelling | defragmenter | Possible spelling mistake found. | defragmented | ...to improve system performance.  ## Disk **defragmenter**  • Reorganises fragmented data to impro... |
-| gcse-computer-science---unit-1-understanding-computer-science.md | 25 | `MORFOLOGIK_RULE_EN_GB` | misspelling | cleanup | Possible spelling mistake found. | clean-up, clean up | ...----------------------------  #### Disk **cleanup**  • Optimises disk space usage by removi... |
-| gcse-computer-science---unit-1-understanding-computer-science.md | 25 | `MORFOLOGIK_RULE_EN_GB` | misspelling | defragmenter | Possible spelling mistake found. | defragmented | ...ng the system runs smoothly.  #### Disk **defragmenter**  • Reorganises fragmented data on the h... |
-| gcse-computer-science---unit-1-understanding-computer-science.md | 26 | `MORFOLOGIK_RULE_EN_GB` | misspelling | addProc | Possible spelling mistake found. | approx, apron, Addison (+15 more) | ...s intended to be compiled.  ``` 1 Start **addProc** 2 number is integer 3 a is integer 4 to... |
 | gcse-computer-science---unit-1-understanding-computer-science.md | 26 | `EN_A_VS_AN` | misspelling | a | Use “an” instead of ‘a’ if the following word starts with a vowel sound, e.g. ‘an article’, ‘an hour’. | an | ...` 1 Start addProc 2 number is integer 3 **a** is integer 4 total is iteger 5 6 for i ... |
 | gcse-computer-science---unit-1-understanding-computer-science.md | 26 | `MORFOLOGIK_RULE_EN_GB` | misspelling | iteger | Possible spelling mistake found. | integer | ...er is integer 3 a is integer 4 total is **iteger** 5 6 for i = 1 to 10 7 output "Please en... |
 | gcse-computer-science---unit-1-understanding-computer-science.md | 26 | `EN_UNPAIRED_QUOTES` | typographical | " | Unpaired symbol: ‘"’ seems to be missing | — | ...ber 10 next i 11 12 total = a 13 output **"**The total = ", total 14 15 End addProc `... |
 | gcse-computer-science---unit-1-understanding-computer-science.md | 26 | `EN_UNPAIRED_QUOTES` | typographical | " | Unpaired symbol: ‘"’ seems to be missing | — | ... 11 12 total = a 13 output "The total = **"**, total 14 15 End addProc ```  (a) Use t... |
-| gcse-computer-science---unit-1-understanding-computer-science.md | 26 | `MORFOLOGIK_RULE_EN_GB` | misspelling | addProc | Possible spelling mistake found. | approx, apron, Addison (+15 more) | ... output "The total = ", total 14 15 End **addProc** ```  (a) Use terms from the table below... |
 | gcse-computer-science---unit-1-understanding-computer-science.md | 26 | `ENGLISH_WORD_REPEAT_RULE` | duplication | analysis analysis | Possible typo: you repeated a word. | analysis | ...de optimisation \|  \| recursion semantic **analysis analysis** \|  \|  \| iteration count \|  \|  \| \|-----\|... |
 | gcse-computer-science---unit-1-understanding-computer-science.md | 26 | `MORFOLOGIK_RULE_EN_GB` | misspelling | iteger | Possible spelling mistake found. | integer | ... following: 2 2 <ul><li>Error: total is **iteger**</li><li>total is integer Change:</li></... |
 | gcse-computer-science---unit-1-understanding-computer-science.md | 27 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Ranso | Possible spelling mistake found. | Ransom, Ran so | ... \| Description \| Trojan horses \| m ware **Ranso** \| ms Wor \| ware Spy \|  \|  \|  \|  \|  \|  \|... |
@@ -626,13 +555,10 @@ Found 30 issue(s).
 
 ### Computer-Science / gcse-computer-science---unit-2-computer-programming-pre-released-materials.md
 
-Found 5 issue(s).
+Found 2 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| gcse-computer-science---unit-2-computer-programming-pre-released-materials.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Pentre | Possible spelling mistake found. | Centre | ...# **PRE-RELEASE MATERIAL**  **BRIEF:**  **Pentre** Bach Pre-School (**PBPS**)  ![](_page_3... |
-| gcse-computer-science---unit-2-computer-programming-pre-released-materials.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | PBPS | Possible spelling mistake found. | POPS, PUPS, PIPS (+8 more) | ...  **BRIEF:**  Pentre Bach Pre-School (****PBPS****)  ![](_page_3_Picture_3.jpeg)  ## **O... |
-| gcse-computer-science---unit-2-computer-programming-pre-released-materials.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Pentre | Possible spelling mistake found. | Centre | ..._3.jpeg)  ## **Original Requirements**  **Pentre** Bach Pre-School (PBPS) serves the villa... |
 | gcse-computer-science---unit-2-computer-programming-pre-released-materials.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Parkwood | Possible spelling mistake found. | Park wood | ...Pre-School (PBPS) serves the village of **Parkwood** Vale in South Wales and has the capacit... |
 | gcse-computer-science---unit-2-computer-programming-pre-released-materials.md | 3 | `EN_COMPOUNDS_USER_FRIENDLY` | misspelling | user friendly | This word is normally spelled with a hyphen. | user-friendly | ... They have requested that the system be **user friendly** and therefore, require you to develop a... |
 
@@ -694,7 +620,7 @@ Found 14 issue(s).
 
 ### Computer-Science / wjec-gcse-computer-science-specification.md
 
-Found 36 issue(s).
+Found 34 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -710,7 +636,6 @@ Found 36 issue(s).
 | wjec-gcse-computer-science-specification.md | 16 | `MORFOLOGIK_RULE_EN_GB` | misspelling | keylogging | Possible spelling mistake found. | key logging | ...middle (MiTM) attacks, packet sniffing, **keylogging**, session hijacking and IP spoofing - SQ... |
 | wjec-gcse-computer-science-specification.md | 17 | `EN_COMPOUNDS_PSEUDO_CODE` | misspelling | pseudo-code | This word is normally spelled as one. | pseudocode | ...thods of defining algorithms, including **pseudo-code** and flowcharts. \| \|  \| Learners should ... |
 | wjec-gcse-computer-science-specification.md | 24 | `EN_COMPOUNDS_PSEUDO_CODE` | misspelling | pseudo code | This word is normally spelled as one. | pseudocode | ... required data structures</li><li>using **pseudo code**, design and document the following rout... |
-| wjec-gcse-computer-science-specification.md | 25 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Tkinter | Possible spelling mistake found. | Winter, Inter, Painter (+32 more) | ...faces (GUI) using the Python 3 built in **Tkinter** libraries, including:</li><li>windows</... |
 | wjec-gcse-computer-science-specification.md | 34 | `ARROWS` | typographical | <= | Do you wish to insert an arrow? | ←, ⇽, ≤ (+4 more) | ...herwise it will return FALSE. \|  \|  \| \| **<=** \| Less than or equal to \| A <= B will r... |
 | wjec-gcse-computer-science-specification.md | 34 | `ARROWS` | typographical | <= | Do you wish to insert an arrow? | ←, ⇽, ≤ (+4 more) | ...  \|  \| \| <= \| Less than or equal to \| A **<=** B will return TRUE if A is the same as ... |
 | wjec-gcse-computer-science-specification.md | 36 | `EN_COMPOUNDS_PSEUDO_CODE` | misspelling | pseudo code | This word is normally spelled as one. | pseudocode | ...-----  **Note 3** Algorithms written in **pseudo code** will be represented using the following... |
@@ -731,7 +656,6 @@ Found 36 issue(s).
 | wjec-gcse-computer-science-specification.md | 36 | `SPACE_BEFORE_PARENTHESIS` | typographical | ( | It appears that a white space is missing. |  ( | ...tring,x) instring(x,stringa,stringb) len**(**string) val(string) int(string) trim(str... |
 | wjec-gcse-computer-science-specification.md | 36 | `MORFOLOGIK_RULE_EN_GB` | misspelling | val | Possible spelling mistake found. | Val, van, oval (+1484 more) | ...instring(x,stringa,stringb) len(string) **val**(string) int(string) trim(string) char(n... |
 | wjec-gcse-computer-science-specification.md | 36 | `SPACE_BEFORE_PARENTHESIS` | typographical | ( | It appears that a white space is missing. |  ( | ...tring(x,stringa,stringb) len(string) val**(**string) int(string) trim(string) char(nu... |
-| wjec-gcse-computer-science-specification.md | 36 | `MORFOLOGIK_RULE_EN_GB` | misspelling | int | Possible spelling mistake found. | INT, in, it (+1503 more) | ...tringa,stringb) len(string) val(string) **int**(string) trim(string) char(number) \|  Lo... |
 | wjec-gcse-computer-science-specification.md | 36 | `SPACE_BEFORE_PARENTHESIS` | typographical | ( | It appears that a white space is missing. |  ( | ...len(string) val(string) int(string) trim**(**string) char(number) \|  Logical operator... |
 | wjec-gcse-computer-science-specification.md | 36 | `SPACE_BEFORE_PARENTHESIS` | typographical | ( | It appears that a white space is missing. |  ( | ...al(string) int(string) trim(string) char**(**number) \|  Logical operators AND OR NOT ... |
 
@@ -741,7 +665,7 @@ _No issues found._
 
 ### Dance / wjec-gcse-dance-specification.md
 
-Found 17 issue(s).
+Found 14 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -753,13 +677,10 @@ Found 17 issue(s).
 | wjec-gcse-dance-specification.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | rtunities | Possible spelling mistake found. | reunites, unities, trinities (+2 more) | ...           \| 15 \| \|      \| Орро       \| **rtunities** for integration of learning experiences... |
 | wjec-gcse-dance-specification.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | MALF | Possible spelling mistake found. | HALF, MALE, MALL (+15 more) | ... assessment             \|    \| \| 4    \| **MALF**       \| PRACTICE                       ... |
 | wjec-gcse-dance-specification.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | INICAL | Possible spelling mistake found. | FINICAL | ...           \| 23 \| \| 5    \| TECH       \| **INICAL** INFORMATION                            ... |
-| wjec-gcse-dance-specification.md | 11 | `MORFOLOGIK_RULE_EN_GB` | misspelling | choreographics | Possible spelling mistake found. | choreographic, choreographies | ...ographed piece. N.B Further examples of **choreographics** devices, structural devices and choreog... |
 | wjec-gcse-dance-specification.md | 15 | `ENGLISH_WORD_REPEAT_RULE` | duplication | of of | Possible typo: you repeated a word. | of | ...velop an understanding and appreciation **of of** how meaning is communicated through dan... |
 | wjec-gcse-dance-specification.md | 15 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Avant | Possible spelling mistake found. | Savant, Havant, Avaunt (+2 more) | ...te and the Company) 2. Fagin's Twist by **Avant** Garde Dance (Chor Tony Adigun) 3. Pinoc... |
 | wjec-gcse-dance-specification.md | 15 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Garde | Possible spelling mistake found. | Garden, Grade, Gard (+1 more) | ... the Company) 2. Fagin's Twist by Avant **Garde** Dance (Chor Tony Adigun) 3. Pinocchio b... |
 | wjec-gcse-dance-specification.md | 15 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Xie | Possible spelling mistake found. | Die, Lie, Tie (+26 more) | ...or English National Ballet 2. Ripple by **Xie** Xin for The Ballet Boyz 3. Henge by Mot... |
-| wjec-gcse-dance-specification.md | 18 | `MORFOLOGIK_RULE_EN_GB` | misspelling | choreographics | Possible spelling mistake found. | choreographic, choreographies | ... transitions.  *N.B Further examples of **choreographics** devices, structural devices and choreog... |
-| wjec-gcse-dance-specification.md | 25 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ronde | Possible spelling mistake found. | rode, rondo, Ronda (+3 more) | ...o, a circle with the arm could become a **ronde** de jambe or circle with the leg. - use ... |
 | wjec-gcse-dance-specification.md | 26 | `COMMA_COMPOUND_SENTENCE_2` | uncategorized |  but | Use a comma before ‘but’ if it connects two independent clauses (unless they are closely connected and short). | , but | ...cles. - use or **Mirroring** like unison** but** dancers use the opposite side of the bo... |
 | wjec-gcse-dance-specification.md | 27 | `MORFOLOGIK_RULE_EN_GB` | misspelling | overlayed | Possible spelling mistake. Did you mean “overlaid”, the past tense form of the verb ‘overlay’? | overlaid, overplayed | ...ue** where phrases and sequences return **overlayed**, fragmented, and developed. - **Narrati... |
 
@@ -769,7 +690,7 @@ _No issues found._
 
 ### Design-and-Technology / wjec-gcse-design-and-technology-specification.md
 
-Found 50 issue(s).
+Found 29 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -780,29 +701,13 @@ Found 50 issue(s).
 | wjec-gcse-design-and-technology-specification.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | RACTICE | Possible spelling mistake found. | PRACTICE | ...\| 4   \| MALP                          \| **RACTICE**                                        ... |
 | wjec-gcse-design-and-technology-specification.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | endix | Possible spelling mistake found. | Bendix, end ix | ...                         \| 47 \| \| App \| **endix** .                       \| A: Opportunit... |
 | wjec-gcse-design-and-technology-specification.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Desing | Possible spelling mistake found. | Design, Dosing, Deming (+1 more) | ...hnology in the 21st Century and Unit 2: **Desing** Project consist of:  - core knowledge a... |
-| wjec-gcse-design-and-technology-specification.md | 10 | `MORFOLOGIK_RULE_EN_GB` | misspelling | renewability | Possible spelling mistake found. | — | ...nable design - 1.1.4 Energy storage and **renewability** - 1.1.5 Contemporary design thinking; h... |
-| wjec-gcse-design-and-technology-specification.md | 12 | `MORFOLOGIK_RULE_EN_GB` | misspelling | renewability | Possible spelling mistake found. | — | ...----------------  ## Energy storage and **renewability**  ## Learners should know about:  - rene... |
 | wjec-gcse-design-and-technology-specification.md | 12 | `EN_COMPOUNDS_DIESEL_ELECTRIC` | misspelling | diesel     - electric | This word is normally spelled with a hyphen. | diesel-electric | ...otor vehicles for example:     - petrol/**diesel     - electric**   - household products for example:    ... |
-| wjec-gcse-design-and-technology-specification.md | 12 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Rober | Possible spelling mistake found. | Robert, Robber, Robe (+7 more) | ...y:     - Lord Richard Rogers     - Mark **Rober**   - Fashion and Textiles pathway only: ... |
-| wjec-gcse-design-and-technology-specification.md | 12 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Herpen | Possible spelling mistake found. | Herpes, Hempen, Herren (+3 more) | ...ly:     - Sian O'Doherty     - Iris Van **Herpen**   - Product Design pathway only:     - ... |
 | wjec-gcse-design-and-technology-specification.md | 12 | `EN_MULTITOKEN_SPELLING_TWO` | misspelling | Frank Lloyd-Wright | Possible spelling mistake found. | Frank Lloyd Wright | ...   - Product Design pathway only:     - **Frank Lloyd-Wright**     - Alessi & Co.  - the cyclic proces... |
-| wjec-gcse-design-and-technology-specification.md | 12 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Alessi | Possible spelling mistake found. | Alessia, Alessio | ...ay only:     - Frank Lloyd-Wright     - **Alessi** & Co.  - the cyclic process and princip... |
-| wjec-gcse-design-and-technology-specification.md | 13 | `MORFOLOGIK_RULE_EN_GB` | misspelling | anthropometrics | Possible spelling mistake found. | anthropometric, anthropometries | ...e design, including:   - ergonomics   - **anthropometrics**   - economic   - biomimicry.  {14}-----... |
-| wjec-gcse-design-and-technology-specification.md | 15 | `MORFOLOGIK_RULE_EN_GB` | misspelling | polylactic | Possible spelling mistake found. | — | ...rylonitrile butadiene styrene (ABS)   - **polylactic** acid (PLA)   - nylon (polyamide)   - St... |
-| wjec-gcse-design-and-technology-specification.md | 16 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Kevlar | Possible spelling mistake found. | Keller, Cellar, Velar (+3 more) | ... polyester (GRP)   - titanium alloy   - **Kevlar**. - the benefits of electrical component... |
 | wjec-gcse-design-and-technology-specification.md | 16 | `MORFOLOGIK_RULE_EN_GB` | misspelling | electronical | Possible spelling mistake found. | electronic, electronically, electronica | ...dback in a system - measurements within **electronical** circuits, including:   - voltage volts ... |
-| wjec-gcse-design-and-technology-specification.md | 17 | `MORFOLOGIK_RULE_EN_GB` | misspelling | piezo | Possible spelling mistake found. | Piero | ...gnal receivers, including:   - buzzer & **piezo**   - loudspeaker   - bulbs   - light emi... |
 | wjec-gcse-design-and-technology-specification.md | 17 | `MORFOLOGIK_RULE_EN_GB` | misspelling | dc | Possible spelling mistake found. | DC, do, BC (+124 more) | ...liquid crystal display (LCD)   - motors **dc** motors, servo, stepper   - solenoids. -... |
 | wjec-gcse-design-and-technology-specification.md | 17 | `MORFOLOGIK_RULE_EN_GB` | misspelling | darlington | Possible spelling mistake found. | Darlington, Arlington, Dadlington (+12 more) | ... including:   - transistor circuits   - **darlington** pair circuits   - thyristor circuits   ... |
 | wjec-gcse-design-and-technology-specification.md | 18 | `POSSESSIVE_APOSTROPHE` | typographical | levers | An apostrophe may be missing. | levers', lever's | ...defined as input, process, output - the **levers** classification, including:   - class 1 ... |
 | wjec-gcse-design-and-technology-specification.md | 19 | `MORFOLOGIK_RULE_EN_GB` | misspelling | dc | Possible spelling mistake found. | DC, do, BC (+124 more) | ... spur gears, worm gears, belts, motors (**dc** motors, stepper, servo)   - electrical ... |
-| wjec-gcse-design-and-technology-specification.md | 20 | `MORFOLOGIK_RULE_EN_GB` | misspelling | vero | Possible spelling mistake found. | very, hero, zero (+13 more) | ...mance   - breadboard circuits   - strip/**vero** board circuits   - printed circuit boar... |
-| wjec-gcse-design-and-technology-specification.md | 20 | `MORFOLOGIK_RULE_EN_GB` | misspelling | persulfate | Possible spelling mistake found. | persuade, percolate, persiflage (+5 more) | ...sses (e.g., ferric chloride or ammonium **persulfate**) etching to remove unwanted copper from... |
-| wjec-gcse-design-and-technology-specification.md | 22 | `MORFOLOGIK_RULE_EN_GB` | misspelling | lyocell | Possible spelling mistake found. | Lowell, Lovell, Lyell | ...ted fibres:   - viscose   - acetate   - **lyocell** - the difference between fibre types, i... |
-| wjec-gcse-design-and-technology-specification.md | 23 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Kevlar | Possible spelling mistake found. | Keller, Cellar, Velar (+3 more) | ...ibres; including:</li><li>Nomex</li><li>**Kevlar**.</li><li>Carbon fibre</li><li>Geotextil... |
-| wjec-gcse-design-and-technology-specification.md | 23 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Geotextiles | Possible spelling mistake found. | — | ...li>Kevlar.</li><li>Carbon fibre</li><li>**Geotextiles** used in agriculture, construction and l... |
-| wjec-gcse-design-and-technology-specification.md | 23 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Gore-tex | Possible spelling mistake found. | Gore-Tex | ...athable materials, for example:</li><li>**Gore-tex**.</li><li>Microfibres, including:</li><l... |
-| wjec-gcse-design-and-technology-specification.md | 23 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Microfibres | Possible spelling mistake found. | Microfibers | ... for example:</li><li>Gore-tex.</li><li>**Microfibres**, including:</li><li>Modal®</li><li>Tact... |
 | wjec-gcse-design-and-technology-specification.md | 23 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Tactel | Possible spelling mistake found. | Acted, Taste, Tackle (+35 more) | ...bres, including:</li><li>Modal®</li><li>**Tactel**®. Learners should understand:</li><li>t... |
 | wjec-gcse-design-and-technology-specification.md | 24 | `EN_COMPOUNDS_PRESS_STUDS` | misspelling | press studs | This word is normally spelled with a hyphen. | press-studs | ...s - buckles - Velcro - eyelets - ties - **press studs**. - threads:   - embroidery   - sewing  ... |
 | wjec-gcse-design-and-technology-specification.md | 24 | `MORFOLOGIK_RULE_EN_GB` | misspelling | overlocker | Possible spelling mistake found. | overlooker | ... threads:   - embroidery   - sewing   - **overlocker**   - conductive. - trims:   - lace   - b... |
@@ -817,12 +722,7 @@ Found 50 issue(s).
 | wjec-gcse-design-and-technology-specification.md | 30 | `MORFOLOGIK_RULE_EN_GB` | misspelling | bluetooth | Possible spelling mistake found. | Bluetooth, blue tooth | ...vity and their function, including:   - **bluetooth**   - Wi-Fi   - the Internet of Things (I... |
 | wjec-gcse-design-and-technology-specification.md | 30 | `MORFOLOGIK_RULE_EN_GB` | misspelling | counterbored | Possible spelling mistake found. | — | ...ot, clearance, tapping, countersunk and **counterbored** holes   - marking out materials using a... |
 | wjec-gcse-design-and-technology-specification.md | 32 | `MORFOLOGIK_RULE_EN_GB` | misspelling | selfassembly | Possible spelling mistake found. | self-assembly, self assembly | ...facture of mass-produced products to be **selfassembly**, including:   - KDF (Knock-down fitting... |
-| wjec-gcse-design-and-technology-specification.md | 32 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Anthropometrics | Possible spelling mistake found. | Anthropometric, Anthropometries | ... production - the use of Ergonomics and **Anthropometrics** in the design and development of produc... |
-| wjec-gcse-design-and-technology-specification.md | 34 | `MORFOLOGIK_RULE_EN_GB` | misspelling | anthropometrics | Possible spelling mistake found. | anthropometric, anthropometries | ..., including:</li><li>ergonomics</li><li>**anthropometrics**</li><li>environmental</li><li>social</l... |
-| wjec-gcse-design-and-technology-specification.md | 35 | `MORFOLOGIK_RULE_EN_GB` | misspelling | toiles | Possible spelling mistake. Did you mean “toils”, the plural form of the noun ‘toil’? | toils, tiles, toilet (+7 more) | ...--------  \|  \| <ul><li>models, samples, **toiles**</li><li>presentations</li><li>written n... |
 | wjec-gcse-design-and-technology-specification.md | 35 | `MORFOLOGIK_RULE_EN_GB` | misspelling | craftmanship | Possible spelling mistake found. | craftsmanship | ...quality</li><li>exhibits good/excellent **craftmanship**</li><li>demonstrates functionality</li>... |
-| wjec-gcse-design-and-technology-specification.md | 36 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Vee | Possible spelling mistake found. | See, Lee, Fee (+41 more) | ...s of round bars, and surface plates and **Vee** blocks for accurate measurements</li><l... |
-| wjec-gcse-design-and-technology-specification.md | 40 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Vee | Possible spelling mistake found. | See, Lee, Fee (+41 more) | ...f round bars</li><li>surface plates and **Vee** block</li><li>use of accurate templates... |
 
 ### Digital-Media-and-Film / digital-media-and-film---options-evening-flyer.md
 
@@ -834,7 +734,7 @@ Found 1 issue(s).
 
 ### Digital-Media-and-Film / wjec-gcse-digital-media-and-film-specification.md
 
-Found 30 issue(s).
+Found 17 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -848,25 +748,12 @@ Found 30 issue(s).
 | wjec-gcse-digital-media-and-film-specification.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | endix | Possible spelling mistake found. | Bendix, end ix | ...the Curriculum for Wales \| 30 \| \| App \| **endix**                                        ... |
 | wjec-gcse-digital-media-and-film-specification.md | 7 | `PLURAL_THAT_AGREEMENT` | grammar | enables | Possible subject-verb agreement error detected. | enable | ...es, tools, materials and practices that **enables** them to become curious and creative ind... |
 | wjec-gcse-digital-media-and-film-specification.md | 10 | `EN_WORD_COHERENCY` | uncategorized | crosscutting | Do not mix variants of the same word (‘crosscut’ and ‘cross-cut’) within a single text. | cross-cutting | ...ecessary skills required to explore the **crosscutting** themes of human-rights and diversity, i... |
-| wjec-gcse-digital-media-and-film-specification.md | 11 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Paronnaud | Possible spelling mistake found. | Arnaud | ... *Persepolis* (Marjane Satrapi, Vincent **Paronnaud**, France, 2007), 12  *Pride* (Matthew Wa... |
-| wjec-gcse-digital-media-and-film-specification.md | 11 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Warchus | Possible spelling mistake found. | Markus, Wacks | ...ud, France, 2007), 12  *Pride* (Matthew **Warchus**, UK, 2014), 15\* **and** *Girlhood* (Ce... |
 | wjec-gcse-digital-media-and-film-specification.md | 11 | `EN_MULTITOKEN_SPELLING_TWO` | misspelling | Celine Sciamma | Possible spelling mistake found. | Céline Sciamma | ...us, UK, 2014), 15\* **and** *Girlhood* (**Celine Sciamma**, France, 2014), 15\*  *Dream Horse* (Eu... |
-| wjec-gcse-digital-media-and-film-specification.md | 11 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Wadjda | Possible spelling mistake found. | Wanda, Waded, Nadja (+2 more) | ...rse* (Euros Lyn, UK, 2020), PG **and** ***Wadjda*** (Hafiaa Al-Mansour, Saudi Arabia, 2012... |
-| wjec-gcse-digital-media-and-film-specification.md | 11 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Hafiaa | Possible spelling mistake found. | Mafia, Haifa, Mafias (+3 more) | ...os Lyn, UK, 2020), PG **and** *Wadjda* (**Hafiaa** Al-Mansour, Saudi Arabia, 2012), PG  *S... |
-| wjec-gcse-digital-media-and-film-specification.md | 11 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Al-Mansour | Possible spelling mistake found. | Al-Man sour | ... UK, 2020), PG **and** *Wadjda* (Hafiaa **Al-Mansour**, Saudi Arabia, 2012), PG  *Save the Cin... |
-| wjec-gcse-digital-media-and-film-specification.md | 11 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Sugarman | Possible spelling mistake found. | Sugar man | ...bia, 2012), PG  *Save the Cinema* (Sara **Sugarman**, UK, 2021), 12 **and** *The Breadwinner... |
-| wjec-gcse-digital-media-and-film-specification.md | 11 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Twomey | Possible spelling mistake found. | Women, Tommy, Tome (+6 more) | ...21), 12 **and** *The Breadwinner* (Nora **Twomey** Ireland, 2017), 12  *Y Sŵn* (Lee Haven ... |
-| wjec-gcse-digital-media-and-film-specification.md | 11 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Sŵn | Possible spelling mistake found. | Own, Son, San (+38 more) | ...er* (Nora Twomey Ireland, 2017), 12  *Y **Sŵn*** (Lee Haven Jones, UK, 2023), 12A **and... |
 | wjec-gcse-digital-media-and-film-specification.md | 12 | `EN_COMPOUNDS_LOW_KEY` | misspelling | low key | This word is normally spelled with a hyphen. | low-key | ...ghting (for example, high key lighting, **low key** lighting).</li></ul> \| \| 1.1.2 How film... |
-| wjec-gcse-digital-media-and-film-specification.md | 18 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Chwarel | Possible spelling mistake found. | Chapel, Chanel | ...Wales, Boom Cymru, Cardiff Productions, **Chwarel**, ITV Cymru Wales, Little Bird Films, S4... |
-| wjec-gcse-digital-media-and-film-specification.md | 18 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Triongl | Possible spelling mistake found. | Triangle, Truong, Trigonal | ... Little Bird Films, S4C, Severn Screen, **Triongl**, Wales interactive. Learners should und... |
 | wjec-gcse-digital-media-and-film-specification.md | 19 | `EN_COMPOUNDS_LIVE_STREAMING` | misspelling | live streaming | This expression is normally spelled as one or with a hyphen. | live-streaming, livestreaming | ...releases)   - video games (for example; **live streaming**, free demos)   - television/streaming (... |
 | wjec-gcse-digital-media-and-film-specification.md | 22 | `EN_COMPOUNDS_AUDIO_VISUAL` | misspelling | audio-visual | This word is normally spelled as one. | audiovisual | ...velop their ideas into a final: <ul><li>**audio-visual**/audio product:</li><li>social media cam... |
-| wjec-gcse-digital-media-and-film-specification.md | 22 | `MORFOLOGIK_RULE_EN_GB` | misspelling | EPK | Possible spelling mistake found. | EPs, ELK, EPP (+29 more) | ...r</li><li>digital electronic press kit (**EPK**)</li><li>functioning website</li><li>ex... |
 | wjec-gcse-digital-media-and-film-specification.md | 22 | `EN_COMPOUNDS_POST_PRODUCTION` | misspelling | post production | This word is normally spelled with a hyphen. | post-production | ... their technical and creative skills in **post production** by:</li><li>editing the digital media o... |
 | wjec-gcse-digital-media-and-film-specification.md | 26 | `EN_COMPOUNDS_AUDIO_VISUAL` | misspelling | audio-visual | This word is normally spelled as one. | audiovisual | ...d brief. One production piece should be **audio-visual**/audio and the other should be digital/o... |
-| wjec-gcse-digital-media-and-film-specification.md | 33 | `MORFOLOGIK_RULE_EN_GB` | misspelling | EPK | Possible spelling mistake found. | EPs, ELK, EPP (+29 more) | ...ing campaign. \| \| Electronic Press Kit (**EPK**) \| A digital collection of material pro... |
-| wjec-gcse-digital-media-and-film-specification.md | 33 | `MORFOLOGIK_RULE_EN_GB` | misspelling | EPKs | Possible spelling mistake found. | EPs, Elks, APKs (+5 more) | ...romoting a media product and/or artist. **EPKs** can include a professional bio, photogr... |
 | wjec-gcse-digital-media-and-film-specification.md | 35 | `WRITER_COMPOUNDS` | grammar | screen writer | This noun is normally spelled as one word. | screenwriter | ... \| \| Screenplay \| A script written by a **screen writer** for a film or television show that tell... |
 
 ### Digital-Technology / digital-technology---options-evening-flyer.md
@@ -925,7 +812,7 @@ Found 7 issue(s).
 
 ### Drama / gcse-drama---guidance-for-teaching-unit-1.md
 
-Found 45 issue(s).
+Found 40 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -936,19 +823,14 @@ Found 45 issue(s).
 | gcse-drama---guidance-for-teaching-unit-1.md | 11 | `EN_COMPOUNDS_SELF_CONFIDENCE` | misspelling | self confidence | This word is normally spelled with a hyphen. | self-confidence | ...----------------------\|--\| \| Developing **self confidence** in performance \| At this point, learner... |
 | gcse-drama---guidance-for-teaching-unit-1.md | 16 | `EN_WORD_COHERENCY` | uncategorized | makeup | Do not mix variants of the same word (‘makeup’ and ‘make-up’) within a single text. | make-up | ...ting, lighting, sound, costume hair and **makeup**, set and props.</li> <li>Introduce rehe... |
 | gcse-drama---guidance-for-teaching-unit-1.md | 17 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Videoed | Possible spelling mistake found. | — | ... their work during the process.</li><li>**Videoed** performance with audience questionnaire... |
-| gcse-drama---guidance-for-teaching-unit-1.md | 17 | `MORFOLOGIK_RULE_EN_GB` | misspelling | videoed | Possible spelling mistake found. | — | ...aires.</li><li>Groups can discuss their **videoed** work, with an end objective of helping ... |
 | gcse-drama---guidance-for-teaching-unit-1.md | 22 | `NON_ANTI_JJ` | grammar | non naturalistic | This expression is usually spelled with a hyphen. | non-naturalistic | ... realistic detail \| naturalistic and/or **non naturalistic** \| combination of naturalistic and non-n... |
 | gcse-drama---guidance-for-teaching-unit-1.md | 23 | `NON_ANTI_JJ` | grammar | non naturalistic | This expression is usually spelled with a hyphen. | non-naturalistic | ...----------------  \| naturalistic and/or **non naturalistic** \| political, social, moral issue \|  \|  ... |
 | gcse-drama---guidance-for-teaching-unit-1.md | 23 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Signes | Possible spelling mistake found. | Signed, Signs, Signer (+7 more) | ...y be used in a range of ways Projection **Signes** and placards \| set and props create a r... |
 | gcse-drama---guidance-for-teaching-unit-1.md | 24 | `POSSESSIVE_APOSTROPHE` | typographical | sounds | An apostrophe may be missing. | sounds', sound's | ...is; music, ambient sounds environmental **sounds** voiceover, sound effects \| sound to hig... |
-| gcse-drama---guidance-for-teaching-unit-1.md | 24 | `MORFOLOGIK_RULE_EN_GB` | misspelling | metatheatrical | Possible spelling mistake found. | — | ...ay be created live by performers overt, **metatheatrical** use of sound \| realistic sound effects;... |
-| gcse-drama---guidance-for-teaching-unit-1.md | 31 | `MORFOLOGIK_RULE_EN_GB` | misspelling | videoed | Possible spelling mistake found. | — | ...erformance. \| \| 13 \| Reflect \|  \| Watch **videoed** work and draft log content analysing an... |
 | gcse-drama---guidance-for-teaching-unit-1.md | 32 | `SMALL_NUMBER_OF` | style | a small number of | Specify a number, remove phrase, use “a few”, or use “some” | a few, some | ...nd in themselves. The audience might be **a small number of** people invited by the performers, their... |
 | gcse-drama---guidance-for-teaching-unit-1.md | 33 | `COMMA_COMPOUND_SENTENCE_2` | uncategorized |  and | Use a comma before “and” if it connects two independent clauses (unless they are closely connected and short). | , and | ...s required. Working lights will fade out** and** the next scene will commence. - A costu... |
 | gcse-drama---guidance-for-teaching-unit-1.md | 33 | `EN_WORD_COHERENCY` | uncategorized | makeup | Do not mix variants of the same word (‘makeup’ and ‘make-up’) within a single text. | make-up | ... costume on a character or change their **makeup**, or a lighting designer might need to c... |
 | gcse-drama---guidance-for-teaching-unit-1.md | 33 | `MID_HYPHEN` | uncategorized | mid performance | This word is normally spelled with a hyphen. | mid-performance | ...ght need to change a gel in a sidelight **mid performance**. Again, it is perfectly acceptable for ... |
-| gcse-drama---guidance-for-teaching-unit-1.md | 37 | `MORFOLOGIK_RULE_EN_GB` | misspelling | plotlines | Possible spelling mistake found. | potlines, plot lines | ...ic styled work, ideas with very complex **plotlines** can be difficult to realise successfull... |
-| gcse-drama---guidance-for-teaching-unit-1.md | 39 | `MORFOLOGIK_RULE_EN_GB` | misspelling | sightlines | Possible spelling mistake found. | sightliness, sight lines | ...                                      \| **sightlines**                          \|             ... |
 | gcse-drama---guidance-for-teaching-unit-1.md | 42 | `COMMA_COMPOUND_SENTENCE_2` | uncategorized |  and | Use a comma before ‘and’ if it connects two independent clauses (unless they are closely connected and short). | , and | ...overed?   - Is there a range of examples** and** how detailed is the level of analysis a... |
 | gcse-drama---guidance-for-teaching-unit-1.md | 43 | `EN_COMPOUNDS_HAND_WRITTEN` | misspelling | hand-written | This word is normally spelled as one. | handwritten | ...rial. - This document could be typed or **hand-written**. It could be divided into sub-headed se... |
 | gcse-drama---guidance-for-teaching-unit-1.md | 43 | `WHETHER` | style | as to whether | Consider shortening this phrase to just “whether”, or rephrase the sentence to avoid “as to”. | whether | ... example, consideration should be given **as to whether** a series of images of rehearsal demonst... |
@@ -977,16 +859,14 @@ Found 45 issue(s).
 
 ### Drama / gcse-drama---guidance-for-teaching-unit-2.md
 
-Found 10 issue(s).
+Found 8 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | gcse-drama---guidance-for-teaching-unit-2.md | 12 | `MORFOLOGIK_RULE_EN_GB` | misspelling | selfevaluate | Possible spelling mistake found. | self evaluate | ...groups during the rehearsal process and **selfevaluate** and evaluate the work; this will help d... |
 | gcse-drama---guidance-for-teaching-unit-2.md | 19 | `COMMA_COMPOUND_SENTENCE` | uncategorized |  and | Use a comma before ‘and’ if it connects two independent clauses (unless they are closely connected and short). | , and | ...in which we live is continually evolving** and** we hold a shared responsibility to embr... |
-| gcse-drama---guidance-for-teaching-unit-2.md | 19 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Placey | Possible spelling mistake found. | Place, Placed, Places (+5 more) | ...ly's 'Things I know to be true' or Evan **Placey**'s 'Pronouns' allow for discussions rega... |
 | gcse-drama---guidance-for-teaching-unit-2.md | 19 | `EN_COMPOUNDS_THOUGHT_PROVOKING` | misspelling | thought provoking | This word is normally spelled with a hyphen. | thought-provoking | ...and diversity and offer challenging and **thought provoking** scenes for more able learners.</li></ul... |
 | gcse-drama---guidance-for-teaching-unit-2.md | 23 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Vivas on | Possible spelling mistake found. | Viva son, Visas on, Sivas on (+4 more) | ...rsing for the viva.</li><li>Write their **Vivas on** flashcards and read these out to the cl... |
-| gcse-drama---guidance-for-teaching-unit-2.md | 23 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Vivas | Possible spelling mistake found. | Visas, Sivas, Divas (+3 more) | ...i>Designers will create notes for their **Vivas** and could annotate photos and sketches ... |
 | gcse-drama---guidance-for-teaching-unit-2.md | 24 | `COMMA_COMPOUND_SENTENCE_2` | uncategorized |  but | Use a comma before ‘but’ if it connects two independent clauses (unless they are closely connected and short). | , but | ...suring that actors are lit appropriately** but** lights are not too bright that there is... |
 | gcse-drama---guidance-for-teaching-unit-2.md | 24 | `HE_BE` | misspelling | he | Did you mean “be”? | be | ...rimented with to ensure that actors can **he** heard but also ensuring that the chosen... |
 | gcse-drama---guidance-for-teaching-unit-2.md | 27 | `MICROSOFT_PRODUCTS` | uncategorized | word | Did you mean “Word” (= computer program, capitalized)? | Word | .... They could: Work collaboratively on a **word** document through their</li><li>HWB acco... |
@@ -994,13 +874,12 @@ Found 10 issue(s).
 
 ### Drama / gcse-drama---guidance-for-teaching-unit-3.md
 
-Found 60 issue(s).
+Found 53 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | gcse-drama---guidance-for-teaching-unit-3.md | 5 | `EN_COMPOUNDS_LIVE_STREAMED` | misspelling | live streamed | This expression is normally spelled as one or with a hyphen. | live-streamed, livestreamed | ...flecting linked to live and/or recorded/**live streamed** performances as possible theatrical inf... |
 | gcse-drama---guidance-for-teaching-unit-3.md | 7 | `COMMA_COMPOUND_SENTENCE_4` | uncategorized |  or | Use a comma before “or” if it connects two independent clauses (unless they are closely connected and short). | , or | ... items. E.g., are the items contemporary** or** could they belong to a different era? W... |
-| gcse-drama---guidance-for-teaching-unit-3.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | plotline | Possible spelling mistake found. | potline, plot line | ...y, e.g., 5 minutes to sit and discuss a **plotline** linked to the objects.  ### Timed activ... |
 | gcse-drama---guidance-for-teaching-unit-3.md | 9 | `KEY_WORDS` | misspelling | key words | Did you mean “keywords”? | keywords | ...cused.  #### **Development :**  Finding **key words** from the selected scene and adding them... |
 | gcse-drama---guidance-for-teaching-unit-3.md | 9 | `YOUTUBE` | uncategorized | youtube | The official name of this popular video platform is spelled with a capital “T”. | YouTube | ... Works: Table Top Shakespeare Trailer \(**youtube**.com\)](https://www.youtube.com/watch?v=... |
 | gcse-drama---guidance-for-teaching-unit-3.md | 10 | `PAST_PASTE` | misspelling | past | Did you mean the verb “paste” (“copy & paste”)? | paste | ... significant person from the characters **past** in mentioned they come on stage, played... |
@@ -1018,7 +897,6 @@ Found 60 issue(s).
 | gcse-drama---guidance-for-teaching-unit-3.md | 25 | `MISSING_COMMA_AFTER_INTRODUCTORY_PHRASE` | uncategorized | groups | A comma is probably missing here. | groups, | ...lips of different styles of theatre. In **groups** they present an "arts feature", where t... |
 | gcse-drama---guidance-for-teaching-unit-3.md | 25 | `COMMA_COMPOUND_SENTENCE_2` | uncategorized |  so | Use a comma before ‘so’ if it connects two independent clauses (unless they are closely connected and short). | , so | ... presentation could be filmed and viewed** so** a range of opinions are offered.  Immed... |
 | gcse-drama---guidance-for-teaching-unit-3.md | 25 | `BOTH_AS_WELL_AS` | grammar | as well as | Probable usage error. Use “and” after ‘both’. | and | ...key elements of performance to focus on **as well as** the relevant terminology.  These analys... |
-| gcse-drama---guidance-for-teaching-unit-3.md | 25 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Eccleston | Possible spelling mistake found. | Ecclestone, Eccles ton | ...racters of Macbeth  Clip 1 [Christopher **Eccleston**: Macbeth \| Royal Shakespeare Company \|]... |
 | gcse-drama---guidance-for-teaching-unit-3.md | 25 | `YOUTUBE` | uncategorized | youtube | The official name of this popular video platform is spelled with a capital “T”. | YouTube | ...com/watch?v=hUEORBWHAVU)  [Marquee TV \(**youtube**.com\)](https://www.youtube.com/watch?v=... |
 | gcse-drama---guidance-for-teaching-unit-3.md | 26 | `YOUTUBE` | uncategorized | youtube | The official name of this popular video platform is spelled with a capital “T”. | YouTube | ...from The [Tragedy of Macbeth \(2021\) \(**youtube**.com\).](https://www.youtube.com/watch?v... |
 | gcse-drama---guidance-for-teaching-unit-3.md | 26 | `YOUTUBE` | uncategorized | youtube | The official name of this popular video platform is spelled with a capital “T”. | YouTube | ...Macbeth in Welsh \(1964\) \| BBC Wales \(**youtube**.com\).](https://www.youtube.com/watch?v... |
@@ -1034,7 +912,6 @@ Found 60 issue(s).
 | gcse-drama---guidance-for-teaching-unit-3.md | 32 | `MOST_SOME_OF_NNS` | grammar | some of ideas | After ‘some of’, you should use ‘the’ (“some of the ideas”) or simply say “some ideas”. | some of the ideas, some ideas | ...RK2Z4mZZE6HQ)  - Learners could look at **some of ideas** within the pack and create their own re... |
 | gcse-drama---guidance-for-teaching-unit-3.md | 34 | `MORFOLOGIK_RULE_EN_GB` | misspelling | mold | Possible spelling mistake. ‘mold’ is American English. | mould | ...-riots) [part/projects/together/theatre/**mold**](https://www.theatrclwyd.com/take-part/... |
 | gcse-drama---guidance-for-teaching-unit-3.md | 34 | `YOUTUBE` | uncategorized | youtube | The official name of this popular video platform is spelled with a capital “T”. | YouTube | ...ExO7P9NYngRuohlSbSfFWPk8DC&index=7)  [\(**youtube**.com\)](https://www.youtube.com/watch?v=... |
-| gcse-drama---guidance-for-teaching-unit-3.md | 35 | `MORFOLOGIK_RULE_EN_GB` | misspelling | sitespecific | Possible spelling mistake found. | site-specific, site specific | ...nd discuss how effective it was using a **sitespecific** location as opposed to setting it in a ... |
 | gcse-drama---guidance-for-teaching-unit-3.md | 35 | `YOUTUBE` | uncategorized | youtube | The official name of this popular video platform is spelled with a capital “T”. | YouTube | ... directors, for example: [Woza Albert \(**youtube**.com\).](https://www.youtube.com/watch?v... |
 | gcse-drama---guidance-for-teaching-unit-3.md | 37 | `EN_COMPOUNDS_GENDER_FLUID` | misspelling | gender fluid | This word is normally spelled with a hyphen. | gender-fluid | ...d explore whether some of the roles are **gender fluid**, and whether changing the gender of spe... |
 | gcse-drama---guidance-for-teaching-unit-3.md | 38 | `ADVERB_VERB_ADVERB_REPETITION` | grammar | East is East | Adverb repetition. | East is, Is East | ...rom 'All's Fair' by Frank Vickery, and '**East is East**' by Ayub Khan Din. <ul><li>Learners cou... |
@@ -1049,13 +926,9 @@ Found 60 issue(s).
 | gcse-drama---guidance-for-teaching-unit-3.md | 43 | `YOUTUBE` | uncategorized | youtube | The official name of this popular video platform is spelled with a capital “T”. | YouTube | ...be.com/watch?v=widLgDuK-nk)  [Theatre \(**youtube**.com\)](https://www.youtube.com/watch?v=... |
 | gcse-drama---guidance-for-teaching-unit-3.md | 44 | `YOUTUBE` | uncategorized | youtube | The official name of this popular video platform is spelled with a capital “T”. | YouTube | ...t Acting Monologues Of All Time PART 1 (**youtube**.com). Although these performances are f... |
 | gcse-drama---guidance-for-teaching-unit-3.md | 47 | `TO_NON_BASE` | grammar | answers | The verb after “to” should be in the base form as part of the to-infinitive. A verb can take many forms, but the base form is always used in the to-infinitive. | answer | ...tive. They should also be encouraged to **answers** questions</li></ul> \|  {48}------------... |
-| gcse-drama---guidance-for-teaching-unit-3.md | 48 | `MORFOLOGIK_RULE_EN_GB` | misspelling | SAMS | Possible spelling mistake found. | SAME, SAYS, SAM (+42 more) | ...questions based on past papers, current **SAMS** to consolidate their</li></ul> \| \|     ... |
-| gcse-drama---guidance-for-teaching-unit-3.md | 49 | `MORFOLOGIK_RULE_EN_GB` | misspelling | SAMS | Possible spelling mistake found. | SAME, SAYS, SAM (+42 more) | ...ons that will be asked in the exam (see **SAMS**). \| \|  \| • \| Centres should begin by fo... |
 | gcse-drama---guidance-for-teaching-unit-3.md | 50 | `MISSING_COMMA_AFTER_INTRODUCTORY_PHRASE` | uncategorized | pairs | A comma is probably missing here. | pairs, | ...ar Theft amongst adolescents (Face). In **pairs** they could identify some key questions ... |
-| gcse-drama---guidance-for-teaching-unit-3.md | 51 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Magdalen | Possible spelling mistake found. | Magdalena, Magdalene | ...e other monologue could be written from **Magdalen**'s point of view using the data to expla... |
 | gcse-drama---guidance-for-teaching-unit-3.md | 51 | `MORFOLOGIK_RULE_EN_GB` | misspelling | statical | Possible spelling mistake found. | spatial, static, tactical (+6 more) | ...ary. The group then votes, based on the **statical** evidence presented by both characters, ... |
 | gcse-drama---guidance-for-teaching-unit-3.md | 51 | `MORFOLOGIK_RULE_EN_GB` | misspelling | statical | Possible spelling mistake found. | spatial, static, tactical (+6 more) | ...l experimentation based on the gathered **statical** evidence. The play could involve music,... |
-| gcse-drama---guidance-for-teaching-unit-3.md | 52 | `MORFOLOGIK_RULE_EN_GB` | misspelling | socio | Possible spelling mistake found. | socko | ...rcentage of people in different</li><li>**socio**/economic brackets who attend theatre pr... |
 | gcse-drama---guidance-for-teaching-unit-3.md | 53 | `IT_VBZ` | grammar | Interview | After ‘It’, use the third-person verb form “interviews”. | Interviews | ...ssible theatre from Wales. Cuttin' It   **Interview** with cast, Adelayo Adedayo</li><li>& Ts... |
 | gcse-drama---guidance-for-teaching-unit-3.md | 53 | `YOUTUBE` | uncategorized | youtube | The official name of this popular video platform is spelled with a capital “T”. | YouTube | ... Adelayo Adedayo</li><li>& Tsion Habte (**youtube**.com). Chicken Shed Peter Pan.</li><li>T... |
 
@@ -1143,7 +1016,7 @@ Found 18 issue(s).
 
 ### Drama / gcse-drama---unit-3-interpreting-theatre.md
 
-Found 118 issue(s).
+Found 113 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1192,7 +1065,6 @@ Found 118 issue(s).
 | gcse-drama---unit-3-interpreting-theatre.md | 44 | `EN_WORD_COHERENCY` | uncategorized | makeup | Do not mix variants of the same word (‘makeup’ and ‘make-up’) within a single text. | make-up | ...have had to operate on him, I would use **makeup** to show how badly disfigured his face i... |
 | gcse-drama---unit-3-interpreting-theatre.md | 44 | `MORFOLOGIK_RULE_EN_GB` | misspelling | non-descript | Possible spelling mistake found. | nondescript | ...n:*  • Martin's costume looks basic and **non-descript**. He is recovering at home and since the... |
 | gcse-drama---unit-3-interpreting-theatre.md | 46 | `WORTHY_COMPOUNDS` | grammar | credit worthy | This adjective is normally spelled as one word. | creditworthy | .../ul> \| \| 0 marks \| <ul><li>Response not **credit worthy** / not attempted.</li></ul> \|  {47}-----... |
-| gcse-drama---unit-3-interpreting-theatre.md | 47 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Whitchurch | Possible spelling mistake found. | Whit church | ...gstoke. The Welsh premier was staged by **Whitchurch** High School in March 2015.  #### **Give... |
 | gcse-drama---unit-3-interpreting-theatre.md | 47 | `EN_COMPOUNDS_SELF_IMAGE` | misspelling | self image | This word is normally spelled with a hyphen. | self-image | ...hasise the main themes of the play e.g. **self image**, identity, peer pressure. - Remember so... |
 | gcse-drama---unit-3-interpreting-theatre.md | 47 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Audery | Possible spelling mistake found. | Audrey | ...use personal props such as a doll which **Audery** and Angela could play. - Candidates sho... |
 | gcse-drama---unit-3-interpreting-theatre.md | 49 | `WORTHY_COMPOUNDS` | grammar | credit worthy | This adjective is normally spelled as one word. | creditworthy | ...  \|  \| \| 0 marks \| <ul><li>Response not **credit worthy** / not attempted.</li></ul> \|  \|  \|  {50... |
@@ -1214,15 +1086,11 @@ Found 118 issue(s).
 | gcse-drama---unit-3-interpreting-theatre.md | 58 | `COMMA_COMPOUND_SENTENCE` | uncategorized |  or | Use a comma before ‘or’ if it connects two independent clauses (unless they are closely connected and short). | , or | ... could be part of the set e.g. a trapeze** or** they may decide to use personal props e... |
 | gcse-drama---unit-3-interpreting-theatre.md | 60 | `WORTHY_COMPOUNDS` | grammar | credit worthy | This adjective is normally spelled as one word. | creditworthy | .../ul> \| \| 0 marks \| <ul><li>Response not **credit worthy** / not attempted.</li></ul> \|  {61}-----... |
 | gcse-drama---unit-3-interpreting-theatre.md | 62 | `VERB_APOSTROPHE_S` | misspelling | show's | Do not use ’s with a verb. | shows | ...Choose one line from the extract, which **show's** JESSE'S motivation. \| 1 \|  \|  \| 1 \| \|  ... |
-| gcse-drama---unit-3-interpreting-theatre.md | 62 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Alaw | Possible spelling mistake found. | Law, Alan, Laugh (+11 more) | ...*   - **"**What's wrong with your arms, **Alaw**?" - "Right, come on, from the shuffle, ... |
 | gcse-drama---unit-3-interpreting-theatre.md | 62 | `EN_UNPAIRED_QUOTES` | typographical | " | Unpaired symbol: ‘"’ seems to be missing | — | ... **"**What's wrong with your arms, Alaw?**"** - "Right, come on, from the shuffle, sh... |
 | gcse-drama---unit-3-interpreting-theatre.md | 62 | `OK` | locale-violation | ok | Lower-case ‘ok’ is American English. For British English use “OK”. | OK | ...from the shuffle, shuffle, twist, twerk **ok**?" - "What did you win?" - "Absolutely n... |
 | gcse-drama---unit-3-interpreting-theatre.md | 63 | `MORFOLOGIK_RULE_EN_GB` | misspelling | choregraphed | Possible spelling mistake found. | choreographed, chore graphed | ...se could be moving her arms around in a **choregraphed** dance with her facial expression showin... |
-| gcse-drama---unit-3-interpreting-theatre.md | 63 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Alaw | Possible spelling mistake found. | Law, Alan, Laugh (+11 more) | ...rating. - She could stand very close to **Alaw** with an exasperated facial expression. ... |
 | gcse-drama---unit-3-interpreting-theatre.md | 63 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Gonc | Possible spelling mistake found. | Gone, Gong, GNC | ...l expression. - She could march over to **Gonc** with an annoyed facial expression.  {64... |
 | gcse-drama---unit-3-interpreting-theatre.md | 64 | `COMMA_COMPOUND_SENTENCE_2` | uncategorized |  so | Use a comma before ‘so’ if it connects two independent clauses (unless they are closely connected and short). | , so | ...se thinks she is one of the best dancers** so** her movement would show a perfectly cho... |
-| gcse-drama---unit-3-interpreting-theatre.md | 64 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Alaw | Possible spelling mistake found. | Law, Alan, Laugh (+11 more) | ...et it right. - She is standing close to **Alaw** to help her get the dance routine corre... |
-| gcse-drama---unit-3-interpreting-theatre.md | 64 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Alaw | Possible spelling mistake found. | Law, Alan, Laugh (+11 more) | ... correct; she would look exasperated as **Alaw** can't seem to get the moves correct. - ... |
 | gcse-drama---unit-3-interpreting-theatre.md | 64 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Gonc | Possible spelling mistake found. | Gone, Gong, GNC | ...the conversation. - She marches over to **Gonc** to stand up to him because she is annoy... |
 | gcse-drama---unit-3-interpreting-theatre.md | 65 | `MORFOLOGIK_RULE_EN_GB` | misspelling | MABLI | Possible spelling mistake found. | MALI, MABLE | ...\| (b) \| (i) \| Describe the character of **MABLI** in the extract. \| 4 \|  \|  \| 4 \|  \|  # *... |
 | gcse-drama---unit-3-interpreting-theatre.md | 65 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Mabli | Possible spelling mistake found. | Mali, Mable | ...o 4 marks for a detailed description of **Mabli**'s character. The description should dis... |
@@ -1961,7 +1829,7 @@ Found 26 issue(s).
 
 ### Food-and-Nutrition / gcse-food-and-nutrition---guidance-for-teaching-unit-2.md
 
-Found 21 issue(s).
+Found 20 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -1975,7 +1843,6 @@ Found 21 issue(s).
 | gcse-food-and-nutrition---guidance-for-teaching-unit-2.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | - gelation | Possible spelling mistake found. | -g elation, - relation, - gelatin (+3 more) | ... and mechanical action - foam formation **- gelation** - gluten formation - Maillard reaction ... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-2.md | 8 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ph | Possible spelling mistake found. | pH, PH, Ph (+100 more) | ...erminology by explaining terms, such as **ph**. and acidity and how the chemical prope... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-2.md | 11 | `ADVISE_VBG` | grammar | guiding | The verb ‘help’ is used with an infinitive. | to guide, guide | ...tanding the type of variables will help **guiding** through the process: independent, depen... |
-| gcse-food-and-nutrition---guidance-for-teaching-unit-2.md | 11 | `MORFOLOGIK_RULE_EN_GB` | misspelling | int | Possible spelling mistake found. | INT, in, it (+1503 more) | ...ould happen to the batter if it was put **int** the oven instead of fried? Explore pair... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-2.md | 13 | `KEY_WORDS` | misspelling | key words | Did you mean “keywords”? | keywords | ...Learners create their own word banks of **key words** to use in task.  Demonstrate sensory te... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-2.md | 14 | `HAND_COMPOUNDS` | grammar | hand washing | This word is normally spelled as one. | handwashing | ... Key discussion topics include: <ul><li>**hand washing**</li><li>cleanliness</li><li>danger zone... |
 | gcse-food-and-nutrition---guidance-for-teaching-unit-2.md | 19 | `EN_COMPOUNDS_COST_EFFECTIVE` | misspelling | cost effective | This word is normally spelled with a hyphen. | cost-effective | ...ormed choices. Encourage Learners to be **cost effective**, by buying in season goods and use loca... |
@@ -2816,7 +2683,7 @@ _No issues found._
 
 ### Geography / cylchlythyr-ionawr-2025.md
 
-Found 20 issue(s).
+Found 19 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -2835,7 +2702,6 @@ Found 20 issue(s).
 | cylchlythyr-ionawr-2025.md | 1 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Hina | Possible spelling mistake found. | China, Hind, Nina (+14 more) | ...Lead at Southend High School for Girls. **Hina** is also President of the Geographical A... |
 | cylchlythyr-ionawr-2025.md | 1 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Hina | Possible spelling mistake found. | China, Hind, Nina (+14 more) | ... background material within the course. **Hina** is writing us a new document to cover t... |
 | cylchlythyr-ionawr-2025.md | 2 | `MORFOLOGIK_RULE_EN_GB` | misspelling | href | Possible spelling mistake found. | ref, pref, HEF (+1 more) | ...visit the Digital Resources website (<a **href**="https://resources.wjec.co.uk/">https:/... |
-| cylchlythyr-ionawr-2025.md | 2 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Ysgol | Possible spelling mistake found. | ALGOL, STOL, Gogol (+10 more) | ..., who was recently Head of Geography at **Ysgol** Friars in Bangor) has been working on t... |
 | cylchlythyr-ionawr-2025.md | 2 | `MISSING_COMMA_AFTER_INTRODUCTORY_PHRASE` | uncategorized | 2024 | A comma is probably missing here. | 2024, | ...derstanding of the subject content.  In **2024** we had, for the first time in a long ti... |
 | cylchlythyr-ionawr-2025.md | 2 | `MORFOLOGIK_RULE_EN_GB` | misspelling | href | Possible spelling mistake found. | ref, pref, HEF (+1 more) | ...n be found on our Appointees page at <a **href**="https://appointees.wjec.co.uk">https:/... |
 | cylchlythyr-ionawr-2025.md | 3 | `MORFOLOGIK_RULE_EN_GB` | misspelling | CYNEFIN | Possible spelling mistake found. | BENEFIT, CONTAIN, COFFIN (+27 more) | ...----  ![](_page_3_Picture_0.jpeg)  #### **CYNEFIN** MAGAZINE  We have three back issues of ... |
@@ -2843,7 +2709,7 @@ Found 20 issue(s).
 
 ### Geography / fieldwork-opportunities-at-gwersyll-yr-urdd-pentre-ifan.md
 
-Found 19 issue(s).
+Found 17 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -2852,7 +2718,6 @@ Found 19 issue(s).
 | fieldwork-opportunities-at-gwersyll-yr-urdd-pentre-ifan.md | 0 | `MORFOLOGIK_RULE_EN_GB` | misspelling | PENTRE | Possible spelling mistake found. | CENTRE, PEN TRE, PENT RE | ...raphy comes alive!  Gwersyll yr Urdo  # **PENTRE** IFAN  ![](_page_0_Picture_3.jpeg)  Come... |
 | fieldwork-opportunities-at-gwersyll-yr-urdd-pentre-ifan.md | 0 | `MORFOLOGIK_RULE_EN_GB` | misspelling | IFAN | Possible spelling mistake found. | FAN, IRAN, IVAN (+8 more) | ...omes alive!  Gwersyll yr Urdo  # PENTRE **IFAN**  ![](_page_0_Picture_3.jpeg)  Come and ... |
 | fieldwork-opportunities-at-gwersyll-yr-urdd-pentre-ifan.md | 0 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Gwersyll | Possible spelling mistake found. | Oversell | ...h Pembrokeshire with our expert team at **Gwersyll** yr Urdd Pentre Ifan!  24 to 48-hour pac... |
-| fieldwork-opportunities-at-gwersyll-yr-urdd-pentre-ifan.md | 0 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Pentre | Possible spelling mistake found. | Centre | ...ith our expert team at Gwersyll yr Urdd **Pentre** Ifan!  24 to 48-hour packages available... |
 | fieldwork-opportunities-at-gwersyll-yr-urdd-pentre-ifan.md | 0 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Ifan | Possible spelling mistake found. | Fan, Iran, Ivan (+10 more) | ... expert team at Gwersyll yr Urdd Pentre **Ifan**!  24 to 48-hour packages available from... |
 | fieldwork-opportunities-at-gwersyll-yr-urdd-pentre-ifan.md | 0 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Trefdraeth | Possible spelling mistake found. | — | ...d Transects   Explore the sand dunes of **Trefdraeth**: vegetation, gradient, soil pH, and hum... |
 | fieldwork-opportunities-at-gwersyll-yr-urdd-pentre-ifan.md | 0 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Oualitative | Possible spelling mistake found. | Qualitative | ...ark's 'Changing Coast' archive.  #### ****Oualitative** Surveys**  - Assess the impact of honey... |
@@ -2863,7 +2728,6 @@ Found 19 issue(s).
 | fieldwork-opportunities-at-gwersyll-yr-urdd-pentre-ifan.md | 0 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Preseli | Possible spelling mistake found. | Presell | ...e ecosystems: Tŷ Canol woodland vs. the **Preseli** Mountains. - Use OS maps to sketch and ... |
 | fieldwork-opportunities-at-gwersyll-yr-urdd-pentre-ifan.md | 0 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Coasteering | Possible spelling mistake found. | Considering, Steering, Catering (+25 more) | ...xperiences with a Geographical Focus  - **Coasteering** or stand-up paddleboarding (SUP) with a... |
 | fieldwork-opportunities-at-gwersyll-yr-urdd-pentre-ifan.md | 0 | `MORFOLOGIK_RULE_EN_GB` | misspelling | paddleboarding | Possible spelling mistake found. | paddle boarding | ...phical Focus  - Coasteering or stand-up **paddleboarding** (SUP) with a focus on coastal processes... |
-| fieldwork-opportunities-at-gwersyll-yr-urdd-pentre-ifan.md | 0 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Pentre | Possible spelling mistake found. | Centre | ...lling around the fire.  #### Why choose **Pentre** Ifan?  - Passionate and experienced tea... |
 | fieldwork-opportunities-at-gwersyll-yr-urdd-pentre-ifan.md | 0 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Ifan | Possible spelling mistake found. | Fan, Iran, Ivan (+10 more) | ...round the fire.  #### Why choose Pentre **Ifan**?  - Passionate and experienced team. - ... |
 | fieldwork-opportunities-at-gwersyll-yr-urdd-pentre-ifan.md | 0 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Preseli | Possible spelling mistake found. | Presell | ...eam. - Stunning natural backdrop in the **Preseli** Hills. - A safe, enjoyable, and educati... |
 
@@ -2906,7 +2770,7 @@ Found 4 issue(s).
 
 ### Geography / gcse-geography---guidance-for-teaching-unit-1.md
 
-Found 124 issue(s).
+Found 123 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -2939,7 +2803,6 @@ Found 124 issue(s).
 | gcse-geography---guidance-for-teaching-unit-1.md | 19 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Rheidol | Possible spelling mistake found. | Reid, Idol, Heidi (+34 more) | ...g 33 flats in the flooding zone at Afon **Rheidol** , as part of the redevelopment of Abery... |
 | gcse-geography---guidance-for-teaching-unit-1.md | 19 | `EN_COMPOUNDS_SOCIO_ECONOMIC` | misspelling | socio -economic | This word is normally spelled with a hyphen. | socio-economic | ... ground . - Tourism: Although there are **socio -economic** positives attached with tourism, there ... |
 | gcse-geography---guidance-for-teaching-unit-1.md | 20 | `MORFOLOGIK_RULE_EN_GB` | misspelling | bankfull | Possible spelling mistake found. | — | ...r's discharge increases and exceeds the **bankfull** capacity, and the river bursts its bank... |
-| gcse-geography---guidance-for-teaching-unit-1.md | 21 | `MORFOLOGIK_RULE_EN_GB` | misspelling | cleanup | Possible spelling mistake found. | clean-up, clean up | ...inancial costs) such as the cost of the **cleanup** and recovery - environmental (affecting... |
 | gcse-geography---guidance-for-teaching-unit-1.md | 22 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Hafren | Possible spelling mistake found. | Happen, Karen, Haired (+29 more) | ...ent strategies on Welsh rivers: Severn (**Hafren**), Ystwyth and Rheidol: <u>Hard engineer... |
 | gcse-geography---guidance-for-teaching-unit-1.md | 22 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Ystwyth | Possible spelling mistake found. | Swath, Strath, Askwith (+4 more) | ...egies on Welsh rivers: Severn (Hafren), **Ystwyth** and Rheidol: <u>Hard engineering approa... |
 | gcse-geography---guidance-for-teaching-unit-1.md | 22 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Rheidol | Possible spelling mistake found. | Reid, Idol, Heidi (+34 more) | ...sh rivers: Severn (Hafren), Ystwyth and **Rheidol**: <u>Hard engineering approaches to rive... |
@@ -3080,7 +2943,7 @@ Found 36 issue(s).
 
 ### Geography / gcse-geography---guidance-for-teaching-unit-3.md
 
-Found 99 issue(s).
+Found 98 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -3095,7 +2958,6 @@ Found 99 issue(s).
 | gcse-geography---guidance-for-teaching-unit-3.md | 11 | `MORFOLOGIK_RULE_EN_GB` | misspelling | LICs | Possible spelling mistake found. | LIC's, LIC, Lies (+24 more) | ...s (HICs) and least developed countries (**LICs**). HICs typically have a higher GDP per ... |
 | gcse-geography---guidance-for-teaching-unit-3.md | 11 | `MORFOLOGIK_RULE_EN_GB` | misspelling | HICs | Possible spelling mistake found. | His, Hits, Hips (+17 more) | ...) and least developed countries (LICs). **HICs** typically have a higher GDP per capita,... |
 | gcse-geography---guidance-for-teaching-unit-3.md | 11 | `MORFOLOGIK_RULE_EN_GB` | misspelling | LICss | Possible spelling mistake found. | Licks, Liss, LIC ss | ...s of education and health care, whereas **LICss** may struggle with poverty, limited acce... |
-| gcse-geography---guidance-for-teaching-unit-3.md | 13 | `MORFOLOGIK_RULE_EN_GB` | misspelling | fairtrade | Possible spelling mistake found. | Fairtrade, fair-trade, fair trade (+2 more) | ...pment gap through a combination of aid, **fairtrade** initiatives, engagement with MNCs and p... |
 | gcse-geography---guidance-for-teaching-unit-3.md | 13 | `MORFOLOGIK_RULE_EN_GB` | misspelling | DFID | Possible spelling mistake found. | DID, RFID, DFI (+4 more) | ...partment for International Development (**DFID**), focusing on education and health init... |
 | gcse-geography---guidance-for-teaching-unit-3.md | 13 | `EN_WORD_COHERENCY` | uncategorized | Organisations | Do not mix variants of the same word (‘organisation’ and ‘organization’) within a single text. | Organizations | ...e access to markets. - Non-Governmental **Organisations** (NGOs) that work in countries to develo... |
 | gcse-geography---guidance-for-teaching-unit-3.md | 13 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Hiwot | Possible spelling mistake found. | Hit, Hot, Pilot (+27 more) | ... over a longer timescale. For examples, **Hiwot** Ethiopia [\(https://hiwotet.org/\)](htt... |
@@ -5165,7 +5027,7 @@ _No issues found._
 
 ### Mathematics-and-Numeracy / gcse-mathematics-and-numeracy---unit-1-financial-mathematics-and-other-applications-of-numeracy-foundation-tier.md
 
-Found 41 issue(s).
+Found 40 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -5183,7 +5045,6 @@ Found 41 issue(s).
 | gcse-mathematics-and-numeracy---unit-1-financial-mathematics-and-other-applications-of-numeracy-foundation-tier.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Ceri | Possible spelling mistake found. | CERN, Teri, Cert (+12 more) | ...ave a caravan and stayed for 6 nights.  **Ceri**'s parents have a motorhome and only sta... |
 | gcse-mathematics-and-numeracy---unit-1-financial-mathematics-and-other-applications-of-numeracy-foundation-tier.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Ceri | Possible spelling mistake found. | CERN, Teri, Cert (+12 more) | ...otorhome and only stayed for 3 nights.  **Ceri** stayed in a tent.  \| The total fee for ... |
 | gcse-mathematics-and-numeracy---unit-1-financial-mathematics-and-other-applications-of-numeracy-foundation-tier.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Ceri | Possible spelling mistake found. | CERN, Teri, Cert (+12 more) | ...3 pitches was £434. How many nights did **Ceri** stay for? \| [5] \| \|--------------------... |
-| gcse-mathematics-and-numeracy---unit-1-financial-mathematics-and-other-applications-of-numeracy-foundation-tier.md | 15 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Ysgol | Possible spelling mistake found. | ALGOL, STOL, Gogol (+10 more) | ...e Physical Education (PE) department in **Ysgol** Ddwysaint wants to test the following h... |
 | gcse-mathematics-and-numeracy---unit-1-financial-mathematics-and-other-applications-of-numeracy-foundation-tier.md | 15 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Ddwysaint | Possible spelling mistake found. | — | ...ical Education (PE) department in Ysgol **Ddwysaint** wants to test the following hypothesis:... |
 | gcse-mathematics-and-numeracy---unit-1-financial-mathematics-and-other-applications-of-numeracy-foundation-tier.md | 17 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Nerys | Possible spelling mistake found. | Nerds, Cerys | ...-------------------------------  **9.** **Nerys** travelled by bike along a straight road... |
 | gcse-mathematics-and-numeracy---unit-1-financial-mathematics-and-other-applications-of-numeracy-foundation-tier.md | 17 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Nerys | Possible spelling mistake found. | Nerds, Cerys | ...er friend. The travel graph below shows **Nerys**'s journey. On the way to her friend's h... |
@@ -5356,7 +5217,7 @@ Found 136 issue(s).
 
 ### Mathematics-and-Numeracy / gcse-mathematics-and-numeracy---unit-2-non-calculator-foundation-tier.md
 
-Found 74 issue(s).
+Found 73 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -5391,7 +5252,6 @@ Found 74 issue(s).
 | gcse-mathematics-and-numeracy---unit-2-non-calculator-foundation-tier.md | 17 | `THE_SUPERLATIVE` | grammar | least | A determiner may be missing. | the least | ...ture_7.jpeg)  Delyth wants to buy the ****least** possible number of boxes** so that, in ... |
 | gcse-mathematics-and-numeracy---unit-2-non-calculator-foundation-tier.md | 17 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Delyth | Possible spelling mistake found. | Death, Depth, Delta (+7 more) | ...w the number of boxes of each item that **Delyth** \| \|---------------\|--------------------... |
 | gcse-mathematics-and-numeracy---unit-2-non-calculator-foundation-tier.md | 18 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Gwenda | Possible spelling mistake found. | Glenda | ...lder daughter, is (*x* – 23) years old. **Gwenda**, his younger daughter is 5 years younge... |
-| gcse-mathematics-and-numeracy---unit-2-non-calculator-foundation-tier.md | 22 | `MORFOLOGIK_RULE_EN_GB` | misspelling | SAMS | Possible spelling mistake found. | SAME, SAYS, SAM (+42 more) | ...cs and Numeracy Unit 2: Foundation Tier **SAMS** \| Mark \| Comments \| \|------------------... |
 | gcse-mathematics-and-numeracy---unit-2-non-calculator-foundation-tier.md | 22 | `NOW` | misspelling | No | Did you mean “now” (at this moment) instead of ‘no’ (negation)? Or possibly even ‘not’? | Now, Not | ...                              \| \| 5.(b) **No** indicated with suitable reason e.g. 'th... |
 | gcse-mathematics-and-numeracy---unit-2-non-calculator-foundation-tier.md | 23 | `MORFOLOGIK_RULE_EN_GB` | misspelling | CAO | Possible spelling mistake found. | CAN, CAR, CAP (+74 more) | ...g)                              \| A1  \| **CAO**                                        ... |
 | gcse-mathematics-and-numeracy---unit-2-non-calculator-foundation-tier.md | 24 | `MORFOLOGIK_RULE_EN_GB` | misspelling | guadrent | Possible spelling mistake found. | gradient, quadrant, guardant | ...       \| B2             \| R1 for either **guadrent** correct                                ... |
@@ -5718,7 +5578,7 @@ Found 89 issue(s).
 
 ### Mathematics-and-Numeracy / gcse-mathematics-and-numeracy---unit-3-calculator-allowed-higher-tier.md
 
-Found 144 issue(s).
+Found 143 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -5776,7 +5636,6 @@ Found 144 issue(s).
 | gcse-mathematics-and-numeracy---unit-3-calculator-allowed-higher-tier.md | 25 | `CURRENCY` | locale-violation | 3$ | The currency mark is usually put at the beginning of the number. | $3 | ...of the smaller glass is  $72\,\text{cm}^**3$** . The volume of the larger glass is  $2... |
 | gcse-mathematics-and-numeracy---unit-3-calculator-allowed-higher-tier.md | 25 | `CURRENCY` | locale-violation | 3$ | The currency mark is usually put at the beginning of the number. | $3 | ...of the larger glass is  $243\,\text{cm}^**3$** .  The height of the larger glass is 18... |
 | gcse-mathematics-and-numeracy---unit-3-calculator-allowed-higher-tier.md | 28 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Ceri | Possible spelling mistake found. | CERN, Teri, Cert (+12 more) | ...sbon from Paris is 220º.  The daughter, **Ceri**, is concerned of the increased carbon e... |
-| gcse-mathematics-and-numeracy---unit-3-calculator-allowed-higher-tier.md | 31 | `MORFOLOGIK_RULE_EN_GB` | misspelling | SAMS | Possible spelling mistake found. | SAME, SAYS, SAM (+42 more) | ...ematics and Numeracy Unit 3 Higher Tier **SAMS** \| Mark \| Comments \| \|------------------... |
 | gcse-mathematics-and-numeracy---unit-3-calculator-allowed-higher-tier.md | 31 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ISW | Possible spelling mistake found. | IS, NSW, ISP (+31 more) | ...erimeter = ) 10x – 12 or 2(5x – 6) (cm) **ISW** \| B2 \| Award B1 for sight of one of the... |
 | gcse-mathematics-and-numeracy---unit-3-calculator-allowed-higher-tier.md | 31 | `ENGLISH_WORD_REPEAT_RULE` | duplication | B1 B1 | Possible typo: you repeated a word. | B1 | ... error. \| \| 10x = 60 or 5x = 30 x = 6 \| **B1 B1** \| Mark final answer. FT from 10x or 5x ... |
 | gcse-mathematics-and-numeracy---unit-3-calculator-allowed-higher-tier.md | 31 | `ENGLISH_WORD_REPEAT_RULE` | duplication | B0 B0 | Possible typo: you repeated a word. | B0 | ... = k Unsupported correct answer implies **B0 B0** B1. Award B1B1B0 for a final answer of ... |
@@ -6024,7 +5883,7 @@ Found 11 issue(s).
 
 ### Music / gcse-music---guidance-for-teaching.md
 
-Found 32 issue(s).
+Found 31 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -6039,7 +5898,6 @@ Found 32 issue(s).
 | gcse-music---guidance-for-teaching.md | 15 | `MORFOLOGIK_RULE_EN_GB` | misspelling | crossfaders | Possible spelling mistake found. | cross faders | ...thm (effective transitioning and use of **crossfaders**). - Interaction with an audience. - Abi... |
 | gcse-music---guidance-for-teaching.md | 16 | `MORFOLOGIK_RULE_EN_GB` | misspelling | flams | Possible spelling mistake found. | flags, flame, flames (+10 more) | ...ng control of rhythmic techniques (i.e. **flams**, triplets, rests, rhyming patterns/runs... |
 | gcse-music---guidance-for-teaching.md | 17 | `COMMA_COMPOUND_SENTENCE_2` | uncategorized |  but | Use a comma before ‘but’ if it connects two independent clauses (unless they are closely connected and short). | , but | ...penalties for submissions over 6 minutes** but** submissions over this length are often ... |
-| gcse-music---guidance-for-teaching.md | 17 | `MORFOLOGIK_RULE_EN_GB` | misspelling | SAMS | Possible spelling mistake found. | SAME, SAYS, SAM (+42 more) | ...ot covered by the tables in Appendix A (**SAMS**).  *Note: Centres should be aware that ... |
 | gcse-music---guidance-for-teaching.md | 17 | `ALL_OF_THE` | style | all of the | Consider removing “of” to be more concise | all the | ...recordings and copies of the scores for **all of the** music that has been performed by the sa... |
 | gcse-music---guidance-for-teaching.md | 18 | `MORFOLOGIK_RULE_EN_GB` | misspelling | DJ-ing | Possible spelling mistake found. | DJing | ...mances, vocal performances, sequencing, **DJ-ing**, rapping, beat boxing and improvisation... |
 | gcse-music---guidance-for-teaching.md | 18 | `EN_COMPOUNDS_BEAT_BOXING` | misspelling | beat boxing | This word is normally spelled as one. | beatboxing | ...formances, sequencing, DJ-ing, rapping, **beat boxing** and improvisation are accepted within b... |
@@ -6146,14 +6004,13 @@ Found 23 issue(s).
 
 ### Music / gcse-music-unit-1-nea-assessment-handbook.md
 
-Found 22 issue(s).
+Found 21 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | gcse-music-unit-1-nea-assessment-handbook.md | 4 | `MORFOLOGIK_RULE_EN_GB` | misspelling | leadsheet | Possible spelling mistake found. | lead sheet | ...or every piece you must have a score or **leadsheet** which shows the details of what you wil... |
 | gcse-music-unit-1-nea-assessment-handbook.md | 6 | `MISSING_HYPHEN` | uncategorized | one minute | When a number forms part of an adjectival compound, use a hyphen. | one-minute | ... piece which is significantly below the **one minute** minimum performance duration will be un... |
 | gcse-music-unit-1-nea-assessment-handbook.md | 8 | `COMMA_COMPOUND_SENTENCE` | uncategorized |  and | Use a comma before ‘and’ if it connects two independent clauses (unless they are closely connected and short). | , and | ...tifying individual levels of achievement** and** they do not correlate with grade bounda... |
-| gcse-music-unit-1-nea-assessment-handbook.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | ie | Possible spelling mistake found. | i.e., IE, in (+115 more) | ... based - all "traditional" performance (**ie** non-technology based) - some technology... |
 | gcse-music-unit-1-nea-assessment-handbook.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Technologybased | Possible spelling mistake found. | Technology based | ...nology-based performance for this unit. **Technologybased** performances include:  - DJ-ing - 'push... |
 | gcse-music-unit-1-nea-assessment-handbook.md | 9 | `MORFOLOGIK_RULE_EN_GB` | misspelling | DJ-ing | Possible spelling mistake found. | DJing | ...echnologybased performances include:  - **DJ-ing** - 'push-units' - sequencing - use of lo... |
 | gcse-music-unit-1-nea-assessment-handbook.md | 10 | `EN_COMPOUNDS_BEAT_BOX` | misspelling | beat-box | This word is normally spelled as one. | beatbox | ...nd chords on a lead sheet (for example, **beat-box**, DJ, or rap), centres must provide appr... |

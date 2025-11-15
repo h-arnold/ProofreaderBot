@@ -151,6 +151,7 @@ Notes:
 
   - Work sequentially: do not parallelise review or script runs—this preserves context and avoids accidental double-applications.
   - Be conservative: false positives hurt less than false inclusions—prefer rejecting/flagging uncertain tokens.
-  - Only pause for the user to confirm the spellings categorisations. Otherwise, keep working.
+  - Only pause for the user to confirm the spellings categorisations. Continue working until you reach the end of the file.
+  - Combined words **are** spelling mistakes **unless** idiomatic for the field.
 
 Please begin the process outlined above.

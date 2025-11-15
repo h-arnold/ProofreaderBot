@@ -764,6 +764,8 @@ DEFAULT_IGNORED_WORDS = {
     "jpeg",
     "svg",
     "PBPS",
+    "VLEs",
+    "WAPs",
 
     # --- Computer Science (Proper Noun) ---
     "Fitzalan",
@@ -776,6 +778,7 @@ DEFAULT_IGNORED_WORDS = {
     "Parc",
     "Glyncoed",
     "Pentre",
+    "Parkwood",
 
     # --- Computer Science (Technical Term) ---
     "tkinter",
@@ -825,6 +828,7 @@ DEFAULT_IGNORED_WORDS = {
     "cleanup",
     "defragmenter",
     "addProc",
+    "keylogging",
 
     # --- Computer Science (Other) ---
     "Centres",
@@ -943,6 +947,14 @@ DEFAULT_IGNORED_WORDS = {
     "Anthropometrics",
     "toiles",
     "Vee",
+    "overlocker",
+    "Beadwork",
+    "overlocked",
+    "rever",
+    "prêt-à-porter",
+    "nitinol",
+    "bluetooth",
+    "counterbored",
 
     # --- Design and Technology (Proper Noun) ---
     "Kitronik",
@@ -973,6 +985,8 @@ DEFAULT_IGNORED_WORDS = {
     "Alessi",
     "Kevlar",
     "Gore-tex",
+    "Tactel",
+    "Scotchguard",
 
     # --- Business (Initialism/Acronym) ---
     "GfT",
