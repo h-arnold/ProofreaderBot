@@ -9,15 +9,7 @@ from .converters import (
     MarkerConverter,
     create_converter,
 )
-from src.llm.gemini_llm import GeminiLLM
-from src.llm.provider import (
-    LLMProvider,
-    LLMProviderConfigurationError,
-    LLMProviderError,
-    LLMQuotaError,
-)
-from src.llm.provider_registry import create_provider_chain
-from src.llm.service import LLMService
+# LLM providers live under `src.llm` now — import directly from there when needed.
 
 __all__ = [
     "ConversionResult",
@@ -25,11 +17,5 @@ __all__ = [
     "MarkItDownConverter",
     "MarkerConverter",
     "create_converter",
-    "GeminiLLM",
-    "LLMProvider",
-    "LLMProviderConfigurationError",
-    "LLMProviderError",
-    "LLMQuotaError",
-    "LLMService",
-    "create_provider_chain",
+    # LLM specific exports were removed. Import via `src.llm` instead.
 ]
