@@ -50,6 +50,8 @@ class CategoriserRunner:
         self.batch_size = batch_size
         self.max_retries = max_retries
         self.min_request_interval = min_request_interval
+        # Initialize to 0.0 so that the first API call is not rate-limited.
+        # This ensures the first request does not sleep; subsequent requests will enforce the interval.
         self._last_request_time = 0.0
     
     def run(
