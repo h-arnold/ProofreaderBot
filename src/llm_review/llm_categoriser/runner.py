@@ -191,7 +191,7 @@ class CategoriserRunner:
                 if page_key in all_results:
                     # Avoid adding duplicate issues by issue_id
                     existing_ids = {issue["issue_id"] for issue in all_results[page_key]}
-                    new_issues = [issue for issue in page_issues if issue.issue_id not in existing_ids]
+                    new_issues = [issue for issue in page_issues if issue.get("issue_id") not in existing_ids]
                     all_results[page_key].extend(new_issues)
                 else:
                     all_results[page_key] = list(page_issues)
