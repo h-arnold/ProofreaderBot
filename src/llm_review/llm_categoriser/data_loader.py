@@ -51,13 +51,16 @@ def load_issues(
     
     for subject, issue in raw_issues_with_subjects:
         # Apply filters
-        if subjects is not None:
-            if subject.lower() not in {s.lower() for s in subjects}:
-                continue
+    subjects_lower = {s.lower() for s in subjects} if subjects is not None else None
+    documents_lower = {d.lower() for d in documents} if documents is not None else None
+
+    for subject, issue in raw_issues_with_subjects:
+        # Apply filters
+        if subjects_lower is not None and subject.lower() not in subjects_lower:
+            continue
         
-        if documents is not None:
-            if issue.filename.lower() not in {d.lower() for d in documents}:
-                continue
+        if documents_lower is not None and issue.filename.lower() not in documents_lower:
+            continue
         
         # Create DocumentKey
         key = DocumentKey(subject=subject, filename=issue.filename)
