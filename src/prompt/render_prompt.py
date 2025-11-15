@@ -55,13 +55,19 @@ def _strip_code_fences(s: str) -> str:
 
 def render_template(template_name: str = "language_tool_categoriser.md", context: dict | None = None) -> str:
     template = _read_prompt(template_name)
-    # load required partials (currently only llm_reviewer_system_prompt.md)
-    partial_name = "llm_reviewer_system_prompt"
-    partial_filename = partial_name + ".md"
-    partial_content = _read_prompt(partial_filename)
-    partial_content = _strip_code_fences(partial_content)
+    
+    # Load required partials
+    partials = {}
+    
+    # Load llm_reviewer_system_prompt partial
+    partial_content = _read_prompt("llm_reviewer_system_prompt.md")
+    partials["llm_reviewer_system_prompt"] = _strip_code_fences(partial_content)
+    
+    # Load authoritative_sources partial
+    partial_content = _read_prompt("authoritative_sources.md")
+    partials["authoritative_sources"] = _strip_code_fences(partial_content)
 
-    renderer = pystache.Renderer(partials={partial_name: partial_content})
+    renderer = pystache.Renderer(partials=partials)
     return renderer.render(template, context or {})
 
 

@@ -30,6 +30,37 @@ def _format_suggestions(replacements: list[str] | None, max_suggestions: int = 3
     return f"{visible} (+{remaining} more)"
 
 
+def build_issue_batch_table(issues: list["LanguageIssue"]) -> str:
+    """Build a simplified Markdown table for LLM categoriser prompts.
+    
+    Returns a 4-column table: issue_id, page_number, issue, highlighted_context.
+    This is a reduced version of the full CSV report, designed for token efficiency.
+    
+    Args:
+        issues: List of LanguageIssue objects to include in the table
+        
+    Returns:
+        A Markdown table as a string
+    """
+    if not issues:
+        return ""
+    
+    lines = [
+        "| issue_id | page_number | issue | highlighted_context |",
+        "| --- | --- | --- | --- |",
+    ]
+    
+    for issue in issues:
+        issue_id_str = str(issue.issue_id) if issue.issue_id >= 0 else "—"
+        page_num = str(issue.page_number) if issue.page_number is not None else "—"
+        issue_text = (issue.issue or "—").replace("|", "\\|")
+        context = (issue.highlighted_context or "—").replace("|", "\\|")
+        
+        lines.append(f"| {issue_id_str} | {page_num} | {issue_text} | {context} |")
+    
+    return "\n".join(lines)
+
+
 def build_report_markdown(reports: Iterable["DocumentReport"]) -> str:
     """Convert the collected document reports into Markdown output."""
 
@@ -115,7 +146,7 @@ def build_report_csv(reports: Iterable["DocumentReport"]) -> list[list[str]]:
         "Issue",
         "Message",
         "Suggestions",
-        "Context",
+        "Highlighted Context",
     ])
 
     report_list = sorted(
@@ -127,7 +158,8 @@ def build_report_csv(reports: Iterable["DocumentReport"]) -> list[list[str]]:
         for issue in report.issues:
             txt = _format_suggestions(issue.replacements)
             suggestions = "" if txt == "—" else txt
-            context = issue.context if issue.context else ""
+            # Use highlighted_context for the CSV column
+            context = issue.highlighted_context if issue.highlighted_context else ""
             page_num = str(issue.page_number) if issue.page_number is not None else ""
 
             rows.append([

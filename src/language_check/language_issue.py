@@ -24,3 +24,4 @@ class LanguageIssue:
     highlighted_context: str
     issue: str
     page_number: int | None = None
+    issue_id: int = -1  # Auto-incremented per document by categoriser; -1 = not set
