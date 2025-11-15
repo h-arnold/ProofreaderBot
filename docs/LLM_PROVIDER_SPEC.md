@@ -6,7 +6,7 @@ This document captures the requirements, interface contract, and orchestration p
 
 ## Context
 
-- The existing `GeminiLLM` wrapper in `src/converters/llm/gemini_llm.py` handles system prompts, dotenv-based credentials, filtering JSON, and talking to Google GenAI.
+- The existing `GeminiLLM` wrapper in `src/llm/gemini_llm.py` handles system prompts, dotenv-based credentials, filtering JSON, and talking to Google GenAI.
 - Because the user is on the free tiers for both Gemini and Mistral, hitting request/token limits is expected. The runtime needs an orchestrator that can fall back from the primary provider to an alternate provider (or queue requests) without breaking the caller's experience.
 - Gemini and Mistral expose **different API flavors** (single-response vs. batch endpoints), so the interface must expose both live and batch flows in a single contract while letting each provider opt into the behaviors they support.
 
@@ -110,7 +110,7 @@ class LLMService:
 - Exposes `LLMProvider.name = "gemini"` and a `health_check` that verifies available API key.
 
 ### Mistral (future)
-- Lives under `src/converters/llm/mistral_llm.py` with the same `LLMProvider` interface.
+- Lives under `src/llm/mistral_llm.py` with the same `LLMProvider` interface.
 - Should provide both live/batch support: the free tier exposes a multi-request batch API, so batch support is a high priority.
 - Must implement the shared error hierarchy.
 

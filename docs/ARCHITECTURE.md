@@ -9,8 +9,8 @@ The tool downloads GCSE PDF documents from WJEC "Made for Wales" qualification p
 - Library API: `src.scraper` module (functions in `src/scraper/__init__.py`)
 - Post-processing: `src.postprocessing` module (functions in `src/postprocessing/__init__.py`)
 - Converters: `src.converters.converters` module (PDF to Markdown conversion)
-- Gemini helper: `src.converters.gemini_llm` module — wraps the Google GenAI client, reads system instructions from Markdown, and loads `.env` values (such as `GEMINI_API_KEY`)
-- LLM orchestration: `src/converters/llm/provider.py`, `src/converters/llm/service.py`, and `src/converters/llm/provider_registry.py` describe the shared `LLMProvider` contract, a quota-aware `LLMService` orchestrator, and a registry that builds the active provider list (defaulting to Gemini plus a placeholder Mistral) while honoring `LLM_PRIMARY`/`LLM_FALLBACK` hints; `tests/test_llm_service.py` verifies fallback, quota handling, and reporting behavior.
+- Gemini helper: `src/llm/gemini_llm.py` module — wraps the Google GenAI client, reads system instructions from Markdown, and loads `.env` values (such as `GEMINI_API_KEY`)
+- LLM orchestration: `src/llm/provider.py`, `src/llm/service.py`, and `src/llm/provider_registry.py` describe the shared `LLMProvider` contract, a quota-aware `LLMService` orchestrator, and a registry that builds the active provider list (defaulting to Gemini plus a placeholder Mistral) while honoring `LLM_PRIMARY`/`LLM_FALLBACK` hints; `tests/test_llm_service.py` verifies fallback, quota handling, and reporting behavior.
 - Page utilities: `src.utils.page_utils` module (page marker extraction and navigation)
 - Language check: `src.language_check.language_check` module (spelling and grammar checking) with report builders in `src.language_check.report_utils`
 

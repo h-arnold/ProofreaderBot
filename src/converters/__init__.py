@@ -9,15 +9,15 @@ from .converters import (
     MarkerConverter,
     create_converter,
 )
-from .llm.gemini_llm import GeminiLLM
-from .llm.provider import (
+from src.llm.gemini_llm import GeminiLLM
+from src.llm.provider import (
     LLMProvider,
     LLMProviderConfigurationError,
     LLMProviderError,
     LLMQuotaError,
 )
-from .llm.provider_registry import create_provider_chain
-from .llm.service import LLMService
+from src.llm.provider_registry import create_provider_chain
+from src.llm.service import LLMService
 
 __all__ = [
     "ConversionResult",

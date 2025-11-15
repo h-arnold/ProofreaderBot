@@ -18,12 +18,7 @@ Read this primer first, then consult the linked focus docs before changing code 
 
 - Language/runtime: Python >= 3.12 (see pyproject.toml)
 - Entry points: `main.py` (thin wrapper), actual CLI logic in `src/cli/__init__.py`
-- Core scraping: `src/scraper/__init__.py` (reusable API)
-- Post-processing: `src/postprocessing/__init__.py` (invoked via CLI `--post-process*` flags; uses MarkItDown or Marker)
-- Converters: `src/converters/converters.py` (PDF to Markdown conversion classes)
-- Gemini LLM: `src/converters/gemini_llm.py` (wraps Google GenAI client)
-- Page utilities: `src/utils/page_utils.py` (page marker extraction and navigation)
-- Language checking: `src/language_check/language_check.py` (spelling and grammar checks)
+ Gemini LLM: `src/llm/gemini_llm.py` (wraps Google GenAI client)
 - Default output: `Documents/` (created by the CLI unless `--dry-run`)
 
 ## Key contracts and invariants (do not break)

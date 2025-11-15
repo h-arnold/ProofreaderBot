@@ -10,13 +10,13 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from src.converters.llm.provider import (
+from src.llm.provider import (
     LLMProvider,
     LLMProviderError,
     LLMQuotaError,
     ProviderStatus,
 )
-from src.converters.llm.service import LLMService
+from src.llm.service import LLMService
 
 
 class _DummyProvider(LLMProvider):

@@ -219,7 +219,7 @@ The `GeminiLLM` helper in `gemini_llm.py` wraps the Google GenAI SDK so you can 
 Example:
 
 ```python
-from gemini_llm import GeminiLLM
+from src.llm.gemini_llm import GeminiLLM
 
 llm = GeminiLLM("prompts/system.md")
 response = llm.generate([
