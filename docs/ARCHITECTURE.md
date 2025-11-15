@@ -152,6 +152,81 @@ Functions for working with page markers in Markdown documents. Page markers foll
 - Positions before the first marker have no page number (return None).
 - Functions are defensive: invalid page numbers return empty string/None rather than raising.
 
+## Language Issue Model
+
+The `LanguageIssue` model (defined in `src/models/language_issue.py`) is a unified Pydantic model that serves two purposes:
+
+1. **LanguageTool Detection**: Stores detected issues from LanguageTool with core fields like `rule_id`, `message`, `issue_type`, `replacements`, `highlighted_context`, etc.
+
+2. **LLM Categorisation**: Extends detection data with optional LLM-assigned fields: `error_category`, `confidence_score`, and `reasoning`.
+
+### Core Fields (from LanguageTool)
+
+- `filename: str` - Document filename (required)
+- `rule_id: str` - Rule identifier from the tool (required)
+- `message: str` - Tool-provided explanatory message (required)
+- `issue_type: str` - Type from tool (e.g., "misspelling", "grammar") (required)
+- `replacements: List[str]` - List of suggested replacements (default: empty list)
+- `context: str` - Original context string (deprecated, for backward compatibility)
+- `highlighted_context: str` - Context with issue highlighted (e.g., "This is **wrong**") (required)
+- `issue: str` - The actual issue text extracted (required)
+- `page_number: int | None` - Optional page number in document
+- `issue_id: int` - Auto-incremented per document (-1 if not set, default: -1)
+
+### LLM Categorisation Fields (Optional)
+
+- `error_category: ErrorCategory | None` - LLM-assigned category (None if not categorised)
+- `confidence_score: int | None` - LLM confidence 0-100 (None if not categorised)
+- `reasoning: str | None` - LLM reasoning for categorisation (None if not categorised)
+
+### Usage Patterns
+
+**Direct Creation** (for LanguageTool detection):
+```python
+issue = LanguageIssue(
+    filename="test.md",
+    rule_id="GRAMMAR_RULE",
+    message="Subject-verb agreement",
+    issue_type="grammar",
+    replacements=["is"],
+    context="plain context",
+    highlighted_context="They **are** happy",
+    issue="are"
+)
+```
+
+**From LLM Response** (for categorisation workflow):
+```python
+# LLM returns fields with '_from_tool' suffix
+llm_data = {
+    "rule_from_tool": "GRAMMAR_RULE",
+    "type_from_tool": "grammar",
+    "message_from_tool": "Subject-verb agreement",
+    "suggestions_from_tool": ["is"],
+    "context_from_tool": "They are happy",
+    "error_category": "ABSOLUTE_GRAMMATICAL_ERROR",
+    "confidence_score": 90,
+    "reasoning": "Clear subject-verb agreement error"
+}
+issue = LanguageIssue.from_llm_response(llm_data, filename="test.md")
+```
+
+### Validation Rules
+
+- All core fields must be non-empty strings after normalisation (whitespace trimming)
+- If any LLM categorisation field is provided, all three (`error_category`, `confidence_score`, `reasoning`) must be provided
+- `confidence_score` must be between 0-100 (inclusive)
+- `error_category` must be a valid `ErrorCategory` enum value
+- The model uses Pydantic validators to normalize strings, handle lists, and enforce constraints
+
+### Migration Notes
+
+The unified model replaces the previous separate classes:
+- `LanguageIssue` (dataclass in `src/language_check/language_issue.py`) - now re-exports the unified model
+- `LlmLanguageIssue` (Pydantic model in `src/models/issue.py`) - replaced by unified model
+
+All existing code continues to work via backward-compatible imports, but the underlying implementation is now unified.
+
 ## Parsing rules and edge cases
 
 - Key-documents endpoint: Some subjects expose PDFs only via this endpoint; the scraper should attempt to fetch it and proceed if unavailable.
@@ -182,6 +257,13 @@ Functions for working with page markers in Markdown documents. Page markers foll
   - Keep progress prints (`Starting...` / `Finished...`) concise; they are relied upon when running with many subjects.
   - If changing the Markdown conversion strategy, ensure conversion exceptions are caught and recorded without halting other subjects.
 
+- Language Issue Model
+  - The `LanguageIssue` model in `src/models/language_issue.py` is the single source of truth for all language issues.
+  - Do not create parallel issue classes; extend the unified model if new fields are needed.
+  - When adding LLM-specific fields, ensure they remain optional so the model works for both detection and categorisation use cases.
+  - Use `LanguageIssue.from_llm_response()` to parse LLM responses with `_from_tool` suffix fields.
+  - Maintain backward compatibility via re-export in `src/language_check/language_issue.py`.
+
 ## When to update this document
 
 - You add/remove public functions in `src/scraper/__init__.py` or `src/utils/page_utils.py`.
@@ -190,3 +272,4 @@ Functions for working with page markers in Markdown documents. Page markers foll
 - You change link-discovery strategies or title selection rules.
 - You alter the post-processing pipeline (new steps, different outputs, CLI behavior changes).
 - You modify page marker format or page extraction logic.
+- You change the `LanguageIssue` model structure or add new fields.

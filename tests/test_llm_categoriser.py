@@ -260,26 +260,32 @@ def test_persistence_deduplicates_on_merge(tmp_path: Path) -> None:
     """Test that persistence deduplicates issues when merging."""
     key = DocumentKey(subject="Test", filename="test.md")
     
-    # Save first batch with some issues
+    # Save first batch with some issues (using unified model field names)
     results1 = {
         "page_1": [
             {
-                "rule_from_tool": "RULE1",
-                "type_from_tool": "error",
-                "message_from_tool": "Test",
-                "suggestions_from_tool": ["fix"],
-                "context_from_tool": "context1",
+                "filename": "test.md",
+                "rule_id": "RULE1",
+                "issue_type": "error",
+                "message": "Test",
+                "replacements": ["fix"],
+                "context": "context1",
+                "highlighted_context": "context1",
+                "issue": "context1",
                 "error_category": "SPELLING_ERROR",
                 "confidence_score": 90,
                 "reasoning": "Test reason"
             },
             {
-                "rule_from_tool": "RULE2",
-                "type_from_tool": "error",
-                "message_from_tool": "Test2",
-                "suggestions_from_tool": ["fix2"],
-                "context_from_tool": "context2",
-                "error_category": "GRAMMAR_ERROR",
+                "filename": "test.md",
+                "rule_id": "RULE2",
+                "issue_type": "error",
+                "message": "Test2",
+                "replacements": ["fix2"],
+                "context": "context2",
+                "highlighted_context": "context2",
+                "issue": "context2",
+                "error_category": "ABSOLUTE_GRAMMATICAL_ERROR",
                 "confidence_score": 85,
                 "reasoning": "Test reason 2"
             }
@@ -291,22 +297,28 @@ def test_persistence_deduplicates_on_merge(tmp_path: Path) -> None:
     results2 = {
         "page_1": [
             {
-                "rule_from_tool": "RULE1",
-                "type_from_tool": "error",
-                "message_from_tool": "Test",
-                "suggestions_from_tool": ["fix"],
-                "context_from_tool": "context1",  # Same as before
+                "filename": "test.md",
+                "rule_id": "RULE1",
+                "issue_type": "error",
+                "message": "Test",
+                "replacements": ["fix"],
+                "context": "context1",
+                "highlighted_context": "context1",  # Same as before - should be deduplicated
+                "issue": "context1",
                 "error_category": "SPELLING_ERROR",
                 "confidence_score": 90,
                 "reasoning": "Test reason"
             },
             {
-                "rule_from_tool": "RULE3",  # New issue
-                "type_from_tool": "error",
-                "message_from_tool": "Test3",
-                "suggestions_from_tool": ["fix3"],
-                "context_from_tool": "context3",
-                "error_category": "GRAMMAR_ERROR",
+                "filename": "test.md",
+                "rule_id": "RULE3",  # New issue
+                "issue_type": "error",
+                "message": "Test3",
+                "replacements": ["fix3"],
+                "context": "context3",
+                "highlighted_context": "context3",
+                "issue": "context3",
+                "error_category": "ABSOLUTE_GRAMMATICAL_ERROR",
                 "confidence_score": 80,
                 "reasoning": "Test reason 3"
             }
@@ -320,5 +332,5 @@ def test_persistence_deduplicates_on_merge(tmp_path: Path) -> None:
     assert len(loaded["page_1"]) == 3
     
     # Verify the rules present
-    rules = {issue["rule_from_tool"] for issue in loaded["page_1"]}
+    rules = {issue["rule_id"] for issue in loaded["page_1"]}
     assert rules == {"RULE1", "RULE2", "RULE3"}

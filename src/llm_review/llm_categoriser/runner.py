@@ -12,10 +12,8 @@ from typing import Any
 
 from pydantic import ValidationError
 
-from src.language_check.language_issue import LanguageIssue
+from src.models import LanguageIssue, DocumentKey
 from src.llm.service import LLMService
-from src.models.document_key import DocumentKey
-from src.models.issue import LlmLanguageIssue
 
 from .batcher import Batch, iter_batches
 from .data_loader import load_issues
@@ -247,6 +245,9 @@ class CategoriserRunner:
             print(f"    Error: Response is not a dict (got {type(response)})")
             return validated_results, failed_issue_ids
         
+        # Get filename from first issue (all issues in a batch are from same document)
+        filename = issues[0].filename if issues else ""
+        
         # Process each page in the response
         for page_key, page_issues in response.items():
             if not isinstance(page_issues, list):
@@ -256,17 +257,21 @@ class CategoriserRunner:
             valid_issues = []
             for issue_dict in page_issues:
                 try:
-                    # Validate using Pydantic model
-                    validated = LlmLanguageIssue(**issue_dict)
+                    # Validate using unified LanguageIssue model with LLM response parser
+                    validated = LanguageIssue.from_llm_response(issue_dict, filename=filename)
                     valid_issues.append(validated.model_dump())
                     
                     # Try to identify which input issue this corresponds to
-                    # Match by rule_from_tool and context_from_tool
                     # Match by issue_id for 1:1 correspondence
-                    if hasattr(validated, "issue_id"):
+                    if validated.issue_id >= 0:
                         failed_issue_ids.discard(validated.issue_id)
                     else:
-                        print(f"    Warning: LLM response issue missing 'issue_id' field.")
+                        # Fallback: try to match by rule_id and context
+                        for input_issue in issues:
+                            if (input_issue.rule_id == validated.rule_id and
+                                input_issue.highlighted_context == validated.highlighted_context):
+                                failed_issue_ids.discard(input_issue.issue_id)
+                                break
                     
                 except ValidationError as e:
                     print(f"    Warning: Validation error for issue in '{page_key}': {e}")

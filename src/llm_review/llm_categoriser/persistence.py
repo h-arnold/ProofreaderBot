@@ -25,7 +25,7 @@ def save_batch_results(
     Args:
         key: DocumentKey identifying the document
         batch_results: Dictionary with page keys (e.g., "page_5") mapping to lists of issue dicts
-        merge: If True and file exists, merge with existing content (deduplicating by rule+context)
+        merge: If True and file exists, merge with existing content (deduplicating by rule_id+highlighted_context)
         output_dir: Base directory for output (default: "Documents")
         
     Returns:
@@ -34,7 +34,7 @@ def save_batch_results(
     Notes:
         - Results are saved to: Documents/<subject>/document_reports/<filename>.json
         - Writes are atomic (temp file + replace)
-        - When merging, issues are deduplicated using (rule_from_tool, context_from_tool) as key
+        - When merging, issues are deduplicated using (rule_id, highlighted_context) as key
         - Force mode (--force CLI flag) clears both state and results to prevent duplicates
     """
     # Construct output path
@@ -57,15 +57,15 @@ def save_batch_results(
     merged_data = existing_data.copy()
     for page_key, issues in batch_results.items():
         if page_key in merged_data:
-            # Deduplicate: use (rule_from_tool, context_from_tool) as unique key
+            # Deduplicate: use (rule_id, highlighted_context) as unique key
             existing_keys = {
-                (issue.get("rule_from_tool"), issue.get("context_from_tool"))
+                (issue.get("rule_id"), issue.get("highlighted_context"))
                 for issue in merged_data[page_key]
             }
             # Only add issues that don't already exist
             new_issues = [
                 issue for issue in issues
-                if (issue.get("rule_from_tool"), issue.get("context_from_tool")) not in existing_keys
+                if (issue.get("rule_id"), issue.get("highlighted_context")) not in existing_keys
             ]
             merged_data[page_key].extend(new_issues)
         else:
