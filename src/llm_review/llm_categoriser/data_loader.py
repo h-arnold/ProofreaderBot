@@ -7,6 +7,7 @@ corresponding Markdown files exist, and groups issues by DocumentKey.
 from __future__ import annotations
 
 import csv
+import sys
 from pathlib import Path
 from typing import Iterator
 
@@ -46,14 +47,13 @@ def load_issues(
     # Read and parse CSV with subject info
     raw_issues_with_subjects = list(_parse_csv(report_path))
     
+    # Prepare case-insensitive filters
+    subjects_lower = {s.lower() for s in subjects} if subjects is not None else None
+    documents_lower = {d.lower() for d in documents} if documents is not None else None
+    
     # Group by DocumentKey
     grouped: dict[DocumentKey, list[LanguageIssue]] = {}
     
-    for subject, issue in raw_issues_with_subjects:
-        # Apply filters
-    subjects_lower = {s.lower() for s in subjects} if subjects is not None else None
-    documents_lower = {d.lower() for d in documents} if documents is not None else None
-
     for subject, issue in raw_issues_with_subjects:
         # Apply filters
         if subjects_lower is not None and subject.lower() not in subjects_lower:
@@ -145,8 +145,8 @@ def _validate_markdown_files(
         markdown_path = Path("Documents") / key.subject / "markdown" / key.filename
         
         if not markdown_path.exists():
-            print(f"Warning: Markdown file not found for {key}: {markdown_path}")
-            print(f"  Skipping {len(issues)} issue(s) for this document")
+            print(f"Warning: Markdown file not found for {key}: {markdown_path}", file=sys.stderr)
+            print(f"  Skipping {len(issues)} issue(s) for this document", file=sys.stderr)
             continue
         
         validated[key] = issues

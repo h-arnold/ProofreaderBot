@@ -25,7 +25,7 @@ def save_batch_results(
     Args:
         key: DocumentKey identifying the document
         batch_results: Dictionary with page keys (e.g., "page_5") mapping to lists of issue dicts
-        merge: If True and file exists, merge with existing content
+        merge: If True and file exists, merge with existing content (deduplicating by rule+context)
         output_dir: Base directory for output (default: "Documents")
         
     Returns:
@@ -34,7 +34,8 @@ def save_batch_results(
     Notes:
         - Results are saved to: Documents/<subject>/document_reports/<filename>.json
         - Writes are atomic (temp file + replace)
-        - Existing files are merged by default unless merge=False
+        - When merging, issues are deduplicated using (rule_from_tool, context_from_tool) as key
+        - Force mode (--force CLI flag) clears both state and results to prevent duplicates
     """
     # Construct output path
     report_dir = output_dir / key.subject / "document_reports"
@@ -52,12 +53,21 @@ def save_batch_results(
             import sys
             print(f"Warning: Could not load existing file {output_file}: {e}", file=sys.stderr)
     
-    # Merge batch results with existing data
+    # Merge batch results with existing data, deduplicating by rule+context
     merged_data = existing_data.copy()
     for page_key, issues in batch_results.items():
         if page_key in merged_data:
-            # Append to existing page
-            merged_data[page_key].extend(issues)
+            # Deduplicate: use (rule_from_tool, context_from_tool) as unique key
+            existing_keys = {
+                (issue.get("rule_from_tool"), issue.get("context_from_tool"))
+                for issue in merged_data[page_key]
+            }
+            # Only add issues that don't already exist
+            new_issues = [
+                issue for issue in issues
+                if (issue.get("rule_from_tool"), issue.get("context_from_tool")) not in existing_keys
+            ]
+            merged_data[page_key].extend(new_issues)
         else:
             # New page
             merged_data[page_key] = issues

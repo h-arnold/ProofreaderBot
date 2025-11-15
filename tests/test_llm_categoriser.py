@@ -254,3 +254,71 @@ def test_batch_handles_no_page_numbers(tmp_path: Path) -> None:
     # Should use entire document as page 0
     assert 0 in batch.page_context
     assert "Simple document without page markers" in batch.page_context[0]
+
+
+def test_persistence_deduplicates_on_merge(tmp_path: Path) -> None:
+    """Test that persistence deduplicates issues when merging."""
+    key = DocumentKey(subject="Test", filename="test.md")
+    
+    # Save first batch with some issues
+    results1 = {
+        "page_1": [
+            {
+                "rule_from_tool": "RULE1",
+                "type_from_tool": "error",
+                "message_from_tool": "Test",
+                "suggestions_from_tool": ["fix"],
+                "context_from_tool": "context1",
+                "error_category": "SPELLING_ERROR",
+                "confidence_score": 90,
+                "reasoning": "Test reason"
+            },
+            {
+                "rule_from_tool": "RULE2",
+                "type_from_tool": "error",
+                "message_from_tool": "Test2",
+                "suggestions_from_tool": ["fix2"],
+                "context_from_tool": "context2",
+                "error_category": "GRAMMAR_ERROR",
+                "confidence_score": 85,
+                "reasoning": "Test reason 2"
+            }
+        ]
+    }
+    save_batch_results(key, results1, merge=True, output_dir=tmp_path)
+    
+    # Try to save the same issues again (simulating a reprocess)
+    results2 = {
+        "page_1": [
+            {
+                "rule_from_tool": "RULE1",
+                "type_from_tool": "error",
+                "message_from_tool": "Test",
+                "suggestions_from_tool": ["fix"],
+                "context_from_tool": "context1",  # Same as before
+                "error_category": "SPELLING_ERROR",
+                "confidence_score": 90,
+                "reasoning": "Test reason"
+            },
+            {
+                "rule_from_tool": "RULE3",  # New issue
+                "type_from_tool": "error",
+                "message_from_tool": "Test3",
+                "suggestions_from_tool": ["fix3"],
+                "context_from_tool": "context3",
+                "error_category": "GRAMMAR_ERROR",
+                "confidence_score": 80,
+                "reasoning": "Test reason 3"
+            }
+        ]
+    }
+    save_batch_results(key, results2, merge=True, output_dir=tmp_path)
+    
+    # Load and verify - should have 3 issues (RULE1 deduplicated, RULE2 and RULE3 kept)
+    loaded = load_document_results(key, output_dir=tmp_path)
+    assert "page_1" in loaded
+    assert len(loaded["page_1"]) == 3
+    
+    # Verify the rules present
+    rules = {issue["rule_from_tool"] for issue in loaded["page_1"]}
+    assert rules == {"RULE1", "RULE2", "RULE3"}
