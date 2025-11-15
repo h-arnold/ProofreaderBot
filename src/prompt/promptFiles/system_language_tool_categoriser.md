@@ -26,6 +26,9 @@ Your role is to act as a specialist linguistic validator, reassessing every row 
 
 ---
 
+
+---
+
 {{> authoritative_sources}}
 
 ## Decision-Making Workflow
@@ -96,24 +99,3 @@ Each error object **must** include:
 - `reasoning` (single concise sentence)
 
 ---
-
-## Issue Batch
-
-{{{issue_table}}}
-
----
-
-## Page Context
-
-Review each page excerpt before making decisions. Pages appear in ascending order and always include the page marker line.
-
-{{#page_context}}
-### Page {{page_number}}
-```markdown
-{{{content}}}
-```
-
-{{/page_context}}
-
----
-

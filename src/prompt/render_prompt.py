@@ -67,6 +67,37 @@ def render_template(template_name: str = "language_tool_categoriser.md", context
     return renderer.render(template, context or {})
 
 
+def render_prompts(
+    system_template: str = "system_language_tool_categoriser.md",
+    user_template: str = "user_language_tool_categoriser.md",
+    context: dict | None = None,
+) -> tuple[str, str]:
+    """Render a system and user prompt pair from two separate templates.
+
+    The function is a convenience for LLM callers that need a two-part chat
+    prompt (system + user). It uses the same partials as `render_template`.
+
+    Returns:
+        (system_prompt, user_prompt)
+    """
+
+    # Load partials (shared by both templates)
+    partials = {}
+    for partial_name in ["llm_reviewer_system_prompt", "authoritative_sources"]:
+        partial_content = _read_prompt(f"{partial_name}.md")
+        partials[partial_name] = _strip_code_fences(partial_content)
+
+    renderer = pystache.Renderer(partials=partials)
+
+    # Render each template independently
+    system_tpl = _read_prompt(system_template)
+    user_tpl = _read_prompt(user_template)
+
+    rendered_system = renderer.render(system_tpl, context or {})
+    rendered_user = renderer.render(user_tpl, context or {})
+    return rendered_system.strip(), rendered_user.strip()
+
+
 def _load_context(path: str) -> dict:
     return json.loads(Path(path).read_text(encoding="utf-8"))
 

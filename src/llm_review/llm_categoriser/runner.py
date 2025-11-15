@@ -172,13 +172,20 @@ class CategoriserRunner:
             )
             
             prompts = build_prompts(retry_batch)
+            # build_prompts returns [system_prompt, user_prompt] when available.
+            # The system prompt is provided to the provider chain during creation,
+            # so we must only send user (content) prompts to the provider.
+            if len(prompts) > 1:
+                user_prompts = prompts[1:]
+            else:
+                user_prompts = prompts
             
             # Enforce rate limiting
             self._enforce_rate_limit()
             
             # Call LLM
             try:
-                response = self.llm_service.generate(prompts, filter_json=True)
+                response = self.llm_service.generate(user_prompts, filter_json=True)
             except Exception as e:
                 print(f"    Error calling LLM: {e}")
                 return False

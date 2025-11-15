@@ -168,8 +168,17 @@ def main(args: list[str] | None = None) -> int:
     
     # Create LLM service
     try:
+        # Render the shared system prompt and pass it to the provider chain
+        from src.prompt.render_prompt import render_prompts
+
+        system_prompt_text, _ = render_prompts(
+            "system_language_tool_categoriser.md",
+            "user_language_tool_categoriser.md",
+            {},
+        )
+
         providers = create_provider_chain(
-            system_prompt="",  # System prompt is embedded in the template
+            system_prompt=system_prompt_text,
             filter_json=True,
             dotenv_path=parsed_args.dotenv,
             primary=parsed_args.provider,
@@ -274,6 +283,15 @@ def emit_batch_payloads(parsed_args: argparse.Namespace) -> int:
             filename=key.filename,
         ):
             prompts = build_prompts(batch)
+
+            # Determine system and user parts for the payload; keep 'prompts'
+            # for backward compatibility but also expose explicit keys.
+            if len(prompts) > 1:
+                system_text = prompts[0]
+                user_prompts = prompts[1:]
+            else:
+                system_text = ""
+                user_prompts = prompts
             
             # Create payload file
             payload = {
@@ -282,6 +300,8 @@ def emit_batch_payloads(parsed_args: argparse.Namespace) -> int:
                 "batch_index": batch.index,
                 "issue_count": len(batch.issues),
                 "prompts": prompts,
+                "system": system_text,
+                "user": user_prompts,
             }
             
             # Safe filename

@@ -8,10 +8,11 @@ from __future__ import annotations
 
 from typing import TYPE_CHECKING
 
-from src.prompt.render_prompt import render_template
+from src.prompt.render_prompt import render_template, render_prompts
 
 if TYPE_CHECKING:
     from .batcher import Batch
+import re
 
 
 def build_prompts(batch: Batch) -> list[str]:
@@ -44,30 +45,33 @@ def build_prompts(batch: Batch) -> list[str]:
         "page_context": page_context_list,
     }
     
-    # Render the full template
-    rendered = render_template("language_tool_categoriser.md", context)
-    
-    # The template uses the system prompt partial, but we return it as a single user prompt
-    # The actual system prompt is embedded in the template via {{> llm_reviewer_system_prompt}}
-    # For the LLM service, we need to split it properly
-    
-    # For now, we'll return it as two prompts: system and user
-    # The system prompt is the partial content, user prompt is the rest
-    # However, the template already combines them, so we'll extract them
-    
-    # According to the template structure:
-    # - First part is the system prompt partial
-    # - Rest is the user prompt with document details
-    
-    # Split on the "Document Under Review" section
-    parts = rendered.split("## Document Under Review", 1)
-    
-    if len(parts) == 2:
-        system_prompt = parts[0].strip()
-        user_prompt = "## Document Under Review" + parts[1]
-    else:
-        # Fallback: use entire rendered content as user prompt
-        system_prompt = ""
-        user_prompt = rendered
-    
-    return [system_prompt, user_prompt] if system_prompt else [user_prompt]
+    # Attempt to render two separate templates if available
+    try:
+        system_prompt, user_prompt = render_prompts(
+            "system_language_tool_categoriser.md",
+            "user_language_tool_categoriser.md",
+            context,
+        )
+        # Return as list per existing contract
+        return [system_prompt, user_prompt]
+    except FileNotFoundError:
+        # Fall back to the single-template render + split logic for backward compatibility
+        rendered = render_template("language_tool_categoriser.md", context)
+
+        # Maintain prior behaviour: split on the "Document Under Review" header
+        header_re = re.compile(r"(?mi)^\s*##\s+Document Under Review\s*$", re.MULTILINE)
+        match = header_re.search(rendered)
+        if match:
+            split_idx = match.start()
+            system_prompt = rendered[:split_idx].strip()
+            user_prompt = rendered[split_idx:].lstrip()
+        else:
+            parts = re.split(r"(?mi)\n##\s+Document Under Review\n", rendered, maxsplit=1)
+            if len(parts) == 2:
+                system_prompt = parts[0].strip()
+                user_prompt = "## Document Under Review" + parts[1].lstrip()
+            else:
+                system_prompt = ""
+                user_prompt = rendered
+
+        return [system_prompt, user_prompt] if system_prompt else [user_prompt]

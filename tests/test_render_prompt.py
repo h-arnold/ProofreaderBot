@@ -16,6 +16,7 @@ from src.prompt.render_prompt import (
     render_template,
     _read_prompt,
     _strip_code_fences,
+    render_prompts,
 )
 
 
@@ -96,6 +97,16 @@ class TestReadPrompt:
         assert isinstance(content, str)
         assert len(content) > 0
 
+    def test_read_system_user_prompts(self) -> None:
+        """Test reading the system and user templates if they exist."""
+        content_sys = _read_prompt("system_language_tool_categoriser.md")
+        content_user = _read_prompt("user_language_tool_categoriser.md")
+        assert "Error Categories" in content_sys or "Output Format" in content_sys
+        # The document header (Document Under Review) has been moved to the
+        # system prompt; the user template should not contain it.
+        assert "Document Under Review" in content_sys
+        assert "Document Under Review" not in content_user
+
     def test_read_nonexistent_prompt(self) -> None:
         """Test that reading a nonexistent prompt raises FileNotFoundError."""
         try:
@@ -171,6 +182,21 @@ class TestRenderPromptIntegration:
         )
         assert isinstance(result, str)
         assert len(result) > 0
+
+    def test_render_prompt_pair(self) -> None:
+        """Ensure we can render a system+user pair using the new helper."""
+        system_text, user_text = render_prompts(
+            "system_language_tool_categoriser.md",
+            "user_language_tool_categoriser.md",
+            {"subject": "Art-and-Design", "filename": "file.md", "issue_table": "|a|b|c|\n", "page_context": []},
+        )
+
+        assert isinstance(system_text, str) and isinstance(user_text, str)
+        assert len(system_text) > 0
+        assert "Error Categories" in system_text
+        # Header now lives in system prompt
+        assert "Document Under Review" in system_text
+        assert "Document Under Review" not in user_text
 
 
 class TestRenderPromptEdgeCases:
