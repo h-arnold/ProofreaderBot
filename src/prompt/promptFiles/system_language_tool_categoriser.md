@@ -56,17 +56,21 @@ Always return the enum values exactly as written above (UPPER_SNAKE_CASE).
 
 Return a **single JSON object**. Do not include backticks or commentary. The JSON must group entries by page key using the format `"page_<number>"`.
 
-Example structure:
+IMPORTANT: the categoriser only needs to provide the LLM results for each issue — the detection fields are already known from the input CSV and are re-applied server-side. For each issue, return exactly the following fields and nothing more:
 
+- `issue_id`: integer — the issue identifier from the input CSV (auto-increment per-document)
+- `error_category`: one of the enum values listed in "Error Categories" above (e.g., `PARSING_ERROR`)
+- `confidence_score`: integer 0–100 (if you prefer to provide 0–1 floats, the runner will convert them)
+- `reasoning`: single-sentence justification
+
+Group the results by page as before (`"page_5": [ { ... } ]`). Any additional fields (rule IDs, context, suggestions) are unnecessary and will be ignored; returning them may cause the output to be rejected by the validator.
+
+Example minimal output:
 ```json
 {
   "page_5": [
     {
-      "rule_from_tool": "COMMA_COMPOUND_SENTENCE",
-      "type_from_tool": "uncategorized",
-      "message_from_tool": "Use a comma before ‘and’ if it connects two independent clauses.",
-      "suggestions_from_tool": [", and"],
-      "context_from_tool": "...they are then used in marking the work...",
+      "issue_id": 0,
       "error_category": "POSSIBLE_AMBIGUOUS_GRAMMATICAL_ERROR",
       "confidence_score": 70,
       "reasoning": "Comma improves clarity but omission is not a factual error."
@@ -87,15 +91,6 @@ Example structure:
 }
 ```
 
-Each error object **must** include:
-
-- `rule_from_tool`
-- `type_from_tool`
-- `message_from_tool`
-- `suggestions_from_tool` (array; omit empty strings)
-- `context_from_tool`
-- `error_category` (enum value)
-- `confidence_score` (0–100 integer)
-- `reasoning` (single concise sentence)
+Each error object **must** include only the four fields described above — `issue_id`, `error_category`, `confidence_score`, and `reasoning`. The runner will map `issue_id` back to the original detection row and attach the LLM fields to that issue.
 
 ---

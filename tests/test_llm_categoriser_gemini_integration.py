@@ -50,10 +50,11 @@ class _MockModels:
         """Mock generate_content to capture calls and return valid JSON."""
         self.calls.append(kwargs)
         # Return a mock categorisation response with valid JSON
+        # Return the minimal categoriser output (issue_id + LLM fields)
         response_text = json.dumps([{
             "issue_id": 0,
-            "categories": ["style"],
-            "confidence": 0.95,
+            "error_category": "STYLISTIC_PREFERENCE",
+            "confidence_score": 95,
             "reasoning": "Test categorisation"
         }])
         return _MockResponse(text=response_text)

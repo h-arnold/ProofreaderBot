@@ -288,7 +288,65 @@ class CategoriserRunner:
             valid_issues = []
             for issue_dict in page_issues:
                 try:
-                    validated = LanguageIssue.from_llm_response(issue_dict, filename=filename)
+                    # Allow minimal LLM output — only categorisation fields — and
+                    # map it back to the original detection row using issue_id.
+                    # If the provider returns the full tool fields, fall back to
+                    # the previous behaviour.
+                    if isinstance(issue_dict, dict) and issue_dict.get("issue_id") is not None and (
+                        issue_dict.get("error_category") is not None or issue_dict.get("categories") is not None
+                    ):
+                        # Find the original input issue by issue_id
+                        iid_val = issue_dict.get("issue_id")
+                        if iid_val is None:
+                            raise ValueError(f"Missing issue_id in response: {issue_dict!r}")
+                        try:
+                            iid = int(iid_val)
+                        except Exception:
+                            raise ValueError(f"Invalid issue_id: {iid_val!r}")
+                        original = None
+                        for inp in issues:
+                            if inp.issue_id == iid:
+                                original = inp
+                                break
+
+                        # Build a merged payload containing original detection fields
+                        # plus the new LLM fields from the provider.
+                        if original is None:
+                            raise ValueError(f"No input issue found for issue_id {iid}")
+
+                        # Map provider synonyms to canonical keys
+                        categories = issue_dict.get("error_category") or issue_dict.get("categories")
+                        # Allow categories to be a list; take the first element if so
+                        if isinstance(categories, list) and categories:
+                            categories = categories[0]
+
+                        confidence = issue_dict.get("confidence_score")
+                        if confidence is None:
+                            # Allow confidence as a float between 0..1 under key 'confidence'
+                            conf = issue_dict.get("confidence")
+                            if isinstance(conf, float) and 0 <= conf <= 1:
+                                confidence = round(conf * 100)
+                            elif isinstance(conf, (int, float)):
+                                confidence = int(round(conf))
+
+                        merged = {
+                            "rule_from_tool": original.rule_id,
+                            "message_from_tool": original.message,
+                            "type_from_tool": original.issue_type,
+                            "suggestions_from_tool": original.replacements,
+                            "context_from_tool": original.context,
+                            "highlighted_context": original.highlighted_context,
+                            "issue": original.issue,
+                            "page_number": original.page_number,
+                            "issue_id": iid,
+                            "error_category": categories,
+                            "confidence_score": confidence,
+                            "reasoning": issue_dict.get("reasoning"),
+                        }
+
+                        validated = LanguageIssue.from_llm_response(merged, filename=filename)
+                    else:
+                        validated = LanguageIssue.from_llm_response(issue_dict, filename=filename)
                     valid_issues.append(validated.model_dump())
 
                     if validated.issue_id >= 0:

@@ -63,6 +63,10 @@ False negatives will certainly result from:
  - **The PDF Conversion Process**: [Marker](https://github.com/datalab-to/marker) is great, but it combine words, miss hyphens, misinterpret characters and break some tables. As a result, I've had to filter out any of those types of errors, whether they exist or not.
  - **Lack of specialist knowledge**: I'm reliant on LLMs to correctly identify specialist terminology. I don't have the skills, subject knowledge or time to verify each item in each subject. That is what the WJEC should be doing.
 
+ ### Code Quality
+
+ This project is a throwaway stereotype to prove a point and hopefully inspire meaningful change. It's vibe-coded and whenever I look at the code it makes me sad so I don't look at it too hard. LLMs seems to be managing ok for now though. If you want to contribute or adjust the code, I wish you the very best of luck. You'll need it. 
+
 # Technical Details
 
 American spellings found: <img src="badges/ize-suffixes.svg" alt="Ize suffixes count" />

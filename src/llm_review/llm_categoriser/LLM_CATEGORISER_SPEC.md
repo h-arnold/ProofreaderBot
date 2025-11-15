@@ -34,21 +34,19 @@ The LLM must classify each issue into one of these enums (defined in `src/models
 
 Each record also carries a `confidence_score` (0–100) and a single-sentence `reasoning` justification referencing authoritative sources or contextual cues.
 
+Important: The LLM is only asked to return the categorisation results. The original detection information (rule id, message, context, replacements, highlighted_context) is already known from the CSV and will be re-applied by the runner using the `issue_id`. Therefore, each issue in the returned JSON should include only `issue_id`, `error_category`, `confidence_score`, and `reasoning`.
+
 ---
 
 ### Expected Output Structure
 
-The categoriser writes one JSON file per document. Example (trimmed for brevity):
+The categoriser writes one JSON file per document. Example (trimmed for brevity). The output is grouped by page and each issue includes minimal LLM fields:
 
 ```json
 {
   "page_5": [
     {
-      "rule_from_tool": "COMMA_COMPOUND_SENTENCE",
-      "type_from_tool": "uncategorized",
-      "message_from_tool": "Use a comma before ‘and’...",
-      "suggestions_from_tool": [", and"],
-      "context_from_tool": "...they are then used in marking the work...",
+      "issue_id": 0,
       "error_category": "POSSIBLE_AMBIGUOUS_GRAMMATICAL_ERROR",
       "confidence_score": 68,
       "reasoning": "Sentence is understandable without the comma; optional stylistic choice."
