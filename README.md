@@ -63,6 +63,10 @@ False negatives will certainly result from:
  - **The PDF Conversion Process**: [Marker](https://github.com/datalab-to/marker) is great, but it combine words, miss hyphens, misinterpret characters and break some tables. As a result, I've had to filter out any of those types of errors, whether they exist or not.
  - **Lack of specialist knowledge**: I'm reliant on LLMs to correctly identify specialist terminology. I don't have the skills, subject knowledge or time to verify each item in each subject. That is what the WJEC should be doing.
 
+ ### Code Quality
+
+ This project is a throwaway stereotype to prove a point and hopefully inspire meaningful change. It's vibe-coded and whenever I look at the code it makes me sad so I don't look at it too hard. LLMs seems to be managing ok for now though. If you want to contribute or adjust the code, I wish you the very best of luck. You'll need it. 
+
 # Technical Details
 
 American spellings found: <img src="badges/ize-suffixes.svg" alt="Ize suffixes count" />
@@ -213,7 +217,7 @@ The `GeminiLLM` helper in `gemini_llm.py` wraps the Google GenAI SDK so you can 
 
 - Reads the system instruction from a Markdown file when instantiated.
 - Joins user prompt fragments with newlines before sending them to the API.
-- Calls the `gemini-flash-2.5` model with the maximum supported thinking budget (24,576 tokens) via `google.genai.types.ThinkingConfig`.
+-- Calls the `gemini-2.5-flash` model with the maximum supported thinking budget (24,576 tokens) via `google.genai.types.ThinkingConfig`.
 - Loads environment variables from a `.env` file automatically (useful for storing `GEMINI_API_KEY`).
 - Expects `GEMINI_API_KEY` to be present in the environment, matching [Google's Python quickstart](https://ai.google.dev/gemini-api/docs/get-started/python).
 
@@ -231,3 +235,22 @@ print(response.text)
 ```
 
 Refer to the [Gemini text generation guide](https://ai.google.dev/gemini-api/docs/text-generation) for additional configuration options.
+
+## Environment variables
+
+The project uses a few environment variables (and supports loading them from a `.env` file). These are the variables you may want to set when running the LLM or categoriser features:
+
+- GEMINI_API_KEY — Google Gemini API key used by the `GeminiLLM` wrapper. Example: `GEMINI_API_KEY=xxxx`.
+- MISTRAL_API_KEY — (Planned / optional) API key for a Mistral provider integration.
+- LLM_PRIMARY — Comma-separated primary LLM provider name(s). Default: `gemini`.
+- LLM_FALLBACK — Comma-separated fallback LLM providers. Example: `mistral`.
+- LLM_CATEGORISER_BATCH_SIZE — Batch size used by the LLM categoriser (default: 10). Adjustable via the CLI or by setting this environment variable.
+- LLM_CATEGORISER_MAX_RETRIES — Maximum retries for the categoriser when a batch fails (default: 2).
+- LLM_CATEGORISER_STATE_FILE — File path used to persist state for the categoriser (default: `data/llm_categoriser_state.json`).
+- LLM_CATEGORISER_LOG_RESPONSES — Set to `1`, `true`, `yes`, or `on` to dump every raw LLM response to disk for debugging.
+- LLM_CATEGORISER_LOG_DIR — Directory where raw responses should be stored (default: `data/llm_categoriser_responses`).
+- GEMINI_MIN_REQUEST_INTERVAL — Minimum number of seconds to wait between Gemini requests (default: 0). Useful to avoid rate limits.
+
+Notes:
+- The `--dotenv` flag in the LLM categoriser CLI (`src/llm_review/llm_categoriser/cli.py`) can be used to point to a `.env` file with these variables. You can also override the logging behaviour directly via `--log-responses` and `--log-responses-dir` when running the CLI.
+- The `google-genai` client used by `GeminiLLM` will also read `GEMINI_API_KEY` or `GOOGLE_API_KEY` from the environment; we recommend using `GEMINI_API_KEY` for clarity.

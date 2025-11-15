@@ -7,7 +7,8 @@ from typing import Any, Sequence
 from dotenv import load_dotenv
 from google import genai
 from google.genai import types
-from json_repair import repair_json
+
+from .json_utils import parse_json_response
 
 
 class GeminiLLM:
@@ -17,8 +18,8 @@ class GeminiLLM:
     """
 
     name = "gemini"
-    MODEL = "gemini-flash-2.5"
-    MAX_THINKING_BUDGET = 24_576
+    MODEL = "gemini-2.5-flash"
+    MAX_THINKING_BUDGET = 24576
 
     def __init__(
         self,
@@ -74,6 +75,7 @@ class GeminiLLM:
         config = types.GenerateContentConfig(
             system_instruction=self._system_prompt,
             thinking_config=types.ThinkingConfig(thinking_budget=self.MAX_THINKING_BUDGET),
+            temperature=0.2,
         )
         response = self._client.models.generate_content(
             model=self.MODEL,
@@ -101,12 +103,5 @@ class GeminiLLM:
         text = getattr(response, "text", None)
         if not isinstance(text, str):
             raise AttributeError("Response object does not expose a text attribute for JSON parsing.")
-
-        start = text.find("{")
-        end = text.rfind("}")
-        if start == -1 or end == -1 or end <= start:
-            raise ValueError("Response text does not contain JSON object delimiters.")
-
-        json_fragment = text[start : end + 1]
-        repaired = repair_json(json_fragment)
-        return json.loads(repaired)
+        
+        return parse_json_response(text)

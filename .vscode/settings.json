@@ -1,7 +1,10 @@
 {
     "python.testing.pytestArgs": [
+        "run",
+        "pytest",
         "tests"
     ],
+    "python.testing.pytestPath": "pytest",
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true
 }

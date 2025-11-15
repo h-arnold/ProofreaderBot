@@ -26,6 +26,9 @@ Your role is to act as a specialist linguistic validator, reassessing every row 
 
 ---
 
+
+---
+
 {{> authoritative_sources}}
 
 ## Decision-Making Workflow
@@ -49,70 +52,50 @@ For **each issue** in the table:
 
 Always return the enum values exactly as written above (UPPER_SNAKE_CASE).
 
----
-
-## Issue Batch
-
-{{{issue_table}}}
-
----
-
-## Page Context
-
-Review each page excerpt before making decisions. Pages appear in ascending order and always include the page marker line.
-
-{{#page_context}}
-### Page {{page_number}}
-```markdown
-{{{content}}}
-```
-
-{{/page_context}}
-
----
-
 ## Output Format
 
-Return a **single JSON object**. Do not include backticks or commentary. The JSON must group entries by page key using the format `"page_<number>"`.
+Return a **single top-level JSON array** (no surrounding object, no page keys) and nothing else. Do not include backticks, commentary, or any text before or after the JSON. Each array element represents one issue from the table.
 
-Example structure:
+IMPORTANT: the categoriser only needs to provide the LLM results for each issue — the detection fields are already known from the input CSV and are re-applied server-side. For each issue, return exactly the following fields and nothing more:
 
+- `issue_id`: integer — the issue identifier from the input CSV (auto-increment per-document)
+- `error_category`: one of the enum values listed in "Error Categories" above (e.g., `PARSING_ERROR`)
+- `confidence_score`: integer 0–100 (if you prefer to provide 0–1 floats, the runner will convert them)
+- `reasoning`: single-sentence justification
+
+Example minimal output:
 ```json
-{
-  "page_5": [
-    {
-      "rule_from_tool": "COMMA_COMPOUND_SENTENCE",
-      "type_from_tool": "uncategorized",
-      "message_from_tool": "Use a comma before ‘and’ if it connects two independent clauses.",
-      "suggestions_from_tool": [", and"],
-      "context_from_tool": "...they are then used in marking the work...",
-      "error_category": "POSSIBLE_AMBIGUOUS_GRAMMATICAL_ERROR",
-      "confidence_score": 70,
-      "reasoning": "Comma improves clarity but omission is not a factual error."
-    }
-  ],
-  "page_6": [
-    {
-      "rule_from_tool": "EN_COMPOUNDS_USER_FRIENDLY",
-      "type_from_tool": "misspelling",
-      "message_from_tool": "This word is normally spelled with a hyphen.",
-      "suggestions_from_tool": ["user-friendly"],
-      "context_from_tool": "...made more user friendly?",
-      "error_category": "PARSING_ERROR",
-      "confidence_score": 90,
-      "reasoning": "Hyphenation required for compound adjective in UK English."
-    }
-  ]
-}
+[
+  {
+    "issue_id": 0,
+    "error_category": "POSSIBLE_AMBIGUOUS_GRAMMATICAL_ERROR",
+    "confidence_score": 70,
+    "reasoning": "Comma improves clarity but omission is not a factual error."
+  },
+  {
+    "issue_id": 1,
+    "error_category": "PARSING_ERROR",
+    "confidence_score": 90,
+    "reasoning": "Hyphenation required for compound adjective in UK English."
+  }
+]
 ```
 
-Each error object **must** include:
+Each error object **must** include only the four fields described above — `issue_id`, `error_category`, `confidence_score`, and `reasoning`. The runner will map `issue_id` back to the original detection row and attach the LLM fields to that issue.
 
-- `rule_from_tool`
-- `type_from_tool`
-- `message_from_tool`
-- `suggestions_from_tool` (array; omit empty strings)
-- `context_from_tool`
-- `error_category` (enum value)
-- `confidence_score` (0–100 integer)
-- `reasoning` (single concise sentence)
+IMPORTANT: Always return a JSON array even for a single issue. For example, the array must be:
+
+```json
+[
+  {
+    "issue_id": 0,
+    "error_category": "PARSING_ERROR",
+    "confidence_score": 90,
+    "reasoning": "Short single-sentence reason"
+  }
+]
+```
+
+Do not return the single object without wrapping it in an array. Also ensure every string uses double-quotes and there are no trailing commas.
+
+---

@@ -12,3 +12,6 @@ wheels/
 
 unprocessedFiles.txt
 progress.log
+
+# LLM categoriser artifacts
+data/*
