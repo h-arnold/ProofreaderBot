@@ -22,7 +22,9 @@ DEFAULT_DISABLED_RULES = {
     "ENGLISH_WORD_REPEAT_BEGINNING_RULE",
     "DASH_RULE",
     "ADMIT_ENJOY_VB",
-    "WANNA"
+    "WANNA",
+    "EN_COMPOUNDS_SEMI_FORMAL",
+    "CURRENCY"
 
 
 }
@@ -1409,6 +1411,38 @@ DEFAULT_IGNORED_WORDS = {
     "Viv",
     "Whitbread",
     "Yassin",
+    "Naughtie",
+    "Havisham",
+    "Hunsford",
+    "Inigo",
+    "Opoku",
+    "Asasabonsam",
+    "Jakey",
+    "Ayisha",
+    "Shayaan",
+    "Lanning",
+    "Corrigan",
+    "Whaite",
+    "Willingdon",
+    "Mansell",
+    "Maquita",
+    "Levon",
+    "Christophine",
+    "Milward",
+    "Pemberley",
+    "Portmeirion",
+    "Kipps",
+    "Drablow",
+    "Ioan",
+    "Trystan",
+    "Skirrid",
+    "Baskervilles",
+    "Longbourn",
+    "Netherfield",
+    "Eyr",
+    "Kingshaw",
+    "Warings",
+    "Chelmer",
 
     # --- English Language and Literature (Technical Term) ---
     "griots",
@@ -1419,6 +1453,26 @@ DEFAULT_IGNORED_WORDS = {
     "playscript",
     "translanguage",
     "petit",
+    "prosodics",
+    "latch-ons",
+    "Micropauses",
+    "micropauses",
+    "deixis",
+    "turntaking",
+    "cloze",
+    "asyndetic",
+    "polysyndetic",
+    "backchannel",
+    "backchannelling",
+    "codeswitching",
+    "playscripts",
+    "Synaesthesia",
+    "nonverbal",
+    "Nonverbal",
+    "verbing",
+    "enjambement",
+    "nanovirus",
+    "cleanups",
 
     # --- English Language and Literature (Other) ---
     "faery",
@@ -1444,6 +1498,7 @@ DEFAULT_IGNORED_WORDS = {
     "Walk-Throughs",
     "Welshest",
     "turbinator",
+    "Ooo",
 
     # --- English Language and Literature (Initialism/Acronym) ---
     "OLH",
@@ -1451,6 +1506,8 @@ DEFAULT_IGNORED_WORDS = {
     "ROMMAs",
     "RVE",
     "WESP",
+    "NSE",
+    "RNLI",
 
     # --- Drama (Proper Noun) ---
     "Adelayo",
@@ -2178,8 +2235,6 @@ DEFAULT_IGNORED_WORDS = {
     "intracultural",
     "cryptomnesia",
     "Agender",
-
-    # --- The Sciences (Double Award) (Technical Term) ---
     "Visking",
     "vena",
     "cava",

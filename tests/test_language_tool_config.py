@@ -44,9 +44,13 @@ def test_build_language_tool_passes_config(monkeypatch) -> None:
     config = captured.get("kwargs", {}).get("config")
     # The code falls back to a constructor without config on older versions; assert either behaviour
     if config is not None:
-        # LanguageTool's configuration keys are camelCase
-        assert config.get("maxCheckThreads") == 6
-        assert config.get("pipelineCaching") is True
+        # LanguageTool's configuration keys are camelCase.
+        # The helper now specifies timeouts and text length limits; assert those
+        # values instead of older keys that were removed.
+        assert config.get("maxCheckTimeMillis") == 120000
+        assert config.get("maxTextLength") == 1000000
+        assert config.get("maxTextHardLength") == 5000000
+        assert config.get("requestLimitPeriodInSeconds") == 60
     else:
         # No config passed - this is allowed for older language_tool_python versions
         assert True

@@ -29,8 +29,8 @@ _DEFAULT_CONFIG = {
     "maxCheckTimeMillis": 120000,
     # Increase text length limits to handle large specification documents.
     # Some documents exceed 350KB (360,000+ characters).
-    "maxTextLength": 500000,  # 500K characters
-    "maxTextHardLength": 1000000,  # 1M characters hard limit
+    "maxTextLength": 1000000,  # 1M characters
+    "maxTextHardLength": 5000000,  # 5M characters hard limit
 }
 
 

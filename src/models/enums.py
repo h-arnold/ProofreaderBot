@@ -25,3 +25,19 @@ class ErrorCategory(str, Enum):
     @classmethod
     def all_values(cls) -> list[str]:
         return [m.value for m in cls]
+
+
+class PassCode(str, Enum):
+    """Codes used to indicate what type of 'pass' an issue is related to.
+
+    Values:
+        LT: Language Tool
+        LTC: Language Tool Categorisation
+    """
+
+    LT = "LT"
+    LTC = "LTC"
+
+    @classmethod
+    def all_values(cls) -> list[str]:
+        return [m.value for m in cls]
