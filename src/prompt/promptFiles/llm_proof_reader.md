@@ -23,4 +23,3 @@ Your role is to catch issues that it is not capable of identifying. These includ
  - Sloppy, unclear or ambiguous phrasing that could be improved for clarity and readability.
  - Inconsistent use of terminology or style, particualrly when it is inconsitent within the document.
  - Multi-lingual issues, especially documents related to Welsh, French, Spanish and German where language_tool has only checked for English words.
- - Factual inaccuracies in specialist terminology. When considering factual accuracy, consider whether it is an appropriate simplification for GCSE-level (aged 14-16) students, or whether it is incorrect.
