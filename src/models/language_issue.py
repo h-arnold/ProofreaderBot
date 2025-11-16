@@ -87,7 +87,7 @@ class LanguageIssue(BaseModel):
             return value
         try:
             return PassCode(str(value).strip())
-        except Exception as exc:  # pragma: no cover - handled by Pydantic validation
+        except ValueError as exc:  # pragma: no cover - handled by Pydantic validation
             raise ValueError(f"Invalid pass_code value: {value!r}") from exc
     
     @field_validator("replacements", mode="before")

@@ -112,24 +112,20 @@ def _parse_csv(report_path: Path) -> Iterator[tuple[str, LanguageIssue]]:
                 
                 subject = row["Subject"].strip()
                 
-                raw_pass_code = row.get("Pass Code")
+                raw_pass_code = row.get("Pass Code", "").strip()
                 pass_code: PassCode | None
-                if raw_pass_code is None:
-                    # Allow legacy CSVs without the pass code column
+                if not raw_pass_code:
+                    # Default to LT for legacy CSVs or empty values
                     pass_code = PassCode.LT
                 else:
-                    raw_value = raw_pass_code.strip()
-                    if not raw_value:
+                    try:
+                        pass_code = PassCode(raw_pass_code)
+                    except ValueError:
+                        print(
+                            f"Warning: Unknown pass code '{raw_pass_code}' on row {row_num}; defaulting to LT",
+                            file=sys.stderr,
+                        )
                         pass_code = PassCode.LT
-                    else:
-                        try:
-                            pass_code = PassCode(raw_value)
-                        except ValueError:
-                            print(
-                                f"Warning: Unknown pass code '{raw_value}' on row {row_num}; defaulting to LT",
-                                file=sys.stderr,
-                            )
-                            pass_code = PassCode.LT
 
                 issue = LanguageIssue(
                     filename=row["Filename"].strip(),

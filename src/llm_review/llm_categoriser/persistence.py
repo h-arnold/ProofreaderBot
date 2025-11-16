@@ -211,6 +211,9 @@ def _read_existing_rows(path: Path) -> dict[int, dict[str, str]]:
                     iid = int(raw_id)
                 except ValueError:
                     continue
+                # Normalise the row to ensure all CSV_HEADERS are present.
+                # This is necessary to handle CSVs from different versions that may have missing or extra columns,
+                # ensuring consistent downstream processing regardless of the file's origin.
                 normalised_row = {header: row.get(header, "") for header in CSV_HEADERS}
                 rows[iid] = normalised_row
     except OSError as e:
