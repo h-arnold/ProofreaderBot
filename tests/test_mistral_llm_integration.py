@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import sys
 from pathlib import Path
-from typing import Any, Sequence, cast
+from typing import Any, cast
 
 import pytest
 from mistralai import Mistral
