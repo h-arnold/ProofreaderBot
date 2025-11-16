@@ -11,7 +11,8 @@ import logging
 
 import language_tool_python
 
-_DEFAULT_CONFIG = {"maxCheckThreads": 6, "pipelineCaching": True}
+_DEFAULT_CONFIG = {"requestLimitPeriodInSeconds": 60,
+                    "maxCheckTimeMillis": 2000} #{"maxCheckThreads": 2, "pipelineCaching": True}
 
 
 class LanguageToolManager:

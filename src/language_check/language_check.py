@@ -56,7 +56,7 @@ def _retry_with_backoff(
 	func: Any,
 	func_arg: Any,
 	max_retries: int = 3,
- base_delay: float = 2.0,
+ base_delay: float = 5.0,
 	max_delay: float = 60.0,
 ) -> Any:
 	"""Execute a function with exponential backoff retry logic.

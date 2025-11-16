@@ -365,7 +365,7 @@ def test_case_sensitive_with_explicit_ignored_words(tmp_path: Path) -> None:
         ignored_words={"CustomWord"},
     )
 
-    # report_text = report_path.read_text(encoding="utf-8")
+    report_text = report_path.read_text(encoding="utf-8")
     assert "Total issues found: 0" in report_text
     
     
@@ -397,7 +397,6 @@ def test_case_sensitive_explicit_wrong_case_not_filtered(tmp_path: Path) -> None
     # Issue should still be present (not filtered due to case mismatch)
     assert "Total issues found: 1" in report_text
 
- nbbbbb
 def test_tool_connection_failure_all_tools(tmp_path: Path) -> None:
     """When all tools fail with a connection error, a CHECK_FAILURE is produced with a non-empty highlighted_context."""
     root = tmp_path
