@@ -14,7 +14,7 @@ from typing import Any
 
 from src.models.document_key import DocumentKey
 from src.models.language_issue import LanguageIssue
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Iterable
 
 CSV_HEADERS = [
@@ -166,8 +166,11 @@ def save_failed_issues(
     safe_filename = key.filename.replace("/", "-")
     output_file = report_dir / f"{safe_filename}.batch-{batch_index}.errors.json"
 
+    # Use timezone-aware UTC timestamp to avoid deprecation warnings
+    # (datetime.utcnow() is deprecated in Python 3.12+).
+    current_time = datetime.now(timezone.utc)
     payload = {
-        "timestamp": datetime.utcnow().isoformat() + "Z",
+        "timestamp": current_time.isoformat().replace("+00:00", "Z"),
         "subject": key.subject,
         "filename": key.filename,
         "batch_index": batch_index,
