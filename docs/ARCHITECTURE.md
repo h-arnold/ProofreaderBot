@@ -172,6 +172,7 @@ The `LanguageIssue` model (defined in `src/models/language_issue.py`) is a unifi
 - `issue: str` - The actual issue text extracted (required)
 - `page_number: int | None` - Optional page number in document
 - `issue_id: int` - Auto-incremented per document (-1 if not set, default: -1)
+- `pass_code: PassCode | None` - Indicates which workflow pass produced or last updated the issue (`LT` for LanguageTool detection, `LTC` for LLM categorisation)
 
 ### LLM Categorisation Fields (Optional)
 

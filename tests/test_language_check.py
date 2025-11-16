@@ -127,7 +127,8 @@ def test_csv_report_generated(tmp_path: Path) -> None:
         "Issue",
         "Message",
         "Suggestions",
-        "Highlighted Context"
+        "Highlighted Context",
+        "Pass Code",
     ]
 
     # Check data row
@@ -143,6 +144,7 @@ def test_csv_report_generated(tmp_path: Path) -> None:
     # The highlighted context includes the ** markers
     assert "is a test" in rows[1][8]  # highlighted context
     assert "This" in rows[1][8]  # should contain the issue text
+    assert rows[1][9] == "LT"
 
 
 def test_ignored_words_filtering(tmp_path: Path) -> None:

@@ -10,7 +10,7 @@ if str(PROJECT_ROOT) not in sys.path:
 
 from pydantic import ValidationError
 
-from src.models import ErrorCategory, LanguageIssue
+from src.models import ErrorCategory, LanguageIssue, PassCode
 
 
 def test_llm_language_issue_valid() -> None:
@@ -33,6 +33,7 @@ def test_llm_language_issue_valid() -> None:
     assert issue.filename == "test.md"
     assert issue.rule_id == "EN_QUOTES"
     assert issue.issue_type == "grammar"
+    assert issue.pass_code == PassCode.LTC
 
 
 def test_llm_language_issue_invalid_confidence() -> None:
@@ -94,6 +95,7 @@ def test_language_issue_direct_creation() -> None:
     assert issue.error_category is None  # Not LLM-categorised
     assert issue.confidence_score is None
     assert issue.reasoning is None
+    assert issue.pass_code is None
 
 
 def test_language_issue_with_llm_fields() -> None:

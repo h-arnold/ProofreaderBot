@@ -12,6 +12,7 @@ from pathlib import Path
 from typing import Iterator
 
 from src.language_check.language_issue import LanguageIssue
+from src.models import PassCode
 from src.models.document_key import DocumentKey
 
 
@@ -111,6 +112,25 @@ def _parse_csv(report_path: Path) -> Iterator[tuple[str, LanguageIssue]]:
                 
                 subject = row["Subject"].strip()
                 
+                raw_pass_code = row.get("Pass Code")
+                pass_code: PassCode | None
+                if raw_pass_code is None:
+                    # Allow legacy CSVs without the pass code column
+                    pass_code = PassCode.LT
+                else:
+                    raw_value = raw_pass_code.strip()
+                    if not raw_value:
+                        pass_code = PassCode.LT
+                    else:
+                        try:
+                            pass_code = PassCode(raw_value)
+                        except ValueError:
+                            print(
+                                f"Warning: Unknown pass code '{raw_value}' on row {row_num}; defaulting to LT",
+                                file=sys.stderr,
+                            )
+                            pass_code = PassCode.LT
+
                 issue = LanguageIssue(
                     filename=row["Filename"].strip(),
                     rule_id=row["Rule ID"].strip(),
@@ -122,6 +142,7 @@ def _parse_csv(report_path: Path) -> Iterator[tuple[str, LanguageIssue]]:
                     issue=row.get("Issue", "").strip(),
                     page_number=page_number,
                     issue_id=-1,  # Will be assigned later
+                    pass_code=pass_code,
                 )
                 
                 yield subject, issue

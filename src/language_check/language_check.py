@@ -24,6 +24,7 @@ from .language_tool_patch import apply_post_request_patch
 from .page_utils import build_page_number_map
 from .report_utils import build_report_csv, build_report_markdown
 from .language_issue import LanguageIssue
+from src.models import PassCode
 
 # Apply POST request patch to handle large documents (>300KB)
 # The default language_tool_python uses GET requests which fail for large documents
@@ -330,6 +331,7 @@ def _make_issue(match: object, filename: str, text: str = "", page_map: dict[int
 		highlighted_context=highlighted_context,
 		issue=issue,
 		page_number=page_number,
+		pass_code=PassCode.LT,
 	)
 
 
@@ -399,7 +401,7 @@ def check_document(
 	# If every tool failed, surface the failures as before
 	if not successful_check and failure_records:
 		issues = [
-				LanguageIssue(
+			LanguageIssue(
 				filename=filename,
 				rule_id="CHECK_FAILURE",
 				message=(
@@ -408,9 +410,10 @@ def check_document(
 				),
 				issue_type="error",
 				replacements=[],
-					context="ERROR FETCHING CONTEXT",
-					highlighted_context="ERROR FETCHING CONTEXT",
+				context="ERROR FETCHING CONTEXT",
+				highlighted_context="ERROR FETCHING CONTEXT",
 				issue="",
+				pass_code=PassCode.LT,
 			)
 			for language, exc, is_transient in failure_records
 		]
@@ -473,6 +476,7 @@ def check_document(
 					context="ERROR FETCHING CONTEXT",
 					highlighted_context="ERROR FETCHING CONTEXT",
 					issue="",
+					pass_code=PassCode.LT,
 				)
 			)
 

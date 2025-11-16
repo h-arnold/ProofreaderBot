@@ -15,7 +15,7 @@ from datetime import datetime, timezone
 
 from pydantic import ValidationError
 
-from src.models import LanguageIssue, DocumentKey
+from src.models import LanguageIssue, DocumentKey, PassCode
 from src.llm.service import LLMService
 from src.llm.provider import LLMQuotaError
 
@@ -351,6 +351,7 @@ class CategoriserRunner:
                         "issue": orig.issue,
                         "page_number": orig.page_number,
                         "issue_id": orig.issue_id,
+                        "pass_code": PassCode.LTC,
                         # LLM fields
                         "error_category": issue_dict.get("error_category"),
                         "confidence_score": issue_dict.get("confidence_score"),

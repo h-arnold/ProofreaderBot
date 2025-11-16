@@ -133,9 +133,9 @@ def test_categoriser_runner_with_mocked_gemini(tmp_path: Path) -> None:
     # Create a language-check-report.csv with test issues
     report_path = tmp_path / "language-check-report.csv"
     report_path.write_text(
-        "Subject,Filename,Page,Rule ID,Type,Issue,Message,Suggestions,Highlighted Context\n"
-        "Art-and-Design,gcse-art-and-design---guidance-for-teaching.md,1,STYLE_ISSUE,style,word,Test suggestion,correction,\"This is a **word** test\"\n"
-        "Art-and-Design,gcse-art-and-design---guidance-for-teaching.md,1,GRAMMAR_ISSUE,grammar,are,Subject-verb agreement,is,\"Students **are** learning\"\n"
+        "Subject,Filename,Page,Rule ID,Type,Issue,Message,Suggestions,Highlighted Context,Pass Code\n"
+        "Art-and-Design,gcse-art-and-design---guidance-for-teaching.md,1,STYLE_ISSUE,style,word,Test suggestion,correction,\"This is a **word** test\",LT\n"
+        "Art-and-Design,gcse-art-and-design---guidance-for-teaching.md,1,GRAMMAR_ISSUE,grammar,are,Subject-verb agreement,is,\"Students **are** learning\",LT\n"
     )
     
     # Setup mocked LLM
@@ -181,6 +181,13 @@ def test_categoriser_runner_with_mocked_gemini(tmp_path: Path) -> None:
     for call in mock_client.models.calls:
         assert call["model"] == "gemini-2.5-flash"
 
+    # Ensure the categoriser output includes the LTC pass code
+    output_csv = fixture_dir / "Art-and-Design" / "document_reports" / "gcse-art-and-design---guidance-for-teaching.csv"
+    assert output_csv.exists()
+    contents = output_csv.read_text(encoding="utf-8")
+    assert "pass_code" in contents.splitlines()[0]
+    assert "LTC" in contents
+
 
 def test_categoriser_runner_dry_run_with_documents_filter(tmp_path: Path) -> None:
     """Test dry-run mode filters documents correctly and doesn't call LLM."""
@@ -202,9 +209,9 @@ def test_categoriser_runner_dry_run_with_documents_filter(tmp_path: Path) -> Non
     # Create a language-check-report.csv with issues for both subjects
     report_path = tmp_path / "language-check-report.csv"
     report_path.write_text(
-        "Subject,Filename,Page,Rule ID,Type,Issue,Message,Suggestions,Highlighted Context\n"
-        "Art-and-Design,gcse-art-and-design.md,1,RULE1,style,word,Test,fix,\"test **word**\"\n"
-        "Business,gcse-business.md,1,RULE2,grammar,are,Test,fix,\"They **are** here\"\n"
+        "Subject,Filename,Page,Rule ID,Type,Issue,Message,Suggestions,Highlighted Context,Pass Code\n"
+        "Art-and-Design,gcse-art-and-design.md,1,RULE1,style,word,Test,fix,\"test **word**\",LT\n"
+        "Business,gcse-business.md,1,RULE2,grammar,are,Test,fix,\"They **are** here\",LT\n"
     )
     
     # Setup mocked LLM

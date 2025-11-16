@@ -22,6 +22,7 @@ CSV_HEADERS = [
     "page_number",
     "issue",
     "highlighted_context",
+    "pass_code",
     "error_category",
     "confidence_score",
     "reasoning",
@@ -207,7 +208,8 @@ def _read_existing_rows(path: Path) -> dict[int, dict[str, str]]:
                     iid = int(raw_id)
                 except ValueError:
                     continue
-                rows[iid] = row
+                normalised_row = {header: row.get(header, "") for header in CSV_HEADERS}
+                rows[iid] = normalised_row
     except OSError as e:
         print(f"Warning: Could not read existing CSV {path}: {e}")
     return rows
@@ -233,6 +235,7 @@ def _normalise_issue_row(issue: dict[str, Any]) -> tuple[int, dict[str, str]]:
         "page_number": _clean(issue.get("page_number")),
         "issue": _clean(issue.get("issue") or issue.get("context") or issue.get("context_from_tool")),
         "highlighted_context": _clean(issue.get("highlighted_context") or issue.get("context_from_tool")),
+        "pass_code": _clean(issue.get("pass_code")),
         "error_category": _clean(issue.get("error_category")),
         "confidence_score": _clean(issue.get("confidence_score")),
         "reasoning": _clean(issue.get("reasoning")),
