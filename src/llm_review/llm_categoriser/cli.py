@@ -199,6 +199,14 @@ def main(args: list[str] | None = None) -> int:
     """
     parsed_args = parse_args(args)
     
+    # Load .env early so that environment variables (especially LLM_PRIMARY and LLM_FALLBACK)
+    # are available before create_provider_chain reads them
+    from dotenv import load_dotenv
+    if parsed_args.dotenv:
+        load_dotenv(dotenv_path=parsed_args.dotenv)
+    else:
+        load_dotenv()  # Load from default .env file in current directory
+    
     # Validate report file exists
     if not parsed_args.from_report.exists():
         print(f"Error: Report file not found: {parsed_args.from_report}", file=sys.stderr)
@@ -226,7 +234,7 @@ def main(args: list[str] | None = None) -> int:
         providers = create_provider_chain(
             system_prompt=system_prompt_text,
             filter_json=True,
-            dotenv_path=parsed_args.dotenv,
+            dotenv_path=None,  # Already loaded early in main()
             primary=parsed_args.provider,
         )
         

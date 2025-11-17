@@ -53,7 +53,22 @@ class MistralLLM(LLMProvider):
             load_dotenv(dotenv_path=Path(dotenv_path))
         else:
             load_dotenv()
-        self._client = client or Mistral()
+        
+        # Mistral SDK does not automatically read MISTRAL_API_KEY from environment
+        # We need to read it and pass it explicitly
+        if client is None:
+            import os
+                        
+            api_key = os.environ.get("MISTRAL_API_KEY")
+            if not api_key:
+                raise ValueError(
+                    "MISTRAL_API_KEY environment variable is required but not set. "
+                    "Please set it in your .env file or environment."
+                )
+            self._client = Mistral(api_key=api_key)
+        else:
+            self._client = client
+        
         self._filter_json = filter_json
 
     @property
@@ -88,7 +103,8 @@ class MistralLLM(LLMProvider):
             # Translate Mistral SDK quota/rate-limit exceptions into the
             # project's LLMQuotaError so higher-level logic can handle provider
             # fallbacks or fail fast depending on configuration.
-            if hasattr(exc, "status_code") and exc.status_code == 429:
+            status_code = getattr(exc, "status_code", None)
+            if status_code == 429:
                 raise LLMQuotaError("Mistral provider: quota exhausted or rate limited") from exc
             raise
 
