@@ -19,9 +19,14 @@ from __future__ import annotations
 
 import csv
 from pathlib import Path
+import sys
 from typing import Iterable, List
 
 # Match the headers expected from per-document CSVs
+ROOT_DIR = Path(__file__).resolve().parents[1]
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
+
 from src.llm_review.llm_categoriser.persistence import CSV_HEADERS
 
 DEFAULT_OUTPUT_DIR = Path("Documents")
