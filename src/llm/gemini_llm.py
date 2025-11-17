@@ -171,10 +171,6 @@ class GeminiLLM:
                 # Non-quota exception, re-raise immediately
                 raise
         
-        # Should not reach here, but handle edge case
-        if last_exception:
-            raise LLMQuotaError("Gemini provider: quota exhausted or rate limited") from last_exception
-        raise RuntimeError("Unexpected error in generate retry loop")
 
     def batch_generate(
         self,
