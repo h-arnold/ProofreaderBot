@@ -520,6 +520,8 @@ def test_runner_handles_provider_quota_gracefully(tmp_path: Path) -> None:
 
         def health_check(self):
             return True
+ 
+    
 
     llm_service = LLMService([_QuotaProvider()])
 
@@ -549,3 +551,36 @@ def test_runner_handles_provider_quota_gracefully(tmp_path: Path) -> None:
     runner2 = CategoriserRunner(llm_service=llm_service, state=state, fail_on_quota=True)
     with pytest.raises(LLMQuotaError):
         runner2._process_batch(key, batch)
+
+
+def test_runner_aborts_on_503(tmp_path: Path) -> None:
+    """The runner should abort (raise) when the provider returns an HTTP 503 error."""
+    class _ServiceUnavailable(Exception):
+        def __init__(self, message: str = "Service Unavailable"):
+            super().__init__(message)
+            self.status_code = 503
+
+    # Make a magic mock LLM service that raises a 503-like exception
+    llm_service = MagicMock()
+    llm_service.generate.side_effect = _ServiceUnavailable("503 Service Unavailable")
+
+    state = CategoriserState(tmp_path / "state.json")
+    runner = CategoriserRunner(llm_service=llm_service, state=state)
+
+    issue = LanguageIssue(
+        filename="doc.md",
+        rule_id="RULE1",
+        message="msg",
+        issue_type="type",
+        replacements=[],
+        context="ctx",
+        highlighted_context="ctx",
+        issue="issue",
+        page_number=1,
+        issue_id=0,
+    )
+    key = DocumentKey(subject="Test", filename="doc.md")
+    batch = Batch(subject="Test", filename="doc.md", index=0, issues=[issue], page_context={1: "ctx"}, markdown_table="table")
+
+    with pytest.raises(_ServiceUnavailable):
+        runner._process_batch(key, batch)

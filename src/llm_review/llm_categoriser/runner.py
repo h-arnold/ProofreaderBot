@@ -210,6 +210,15 @@ class CategoriserRunner:
                     raise
                 return False
             except Exception as e:
+                # Abort the run when a provider reports an HTTP 503 (Service
+                # Unavailable) as this typically indicates a service outage and
+                # should not be retried by the runner. Various provider SDKs
+                # surface 503 in different ways (e.g. .status_code on the
+                # exception, or a .response). Detect common cases here and
+                # re-raise to abort the whole process.
+                if self._is_503_error(e):
+                    print(f"    Provider service unavailable (503): {e}")
+                    raise
                 print(f"    Error calling LLM: {e}")
                 return False
 
@@ -442,6 +451,39 @@ class CategoriserRunner:
     @staticmethod
     def _fallback_json_serializer(obj: Any) -> str:
         return str(obj)
+
+    def _is_503_error(self, exc: Exception) -> bool:
+        """Return True if the given exception indicates an HTTP 503 Service Unavailable.
+
+        Different provider SDKs expose the status code on different attributes.
+        This helper centralises the detection logic so we can consistently abort
+        runs on 503 errors.
+        """
+        try:
+            # Direct status_code attr (some SDK exceptions expose this)
+            if getattr(exc, "status_code", None) == 503:
+                return True
+
+            # Rich exceptions like httpx.HTTPStatusError contain a `response` with
+            # a status_code attribute
+            resp = getattr(exc, "response", None)
+            if resp is not None and getattr(resp, "status_code", None) == 503:
+                return True
+
+            # Some SDKs use .status or .http_status
+            if resp is not None and getattr(resp, "status", None) == 503:
+                return True
+            if getattr(exc, "http_status", None) == 503:
+                return True
+
+            # As a last resort, search the exception message for 503
+            text = str(exc)
+            if "503" in text:
+                return True
+        except Exception:
+            # If detection fails for any reason, do not treat as 503.
+            return False
+        return False
     
     def _build_table_for_issues(self, issues: list[LanguageIssue]) -> str:
         """Build a Markdown table for a subset of issues."""
