@@ -133,8 +133,6 @@ class LLMService:
                 self._report(provider.name, ProviderStatus.FAILURE, exc)
                 raise
         
-        if last_error:
-            raise last_error
         raise NotImplementedError("No provider supports create_batch_job")
 
     def fetch_batch_results(
