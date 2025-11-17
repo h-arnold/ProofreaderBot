@@ -54,16 +54,14 @@ class _TimingModels:
     def generate_content(self, **kwargs: object) -> _DummyResponse:
         self.call_times.append(time.time())
         self.calls.append(kwargs)
-        
+        self._call_count += 1
         # Simulate failures for first N calls
-        if self._call_count < self._fail_count:
-            self._call_count += 1
+        if self._call_count <= self._fail_count:
             if self._error_type == "rate_limit":
                 raise _MockTooManyRequests("429 Rate limit exceeded")
             elif self._error_type == "quota":
                 raise _MockResourceExhausted("Quota exceeded")
         
-        self._call_count += 1
         return _DummyResponse(text=self._response_text)
 
 
