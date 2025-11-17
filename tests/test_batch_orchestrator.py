@@ -15,6 +15,7 @@ try:
         BatchJobTracker,
         BatchOrchestrator,
     )
+    from src.llm_review.llm_categoriser.state import CategoriserState
     from src.llm.provider import LLMProvider
     from src.llm.service import LLMService
 except ImportError:
@@ -26,6 +27,7 @@ except ImportError:
         BatchJobTracker,
         BatchOrchestrator,
     )
+    from src.llm_review.llm_categoriser.state import CategoriserState
     from src.llm.provider import LLMProvider
     from src.llm.service import LLMService
 
@@ -174,9 +176,11 @@ def test_batch_orchestrator_process_batch_response_validates_correctly() -> None
     """Test that batch response processing validates correctly."""
     
     tracker = BatchJobTracker(Path("/tmp/test_jobs.json"))
+    state = CategoriserState(Path("/tmp/test_state.json"))
     orchestrator = BatchOrchestrator(
         llm_service=LLMService([]),
         tracker=tracker,
+        state=state,
         batch_size=10,
     )
     
@@ -218,9 +222,11 @@ def test_batch_orchestrator_process_batch_response_filters_invalid() -> None:
     """Test that batch response processing filters out invalid entries."""
     
     tracker = BatchJobTracker(Path("/tmp/test_jobs.json"))
+    state = CategoriserState(Path("/tmp/test_state.json"))
     orchestrator = BatchOrchestrator(
         llm_service=LLMService([]),
         tracker=tracker,
+        state=state,
         batch_size=10,
     )
     
@@ -268,9 +274,11 @@ def test_batch_orchestrator_process_batch_response_handles_non_list() -> None:
     """Test that non-list responses are handled gracefully."""
     
     tracker = BatchJobTracker(Path("/tmp/test_jobs.json"))
+    state = CategoriserState(Path("/tmp/test_state.json"))
     orchestrator = BatchOrchestrator(
         llm_service=LLMService([]),
         tracker=tracker,
+        state=state,
         batch_size=10,
     )
     

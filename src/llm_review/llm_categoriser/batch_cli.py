@@ -75,6 +75,13 @@ Examples:
     )
     
     create_parser.add_argument(
+        "--state-file",
+        type=Path,
+        default=Path("data/llm_categoriser_state.json"),
+        help="State file path for tracking completed batches",
+    )
+    
+    create_parser.add_argument(
         "--provider",
         help="Primary LLM provider (default: gemini)",
     )
@@ -308,9 +315,11 @@ def handle_batch_create(args: argparse.Namespace) -> int:
     
     # Create tracker and orchestrator
     tracker = BatchJobTracker(args.tracking_file)
+    state = CategoriserState(args.state_file)
     orchestrator = BatchOrchestrator(
         llm_service=llm_service,
         tracker=tracker,
+        state=state,
         batch_size=args.batch_size,
     )
     
@@ -387,6 +396,7 @@ def handle_batch_fetch(args: argparse.Namespace) -> int:
     orchestrator = BatchOrchestrator(
         llm_service=llm_service,
         tracker=tracker,
+        state=state,
         batch_size=10,  # Not used for fetching
     )
     
@@ -424,9 +434,14 @@ def handle_batch_list(args: argparse.Namespace) -> int:
         
         # Create a dummy orchestrator just for listing
         from src.llm.service import LLMService
+        
+        # Create a dummy state (not used for listing)
+        state = CategoriserState(Path("data/llm_categoriser_state.json"))
+        
         orchestrator = BatchOrchestrator(
             llm_service=LLMService([]),  # Empty service, not used for listing
             tracker=tracker,
+            state=state,
             batch_size=10,
         )
         
@@ -595,9 +610,14 @@ def handle_batch_cancel(args: argparse.Namespace) -> int:
     
     # Create tracker and orchestrator
     tracker = BatchJobTracker(args.tracking_file)
+    
+    # Create a dummy state (not used for cancellation)
+    state = CategoriserState(Path("data/llm_categoriser_state.json"))
+    
     orchestrator = BatchOrchestrator(
         llm_service=llm_service,
         tracker=tracker,
+        state=state,
         batch_size=10,  # Not used for cancellation
     )
     

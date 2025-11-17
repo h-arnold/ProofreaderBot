@@ -129,6 +129,7 @@ class BatchOrchestrator:
         self,
         llm_service: LLMService,
         tracker: BatchJobTracker,
+        state: CategoriserState,
         batch_size: int = 10,
     ):
         """Initialize the orchestrator.
@@ -136,10 +137,12 @@ class BatchOrchestrator:
         Args:
             llm_service: LLM service for making batch API calls
             tracker: Job tracker for persisting metadata
+            state: State manager for tracking completed batches
             batch_size: Number of issues per batch
         """
         self.llm_service = llm_service
         self.tracker = tracker
+        self.state = state
         self.batch_size = batch_size
     
     def create_batch_jobs(
@@ -150,6 +153,8 @@ class BatchOrchestrator:
         documents: set[str] | None = None,
     ) -> dict[str, Any]:
         """Create batch jobs for all document batches.
+        
+        Skips batches that are already marked as completed in the state.
         
         Args:
             report_path: Path to language-check-report.csv
@@ -164,12 +169,13 @@ class BatchOrchestrator:
         
         if not grouped_issues:
             print("No issues found matching the filters")
-            return {"total_documents": 0, "total_batches": 0, "created_jobs": 0}
+            return {"total_documents": 0, "total_batches": 0, "created_jobs": 0, "skipped_batches": 0}
         
         print(f"Loaded {len(grouped_issues)} document(s) with issues")
         
         total_batches = 0
         created_jobs = 0
+        skipped_batches = 0
         
         for key, issues in grouped_issues.items():
             print(f"\nProcessing {key} ({len(issues)} issues)...")
@@ -186,6 +192,12 @@ class BatchOrchestrator:
                 filename=key.filename,
             ):
                 total_batches += 1
+                
+                # Check if this batch is already completed
+                if self.state.is_batch_completed(key, batch.index):
+                    print(f"  Batch {batch.index}: Already completed (skipping)")
+                    skipped_batches += 1
+                    continue
                 
                 # Build prompts
                 prompts = build_prompts(batch)
@@ -228,6 +240,7 @@ class BatchOrchestrator:
         print(f"Summary:")
         print(f"  Total documents: {len(grouped_issues)}")
         print(f"  Total batches: {total_batches}")
+        print(f"  Skipped (already completed): {skipped_batches}")
         print(f"  Created jobs: {created_jobs}")
         print(f"{'=' * 60}")
         
@@ -235,6 +248,7 @@ class BatchOrchestrator:
             "total_documents": len(grouped_issues),
             "total_batches": total_batches,
             "created_jobs": created_jobs,
+            "skipped_batches": skipped_batches,
         }
     
     def fetch_batch_results(
