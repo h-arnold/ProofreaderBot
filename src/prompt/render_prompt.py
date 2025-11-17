@@ -59,7 +59,7 @@ def render_template(template_name: str = "language_tool_categoriser.md", context
     # Load required partials
     partials = {}
     
-    for partial_name in ["llm_reviewer_system_prompt", "authoritative_sources"]:
+    for partial_name in ["llm_reviewer_system_prompt", "authoritative_sources", "error_descriptions"]:
         partial_content = _read_prompt(f"{partial_name}.md")
         partials[partial_name] = _strip_code_fences(partial_content)
 
@@ -83,7 +83,7 @@ def render_prompts(
 
     # Load partials (shared by both templates)
     partials = {}
-    for partial_name in ["llm_reviewer_system_prompt", "authoritative_sources"]:
+    for partial_name in ["llm_reviewer_system_prompt", "authoritative_sources", "error_descriptions"]:
         partial_content = _read_prompt(f"{partial_name}.md")
         partials[partial_name] = _strip_code_fences(partial_content)
 

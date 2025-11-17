@@ -15,6 +15,7 @@ if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
 from src.language_check.language_issue import LanguageIssue
+from src.models import PassCode
 from src.llm_review.llm_categoriser.data_loader import load_issues, _parse_csv
 from src.llm_review.llm_categoriser.batcher import iter_batches
 from src.llm_review.llm_categoriser.state import CategoriserState
@@ -29,8 +30,8 @@ from src.llm_review.llm_categoriser.state import CategoriserState
 
 def test_parse_csv(tmp_path: Path) -> None:
     """Test CSV parsing with highlighted context."""
-    csv_content = """Subject,Filename,Page,Rule ID,Type,Issue,Message,Suggestions,Highlighted Context
-Art,test.md,1,RULE1,error,word,Test message,fix,"This is **word**"
+    csv_content = """Subject,Filename,Page,Rule ID,Type,Issue,Message,Suggestions,Highlighted Context,Pass Code
+Art,test.md,1,RULE1,error,word,Test message,fix,"This is **word**",LT
 """
     csv_file = tmp_path / "test.csv"
     csv_file.write_text(csv_content)
@@ -45,6 +46,7 @@ Art,test.md,1,RULE1,error,word,Test message,fix,"This is **word**"
     assert issue.highlighted_context == "This is **word**"
     assert issue.page_number == 1
     assert issue.issue_id == -1  # Not yet assigned
+    assert issue.pass_code == PassCode.LT
 
 
 def test_load_issues_assigns_issue_ids(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
@@ -53,10 +55,10 @@ def test_load_issues_assigns_issue_ids(tmp_path: Path, monkeypatch: pytest.Monke
     monkeypatch.chdir(tmp_path)
     
     # Create CSV
-    csv_content = """Subject,Filename,Page,Rule ID,Type,Issue,Message,Suggestions,Highlighted Context
-TestSub,doc1.md,1,RULE1,error,word1,Test,fix1,"context1"
-TestSub,doc1.md,2,RULE2,error,word2,Test,fix2,"context2"
-TestSub,doc2.md,1,RULE3,error,word3,Test,fix3,"context3"
+    csv_content = """Subject,Filename,Page,Rule ID,Type,Issue,Message,Suggestions,Highlighted Context,Pass Code
+TestSub,doc1.md,1,RULE1,error,word1,Test,fix1,"context1",LT
+TestSub,doc1.md,2,RULE2,error,word2,Test,fix2,"context2",LT
+TestSub,doc2.md,1,RULE3,error,word3,Test,fix3,"context3",LT
 """
     csv_file = tmp_path / "test.csv"
     csv_file.write_text(csv_content)
@@ -80,6 +82,8 @@ TestSub,doc2.md,1,RULE3,error,word3,Test,fix3,"context3"
     assert grouped[key1][0].issue_id == 0
     assert grouped[key1][1].issue_id == 1
     assert grouped[key2][0].issue_id == 0
+    assert all(issue.pass_code == PassCode.LT for issue in grouped[key1])
+    assert grouped[key2][0].pass_code == PassCode.LT
 
 
 def test_batcher_creates_markdown_table(tmp_path: Path) -> None:
@@ -178,6 +182,7 @@ def test_persistence_saves_and_loads(tmp_path: Path) -> None:
             "page_number": 1,
             "issue": "word",
             "highlighted_context": "ctx",
+            "pass_code": PassCode.LTC.value,
             "error_category": "SPELLING_ERROR",
             "confidence_score": 90,
             "reasoning": "Test reason",
@@ -200,6 +205,7 @@ def test_persistence_saves_and_loads(tmp_path: Path) -> None:
             "page_number": "1",
             "issue": "word",
             "highlighted_context": "ctx",
+            "pass_code": PassCode.LTC.value,
             "error_category": "SPELLING_ERROR",
             "confidence_score": "90",
             "reasoning": "Test reason",
@@ -218,6 +224,7 @@ def test_persistence_merges_results(tmp_path: Path) -> None:
             "page_number": 1,
             "issue": "first",
             "highlighted_context": "ctx1",
+            "pass_code": PassCode.LTC.value,
             "error_category": "SPELLING_ERROR",
             "confidence_score": 90,
             "reasoning": "reason1",
@@ -232,6 +239,7 @@ def test_persistence_merges_results(tmp_path: Path) -> None:
             "page_number": 2,
             "issue": "second",
             "highlighted_context": "ctx2",
+            "pass_code": PassCode.LTC.value,
             "error_category": "ABSOLUTE_GRAMMATICAL_ERROR",
             "confidence_score": 85,
             "reasoning": "reason2",
@@ -295,6 +303,7 @@ def test_persistence_deduplicates_on_merge(tmp_path: Path) -> None:
             "issue": "context1",
             "highlighted_context": "context1",
             "page_number": 1,
+            "pass_code": PassCode.LTC.value,
             "error_category": "SPELLING_ERROR",
             "confidence_score": 90,
             "reasoning": "Test reason",
@@ -304,6 +313,7 @@ def test_persistence_deduplicates_on_merge(tmp_path: Path) -> None:
             "issue": "context2",
             "highlighted_context": "context2",
             "page_number": 2,
+            "pass_code": PassCode.LTC.value,
             "error_category": "ABSOLUTE_GRAMMATICAL_ERROR",
             "confidence_score": 85,
             "reasoning": "Test reason 2",
@@ -318,6 +328,7 @@ def test_persistence_deduplicates_on_merge(tmp_path: Path) -> None:
             "issue": "context1",
             "highlighted_context": "context1",
             "page_number": 1,
+            "pass_code": PassCode.LTC.value,
             "error_category": "SPELLING_ERROR",
             "confidence_score": 90,
             "reasoning": "Test reason",
@@ -327,6 +338,7 @@ def test_persistence_deduplicates_on_merge(tmp_path: Path) -> None:
             "issue": "context3",
             "highlighted_context": "context3",
             "page_number": 3,
+            "pass_code": PassCode.LTC.value,
             "error_category": "ABSOLUTE_GRAMMATICAL_ERROR",
             "confidence_score": 80,
             "reasoning": "Test reason 3",
@@ -416,6 +428,7 @@ def test_runner_array_of_issue_dicts_validates_using_model(tmp_path: Path) -> No
     assert failed == set()
     # No error messages recorded
     assert not errors.get(0)
+    assert validated[0]["pass_code"] == PassCode.LTC.value
 
 
 def test_runner_logs_raw_response_when_enabled(tmp_path: Path) -> None:

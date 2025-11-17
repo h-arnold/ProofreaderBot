@@ -41,16 +41,7 @@ For **each issue** in the table:
 4. **Score:** Provide a confidence score between 0–100 (integers only).
 5. **Justify:** Supply a single concise sentence explaining the decision.
 
-### Error Categories
-
-- `PARSING_ERROR`: Mechanical/string issues (missing hyphen, merged words, stray spacing).
-- `SPELLING_ERROR`: Incorrect spelling or wrong word form for the context.
-- `ABSOLUTE_GRAMMATICAL_ERROR`: Definitive grammar breach, including incorrect regional spelling variants.
-- `POSSIBLE_AMBIGUOUS_GRAMMATICAL_ERROR`: Grammatically debatable or awkward but not clearly wrong.
-- `STYLISTIC_PREFERENCE`: Stylistic suggestion where the original is acceptable.
-- `FALSE_POSITIVE`: Tool misfire; terminology, proper names, or foreign words that are correct as written.
-
-Always return the enum values exactly as written above (UPPER_SNAKE_CASE).
+{{> error_descriptions}}
 
 ## Output Format
 

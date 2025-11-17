@@ -65,6 +65,7 @@ Important: The LLM is only asked to return the categorisation results. The origi
 - `page_number`
 - `issue`
 - `highlighted_context`
+- `pass_code`
 - `error_category`
 - `confidence_score`
 - `reasoning`

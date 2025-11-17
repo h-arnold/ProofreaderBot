@@ -12,7 +12,7 @@ from typing import Any, List
 
 from pydantic import BaseModel, Field, ConfigDict, field_validator, model_validator
 
-from .enums import ErrorCategory
+from .enums import ErrorCategory, PassCode
 
 
 class LanguageIssue(BaseModel):
@@ -29,6 +29,7 @@ class LanguageIssue(BaseModel):
     - issue: The actual issue text extracted
     - page_number: Optional page number in the document
     - issue_id: Auto-incremented per document (-1 if not set)
+    - pass_code: Optional marker indicating which workflow pass produced the issue
     
     LLM categorisation fields (optional):
     - error_category: LLM-assigned category (None if not categorised)
@@ -49,6 +50,7 @@ class LanguageIssue(BaseModel):
     issue: str
     page_number: int | None = None
     issue_id: int = -1  # Auto-incremented per document by categoriser; -1 = not set
+    pass_code: PassCode | None = None
     
     # LLM categorisation fields (optional)
     error_category: ErrorCategory | None = None
@@ -76,6 +78,17 @@ class LanguageIssue(BaseModel):
         if value is None:
             return None
         return str(value).strip() or None
+
+    @field_validator("pass_code", mode="before")
+    def _normalise_pass_code(cls, value: object) -> PassCode | None:
+        if value is None or value == "":
+            return None
+        if isinstance(value, PassCode):
+            return value
+        try:
+            return PassCode(str(value).strip())
+        except ValueError as exc:  # pragma: no cover - handled by Pydantic validation
+            raise ValueError(f"Invalid pass_code value: {value!r}") from exc
     
     @field_validator("replacements", mode="before")
     def _normalise_replacements(cls, value: object) -> List[str]:
@@ -152,6 +165,7 @@ class LanguageIssue(BaseModel):
             issue=data.get("context_from_tool", ""),  # Use context as issue for LLM responses
             page_number=data.get("page_number"),
             issue_id=data.get("issue_id", -1),
+            pass_code=data.get("pass_code") or PassCode.LTC,
             error_category=data.get("error_category"),
             confidence_score=data.get("confidence_score"),
             reasoning=data.get("reasoning"),

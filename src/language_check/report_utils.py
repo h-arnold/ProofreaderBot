@@ -200,6 +200,7 @@ def build_report_csv(reports: Iterable["DocumentReport"]) -> list[list[str]]:
         "Message",
         "Suggestions",
         "Highlighted Context",
+        "Pass Code",
     ])
 
     report_list = sorted(
@@ -214,6 +215,7 @@ def build_report_csv(reports: Iterable["DocumentReport"]) -> list[list[str]]:
             # Use highlighted_context for the CSV column
             context = issue.highlighted_context if issue.highlighted_context else ""
             page_num = str(issue.page_number) if issue.page_number is not None else ""
+            pass_code = issue.pass_code.value if issue.pass_code is not None else ""
 
             rows.append([
                 report.subject,
@@ -225,6 +227,7 @@ def build_report_csv(reports: Iterable["DocumentReport"]) -> list[list[str]]:
                 issue.message,
                 suggestions,
                 context,
+                pass_code,
             ])
 
     return rows
