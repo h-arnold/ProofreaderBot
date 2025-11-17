@@ -249,6 +249,7 @@ The project uses a few environment variables (and supports loading them from a `
 - LLM_CATEGORISER_STATE_FILE — File path used to persist state for the categoriser (default: `data/llm_categoriser_state.json`).
 - LLM_CATEGORISER_LOG_RESPONSES — Set to `1`, `true`, `yes`, or `on` to dump every raw LLM response to disk for debugging.
 - LLM_CATEGORISER_LOG_DIR — Directory where raw responses should be stored (default: `data/llm_categoriser_responses`).
+- LLM_FAIL_ON_QUOTA — When set (true/1/yes/on) the LLM categoriser will abort the run on provider quota/rate-limit exhaustion. Default: `true`. Use `--no-fail-on-quota` or set the var to false to continue processing other documents.
 - GEMINI_MIN_REQUEST_INTERVAL — Minimum number of seconds to wait between Gemini requests (default: 0). Useful to avoid rate limits.
 
 Notes:
