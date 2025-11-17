@@ -214,7 +214,7 @@ def test_gemini_exponential_backoff_on_retries(tmp_path: Path) -> None:
         assert len(call_times) == 4  # 3 failures + 1 success
         
         # Check that delays increase exponentially (as multiples of min_interval)
-        # Expected pattern: attempt 1, wait min_interval * 2^0, attempt 2, wait min_interval * 2^1, etc.
+        # Expected pattern: initial request (attempt 1, no wait), then before retry 1 wait min_interval * 2^0, before retry 2 wait min_interval * 2^1, etc.
         intervals = [call_times[i] - call_times[i-1] for i in range(1, len(call_times))]
         
         # First retry should wait ~min_interval (2^0)
