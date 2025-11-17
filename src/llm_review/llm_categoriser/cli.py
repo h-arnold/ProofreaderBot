@@ -48,7 +48,8 @@ Environment Variables:
   LLM_CATEGORISER_STATE_FILE     State file path (default: data/llm_categoriser_state.json)
     LLM_CATEGORISER_LOG_RESPONSES  Set to true/1 to dump raw LLM JSON responses for each batch attempt
     LLM_CATEGORISER_LOG_DIR        Override directory for raw response logs (default: data/llm_categoriser_responses)
-  GEMINI_MIN_REQUEST_INTERVAL    Min seconds between Gemini requests (default: 0)
+  GEMINI_MIN_REQUEST_INTERVAL    Min seconds between Gemini requests (default: 0). Also respected by GeminiLLM provider.
+  GEMINI_MAX_RETRIES             Number of retry attempts for 429 rate limit errors (default: 0). Also respected by GeminiLLM provider.
   LLM_PRIMARY                    Primary LLM provider (default: gemini)
   LLM_FALLBACK                   Fallback providers (comma-separated)
     LLM_FAIL_ON_QUOTA              When set (true/1/yes/on), exit the run on quota exhaustion (default: true)
