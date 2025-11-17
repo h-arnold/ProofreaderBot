@@ -5,7 +5,7 @@ from __future__ import annotations
 import sys
 import time
 from pathlib import Path
-from typing import Any, cast
+from typing import cast
 from unittest.mock import patch
 
 import pytest
