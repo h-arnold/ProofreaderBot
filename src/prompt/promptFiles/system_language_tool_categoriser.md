@@ -1,14 +1,5 @@
 {{> llm_reviewer_system_prompt}}
 
-<!--
-  Template context contract (provided by prompt_factory.py):
-    subject         -> string (e.g., "Art-and-Design")
-    filename        -> string (e.g., "gcse-art-and-design---guidance-for-teaching.md")
-    issue_table     -> Markdown string representing the batch table
-    page_context    -> iterable of { page_number: int, content: str }
-    retry_context?  -> optional note when re-asking the model (not currently used)
--->
-
 ## Document Under Review
 
 You are reviewing **{{subject}} / {{filename}}** from the WJEC Made-for-Wales 2025 GCSE documentation set. Treat this as a high-stakes proofread: every issue in the table below must be checked against the provided page excerpts.
@@ -23,8 +14,6 @@ You are reviewing **{{subject}} / {{filename}}** from the WJEC Made-for-Wales 20
 ## Task
 
 Your role is to act as a specialist linguistic validator, reassessing every row in the issue table. Do **not** rely on the LanguageTool `Type` or message alone—use the page context, your WJEC domain knowledge, and authoritative sources to decide whether the suggestion is correct, optional, or a false alarm.
-
----
 
 
 ---
@@ -47,7 +36,7 @@ For **each issue** in the table:
 
 Return a **single top-level JSON array** (no surrounding object, no page keys) and nothing else. Do not include backticks, commentary, or any text before or after the JSON. Each array element represents one issue from the table.
 
-IMPORTANT: the categoriser only needs to provide the LLM results for each issue — the detection fields are already known from the input CSV and are re-applied server-side. For each issue, return exactly the following fields and nothing more:
+For each issue, return exactly the following fields and nothing more:
 
 - `issue_id`: integer — the issue identifier from the input CSV (auto-increment per-document)
 - `error_category`: one of the enum values listed in "Error Categories" above (e.g., `PARSING_ERROR`)
