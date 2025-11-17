@@ -212,6 +212,49 @@ Examples:
         type=Path,
         help="Path to .env file for API keys",
     )
+    
+    # Cancel batch jobs subcommand
+    cancel_parser = subparsers.add_parser(
+        "batch-cancel",
+        help="Cancel pending batch jobs",
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog="""
+Examples:
+  # Cancel all pending jobs
+  python -m src.llm_review.llm_categoriser batch-cancel --cancel-all-pending
+
+  # Cancel specific jobs
+  python -m src.llm_review.llm_categoriser batch-cancel --job-names batch-123 batch-456
+
+  # Use custom tracking file
+  python -m src.llm_review.llm_categoriser batch-cancel --cancel-all-pending --tracking-file data/my_jobs.json
+        """,
+    )
+    
+    cancel_parser.add_argument(
+        "--job-names",
+        nargs="+",
+        help="Specific job names to cancel",
+    )
+    
+    cancel_parser.add_argument(
+        "--cancel-all-pending",
+        action="store_true",
+        help="Cancel all pending jobs",
+    )
+    
+    cancel_parser.add_argument(
+        "--tracking-file",
+        type=Path,
+        default=Path("data/batch_jobs.json"),
+        help="Path to job tracking file",
+    )
+    
+    cancel_parser.add_argument(
+        "--dotenv",
+        type=Path,
+        help="Path to .env file for API keys",
+    )
 
 
 def handle_batch_create(args: argparse.Namespace) -> int:
@@ -504,3 +547,75 @@ def handle_batch_refresh_errors(args: argparse.Namespace) -> int:
         import traceback
         traceback.print_exc()
         return 1
+
+
+def handle_batch_cancel(args: argparse.Namespace) -> int:
+    """Handle batch-cancel subcommand.
+    
+    Args:
+        args: Parsed command-line arguments
+        
+    Returns:
+        Exit code (0 for success, 1 for error)
+    """
+    # Load environment
+    from dotenv import load_dotenv
+    if args.dotenv:
+        load_dotenv(dotenv_path=str(args.dotenv), override=True)
+    else:
+        load_dotenv(override=True)
+    
+    # Create LLM service
+    try:
+        from src.prompt.render_prompt import render_prompts
+        
+        system_prompt_text, _ = render_prompts(
+            "system_language_tool_categoriser.md",
+            "user_language_tool_categoriser.md",
+            {},
+        )
+        
+        providers = create_provider_chain(
+            system_prompt=system_prompt_text,
+            filter_json=True,
+            dotenv_path=None,
+            primary=None,  # We only need API access for cancellation
+        )
+        
+        if not providers:
+            print("Error: No LLM providers configured", file=sys.stderr)
+            return 1
+        
+        print(f"Using LLM provider(s): {[p.name for p in providers]}")
+        llm_service = LLMService(providers)
+        
+    except Exception as e:
+        print(f"Error creating LLM service: {e}", file=sys.stderr)
+        return 1
+    
+    # Create tracker and orchestrator
+    tracker = BatchJobTracker(args.tracking_file)
+    orchestrator = BatchOrchestrator(
+        llm_service=llm_service,
+        tracker=tracker,
+        batch_size=10,  # Not used for cancellation
+    )
+    
+    # Cancel batch jobs
+    try:
+        orchestrator.cancel_batch_jobs(
+            job_names=args.job_names,
+            cancel_all_pending=args.cancel_all_pending,
+        )
+        
+        return 0
+        
+    except KeyboardInterrupt:
+        print("\nInterrupted by user", file=sys.stderr)
+        return 130
+    except Exception as e:
+        print(f"Error: {e}", file=sys.stderr)
+        import traceback
+        traceback.print_exc()
+        return 1
+

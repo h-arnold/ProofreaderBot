@@ -146,6 +146,31 @@ Fetches results from a completed batch job.
 results = service.fetch_batch_results(provider_name, job_name)
 ```
 
+#### `cancel_batch_job(provider_name, batch_job_name) -> None`
+
+Cancels a pending batch job.
+
+**Parameters:**
+- `provider_name`: The provider name from `create_batch_job()`
+- `batch_job_name`: The job name from `create_batch_job()`
+
+**Raises:**
+- `ValueError`: If provider not found
+- `NotImplementedError`: If provider doesn't support cancellation
+- `LLMProviderError`: If cancellation fails
+
+**Example:**
+```python
+# Cancel a job that's no longer needed
+try:
+    service.cancel_batch_job(provider_name, job_name)
+    print(f"Cancelled job: {job_name}")
+except LLMProviderError as e:
+    print(f"Cancellation failed: {e}")
+```
+
+**Note:** Cancelling a job that has already completed or failed will raise an error. Check the job status before cancelling if needed.
+
 ## Complete Example
 
 ```python

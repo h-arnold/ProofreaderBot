@@ -67,6 +67,20 @@ Fetch multiple specific jobs:
 python -m src.llm_review.llm_categoriser batch-fetch --job-names batch-123 batch-456 batch-789
 ```
 
+### 4. Cancel Pending Jobs
+
+Cancel all pending jobs:
+```bash
+python -m src.llm_review.llm_categoriser batch-cancel --cancel-all-pending
+```
+
+Cancel specific jobs:
+```bash
+python -m src.llm_review.llm_categoriser batch-cancel --job-names batch-123 batch-456
+```
+
+**Note:** Only pending jobs can be cancelled. Jobs that have already completed or failed will be skipped.
+
 ## Workflow
 
 ### Complete Workflow Example

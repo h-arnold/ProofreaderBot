@@ -238,6 +238,22 @@ class GeminiLLM:
             BatchJob object with status and results (if completed).
         """
         return self._client.batches.get(name=batch_job_name)
+    
+    def cancel_batch_job(self, batch_job_name: str) -> None:
+        """Cancel a pending batch job.
+        
+        Args:
+            batch_job_name: The name of the batch job to cancel.
+        
+        Raises:
+            LLMProviderError: If cancellation fails.
+        """
+        from .provider import LLMProviderError
+        
+        try:
+            self._client.batches.delete(name=batch_job_name)
+        except Exception as e:
+            raise LLMProviderError(f"Failed to cancel batch job {batch_job_name}: {e}") from e
 
     def fetch_batch_results(
         self,

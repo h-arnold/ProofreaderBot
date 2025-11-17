@@ -57,6 +57,7 @@ class _DummyBatches:
     def __init__(self) -> None:
         self.created_jobs: list[dict[str, Any]] = []
         self.jobs: dict[str, _DummyBatchJob] = {}
+        self.deleted_jobs: list[str] = []
 
     def create(self, **kwargs: Any) -> _DummyBatchJob:
         self.created_jobs.append(kwargs)
@@ -83,6 +84,13 @@ class _DummyBatches:
         if name not in self.jobs:
             raise ValueError(f"Batch job {name} not found")
         return self.jobs[name]
+    
+    def delete(self, *, name: str, **kwargs: Any) -> None:
+        """Delete (cancel) a batch job."""
+        if name not in self.jobs:
+            raise ValueError(f"Batch job {name} not found")
+        self.deleted_jobs.append(name)
+        del self.jobs[name]
 
 
 class _DummyClient:
@@ -283,3 +291,34 @@ def test_batch_generate_raises_not_implemented(tmp_path: Path) -> None:
 
     with pytest.raises(NotImplementedError, match="asynchronous"):
         llm.batch_generate([["Prompt"]])
+
+
+def test_cancel_batch_job_calls_delete(tmp_path: Path) -> None:
+    """Test that cancel_batch_job calls the delete method."""
+    system_prompt_path = tmp_path / "system.md"
+    system_prompt_path.write_text("System", encoding="utf-8")
+    client = _DummyClient()
+    llm = GeminiLLM(system_prompt=system_prompt_path, client=cast(genai.Client, client))
+
+    # Create a batch job
+    job_name = llm.create_batch_job([["Prompt"]])
+    assert job_name in client.batches.jobs
+    
+    # Cancel it
+    llm.cancel_batch_job(job_name)
+    
+    # Verify it was deleted
+    assert job_name in client.batches.deleted_jobs
+    assert job_name not in client.batches.jobs
+
+
+def test_cancel_batch_job_raises_on_not_found(tmp_path: Path) -> None:
+    """Test that cancel_batch_job raises an error for non-existent jobs."""
+    system_prompt_path = tmp_path / "system.md"
+    system_prompt_path.write_text("System", encoding="utf-8")
+    client = _DummyClient()
+    llm = GeminiLLM(system_prompt=system_prompt_path, client=cast(genai.Client, client))
+
+    with pytest.raises(LLMProviderError, match="Failed to cancel batch job"):
+        llm.cancel_batch_job("non-existent-job")
+

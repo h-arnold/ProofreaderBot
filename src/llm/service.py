@@ -199,6 +199,36 @@ class LLMService:
         except LLMProviderError as exc:
             self._report(provider.name, ProviderStatus.FAILURE, exc)
             raise
+    
+    def cancel_batch_job(
+        self,
+        provider_name: str,
+        batch_job_name: str,
+    ) -> None:
+        """Cancel a pending batch job.
+        
+        Args:
+            provider_name: The name of the provider that created the batch job.
+            batch_job_name: The batch job identifier returned from create_batch_job.
+        
+        Raises:
+            ValueError: If provider not found.
+            NotImplementedError: If provider doesn't support cancellation.
+            LLMProviderError: If cancellation fails.
+        """
+        provider = self._find_provider(provider_name)
+        
+        if not hasattr(provider, 'cancel_batch_job'):
+            raise NotImplementedError(
+                f"Provider '{provider_name}' does not support cancel_batch_job"
+            )
+        
+        try:
+            provider.cancel_batch_job(batch_job_name)
+            self._report(provider.name, ProviderStatus.SUCCESS)
+        except LLMProviderError as exc:
+            self._report(provider.name, ProviderStatus.FAILURE, exc)
+            raise
 
     def _find_provider(self, provider_name: str) -> LLMProvider:
         """Find a provider by name.

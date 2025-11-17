@@ -456,3 +456,86 @@ class BatchOrchestrator:
             failed_count = sum(1 for j in all_jobs if j.status == "failed")
             if failed_count > 0:
                 print(f"\nNote: {failed_count} job(s) have failed. Use --show-errors to see error details.")
+    
+    def cancel_batch_jobs(
+        self,
+        *,
+        job_names: list[str] | None = None,
+        cancel_all_pending: bool = False,
+    ) -> dict[str, Any]:
+        """Cancel batch jobs.
+        
+        Args:
+            job_names: Optional list of specific job names to cancel
+            cancel_all_pending: If True, cancel all pending jobs
+            
+        Returns:
+            Summary statistics dictionary
+        """
+        if not job_names and not cancel_all_pending:
+            print("Error: Must specify either --job-names or --cancel-all-pending")
+            return {"cancelled": 0, "failed": 0, "skipped": 0}
+        
+        # Determine which jobs to cancel
+        if cancel_all_pending:
+            jobs_to_cancel = self.tracker.get_pending_jobs()
+            print(f"Found {len(jobs_to_cancel)} pending job(s) to cancel\n")
+        else:
+            jobs_to_cancel = []
+            if job_names:
+                for job_name in job_names:
+                    job = self.tracker.get_job(job_name)
+                    if job:
+                        jobs_to_cancel.append(job)
+                    else:
+                        print(f"Warning: Job {job_name} not found in tracking")
+        
+        if not jobs_to_cancel:
+            print("No jobs to cancel")
+            return {"cancelled": 0, "failed": 0, "skipped": 0}
+        
+        cancelled = 0
+        failed_to_cancel = 0
+        skipped = 0
+        
+        for job in jobs_to_cancel:
+            job_name = job.job_name
+            print(f"Cancelling {job_name[:16]}... ({job.subject}/{job.filename})")
+            
+            # Skip if not pending
+            if job.status != "pending":
+                print(f"  Skipped: Job status is '{job.status}', not 'pending'")
+                skipped += 1
+                continue
+            
+            try:
+                self.llm_service.cancel_batch_job(
+                    job.provider_name,
+                    job_name
+                )
+                print(f"  Successfully cancelled")
+                # Update status in tracker to 'failed' with cancellation message
+                self.tracker.update_job_status(
+                    job_name, 
+                    "failed", 
+                    "Cancelled by user"
+                )
+                cancelled += 1
+                
+            except Exception as e:
+                error_msg = str(e)
+                print(f"  Error: {error_msg}")
+                failed_to_cancel += 1
+        
+        print(f"\n{'=' * 60}")
+        print(f"Summary:")
+        print(f"  Cancelled: {cancelled}")
+        print(f"  Failed to cancel: {failed_to_cancel}")
+        print(f"  Skipped (not pending): {skipped}")
+        print(f"{'=' * 60}")
+        
+        return {
+            "cancelled": cancelled,
+            "failed": failed_to_cancel,
+            "skipped": skipped,
+        }

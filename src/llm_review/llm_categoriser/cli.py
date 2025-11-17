@@ -15,7 +15,7 @@ from src.llm.service import LLMService
 
 from .runner import CategoriserRunner
 from .state import CategoriserState
-from .batch_cli import add_batch_subparsers, handle_batch_create, handle_batch_fetch, handle_batch_list, handle_batch_refresh_errors
+from .batch_cli import add_batch_subparsers, handle_batch_create, handle_batch_fetch, handle_batch_list, handle_batch_refresh_errors, handle_batch_cancel
 
 
 def parse_args(args: list[str] | None = None) -> argparse.Namespace:
@@ -232,6 +232,8 @@ def main(args: list[str] | None = None) -> int:
         return handle_batch_list(parsed_args)
     elif parsed_args.command == "batch-refresh-errors":
         return handle_batch_refresh_errors(parsed_args)
+    elif parsed_args.command == "batch-cancel":
+        return handle_batch_cancel(parsed_args)
     
     # Continue with synchronous categorisation (default behavior)
     # Load .env early so that environment variables (especially LLM_PRIMARY and LLM_FALLBACK)
