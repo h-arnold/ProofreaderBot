@@ -98,9 +98,48 @@
       },
       "gcse-business---unit-1-introduction-to-the-business-world.md": {
         "completed_batches": [
-          0
+          0,
+          1,
+          2
         ],
         "total_issues": 24
+      },
+      "gcse-business---unit-2-key-business-considerations-sample.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 5
+      },
+      "gcse-business---unit-3-business-strategies-for-success.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "total_issues": 48
+      },
+      "gcse-business-3160-unit-2-nea-handbook.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 1
+      },
+      "overview-of-consultation-findings.md": {
+        "completed_batches": [
+          0,
+          1
+        ],
+        "total_issues": 14
+      },
+      "wjec-gcse-business-specification.md": {
+        "completed_batches": [
+          0,
+          1,
+          2
+        ],
+        "total_issues": 21
       }
     },
     "Computer-Science": {
@@ -594,6 +633,175 @@
           0
         ],
         "total_issues": 10
+      }
+    },
+    "Dance": {
+      "wjec-gcse-dance-specification.md": {
+        "completed_batches": [
+          0,
+          1
+        ],
+        "total_issues": 14
+      }
+    },
+    "Design-and-Technology": {
+      "wjec-gcse-design-and-technology-specification.md": {
+        "completed_batches": [
+          0,
+          1
+        ],
+        "total_issues": 19
+      }
+    },
+    "Digital-Media-and-Film": {
+      "digital-media-and-film---options-evening-flyer.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 1
+      },
+      "wjec-gcse-digital-media-and-film-specification.md": {
+        "completed_batches": [
+          0,
+          1
+        ],
+        "total_issues": 17
+      }
+    },
+    "Digital-Technology": {
+      "wjec-gcse-digital-technology-specification.md": {
+        "completed_batches": [
+          0,
+          1
+        ],
+        "total_issues": 14
+      }
+    },
+    "English-Language-and-Literature": {
+      "april-2025.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 4
+      },
+      "gcse-english-language-and-literature---guidance-for-teaching.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 427
+      }
+    },
+    "Geography": {
+      "cylchlythyr-ionawr-2025.md": {
+        "completed_batches": [
+          0,
+          1
+        ],
+        "total_issues": 12
+      },
+      "fieldwork-opportunities-at-gwersyll-yr-urdd-pentre-ifan.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 2
+      },
+      "gcse-geography---delivery-guide.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 6
+      },
+      "gcse-geography---faqs.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 4
+      },
+      "gcse-geography---guidance-for-teaching-unit-1.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "total_issues": 47
+      },
+      "gcse-geography---guidance-for-teaching-unit-2.md": {
+        "completed_batches": [
+          0,
+          1,
+          2
+        ],
+        "total_issues": 27
+      },
+      "gcse-geography---guidance-for-teaching-unit-3.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "total_issues": 64
+      },
+      "gcse-geography---guidance-for-teaching-unit-4.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 4
+      },
+      "gcse-geography---guided-learning-hours-table.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 1
+      },
+      "gcse-geography---unit-1-our-physical-and-human-world.md": {
+        "completed_batches": [
+          0,
+          1,
+          2
+        ],
+        "total_issues": 29
+      },
+      "gcse-geography---unit-3-our-dynamic-and-diverse-world.md": {
+        "completed_batches": [
+          0,
+          1,
+          2
+        ],
+        "total_issues": 26
+      },
+      "overview-of-consultation-findings.md": {
+        "completed_batches": [
+          0,
+          1
+        ],
+        "total_issues": 14
+      },
+      "wjec-gcse-geography-specification.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "total_issues": 31
+      },
+      "wjec-gcse-geography-unit-2-external-nea-handbook.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 9
+      },
+      "wjec-gcse-geography-unit-4-internal-nea-handbook.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 4
       }
     }
   }
