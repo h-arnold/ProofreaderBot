@@ -4,6 +4,7 @@ import os
 from pathlib import Path
 from typing import Sequence
 
+from dotenv import load_dotenv
 from .gemini_llm import GeminiLLM
 from .mistral_llm import MistralLLM
 from .provider import LLMProvider, ProviderFactory
@@ -58,6 +59,11 @@ def create_provider_chain(
 
     order: list[str] = []
     seen: set[str] = set()
+
+    # If dotenv_path was supplied, load it early so that environment variables
+    # such as LLM_PRIMARY/LLM_FALLBACK are available before we read them.
+    if dotenv_path is not None:
+        load_dotenv(dotenv_path=str(dotenv_path))
 
     candidates: list[str] = []
     if primary:

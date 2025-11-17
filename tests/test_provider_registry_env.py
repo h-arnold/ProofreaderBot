@@ -265,16 +265,17 @@ def test_create_provider_chain_env_variables_must_be_loaded_first(
         # so the .env file hasn't been loaded yet when create_provider_chain
         # checks os.environ.get("LLM_PRIMARY")
         
-        # Without pre-loading .env, we get default provider order
+        # Creating with a dotenv_path should load the .env and make LLM_PRIMARY
+        # available when the provider registry decides provider order.
         providers_without_preload = create_provider_chain(
             system_prompt="test",
             filter_json=False,
             dotenv_path=env_file,
         )
-        
-        # This will fail with the bug: we get both providers in dict order
-        # because LLM_PRIMARY wasn't set when create_provider_chain checked
-        assert len(providers_without_preload) == 2  # Bug: gets default order
+
+        # With the fix, mock1 should be first
+        assert len(providers_without_preload) == 1
+        assert providers_without_preload[0].name == "mock1"
         
         # Now test the FIX: load .env BEFORE calling create_provider_chain
         from dotenv import load_dotenv
