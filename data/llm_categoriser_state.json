@@ -595,7 +595,12 @@
       "gcse-english-language-and-literature---guidance-for-teaching.md": {
         "completed_batches": [
           0,
+          1,
+          2,
+          3,
+          4,
           5,
+          6,
           7,
           8,
           9,
@@ -609,12 +614,31 @@
           17,
           18,
           19,
+          20,
           21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
           37,
           38,
+          39,
+          40,
+          41,
           42
         ],
-        "total_issues": 7
+        "total_issues": 10
       },
       "gcse-english-language-and-literature---unit-1-context-and-meaning.md": {
         "completed_batches": [
@@ -625,15 +649,17 @@
       },
       "gcse-english-language-and-literature---unit-2-belonging.md": {
         "completed_batches": [
-          0
+          0,
+          1
         ],
-        "total_issues": 10
+        "total_issues": 1
       },
       "gcse-english-language-and-literature---unit-3-influence-and-power.md": {
         "completed_batches": [
+          0,
           1
         ],
-        "total_issues": 7
+        "total_issues": 10
       },
       "gcse-english-language-and-literature---unit-4a-motivations.md": {
         "completed_batches": [
@@ -1030,6 +1056,438 @@
           9
         ],
         "total_issues": 98
+      }
+    },
+    "Food-and-Nutrition": {
+      "appendix-a-chart.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 3
+      },
+      "gcse-food-and-nutrition---delivery-guide.md": {
+        "completed_batches": [
+          0,
+          1
+        ],
+        "total_issues": 5
+      },
+      "gcse-food-and-nutrition---faqs.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 1
+      },
+      "gcse-food-and-nutrition---guidance-for-teaching-unit-1.md": {
+        "completed_batches": [
+          0,
+          1,
+          2
+        ],
+        "total_issues": 6
+      },
+      "gcse-food-and-nutrition---guidance-for-teaching-unit-2.md": {
+        "completed_batches": [
+          0,
+          1
+        ],
+        "total_issues": 10
+      },
+      "gcse-food-and-nutrition---guidance-for-teaching-unit-3.md": {
+        "completed_batches": [
+          0,
+          1,
+          2
+        ],
+        "total_issues": 1
+      },
+      "gcse-food-and-nutrition---option-evening-flyer.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 1
+      },
+      "gcse-food-and-nutrition---unit-1-principles-of-food-and-nutrition.md": {
+        "completed_batches": [
+          0,
+          1,
+          2
+        ],
+        "total_issues": 8
+      },
+      "gcse-food-and-nutrition---unit-2-food-investigation.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 4
+      },
+      "gcse-food-and-nutrition---unit-2-non-exam-assessment-pack.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 4
+      },
+      "gcse-food-and-nutrition---unit-3-food-and-nutrition-in-action.md": {
+        "completed_batches": [
+          0,
+          1,
+          2
+        ],
+        "total_issues": 1
+      },
+      "gcse-food-and-nutrition---unit-3-non-exam-assessment-pack.md": {
+        "completed_batches": [
+          0,
+          1,
+          2
+        ],
+        "total_issues": 1
+      },
+      "overview-of-consultation-findings.md": {
+        "completed_batches": [
+          0,
+          1
+        ],
+        "total_issues": 4
+      },
+      "resources-for-new-gcse.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 4
+      },
+      "techniques-summary.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "total_issues": 1
+      },
+      "unit-2---work-smarter-not-harder.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 10
+      },
+      "unit-3---presenting-food-outcomes.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 10
+      },
+      "unit-3---upskilling.md": {
+        "completed_batches": [
+          0,
+          1
+        ],
+        "total_issues": 10
+      },
+      "wjec-gcse-food-and-nutrition-specification.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 10
+      }
+    },
+    "French": {
+      "gcse-french---delivery-guide.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 5
+      },
+      "gcse-french---guidance-for-teaching-unit-1.md": {
+        "completed_batches": [
+          0,
+          1
+        ],
+        "total_issues": 2
+      },
+      "gcse-french---guidance-for-teaching-unit-2.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 8
+      },
+      "gcse-french---guidance-for-teaching-unit-3.md": {
+        "completed_batches": [
+          0,
+          1
+        ],
+        "total_issues": 9
+      },
+      "gcse-french---guidance-for-teaching-unit-4.md": {
+        "completed_batches": [
+          0,
+          1,
+          2
+        ],
+        "total_issues": 9
+      },
+      "gcse-french---unit-1-oracy.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "total_issues": 9
+      },
+      "gcse-french---unit-2-reading-and-writing.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 6
+      },
+      "gcse-french---unit-3-listening.md": {
+        "completed_batches": [
+          0,
+          1
+        ],
+        "total_issues": 1
+      },
+      "gcse-french---unit-4-reading-and-writing.md": {
+        "completed_batches": [
+          0,
+          1
+        ],
+        "total_issues": 9
+      },
+      "gcse-french--faqs.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 5
+      },
+      "overview-of-consultation-findings.md": {
+        "completed_batches": [
+          0,
+          1
+        ],
+        "total_issues": 1
+      },
+      "wjec-gcse-french-specification.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "total_issues": 8
+      }
+    },
+    "German": {
+      "gcse-german---delivery-guide.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 4
+      },
+      "gcse-german---faqs.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 5
+      },
+      "gcse-german---guidance-for-teaching-unit-1.md": {
+        "completed_batches": [
+          0,
+          1
+        ],
+        "total_issues": 4
+      },
+      "gcse-german---guidance-for-teaching-unit-2.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 9
+      },
+      "gcse-german---guidance-for-teaching-unit-3.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 7
+      },
+      "gcse-german---guidance-for-teaching-unit-4.md": {
+        "completed_batches": [
+          0,
+          1,
+          2
+        ],
+        "total_issues": 3
+      },
+      "gcse-german---unit-1-oracy.md": {
+        "completed_batches": [
+          0,
+          1,
+          2
+        ],
+        "total_issues": 2
+      },
+      "gcse-german---unit-2-reading-and-writing.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 5
+      },
+      "gcse-german---unit-3-listening.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 9
+      },
+      "gcse-german---unit-4-reading-and-writing.md": {
+        "completed_batches": [
+          0,
+          1
+        ],
+        "total_issues": 9
+      },
+      "overview-of-consultation-findings.md": {
+        "completed_batches": [
+          0,
+          1
+        ],
+        "total_issues": 1
+      },
+      "wjec-gcse-german-specification.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "total_issues": 7
+      }
+    },
+    "Health-and-Social-Care-and-Childcare": {
+      "wjec-gcse-health-and-social-care-and-childcare-specification.md": {
+        "completed_batches": [
+          0,
+          1
+        ],
+        "total_issues": 6
+      }
+    },
+    "Integrated-Science-Single-Award": {
+      "wjec-gcse-integrated-science-specification.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "total_issues": 8
+      }
+    },
+    "Level-2-Additional-Mathematics": {
+      "additional-mathematics---options-evening-flyer.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 1
+      },
+      "september-2025.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 7
+      },
+      "wjec-level-2-additional-mathematics-specification.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "total_issues": 9
+      }
+    },
+    "Mathematics-and-Numeracy": {
+      "april-2025.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 3
+      },
+      "gcse-mathematics-and-numeracy---guidance-for-teaching.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
+        ],
+        "total_issues": 8
+      },
+      "gcse-mathematics-and-numeracy---unit-1-financial-mathematics-and-other-applications-of-numeracy-foundation-tier.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 8
+      },
+      "gcse-mathematics-and-numeracy---unit-1-financial-mathematics-and-other-applications-of-numeracy-higher-tier.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "total_issues": 7
+      },
+      "gcse-mathematics-and-numeracy---unit-2-non-calculator-foundation-tier.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 10
       }
     }
   }

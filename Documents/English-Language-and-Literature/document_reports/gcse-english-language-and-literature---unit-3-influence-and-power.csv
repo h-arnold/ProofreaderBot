@@ -1,14 +1,14 @@
 issue_id,page_number,issue,highlighted_context,pass_code,error_category,confidence_score,reasoning
-0,,,,,PARSING_ERROR,95,"The word 'ord' is a fragment, likely from 'Record' or another word, indicating a parsing error in the table of contents."
-1,,,,,PARSING_ERROR,95,"The word 'sment' is a fragment of 'Assessment', indicating a parsing error where the word was split across table cells."
-2,,,,,PARSING_ERROR,90,"The inconsistent capitalisation of 'SIMPle' suggests a parsing error, as standard titles would be 'Simple'."
-3,,,,,PARSING_ERROR,95,"The word 'imited' is a fragment of 'Limited', indicating a parsing error in the copyright statement."
-4,,,,,PARSING_ERROR,95,"The string 'IIIIIIleu' is a clear parsing error, likely intended to be 'Ltd' or 'Limited' in the copyright statement."
+0,,,,,PARSING_ERROR,95,This appears to be a fragmented word due to a parsing error; 'Record' is the intended word.
+1,,,,,PARSING_ERROR,95,This is a fragmented word due to a parsing error; 'Assessment' is the intended word.
+2,,,,,PARSING_ERROR,80,The mixed casing 'SIMPle' is incorrect and likely a parsing error; it should be 'Simple' or an all-caps acronym if intended.
+3,,,,,PARSING_ERROR,95,This is a fragmented word due to a parsing error; 'Limited' is the intended word.
+4,,,,,PARSING_ERROR,95,This is a severe parsing error; it should likely be 'Ltd' or 'Limited' as part of the copyright notice.
 5,,,,,FALSE_POSITIVE,100,'Audio-visual' is correctly hyphenated as a compound adjective in UK English.
-6,,,,,STYLISTIC_PREFERENCE,75,"While 'outside of' is grammatically acceptable, 'outside' alone is more concise and often preferred in formal writing."
+6,,,,,STYLISTIC_PREFERENCE,85,'Outside of' is often considered redundant; 'outside' alone is more concise and preferred in formal writing.
 7,,,,,FALSE_POSITIVE,100,'Audio-visual' is correctly hyphenated as a compound adjective in UK English.
 8,,,,,ABSOLUTE_GRAMMATICAL_ERROR,100,The definite article 'the' is incorrectly placed before the infinitive verb 'achieve'; it should be 'how to achieve'.
-9,,,,,STYLISTIC_PREFERENCE,75,"While 'outside of' is grammatically acceptable, 'outside' alone is more concise and often preferred in formal writing."
+9,,,,,STYLISTIC_PREFERENCE,85,'Outside of' is often considered redundant; 'outside' alone is more concise and preferred in formal writing.
 10,,,,,FALSE_POSITIVE,95,"Coversheet is an acceptable single-word compound noun in UK English, commonly used in official documentation."
 11,,,,,PARSING_ERROR,90,The compound adjective '45-minute' should be hyphenated when modifying 'period' in UK English.
 12,,,,,FALSE_POSITIVE,95,"Coversheet is an acceptable single-word compound noun in UK English, commonly used in official documentation."
