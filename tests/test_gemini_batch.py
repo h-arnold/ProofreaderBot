@@ -190,7 +190,6 @@ def test_fetch_batch_results_returns_responses(tmp_path: Path) -> None:
 def test_fetch_batch_results_applies_json_filter_when_requested(tmp_path: Path) -> None:
     system_prompt_path = tmp_path / "system.md"
     system_prompt_path.write_text("System", encoding="utf-8")
-    client = _DummyClient()
     
     # Override the batch responses to return JSON text
     class _JsonBatchClient(_DummyClient):
