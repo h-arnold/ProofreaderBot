@@ -595,42 +595,152 @@
       "gcse-english-language-and-literature---guidance-for-teaching.md": {
         "completed_batches": [
           0,
-          1,
-          2,
-          3,
-          4,
-          6,
-          20,
-          22,
-          23,
-          24,
-          25,
-          26,
-          27,
-          28,
-          29,
-          30,
-          31,
-          32,
-          33,
-          34,
-          35,
-          36,
-          39,
-          40,
-          41
+          5,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          21,
+          37,
+          38,
+          42
         ],
-        "total_issues": 10
+        "total_issues": 7
       },
-      "gcse-english-language-and-literature---unit-2-belonging.md": {
+      "gcse-english-language-and-literature---unit-1-context-and-meaning.md": {
         "completed_batches": [
+          0,
           1
         ],
         "total_issues": 1
       },
-      "gcse-english-language-and-literature---unit-3-influence-and-power.md": {
+      "gcse-english-language-and-literature---unit-2-belonging.md": {
         "completed_batches": [
           0
+        ],
+        "total_issues": 10
+      },
+      "gcse-english-language-and-literature---unit-3-influence-and-power.md": {
+        "completed_batches": [
+          1
+        ],
+        "total_issues": 7
+      },
+      "gcse-english-language-and-literature---unit-4a-motivations.md": {
+        "completed_batches": [
+          0,
+          1
+        ],
+        "total_issues": 9
+      },
+      "gcse-english-language-and-literature---unit-4b-motivations.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "total_issues": 6
+      },
+      "gcse-english-language-and-literature---unit-5-continuity-and-change.md": {
+        "completed_batches": [
+          0,
+          1
+        ],
+        "total_issues": 1
+      },
+      "gcse-english-language-and-literature---unit-6-connections.md": {
+        "completed_batches": [
+          0,
+          1,
+          2
+        ],
+        "total_issues": 7
+      },
+      "gcse-english-language-and-literature-single-and-double-award---faqs.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 1
+      },
+      "gcse-english-language-and-literature-unit-2-nea-handbook.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 7
+      },
+      "gcse-english-language-and-literature-unit-3-nea-handbook.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 7
+      },
+      "gcse-english-language-and-literature-unit-5-nea-handbook.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 7
+      },
+      "overview-of-consultation-findings.md": {
+        "completed_batches": [
+          0,
+          1
+        ],
+        "total_issues": 4
+      },
+      "september-2025.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 4
+      },
+      "wjec-gcse-english-language-and-literature---non-fiction-anthology-unit-3-and-unit-6.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "total_issues": 6
+      },
+      "wjec-gcse-english-language-and-literature---poetry-anthology-unit-1-and-unit-5-poetry-anthology.md": {
+        "completed_batches": [
+          0,
+          1,
+          2
+        ],
+        "total_issues": 9
+      },
+      "wjec-gcse-english-language-and-literature---unit-2-prose-fiction-list.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 2
+      },
+      "wjec-gcse-english-language-and-literature-single-and-double-award-specification.md": {
+        "completed_batches": [
+          0,
+          1
         ],
         "total_issues": 10
       }
@@ -675,20 +785,6 @@
           1
         ],
         "total_issues": 14
-      }
-    },
-    "English-Language-and-Literature": {
-      "april-2025.md": {
-        "completed_batches": [
-          0
-        ],
-        "total_issues": 4
-      },
-      "gcse-english-language-and-literature---guidance-for-teaching.md": {
-        "completed_batches": [
-          0
-        ],
-        "total_issues": 427
       }
     },
     "Geography": {

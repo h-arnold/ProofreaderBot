@@ -1,8 +1,8 @@
-issue_id,page_number,issue,highlighted_context,error_category,confidence_score,reasoning
-0,3,audio-visual,... participate in a paired discussion. An audio-visual recording must be made for each pairing...,ErrorCategory.PARSING_ERROR,95,The compound adjective 'audio-visual' should be hyphenated when preceding a noun.
-1,4,twentyfirst,...es and similarities in contemporary and twentyfirst century attitudes.  #### Learners shoul...,ErrorCategory.PARSING_ERROR,95,Compound numbers like 'twenty-first' should be hyphenated.
-2,5,outside of,...ch and planning work related to the NEA outside of the centre.  #### **Resources**  During...,ErrorCategory.STYLISTIC_PREFERENCE,80,The 'of' in 'outside of' is often considered redundant; 'outside the centre' is more concise.
-3,8,outside of,...ch and planning work related to the NEA outside of the centre.  #### **Resources**  During...,ErrorCategory.STYLISTIC_PREFERENCE,80,The 'of' in 'outside of' is often considered redundant; 'outside the centre' is more concise.
-4,10,audio-visual,... of the response or by listening to the audio-visual recording at a later time. Teachers sho...,ErrorCategory.PARSING_ERROR,95,The compound adjective 'audio-visual' should be hyphenated when preceding a noun.
-5,15,well chosen,"...nd perspectives, drawing confidently on well chosen evidence from the text.</li></ul> |  {1...",ErrorCategory.PARSING_ERROR,95,The compound adjective 'well-chosen' should be hyphenated when preceding a noun.
-6,18,but,...uation and spelling have frequent errors but meaning is largely clear.</li></ul> | |...,ErrorCategory.STYLISTIC_PREFERENCE,70,"While a comma before 'but' is often recommended for clarity, its omission here is not a grammatical error."
+issue_id,page_number,issue,highlighted_context,pass_code,error_category,confidence_score,reasoning
+0,,,,,STYLISTIC_PREFERENCE,90,"The hyphenated form ""audio-visual"" is a correct and commonly used compound adjective in UK English."
+1,,,,,PARSING_ERROR,100,"""Twenty-first"" should be hyphenated when used as a compound adjective modifying ""century"" in UK English."
+2,,,,,STYLISTIC_PREFERENCE,95,"""Outside"" is more concise and grammatically appropriate than ""outside of"" when used as a preposition in formal writing."
+3,,,,,STYLISTIC_PREFERENCE,95,"""Outside"" is more concise and grammatically appropriate than ""outside of"" when used as a preposition in formal writing."
+4,,,,,STYLISTIC_PREFERENCE,90,"The hyphenated form ""audio-visual"" is a correct and commonly used compound adjective in UK English."
+5,,,,,PARSING_ERROR,100,"""Well-chosen"" should be hyphenated when used as a compound adjective modifying ""evidence"" in UK English."
+6,,,,,ABSOLUTE_GRAMMATICAL_ERROR,100,"A comma is required before the coordinating conjunction ""but"" when it joins two independent clauses."

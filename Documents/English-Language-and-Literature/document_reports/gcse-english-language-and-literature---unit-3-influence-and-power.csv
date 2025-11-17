@@ -9,10 +9,10 @@ issue_id,page_number,issue,highlighted_context,pass_code,error_category,confiden
 7,,,,,FALSE_POSITIVE,100,'Audio-visual' is correctly hyphenated as a compound adjective in UK English.
 8,,,,,ABSOLUTE_GRAMMATICAL_ERROR,100,The definite article 'the' is incorrectly placed before the infinitive verb 'achieve'; it should be 'how to achieve'.
 9,,,,,STYLISTIC_PREFERENCE,75,"While 'outside of' is grammatically acceptable, 'outside' alone is more concise and often preferred in formal writing."
-10,9,coversheet,...n the Unit 3 non-examination assessment coversheet. Cover sheets for each series must be d...,,ErrorCategory.STYLISTIC_PREFERENCE,80,"WJEC documents often prefer 'cover sheet' as two words for the noun, aligning with common UK English usage."
-11,9,45 minute,"...completed by the learner in this 1 hour 45 minute period, it may not be revised.  #### **...",,ErrorCategory.PARSING_ERROR,95,A hyphen is required for '45-minute' as it forms a compound adjective modifying 'period'.
-12,10,coversheet,...warded should be completed on each unit coversheet.  The assessment of Task A can be carri...,,ErrorCategory.STYLISTIC_PREFERENCE,80,"Consistent with previous instances, 'cover sheet' as two words is generally preferred for the noun in WJEC documents."
-13,10,audio-visual,... of the response or by listening to the audio-visual recording at a later time. Teachers sho...,,ErrorCategory.FALSE_POSITIVE,90,"Both 'audio-visual' and 'audiovisual' are acceptable spellings in UK English, and the hyphenated form is common."
-14,16,but,...uation and spelling have frequent errors but meaning is largely clear.</li></ul> | |...,,ErrorCategory.STYLISTIC_PREFERENCE,75,The original phrasing 'but meaning is largely clear' is grammatically acceptable and concise in this context.
-15,21,independently from,...ive you.  It is important that you work independently from other candidates and the work produced ...,,ErrorCategory.POSSIBLE_AMBIGUOUS_GRAMMATICAL_ERROR,85,'Independently of' is generally considered more idiomatic and precise than 'independently from' in this context.
-16,24,YY,...      |  | DD    | MM                 | YY           |       | Hour  |  | Minutes ...,,ErrorCategory.STYLISTIC_PREFERENCE,90,Using 'YYYY' for a year placeholder provides greater clarity and avoids ambiguity in formal documentation.
+10,,,,,FALSE_POSITIVE,95,"Coversheet is an acceptable single-word compound noun in UK English, commonly used in official documentation."
+11,,,,,PARSING_ERROR,90,The compound adjective '45-minute' should be hyphenated when modifying 'period' in UK English.
+12,,,,,FALSE_POSITIVE,95,"Coversheet is an acceptable single-word compound noun in UK English, commonly used in official documentation."
+13,,,,,FALSE_POSITIVE,95,Audio-visual is correctly hyphenated as a compound adjective in UK English.
+14,,,,,ABSOLUTE_GRAMMATICAL_ERROR,100,A comma is required before the conjunction 'but' when it connects two independent clauses.
+15,,,,,FALSE_POSITIVE,90,Independently from is a grammatically correct and acceptable phrasing in UK English.
+16,,,,,FALSE_POSITIVE,100,YY is a standard placeholder for 'Year' in a date format on a form and is correct as written.
