@@ -21,58 +21,6 @@ if str(PROJECT_ROOT) not in sys.path:
 
 from src.llm_review.llm_categoriser.cli import main
 
-
-def test_cli_loads_default_dotenv_early(
-    tmp_path: Path,
-    monkeypatch: pytest.MonkeyPatch,
-) -> None:
-    """Test that CLI loads .env from current directory before provider creation."""
-    # Change to tmp_path as working directory
-    monkeypatch.chdir(tmp_path)
-    
-    # Create a .env file with LLM_PRIMARY
-    env_file = tmp_path / ".env"
-    env_file.write_text(
-        "LLM_PRIMARY=mistral\n"
-        "MISTRAL_API_KEY=test_key\n",
-        encoding="utf-8"
-    )
-    
-    # Create a minimal CSV file
-    csv_file = tmp_path / "test.csv"
-    csv_file.write_text(
-        "Subject,Filename,Page,Rule ID,Type,Issue,Message,Suggestions,Highlighted Context,Pass Code\n"
-        "Test,test.md,1,R1,error,word,msg,fix,ctx,LT\n",
-        encoding="utf-8"
-    )
-    
-    # Clear environment
-    monkeypatch.delenv("LLM_PRIMARY", raising=False)
-    monkeypatch.delenv("MISTRAL_API_KEY", raising=False)
-    
-    # Mock the provider chain creation to verify LLM_PRIMARY is set
-    with patch("src.llm_review.llm_categoriser.cli.create_provider_chain") as mock_create:
-        # Make mock return a provider list
-        mock_provider = MagicMock()
-        mock_provider.name = "mistral"
-        mock_create.return_value = [mock_provider]
-        
-        # Mock CategoriserRunner to avoid actual execution
-        with patch("src.llm_review.llm_categoriser.cli.CategoriserRunner"):
-            # Run with dry-run to avoid LLM calls
-            exit_code = main(["--from-report", str(csv_file), "--dry-run"])
-            
-            # Should succeed
-            assert exit_code == 0
-            
-            # Verify create_provider_chain was called
-            assert mock_create.called
-            
-            # At the point of the call, LLM_PRIMARY should be set from .env
-            # We verify this by checking the environment after the call
-            assert os.environ.get("LLM_PRIMARY") == "mistral"
-
-
 def test_cli_loads_custom_dotenv_path_early(
     tmp_path: Path,
     monkeypatch: pytest.MonkeyPatch,

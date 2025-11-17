@@ -83,7 +83,27 @@ def merge_document_reports(
 
 
 def main() -> None:
-    merged = merge_document_reports()
+    import argparse
+
+    parser = argparse.ArgumentParser(
+        description="Merge per-document llm categoriser CSVs into a single report"
+    )
+    parser.add_argument(
+        "--output-dir",
+        "-o",
+        default=str(DEFAULT_OUTPUT_DIR),
+        help="Path to Documents root (default: Documents)",
+    )
+    parser.add_argument(
+        "--output-file",
+        "-f",
+        default=DEFAULT_OUTPUT_FILE,
+        help="Name of merged file to write (default: llm_categorised-language-check-report.csv)",
+    )
+
+    args = parser.parse_args()
+
+    merged = merge_document_reports(Path(args.output_dir), args.output_file)
     print(f"Wrote merged report to: {merged}")
 
 
