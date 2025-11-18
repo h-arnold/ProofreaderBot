@@ -12,7 +12,7 @@ from pathlib import Path
 from typing import Any
 from dataclasses import dataclass, asdict
 
-from src.models import DocumentKey
+from src.models import DocumentKey, PassCode
 from src.llm.service import LLMService
 
 from ..core.batcher import iter_batches
@@ -120,6 +120,46 @@ class BatchJobTracker:
             for data in self._data.values()
             if data.get("status") == "pending"
         ]
+    
+    def get_completed_jobs_within_hours(self, hours: float) -> list[BatchJobMetadata]:
+        """Get jobs completed within the specified number of hours.
+        
+        Args:
+            hours: Number of hours to look back from now
+            
+        Returns:
+            List of completed jobs within the time window
+        """
+        from datetime import datetime, timezone, timedelta
+        
+        cutoff = datetime.now(timezone.utc) - timedelta(hours=hours)
+        completed_jobs = []
+        
+        for data in self._data.values():
+            if data.get("status") != "completed":
+                continue
+            
+            try:
+                # Parse created_at timestamp (ISO format)
+                created_at_str = data.get("created_at", "")
+                # Handle both 'Z' and timezone-aware formats
+                if created_at_str.endswith('Z'):
+                    created_at = datetime.fromisoformat(created_at_str.replace('Z', '+00:00'))
+                else:
+                    created_at = datetime.fromisoformat(created_at_str)
+                
+                # Ensure timezone-aware comparison
+                if created_at.tzinfo is None:
+                    created_at = created_at.replace(tzinfo=timezone.utc)
+                
+                if created_at >= cutoff:
+                    completed_jobs.append(BatchJobMetadata(**data))
+            except (ValueError, TypeError) as e:
+                # Skip jobs with invalid timestamps
+                print(f"Warning: Skipping job with invalid timestamp: {e}")
+                continue
+        
+        return completed_jobs
 
 
 class BatchOrchestrator:
@@ -254,16 +294,20 @@ class BatchOrchestrator:
     def fetch_batch_results(
         self,
         state: CategoriserState,
+        report_path: Path,
         *,
         job_names: list[str] | None = None,
         check_all_pending: bool = False,
+        refetch_hours: float | None = None,
     ) -> dict[str, Any]:
         """Fetch results from completed batch jobs.
         
         Args:
             state: State manager for tracking completion
+            report_path: Path to language-check-report.csv for loading original issues
             job_names: Optional list of specific job names to fetch
             check_all_pending: If True, check all pending jobs for completion
+            refetch_hours: If specified, refetch jobs completed within this many hours
             
         Returns:
             Summary statistics dictionary
@@ -276,8 +320,28 @@ class BatchOrchestrator:
             ]
         elif check_all_pending:
             jobs_to_check = self.tracker.get_pending_jobs()
+        elif refetch_hours is not None:
+            # Get completed jobs within the time window and reset them
+            jobs_to_refetch = self.tracker.get_completed_jobs_within_hours(refetch_hours)
+            print(f"Found {len(jobs_to_refetch)} job(s) completed within last {refetch_hours} hour(s)")
+            
+            if not jobs_to_refetch:
+                print("No jobs to refetch")
+                return {"checked_jobs": 0, "completed_jobs": 0, "failed_jobs": 0, "refetched": 0}
+            
+            # Reset jobs to pending and clear completed state
+            for job in jobs_to_refetch:
+                key = DocumentKey(subject=job.subject, filename=job.filename)
+                # Remove batch completion from state so it will be reprocessed
+                state.remove_batch_completion(key, job.batch_index)
+                # Reset tracker status to pending
+                self.tracker.update_job_status(job.job_name, "pending", None)
+                print(f"Reset {job.job_name[:16]}... ({job.subject}/{job.filename} batch {job.batch_index}) to pending")
+            
+            # Now fetch these jobs
+            jobs_to_check = jobs_to_refetch
         else:
-            print("No jobs specified. Use --job-names or --check-all-pending")
+            print("No jobs specified. Use --job-names, --check-all-pending, or --refetch-hours")
             return {"checked_jobs": 0, "completed_jobs": 0, "failed_jobs": 0}
         
         if not jobs_to_check:
@@ -337,7 +401,8 @@ class BatchOrchestrator:
                 # Validate and process response
                 validated_results = self._process_batch_response(
                     response,
-                    job_metadata
+                    job_metadata,
+                    report_path
                 )
                 
                 if validated_results:
@@ -376,31 +441,41 @@ class BatchOrchestrator:
         print(f"  Completed: {completed}")
         print(f"  Failed: {failed}")
         print(f"  Still pending: {still_pending}")
+        if refetch_hours is not None:
+            print(f"  Refetched: {len(jobs_to_check)}")
         print(f"{'=' * 60}")
         
-        return {
+        result = {
             "checked_jobs": checked,
             "completed_jobs": completed,
             "failed_jobs": failed,
             "still_pending": still_pending,
         }
+        
+        if refetch_hours is not None:
+            result["refetched"] = len(jobs_to_check)
+        
+        return result
     
     def _process_batch_response(
         self,
         response: Any,
         job_metadata: BatchJobMetadata,
+        report_path: Path,
     ) -> list[dict[str, Any]]:
         """Process and validate a batch response.
         
         This mirrors the validation logic in CategoriserRunner._validate_response
-        but adapted for batch results.
+        but adapted for batch results. Loads original issues from CSV and merges
+        LLM categorisation fields with the complete issue data.
         
         Args:
             response: The LLM response (should be a list of issue dicts)
             job_metadata: Metadata for the job
+            report_path: Path to language-check-report.csv
             
         Returns:
-            List of validated issue dictionaries
+            List of validated issue dictionaries with all fields populated
         """
         validated_results: list[dict[str, Any]] = []
         
@@ -411,6 +486,26 @@ class BatchOrchestrator:
         
         if not response:
             print(f"  Warning: Response is empty")
+            return validated_results
+        
+        # Load original issues from CSV for this document
+        try:
+            key = DocumentKey(
+                subject=job_metadata.subject,
+                filename=job_metadata.filename
+            )
+            all_grouped = load_issues(report_path)
+            original_issues = all_grouped.get(key, [])
+            
+            if not original_issues:
+                print(f"  Warning: No original issues found for {key}")
+                return validated_results
+            
+            # Build map of original issues by issue_id
+            issue_map = {issue.issue_id: issue for issue in original_issues}
+            
+        except Exception as e:
+            print(f"  Error loading original issues: {e}")
             return validated_results
         
         # Process each issue in the response
@@ -425,12 +520,43 @@ class BatchOrchestrator:
                 print(f"  Warning: Issue ID {issue_id} not in batch, skipping")
                 continue
             
-            # Validate required fields
+            # Validate required LLM fields
             if not all(key in issue_dict for key in ["issue_id", "error_category", "confidence_score", "reasoning"]):
                 print(f"  Warning: Issue {issue_id} missing required fields")
                 continue
             
-            validated_results.append(issue_dict)
+            # Merge LLM fields with original issue data
+            if issue_id in issue_map:
+                orig = issue_map[issue_id]
+                merged = {
+                    "filename": orig.filename,
+                    "rule_id": orig.rule_id,
+                    "message": orig.message,
+                    "issue_type": orig.issue_type,
+                    "replacements": orig.replacements,
+                    "context": orig.context,
+                    "highlighted_context": orig.highlighted_context,
+                    "issue": orig.issue,
+                    "page_number": orig.page_number,
+                    "issue_id": orig.issue_id,
+                    "pass_code": PassCode.LTC,  # Mark as LLM-categorised
+                    # LLM fields from response
+                    "error_category": issue_dict.get("error_category"),
+                    "confidence_score": issue_dict.get("confidence_score"),
+                    "reasoning": issue_dict.get("reasoning"),
+                }
+                
+                # Validate merged result
+                try:
+                    from src.models.language_issue import LanguageIssue
+                    validated = LanguageIssue(**merged)
+                    validated_results.append(validated.model_dump())
+                except Exception as e:
+                    print(f"  Warning: Failed to validate issue {issue_id}: {e}")
+                    continue
+            else:
+                print(f"  Warning: Original issue {issue_id} not found in issue map")
+                continue
         
         return validated_results
     
