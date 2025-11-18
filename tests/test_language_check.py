@@ -160,7 +160,7 @@ def test_ignored_words_filtering(tmp_path: Path) -> None:
     wjec_match.ruleId = "MORFOLOGIK_RULE_EN_GB"
     wjec_match.message = "Possible spelling mistake"
     wjec_match.matchedText = "WJEC"
-    
+
     cbac_match = DummyMatch()
     cbac_match.ruleId = "MORFOLOGIK_RULE_EN_GB"
     cbac_match.message = "Possible spelling mistake"
@@ -169,7 +169,7 @@ def test_ignored_words_filtering(tmp_path: Path) -> None:
     tool = DummyTool([wjec_match, cbac_match])
 
     report_path = root / "report.md"
-    
+
     # Run with default ignored words (should filter out WJEC and CBAC)
     run_language_checks(
         root,
@@ -194,13 +194,13 @@ def test_case_sensitive_ignored_words_uppercase(tmp_path: Path) -> None:
     # Create matches for WJEC and CPU (both uppercase)
     wjec_match = DummyMatch()
     wjec_match.matchedText = "WJEC"
-    
+
     cpu_match = DummyMatch()
     cpu_match.matchedText = "CPU"
 
     tool = DummyTool([wjec_match, cpu_match])
     report_path = root / "report.md"
-    
+
     # Both WJEC and CPU are in DEFAULT_IGNORED_WORDS (uppercase)
     # so they should be filtered out
     run_language_checks(
@@ -228,7 +228,7 @@ def test_case_sensitive_ignored_words_lowercase_not_filtered(tmp_path: Path) -> 
     wjec_match.context = wjec_context
     wjec_match.offsetInContext = wjec_context.index("wjec")
     wjec_match.errorLength = len("wjec")
-    
+
     cpu_match = DummyMatch()
     cpu_match.matchedText = "cpu"
     cpu_match.context = wjec_context
@@ -237,7 +237,7 @@ def test_case_sensitive_ignored_words_lowercase_not_filtered(tmp_path: Path) -> 
 
     tool = DummyTool([wjec_match, cpu_match])
     report_path = root / "report.md"
-    
+
     # Only uppercase WJEC and CPU are in DEFAULT_IGNORED_WORDS
     # lowercase "wjec" and "cpu" should NOT be filtered (case-sensitive)
     run_language_checks(
@@ -264,13 +264,13 @@ def test_case_sensitive_ignored_words_mixed_case_not_filtered(tmp_path: Path) ->
     # Create matches for Titlecase variants
     wjec_match = DummyMatch()
     wjec_match.matchedText = "Wjec"
-    
+
     cpu_match = DummyMatch()
     cpu_match.matchedText = "Cpu"
 
     tool = DummyTool([wjec_match, cpu_match])
     report_path = root / "report.md"
-    
+
     # Only uppercase WJEC and CPU are in DEFAULT_IGNORED_WORDS
     # Titlecase "Wjec" and "Cpu" should NOT be filtered
     run_language_checks(
@@ -298,7 +298,7 @@ def test_case_sensitive_ignored_words_with_plural(tmp_path: Path) -> None:
 
     tool = DummyTool([nics_match])
     report_path = root / "report.md"
-    
+
     # "NICs" is in DEFAULT_IGNORED_WORDS, so it should be filtered
     run_language_checks(
         root,
@@ -324,7 +324,7 @@ def test_case_sensitive_ignored_words_singular_strips_s(tmp_path: Path) -> None:
 
     tool = DummyTool([customwords_match])
     report_path = root / "report.md"
-    
+
     # Only the singular "CUSTOMWORD" is in the ignored words list
     # The plural "CUSTOMWORDs" should still be filtered due to plural-stripping logic
     # (The code checks: "CUSTOMWORD" in list OR "CUSTOMWORDs".rstrip("s") = "CUSTOMWORD" in list)
@@ -350,13 +350,13 @@ def test_case_sensitive_with_explicit_ignored_words(tmp_path: Path) -> None:
     # Create matches
     custom_match = DummyMatch()
     custom_match.matchedText = "CustomWord"
-    
+
     wjec_match = DummyMatch()
     wjec_match.matchedText = "WJEC"
 
     tool = DummyTool([custom_match, wjec_match])
     report_path = root / "report.md"
-    
+
     # Pass "CustomWord" as an additional ignored word (case-sensitive)
     # WJEC should be filtered from DEFAULT_IGNORED_WORDS
     # CustomWord should be filtered from the explicit list
@@ -369,8 +369,8 @@ def test_case_sensitive_with_explicit_ignored_words(tmp_path: Path) -> None:
 
     report_text = report_path.read_text(encoding="utf-8")
     assert "Total issues found: 0" in report_text
-    
-    
+
+
 def test_case_sensitive_explicit_wrong_case_not_filtered(tmp_path: Path) -> None:
     """Test that wrong case in explicit ignored_words doesn't filter the match."""
     root = tmp_path
@@ -385,8 +385,7 @@ def test_case_sensitive_explicit_wrong_case_not_filtered(tmp_path: Path) -> None
 
     tool = DummyTool([custom_match])
     report_path = root / "report.md"
-    
-    
+
     # Pass "customword" (all lowercase) - should NOT match "CustomWord"
     run_language_checks(
         root,
@@ -398,6 +397,7 @@ def test_case_sensitive_explicit_wrong_case_not_filtered(tmp_path: Path) -> None
     report_text = report_path.read_text(encoding="utf-8")
     # Issue should still be present (not filtered due to case mismatch)
     assert "Total issues found: 1" in report_text
+
 
 def test_tool_connection_failure_all_tools(tmp_path: Path) -> None:
     """When all tools fail with a connection error, a CHECK_FAILURE is produced with a non-empty highlighted_context."""
@@ -440,7 +440,9 @@ def test_tool_language_tool_error_retries_then_succeeds(tmp_path: Path) -> None:
             # to indicate success on the third attempt.
             self.calls += 1
             if self.calls < 3:
-                raise LanguageToolError("http://127.0.0.1:8081/v2/: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))")
+                raise LanguageToolError(
+                    "http://127.0.0.1:8081/v2/: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))"
+                )
             return []
 
     tool = FlakyTool()
@@ -468,7 +470,9 @@ def test_tool_connection_failure_partial(tmp_path: Path) -> None:
 
     ok_tool = DummyTool([match])
     bad_tool = BadTool()
-    report = check_single_document(document, tool=[ok_tool, bad_tool], subject="Subject")
+    report = check_single_document(
+        document, tool=[ok_tool, bad_tool], subject="Subject"
+    )
     # The dummy match should be present, and a partial failure warning appended
     assert any(i.rule_id == "TEST_RULE" for i in report.issues)
     assert any(i.rule_id == "CHECK_PARTIAL_FAILURE" for i in report.issues)
@@ -483,7 +487,7 @@ def test_page_number_extraction_basic(tmp_path: Path) -> None:
     subject_dir = root / "Subject" / "markdown"
     subject_dir.mkdir(parents=True)
     document = subject_dir / "test-doc.md"
-    
+
     # Document with page markers
     content = """# Test Document
 
@@ -503,7 +507,7 @@ Another errror here.
     match1 = DummyMatch()
     match1.message = "Spelling mistake 1"
     match1.context = "Thiss is a spelling mistake."
-    
+
     match2 = DummyMatch()
     match2.message = "Spelling mistake 2"
     match2.context = "Another errror here."
@@ -524,7 +528,7 @@ def test_page_number_in_csv_report(tmp_path: Path) -> None:
     subject_dir = root / "Subject" / "markdown"
     subject_dir.mkdir(parents=True)
     document = subject_dir / "test-doc.md"
-    
+
     content = """{0}------------------------------------------------
 
 Thiss is a test.
@@ -537,7 +541,7 @@ Another errror.
 
     match1 = DummyMatch()
     match1.context = "Thiss is a test."
-    
+
     match2 = DummyMatch()
     match2.context = "Another errror."
 
@@ -555,7 +559,7 @@ Another errror.
     # Header should include Page column
     assert "Page" in rows[0]
     page_col_idx = rows[0].index("Page")
-    
+
     # Data rows should have page numbers
     assert len(rows) == 3  # header + 2 issues
     assert rows[1][page_col_idx] == "0"
@@ -568,7 +572,7 @@ def test_page_number_in_markdown_report(tmp_path: Path) -> None:
     subject_dir = root / "Subject" / "markdown"
     subject_dir.mkdir(parents=True)
     document = subject_dir / "test-doc.md"
-    
+
     content = """{0}------------------------------------------------
 
 Thiss is a test.
@@ -581,7 +585,7 @@ Another errror.
 
     match1 = DummyMatch()
     match1.context = "Thiss is a test."
-    
+
     match2 = DummyMatch()
     match2.context = "Another errror."
 
@@ -591,7 +595,7 @@ Another errror.
     run_language_checks(root, report_path=report_path, tool=tool)
 
     report_text = report_path.read_text(encoding="utf-8")
-    
+
     # Markdown table should include Page column
     assert "| Page |" in report_text or "Page" in report_text
 
@@ -602,7 +606,7 @@ def test_page_number_no_markers(tmp_path: Path) -> None:
     subject_dir = root / "Subject" / "markdown"
     subject_dir.mkdir(parents=True)
     document = subject_dir / "test-doc.md"
-    
+
     # Document without page markers
     document.write_text("Thiss is a test without page markers.", encoding="utf-8")
 
@@ -623,21 +627,23 @@ def test_page_number_with_real_document(tmp_path: Path) -> None:
     root = tmp_path
     subject_dir = root / "Business" / "markdown"
     subject_dir.mkdir(parents=True)
-    
+
     # Copy the real document structure
-    source_doc = Path("/home/hamish/GitProjects/WjecDocumentScraper/Documents/Business/markdown/gcse-business---delivery-guide.md")
+    source_doc = Path(
+        "/home/hamish/GitProjects/WjecDocumentScraper/Documents/Business/markdown/gcse-business---delivery-guide.md"
+    )
     if source_doc.exists():
         dest_doc = subject_dir / "gcse-business---delivery-guide.md"
         dest_doc.write_text(source_doc.read_text(encoding="utf-8"), encoding="utf-8")
-        
+
         # Create a match that would appear somewhere in the document
         match = DummyMatch()
         match.context = "some context from the document"
-        
+
         tool = DummyTool([match])
-        
+
         report = check_single_document(dest_doc, tool=tool)
-        
+
         # Just verify we can process it without errors
         assert report is not None
         if report.issues:
@@ -650,7 +656,7 @@ def test_page_number_extraction_with_real_business_doc(tmp_path: Path) -> None:
     root = tmp_path
     subject_dir = root / "Business" / "markdown"
     subject_dir.mkdir(parents=True)
-    
+
     # Create a simplified version of the document with known page markers and content
     content = """{0}------------------------------------------------
 
@@ -679,30 +685,26 @@ Thiss is a deliberate spelling mistake on page 2.
 Content on page 3.
 Another errror deliberately on page 3.
 """
-    
+
     dest_doc = subject_dir / "test-business-guide.md"
     dest_doc.write_text(content, encoding="utf-8")
-    
+
     # Create matches for the deliberate errors
     match1 = DummyMatch()
     match1.message = "Spelling mistake: Thiss"
     match1.context = "Thiss is a deliberate spelling mistake on page 2."
     match1.matchedText = "Thiss"
-    
+
     match2 = DummyMatch()
     match2.message = "Spelling mistake: errror"
     match2.context = "Another errror deliberately on page 3."
     match2.matchedText = "errror"
-    
+
     tool = DummyTool([match1, match2])
-    
+
     report = check_single_document(dest_doc, tool=tool)
-    
+
     # Verify page numbers are correctly assigned
     assert len(report.issues) == 2
     assert report.issues[0].page_number == 2
     assert report.issues[1].page_number == 3
-
-
-
-

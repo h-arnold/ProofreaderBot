@@ -89,7 +89,7 @@ def test_language_issue_direct_creation() -> None:
         page_number=5,
         issue_id=0,
     )
-    
+
     assert issue.filename == "test.md"
     assert issue.rule_id == "TEST_RULE"
     assert issue.error_category is None  # Not LLM-categorised
@@ -115,7 +115,7 @@ def test_language_issue_with_llm_fields() -> None:
         confidence_score=90,
         reasoning="This is clearly a spelling error",
     )
-    
+
     assert issue.error_category == ErrorCategory.SPELLING_ERROR
     assert issue.confidence_score == 90
     assert issue.reasoning == "This is clearly a spelling error"

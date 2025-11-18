@@ -18,11 +18,18 @@ def sample_pdf_path() -> Path:
     return Path(__file__).resolve().parent / "fixtures" / "sample-short.pdf"
 
 
-def test_marker_converter_enables_paginated_output(monkeypatch: pytest.MonkeyPatch, sample_pdf_path: Path) -> None:
+def test_marker_converter_enables_paginated_output(
+    monkeypatch: pytest.MonkeyPatch, sample_pdf_path: Path
+) -> None:
     captured: dict[str, object] = {}
 
     class DummyPdfConverter:
-        def __init__(self, *, artifact_dict: dict[str, object], config: dict[str, object] | None = None) -> None:
+        def __init__(
+            self,
+            *,
+            artifact_dict: dict[str, object],
+            config: dict[str, object] | None = None,
+        ) -> None:
             captured["artifact_dict"] = artifact_dict
             captured["config"] = config
 
@@ -53,7 +60,9 @@ def test_marker_converter_enables_paginated_output(monkeypatch: pytest.MonkeyPat
     }
 
 
-def test_marker_converter_injects_page_markers(monkeypatch: pytest.MonkeyPatch, sample_pdf_path: Path) -> None:
+def test_marker_converter_injects_page_markers(
+    monkeypatch: pytest.MonkeyPatch, sample_pdf_path: Path
+) -> None:
     captured: dict[str, object] = {}
 
     class DummyPdfConverter:
@@ -82,11 +91,15 @@ def test_marker_converter_injects_page_markers(monkeypatch: pytest.MonkeyPatch, 
             captured["renderer_document"] = document
             hyphen_line = "-" * 48
             markdown = f"\n\n{{1}}{hyphen_line}\n\nPage body\n\n"
-            return types.SimpleNamespace(markdown=markdown, images={}, metadata={"page_count": 1})
+            return types.SimpleNamespace(
+                markdown=markdown, images={}, metadata={"page_count": 1}
+            )
 
     monkeypatch.setattr("marker.models.create_model_dict", lambda: {"model": object()})
     monkeypatch.setattr("marker.converters.pdf.PdfConverter", DummyPdfConverter)
-    monkeypatch.setattr("marker.renderers.markdown.MarkdownRenderer", DummyMarkdownRenderer)
+    monkeypatch.setattr(
+        "marker.renderers.markdown.MarkdownRenderer", DummyMarkdownRenderer
+    )
 
     converter = MarkerConverter()
     try:

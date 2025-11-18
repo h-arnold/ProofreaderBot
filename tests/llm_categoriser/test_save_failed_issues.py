@@ -26,7 +26,13 @@ def test_save_failed_issues_writes_file(tmp_path: Path) -> None:
     key = DocumentKey(subject="Art-and-Design", filename="gcse-art-and-design.md")
     issue = make_issue()
 
-    output_path = save_failed_issues(key, 0, [issue], error_messages={issue.issue_id: ["validation failed"]}, output_dir=tmp_path)
+    output_path = save_failed_issues(
+        key,
+        0,
+        [issue],
+        error_messages={issue.issue_id: ["validation failed"]},
+        output_dir=tmp_path,
+    )
     assert output_path.exists()
 
     data = json.loads(output_path.read_text(encoding="utf-8"))
@@ -83,12 +89,21 @@ def test_runner_saves_failed_issues(tmp_path: Path, monkeypatch) -> None:
         issue_id=5,
     )
 
-    batch = Batch(subject="Art-and-Design", filename="gcse-test.md", index=0, issues=[issue], page_context={1: "content"}, markdown_table="|issue|")
+    batch = Batch(
+        subject="Art-and-Design",
+        filename="gcse-test.md",
+        index=0,
+        issues=[issue],
+        page_context={1: "content"},
+        markdown_table="|issue|",
+    )
 
     # Monkeypatch save_failed_issues to write into tmp_path and capture call
     saved = {}
 
-    def fake_save_failed_issues(key, batch_idx, failed_issues, *, error_messages=None, output_dir=Path("data")):
+    def fake_save_failed_issues(
+        key, batch_idx, failed_issues, *, error_messages=None, output_dir=Path("data")
+    ):
         p = tmp_path / "errors" / key.subject
         p.mkdir(parents=True, exist_ok=True)
         f = p / f"{key.filename}.batch-{batch_idx}.errors.json"
@@ -98,9 +113,14 @@ def test_runner_saves_failed_issues(tmp_path: Path, monkeypatch) -> None:
         return f
 
     # Patch the function used by runner (imported into runner module at import time)
-    monkeypatch.setattr("src.llm_review.llm_categoriser.runner.save_failed_issues", fake_save_failed_issues)
+    monkeypatch.setattr(
+        "src.llm_review.llm_categoriser.runner.save_failed_issues",
+        fake_save_failed_issues,
+    )
 
-    ok = runner._process_batch(DocumentKey(subject="Art-and-Design", filename="gcse-test.md"), batch)
+    ok = runner._process_batch(
+        DocumentKey(subject="Art-and-Design", filename="gcse-test.md"), batch
+    )
     # _process_batch returns False because no valid results saved
     assert ok is False
     assert "path" in saved
@@ -156,19 +176,44 @@ def test_runner_writes_errors_to_data(tmp_path: Path, monkeypatch) -> None:
         issue_id=5,
     )
 
-    batch = Batch(subject="Art-and-Design", filename="gcse-test.md", index=0, issues=[issue], page_context={1: "content"}, markdown_table="|issue|")
+    batch = Batch(
+        subject="Art-and-Design",
+        filename="gcse-test.md",
+        index=0,
+        issues=[issue],
+        page_context={1: "content"},
+        markdown_table="|issue|",
+    )
 
     # Wrap the real persistence so it writes into tmp_path
-    def real_save_failed_issues(key, batch_idx, failed_issues, *, error_messages=None, output_dir=Path("data")):
-        return persistence_mod.save_failed_issues(key, batch_idx, failed_issues, error_messages=error_messages, output_dir=tmp_path)
+    def real_save_failed_issues(
+        key, batch_idx, failed_issues, *, error_messages=None, output_dir=Path("data")
+    ):
+        return persistence_mod.save_failed_issues(
+            key,
+            batch_idx,
+            failed_issues,
+            error_messages=error_messages,
+            output_dir=tmp_path,
+        )
 
-    monkeypatch.setattr("src.llm_review.llm_categoriser.runner.save_failed_issues", real_save_failed_issues)
+    monkeypatch.setattr(
+        "src.llm_review.llm_categoriser.runner.save_failed_issues",
+        real_save_failed_issues,
+    )
 
-    ok = runner._process_batch(DocumentKey(subject="Art-and-Design", filename="gcse-test.md"), batch)
+    ok = runner._process_batch(
+        DocumentKey(subject="Art-and-Design", filename="gcse-test.md"), batch
+    )
 
     assert ok is False
     # Ensure file was written into tmp_path
-    err_path = tmp_path / "llm_categoriser_errors" / "Art-and-Design" / "gcse-test.md.batch-0.errors.json"
+    err_path = (
+        tmp_path
+        / "llm_categoriser_errors"
+        / "Art-and-Design"
+        / "gcse-test.md.batch-0.errors.json"
+    )
     assert err_path.exists()
 
     data = json.loads(err_path.read_text(encoding="utf-8"))

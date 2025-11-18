@@ -28,7 +28,7 @@ from ..core.state_manager import StateManager
 
 class CategoriserRunner:
     """Orchestrates the LLM categorisation workflow."""
-    
+
     def __init__(
         self,
         llm_service: LLMService,
@@ -38,10 +38,10 @@ class CategoriserRunner:
         max_retries: int = 2,
         log_raw_responses: bool | None = None,
         log_response_dir: Path | None = None,
-    fail_on_quota: bool = True,
+        fail_on_quota: bool = True,
     ):
         """Initialize the runner.
-        
+
         Args:
             llm_service: LLM service for making API calls
             state: State manager for tracking progress
@@ -57,7 +57,11 @@ class CategoriserRunner:
             log_raw_responses = env_flag.strip().lower() in {"1", "true", "yes", "on"}
         self.log_raw_responses = log_raw_responses
         if log_response_dir is None:
-            log_response_dir = Path(os.environ.get("LLM_CATEGORISER_LOG_DIR", "data/llm_categoriser_responses"))
+            log_response_dir = Path(
+                os.environ.get(
+                    "LLM_CATEGORISER_LOG_DIR", "data/llm_categoriser_responses"
+                )
+            )
         self.log_response_dir = Path(log_response_dir)
         if self.log_raw_responses:
             print(
@@ -69,7 +73,7 @@ class CategoriserRunner:
         # so we surface quota exhaustion as a run-level error rather than
         # continuing to process other documents.
         self.fail_on_quota = fail_on_quota
-    
+
     def run(
         self,
         report_path: Path,
@@ -80,44 +84,47 @@ class CategoriserRunner:
         dry_run: bool = False,
     ) -> dict[str, Any]:
         """Run the categorisation workflow.
-        
+
         Args:
             report_path: Path to language-check-report.csv
             subjects: Optional subject filter
             documents: Optional document filter
             force: If True, reprocess all batches (ignore state)
             dry_run: If True, only validate data loading (don't call LLM)
-            
+
         Returns:
             Summary statistics dictionary
         """
         print(f"Loading issues from {report_path}...")
-        grouped_issues = load_issues(report_path, subjects=subjects, documents=documents)
-        
+        grouped_issues = load_issues(
+            report_path, subjects=subjects, documents=documents
+        )
+
         if not grouped_issues:
             print("No issues found matching the filters")
             return {"total_documents": 0, "total_batches": 0, "total_issues": 0}
-        
+
         print(f"Loaded {len(grouped_issues)} document(s) with issues")
-        
+
         total_batches = 0
         total_issues = 0
         processed_batches = 0
         skipped_batches = 0
-        
+
         for key, issues in grouped_issues.items():
             print(f"\nProcessing {key} ({len(issues)} issues)...")
             total_issues += len(issues)
-            
+
             # Get Markdown path
             markdown_path = Path("Documents") / key.subject / "markdown" / key.filename
-            
+
             # Clear state if force mode
             if force:
                 self.state.clear_document(key)
                 from .persistence import clear_document_results
+
                 clear_document_results(key)
-            
+
             # Process batches for this document
             for batch in iter_batches(
                 issues,
@@ -127,23 +134,23 @@ class CategoriserRunner:
                 filename=key.filename,
             ):
                 total_batches += 1
-                
+
                 # Check if already completed
                 if not force and self.state.is_batch_completed(key, batch.index):
                     print(f"  Batch {batch.index}: Already completed (skipping)")
                     skipped_batches += 1
                     continue
-                
+
                 if dry_run:
                     print(f"  Batch {batch.index}: Dry run (not calling LLM)")
                     continue
-                
+
                 # Process the batch
                 success = self._process_batch(key, batch)
                 if success:
                     processed_batches += 1
                     self.state.mark_batch_completed(key, batch.index, len(issues))
-        
+
         print(f"\n{'=' * 60}")
         print(f"Summary:")
         print(f"  Total documents: {len(grouped_issues)}")
@@ -152,7 +159,7 @@ class CategoriserRunner:
         print(f"  Skipped (already done): {skipped_batches}")
         print(f"  Total issues: {total_issues}")
         print(f"{'=' * 60}")
-        
+
         return {
             "total_documents": len(grouped_issues),
             "total_batches": total_batches,
@@ -160,15 +167,15 @@ class CategoriserRunner:
             "skipped_batches": skipped_batches,
             "total_issues": total_issues,
         }
-    
+
     def _process_batch(self, key: DocumentKey, batch: Batch) -> bool:
         """Process a single batch with retries.
-        
+
         Returns:
             True if batch was successfully processed and persisted
         """
         print(f"  Batch {batch.index}: Processing {len(batch.issues)} issue(s)...")
-        
+
         remaining_issues = batch.issues.copy()
         all_results: dict[int, dict[str, Any]] = {}
 
@@ -177,10 +184,12 @@ class CategoriserRunner:
         for attempt in range(self.max_retries + 1):
             if not remaining_issues:
                 break
-            
+
             if attempt > 0:
-                print(f"    Retry {attempt}/{self.max_retries} for {len(remaining_issues)} issue(s)")
-            
+                print(
+                    f"    Retry {attempt}/{self.max_retries} for {len(remaining_issues)} issue(s)"
+                )
+
             # Build prompts for remaining issues
             retry_batch = Batch(
                 subject=batch.subject,
@@ -190,7 +199,7 @@ class CategoriserRunner:
                 page_context=batch.page_context,
                 markdown_table=self._build_table_for_issues(remaining_issues),
             )
-            
+
             prompts = build_prompts(retry_batch)
             # build_prompts returns [system_prompt, user_prompt] when available.
             # The system prompt is provided to the provider chain during creation,
@@ -199,7 +208,7 @@ class CategoriserRunner:
                 user_prompts = prompts[1:]
             else:
                 user_prompts = prompts
-            
+
             # Call LLM via helper and decide how to proceed depending on the
             # outcome. The helper returns the response when successful or None
             # when a non-fatal provider error occurred (e.g. quota exhausted
@@ -209,14 +218,20 @@ class CategoriserRunner:
             if response is None:
                 return False
 
-            self._maybe_log_response(key, batch.index, attempt, response, remaining_issues)
-            
+            self._maybe_log_response(
+                key, batch.index, attempt, response, remaining_issues
+            )
+
             # Validate and collect results
-            validated, failed, errors = self._validate_response(response, remaining_issues)
+            validated, failed, errors = self._validate_response(
+                response, remaining_issues
+            )
 
             # Add validated results to our collection, deduplicating by issue_id
             for issue_dict in validated:
-                issue_id = issue_dict.get("issue_id") if isinstance(issue_dict, dict) else None
+                issue_id = (
+                    issue_dict.get("issue_id") if isinstance(issue_dict, dict) else None
+                )
                 if issue_id is None:
                     continue
                 try:
@@ -224,38 +239,48 @@ class CategoriserRunner:
                 except Exception:
                     continue
                 all_results[iid_int] = issue_dict
-            
+
             # Update remaining issues for next retry
-            remaining_issues = [issue for issue in remaining_issues if issue.issue_id in failed]
+            remaining_issues = [
+                issue for issue in remaining_issues if issue.issue_id in failed
+            ]
 
             # Aggregate errors for later use
             # errors is a mapping of issue_id or 'batch_errors' -> list[str]
             for k, msgs in errors.items():
                 if msgs:
                     agg_failed_errors.setdefault(k, []).extend(msgs)
-            
+
             if not remaining_issues:
                 print(f"    All issues validated successfully")
                 break
-        
+
         # Log any issues that couldn't be validated
         if remaining_issues:
-            print(f"    Warning: {len(remaining_issues)} issue(s) could not be validated after {self.max_retries} retries")
+            print(
+                f"    Warning: {len(remaining_issues)} issue(s) could not be validated after {self.max_retries} retries"
+            )
             for issue in remaining_issues:
                 print(f"      - Issue #{issue.issue_id}: {issue.rule_id}")
             # Save details to data directory for debugging
             try:
-                err_path = save_failed_issues(key, batch.index, remaining_issues, error_messages=agg_failed_errors)
+                err_path = save_failed_issues(
+                    key, batch.index, remaining_issues, error_messages=agg_failed_errors
+                )
                 # Print a short summary of the errors saved
                 total_errors = sum(len(msgs) for msgs in agg_failed_errors.values())
-                print(f"      Saved failed-issues details to {err_path} ({total_errors} messages)")
+                print(
+                    f"      Saved failed-issues details to {err_path} ({total_errors} messages)"
+                )
             except Exception as e:
                 print(f"      Could not save failed issues: {e}")
-        
+
         # Persist results
         if all_results:
             try:
-                output_path = save_batch_results(key, list(all_results.values()), merge=True)
+                output_path = save_batch_results(
+                    key, list(all_results.values()), merge=True
+                )
                 print(f"    Saved results to {output_path}")
                 return True
             except Exception as e:
@@ -264,7 +289,7 @@ class CategoriserRunner:
         else:
             print(f"    No valid results to save")
             return False
-    
+
     def _validate_response(
         self,
         response: Any,
@@ -279,7 +304,9 @@ class CategoriserRunner:
         failed_issue_ids: set[int] = set(issue.issue_id for issue in issues)
 
         # Map of issue ids or 'batch_errors' to lists of messages
-        error_messages: dict[object, list[str]] = {issue.issue_id: [] for issue in issues}
+        error_messages: dict[object, list[str]] = {
+            issue.issue_id: [] for issue in issues
+        }
         error_messages.setdefault("batch_errors", [])
 
         # Only accept a top-level JSON array of objects from the LLM.
@@ -321,7 +348,9 @@ class CategoriserRunner:
             # final stored result. This ensures the resulting object has the
             # detection fields present.
             try:
-                iid = issue_dict.get("issue_id") if isinstance(issue_dict, dict) else None
+                iid = (
+                    issue_dict.get("issue_id") if isinstance(issue_dict, dict) else None
+                )
 
                 if iid is not None and iid in issue_map:
                     # Merge categoriser results into the original detection
@@ -347,7 +376,9 @@ class CategoriserRunner:
                     validated = LanguageIssue(**merged)
                 else:
                     # Fall back to creating from full LLM response mapping
-                    validated = LanguageIssue.from_llm_response(issue_dict, filename=filename)
+                    validated = LanguageIssue.from_llm_response(
+                        issue_dict, filename=filename
+                    )
                 validated_results.append(validated.model_dump())
 
                 # If the LLM supplied an explicit issue_id, mark it as validated.
@@ -358,14 +389,18 @@ class CategoriserRunner:
                 # Validation errors are expected when required detection fields
                 # are missing — attach the message to the specific issue id if
                 # present, otherwise add to batch-level errors.
-                iid = issue_dict.get("issue_id") if isinstance(issue_dict, dict) else None
+                iid = (
+                    issue_dict.get("issue_id") if isinstance(issue_dict, dict) else None
+                )
                 if iid is not None:
                     error_messages.setdefault(iid, []).append(str(e))
                 else:
                     error_messages.setdefault("batch_errors", []).append(str(e))
                 continue
             except Exception as e:
-                iid = issue_dict.get("issue_id") if isinstance(issue_dict, dict) else None
+                iid = (
+                    issue_dict.get("issue_id") if isinstance(issue_dict, dict) else None
+                )
                 if iid is not None:
                     error_messages.setdefault(iid, []).append(str(e))
                 else:
@@ -454,7 +489,10 @@ class CategoriserRunner:
         safe_filename = key.filename.replace("/", "-")
         current_time = datetime.now(timezone.utc)
         timestamp = current_time.strftime("%Y%m%dT%H%M%S%fZ")
-        output_file = subject_dir / f"{safe_filename}.batch-{batch_index}.attempt-{attempt}.{timestamp}.json"
+        output_file = (
+            subject_dir
+            / f"{safe_filename}.batch-{batch_index}.attempt-{attempt}.{timestamp}.json"
+        )
 
         payload = {
             "timestamp": current_time.isoformat().replace("+00:00", "Z"),
@@ -505,8 +543,9 @@ class CategoriserRunner:
             # If detection fails for any reason, do not treat as 503.
             return False
         return False
-    
+
     def _build_table_for_issues(self, issues: list[LanguageIssue]) -> str:
         """Build a Markdown table for a subset of issues."""
         from src.language_check.report_utils import build_issue_batch_table
+
         return build_issue_batch_table(issues)

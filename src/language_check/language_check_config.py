@@ -24,9 +24,7 @@ DEFAULT_DISABLED_RULES = {
     "ADMIT_ENJOY_VB",
     "WANNA",
     "EN_COMPOUNDS_SEMI_FORMAL",
-    "CURRENCY"
-
-
+    "CURRENCY",
 }
 
 
@@ -620,7 +618,6 @@ DEFAULT_IGNORED_WORDS = {
     "Shakespeare",
     "Phillipa",
     "Malet",
-
     # --- History (Other) ---
     "ferch",
     "chronicarum",
@@ -631,7 +628,6 @@ DEFAULT_IGNORED_WORDS = {
     "goch",
     "ibn",
     "l-Fazl",
-
     # --- History (Technical Term) ---
     "motte",
     "bailey",
@@ -723,7 +719,6 @@ DEFAULT_IGNORED_WORDS = {
     "teazle",
     "castlemen",
     "acte",
-
     # --- History (Initialism/Acronym) ---
     "CADW",
     "FANY",
@@ -735,14 +730,12 @@ DEFAULT_IGNORED_WORDS = {
     "WASPs",
     "WSPU",
     "JF",
-
     # --- Geography (Initialism/Acronym) ---
     "GIS",
     "DFID",
     "CfW",
     "GLH",
     "NRFA",
-
     # --- Geography (Technical Term) ---
     "oxbow",
     "enquired",
@@ -779,7 +772,6 @@ DEFAULT_IGNORED_WORDS = {
     "groyne",
     "greenfield",
     "Stocktake",
-
     # --- Geography (Proper Noun) ---
     "Bakewell",
     "MUNSELL",
@@ -845,7 +837,6 @@ DEFAULT_IGNORED_WORDS = {
     "Blaenau",
     "Stiell",
     "MetLink",
-
     # --- Geography (Other) ---
     "Gwersyll",
     "PENTRE",
@@ -859,7 +850,6 @@ DEFAULT_IGNORED_WORDS = {
     "Newydd",
     "Afon",
     "Cwm",
-
     # --- Computer Science (Initialism/Acronym) ---
     "WJEC",
     "CBAC",
@@ -915,7 +905,6 @@ DEFAULT_IGNORED_WORDS = {
     "PBPS",
     "VLEs",
     "WAPs",
-
     # --- Computer Science (Proper Noun) ---
     "Fitzalan",
     "Llanwern",
@@ -928,7 +917,6 @@ DEFAULT_IGNORED_WORDS = {
     "Glyncoed",
     "Pentre",
     "Parkwood",
-
     # --- Computer Science (Technical Term) ---
     "tkinter",
     "Ethernet",
@@ -978,17 +966,14 @@ DEFAULT_IGNORED_WORDS = {
     "defragmenter",
     "addProc",
     "keylogging",
-
     # --- Computer Science (Other) ---
     "Centres",
     "Ysgol",
-
     # --- Art and Design (Initialism/Acronym) ---
     "MoMA",
     "MOMA",
     "UWTSD",
     "NSEAD",
-
     # --- Art and Design (Proper Noun) ---
     "Mostyn",
     "Presteigne",
@@ -1027,7 +1012,6 @@ DEFAULT_IGNORED_WORDS = {
     "Gursky",
     "Issy",
     "Miyake",
-
     # --- Art and Design (Technical Term) ---
     "Wayfinding",
     "mockups",
@@ -1043,12 +1027,10 @@ DEFAULT_IGNORED_WORDS = {
     "longlist",
     "Hallyu",
     "Planometric",
-
     # --- Art and Design (Other) ---
     "cortina",
     "peggin",
     "ie",
-
     # --- Dance (Proper Noun) ---
     "Rygbi",
     "Annwyl",
@@ -1062,7 +1044,6 @@ DEFAULT_IGNORED_WORDS = {
     "Xin",
     "Boyz",
     "Motionhouse",
-
     # --- Dance (Technical Term) ---
     "Chor",
     "Chór",
@@ -1070,16 +1051,13 @@ DEFAULT_IGNORED_WORDS = {
     "jambe",
     "choreographics",
     "ronde",
-
     # --- Dance (Initialism/Acronym) ---
     "ABACADA",
     "CWRE",
     "AOs",
     "SAMs",
-
     # --- Design and Technology (Initialism/Acronym) ---
     "SAM",
-
     # --- Design and Technology (Technical Term) ---
     "kitronik",
     "prerelease",
@@ -1104,7 +1082,6 @@ DEFAULT_IGNORED_WORDS = {
     "nitinol",
     "bluetooth",
     "counterbored",
-
     # --- Design and Technology (Proper Noun) ---
     "Kitronik",
     "Machynlleth",
@@ -1136,7 +1113,6 @@ DEFAULT_IGNORED_WORDS = {
     "Gore-tex",
     "Tactel",
     "Scotchguard",
-
     # --- Business (Initialism/Acronym) ---
     "GfT",
     "NEA",
@@ -1148,7 +1124,6 @@ DEFAULT_IGNORED_WORDS = {
     "JCQ",
     "TNCs",
     "YBL",
-
     # --- Business (Proper Noun) ---
     "Technocamps",
     "ActionAid",
@@ -1173,14 +1148,12 @@ DEFAULT_IGNORED_WORDS = {
     "Bizconsesh",
     "Huel",
     "Asda",
-
     # --- Business (Other) ---
     "creditworthy",
     "De Morgan's",
     "microfinance",
     "nonexamination",
     "Cariad",
-
     # --- Business (Technical Term) ---
     "pseudocode",
     "Raspbian",
@@ -1191,10 +1164,8 @@ DEFAULT_IGNORED_WORDS = {
     "developmentbank",
     "mcommerce",
     "reskilling",
-
     # --- Core Cymraeg (Initialism/Acronym) ---
     "TGAU",
-
     # --- Core Cymraeg (Technical Term) ---
     "Gwneud-i-Gymru",
     "cyflymder",
@@ -1203,7 +1174,6 @@ DEFAULT_IGNORED_WORDS = {
     "buanedd",
     "felosedd",
     "Felosedd",
-
     # --- Core Cymraeg (Proper Noun) ---
     "Dysgu",
     "Proffesiynol",
@@ -1226,10 +1196,8 @@ DEFAULT_IGNORED_WORDS = {
     "Senedd",
     "Urdd",
     "Ymlaen",
-
     # --- Core Cymraeg (Other) ---
     "proffesiynol",
-
     # --- French (Other) ---
     "acheter",
     "adorer",
@@ -1298,19 +1266,16 @@ DEFAULT_IGNORED_WORDS = {
     "université",
     "Quelquefois",
     "passe-temps",
-
     # --- French (Proper Noun) ---
     "Cymraeg",
     "Lucien",
     "Béatrice",
     "Béa",
-
     # --- Physical Education and Health (Technical Term) ---
     "Boccia",
     "Camogie",
     "Goalball",
     "Trampolining",
-
     # --- English Language and Literature (Proper Noun) ---
     "Crossan",
     "Haddon",
@@ -1443,7 +1408,6 @@ DEFAULT_IGNORED_WORDS = {
     "Kingshaw",
     "Warings",
     "Chelmer",
-
     # --- English Language and Literature (Technical Term) ---
     "griots",
     "micropause",
@@ -1473,7 +1437,6 @@ DEFAULT_IGNORED_WORDS = {
     "enjambement",
     "nanovirus",
     "cleanups",
-
     # --- English Language and Literature (Other) ---
     "faery",
     "gapèd",
@@ -1499,7 +1462,6 @@ DEFAULT_IGNORED_WORDS = {
     "Welshest",
     "turbinator",
     "Ooo",
-
     # --- English Language and Literature (Initialism/Acronym) ---
     "OLH",
     "PRUs",
@@ -1508,7 +1470,6 @@ DEFAULT_IGNORED_WORDS = {
     "WESP",
     "NSE",
     "RNLI",
-
     # --- Drama (Proper Noun) ---
     "Adelayo",
     "Adedayo",
@@ -1561,7 +1522,6 @@ DEFAULT_IGNORED_WORDS = {
     "Mabli",
     "Superdry",
     "Headington",
-
     # --- Drama (Technical Term) ---
     "Artaudian",
     "Berkoffian",
@@ -1596,18 +1556,15 @@ DEFAULT_IGNORED_WORDS = {
     "vivas",
     "puffa",
     "marksheets",
-
     # --- Drama (Initialism/Acronym) ---
     "UOR",
     "OLV",
     "SAMS",
-
     # --- Drama (Other) ---
     "aufhaltsame",
     "Aufstieg",
     "des",
     "deafo",
-
     # --- Food and Nutrition (Proper Noun) ---
     "Eatwell",
     "MyFitnessPal",
@@ -1617,7 +1574,6 @@ DEFAULT_IGNORED_WORDS = {
     "Quorn",
     "Munsell",
     "Caesar",
-
     # --- Food and Nutrition (Technical Term) ---
     "Bâton",
     "Brunoise",
@@ -1735,7 +1691,6 @@ DEFAULT_IGNORED_WORDS = {
     "squidgy",
     "choux",
     "E-coli",
-
     # --- Food and Nutrition (Initialism/Acronym) ---
     "BOGOF",
     "DRVs",
@@ -1743,7 +1698,6 @@ DEFAULT_IGNORED_WORDS = {
     "NMES",
     "RNI",
     "e-coli",
-
     # --- Food and Nutrition (Other) ---
     "Socio-cultural",
     "Soya",
@@ -1798,7 +1752,6 @@ DEFAULT_IGNORED_WORDS = {
     "choginio",
     "cynulleidfa",
     "phwrpas",
-
     # --- Digital Media and Film (Proper Noun) ---
     "Paronnaud",
     "Warchus",
@@ -1810,26 +1763,21 @@ DEFAULT_IGNORED_WORDS = {
     "Sŵn",
     "Chwarel",
     "Triongl",
-
     # --- Digital Media and Film (Initialism/Acronym) ---
     "EPK",
     "EPKs",
-
     # --- Health and Social Care, and Childcare (Other) ---
     "enquiring",
-
     # --- Health and Social Care, and Childcare (Initialism/Acronym) ---
     "SSWA",
     "CIW",
     "HIW",
-
     # --- Health and Social Care, and Childcare (Proper Noun) ---
     "BUPA",
     "Cylch",
     "Meithrin",
     "Childline",
     "Estyn",
-
     # --- Level 2 Additional Mathematics (Technical Term) ---
     "Eulerian",
     "semi-Eulerian",
@@ -1840,10 +1788,8 @@ DEFAULT_IGNORED_WORDS = {
     "ut",
     "Subgraph",
     "Semi-Eulerian",
-
     # --- Level 2 Additional Mathematics (Proper Noun) ---
     "Kruskal",
-
     # --- Mathematics and Numeracy (Technical Term) ---
     "kx",
     "kf",
@@ -1872,7 +1818,6 @@ DEFAULT_IGNORED_WORDS = {
     "num",
     "BIDMAS",
     "XPY",
-
     # --- Mathematics and Numeracy (Proper Noun) ---
     "Sali",
     "Banc",
@@ -1900,7 +1845,6 @@ DEFAULT_IGNORED_WORDS = {
     "Harri",
     "Abergwyn",
     "Caermaes",
-
     # --- Mathematics and Numeracy (Initialism/Acronym) ---
     "MaPS",
     "OCW",
@@ -1908,12 +1852,10 @@ DEFAULT_IGNORED_WORDS = {
     "ISW",
     "MIGS",
     "KOs",
-
     # --- Mathematics and Numeracy (Other) ---
     "fy",
     "Nhadau",
     "Hwyl",
-
     # --- Music (Proper Noun) ---
     "Calan",
     "Mared",
@@ -1925,7 +1867,6 @@ DEFAULT_IGNORED_WORDS = {
     "Dolgellau",
     "Eponine",
     "Cubase",
-
     # --- Music (Technical Term) ---
     "countermelodic",
     "tala",
@@ -1954,12 +1895,10 @@ DEFAULT_IGNORED_WORDS = {
     "Rit",
     "Rall",
     "capillarisation",
-
     # --- Music (Other) ---
     "goleuni",
     "Cerdd",
     "Dant",
-
     # --- Religious Studies (Technical Term) ---
     "butsu",
     "myo",
@@ -2172,7 +2111,6 @@ DEFAULT_IGNORED_WORDS = {
     "daswandh",
     "Vand",
     "Chhako",
-
     # --- Religious Studies (Proper Noun) ---
     "Nataraja",
     "Sarya",
@@ -2220,17 +2158,14 @@ DEFAULT_IGNORED_WORDS = {
     "Baqarah",
     "EcoJudaism",
     "Ranjit",
-
     # --- Religious Studies (Initialism/Acronym) ---
     "CAFOD",
-
     # --- Social Studies (Proper Noun) ---
     "Bleddyn",
     "Aberle",
     "Hanef",
     "Bhamjee",
     "Trefor",
-
     # --- Social Studies (Technical Term) ---
     "intracultural",
     "cryptomnesia",
@@ -2245,5 +2180,4 @@ DEFAULT_IGNORED_WORDS = {
     "ΔPE",
     "mgΔh",
     "enquires",
-
 }

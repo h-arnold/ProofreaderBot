@@ -15,7 +15,14 @@ from src.llm.service import LLMService
 
 from .runner import CategoriserRunner
 from ..core.state_manager import StateManager
-from .batch_cli import add_batch_subparsers, handle_batch_create, handle_batch_fetch, handle_batch_list, handle_batch_refresh_errors, handle_batch_cancel
+from .batch_cli import (
+    add_batch_subparsers,
+    handle_batch_create,
+    handle_batch_fetch,
+    handle_batch_list,
+    handle_batch_refresh_errors,
+    handle_batch_cancel,
+)
 
 
 def parse_args(args: list[str] | None = None) -> argparse.Namespace:
@@ -78,11 +85,11 @@ Environment Variables:
   LLM_FAIL_ON_QUOTA              When set (true/1/yes/on), exit the run on quota exhaustion (default: true)
         """,
     )
-    
+
     # Add subparsers for batch commands
     subparsers = parser.add_subparsers(dest="command", help="Command to run")
     add_batch_subparsers(subparsers)
-    
+
     # Input/output options
     parser.add_argument(
         "--from-report",
@@ -90,20 +97,20 @@ Environment Variables:
         default=Path("Documents/language-check-report.csv"),
         help="Path to language-check-report.csv (default: Documents/language-check-report.csv)",
     )
-    
+
     # Filtering options
     parser.add_argument(
         "--subjects",
         nargs="+",
         help="Filter by subject names (case-insensitive)",
     )
-    
+
     parser.add_argument(
         "--documents",
         nargs="+",
         help="Filter by document filenames (case-insensitive)",
     )
-    
+
     # Batch configuration
     # Robustly parse environment variables for batch size and max retries
     try:
@@ -121,53 +128,57 @@ Environment Variables:
         default=batch_size_default,
         help="Number of issues per batch (default: 10 or LLM_CATEGORISER_BATCH_SIZE)",
     )
-    
+
     parser.add_argument(
         "--max-retries",
         type=int,
         default=max_retries_default,
         help="Maximum validation retries per batch (default: 2 or LLM_CATEGORISER_MAX_RETRIES)",
     )
-    
+
     # State management
     parser.add_argument(
         "--state-file",
         type=Path,
-        default=Path(os.environ.get("LLM_CATEGORISER_STATE_FILE", "data/llm_categoriser_state.json")),
+        default=Path(
+            os.environ.get(
+                "LLM_CATEGORISER_STATE_FILE", "data/llm_categoriser_state.json"
+            )
+        ),
         help="State file path (default: data/llm_categoriser_state.json or LLM_CATEGORISER_STATE_FILE)",
     )
-    
+
     parser.add_argument(
         "--force",
         action="store_true",
         help="Reprocess all batches (ignore state)",
     )
-    
+
     # Provider options
     parser.add_argument(
         "--provider",
         help="Primary LLM provider (default: gemini or LLM_PRIMARY)",
     )
-    
+
     parser.add_argument(
         "--dotenv",
         type=Path,
         help="Path to .env file for API keys",
     )
-    
+
     # Special modes
     parser.add_argument(
         "--dry-run",
         action="store_true",
         help="Validate data loading only (don't call LLM)",
     )
-    
+
     parser.add_argument(
         "--use-batch-endpoint",
         action="store_true",
         help="Use batch endpoint if provider supports it (not implemented yet)",
     )
-    
+
     parser.add_argument(
         "--emit-batch-payload",
         action="store_true",
@@ -211,21 +222,21 @@ Environment Variables:
         default=None,
         help="Do not abort the whole run on quota exhaustion; continue processing other documents",
     )
-    
+
     return parser.parse_args(args)
 
 
 def main(args: list[str] | None = None) -> int:
     """Main entry point for the CLI.
-    
+
     Args:
         args: Command-line arguments (defaults to sys.argv[1:])
-        
+
     Returns:
         Exit code (0 for success, 1 for error)
     """
     parsed_args = parse_args(args)
-    
+
     # Handle batch subcommands
     if parsed_args.command == "batch-create":
         return handle_batch_create(parsed_args)
@@ -237,23 +248,26 @@ def main(args: list[str] | None = None) -> int:
         return handle_batch_refresh_errors(parsed_args)
     elif parsed_args.command == "batch-cancel":
         return handle_batch_cancel(parsed_args)
-    
+
     # Continue with synchronous categorisation (default behavior)
     # Load .env early so that environment variables (especially LLM_PRIMARY and LLM_FALLBACK)
     # are available before create_provider_chain reads them
     from dotenv import load_dotenv
+
     if parsed_args.dotenv:
         # Use the user-specified .env and override existing env vars so a
         # local file takes precedence during development/testing.
         load_dotenv(dotenv_path=str(parsed_args.dotenv), override=True)
     else:
         load_dotenv(override=True)  # Load from default .env file in current directory
-    
+
     # Validate report file exists
     if not parsed_args.from_report.exists():
-        print(f"Error: Report file not found: {parsed_args.from_report}", file=sys.stderr)
+        print(
+            f"Error: Report file not found: {parsed_args.from_report}", file=sys.stderr
+        )
         return 1
-    
+
     # Handle --emit-batch-payload mode
     if parsed_args.emit_batch_payload:
         return emit_batch_payloads(parsed_args)
@@ -261,7 +275,7 @@ def main(args: list[str] | None = None) -> int:
     # Handle --emit-prompts mode
     if parsed_args.emit_prompts:
         return emit_prompts(parsed_args)
-    
+
     # Create LLM service
     try:
         # Render the shared system prompt and pass it to the provider chain
@@ -279,22 +293,22 @@ def main(args: list[str] | None = None) -> int:
             dotenv_path=None,  # Already loaded early in main()
             primary=parsed_args.provider,
         )
-        
+
         if not providers:
             print("Error: No LLM providers configured", file=sys.stderr)
             return 1
-        
+
         print(f"Using LLM provider(s): {[p.name for p in providers]}")
-        
+
         llm_service = LLMService(providers)
-        
+
     except Exception as e:
         print(f"Error creating LLM service: {e}", file=sys.stderr)
         return 1
-    
+
     # Create state manager
     state = StateManager(parsed_args.state_file)
-    
+
     # Create runner
     log_responses_flag = True if parsed_args.log_responses else None
     log_responses_dir = parsed_args.log_responses_dir
@@ -302,7 +316,9 @@ def main(args: list[str] | None = None) -> int:
     if parsed_args.fail_on_quota is None:
         try:
             # Env var can be used to control behaviour; default to true if unspecified.
-            fail_on_quota = os.environ.get("LLM_FAIL_ON_QUOTA", "1").strip().lower() in {"1", "true", "yes", "on"}
+            fail_on_quota = os.environ.get(
+                "LLM_FAIL_ON_QUOTA", "1"
+            ).strip().lower() in {"1", "true", "yes", "on"}
         except Exception:
             fail_on_quota = True
     else:
@@ -316,12 +332,12 @@ def main(args: list[str] | None = None) -> int:
         log_response_dir=log_responses_dir,
         fail_on_quota=fail_on_quota,
     )
-    
+
     # Run categorisation
     try:
         subjects_set = set(parsed_args.subjects) if parsed_args.subjects else None
         documents_set = set(parsed_args.documents) if parsed_args.documents else None
-        
+
         runner.run(
             parsed_args.from_report,
             subjects=subjects_set,
@@ -329,22 +345,23 @@ def main(args: list[str] | None = None) -> int:
             force=parsed_args.force,
             dry_run=parsed_args.dry_run,
         )
-        
+
         return 0
-        
+
     except KeyboardInterrupt:
         print("\nInterrupted by user", file=sys.stderr)
         return 130
     except Exception as e:
         print(f"Error: {e}", file=sys.stderr)
         import traceback
+
         traceback.print_exc()
         return 1
 
 
 def emit_batch_payloads(parsed_args: argparse.Namespace) -> int:
     """Emit batch payloads to files for manual testing.
-    
+
     This mode loads issues, creates batches, builds prompts, and writes them
     to data/batch_payloads/ as JSON files. Useful for manually submitting to
     provider batch consoles.
@@ -353,9 +370,9 @@ def emit_batch_payloads(parsed_args: argparse.Namespace) -> int:
     from ..core.document_loader import load_issues
     from ..core.batcher import iter_batches
     from .prompt_factory import build_prompts
-    
+
     print("Emitting batch payloads (not calling LLM)...")
-    
+
     try:
         grouped_issues = load_issues(
             parsed_args.from_report,
@@ -365,19 +382,19 @@ def emit_batch_payloads(parsed_args: argparse.Namespace) -> int:
     except Exception as e:
         print(f"Error loading issues: {e}", file=sys.stderr)
         return 1
-    
+
     if not grouped_issues:
         print("No issues found matching the filters")
         return 0
-    
+
     output_dir = Path("data/batch_payloads")
     output_dir.mkdir(parents=True, exist_ok=True)
-    
+
     payload_count = 0
-    
+
     for key, issues in grouped_issues.items():
         markdown_path = Path("Documents") / key.subject / "markdown" / key.filename
-        
+
         for batch in iter_batches(
             issues,
             parsed_args.batch_size,
@@ -395,7 +412,7 @@ def emit_batch_payloads(parsed_args: argparse.Namespace) -> int:
             else:
                 system_text = ""
                 user_prompts = prompts
-            
+
             # Create payload file
             payload = {
                 "subject": batch.subject,
@@ -406,18 +423,20 @@ def emit_batch_payloads(parsed_args: argparse.Namespace) -> int:
                 "system": system_text,
                 "user": user_prompts,
             }
-            
+
             # Safe filename
             safe_subject = batch.subject.replace("/", "-")
             safe_filename = batch.filename.replace("/", "-").replace(".md", "")
-            output_file = output_dir / f"{safe_subject}_{safe_filename}_batch{batch.index}.json"
-            
+            output_file = (
+                output_dir / f"{safe_subject}_{safe_filename}_batch{batch.index}.json"
+            )
+
             with open(output_file, "w", encoding="utf-8") as f:
                 json.dump(payload, f, indent=2)
-            
+
             print(f"  Wrote {output_file}")
             payload_count += 1
-    
+
     print(f"\nEmitted {payload_count} batch payload(s) to {output_dir}")
     return 0
 
@@ -473,14 +492,20 @@ def emit_prompts(parsed_args: argparse.Namespace) -> int:
 
             # Use a simple plain-text format: one file per role
             if system_text:
-                system_file = output_dir / f"{safe_subject}_{safe_filename}_batch{batch.index}_system.txt"
+                system_file = (
+                    output_dir
+                    / f"{safe_subject}_{safe_filename}_batch{batch.index}_system.txt"
+                )
                 system_file.write_text(system_text, encoding="utf-8")
                 print(f"  Wrote {system_file}")
                 file_count += 1
 
             # Write user prompt(s). If multiple prompts, join them with a separator.
             user_text = "\n\n---\n\n".join(user_prompts)
-            user_file = output_dir / f"{safe_subject}_{safe_filename}_batch{batch.index}_user.txt"
+            user_file = (
+                output_dir
+                / f"{safe_subject}_{safe_filename}_batch{batch.index}_user.txt"
+            )
             user_file.write_text(user_text, encoding="utf-8")
             print(f"  Wrote {user_file}")
             file_count += 1

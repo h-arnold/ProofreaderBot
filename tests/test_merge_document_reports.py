@@ -27,7 +27,16 @@ def test_merge_document_reports(tmp_path: Path):
     subject_a = docs / "Subject-A" / "document_reports"
     csv_a = subject_a / "a1.csv"
     rows_a = [
-        {"issue_id": "1", "page_number": "1", "issue": "test", "highlighted_context": "c1", "pass_code": "PassCode.LTC", "error_category": "ErrorCategory.STYLISTIC_PREFERENCE", "confidence_score": "80", "reasoning": "r1"},
+        {
+            "issue_id": "1",
+            "page_number": "1",
+            "issue": "test",
+            "highlighted_context": "c1",
+            "pass_code": "PassCode.LTC",
+            "error_category": "ErrorCategory.STYLISTIC_PREFERENCE",
+            "confidence_score": "80",
+            "reasoning": "r1",
+        },
     ]
     make_sample_csv(csv_a, rows_a)
 
@@ -36,10 +45,28 @@ def test_merge_document_reports(tmp_path: Path):
     csv_b1 = subject_b / "b1.csv"
     csv_b2 = subject_b / "b2.csv"
     rows_b1 = [
-        {"issue_id": "2", "page_number": "2", "issue": "test2", "highlighted_context": "c2", "pass_code": "PassCode.LTC", "error_category": "ErrorCategory.PARSING_ERROR", "confidence_score": "90", "reasoning": "r2"},
+        {
+            "issue_id": "2",
+            "page_number": "2",
+            "issue": "test2",
+            "highlighted_context": "c2",
+            "pass_code": "PassCode.LTC",
+            "error_category": "ErrorCategory.PARSING_ERROR",
+            "confidence_score": "90",
+            "reasoning": "r2",
+        },
     ]
     rows_b2 = [
-        {"issue_id": "3", "page_number": "3", "issue": "test3", "highlighted_context": "c3", "pass_code": "PassCode.LTC", "error_category": "ErrorCategory.SPELLING", "confidence_score": "95", "reasoning": "r3"},
+        {
+            "issue_id": "3",
+            "page_number": "3",
+            "issue": "test3",
+            "highlighted_context": "c3",
+            "pass_code": "PassCode.LTC",
+            "error_category": "ErrorCategory.SPELLING",
+            "confidence_score": "95",
+            "reasoning": "r3",
+        },
     ]
     make_sample_csv(csv_b1, rows_b1)
     make_sample_csv(csv_b2, rows_b2)

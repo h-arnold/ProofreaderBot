@@ -3,6 +3,7 @@
 These map directly to the `Error Categories` list in
 `src/prompt/promptFiles/language_tool_categoriser.md`.
 """
+
 from __future__ import annotations
 
 from enum import Enum

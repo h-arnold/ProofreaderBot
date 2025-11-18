@@ -93,7 +93,7 @@ def test_loads_dotenv_when_path_provided(tmp_path: Path) -> None:
 def test_generate_returns_repaired_json_when_filter_enabled(tmp_path: Path) -> None:
     system_prompt_path = tmp_path / "system.md"
     system_prompt_path.write_text("System", encoding="utf-8")
-    response_text = "Noise before {\"key\": \"value\",} and after"
+    response_text = 'Noise before {"key": "value",} and after'
     client = _DummyClient(response_text=response_text)
     llm = GeminiLLM(
         system_prompt=system_prompt_path,

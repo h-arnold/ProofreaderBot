@@ -32,7 +32,9 @@ def test_build_language_tool_passes_config(monkeypatch) -> None:
     # Monkeypatch the import used by language_check by patching the imported module
     # within the language_check module. This avoids relying on import path
     # resolution and is robust during the test run.
-    monkeypatch.setattr(manager_mod.language_tool_python, "LanguageTool", DummyLanguageTool)
+    monkeypatch.setattr(
+        manager_mod.language_tool_python, "LanguageTool", DummyLanguageTool
+    )
 
     tool = lc.build_language_tool("en-GB")
 

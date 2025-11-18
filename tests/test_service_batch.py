@@ -70,7 +70,9 @@ class _BatchProvider(LLMProvider):
         if self._create_error:
             raise self._create_error
         # Store job for later retrieval
-        self._jobs[self._create_result] = _DummyBatchJob(self._create_result, done=False)
+        self._jobs[self._create_result] = _DummyBatchJob(
+            self._create_result, done=False
+        )
         return self._create_result
 
     def get_batch_job(self, batch_job_name: str) -> _DummyBatchJob:
@@ -80,7 +82,7 @@ class _BatchProvider(LLMProvider):
         if self._fetch_error:
             raise self._fetch_error
         return self._fetch_result
-    
+
     def cancel_batch_job(self, batch_job_name: str) -> None:
         """Cancel a batch job."""
         if self._cancel_error:
@@ -117,10 +119,12 @@ class _UnsupportedProvider(LLMProvider):
 
 
 def test_create_batch_job_uses_first_supporting_provider() -> None:
-    service = LLMService([
-        _UnsupportedProvider(),
-        _BatchProvider(create_result="batch-456"),
-    ])
+    service = LLMService(
+        [
+            _UnsupportedProvider(),
+            _BatchProvider(create_result="batch-456"),
+        ]
+    )
 
     provider_name, job_name = service.create_batch_job([["prompt"]])
 
@@ -129,29 +133,35 @@ def test_create_batch_job_uses_first_supporting_provider() -> None:
 
 
 def test_create_batch_job_raises_when_no_provider_supports_it() -> None:
-    service = LLMService([
-        _UnsupportedProvider(),
-        _UnsupportedProvider(),
-    ])
+    service = LLMService(
+        [
+            _UnsupportedProvider(),
+            _UnsupportedProvider(),
+        ]
+    )
 
     with pytest.raises(NotImplementedError, match="No provider supports"):
         service.create_batch_job([["prompt"]])
 
 
 def test_create_batch_job_raises_on_provider_error() -> None:
-    service = LLMService([
-        _BatchProvider(create_error=LLMProviderError("failed")),
-    ])
+    service = LLMService(
+        [
+            _BatchProvider(create_error=LLMProviderError("failed")),
+        ]
+    )
 
     with pytest.raises(LLMProviderError, match="failed"):
         service.create_batch_job([["prompt"]])
 
 
 def test_fetch_batch_results_retrieves_from_correct_provider() -> None:
-    service = LLMService([
-        _BatchProvider(fetch_result=["a", "b", "c"]),
-        _UnsupportedProvider(),
-    ])
+    service = LLMService(
+        [
+            _BatchProvider(fetch_result=["a", "b", "c"]),
+            _UnsupportedProvider(),
+        ]
+    )
 
     provider_name, job_name = service.create_batch_job([["prompt"]])
     results = service.fetch_batch_results(provider_name, job_name)
@@ -160,27 +170,33 @@ def test_fetch_batch_results_retrieves_from_correct_provider() -> None:
 
 
 def test_fetch_batch_results_raises_when_provider_not_found() -> None:
-    service = LLMService([
-        _BatchProvider(),
-    ])
+    service = LLMService(
+        [
+            _BatchProvider(),
+        ]
+    )
 
     with pytest.raises(ValueError, match="not found"):
         service.fetch_batch_results("nonexistent", "batch-123")
 
 
 def test_fetch_batch_results_raises_when_provider_unsupported() -> None:
-    service = LLMService([
-        _UnsupportedProvider(),
-    ])
+    service = LLMService(
+        [
+            _UnsupportedProvider(),
+        ]
+    )
 
     with pytest.raises(NotImplementedError, match="does not support"):
         service.fetch_batch_results("unsupported", "batch-123")
 
 
 def test_fetch_batch_results_raises_on_provider_error() -> None:
-    service = LLMService([
-        _BatchProvider(fetch_error=LLMProviderError("fetch failed")),
-    ])
+    service = LLMService(
+        [
+            _BatchProvider(fetch_error=LLMProviderError("fetch failed")),
+        ]
+    )
 
     provider_name, job_name = service.create_batch_job([["prompt"]])
 
@@ -189,9 +205,11 @@ def test_fetch_batch_results_raises_on_provider_error() -> None:
 
 
 def test_get_batch_job_status_returns_status() -> None:
-    service = LLMService([
-        _BatchProvider(),
-    ])
+    service = LLMService(
+        [
+            _BatchProvider(),
+        ]
+    )
 
     provider_name, job_name = service.create_batch_job([["prompt"]])
     status = service.get_batch_job_status(provider_name, job_name)
@@ -201,9 +219,11 @@ def test_get_batch_job_status_returns_status() -> None:
 
 
 def test_get_batch_job_status_raises_when_provider_not_found() -> None:
-    service = LLMService([
-        _BatchProvider(),
-    ])
+    service = LLMService(
+        [
+            _BatchProvider(),
+        ]
+    )
 
     with pytest.raises(ValueError, match="not found"):
         service.get_batch_job_status("nonexistent", "batch-123")
@@ -212,13 +232,18 @@ def test_get_batch_job_status_raises_when_provider_not_found() -> None:
 def test_reporting_hook_records_batch_operations() -> None:
     events: list[tuple[str, ProviderStatus, Exception | None]] = []
 
-    def reporter(name: str, status: ProviderStatus, error: Exception | None = None) -> None:
+    def reporter(
+        name: str, status: ProviderStatus, error: Exception | None = None
+    ) -> None:
         events.append((name, status, error))
 
-    service = LLMService([
-        _UnsupportedProvider(),
-        _BatchProvider(),
-    ], reporter=reporter)
+    service = LLMService(
+        [
+            _UnsupportedProvider(),
+            _BatchProvider(),
+        ],
+        reporter=reporter,
+    )
 
     provider_name, job_name = service.create_batch_job([["prompt"]])
     service.fetch_batch_results(provider_name, job_name)
@@ -265,7 +290,7 @@ def test_cancel_batch_job_propagates_provider_error() -> None:
     service = LLMService([provider])
 
     provider_name, job_name = service.create_batch_job([["prompt"]])
-    
+
     with pytest.raises(LLMProviderError, match="Cancellation failed"):
         service.cancel_batch_job(provider_name, job_name)
 
@@ -274,7 +299,9 @@ def test_cancel_batch_job_reports_events() -> None:
     """Test that cancel_batch_job reports events to the reporter."""
     events: list[tuple[str, ProviderStatus, Exception | None]] = []
 
-    def reporter(name: str, status: ProviderStatus, error: Exception | None = None) -> None:
+    def reporter(
+        name: str, status: ProviderStatus, error: Exception | None = None
+    ) -> None:
         events.append((name, status, error))
 
     provider = _BatchProvider()
@@ -287,4 +314,3 @@ def test_cancel_batch_job_reports_events() -> None:
     assert len(events) == 2
     assert events[0][1] == ProviderStatus.SUCCESS  # create
     assert events[1][1] == ProviderStatus.SUCCESS  # cancel
-

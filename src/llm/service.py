@@ -31,7 +31,9 @@ class LLMService:
     def health_check(self) -> list[tuple[str, bool]]:
         """Run the optional health check for every provider."""
 
-        return [(provider.name, provider.health_check()) for provider in self._providers]
+        return [
+            (provider.name, provider.health_check()) for provider in self._providers
+        ]
 
     def generate(
         self,
@@ -96,14 +98,14 @@ class LLMService:
         filter_json: bool = False,
     ) -> tuple[str, str]:
         """Create a batch job using the first available provider that supports it.
-        
+
         Args:
             batch_payload: Sequence of prompt sequences.
             filter_json: Whether to apply JSON filtering to responses.
-        
+
         Returns:
             Tuple of (provider_name, batch_job_name) for tracking and retrieval.
-        
+
         Raises:
             NotImplementedError: If no provider supports batch job creation.
             LLMProviderError: If batch job creation fails.
@@ -111,14 +113,13 @@ class LLMService:
         last_error: Exception | None = None
         for provider in self._providers:
             # Check if provider has create_batch_job method
-            if not hasattr(provider, 'create_batch_job'):
+            if not hasattr(provider, "create_batch_job"):
                 self._report(provider.name, ProviderStatus.UNSUPPORTED)
                 continue
-            
+
             try:
                 batch_job_name = provider.create_batch_job(
-                    batch_payload, 
-                    filter_json=filter_json
+                    batch_payload, filter_json=filter_json
                 )
                 self._report(provider.name, ProviderStatus.SUCCESS)
                 return (provider.name, batch_job_name)
@@ -131,7 +132,7 @@ class LLMService:
             except LLMProviderError as exc:
                 self._report(provider.name, ProviderStatus.FAILURE, exc)
                 raise
-        
+
         raise NotImplementedError("No provider supports create_batch_job")
 
     def fetch_batch_results(
@@ -140,25 +141,25 @@ class LLMService:
         batch_job_name: str,
     ) -> Sequence[Any]:
         """Fetch results from a completed batch job.
-        
+
         Args:
             provider_name: The name of the provider that created the batch job.
             batch_job_name: The batch job identifier returned from create_batch_job.
-        
+
         Returns:
             Sequence of parsed responses in the same order as the original requests.
-        
+
         Raises:
             ValueError: If provider not found or batch job not completed.
             LLMProviderError: If fetching results fails.
         """
         provider = self._find_provider(provider_name)
-        
-        if not hasattr(provider, 'fetch_batch_results'):
+
+        if not hasattr(provider, "fetch_batch_results"):
             raise NotImplementedError(
                 f"Provider '{provider_name}' does not support fetch_batch_results"
             )
-        
+
         try:
             results = provider.fetch_batch_results(batch_job_name)
             self._report(provider.name, ProviderStatus.SUCCESS)
@@ -173,25 +174,25 @@ class LLMService:
         batch_job_name: str,
     ) -> Any:
         """Get the status of a batch job.
-        
+
         Args:
             provider_name: The name of the provider that created the batch job.
             batch_job_name: The batch job identifier returned from create_batch_job.
-        
+
         Returns:
             Provider-specific batch job status object.
-        
+
         Raises:
             ValueError: If provider not found.
             LLMProviderError: If getting status fails.
         """
         provider = self._find_provider(provider_name)
-        
-        if not hasattr(provider, 'get_batch_job'):
+
+        if not hasattr(provider, "get_batch_job"):
             raise NotImplementedError(
                 f"Provider '{provider_name}' does not support get_batch_job"
             )
-        
+
         try:
             status = provider.get_batch_job(batch_job_name)
             self._report(provider.name, ProviderStatus.SUCCESS)
@@ -199,30 +200,30 @@ class LLMService:
         except LLMProviderError as exc:
             self._report(provider.name, ProviderStatus.FAILURE, exc)
             raise
-    
+
     def cancel_batch_job(
         self,
         provider_name: str,
         batch_job_name: str,
     ) -> None:
         """Cancel a pending batch job.
-        
+
         Args:
             provider_name: The name of the provider that created the batch job.
             batch_job_name: The batch job identifier returned from create_batch_job.
-        
+
         Raises:
             ValueError: If provider not found.
             NotImplementedError: If provider doesn't support cancellation.
             LLMProviderError: If cancellation fails.
         """
         provider = self._find_provider(provider_name)
-        
-        if not hasattr(provider, 'cancel_batch_job'):
+
+        if not hasattr(provider, "cancel_batch_job"):
             raise NotImplementedError(
                 f"Provider '{provider_name}' does not support cancel_batch_job"
             )
-        
+
         try:
             provider.cancel_batch_job(batch_job_name)
             self._report(provider.name, ProviderStatus.SUCCESS)
@@ -232,13 +233,13 @@ class LLMService:
 
     def _find_provider(self, provider_name: str) -> LLMProvider:
         """Find a provider by name.
-        
+
         Args:
             provider_name: The name of the provider to find.
-        
+
         Returns:
             The provider with the given name.
-        
+
         Raises:
             ValueError: If provider not found.
         """

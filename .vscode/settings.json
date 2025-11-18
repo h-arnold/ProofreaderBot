@@ -10,10 +10,10 @@
   // Enable type checking and set the default behaviour (optional)
   "python.analysis.typeCheckingMode": "basic",
 
-  // Some projects find it helpful to index installed packages for better import
-  "python.analysis.packageIndexDepth": 3
-}{
-    "python.testing.pytestArgs": [
+// Some projects find it helpful to index installed packages for better import
+"python.analysis.packageIndexDepth": 3,
+
+  "python.testing.pytestArgs": [
 
     ],
     "python.testing.pytestPath": "pytest",

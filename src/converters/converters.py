@@ -260,7 +260,7 @@ def create_converter(converter_type: str) -> PdfToMarkdownConverter:
         ValueError: If the converter type is not recognized.
     """
     converter_type = converter_type.lower()
-    
+
     if converter_type == "markitdown":
         return MarkItDownConverter()
     elif converter_type == "marker":

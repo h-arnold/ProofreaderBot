@@ -21,17 +21,21 @@ def test_emit_batch_payloads_writes_system_and_user(monkeypatch, tmp_path):
     # Monkeypatch load_issues to return a single document
     def fake_load(*args, **kwargs):
         key = DocumentKey(subject="TestSubject", filename="test.md")
-        return {key: [LanguageIssue(
-            filename="test.md",
-            rule_id="R1",
-            message="msg",
-            issue_type="misspelling",
-            replacements=[],
-            highlighted_context="example",
-            issue="example",
-            page_number=1,
-            issue_id=0,
-        )]}
+        return {
+            key: [
+                LanguageIssue(
+                    filename="test.md",
+                    rule_id="R1",
+                    message="msg",
+                    issue_type="misspelling",
+                    replacements=[],
+                    highlighted_context="example",
+                    issue="example",
+                    page_number=1,
+                    issue_id=0,
+                )
+            ]
+        }
 
     monkeypatch.setattr("src.llm_review.core.document_loader.load_issues", fake_load)
 
@@ -54,7 +58,10 @@ def test_emit_batch_payloads_writes_system_and_user(monkeypatch, tmp_path):
     def fake_build_prompts(batch):
         return ["SYS_TXT", "USER_TXT"]
 
-    monkeypatch.setattr("src.llm_review.llm_categoriser.prompt_factory.build_prompts", fake_build_prompts)
+    monkeypatch.setattr(
+        "src.llm_review.llm_categoriser.prompt_factory.build_prompts",
+        fake_build_prompts,
+    )
 
     # Run emit_batch_payloads with a temp output directory; the function uses
     # data/batch_payloads by default, so change cwd to tmp_path for safety.
@@ -77,7 +84,7 @@ def test_emit_batch_payloads_writes_system_and_user(monkeypatch, tmp_path):
         files = list(out_dir.glob("*.json"))
         assert files, "No payload files written"
 
-        data = json.loads(files[0].read_text(encoding='utf-8'))
+        data = json.loads(files[0].read_text(encoding="utf-8"))
         assert data.get("system") == "SYS_TXT"
         assert data.get("user") == ["USER_TXT"]
         # For backward compatibility, original prompts list is still present

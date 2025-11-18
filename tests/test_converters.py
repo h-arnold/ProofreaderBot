@@ -31,10 +31,7 @@ def test_conversion_result_creation() -> None:
 
 def test_conversion_result_with_metadata() -> None:
     """Test that ConversionResult can store metadata."""
-    result = ConversionResult(
-        markdown="# Test",
-        metadata={"key": "value"}
-    )
+    result = ConversionResult(markdown="# Test", metadata={"key": "value"})
     assert result.markdown == "# Test"
     assert result.metadata == {"key": "value"}
 
@@ -52,11 +49,11 @@ def test_create_converter_case_insensitive() -> None:
     converter1 = create_converter("markitdown")
     converter2 = create_converter("MARKITDOWN")
     converter3 = create_converter("MarkItDown")
-    
+
     assert isinstance(converter1, MarkItDownConverter)
     assert isinstance(converter2, MarkItDownConverter)
     assert isinstance(converter3, MarkItDownConverter)
-    
+
     converter1.close()
     converter2.close()
     converter3.close()
@@ -77,21 +74,27 @@ def test_markitdown_converter_with_real_pdf(tmp_path: Path) -> None:
     """Test MarkItDown converter with a real PDF file."""
     # Find a PDF in the Documents directory
     project_root = Path(__file__).resolve().parents[1]
-    pdf_path = project_root / "Documents" / "Digital-Media-and-Film" / "pdfs" / "wjec-gcse-digital-media-and-film-specification.pdf"
-    
+    pdf_path = (
+        project_root
+        / "Documents"
+        / "Digital-Media-and-Film"
+        / "pdfs"
+        / "wjec-gcse-digital-media-and-film-specification.pdf"
+    )
+
     if not pdf_path.exists():
         # Skip test if no PDF is available
         return
-    
+
     converter = MarkItDownConverter()
     try:
         result = converter.convert(pdf_path)
-        
+
         assert isinstance(result, ConversionResult)
         assert result.markdown is not None
         assert len(result.markdown) > 0
         assert isinstance(result.markdown, str)
-        
+
         # Check that the markdown contains expected content
         assert "WJEC" in result.markdown or "Digital Media" in result.markdown
     finally:
@@ -206,14 +209,18 @@ def test_normalise_marker_markdown_converts_breaks_to_lists() -> None:
     """Normalisation should replace marker <br> sequences while preserving structure."""
 
     raw = (
-        "| Section | Amplification |" "\n"
-        "| --- | --- |" "\n"
+        "| Section | Amplification |"
+        "\n"
+        "| --- | --- |"
+        "\n"
         "| 2.2.3a<br>Wave properties | Learners should understand:<br>•<br>use and draw graphical representations of waves from<br>given values of amplitude and wavelength<br>•<br>use the equation:<br>wave speed = frequency x<br>wavelength. |"
     )
 
     expected = (
-        "| Section | Amplification |" "\n"
-        "| --- | --- |" "\n"
+        "| Section | Amplification |"
+        "\n"
+        "| --- | --- |"
+        "\n"
         "| 2.2.3a Wave properties | Learners should understand: <ul><li>use and draw graphical representations of waves from given values of amplitude and wavelength</li><li>use the equation: wave speed = frequency x wavelength.</li></ul> |"
     )
 

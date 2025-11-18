@@ -25,8 +25,28 @@ def test_deduplicate_basic(tmp_path: Path) -> None:
     csv_path = tmp_path / "report.csv"
     header = DEFAULT_HEADERS
     rows = [
-        ["Subject", "file.md", "", "R1", "misspelling", "Thiss", "typo", "This", "Thiss is a test"],
-        ["Subject", "file.md", "", "R1", "misspelling", "Thiss", "typo", "This", "Thiss is a test"],
+        [
+            "Subject",
+            "file.md",
+            "",
+            "R1",
+            "misspelling",
+            "Thiss",
+            "typo",
+            "This",
+            "Thiss is a test",
+        ],
+        [
+            "Subject",
+            "file.md",
+            "",
+            "R1",
+            "misspelling",
+            "Thiss",
+            "typo",
+            "This",
+            "Thiss is a test",
+        ],
     ]
 
     _write_csv(csv_path, header, rows)
@@ -34,9 +54,7 @@ def test_deduplicate_basic(tmp_path: Path) -> None:
     assert h == header
     unique, counts = deduplicate_rows(table, header)
     assert len(unique) == 1
-    key = tuple((v or "") for v in (
-        unique[0][c] for c in header
-    ))
+    key = tuple((v or "") for v in (unique[0][c] for c in header))
     assert counts.get(key, 0) == 2
 
 
@@ -79,8 +97,28 @@ def test_run_cli_filters_non_morfolok(tmp_path: Path) -> None:
 
     # Two rows: one MORFOLOGIK and one different rule ID with identical content
     rows = [
-        ["Subject", "file.md", "", "MORFOLOGIK_RULE_EN_GB", "misspelling", "Thiss", "typo", "This", "ctx"],
-        ["Subject", "file.md", "", "OTHER_RULE", "misspelling", "Thiss", "typo", "This", "ctx"],
+        [
+            "Subject",
+            "file.md",
+            "",
+            "MORFOLOGIK_RULE_EN_GB",
+            "misspelling",
+            "Thiss",
+            "typo",
+            "This",
+            "ctx",
+        ],
+        [
+            "Subject",
+            "file.md",
+            "",
+            "OTHER_RULE",
+            "misspelling",
+            "Thiss",
+            "typo",
+            "This",
+            "ctx",
+        ],
     ]
 
     _write_csv(csv_path, header, rows)
@@ -108,9 +146,39 @@ def test_run_cli_default_key_issue(tmp_path: Path) -> None:
     header = DEFAULT_HEADERS
 
     rows = [
-        ["Subject", "a.md", "", "MORFOLOGIK_RULE_EN_GB", "misspelling", "Thiss", "typo", "This", "ctx"],
-        ["Subject", "b.md", "", "MORFOLOGIK_RULE_EN_GB", "misspelling", "Thiss", "typo", "This", "ctx2"],
-        ["Subject", "a.md", "", "MORFOLOGIK_RULE_EN_GB", "misspelling", "Other", "typo", "Other", "ctx3"],
+        [
+            "Subject",
+            "a.md",
+            "",
+            "MORFOLOGIK_RULE_EN_GB",
+            "misspelling",
+            "Thiss",
+            "typo",
+            "This",
+            "ctx",
+        ],
+        [
+            "Subject",
+            "b.md",
+            "",
+            "MORFOLOGIK_RULE_EN_GB",
+            "misspelling",
+            "Thiss",
+            "typo",
+            "This",
+            "ctx2",
+        ],
+        [
+            "Subject",
+            "a.md",
+            "",
+            "MORFOLOGIK_RULE_EN_GB",
+            "misspelling",
+            "Other",
+            "typo",
+            "Other",
+            "ctx3",
+        ],
     ]
 
     _write_csv(csv_path, header, rows)

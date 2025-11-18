@@ -18,17 +18,21 @@ def test_emit_prompts_writes_system_and_user(monkeypatch, tmp_path):
     # Monkeypatch load_issues to return a single document
     def fake_load(*args, **kwargs):
         key = DocumentKey(subject="TestSubject", filename="test.md")
-        return {key: [LanguageIssue(
-            filename="test.md",
-            rule_id="R1",
-            message="msg",
-            issue_type="misspelling",
-            replacements=[],
-            highlighted_context="example",
-            issue="example",
-            page_number=1,
-            issue_id=0,
-        )]}
+        return {
+            key: [
+                LanguageIssue(
+                    filename="test.md",
+                    rule_id="R1",
+                    message="msg",
+                    issue_type="misspelling",
+                    replacements=[],
+                    highlighted_context="example",
+                    issue="example",
+                    page_number=1,
+                    issue_id=0,
+                )
+            ]
+        }
 
     monkeypatch.setattr("src.llm_review.core.document_loader.load_issues", fake_load)
 
@@ -51,7 +55,10 @@ def test_emit_prompts_writes_system_and_user(monkeypatch, tmp_path):
     def fake_build_prompts(batch):
         return ["SYS_TXT", "USER_TXT"]
 
-    monkeypatch.setattr("src.llm_review.llm_categoriser.prompt_factory.build_prompts", fake_build_prompts)
+    monkeypatch.setattr(
+        "src.llm_review.llm_categoriser.prompt_factory.build_prompts",
+        fake_build_prompts,
+    )
 
     # Run emit_prompts with a temp output directory; the function uses
     # data/prompt_payloads by default, so changecwd to tmp_path for safety.
@@ -76,8 +83,8 @@ def test_emit_prompts_writes_system_and_user(monkeypatch, tmp_path):
         assert system_files, "No system files written"
         assert user_files, "No user files written"
 
-        assert system_files[0].read_text(encoding='utf-8') == "SYS_TXT"
-        assert user_files[0].read_text(encoding='utf-8') == "USER_TXT"
+        assert system_files[0].read_text(encoding="utf-8") == "SYS_TXT"
+        assert user_files[0].read_text(encoding="utf-8") == "USER_TXT"
 
     finally:
         os.chdir(cwd)

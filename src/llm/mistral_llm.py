@@ -19,7 +19,7 @@ from .provider import LLMProvider, LLMProviderError, LLMQuotaError
 
 class MistralLLM(LLMProvider):
     """Wrapper around the Mistral SDK with system instructions.
-    
+
     The system prompt can be provided either as a string directly or as a Path to a file.
     Implements thinking mode using prompt_mode="reasoning".
     """
@@ -41,7 +41,10 @@ class MistralLLM(LLMProvider):
         # Accept either a direct string or a path to a file containing the prompt
         if isinstance(system_prompt, (str, Path)):
             # Try to interpret as path first if it looks like a path
-            if isinstance(system_prompt, Path) or (isinstance(system_prompt, str) and ("\n" not in system_prompt and len(system_prompt) < 500)):
+            if isinstance(system_prompt, Path) or (
+                isinstance(system_prompt, str)
+                and ("\n" not in system_prompt and len(system_prompt) < 500)
+            ):
                 try:
                     prompt_path = Path(system_prompt)
                     if prompt_path.exists() and prompt_path.is_file():
@@ -56,8 +59,10 @@ class MistralLLM(LLMProvider):
                 # Multi-line or long string - treat as direct prompt
                 self._system_prompt = system_prompt
         else:
-            raise TypeError(f"system_prompt must be str or Path, got {type(system_prompt)}")
-            
+            raise TypeError(
+                f"system_prompt must be str or Path, got {type(system_prompt)}"
+            )
+
         if dotenv_path is not None:
             # Load the provided dotenv file but do not override existing
             # environment variables; tests and explicit environment values
@@ -65,7 +70,7 @@ class MistralLLM(LLMProvider):
             load_dotenv(dotenv_path=Path(dotenv_path))
         else:
             load_dotenv()
-        
+
         # Mistral SDK does not automatically read MISTRAL_API_KEY from environment
         # We need to read it and pass it explicitly
         if client is None:
@@ -78,10 +83,14 @@ class MistralLLM(LLMProvider):
             self._client = Mistral(api_key=api_key)
         else:
             self._client = client
-        
+
         self._filter_json = filter_json
-        self._batch_poll_interval = self._read_float_env("MISTRAL_BATCH_POLL_INTERVAL", default=2.0)
-        self._batch_timeout = self._read_float_env("MISTRAL_BATCH_TIMEOUT", default=900.0)
+        self._batch_poll_interval = self._read_float_env(
+            "MISTRAL_BATCH_POLL_INTERVAL", default=2.0
+        )
+        self._batch_timeout = self._read_float_env(
+            "MISTRAL_BATCH_TIMEOUT", default=900.0
+        )
 
     @property
     def system_prompt(self) -> str:
@@ -131,7 +140,9 @@ class MistralLLM(LLMProvider):
             # fallbacks or fail fast depending on configuration.
             status_code = getattr(exc, "status_code", None)
             if status_code == 429:
-                raise LLMQuotaError("Mistral provider: quota exhausted or rate limited") from exc
+                raise LLMQuotaError(
+                    "Mistral provider: quota exhausted or rate limited"
+                ) from exc
             raise
 
         if not apply_filter:
@@ -150,8 +161,12 @@ class MistralLLM(LLMProvider):
 
         apply_filter = self._filter_json if filter_json is None else filter_json
 
-        if not hasattr(self._client, "batch") or not getattr(self._client.batch, "jobs", None):
-            raise NotImplementedError("Mistral batch interface is unavailable in this SDK version.")
+        if not hasattr(self._client, "batch") or not getattr(
+            self._client.batch, "jobs", None
+        ):
+            raise NotImplementedError(
+                "Mistral batch interface is unavailable in this SDK version."
+            )
 
         request_lines, id_map = self._build_batch_requests(batch_payload)
 
@@ -167,7 +182,9 @@ class MistralLLM(LLMProvider):
 
             output_file = getattr(final_job, "output_file", None)
             if not output_file:
-                raise LLMProviderError("Mistral batch job completed without an output file.")
+                raise LLMProviderError(
+                    "Mistral batch job completed without an output file."
+                )
 
             line_data = self._read_batch_output(output_file)
             results: list[Any] = [None] * len(batch_payload)
@@ -224,21 +241,26 @@ class MistralLLM(LLMProvider):
                     details.append("; ".join(encountered_errors))
                 if missing:
                     details.append(
-                        "Missing responses for indices: " + ", ".join(str(i) for i in missing)
+                        "Missing responses for indices: "
+                        + ", ".join(str(i) for i in missing)
                     )
                 raise LLMProviderError(
-                    "Mistral batch job returned incomplete results: " + "; ".join(details)
+                    "Mistral batch job returned incomplete results: "
+                    + "; ".join(details)
                 )
 
             return results
         except Exception as exc:  # noqa: BLE001
             if self._is_quota_error(exc):
-                raise LLMQuotaError("Mistral provider: quota exhausted or rate limited") from exc
+                raise LLMQuotaError(
+                    "Mistral provider: quota exhausted or rate limited"
+                ) from exc
             raise
         finally:
             if temp_path is not None:
                 with contextlib.suppress(FileNotFoundError):
                     temp_path.unlink()
+
                     def _parse_batch_results(
                         self,
                         line_data: Sequence[str],
@@ -261,7 +283,9 @@ class MistralLLM(LLMProvider):
                             try:
                                 record = json.loads(raw_line)
                             except json.JSONDecodeError as decode_error:
-                                encountered_errors.append(f"Invalid JSON line: {decode_error}")
+                                encountered_errors.append(
+                                    f"Invalid JSON line: {decode_error}"
+                                )
                                 continue
 
                             custom_id = record.get("custom_id")
@@ -278,17 +302,25 @@ class MistralLLM(LLMProvider):
                             response_block = record.get("response") or {}
                             status_code = response_block.get("status_code")
                             if status_code and status_code != 200:
-                                encountered_errors.append(f"{custom_id}: response status {status_code}")
+                                encountered_errors.append(
+                                    f"{custom_id}: response status {status_code}"
+                                )
                                 continue
 
                             body = response_block.get("body")
                             if not isinstance(body, dict):
-                                encountered_errors.append(f"{custom_id}: missing response body")
+                                encountered_errors.append(
+                                    f"{custom_id}: missing response body"
+                                )
                                 continue
 
                             try:
-                                conversation = models.ConversationResponse.model_validate(body)
-                            except Exception as validation_error:  # pragma: no cover - defensive
+                                conversation = (
+                                    models.ConversationResponse.model_validate(body)
+                                )
+                            except (
+                                Exception
+                            ) as validation_error:  # pragma: no cover - defensive
                                 encountered_errors.append(
                                     f"{custom_id}: invalid conversation payload ({validation_error})"
                                 )
@@ -296,26 +328,35 @@ class MistralLLM(LLMProvider):
 
                             if apply_filter:
                                 try:
-                                    results[target_index] = self._parse_response_json(conversation)
+                                    results[target_index] = self._parse_response_json(
+                                        conversation
+                                    )
                                 except Exception as parse_error:
-                                    encountered_errors.append(f"{custom_id}: JSON parsing error ({parse_error})")
+                                    encountered_errors.append(
+                                        f"{custom_id}: JSON parsing error ({parse_error})"
+                                    )
                             else:
                                 results[target_index] = conversation
 
-                        missing = [idx for idx, value in enumerate(results) if value is None]
+                        missing = [
+                            idx for idx, value in enumerate(results) if value is None
+                        ]
                         if missing or encountered_errors:
                             details: list[str] = []
                             if encountered_errors:
                                 details.append("; ".join(encountered_errors))
                             if missing:
                                 details.append(
-                                    "Missing responses for indices: " + ", ".join(str(i) for i in missing)
+                                    "Missing responses for indices: "
+                                    + ", ".join(str(i) for i in missing)
                                 )
                             raise LLMProviderError(
-                                "Mistral batch job returned incomplete results: " + "; ".join(details)
+                                "Mistral batch job returned incomplete results: "
+                                + "; ".join(details)
                             )
 
                         return results
+
     def health_check(self) -> bool:
         return True
 
@@ -332,7 +373,9 @@ class MistralLLM(LLMProvider):
         text: str | None = None
 
         # Preferred: new 'outputs' shape used by beta.conversations.start
-        if hasattr(response, "outputs") and isinstance(getattr(response, "outputs"), list):
+        if hasattr(response, "outputs") and isinstance(
+            getattr(response, "outputs"), list
+        ):
             for entry in getattr(response, "outputs"):
                 # Entry could be an object with a `.content` attribute or a dict
                 content_val = None
@@ -355,7 +398,9 @@ class MistralLLM(LLMProvider):
                     text = maybe
 
         if not isinstance(text, str):
-            raise AttributeError("Response message content is not a string for JSON parsing; expected `outputs` or `choices` shapes.")
+            raise AttributeError(
+                "Response message content is not a string for JSON parsing; expected `outputs` or `choices` shapes."
+            )
 
         # parse_json_response does extraction and repair of common JSON issues
         return parse_json_response(text)
@@ -369,7 +414,9 @@ class MistralLLM(LLMProvider):
 
         for index, prompts in enumerate(batch_payload):
             if not prompts:
-                raise ValueError("Batch payload entries must contain at least one prompt.")
+                raise ValueError(
+                    "Batch payload entries must contain at least one prompt."
+                )
 
             custom_id = f"req-{index:05d}"
             id_map[custom_id] = index
@@ -401,7 +448,9 @@ class MistralLLM(LLMProvider):
         return request_lines, id_map
 
     def _write_batch_file(self, request_lines: Sequence[dict[str, Any]]) -> Path:
-        with tempfile.NamedTemporaryFile("w", encoding="utf-8", suffix=".jsonl", delete=False) as handle:
+        with tempfile.NamedTemporaryFile(
+            "w", encoding="utf-8", suffix=".jsonl", delete=False
+        ) as handle:
             for line in request_lines:
                 handle.write(json.dumps(line))
                 handle.write("\n")
@@ -464,7 +513,9 @@ class MistralLLM(LLMProvider):
 
         # If the SDK's response is a context manager (e.g., httpx.Response),
         # use it to ensure deterministic cleanup. Otherwise, fall back to manual closing.
-        if hasattr(response_obj, "__enter__") and callable(getattr(response_obj, "__enter__")):
+        if hasattr(response_obj, "__enter__") and callable(
+            getattr(response_obj, "__enter__")
+        ):
             with response_obj as response:
                 try:
                     return response.text

@@ -1,22 +1,25 @@
 #!/usr/bin/env python3
 """Find import cycles among local 'src' modules."""
+
 from pathlib import Path
 import ast
 
 ROOT = Path(__file__).resolve().parents[1]
-SRC = ROOT / 'src'
+SRC = ROOT / "src"
 
 modules = {}
 
+
 def module_name_from_path(p: Path) -> str:
     rel = p.relative_to(SRC)
-    parts = rel.with_suffix('').parts
-    if parts[-1] == '__init__':
+    parts = rel.with_suffix("").parts
+    if parts[-1] == "__init__":
         parts = parts[:-1]
-    return '.'.join(parts)
+    return ".".join(parts)
 
-for p in SRC.rglob('*.py'):
-    if p.name.startswith('_'):
+
+for p in SRC.rglob("*.py"):
+    if p.name.startswith("_"):
         continue
     try:
         code = p.read_text()
@@ -31,15 +34,15 @@ for p in SRC.rglob('*.py'):
         if isinstance(node, ast.Import):
             for n in node.names:
                 name = n.name
-                if name.startswith('src.'):
+                if name.startswith("src."):
                     imports.add(name[4:])
         if isinstance(node, ast.ImportFrom):
             mod = node.module
             if not mod:
                 continue
-            if mod.startswith('src.'):
+            if mod.startswith("src."):
                 imports.add(mod[4:])
-            elif mod.startswith('src'):
+            elif mod.startswith("src"):
                 imports.add(mod[3:])
     modules[module_name_from_path(p)] = imports
 
@@ -61,19 +64,20 @@ cycles = set()
 
 def dfs(node, path):
     if node in path:
-        cycle = path[path.index(node):] + [node]
+        cycle = path[path.index(node) :] + [node]
         cycles.add(tuple(cycle))
         return
     if node in visited:
         return
     visited.add(node)
-    for n in graph.get(node, ()): 
+    for n in graph.get(node, ()):
         dfs(n, path + [node])
+
 
 for node in graph:
     dfs(node, [])
 
-print('Detected cycles:')
+print("Detected cycles:")
 for c in cycles:
-    print(' -> '.join(c))
-print('Graph nodes: ', len(graph))
+    print(" -> ".join(c))
+print("Graph nodes: ", len(graph))

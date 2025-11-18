@@ -3,6 +3,7 @@
 Script to count occurrences of words with -ize suffix (American spelling) in markdown files
 and generate an SVG badge.
 """
+
 import argparse
 import os
 import re
@@ -14,16 +15,16 @@ from pathlib import Path
 def is_binary(file_path):
     """Check if a file is binary by looking for null bytes."""
     try:
-        with open(file_path, 'rb') as f:
+        with open(file_path, "rb") as f:
             chunk = f.read(8192)
-            return b'\x00' in chunk
+            return b"\x00" in chunk
     except (IOError, OSError):
         return True
 
 
 def count_ize_suffixes_in_file(file_path):
     """Count words ending with -ize suffix in file (case-insensitive).
-    
+
     Excludes common words that aren't American spellings:
     - size, resize, oversize, undersize, downsize, upsize, midsize (and related)
     - prize
@@ -31,26 +32,35 @@ def count_ize_suffixes_in_file(file_path):
     - bitesize (BBC brand name)
     """
     try:
-        with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
+        with open(file_path, "r", encoding="utf-8", errors="ignore") as f:
             content = f.read()
-            
+
             # Pattern to match words ending in -ize
-            pattern = r'\b\w+ize\b'
+            pattern = r"\b\w+ize\b"
             matches = re.findall(pattern, content, re.IGNORECASE)
-            
+
             # Words to exclude (not American spellings)
             exclude_words = {
-                'size', 'resize', 'oversize', 'undersize', 'downsize', 
-                'upsize', 'midsize', 'fullsize', 'kingsize', 'queensize',
-                'prize', 'seize', 'bitesize'
+                "size",
+                "resize",
+                "oversize",
+                "undersize",
+                "downsize",
+                "upsize",
+                "midsize",
+                "fullsize",
+                "kingsize",
+                "queensize",
+                "prize",
+                "seize",
+                "bitesize",
             }
-            
+
             # Filter out excluded words (case-insensitive)
             filtered_matches = [
-                match for match in matches 
-                if match.lower() not in exclude_words
+                match for match in matches if match.lower() not in exclude_words
             ]
-            
+
             return len(filtered_matches)
     except (IOError, OSError, UnicodeDecodeError):
         return 0
@@ -60,12 +70,9 @@ def get_tracked_files():
     """Get list of tracked files using git ls-files."""
     try:
         result = subprocess.run(
-            ['git', 'ls-files'],
-            capture_output=True,
-            text=True,
-            check=True
+            ["git", "ls-files"], capture_output=True, text=True, check=True
         )
-        return result.stdout.strip().split('\n')
+        return result.stdout.strip().split("\n")
     except subprocess.CalledProcessError:
         print("Error: Failed to get tracked files from git", file=sys.stderr)
         sys.exit(1)
@@ -79,7 +86,7 @@ def generate_svg_badge(label, count, output_path):
     count_str = str(count)
     count_width = len(count_str) * 7 + 10
     total_width = label_width + count_width
-    
+
     # SVG template
     svg = f'''<svg xmlns="http://www.w3.org/2000/svg" width="{total_width}" height="20">
   <defs>
@@ -94,57 +101,57 @@ def generate_svg_badge(label, count, output_path):
     <rect width="{total_width}" height="20" fill="url(#gradient)"/>
   </g>
   <g fill="#fff" text-anchor="middle" font-family="DejaVu Sans,Verdana,Geneva,sans-serif" font-size="11">
-    <text x="{label_width/2}" y="14" fill="#010101" fill-opacity=".3">{label}</text>
-    <text x="{label_width/2}" y="13">{label}</text>
-    <text x="{label_width + count_width/2}" y="14" fill="#010101" fill-opacity=".3">{count_str}</text>
-    <text x="{label_width + count_width/2}" y="13">{count_str}</text>
+    <text x="{label_width / 2}" y="14" fill="#010101" fill-opacity=".3">{label}</text>
+    <text x="{label_width / 2}" y="13">{label}</text>
+    <text x="{label_width + count_width / 2}" y="14" fill="#010101" fill-opacity=".3">{count_str}</text>
+    <text x="{label_width + count_width / 2}" y="13">{count_str}</text>
   </g>
 </svg>'''
-    
+
     # Create parent directory if needed
     output_dir = Path(output_path).parent
     output_dir.mkdir(parents=True, exist_ok=True)
-    
+
     # Write SVG file
-    with open(output_path, 'w', encoding='utf-8') as f:
+    with open(output_path, "w", encoding="utf-8") as f:
         f.write(svg)
 
 
 def main():
     parser = argparse.ArgumentParser(
-        description='Count -ize suffix occurrences in markdown files and generate SVG badge'
+        description="Count -ize suffix occurrences in markdown files and generate SVG badge"
     )
-    parser.add_argument('--output', required=True, help='Output SVG file path')
-    
+    parser.add_argument("--output", required=True, help="Output SVG file path")
+
     args = parser.parse_args()
-    
+
     # Get all tracked files
     files = get_tracked_files()
-    
+
     # Count occurrences
     total_count = 0
     for file_path in files:
         # Only count markdown files in the Documents folder
-        if not file_path.startswith('Documents/'):
+        if not file_path.startswith("Documents/"):
             continue
-        
-        if not file_path.endswith('.md'):
+
+        if not file_path.endswith(".md"):
             continue
-        
+
         # Skip if file doesn't exist or is binary
         if not os.path.isfile(file_path) or is_binary(file_path):
             continue
-        
+
         count = count_ize_suffixes_in_file(file_path)
         total_count += count
-    
+
     # Generate badge
     label = "ize suffixes:"
     generate_svg_badge(label, total_count, args.output)
-    
+
     print(f"Badge generated: {total_count} -ize suffix occurrences found")
     return 0
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     sys.exit(main())

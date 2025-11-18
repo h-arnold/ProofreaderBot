@@ -12,7 +12,13 @@ from src.models.language_issue import LanguageIssue
 
 
 class FakeMatch:
-    def __init__(self, *, context: str | None = None, offset: int | None = 0, length: int | None = 0):
+    def __init__(
+        self,
+        *,
+        context: str | None = None,
+        offset: int | None = 0,
+        length: int | None = 0,
+    ):
         self.ruleId = "TEST_RULE"
         self.message = "A message"
         self.ruleIssueType = "misspelling"
@@ -22,7 +28,9 @@ class FakeMatch:
         self.errorLength = length
 
 
-def test_highlight_context_fallback_to_context_on_failure(monkeypatch: object, tmp_path: Path) -> None:
+def test_highlight_context_fallback_to_context_on_failure(
+    monkeypatch: object, tmp_path: Path
+) -> None:
     # Create a match with a valid context but force _highlight_context to raise
     match = FakeMatch(context="this is a test", offset=8, length=1)
 

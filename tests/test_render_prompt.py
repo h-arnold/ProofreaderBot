@@ -182,8 +182,7 @@ class TestRenderPromptIntegration:
         # (This test uses the existing template, which doesn't have variables,
         # so we verify that passing context doesn't break rendering)
         result = render_template(
-            "user_language_tool_categoriser.md",
-            {"unused_key": "unused_value"}
+            "user_language_tool_categoriser.md", {"unused_key": "unused_value"}
         )
         assert isinstance(result, str)
         assert len(result) > 0
@@ -193,7 +192,12 @@ class TestRenderPromptIntegration:
         system_text, user_text = render_prompts(
             "system_language_tool_categoriser.md",
             "user_language_tool_categoriser.md",
-            {"subject": "Art-and-Design", "filename": "file.md", "issue_table": "|a|b|c|\n", "page_context": []},
+            {
+                "subject": "Art-and-Design",
+                "filename": "file.md",
+                "issue_table": "|a|b|c|\n",
+                "page_context": [],
+            },
         )
 
         assert isinstance(system_text, str) and isinstance(user_text, str)
@@ -214,7 +218,7 @@ class TestRenderPromptEdgeCases:
             "user_language_tool_categoriser.md",
         )
         # System prompt contains JSON examples with special chars
-        assert "{" in system_text or "\"" in system_text
+        assert "{" in system_text or '"' in system_text
 
     def test_render_preserves_markdown_formatting(self) -> None:
         """Test that Markdown formatting is preserved in rendered output."""

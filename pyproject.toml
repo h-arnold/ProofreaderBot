@@ -32,7 +32,6 @@ dev = [
 [tool.ruff]
 # Keep formatting similar to Black defaults used across the project
 line-length = 88
-target-version = ["py312"]
 # Exclude large output or virtualenv dirs from scanning
 exclude = [".venv", "build", "dist", "Documents", "data", "badges"]
 extend-select = ["E", "F", "I"]

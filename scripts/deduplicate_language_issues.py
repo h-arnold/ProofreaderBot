@@ -88,12 +88,16 @@ def write_csv(path: Path, header: list[str], rows: Iterable[Mapping[str, str]]) 
         writer = csv.DictWriter(fh, fieldnames=header)
         writer.writeheader()
         for row in rows:
-            writer.writerow({k: (row.get(k, "") if row.get(k) is not None else "") for k in header})
+            writer.writerow(
+                {k: (row.get(k, "") if row.get(k) is not None else "") for k in header}
+            )
 
 
 def run_cli(argv: list[str] | None = None) -> int:
     argv = argv if argv is not None else sys.argv[1:]
-    parser = argparse.ArgumentParser(description="Deduplicate language-check CSV issues")
+    parser = argparse.ArgumentParser(
+        description="Deduplicate language-check CSV issues"
+    )
     parser.add_argument("input", help="Path to input CSV")
     parser.add_argument("-o", "--output", help="Path to write deduplicated CSV")
     parser.add_argument(
@@ -101,9 +105,20 @@ def run_cli(argv: list[str] | None = None) -> int:
         help="Comma separated list of column names to use as the dedupe key (default: all language check columns)",
         default=",",
     )
-    parser.add_argument("--ignore-case", help="Ignore case when comparing keys", action="store_true")
-    parser.add_argument("--keep", choices=("first", "last"), default="first", help="When duplicates are found, keep the first or last occurrence")
-    parser.add_argument("--count", action="store_true", help="Add an 'Occurrences' column to show how many rows were collapsed")
+    parser.add_argument(
+        "--ignore-case", help="Ignore case when comparing keys", action="store_true"
+    )
+    parser.add_argument(
+        "--keep",
+        choices=("first", "last"),
+        default="first",
+        help="When duplicates are found, keep the first or last occurrence",
+    )
+    parser.add_argument(
+        "--count",
+        action="store_true",
+        help="Add an 'Occurrences' column to show how many rows were collapsed",
+    )
 
     args = parser.parse_args(argv)
 
@@ -130,7 +145,11 @@ def run_cli(argv: list[str] | None = None) -> int:
     # identical spelling suggestions by token alone.  This keeps the output
     # compact while leaving the `--keys` flag available for other uses.
     if args.keys == ",":
-        key_columns = ["Issue"] if "Issue" in header else [col for col in DEFAULT_HEADERS if col in header]
+        key_columns = (
+            ["Issue"]
+            if "Issue" in header
+            else [col for col in DEFAULT_HEADERS if col in header]
+        )
     else:
         key_columns = [text.strip() for text in args.keys.split(",") if text.strip()]
 
@@ -143,9 +162,15 @@ def run_cli(argv: list[str] | None = None) -> int:
             print(f"Key column '{key_hint}' not found in CSV header", file=sys.stderr)
             return 5
 
-    deduped, counts = deduplicate_rows(rows, key_columns, keep=args.keep, ignore_case=args.ignore_case)
+    deduped, counts = deduplicate_rows(
+        rows, key_columns, keep=args.keep, ignore_case=args.ignore_case
+    )
 
-    output_path = Path(args.output) if args.output else input_path.with_name(input_path.stem + "-deduped.csv")
+    output_path = (
+        Path(args.output)
+        if args.output
+        else input_path.with_name(input_path.stem + "-deduped.csv")
+    )
 
     out_header = list(header)
     if args.count and "Occurrences" not in out_header:
@@ -162,7 +187,12 @@ def run_cli(argv: list[str] | None = None) -> int:
         rows_with_counts: list[dict[str, str]] = []
         for row in deduped:
             # Build key for this row
-            key = tuple((row.get(col, "") or "").lower() if args.ignore_case else (row.get(col, "") or "") for col in key_columns)
+            key = tuple(
+                (row.get(col, "") or "").lower()
+                if args.ignore_case
+                else (row.get(col, "") or "")
+                for col in key_columns
+            )
             rc = dict(row)
             rc["Occurrences"] = str(key_map.get(key, 1))
             rows_with_counts.append(rc)

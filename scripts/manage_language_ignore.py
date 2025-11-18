@@ -21,7 +21,14 @@ ROOT_DIR = Path(__file__).resolve().parents[1]
 if str(ROOT_DIR) not in sys.path:
     sys.path.insert(0, str(ROOT_DIR))
 
-from pydantic import BaseModel, Field, ValidationError, ConfigDict, field_validator, model_validator
+from pydantic import (
+    BaseModel,
+    Field,
+    ValidationError,
+    ConfigDict,
+    field_validator,
+    model_validator,
+)
 
 from src.scraper import QUALIFICATION_URLS
 
@@ -93,10 +100,14 @@ class InputWord(BaseModel):
         if not value:
             raise ValueError("word must not be empty")
         if len(value) > MAX_WORD_LENGTH:
-            raise ValueError(f"word length {len(value)} exceeds limit {MAX_WORD_LENGTH}")
+            raise ValueError(
+                f"word length {len(value)} exceeds limit {MAX_WORD_LENGTH}"
+            )
         invalid = {char for char in value if not is_allowed_char(char)}
         if invalid:
-            raise ValueError(f"word contains invalid characters: {''.join(sorted(invalid))}")
+            raise ValueError(
+                f"word contains invalid characters: {''.join(sorted(invalid))}"
+            )
         return value
 
     @field_validator("category", mode="before")
@@ -117,7 +128,11 @@ class InputWord(BaseModel):
     @model_validator(mode="after")
     def enforce_proper_nouns(self) -> "InputWord":
         # At this point `self.category` is canonicalised to one of the allowed forms.
-        if (self.category or "") == "Proper Noun" and self.word and not str(self.word)[0].isupper():
+        if (
+            (self.category or "") == "Proper Noun"
+            and self.word
+            and not str(self.word)[0].isupper()
+        ):
             raise ValueError("Proper nouns must start with a capital letter")
         return self
 
@@ -150,7 +165,11 @@ def parse_input(data: Iterable[dict]) -> list[IgnoreEntry]:
             raise ValueError(f"Invalid subject block {subject_block}: {exc}") from exc
         for word_block in validated.words:
             entries.append(
-                IgnoreEntry(subject=validated.subject, category=word_block.category, word=word_block.word)
+                IgnoreEntry(
+                    subject=validated.subject,
+                    category=word_block.category,
+                    word=word_block.word,
+                )
             )
     return entries
 
@@ -185,7 +204,11 @@ def parse_existing_blocks(text: str) -> list[IgnoreBlock]:
         stripped = line.strip()
         match = HEADER_RE.match(stripped)
         if match:
-            current = IgnoreBlock(subject=match.group("subject"), category=match.group("category"), words=[])
+            current = IgnoreBlock(
+                subject=match.group("subject"),
+                category=match.group("category"),
+                words=[],
+            )
             blocks.append(current)
             continue
         # Handle both "word", and "word" formats (with or without trailing comma)
@@ -220,7 +243,9 @@ def merge_new_entries(blocks: list[IgnoreBlock], entries: list[IgnoreEntry]) -> 
             continue
         pending = pending_blocks.get(key)
         if pending is None:
-            pending = IgnoreBlock(subject=entry.subject, category=entry.category, words=[])
+            pending = IgnoreBlock(
+                subject=entry.subject, category=entry.category, words=[]
+            )
             pending_blocks[key] = pending
             pending_order.append(key)
         if entry.word not in pending.words:
@@ -238,7 +263,7 @@ def format_ignore_blocks(blocks: list[IgnoreBlock]) -> str:
     for block in blocks:
         lines.append(f"    # --- {block.subject} ({block.category}) ---\n")
         for word in block.words:
-            lines.append(f"    \"{word}\",\n")
+            lines.append(f'    "{word}",\n')
         lines.append("\n")
     return "".join(lines)
 
@@ -254,7 +279,7 @@ def format_new_entries_block(entries: list[IgnoreEntry]) -> str:
     for (subject, category), words in groups.items():
         lines.append(f"    # --- {subject} ({category}) ---\n")
         for word in words:
-            lines.append(f"    \"{word}\",\n")
+            lines.append(f'    "{word}",\n')
     return "".join(lines)
 
 
@@ -287,15 +312,21 @@ def apply_updates(config_path: Path, data_path: Path, *, dry_run: bool) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Manage DEFAULT_IGNORED_WORDS from structured JSON.")
-    parser.add_argument("data", type=Path, help="JSON file describing subjects and words to ignore.")
+    parser = argparse.ArgumentParser(
+        description="Manage DEFAULT_IGNORED_WORDS from structured JSON."
+    )
+    parser.add_argument(
+        "data", type=Path, help="JSON file describing subjects and words to ignore."
+    )
     parser.add_argument(
         "--config",
         type=Path,
         default=DEFAULT_CONFIG_PATH,
         help="Path to language_check_config.py",
     )
-    parser.add_argument("--dry-run", action="store_true", help="Show the block that would be inserted.")
+    parser.add_argument(
+        "--dry-run", action="store_true", help="Show the block that would be inserted."
+    )
     args = parser.parse_args()
 
     apply_updates(args.config, args.data, dry_run=args.dry_run)

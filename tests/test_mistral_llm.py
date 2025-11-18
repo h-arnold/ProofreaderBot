@@ -67,6 +67,7 @@ class _DummyClient:
 
 class _QuotaExceededError(Exception):
     """Mock quota exceeded error."""
+
     def __init__(self, message: str) -> None:
         super().__init__(message)
         self.status_code = 429
@@ -85,7 +86,9 @@ class _StaticResponse:
 
 
 class _DummyFiles:
-    def __init__(self, output_lines: list[dict[str, Any]], error_text: str | None = None) -> None:
+    def __init__(
+        self, output_lines: list[dict[str, Any]], error_text: str | None = None
+    ) -> None:
         self.upload_payloads: list[str] = []
         self.output_text = "\n".join(json.dumps(line) for line in output_lines)
         self.error_text = error_text or ""
@@ -163,7 +166,7 @@ def test_generate_joins_prompts_and_sets_config(tmp_path: Path) -> None:
     assert len(client.beta.conversations.calls) == 1
     call = client.beta.conversations.calls[0]
     assert call["model"] == llm.MODEL
-    
+
     # Check messages structure
     inputs = call["inputs"]
     assert isinstance(inputs, list)
@@ -181,7 +184,11 @@ def test_generate_joins_prompts_and_sets_config(tmp_path: Path) -> None:
     # Check completion args contain the low temperature
     completion_args = call.get("completion_args", {})
     assert completion_args.get("temperature") == 0.2
-def test_mistral_api_key_is_passed_to_sdk_from_env(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+
+
+def test_mistral_api_key_is_passed_to_sdk_from_env(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
     """Ensure that MistralLLM reads MISTRAL_API_KEY and passes it to the Mistral SDK."""
     # Arrange: set the env var that MistralLLM should pick up
     monkeypatch.setenv("MISTRAL_API_KEY", "env-test-key-123")
@@ -203,7 +210,9 @@ def test_mistral_api_key_is_passed_to_sdk_from_env(tmp_path: Path, monkeypatch: 
     assert captured.get("api_key") == "env-test-key-123"
 
 
-def test_mistral_raises_when_api_key_missing(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+def test_mistral_raises_when_api_key_missing(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
     """Verify MistralLLM raises a helpful error when MISTRAL_API_KEY is not set."""
     # Arrange: ensure env var is unset
     monkeypatch.delenv("MISTRAL_API_KEY", raising=False)
@@ -221,7 +230,9 @@ def test_mistral_raises_when_api_key_missing(tmp_path: Path, monkeypatch: pytest
     monkeypatch.setattr("src.llm.mistral_llm.Mistral", FakeClientNoop)
 
     # Act & Assert: Instantiation should raise a ValueError due to missing API key
-    with pytest.raises(ValueError, match="MISTRAL_API_KEY environment variable is required"):
+    with pytest.raises(
+        ValueError, match="MISTRAL_API_KEY environment variable is required"
+    ):
         MistralLLM(system_prompt="test")
     # The constructor should not have been called
     assert called["constructed"] is False
@@ -271,7 +282,7 @@ def test_loads_dotenv_when_path_provided(tmp_path: Path) -> None:
 def test_generate_returns_repaired_json_when_filter_enabled(tmp_path: Path) -> None:
     system_prompt_path = tmp_path / "system.md"
     system_prompt_path.write_text("System", encoding="utf-8")
-    response_text = "Noise before {\"key\": \"value\",} and after"
+    response_text = 'Noise before {"key": "value",} and after'
     client = _DummyClient(response_content=response_text)
     llm = MistralLLM(
         system_prompt=system_prompt_path,
@@ -345,7 +356,9 @@ def test_generate_parses_outputs_shape_with_code_fence(tmp_path: Path) -> None:
             self.beta = _Beta(response)
 
     # Fenced JSON content (with trailing comma and code fences)
-    fenced_json = "```json\n[ {\n  \"issue_id\": 10,\n  \"reasoning\": \"Missing hyphen\"\n} ]\n```"
+    fenced_json = (
+        '```json\n[ {\n  "issue_id": 10,\n  "reasoning": "Missing hyphen"\n} ]\n```'
+    )
     outputs_response = _OutResponse(outputs=[_OutItem(fenced_json)])
     client = _OutputsClient(response=outputs_response)
 
@@ -365,24 +378,25 @@ def test_generate_raises_quota_error_on_429(tmp_path: Path) -> None:
     """Test that HTTP 429 status codes are converted to LLMQuotaError."""
     system_prompt_path = tmp_path / "system.md"
     system_prompt_path.write_text("System", encoding="utf-8")
-    
+
     class _QuotaChat:
         def start(self, **kwargs: object) -> None:
             raise _QuotaExceededError("Rate limit exceeded")
-    
+
     class _QuotaClient:
         def __init__(self) -> None:
             class _Beta:
                 def __init__(self) -> None:
                     self.conversations = _QuotaChat()
+
             self.beta = _Beta()
-    
+
     client = _QuotaClient()
     llm = MistralLLM(system_prompt=system_prompt_path, client=cast(Mistral, client))
 
     with pytest.raises(LLMQuotaError) as exc_info:
         llm.generate(["Prompt"])
-    
+
     assert "quota exhausted or rate limited" in str(exc_info.value)
 
 
@@ -394,7 +408,7 @@ def test_generate_raises_empty_prompts(tmp_path: Path) -> None:
 
     with pytest.raises(ValueError) as exc_info:
         llm.generate([])
-    
+
     assert "must not be empty" in str(exc_info.value)
 
 
@@ -406,7 +420,11 @@ def _build_output_line(index: int, content: str) -> dict[str, Any]:
             "body": {
                 "conversation_id": f"conv-{index}",
                 "outputs": [{"content": content}],
-                "usage": {"prompt_tokens": 1, "completion_tokens": 1, "total_tokens": 2},
+                "usage": {
+                    "prompt_tokens": 1,
+                    "completion_tokens": 1,
+                    "total_tokens": 2,
+                },
             },
         },
     }
@@ -416,10 +434,12 @@ def test_batch_generate_returns_conversation_objects(tmp_path: Path) -> None:
     system_prompt_path = tmp_path / "system.md"
     system_prompt_path.write_text("System prompt", encoding="utf-8")
 
-    files = _DummyFiles([
-        _build_output_line(0, "{\"value\": 1}"),
-        _build_output_line(1, "{\"value\": 2}"),
-    ])
+    files = _DummyFiles(
+        [
+            _build_output_line(0, '{"value": 1}'),
+            _build_output_line(1, '{"value": 2}'),
+        ]
+    )
     jobs = _DummyBatchJobs(["RUNNING", "SUCCESS"])
     client = _BatchEnabledClient(files, jobs)
 
@@ -444,9 +464,11 @@ def test_batch_generate_with_filter_returns_json(tmp_path: Path) -> None:
     system_prompt_path = tmp_path / "system.md"
     system_prompt_path.write_text("System", encoding="utf-8")
 
-    files = _DummyFiles([
-        _build_output_line(0, "{\"foo\": 1}"),
-    ])
+    files = _DummyFiles(
+        [
+            _build_output_line(0, '{"foo": 1}'),
+        ]
+    )
     jobs = _DummyBatchJobs(["SUCCESS"])
     client = _BatchEnabledClient(files, jobs)
 
@@ -461,10 +483,15 @@ def test_batch_generate_raises_on_job_failure(tmp_path: Path) -> None:
     system_prompt_path = tmp_path / "system.md"
     system_prompt_path.write_text("System", encoding="utf-8")
 
-    files = _DummyFiles([
-        _build_output_line(0, "{\"foo\": 1}"),
-    ], error_text="job failure")
-    jobs = _DummyBatchJobs(["RUNNING", "FAILED"], error_file="error-file", errors=[{"message": "failed"}])
+    files = _DummyFiles(
+        [
+            _build_output_line(0, '{"foo": 1}'),
+        ],
+        error_text="job failure",
+    )
+    jobs = _DummyBatchJobs(
+        ["RUNNING", "FAILED"], error_file="error-file", errors=[{"message": "failed"}]
+    )
     client = _BatchEnabledClient(files, jobs)
 
     llm = MistralLLM(system_prompt=system_prompt_path, client=cast(Mistral, client))
@@ -516,7 +543,7 @@ def test_filter_json_can_be_overridden_per_call(tmp_path: Path) -> None:
     """Test that filter_json parameter can be overridden on a per-call basis."""
     system_prompt_path = tmp_path / "system.md"
     system_prompt_path.write_text("System", encoding="utf-8")
-    response_text = "Some text {\"key\": \"value\"} more text"
+    response_text = 'Some text {"key": "value"} more text'
     client = _DummyClient(response_content=response_text)
     # Create with filter_json=False
     llm = MistralLLM(

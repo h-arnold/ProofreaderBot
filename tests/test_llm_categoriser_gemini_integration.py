@@ -33,34 +33,38 @@ from src.llm_review.core.state_manager import StateManager
 
 class _MockResponse:
     """Mock response from Gemini API."""
-    
+
     def __init__(self, text: str) -> None:
         self.text = text
 
 
 class _MockModels:
     """Mock models interface."""
-    
+
     def __init__(self) -> None:
         self.calls: list[dict[str, Any]] = []
-    
+
     def generate_content(self, **kwargs: Any) -> _MockResponse:
         """Mock generate_content to capture calls and return valid JSON."""
         self.calls.append(kwargs)
         # Return a mock categorisation response with valid JSON
         # Return the minimal categoriser output (issue_id + LLM fields)
-        response_text = json.dumps([{
-            "issue_id": 0,
-            "error_category": "STYLISTIC_PREFERENCE",
-            "confidence_score": 95,
-            "reasoning": "Test categorisation"
-        }])
+        response_text = json.dumps(
+            [
+                {
+                    "issue_id": 0,
+                    "error_category": "STYLISTIC_PREFERENCE",
+                    "confidence_score": 95,
+                    "reasoning": "Test categorisation",
+                }
+            ]
+        )
         return _MockResponse(text=response_text)
 
 
 class _MockGeminiClient:
     """Mock Gemini client for testing."""
-    
+
     def __init__(self) -> None:
         self.models = _MockModels()
 
@@ -76,16 +80,16 @@ def test_gemini_llm_generates_with_correct_model_param(tmp_path: Path) -> None:
     """Test that GeminiLLM passes the correct model name to the API."""
     system_prompt_path = tmp_path / "system.md"
     system_prompt_path.write_text("System instruction", encoding="utf-8")
-    
+
     client = _MockGeminiClient()
     llm = GeminiLLM(
         system_prompt=system_prompt_path,
         client=cast(genai.Client, client),
     )
-    
+
     # Generate with the mocked client
     _ = llm.generate(["Test prompt"])
-    
+
     # Verify the correct model name was used
     assert len(client.models.calls) == 1
     call = client.models.calls[0]
@@ -97,15 +101,15 @@ def test_gemini_llm_has_thinking_config(tmp_path: Path) -> None:
     """Test that Gemini LLM includes extended thinking config."""
     system_prompt_path = tmp_path / "system.md"
     system_prompt_path.write_text("System", encoding="utf-8")
-    
+
     client = _MockGeminiClient()
     llm = GeminiLLM(
         system_prompt=system_prompt_path,
         client=cast(genai.Client, client),
     )
-    
+
     _ = llm.generate(["Prompt"])
-    
+
     # Verify thinking config is set
     call = client.models.calls[0]
     config = call["config"]
@@ -120,7 +124,7 @@ def test_categoriser_runner_with_mocked_gemini(tmp_path: Path) -> None:
     fixture_dir = tmp_path / "Documents"
     art_subject_dir = fixture_dir / "Art-and-Design" / "markdown"
     art_subject_dir.mkdir(parents=True)
-    
+
     # Create a test markdown file with page markers
     test_doc = art_subject_dir / "gcse-art-and-design---guidance-for-teaching.md"
     test_doc.write_text(
@@ -129,48 +133,49 @@ def test_categoriser_runner_with_mocked_gemini(tmp_path: Path) -> None:
         "{2}------------------------------------------------\n"
         "Page 2 content: More test content here.\n"
     )
-    
+
     # Create a language-check-report.csv with test issues
     report_path = tmp_path / "language-check-report.csv"
     report_path.write_text(
         "Subject,Filename,Page,Rule ID,Type,Issue,Message,Suggestions,Highlighted Context,Pass Code\n"
-        "Art-and-Design,gcse-art-and-design---guidance-for-teaching.md,1,STYLE_ISSUE,style,word,Test suggestion,correction,\"This is a **word** test\",LT\n"
-        "Art-and-Design,gcse-art-and-design---guidance-for-teaching.md,1,GRAMMAR_ISSUE,grammar,are,Subject-verb agreement,is,\"Students **are** learning\",LT\n"
+        'Art-and-Design,gcse-art-and-design---guidance-for-teaching.md,1,STYLE_ISSUE,style,word,Test suggestion,correction,"This is a **word** test",LT\n'
+        'Art-and-Design,gcse-art-and-design---guidance-for-teaching.md,1,GRAMMAR_ISSUE,grammar,are,Subject-verb agreement,is,"Students **are** learning",LT\n'
     )
-    
+
     # Setup mocked LLM
     system_prompt_file = tmp_path / "system_prompt.md"
     system_prompt_file.write_text("Categorise language issues")
-    
+
     mock_client = _MockGeminiClient()
     gemini_llm = GeminiLLM(
         system_prompt=system_prompt_file,
         client=cast(genai.Client, mock_client),
     )
-    
+
     # Create LLM service
     llm_service = LLMService([gemini_llm])
-    
+
     # Create state in temp directory
     state_path = tmp_path / "llm_categoriser_state.json"
     state = StateManager(state_file=state_path)
-    
+
     # Create and run categoriser runner
     runner = CategoriserRunner(
         llm_service=llm_service,
         state=state,
         batch_size=10,
     )
-    
+
     # Change to temp directory for the test
     import os
+
     original_cwd = os.getcwd()
     try:
         os.chdir(tmp_path)
         result = runner.run(report_path, force=True)
     finally:
         os.chdir(original_cwd)
-    
+
     # Verify results
     assert result["total_documents"] == 1
     assert result["total_batches"] == 1
@@ -182,7 +187,12 @@ def test_categoriser_runner_with_mocked_gemini(tmp_path: Path) -> None:
         assert call["model"] == "gemini-2.5-flash"
 
     # Ensure the categoriser output includes the LTC pass code
-    output_csv = fixture_dir / "Art-and-Design" / "document_reports" / "gcse-art-and-design---guidance-for-teaching.csv"
+    output_csv = (
+        fixture_dir
+        / "Art-and-Design"
+        / "document_reports"
+        / "gcse-art-and-design---guidance-for-teaching.csv"
+    )
     assert output_csv.exists()
     contents = output_csv.read_text(encoding="utf-8")
     assert "pass_code" in contents.splitlines()[0]
@@ -193,57 +203,55 @@ def test_categoriser_runner_dry_run_with_documents_filter(tmp_path: Path) -> Non
     """Test dry-run mode filters documents correctly and doesn't call LLM."""
     # Setup fixture data
     fixture_dir = tmp_path / "Documents"
-    
+
     # Create multiple subject directories
     for subject in ["Art-and-Design", "Business"]:
         subject_dir = fixture_dir / subject / "markdown"
         subject_dir.mkdir(parents=True)
-        
+
         # Create markdown files
         doc_file = subject_dir / f"gcse-{subject.lower()}.md"
         doc_file.write_text(
-            "{1}------------------------------------------------\n"
-            "Page 1 content\n"
+            "{1}------------------------------------------------\nPage 1 content\n"
         )
-    
+
     # Create a language-check-report.csv with issues for both subjects
     report_path = tmp_path / "language-check-report.csv"
     report_path.write_text(
         "Subject,Filename,Page,Rule ID,Type,Issue,Message,Suggestions,Highlighted Context,Pass Code\n"
-        "Art-and-Design,gcse-art-and-design.md,1,RULE1,style,word,Test,fix,\"test **word**\",LT\n"
-        "Business,gcse-business.md,1,RULE2,grammar,are,Test,fix,\"They **are** here\",LT\n"
+        'Art-and-Design,gcse-art-and-design.md,1,RULE1,style,word,Test,fix,"test **word**",LT\n'
+        'Business,gcse-business.md,1,RULE2,grammar,are,Test,fix,"They **are** here",LT\n'
     )
-    
+
     # Setup mocked LLM
     system_prompt_file = tmp_path / "system_prompt.md"
     system_prompt_file.write_text("Categorise")
-    
+
     mock_client = _MockGeminiClient()
     gemini_llm = GeminiLLM(
         system_prompt=system_prompt_file,
         client=cast(genai.Client, mock_client),
     )
-    
+
     llm_service = LLMService([gemini_llm])
     state_path = tmp_path / "llm_categoriser_state.json"
     state = StateManager(state_file=state_path)
-    
+
     runner = CategoriserRunner(llm_service=llm_service, state=state)
-    
+
     # Change to temp directory
     import os
+
     original_cwd = os.getcwd()
     try:
         os.chdir(tmp_path)
         # Dry run with document filter
         result = runner.run(
-            report_path,
-            documents={"gcse-art-and-design.md"},
-            dry_run=True
+            report_path, documents={"gcse-art-and-design.md"}, dry_run=True
         )
     finally:
         os.chdir(original_cwd)
-    
+
     # Verify only the specified document was loaded
     assert result["total_documents"] == 1
     assert result["total_batches"] == 1

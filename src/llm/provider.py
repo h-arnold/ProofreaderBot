@@ -63,5 +63,4 @@ class ProviderFactory(Protocol):
         system_prompt: str | Path,
         filter_json: bool,
         dotenv_path: str | Path | None,
-    ) -> LLMProvider:
-        ...
+    ) -> LLMProvider: ...

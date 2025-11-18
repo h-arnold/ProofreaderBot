@@ -82,7 +82,9 @@ def iter_pdf_links(soup: BeautifulSoup, base_url: str) -> Iterator[tuple[str, st
         yield title, absolute_url
 
 
-def iter_pdf_from_react_props(soup: BeautifulSoup, base_url: str) -> Iterator[tuple[str, str]]:
+def iter_pdf_from_react_props(
+    soup: BeautifulSoup, base_url: str
+) -> Iterator[tuple[str, str]]:
     """Yield PDF links declared within embedded React props blobs."""
     for props_node in soup.select("textarea.react-component--props"):
         raw_json = props_node.string or props_node.text
@@ -234,7 +236,9 @@ def download_subject_pdfs(
                 destination.unlink(missing_ok=True)
             continue
         except OSError as exc:
-            logger.warning("Failed to write file %s for %s: %s", destination, subject, exc)
+            logger.warning(
+                "Failed to write file %s for %s: %s", destination, subject, exc
+            )
             with suppress(OSError):
                 destination.unlink(missing_ok=True)
             continue

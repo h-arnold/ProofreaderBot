@@ -18,14 +18,14 @@ import re
 
 def build_prompts(batch: Batch) -> list[str]:
     """Build system and user prompts for a batch of issues.
-    
+
     Args:
         batch: A Batch object containing issues and page context
-        
+
     Returns:
         A list with one or two strings: [system_prompt, user_prompt] if both are present,
         or [user_prompt] if no system prompt is found
-        
+
     Notes:
         - The template is rendered with context including subject, filename,
           issue_table, and page_context
@@ -37,7 +37,7 @@ def build_prompts(batch: Batch) -> list[str]:
         {"page_number": page_num, "content": content}
         for page_num, content in sorted(batch.page_context.items())
     ]
-    
+
     # Build template context
     context = {
         "subject": batch.subject,
@@ -48,7 +48,7 @@ def build_prompts(batch: Batch) -> list[str]:
         # per-page and the full page context (no truncation).
         "issue_pages": build_issue_pages(batch.issues, batch.page_context),
     }
-    
+
     # Attempt to render two separate templates if available
     try:
         system_prompt, user_prompt = render_prompts(
@@ -70,7 +70,9 @@ def build_prompts(batch: Batch) -> list[str]:
             system_prompt = rendered[:split_idx].strip()
             user_prompt = rendered[split_idx:].lstrip()
         else:
-            parts = re.split(r"(?mi)\n##\s+Document Under Review\n", rendered, maxsplit=1)
+            parts = re.split(
+                r"(?mi)\n##\s+Document Under Review\n", rendered, maxsplit=1
+            )
             if len(parts) == 2:
                 system_prompt = parts[0].strip()
                 user_prompt = "## Document Under Review" + parts[1].lstrip()

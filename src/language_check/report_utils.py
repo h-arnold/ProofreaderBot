@@ -14,7 +14,9 @@ if TYPE_CHECKING:  # pragma: no cover - typing only
     from .language_issue import LanguageIssue
 
 
-def _format_suggestions(replacements: list[str] | None, max_suggestions: int = 3) -> str:
+def _format_suggestions(
+    replacements: list[str] | None, max_suggestions: int = 3
+) -> str:
     """Return a human-friendly, truncated suggestions string.
 
     If there are no replacements returns the em-dash used in the Markdown output.
@@ -32,36 +34,38 @@ def _format_suggestions(replacements: list[str] | None, max_suggestions: int = 3
 
 def build_issue_batch_table(issues: list["LanguageIssue"]) -> str:
     """Build a simplified Markdown table for LLM categoriser prompts.
-    
+
     Returns a 4-column table: issue_id, page_number, issue, highlighted_context.
     This is a reduced version of the full CSV report, designed for token efficiency.
-    
+
     Args:
         issues: List of LanguageIssue objects to include in the table
-        
+
     Returns:
         A Markdown table as a string
     """
     if not issues:
         return ""
-    
+
     lines = [
         "| issue_id | page_number | issue | highlighted_context |",
         "| --- | --- | --- | --- |",
     ]
-    
+
     for issue in issues:
         issue_id_str = str(issue.issue_id) if issue.issue_id >= 0 else "—"
         page_num = str(issue.page_number) if issue.page_number is not None else "—"
         issue_text = issue.issue.replace("|", "\\|")
         context = issue.highlighted_context.replace("|", "\\|")
-        
+
         lines.append(f"| {issue_id_str} | {page_num} | {issue_text} | {context} |")
-    
+
     return "\n".join(lines)
 
 
-def build_issue_pages(issues: list["LanguageIssue"], page_context: dict[int, str]) -> list[dict]:
+def build_issue_pages(
+    issues: list["LanguageIssue"], page_context: dict[int, str]
+) -> list[dict]:
     """Group issues by page and prepare structured data for prompt rendering.
 
     Returns a list of page dicts sorted by page number. Each page dict contains:
@@ -93,11 +97,13 @@ def build_issue_pages(issues: list["LanguageIssue"], page_context: dict[int, str
             issue_id = str(i.issue_id) if i.issue_id >= 0 else "—"
             issue_text = i.issue.replace("|", "\\|") if i.issue else "—"
             highlighted = (i.highlighted_context or "").replace("|", "\\|")
-            issue_rows.append({
-                "issue_id": issue_id,
-                "issue": issue_text,
-                "highlighted_context": highlighted,
-            })
+            issue_rows.append(
+                {
+                    "issue_id": issue_id,
+                    "issue": issue_text,
+                    "highlighted_context": highlighted,
+                }
+            )
 
         # Page label: use em dash for unknown/0 (same as markdown table behaviour)
         page_label = str(page) if page != 0 else "—"
@@ -124,7 +130,9 @@ def build_report_markdown(reports: Iterable["DocumentReport"]) -> str:
     subject_totals: dict[str, int] = {}
     subject_documents: dict[str, int] = {}
     for report in report_list:
-        subject_totals[report.subject] = subject_totals.get(report.subject, 0) + len(report.issues)
+        subject_totals[report.subject] = subject_totals.get(report.subject, 0) + len(
+            report.issues
+        )
         subject_documents[report.subject] = subject_documents.get(report.subject, 0) + 1
 
     lines: list[str] = []
@@ -156,7 +164,9 @@ def build_report_markdown(reports: Iterable["DocumentReport"]) -> str:
         lines.append("_No documents found for checking._")
         return "\n".join(lines)
 
-    for report in sorted(report_list, key=lambda item: (item.subject.lower(), item.path.name.lower())):
+    for report in sorted(
+        report_list, key=lambda item: (item.subject.lower(), item.path.name.lower())
+    ):
         lines.append("")
         lines.append(f"### {report.subject} / {report.path.name}")
         lines.append("")
@@ -166,12 +176,18 @@ def build_report_markdown(reports: Iterable["DocumentReport"]) -> str:
 
         lines.append(f"Found {len(report.issues)} issue(s).")
         lines.append("")
-        lines.append("| Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |")
+        lines.append(
+            "| Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |"
+        )
         lines.append("| --- | --- | --- | --- | --- | --- | --- | --- |")
         for issue in report.issues:
             message = issue.message.replace("|", "\\|")
             suggestions = _format_suggestions(issue.replacements).replace("|", "\\|")
-            context = issue.highlighted_context.replace("|", "\\|") if issue.highlighted_context else "—"
+            context = (
+                issue.highlighted_context.replace("|", "\\|")
+                if issue.highlighted_context
+                else "—"
+            )
             page_num = str(issue.page_number) if issue.page_number is not None else "—"
             issue_text = issue.issue.replace("|", "\\|") if issue.issue else "—"
             lines.append(
@@ -190,18 +206,20 @@ def build_report_csv(reports: Iterable["DocumentReport"]) -> list[list[str]]:
 
     rows: list[list[str]] = []
 
-    rows.append([
-        "Subject",
-        "Filename",
-        "Page",
-        "Rule ID",
-        "Type",
-        "Issue",
-        "Message",
-        "Suggestions",
-        "Highlighted Context",
-        "Pass Code",
-    ])
+    rows.append(
+        [
+            "Subject",
+            "Filename",
+            "Page",
+            "Rule ID",
+            "Type",
+            "Issue",
+            "Message",
+            "Suggestions",
+            "Highlighted Context",
+            "Pass Code",
+        ]
+    )
 
     report_list = sorted(
         reports,
@@ -217,17 +235,19 @@ def build_report_csv(reports: Iterable["DocumentReport"]) -> list[list[str]]:
             page_num = str(issue.page_number) if issue.page_number is not None else ""
             pass_code = issue.pass_code.value if issue.pass_code is not None else ""
 
-            rows.append([
-                report.subject,
-                issue.filename,
-                page_num,
-                issue.rule_id,
-                issue.issue_type,
-                issue.issue if issue.issue else "",
-                issue.message,
-                suggestions,
-                context,
-                pass_code,
-            ])
+            rows.append(
+                [
+                    report.subject,
+                    issue.filename,
+                    page_num,
+                    issue.rule_id,
+                    issue.issue_type,
+                    issue.issue if issue.issue else "",
+                    issue.message,
+                    suggestions,
+                    context,
+                    pass_code,
+                ]
+            )
 
     return rows

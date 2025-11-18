@@ -11,6 +11,7 @@ Usage:
 If no arguments are given, it renders `language_tool_categoriser.md` with an
 empty context and prints to stdout.
 """
+
 from __future__ import annotations
 
 from pathlib import Path
@@ -53,13 +54,19 @@ def _strip_code_fences(s: str) -> str:
     return "\n".join(lines).strip()
 
 
-def render_template(template_name: str = "language_tool_categoriser.md", context: dict | None = None) -> str:
+def render_template(
+    template_name: str = "language_tool_categoriser.md", context: dict | None = None
+) -> str:
     template = _read_prompt(template_name)
-    
+
     # Load required partials
     partials = {}
-    
-    for partial_name in ["llm_reviewer_system_prompt", "authoritative_sources", "error_descriptions"]:
+
+    for partial_name in [
+        "llm_reviewer_system_prompt",
+        "authoritative_sources",
+        "error_descriptions",
+    ]:
         partial_content = _read_prompt(f"{partial_name}.md")
         partials[partial_name] = _strip_code_fences(partial_content)
 
@@ -83,7 +90,11 @@ def render_prompts(
 
     # Load partials (shared by both templates)
     partials = {}
-    for partial_name in ["llm_reviewer_system_prompt", "authoritative_sources", "error_descriptions"]:
+    for partial_name in [
+        "llm_reviewer_system_prompt",
+        "authoritative_sources",
+        "error_descriptions",
+    ]:
         partial_content = _read_prompt(f"{partial_name}.md")
         partials[partial_name] = _strip_code_fences(partial_content)
 

@@ -31,7 +31,9 @@ from src.llm_review.core.batcher import Batch
 class DummyProvider:
     name = "dummy"
 
-    def __init__(self, system_prompt: str, filter_json: bool, dotenv_path: str | Path | None):
+    def __init__(
+        self, system_prompt: str, filter_json: bool, dotenv_path: str | Path | None
+    ):
         # Capture inputs for assertions
         self.system_prompt = system_prompt
         self.filter_json = filter_json
@@ -40,25 +42,35 @@ class DummyProvider:
         self.last_user_prompts: Sequence[str] | None = None
         self.last_filter_json = None
 
-    def generate(self, user_prompts: Sequence[str], *, filter_json: bool = False) -> Any:
+    def generate(
+        self, user_prompts: Sequence[str], *, filter_json: bool = False
+    ) -> Any:
         # Capture the call
         self.last_user_prompts = list(user_prompts)
         self.last_filter_json = filter_json
         # Return a valid empty categoriser response structure
         return {"page_1": []}
 
-    def batch_generate(self, batch_payload: Sequence[Sequence[str]], *, filter_json: bool = False) -> Sequence[Any]:
+    def batch_generate(
+        self, batch_payload: Sequence[Sequence[str]], *, filter_json: bool = False
+    ) -> Sequence[Any]:
         raise NotImplementedError()
 
     def health_check(self) -> bool:
         return True
 
 
-def dummy_factory(*, system_prompt: str | Path, filter_json: bool, dotenv_path: str | Path | None):
-    return DummyProvider(system_prompt=system_prompt, filter_json=filter_json, dotenv_path=dotenv_path)
+def dummy_factory(
+    *, system_prompt: str | Path, filter_json: bool, dotenv_path: str | Path | None
+):
+    return DummyProvider(
+        system_prompt=system_prompt, filter_json=filter_json, dotenv_path=dotenv_path
+    )
 
 
-def test_system_and_user_prompt_are_used_and_sent(monkeypatch: pytest.MonkeyPatch) -> None:
+def test_system_and_user_prompt_are_used_and_sent(
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
     """End-to-end check for system+user prompt rendering and LLMService usage.
 
     Replaces provider registry with a dummy provider that captures calls.
@@ -80,7 +92,9 @@ def test_system_and_user_prompt_are_used_and_sent(monkeypatch: pytest.MonkeyPatc
     )
 
     # Create provider chain with the system prompt
-    providers = create_provider_chain(system_prompt=system_text, filter_json=True, primary="dummy")
+    providers = create_provider_chain(
+        system_prompt=system_text, filter_json=True, primary="dummy"
+    )
     assert providers, "Provider chain must not be empty"
 
     provider = providers[0]

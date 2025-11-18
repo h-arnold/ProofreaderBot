@@ -37,16 +37,16 @@ def save_batch_results(
     output_dir: Path = Path("Documents"),
 ) -> Path:
     """Save batch results to a CSV file.
-    
+
     Args:
         key: DocumentKey identifying the document
         batch_results: List of issue dictionaries (must include issue_id)
         merge: If True and file exists, merge with existing rows (deduplicating by issue_id)
         output_dir: Base directory for output (default: "Documents")
-        
+
     Returns:
         Path to the saved file
-        
+
     Notes:
         - Results are saved to: Documents/<subject>/document_reports/<filename>.csv
         - Writes are atomic (temp file + replace)
@@ -56,7 +56,7 @@ def save_batch_results(
     # Construct output path
     report_dir = output_dir / key.subject / "document_reports"
     report_dir.mkdir(parents=True, exist_ok=True)
-    
+
     output_file = report_dir / key.filename.replace(".md", ".csv")
 
     existing_rows: dict[int, dict[str, str]] = {}
@@ -94,7 +94,7 @@ def save_batch_results(
         if temp_file.exists():
             temp_file.unlink()
         raise
-    
+
     return output_file
 
 
@@ -124,14 +124,14 @@ def clear_document_results(
     output_dir: Path = Path("Documents"),
 ) -> None:
     """Delete results file for a document.
-    
+
     Args:
         key: DocumentKey identifying the document
         output_dir: Base directory for output (default: "Documents")
     """
     report_dir = output_dir / key.subject / "document_reports"
     output_file = report_dir / key.filename.replace(".md", ".csv")
-    
+
     if output_file.exists():
         try:
             output_file.unlink()
@@ -239,8 +239,12 @@ def _normalise_issue_row(issue: dict[str, Any]) -> tuple[int, dict[str, str]]:
     row = {
         "issue_id": str(issue_id),
         "page_number": _clean(issue.get("page_number")),
-        "issue": _clean(issue.get("issue") or issue.get("context") or issue.get("context_from_tool")),
-        "highlighted_context": _clean(issue.get("highlighted_context") or issue.get("context_from_tool")),
+        "issue": _clean(
+            issue.get("issue") or issue.get("context") or issue.get("context_from_tool")
+        ),
+        "highlighted_context": _clean(
+            issue.get("highlighted_context") or issue.get("context_from_tool")
+        ),
         "pass_code": _clean(issue.get("pass_code")),
         "error_category": _clean(issue.get("error_category")),
         "confidence_score": _clean(issue.get("confidence_score")),

@@ -22,7 +22,9 @@ from src.llm.service import LLMService
 class _DummyProvider(LLMProvider):
     name = "dummy"
 
-    def __init__(self, *, result: Any | None = None, error: Exception | None = None) -> None:
+    def __init__(
+        self, *, result: Any | None = None, error: Exception | None = None
+    ) -> None:
         self._result = result
         self._error = error
 
@@ -51,28 +53,34 @@ class _DummyProvider(LLMProvider):
 
 
 def test_generate_uses_priority_order() -> None:
-    service = LLMService([
-        _DummyProvider(result="first"),
-        _DummyProvider(result="second"),
-    ])
+    service = LLMService(
+        [
+            _DummyProvider(result="first"),
+            _DummyProvider(result="second"),
+        ]
+    )
 
     assert service.generate(["prompt"]) == "first"
 
 
 def test_generate_falls_back_when_quota_exhausted() -> None:
-    service = LLMService([
-        _DummyProvider(error=LLMQuotaError("limit")),
-        _DummyProvider(result="success"),
-    ])
+    service = LLMService(
+        [
+            _DummyProvider(error=LLMQuotaError("limit")),
+            _DummyProvider(result="success"),
+        ]
+    )
 
     assert service.generate(["prompt"]) == "success"
 
 
 def test_generate_raises_on_failed_provider() -> None:
-    service = LLMService([
-        _DummyProvider(error=LLMProviderError("boom")),
-        _DummyProvider(result="ignored"),
-    ])
+    service = LLMService(
+        [
+            _DummyProvider(error=LLMProviderError("boom")),
+            _DummyProvider(result="ignored"),
+        ]
+    )
 
     with pytest.raises(LLMProviderError):
         service.generate(["prompt"])
@@ -88,19 +96,23 @@ def test_batch_generate_skips_unsupported_provider() -> None:
         ) -> Sequence[Any]:
             raise NotImplementedError()
 
-    service = LLMService([
-        _UnsupportedProvider(),
-        _DummyProvider(result="batch-success"),
-    ])
+    service = LLMService(
+        [
+            _UnsupportedProvider(),
+            _DummyProvider(result="batch-success"),
+        ]
+    )
 
     assert service.batch_generate([["prompt"]]) == ["batch-success"]
 
 
 def test_batch_generate_raises_when_all_quota() -> None:
-    service = LLMService([
-        _DummyProvider(error=LLMQuotaError("limit")),
-        _DummyProvider(error=LLMQuotaError("limit")),
-    ])
+    service = LLMService(
+        [
+            _DummyProvider(error=LLMQuotaError("limit")),
+            _DummyProvider(error=LLMQuotaError("limit")),
+        ]
+    )
 
     with pytest.raises(LLMQuotaError):
         service.batch_generate([["prompt"]])
@@ -109,13 +121,18 @@ def test_batch_generate_raises_when_all_quota() -> None:
 def test_reporting_hook_records_statuses() -> None:
     events: list[tuple[str, ProviderStatus, Exception | None]] = []
 
-    def reporter(name: str, status: ProviderStatus, error: Exception | None = None) -> None:
+    def reporter(
+        name: str, status: ProviderStatus, error: Exception | None = None
+    ) -> None:
         events.append((name, status, error))
 
-    service = LLMService([
-        _DummyProvider(error=LLMQuotaError("limit")),
-        _DummyProvider(result="final"),
-    ], reporter=reporter)
+    service = LLMService(
+        [
+            _DummyProvider(error=LLMQuotaError("limit")),
+            _DummyProvider(result="final"),
+        ],
+        reporter=reporter,
+    )
 
     service.generate(["prompt"])
 

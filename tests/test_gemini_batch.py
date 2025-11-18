@@ -35,16 +35,16 @@ class _DummyBatchJob:
         self.state = state
         self.done = done
         self.error = error
-        
+
         # Create destination with inlined responses
         self.dest = None
         if inlined_responses is not None:
-            self.dest = type('Dest', (), {'inlined_responses': inlined_responses})()
-        
+            self.dest = type("Dest", (), {"inlined_responses": inlined_responses})()
+
         # Create source with inlined requests (for metadata)
         self.src = None
         if inlined_requests is not None:
-            self.src = type('Src', (), {'inlined_requests': inlined_requests})()
+            self.src = type("Src", (), {"inlined_requests": inlined_requests})()
 
 
 class _DummyInlinedResponse:
@@ -62,16 +62,16 @@ class _DummyBatches:
     def create(self, **kwargs: Any) -> _DummyBatchJob:
         self.created_jobs.append(kwargs)
         job_name = f"batch-job-{len(self.created_jobs)}"
-        
+
         # Store the inlined requests for metadata access
-        inlined_requests = kwargs.get('src', [])
-        
+        inlined_requests = kwargs.get("src", [])
+
         # Create successful responses for each request
         inlined_responses = []
         for _ in inlined_requests:
             response = _DummyResponse(text="mock-batch-response")
             inlined_responses.append(_DummyInlinedResponse(response=response))
-        
+
         job = _DummyBatchJob(
             name=job_name,
             inlined_responses=inlined_responses,
@@ -84,7 +84,7 @@ class _DummyBatches:
         if name not in self.jobs:
             raise ValueError(f"Batch job {name} not found")
         return self.jobs[name]
-    
+
     def delete(self, *, name: str, **kwargs: Any) -> None:
         """Delete (cancel) a batch job."""
         if name not in self.jobs:
@@ -109,16 +109,16 @@ def test_create_batch_job_builds_inlined_requests(tmp_path: Path) -> None:
         ["First prompt", "Additional context"],
         ["Second prompt"],
     ]
-    
+
     job_name = llm.create_batch_job(batch_payload)
 
     assert job_name == "batch-job-1"
     assert len(client.batches.created_jobs) == 1
-    
+
     job_data = client.batches.created_jobs[0]
     assert job_data["model"] == llm.MODEL
     assert len(job_data["src"]) == 2
-    
+
     # Check first request
     req1 = job_data["src"][0]
     assert isinstance(req1, types.InlinedRequest)
@@ -127,7 +127,7 @@ def test_create_batch_job_builds_inlined_requests(tmp_path: Path) -> None:
     assert req1.config.temperature == 0.2
     assert req1.config.thinking_config.thinking_budget == llm.MAX_THINKING_BUDGET
     assert req1.metadata["filter_json"] == "false"
-    
+
     # Check second request
     req2 = job_data["src"][1]
     assert isinstance(req2, types.InlinedRequest)
@@ -198,13 +198,13 @@ def test_fetch_batch_results_returns_responses(tmp_path: Path) -> None:
 def test_fetch_batch_results_applies_json_filter_when_requested(tmp_path: Path) -> None:
     system_prompt_path = tmp_path / "system.md"
     system_prompt_path.write_text("System", encoding="utf-8")
-    
+
     # Override the batch responses to return JSON text
     class _JsonBatchClient(_DummyClient):
         def __init__(self) -> None:
             super().__init__()
             self.batches = _JsonBatches()
-    
+
     class _JsonBatches(_DummyBatches):
         def create(self, **kwargs: Any) -> _DummyBatchJob:
             job = super().create(**kwargs)
@@ -212,9 +212,11 @@ def test_fetch_batch_results_applies_json_filter_when_requested(tmp_path: Path) 
             for inlined_resp in job.dest.inlined_responses:
                 inlined_resp.response = _DummyResponse(text='{"key": "value",}')
             return job
-    
+
     json_client = _JsonBatchClient()
-    llm = GeminiLLM(system_prompt=system_prompt_path, client=cast(genai.Client, json_client))
+    llm = GeminiLLM(
+        system_prompt=system_prompt_path, client=cast(genai.Client, json_client)
+    )
 
     job_name = llm.create_batch_job([["Prompt"]], filter_json=True)
     results = llm.fetch_batch_results(job_name)
@@ -246,7 +248,7 @@ def test_fetch_batch_results_raises_when_job_failed(tmp_path: Path) -> None:
 
     job_name = llm.create_batch_job([["Prompt"]])
     # Modify job to have error
-    error = type('Error', (), {'message': 'Job failed'})()
+    error = type("Error", (), {"message": "Job failed"})()
     client.batches.jobs[job_name].error = error
 
     with pytest.raises(LLMProviderError, match="failed"):
@@ -261,7 +263,7 @@ def test_fetch_batch_results_raises_when_request_failed(tmp_path: Path) -> None:
 
     job_name = llm.create_batch_job([["First"], ["Second"]])
     # Modify second response to have error
-    error = type('Error', (), {'message': 'Request failed'})()
+    error = type("Error", (), {"message": "Request failed"})()
     client.batches.jobs[job_name].dest.inlined_responses[1].error = error
     client.batches.jobs[job_name].dest.inlined_responses[1].response = None
 
@@ -303,10 +305,10 @@ def test_cancel_batch_job_calls_delete(tmp_path: Path) -> None:
     # Create a batch job
     job_name = llm.create_batch_job([["Prompt"]])
     assert job_name in client.batches.jobs
-    
+
     # Cancel it
     llm.cancel_batch_job(job_name)
-    
+
     # Verify it was deleted
     assert job_name in client.batches.deleted_jobs
     assert job_name not in client.batches.jobs
@@ -321,4 +323,3 @@ def test_cancel_batch_job_raises_on_not_found(tmp_path: Path) -> None:
 
     with pytest.raises(LLMProviderError, match="Failed to cancel batch job"):
         llm.cancel_batch_job("non-existent-job")
-

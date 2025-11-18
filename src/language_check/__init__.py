@@ -43,7 +43,10 @@ __all__ = [
 _LAZY_EXPORTS = {
     # attribute -> (module, attribute)
     "build_language_tool": (".language_check", "build_language_tool"),
-    "build_language_tools_for_subject": (".language_check", "build_language_tools_for_subject"),
+    "build_language_tools_for_subject": (
+        ".language_check",
+        "build_language_tools_for_subject",
+    ),
     "check_document": (".language_check", "check_document"),
     "check_single_document": (".language_check", "check_single_document"),
     "derive_subject_from_path": (".language_check", "derive_subject_from_path"),

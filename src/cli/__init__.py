@@ -83,7 +83,9 @@ def resolve_subjects(subject_args: list[str] | None) -> tuple[dict[str, str], se
 
     requested = normalise_subject_names(subject_args)
     selected = {
-        subject: url for subject, url in QUALIFICATION_URLS.items() if subject.lower() in requested
+        subject: url
+        for subject, url in QUALIFICATION_URLS.items()
+        if subject.lower() in requested
     }
     missing = requested.difference({subject.lower() for subject in selected})
     return selected, missing
@@ -106,9 +108,7 @@ def perform_post_processing(
     total_errors = sum(len(result.errors) for result in results)
 
     for result in sorted(results, key=lambda item: item.subject_dir.name.lower()):
-        message = (
-            f"{result.subject_dir.name}: copied {result.copied} PDF(s), converted {result.converted} to Markdown"
-        )
+        message = f"{result.subject_dir.name}: copied {result.copied} PDF(s), converted {result.converted} to Markdown"
         if result.errors:
             message += f" ({len(result.errors)} error(s); check logs)"
         print(message)
@@ -128,16 +128,18 @@ def run_cli(args: argparse.Namespace) -> int:
         for subject in sorted(QUALIFICATION_URLS):
             print(f" - {subject}")
         return 0
-    
+
     # Handle --post-process-file option
     if args.post_process_file:
         if args.post_process or args.post_process_only:
-            print("--post-process-file cannot be combined with --post-process or --post-process-only")
+            print(
+                "--post-process-file cannot be combined with --post-process or --post-process-only"
+            )
             return 1
         if args.dry_run:
             print("--dry-run cannot be combined with --post-process-file")
             return 1
-        
+
         pdf_path = args.post_process_file
         if not pdf_path.exists():
             print(f"Error: PDF file does not exist: {pdf_path}")
@@ -145,10 +147,10 @@ def run_cli(args: argparse.Namespace) -> int:
         if not pdf_path.is_file():
             print(f"Error: Path is not a file: {pdf_path}")
             return 1
-        
+
         print(f"Processing single PDF: {pdf_path}")
         result = process_single_pdf(pdf_path, args.converter)
-        
+
         if result.success:
             print(f"✓ Successfully converted to: {result.markdown_path}")
             return 0
@@ -179,7 +181,9 @@ def run_cli(args: argparse.Namespace) -> int:
 
     subject_filters: set[str] | None = None
     if args.subjects:
-        subject_filters = {subject_directory_name(subject) for subject in selected_subjects}
+        subject_filters = {
+            subject_directory_name(subject) for subject in selected_subjects
+        }
 
     output_root = args.root
 
@@ -229,7 +233,9 @@ def run_cli(args: argparse.Namespace) -> int:
             print("Post-processing is skipped during a dry run.")
         return 0
 
-    print(f"\nFinished. Downloaded {total_downloaded} PDF(s) into {output_root.resolve()}")
+    print(
+        f"\nFinished. Downloaded {total_downloaded} PDF(s) into {output_root.resolve()}"
+    )
 
     exit_code = 0
     if should_post_process:

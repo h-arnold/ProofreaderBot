@@ -45,7 +45,13 @@ class LlmLanguageIssue(BaseModel):
     def _strip_rule(cls, value: object) -> str:  # type: ignore[override]
         return str(value or "").strip()
 
-    @field_validator("type_from_tool", "message_from_tool", "context_from_tool", "reasoning", mode="before")
+    @field_validator(
+        "type_from_tool",
+        "message_from_tool",
+        "context_from_tool",
+        "reasoning",
+        mode="before",
+    )
     def _strip_strings(cls, value: object) -> str:  # type: ignore[override]
         return str(value or "").strip()
 

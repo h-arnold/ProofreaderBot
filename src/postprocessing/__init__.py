@@ -51,9 +51,16 @@ def copy_root_pdfs(subject_dir: Path, pdf_directory: Path) -> list[Path]:
             try:
                 pdf_path.unlink()
             except OSError as exc:
-                logger.warning("Failed to remove original %s after copy: %s", pdf_path, exc, exc_info=True)
+                logger.warning(
+                    "Failed to remove original %s after copy: %s",
+                    pdf_path,
+                    exc,
+                    exc_info=True,
+                )
         except OSError as exc:  # pragma: no cover - defensive guard
-            logger.warning("Failed to copy %s -> %s: %s", pdf_path, destination, exc, exc_info=True)
+            logger.warning(
+                "Failed to copy %s -> %s: %s", pdf_path, destination, exc, exc_info=True
+            )
     return copied
 
 
@@ -68,37 +75,39 @@ def convert_pdf_to_markdown(
     return markdown_path
 
 
-def process_single_pdf(pdf_path: Path, converter_type: str = "markitdown") -> SinglePdfResult:
+def process_single_pdf(
+    pdf_path: Path, converter_type: str = "markitdown"
+) -> SinglePdfResult:
     """Process a single PDF file: copy to pdfs/ if needed, convert to markdown.
-    
+
     Args:
         pdf_path: Path to the PDF file to process. Must be within a subject directory
                   (either at the root or in the pdfs/ subdirectory).
         converter_type: Type of converter to use ("markitdown" or "marker").
-    
+
     Returns:
         SinglePdfResult indicating success/failure and paths.
-    
+
     The function expects the PDF to be in one of these locations:
     - Documents/Subject-Name/filename.pdf (will be copied to pdfs/)
     - Documents/Subject-Name/pdfs/filename.pdf (already in correct location)
-    
+
     It will create the markdown file at:
     - Documents/Subject-Name/markdown/filename.md
     """
     result = SinglePdfResult(pdf_path=pdf_path)
     converter = create_converter(converter_type)
-    
+
     try:
         # Validate that the PDF exists
         if not pdf_path.exists():
             result.error = f"PDF file does not exist: {pdf_path}"
             return result
-        
+
         if not pdf_path.is_file():
             result.error = f"Path is not a file: {pdf_path}"
             return result
-        
+
         # Determine subject directory and target locations
         # PDF should be at: Documents/Subject-Name/[pdfs/]filename.pdf
         if pdf_path.parent.name == "pdfs":
@@ -106,61 +115,82 @@ def process_single_pdf(pdf_path: Path, converter_type: str = "markitdown") -> Si
             subject_dir = pdf_path.parent.parent
             pdf_directory = pdf_path.parent
             final_pdf_path = pdf_path
-            
+
             # Validate: pdfs parent should not be "Documents" or similar root dirs
             if subject_dir.name in ("Documents", "documents", ""):
-                result.error = f"PDF is not within a valid subject directory structure: {pdf_path}"
+                result.error = (
+                    f"PDF is not within a valid subject directory structure: {pdf_path}"
+                )
                 return result
         else:
             # In subject root: Documents/Subject-Name/file.pdf
             subject_dir = pdf_path.parent
             pdf_directory = subject_dir / "pdfs"
-            
+
             # Validate that this is not directly in a root-level directory like "Documents"
             # Check if the parent is named "Documents" (case-insensitive) or has no parent
             parent_name = subject_dir.name.lower()
-            if parent_name in ("documents", "") or not subject_dir.parent or subject_dir.parent == subject_dir:
-                result.error = f"PDF is not within a valid subject directory structure: {pdf_path}"
+            if (
+                parent_name in ("documents", "")
+                or not subject_dir.parent
+                or subject_dir.parent == subject_dir
+            ):
+                result.error = (
+                    f"PDF is not within a valid subject directory structure: {pdf_path}"
+                )
                 return result
-            
+
             # Copy PDF to pdfs/ subdirectory
             pdf_directory.mkdir(parents=True, exist_ok=True)
             final_pdf_path = pdf_directory / pdf_path.name
-            
+
             try:
                 shutil.copy2(pdf_path, final_pdf_path)
                 try:
                     pdf_path.unlink()
                 except OSError as exc:
-                    logger.warning("Failed to remove original %s after copy: %s", pdf_path, exc, exc_info=True)
+                    logger.warning(
+                        "Failed to remove original %s after copy: %s",
+                        pdf_path,
+                        exc,
+                        exc_info=True,
+                    )
             except OSError as exc:
                 result.error = f"Failed to copy PDF to pdfs/ directory: {exc}"
-                logger.exception("Failed to copy PDF to pdfs/ directory: %s -> %s", pdf_path, final_pdf_path)
+                logger.exception(
+                    "Failed to copy PDF to pdfs/ directory: %s -> %s",
+                    pdf_path,
+                    final_pdf_path,
+                )
                 return result
-        
+
         # Convert to markdown
         markdown_directory = subject_dir / "markdown"
         try:
-            markdown_path = convert_pdf_to_markdown(converter, final_pdf_path, markdown_directory)
+            markdown_path = convert_pdf_to_markdown(
+                converter, final_pdf_path, markdown_directory
+            )
             result.markdown_path = markdown_path
             result.pdf_path = final_pdf_path
             result.success = True
         except Exception as exc:
             result.error = f"Failed to convert PDF to markdown: {exc}"
             logger.exception("Failed to convert %s to markdown", final_pdf_path)
-    
+
     except Exception as exc:
         # Catch any unexpected errors
         result.error = f"Unexpected error: {exc}"
         logger.exception("Unexpected error processing %s", pdf_path)
-    
+
     finally:
         converter.close()
-    
+
     return result
 
 
-def process_subject(subject_dir: Path, converter_type: str = "markitdown") -> SubjectResult:
+def process_subject(
+    subject_dir: Path, converter_type: str = "markitdown"
+) -> SubjectResult:
     """Copy PDFs and render Markdown for a single subject directory."""
     pdf_directory = subject_dir / "pdfs"
     markdown_directory = subject_dir / "markdown"
@@ -187,7 +217,7 @@ def process_subject(subject_dir: Path, converter_type: str = "markitdown") -> Su
                 result.errors.append(f"{pdf_path.name}: {exc}")
     finally:
         converter.close()
-    
+
     return result
 
 
@@ -200,7 +230,9 @@ def run(
     """Process each subject directory and return per-subject results."""
     subject_dirs = find_subject_directories(root)
     if allowed_subject_dirs is not None:
-        subject_dirs = [path for path in subject_dirs if path.name in allowed_subject_dirs]
+        subject_dirs = [
+            path for path in subject_dirs if path.name in allowed_subject_dirs
+        ]
     if not subject_dirs:
         logger.info("No subject directories found under %s", root)
         return []
@@ -224,7 +256,9 @@ def run(
         futures = {}
         for subject_dir in subject_dirs:
             print(f"Starting post-processing for {subject_dir.name}...")
-            futures[executor.submit(process_subject, subject_dir, converter_type)] = subject_dir
+            futures[executor.submit(process_subject, subject_dir, converter_type)] = (
+                subject_dir
+            )
         for future in as_completed(futures):
             subject_dir = futures[future]
             try:
@@ -292,9 +326,7 @@ def main() -> int:
         totals.copied += result.copied
         totals.converted += result.converted
         totals.errors.extend(result.errors)
-        message = (
-            f"{result.subject_dir.name}: copied {result.copied} PDF(s), converted {result.converted} to Markdown"
-        )
+        message = f"{result.subject_dir.name}: copied {result.copied} PDF(s), converted {result.converted} to Markdown"
         if result.errors:
             message += f" ({len(result.errors)} error(s); see logs)"
         print(message)

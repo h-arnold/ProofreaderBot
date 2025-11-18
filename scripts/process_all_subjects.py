@@ -28,28 +28,28 @@ from pathlib import Path
 
 def find_pdf_files(root: Path) -> list[Path]:
     """Return sorted list of PDF file paths (relative to root) that need to be converted to Markdown.
-    
+
     This looks for:
     1. PDFs in subject root (will be copied to pdfs/ and converted)
     2. PDFs in pdfs/ subdirectory that don't have a corresponding .md file in markdown/
     """
     if not root.exists() or not root.is_dir():
         return []
-    
+
     pdf_files: list[Path] = []
-    
+
     # Find all subject directories
     for subject_dir in sorted(root.iterdir()):
-        if not subject_dir.is_dir() or subject_dir.name.startswith('.'):
+        if not subject_dir.is_dir() or subject_dir.name.startswith("."):
             continue
-        
+
         markdown_dir = subject_dir / "markdown"
-        
+
         # Look for PDFs in subject root (these always need processing)
         for pdf_path in subject_dir.glob("*.pdf"):
             # Store relative path from root
             pdf_files.append(pdf_path.relative_to(root))
-        
+
         # Look for PDFs in pdfs/ subdirectory that haven't been converted yet
         pdfs_subdir = subject_dir / "pdfs"
         if pdfs_subdir.exists() and pdfs_subdir.is_dir():
@@ -59,7 +59,7 @@ def find_pdf_files(root: Path) -> list[Path]:
                 if not markdown_path.exists():
                     # This PDF needs to be converted
                     pdf_files.append(pdf_path.relative_to(root))
-    
+
     return sorted(pdf_files)
 
 
@@ -88,15 +88,23 @@ def read_state_file(state_file: Path) -> list[str]:
     """Read PDF file paths from state file, one per line."""
     if not state_file.exists():
         return []
-    return [line.strip() for line in state_file.read_text(encoding="utf-8").splitlines() if line.strip()]
+    return [
+        line.strip()
+        for line in state_file.read_text(encoding="utf-8").splitlines()
+        if line.strip()
+    ]
 
 
 def write_state_file(state_file: Path, pdf_files: list[str]) -> None:
     """Write PDF file paths to state file, one per line."""
-    state_file.write_text("\n".join(pdf_files) + "\n" if pdf_files else "", encoding="utf-8")
+    state_file.write_text(
+        "\n".join(pdf_files) + "\n" if pdf_files else "", encoding="utf-8"
+    )
 
 
-def git_command(args: list[str], cwd: Path, *, allow_prompts: bool = False) -> tuple[int, str]:
+def git_command(
+    args: list[str], cwd: Path, *, allow_prompts: bool = False
+) -> tuple[int, str]:
     """Run a git command and return (exit_code, output).
 
     Interactive prompts are disabled by default so that commands like
@@ -126,13 +134,15 @@ def ensure_branch(branch_name: str, cwd: Path) -> bool:
     """Create or checkout the specified branch. Returns True on success."""
     # Check if branch exists
     exit_code, output = git_command(["rev-parse", "--verify", branch_name], cwd)
-    
+
     if exit_code == 0:
         # Branch exists, check it out
         print(f"Branch '{branch_name}' exists, checking out...")
         exit_code, output = git_command(["checkout", branch_name], cwd)
         if exit_code != 0:
-            print(f"Failed to checkout branch '{branch_name}': {output}", file=sys.stderr)
+            print(
+                f"Failed to checkout branch '{branch_name}': {output}", file=sys.stderr
+            )
             return False
         print(f"Checked out branch '{branch_name}'")
     else:
@@ -143,11 +153,13 @@ def ensure_branch(branch_name: str, cwd: Path) -> bool:
             print(f"Failed to create branch '{branch_name}': {output}", file=sys.stderr)
             return False
         print(f"Created and checked out branch '{branch_name}'")
-    
+
     return True
 
 
-def commit_changes(subject: str, documents_root_or_cwd: Path, cwd: Path | None = None) -> bool:
+def commit_changes(
+    subject: str, documents_root_or_cwd: Path, cwd: Path | None = None
+) -> bool:
     """Commit changes after processing a subject.
 
     Two supported call signatures for convenience in tests and script usage:
@@ -200,7 +212,10 @@ def commit_changes(subject: str, documents_root_or_cwd: Path, cwd: Path | None =
     rel_path = str(markdown_dir)
     exit_code, output = git_command(["add", "--", rel_path], cwd)
     if exit_code != 0:
-        print(f"Failed to stage markdown directory '{rel_path}': {output}", file=sys.stderr)
+        print(
+            f"Failed to stage markdown directory '{rel_path}': {output}",
+            file=sys.stderr,
+        )
         return False
 
     # Check if there are staged changes
@@ -243,24 +258,24 @@ def process_pdf_file(
     cwd: Path,
 ) -> bool:
     """Process a single PDF file using process_single_pdf from postprocess_documents. Returns True on success."""
-    print(f"\n{'='*60}")
+    print(f"\n{'=' * 60}")
     print(f"Processing PDF: {pdf_file}")
-    print(f"{'='*60}\n")
-    
+    print(f"{'=' * 60}\n")
+
     # Import here to avoid issues with path setup
     sys.path.insert(0, str(cwd))
     try:
         from src.postprocessing import process_single_pdf
-        
+
         result = process_single_pdf(pdf_file, converter)
-        
+
         if result.success:
             print(f"\n✓ Successfully converted to: {result.markdown_path}")
             return True
         else:
             print(f"\n✗ Failed to process PDF: {result.error}", file=sys.stderr)
             return False
-    
+
     except Exception as exc:
         print(f"\nException while processing PDF '{pdf_file}': {exc}", file=sys.stderr)
         print(f"Stack trace:\n{traceback.format_exc()}", file=sys.stderr)
@@ -285,17 +300,31 @@ def process_subject(
     helper_script = cwd / "scripts" / "process_single_subject.py"
     if helper_script.exists():
         try:
-            cmd = list(uv_cmd.split()) + [str(helper_script), str(subject), "--converter", converter]
-            proc = subprocess.Popen(cmd, cwd=cwd, stdout=subprocess.PIPE, stderr=subprocess.STDOUT, text=True)
+            cmd = list(uv_cmd.split()) + [
+                str(helper_script),
+                str(subject),
+                "--converter",
+                converter,
+            ]
+            proc = subprocess.Popen(
+                cmd,
+                cwd=cwd,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                text=True,
+            )
 
             if proc.stdout is not None:
                 for line in proc.stdout:
-                    print(line, end='')
+                    print(line, end="")
 
             proc.wait()
             return proc.returncode == 0
         except Exception as exc:
-            print(f"\nException while processing subject '{subject}' via subprocess: {exc}", file=sys.stderr)
+            print(
+                f"\nException while processing subject '{subject}' via subprocess: {exc}",
+                file=sys.stderr,
+            )
             print(f"Stack trace:\n{traceback.format_exc()}", file=sys.stderr)
             return False
 
@@ -357,27 +386,27 @@ Examples:
   uv run python scripts/process_all_subjects.py --converter markitdown
         """,
     )
-    
+
     parser.add_argument(
         "--root",
         type=Path,
         default=Path("Documents"),
         help="Root directory containing subject folders (default: Documents)",
     )
-    
+
     parser.add_argument(
         "--branch",
         default="processedDocuments",
         help="Git branch name for processed documents (default: processedDocuments)",
     )
-    
+
     parser.add_argument(
         "--state-file",
         type=Path,
         default=Path("unprocessedFiles.txt"),
         help="State file tracking unprocessed PDF paths (default: unprocessedFiles.txt)",
     )
-    
+
     parser.add_argument(
         "--converter",
         default="marker",
@@ -391,19 +420,19 @@ Examples:
         default="uv run python",
         help="Command prefix to invoke Python within the project's uv environment (default: 'uv run python')",
     )
-    
+
     parser.add_argument(
         "--dry-run",
         action="store_true",
         help="Show what would be processed without making changes",
     )
-    
+
     parser.add_argument(
         "--reset",
         action="store_true",
         help="Reset state file to start from scratch (rediscover all PDF files)",
     )
-    
+
     return parser
 
 
@@ -411,29 +440,32 @@ def main(argv: list[str] | None = None) -> int:
     """Main entry point."""
     parser = build_parser()
     args = parser.parse_args(argv)
-    
+
     # Validate root directory
     if not args.root.exists() or not args.root.is_dir():
-        print(f"Error: Root directory '{args.root}' does not exist or is not a directory", file=sys.stderr)
+        print(
+            f"Error: Root directory '{args.root}' does not exist or is not a directory",
+            file=sys.stderr,
+        )
         return 2
-    
+
     # Get repository root (assume we're in the repo)
     repo_root = Path.cwd()
-    
+
     # Handle state file path (relative to the provided root directory when relative)
     state_file = args.state_file
     if not state_file.is_absolute():
         # Place the state file alongside the provided root so running against a
         # temporary Documents dir (tests) doesn't pick up the repo-level state file.
         state_file = args.root / state_file
-    
+
     # Reset state file if requested
     if args.reset:
         print(f"Resetting state file '{state_file}'...")
         if state_file.exists():
             state_file.unlink()
         print("State file reset")
-    
+
     # Read or initialize state file (subject-oriented)
     subjects = read_state_file(state_file)
 
@@ -450,7 +482,9 @@ def main(argv: list[str] | None = None) -> int:
         write_state_file(state_file, subjects)
         print(f"Initialized state file '{state_file}' with {len(subjects)} subject(s)")
     else:
-        print(f"Resuming from state file '{state_file}' with {len(subjects)} subject(s) remaining")
+        print(
+            f"Resuming from state file '{state_file}' with {len(subjects)} subject(s) remaining"
+        )
 
     # Show a sample of subjects to be processed
     print(f"\nSubjects to process:")
@@ -474,7 +508,9 @@ def main(argv: list[str] | None = None) -> int:
     while subjects:
         current = subjects[0]
 
-        success = process_subject(current, args.root, args.converter, args.uv_cmd, repo_root)
+        success = process_subject(
+            current, args.root, args.converter, args.uv_cmd, repo_root
+        )
 
         if not success:
             print(f"\nWarning: Failed to process subject '{current}'", file=sys.stderr)
@@ -486,7 +522,10 @@ def main(argv: list[str] | None = None) -> int:
 
         # Commit changes for this subject
         if not commit_changes(current, args.root, repo_root):
-            print(f"\nWarning: Failed to commit changes for subject '{current}'", file=sys.stderr)
+            print(
+                f"\nWarning: Failed to commit changes for subject '{current}'",
+                file=sys.stderr,
+            )
             # Continue anyway
 
         subjects.pop(0)
@@ -495,7 +534,7 @@ def main(argv: list[str] | None = None) -> int:
         print(f"\nProgress: {processed_count} completed, {len(subjects)} remaining")
 
     # Final summary
-    print(f"\n{'='*60}")
+    print(f"\n{'=' * 60}")
     print("Processing complete!")
     print(f"Successfully processed: {processed_count} subject(s)")
 

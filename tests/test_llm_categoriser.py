@@ -22,7 +22,10 @@ from src.llm_review.core.state_manager import StateManager
 from src.llm.provider import LLMQuotaError
 from src.llm.service import LLMService
 from src.llm_review.core.batcher import Batch
-from src.llm_review.llm_categoriser.persistence import save_batch_results, load_document_results
+from src.llm_review.llm_categoriser.persistence import (
+    save_batch_results,
+    load_document_results,
+)
 from src.llm_review.llm_categoriser.runner import CategoriserRunner
 from src.models.document_key import DocumentKey
 
@@ -34,9 +37,9 @@ Art,test.md,1,RULE1,error,word,Test message,fix,"This is **word**",LT
 """
     csv_file = tmp_path / "test.csv"
     csv_file.write_text(csv_content)
-    
+
     issues = list(_parse_csv(csv_file))
-    
+
     assert len(issues) == 1
     subject, issue = issues[0]
     assert subject == "Art"
@@ -48,11 +51,13 @@ Art,test.md,1,RULE1,error,word,Test message,fix,"This is **word**",LT
     assert issue.pass_code == PassCode.LT
 
 
-def test_load_issues_assigns_issue_ids(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+def test_load_issues_assigns_issue_ids(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
     """Test that load_issues assigns sequential issue IDs per document."""
     # Change to tmp_path as working directory
     monkeypatch.chdir(tmp_path)
-    
+
     # Create CSV
     csv_content = """Subject,Filename,Page,Rule ID,Type,Issue,Message,Suggestions,Highlighted Context,Pass Code
 TestSub,doc1.md,1,RULE1,error,word1,Test,fix1,"context1",LT
@@ -61,23 +66,23 @@ TestSub,doc2.md,1,RULE3,error,word3,Test,fix3,"context3",LT
 """
     csv_file = tmp_path / "test.csv"
     csv_file.write_text(csv_content)
-    
+
     # Create markdown files
     subject_dir = tmp_path / "Documents" / "TestSub" / "markdown"
     subject_dir.mkdir(parents=True)
     (subject_dir / "doc1.md").write_text("{1}----\nPage 1\n{2}----\nPage 2")
     (subject_dir / "doc2.md").write_text("{1}----\nPage 1")
-    
+
     # Load issues
     grouped = load_issues(csv_file)
-    
+
     # Check issue IDs
     key1 = DocumentKey(subject="TestSub", filename="doc1.md")
     key2 = DocumentKey(subject="TestSub", filename="doc2.md")
-    
+
     assert key1 in grouped
     assert key2 in grouped
-    
+
     assert grouped[key1][0].issue_id == 0
     assert grouped[key1][1].issue_id == 1
     assert grouped[key2][0].issue_id == 0
@@ -102,28 +107,33 @@ def test_batcher_creates_markdown_table(tmp_path: Path) -> None:
             issue_id=0,
         )
     ]
-    
+
     # Create markdown file with page markers
     md_file = tmp_path / "test.md"
     md_file.write_text("{1}----\nPage 1 content")
-    
+
     # Generate batches
-    batches = list(iter_batches(
-        issues,
-        batch_size=10,
-        markdown_path=md_file,
-        subject="Test",
-        filename="test.md",
-    ))
-    
+    batches = list(
+        iter_batches(
+            issues,
+            batch_size=10,
+            markdown_path=md_file,
+            subject="Test",
+            filename="test.md",
+        )
+    )
+
     assert len(batches) == 1
     batch = batches[0]
-    
+
     assert batch.subject == "Test"
     assert batch.filename == "test.md"
     assert batch.index == 0
     assert len(batch.issues) == 1
-    assert "| issue_id | page_number | issue | highlighted_context |" in batch.markdown_table
+    assert (
+        "| issue_id | page_number | issue | highlighted_context |"
+        in batch.markdown_table
+    )
     assert "| 0 | 1 | test | **test** |" in batch.markdown_table
 
 
@@ -131,25 +141,25 @@ def test_state_tracks_completed_batches(tmp_path: Path) -> None:
     """Test state manager tracks completed batches."""
     state_file = tmp_path / "state.json"
     state = StateManager(state_file)
-    
+
     key = DocumentKey(subject="Test", filename="test.md")
-    
+
     # Initially not completed
     assert not state.is_batch_completed(key, 0)
-    
+
     # Mark as completed
     state.mark_batch_completed(key, 0, total_issues=5)
-    
+
     # Should be completed now
     assert state.is_batch_completed(key, 0)
     assert not state.is_batch_completed(key, 1)
-    
+
     # Check count
     assert state.get_completed_count(key) == 1
-    
+
     # Verify state file was created
     assert state_file.exists()
-    
+
     # Load fresh state and verify persistence
     state2 = StateManager(state_file)
     assert state2.is_batch_completed(key, 0)
@@ -159,13 +169,13 @@ def test_state_clear_document(tmp_path: Path) -> None:
     """Test clearing state for a document."""
     state_file = tmp_path / "state.json"
     state = StateManager(state_file)
-    
+
     key = DocumentKey(subject="Test", filename="test.md")
-    
+
     # Mark batch as completed
     state.mark_batch_completed(key, 0)
     assert state.is_batch_completed(key, 0)
-    
+
     # Clear document
     state.clear_document(key)
     assert not state.is_batch_completed(key, 0)
@@ -174,7 +184,7 @@ def test_state_clear_document(tmp_path: Path) -> None:
 def test_persistence_saves_and_loads(tmp_path: Path) -> None:
     """Test persistence saves and loads results correctly."""
     key = DocumentKey(subject="Test", filename="test.md")
-    
+
     results = [
         {
             "issue_id": 0,
@@ -187,15 +197,15 @@ def test_persistence_saves_and_loads(tmp_path: Path) -> None:
             "reasoning": "Test reason",
         }
     ]
-    
+
     # Save results
     output_path = save_batch_results(key, results, output_dir=tmp_path)
-    
+
     # Verify file was created
     assert output_path.exists()
     expected_path = tmp_path / "Test" / "document_reports" / "test.csv"
     assert output_path == expected_path
-    
+
     # Load and verify
     loaded = load_document_results(key, output_dir=tmp_path)
     assert loaded == [
@@ -215,7 +225,7 @@ def test_persistence_saves_and_loads(tmp_path: Path) -> None:
 def test_persistence_merges_results(tmp_path: Path) -> None:
     """Test that persistence merges results from multiple batches."""
     key = DocumentKey(subject="Test", filename="test.md")
-    
+
     # Save first batch
     results1 = [
         {
@@ -230,7 +240,7 @@ def test_persistence_merges_results(tmp_path: Path) -> None:
         }
     ]
     save_batch_results(key, results1, merge=True, output_dir=tmp_path)
-    
+
     # Save second batch with different page
     results2 = [
         {
@@ -245,7 +255,7 @@ def test_persistence_merges_results(tmp_path: Path) -> None:
         }
     ]
     save_batch_results(key, results2, merge=True, output_dir=tmp_path)
-    
+
     # Load and verify merged
     loaded = load_document_results(key, output_dir=tmp_path)
     assert len(loaded) == 2
@@ -269,23 +279,25 @@ def test_batch_handles_no_page_numbers(tmp_path: Path) -> None:
             issue_id=0,
         )
     ]
-    
+
     # Create markdown file WITHOUT page markers
     md_file = tmp_path / "test.md"
     md_file.write_text("Simple document without page markers")
-    
+
     # Generate batches
-    batches = list(iter_batches(
-        issues,
-        batch_size=10,
-        markdown_path=md_file,
-        subject="Test",
-        filename="test.md",
-    ))
-    
+    batches = list(
+        iter_batches(
+            issues,
+            batch_size=10,
+            markdown_path=md_file,
+            subject="Test",
+            filename="test.md",
+        )
+    )
+
     assert len(batches) == 1
     batch = batches[0]
-    
+
     # Should use entire document as page 0
     assert 0 in batch.page_context
     assert "Simple document without page markers" in batch.page_context[0]
@@ -294,7 +306,7 @@ def test_batch_handles_no_page_numbers(tmp_path: Path) -> None:
 def test_persistence_deduplicates_on_merge(tmp_path: Path) -> None:
     """Test that persistence deduplicates issues when merging."""
     key = DocumentKey(subject="Test", filename="test.md")
-    
+
     # Save first batch with some issues (using unified model field names)
     results1 = [
         {
@@ -319,7 +331,7 @@ def test_persistence_deduplicates_on_merge(tmp_path: Path) -> None:
         },
     ]
     save_batch_results(key, results1, merge=True, output_dir=tmp_path)
-    
+
     # Try to save the same issues again (simulating a reprocess)
     results2 = [
         {
@@ -344,7 +356,7 @@ def test_persistence_deduplicates_on_merge(tmp_path: Path) -> None:
         },
     ]
     save_batch_results(key, results2, merge=True, output_dir=tmp_path)
-    
+
     # Load and verify - should have 3 issues (issue_id 0 deduped, 1 and 2 kept)
     loaded = load_document_results(key, output_dir=tmp_path)
     issue_ids = [row["issue_id"] for row in loaded]
@@ -355,7 +367,7 @@ def test_runner_accepts_single_issue_dict_response(tmp_path: Path) -> None:
     """Ensure _validate_response requires a top-level array (not a bare dict)."""
     runner = CategoriserRunner(
         llm_service=MagicMock(),
-    state=StateManager(tmp_path / "state.json"),
+        state=StateManager(tmp_path / "state.json"),
     )
 
     issue = LanguageIssue(
@@ -383,7 +395,9 @@ def test_runner_accepts_single_issue_dict_response(tmp_path: Path) -> None:
     # Now we only accept arrays, not a single dict
     assert validated == []
     assert failed == {0}
-    assert any("Expected top-level JSON array" in msg for msg in errors.get("batch_errors", []))
+    assert any(
+        "Expected top-level JSON array" in msg for msg in errors.get("batch_errors", [])
+    )
 
 
 def test_runner_array_of_issue_dicts_validates_using_model(tmp_path: Path) -> None:
@@ -393,7 +407,7 @@ def test_runner_array_of_issue_dicts_validates_using_model(tmp_path: Path) -> No
     """
     runner = CategoriserRunner(
         llm_service=MagicMock(),
-    state=StateManager(tmp_path / "state.json"),
+        state=StateManager(tmp_path / "state.json"),
     )
 
     issue = LanguageIssue(
@@ -433,7 +447,7 @@ def test_runner_array_of_issue_dicts_validates_using_model(tmp_path: Path) -> No
 def test_runner_logs_raw_response_when_enabled(tmp_path: Path) -> None:
     runner = CategoriserRunner(
         llm_service=MagicMock(),
-    state=StateManager(tmp_path / "state.json"),
+        state=StateManager(tmp_path / "state.json"),
         log_raw_responses=True,
         log_response_dir=tmp_path / "responses",
     )
@@ -454,7 +468,9 @@ def test_runner_logs_raw_response_when_enabled(tmp_path: Path) -> None:
         )
     ]
 
-    runner._log_raw_response(key, batch_index=0, attempt=1, response={"foo": "bar"}, issues=issues)
+    runner._log_raw_response(
+        key, batch_index=0, attempt=1, response={"foo": "bar"}, issues=issues
+    )
 
     subject_dir = tmp_path / "responses" / "Test"
     files = list(subject_dir.glob("*.json"))
@@ -464,7 +480,9 @@ def test_runner_logs_raw_response_when_enabled(tmp_path: Path) -> None:
     assert data["response"] == {"foo": "bar"}
 
 
-def test_runner_uses_env_toggle_for_logging(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> None:
+def test_runner_uses_env_toggle_for_logging(
+    tmp_path: Path, monkeypatch: pytest.MonkeyPatch
+) -> None:
     monkeypatch.setenv("LLM_CATEGORISER_LOG_RESPONSES", "true")
     log_dir = tmp_path / "env_responses"
     monkeypatch.setenv("LLM_CATEGORISER_LOG_DIR", str(log_dir))
@@ -490,7 +508,9 @@ def test_runner_uses_env_toggle_for_logging(tmp_path: Path, monkeypatch: pytest.
         )
     ]
 
-    runner._log_raw_response(key, batch_index=2, attempt=0, response={"foo": "env"}, issues=issues)
+    runner._log_raw_response(
+        key, batch_index=2, attempt=0, response={"foo": "env"}, issues=issues
+    )
 
     files = list((log_dir / "Env").glob("*.json"))
     assert len(files) == 1
@@ -520,8 +540,6 @@ def test_runner_handles_provider_quota_gracefully(tmp_path: Path) -> None:
 
         def health_check(self):
             return True
- 
-    
 
     llm_service = LLMService([_QuotaProvider()])
 
@@ -542,19 +560,29 @@ def test_runner_handles_provider_quota_gracefully(tmp_path: Path) -> None:
     )
 
     key = DocumentKey(subject="Test", filename="doc.md")
-    batch = Batch(subject="Test", filename="doc.md", index=0, issues=[issue], page_context={1: "ctx"}, markdown_table="table")
+    batch = Batch(
+        subject="Test",
+        filename="doc.md",
+        index=0,
+        issues=[issue],
+        page_context={1: "ctx"},
+        markdown_table="table",
+    )
 
     # By default we should raise (fail-fast on quota exhaustion)
     with pytest.raises(LLMQuotaError):
         runner._process_batch(key, batch)
 
     # When configured not to fail on quota, it should not raise and return False
-    runner2 = CategoriserRunner(llm_service=llm_service, state=state, fail_on_quota=False)
+    runner2 = CategoriserRunner(
+        llm_service=llm_service, state=state, fail_on_quota=False
+    )
     assert runner2._process_batch(key, batch) is False
 
 
 def test_runner_aborts_on_503(tmp_path: Path) -> None:
     """The runner should abort (raise) when the provider returns an HTTP 503 error."""
+
     class _ServiceUnavailable(Exception):
         def __init__(self, message: str = "Service Unavailable"):
             super().__init__(message)
@@ -580,7 +608,14 @@ def test_runner_aborts_on_503(tmp_path: Path) -> None:
         issue_id=0,
     )
     key = DocumentKey(subject="Test", filename="doc.md")
-    batch = Batch(subject="Test", filename="doc.md", index=0, issues=[issue], page_context={1: "ctx"}, markdown_table="table")
+    batch = Batch(
+        subject="Test",
+        filename="doc.md",
+        index=0,
+        issues=[issue],
+        page_context={1: "ctx"},
+        markdown_table="table",
+    )
 
     with pytest.raises(_ServiceUnavailable):
         runner._process_batch(key, batch)
