@@ -1,0 +1,9 @@
+issue_id,page_number,issue,highlighted_context,pass_code,error_category,confidence_score,reasoning
+0,,,,,FALSE_POSITIVE,100,`\frac` is a correct LaTeX command for displaying fractions and should not be flagged as an error.
+1,,,,,FALSE_POSITIVE,100,`h$$` is the correct closing for a LaTeX display math environment and should not be flagged as an error.
+2,,,,,PARSING_ERROR,95,The compound noun 'cross-section' should be hyphenated in this mathematical context.
+3,,,,,FALSE_POSITIVE,90,The word 'award' is correctly lowercased as it continues a list of options within the same sentence.
+4,,,,,STYLISTIC_PREFERENCE,70,"A comma before 'but' is a stylistic choice when connecting two independent clauses, and its omission here does not cause ambiguity."
+5,,,,,PARSING_ERROR,90,The HTML entity `&#x27;` is a parsing artifact that should ideally be represented as a standard single quote.
+6,,,,,PARSING_ERROR,90,The HTML entity `&#x27;` is a parsing artifact that should ideally be represented as a standard single quote.
+7,,,,,SPELLING_ERROR,95,"'OCW' is an acronym for 'Organisation, Communication and Written accuracy' in WJEC mark schemes and should be capitalised."

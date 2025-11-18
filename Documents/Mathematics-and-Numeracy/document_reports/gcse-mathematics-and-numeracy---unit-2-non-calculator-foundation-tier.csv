@@ -1,0 +1,31 @@
+issue_id,page_number,issue,highlighted_context,pass_code,error_category,confidence_score,reasoning
+0,,,,,FALSE_POSITIVE,95,The phrase 'all of equal length' is grammatically correct and conveys the intended meaning clearly.
+1,,,,,FALSE_POSITIVE,100,The comma is correctly used to separate the x and y coordinates within the parentheses.
+2,,,,,FALSE_POSITIVE,100,The closing parenthesis is correctly used to complete the coordinate notation.
+3,,,,,FALSE_POSITIVE,100,"`\longrightarrow` is a correct LaTeX command for a mathematical arrow, not a linguistic error."
+4,,,,,FALSE_POSITIVE,100,"`\frac` is a correct LaTeX command for fractions, not a linguistic error."
+5,,,,,FALSE_POSITIVE,100,"`\longrightarrow` is a correct LaTeX command for a mathematical arrow, not a linguistic error."
+6,,,,,FALSE_POSITIVE,100,"`\frac` is a correct LaTeX command for fractions, not a linguistic error."
+7,,,,,FALSE_POSITIVE,100,"`\longrightarrow` is a correct LaTeX command for a mathematical arrow, not a linguistic error."
+8,,,,,FALSE_POSITIVE,100,"`\frac` is a correct LaTeX command for fractions, used correctly within a mixed number."
+9,,,,,PARSING_ERROR,90,"The `$$` is a LaTeX display math delimiter, and `$$a` appears to be a parsing error where the delimiter is merged with the variable `a`."
+10,16,circ,...(_page_16_Picture_1.jpeg)  $$a = \dots \**circ** b = \dots \circ c = \dots \circ$$  only...,PassCode.LTC,ErrorCategory.PARSING_ERROR,100,The text 'circ' is a parsing error for the degree symbol '°' in a mathematical expression.
+11,16,circ,...e_1.jpeg)  $$a = \dots \circ b = \dots \**circ** c = \dots \circ$$  only  {17}----------...,PassCode.LTC,ErrorCategory.PARSING_ERROR,100,The text 'circ' is a parsing error for the degree symbol '°' in a mathematical expression.
+12,16,circ$$,... \dots \circ b = \dots \circ c = \dots \**circ$$**  only  {17}----------------------------...,PassCode.LTC,ErrorCategory.PARSING_ERROR,100,The text 'circ$$' is a parsing error for the degree symbol '°' in a mathematical expression.
+13,17,least,"...ture_7.jpeg)  Delyth wants to buy the ****least** possible number of boxes** so that, in ...",PassCode.LTC,ErrorCategory.FALSE_POSITIVE,100,The word 'least' is correctly used in the phrase 'least possible number'.
+14,22,No,...                              | | 5.(b) **No** indicated with suitable reason e.g. 'th...,PassCode.LTC,ErrorCategory.FALSE_POSITIVE,100,'No' is a correct and appropriate answer in the context of a mark scheme.
+15,24,guadrent,...       | B2             | R1 for either **guadrent** correct                                ...,PassCode.LTC,ErrorCategory.SPELLING_ERROR,100,'Guadrent' is a misspelling of 'quadrant'.
+16,24,$d,...| | 13. $13d - 5d = -31 - 9$ $8d = -40$ **$d** = -5$ | B1 B1 B1 | FT until 2 <sup>nd</...,PassCode.LTC,ErrorCategory.FALSE_POSITIVE,100,'$d$' is correctly used as a mathematical variable within a LaTeX-style expression.
+17,24,nd,...$ $d = -5$ | B1 B1 B1 | FT until 2 <sup>**nd**</sup> error  Mark final answer Allow an...,PassCode.LTC,ErrorCategory.FALSE_POSITIVE,100,'nd' is correctly used as an ordinal suffix in '2nd'.
+18,24,frac,"..., otherwise accept a fraction | | 14. $\**frac**{21}{8} \times \frac{8}{3} - \frac{1}{8}...",PassCode.LTC,ErrorCategory.FALSE_POSITIVE,100,'\frac' is a correct LaTeX command for fractions within a mathematical expression.
+19,24,frac,... fraction | | 14. $\frac{21}{8} \times \**frac**{8}{3} - \frac{1}{8}$ | M2 | M1 for any ...,PassCode.LTC,ErrorCategory.FALSE_POSITIVE,100,'\frac' is a correct LaTeX command for fractions within a mathematical expression.
+20,24,frac,...14. $\frac{21}{8} \times \frac{8}{3} - \**frac**{1}{8}$ | M2 | M1 for any one of the fol...,PassCode.LTC,ErrorCategory.FALSE_POSITIVE,100,"`frac` is part of the LaTeX command `\frac` used for displaying fractions, not a standalone word."
+21,24,frac,...or any one of the following: <ul><li>$2\**frac**{5}{8} \div \frac{3}{8} = \frac{21}{8} \...,PassCode.LTC,ErrorCategory.FALSE_POSITIVE,100,"`frac` is part of the LaTeX command `\frac` used for displaying fractions, not a standalone word."
+22,24,frac,... following: <ul><li>$2\frac{5}{8} \div \**frac**{3}{8} = \frac{21}{8} \times \frac{8}{3}...,PassCode.LTC,ErrorCategory.FALSE_POSITIVE,100,"`frac` is part of the LaTeX command `\frac` used for displaying fractions, not a standalone word."
+23,24,frac,...l><li>$2\frac{5}{8} \div \frac{3}{8} = \**frac**{21}{8} \times \frac{8}{3}$</li><li>$\fr...,PassCode.LTC,ErrorCategory.FALSE_POSITIVE,100,"`frac` is part of the LaTeX command `\frac` used for displaying fractions, not a standalone word."
+24,24,frac,...\div \frac{3}{8} = \frac{21}{8} \times \**frac**{8}{3}$</li><li>$\frac{1}{2^3} = \frac{1...,PassCode.LTC,ErrorCategory.FALSE_POSITIVE,100,"`frac` is part of the LaTeX command `\frac` used for displaying fractions, not a standalone word."
+25,24,frac,...ac{21}{8} \times \frac{8}{3}$</li><li>$\**frac**{1}{2^3} = \frac{1}{8}$</li></ul> | | $6...,PassCode.LTC,ErrorCategory.FALSE_POSITIVE,100,"`frac` is part of the LaTeX command `\frac` used for displaying fractions, not a standalone word."
+26,24,frac,... \frac{8}{3}$</li><li>$\frac{1}{2^3} = \**frac**{1}{8}$</li></ul> | | $6\frac{7}{8}$    ...,PassCode.LTC,ErrorCategory.FALSE_POSITIVE,100,"`frac` is part of the LaTeX command `\frac` used for displaying fractions, not a standalone word."
+27,24,frac,...1}{2^3} = \frac{1}{8}$</li></ul> | | $6\**frac**{7}{8}$                                 ...,PassCode.LTC,ErrorCategory.FALSE_POSITIVE,100,"`frac` is part of the LaTeX command `\frac` used for displaying fractions, not a standalone word."
+28,24,frac,...| A1 for any one of the following:  • $\**frac**{21}{8} \times \frac{8}{3} = 7$ • final ...,PassCode.LTC,ErrorCategory.FALSE_POSITIVE,100,"`frac` is part of the LaTeX command `\frac` used for displaying fractions, not a standalone word."
+29,24,frac,...the following:  • $\frac{21}{8} \times \**frac**{8}{3} = 7$ • final answer $\frac{55}{8}...,PassCode.LTC,ErrorCategory.FALSE_POSITIVE,100,"`frac` is part of the LaTeX command `\frac` used for displaying fractions, not a standalone word."

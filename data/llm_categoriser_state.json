@@ -1485,9 +1485,11 @@
       },
       "gcse-mathematics-and-numeracy---unit-2-non-calculator-foundation-tier.md": {
         "completed_batches": [
-          0
+          0,
+          1,
+          2
         ],
-        "total_issues": 10
+        "total_issues": 43
       }
     }
   }

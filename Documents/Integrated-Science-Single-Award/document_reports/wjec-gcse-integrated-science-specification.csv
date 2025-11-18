@@ -1,0 +1,39 @@
+issue_id,page_number,issue,highlighted_context,pass_code,error_category,confidence_score,reasoning
+0,,,,,PARSING_ERROR,95,"The word 'SUMMARY' has been incorrectly split and truncated across table columns, resulting in 'MMAR'."
+1,,,,,PARSING_ERROR,95,The apostrophe is a remnant of the parsing error where 'SUMMARY' was truncated to 'MMAR'.
+2,,,,,PARSING_ERROR,95,"The word 'INTRODUCTION' has been incorrectly split across table columns, resulting in 'INTRO' and 'DDUCTION'."
+3,,,,,PARSING_ERROR,95,"The word 'Opportunities' has been incorrectly split across table columns, resulting in 'Oppor'."
+4,,,,,PARSING_ERROR,95,"The word 'Opportunities' has been incorrectly split across table columns, with 'tunities' being the second part."
+5,,,,,PARSING_ERROR,95,"The word 'ASSESSMENT' has been incorrectly split across table columns, resulting in 'ASSE' and 'SSMENT'."
+6,,,,,PARSING_ERROR,95,"The word 'MALPRACTICE' has been incorrectly split across table columns, resulting in 'MALP'."
+7,,,,,PARSING_ERROR,95,"The word 'MALPRACTICE' has been incorrectly split across table columns, with 'RACTICE' being the second part."
+8,,,,,PARSING_ERROR,95,"The word 'TECHNICAL' has been incorrectly split across table columns, resulting in 'TECH' and 'NICAL'."
+9,,,,,PARSING_ERROR,95,"The word 'APPENDIX' has been incorrectly split across table columns, with 'PENDIX' being the second part after 'APF' (likely a truncation of 'APP')."
+10,,,,,PARSING_ERROR,95,The word 'APPENDIX' has been incorrectly split due to a parsing error.
+11,,,,,PARSING_ERROR,95,The word 'APPENDIX' has been incorrectly split due to a parsing error.
+12,,,,,PARSING_ERROR,95,"The character 'Δ' is a parsing error, and the word 'APPENDIX' has been garbled."
+13,,,,,PARSING_ERROR,95,The word 'APPENDIX' has been incorrectly split due to a parsing error.
+14,,,,,SPELLING_ERROR,90,"The word 'matter' is repeated unnecessarily, indicating a duplication error."
+15,,,,,FALSE_POSITIVE,90,The verb 'defines' correctly agrees with the singular conceptual subject 'matter and the way it behaves'.
+16,,,,,SPELLING_ERROR,90,"The word 'forces' is repeated unnecessarily, indicating a duplication error."
+17,,,,,POSSIBLE_AMBIGUOUS_GRAMMATICAL_ERROR,75,A comma before 'and' would improve clarity as it separates two independent clauses.
+18,,,,,ABSOLUTE_GRAMMATICAL_ERROR,95,The verb 'are' does not agree with the singular subject 'role'; it should be 'is'.
+19,,,,,FALSE_POSITIVE,95,`frac` is a valid LaTeX command used correctly within a mathematical expression.
+20,,,,,PARSING_ERROR,100,The compound adjective 'speed-time' should be hyphenated in UK English.
+21,,,,,FALSE_POSITIVE,95,'Nonliving' is a correctly spelled and acceptable single word form in UK English.
+22,,,,,PARSING_ERROR,100,The compound adjective 'fuel-based' should be hyphenated in UK English.
+23,,,,,FALSE_POSITIVE,90,The phrase 'a small number of' is grammatically correct and appropriate in this context.
+24,,,,,POSSIBLE_AMBIGUOUS_GRAMMATICAL_ERROR,75,"Adding a comma before 'and' would improve the clarity and flow between the two independent clauses, but its omission is not a strict grammatical error."
+25,,,,,FALSE_POSITIVE,100,'frac' is a correct LaTeX command for displaying fractions within a mathematical equation.
+26,,,,,FALSE_POSITIVE,100,'frac' is a correct LaTeX command for displaying fractions within a mathematical equation.
+27,,,,,SPELLING_ERROR,100,"The word 'climate' is redundantly repeated, indicating a textual error."
+28,,,,,SPELLING_ERROR,100,"The word 'climate' is redundantly repeated, indicating a textual error."
+29,,,,,FALSE_POSITIVE,95,'Net zero' is a correct and widely accepted term in the context of climate change.
+30,,,,,STYLISTIC_PREFERENCE,85,"For consistency within the document, 'free fall' (two words) should be used as a noun, matching its usage elsewhere on the same page."
+31,,,,,ABSOLUTE_GRAMMATICAL_ERROR,95,A comma is required before the coordinating conjunction 'so' when it connects two independent clauses.
+32,,,,,FALSE_POSITIVE,100,'Ions' is the correct scientific term in this context and is spelled correctly.
+33,,,,,PARSING_ERROR,100,`\frac` is a correct LaTeX command for typesetting fractions and is not a linguistic error.
+34,,,,,FALSE_POSITIVE,100,'Enquire' is the correct British English spelling and is used consistently with 'scientific enquiry' throughout the document.
+35,,,,,STYLISTIC_PREFERENCE,80,'Outside' is more concise and stylistically preferred than 'outside of' in this context.
+36,,,,,ABSOLUTE_GRAMMATICAL_ERROR,95,A comma is required before the coordinating conjunction 'and' when it connects two independent clauses.
+37,,,,,PARSING_ERROR,95,'1-metre' should be hyphenated as it forms a compound adjective modifying 'ruler'.

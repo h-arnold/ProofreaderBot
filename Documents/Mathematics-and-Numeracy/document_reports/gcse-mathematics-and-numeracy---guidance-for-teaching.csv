@@ -1,0 +1,209 @@
+issue_id,page_number,issue,highlighted_context,pass_code,error_category,confidence_score,reasoning
+0,,,,,FALSE_POSITIVE,100,The compound adjective 'multi-step' is correctly hyphenated in the provided text.
+1,,,,,POSSIBLE_AMBIGUOUS_GRAMMATICAL_ERROR,85,A comma should precede 'and' when it connects two independent clauses to improve clarity in formal writing.
+2,,,,,FALSE_POSITIVE,100,'Jacob's' is correctly used as a possessive noun.
+3,,,,,FALSE_POSITIVE,100,The comma is correctly used to separate the introductory participial phrase 'applied to y = f(x)' from the preceding list.
+4,,,,,PARSING_ERROR,95,The word 'Number' has been incorrectly split across table cells due to a parsing error.
+5,,,,,FALSE_POSITIVE,100,The character '$n$' represents a mathematical variable and is correctly formatted.
+6,,,,,FALSE_POSITIVE,100,The character '$n$' represents a mathematical variable and is correctly formatted.
+7,,,,,FALSE_POSITIVE,100,The character '$n$' represents a mathematical variable and is correctly formatted.
+8,,,,,PARSING_ERROR,95,"The LaTeX command '\frac' has been incorrectly parsed, appearing as 'frac'."
+9,,,,,PARSING_ERROR,95,"The LaTeX command '\frac' has been incorrectly parsed, appearing as 'frac'."
+10,,,,,FALSE_POSITIVE,100,`frac` is part of a correct LaTeX mathematical expression `\frac{2}{3}` and is not an error.
+11,,,,,FALSE_POSITIVE,100,`frac` is part of a correct LaTeX mathematical expression `\frac{1}{2}` and is not an error.
+12,,,,,FALSE_POSITIVE,100,`frac` is part of a correct LaTeX mathematical expression `\frac{1}{9}` and is not an error.
+13,,,,,FALSE_POSITIVE,100,`frac` is part of a correct LaTeX mathematical expression `\frac{25}{16}` and is not an error.
+14,,,,,FALSE_POSITIVE,100,`frac` is part of a correct LaTeX mathematical expression `\frac{3}{2}` and is not an error.
+15,,,,,FALSE_POSITIVE,100,`frac` is part of a correct LaTeX mathematical expression `\frac{64}{125}` and is not an error.
+16,,,,,FALSE_POSITIVE,100,`frac` is part of a correct LaTeX mathematical expression `\frac{6^{31} \times 6^5}{6^{34}}` and is not an error.
+17,,,,,PARSING_ERROR,95,The word 'Fractions' has been incorrectly split across two table cells during markdown conversion.
+18,,,,,FALSE_POSITIVE,100,`frac` is part of a correct LaTeX mathematical expression `\frac{8}{25}` and is not an error.
+19,,,,,FALSE_POSITIVE,100,`frac` is part of a correct LaTeX mathematical expression `\frac{32}{100}` and is not an error.
+20,,,,,FALSE_POSITIVE,100,`\frac` is a correct LaTeX command for displaying fractions within a mathematical expression.
+21,,,,,FALSE_POSITIVE,100,`\frac` is a correct LaTeX command for displaying fractions within a mathematical expression.
+22,,,,,FALSE_POSITIVE,100,`\frac` is a correct LaTeX command for displaying fractions within a mathematical expression.
+23,,,,,FALSE_POSITIVE,100,`\frac` is a correct LaTeX command for displaying fractions within a mathematical expression.
+24,,,,,FALSE_POSITIVE,100,`\frac` is a correct LaTeX command for displaying fractions within a mathematical expression.
+25,,,,,FALSE_POSITIVE,100,`\frac` is a correct LaTeX command for displaying fractions within a mathematical expression.
+26,,,,,FALSE_POSITIVE,100,`\frac` is a correct LaTeX command for displaying fractions within a mathematical expression.
+27,,,,,FALSE_POSITIVE,100,`\frac` is a correct LaTeX command for displaying fractions within a mathematical expression.
+28,,,,,FALSE_POSITIVE,100,`\frac` is a correct LaTeX command for displaying fractions within a mathematical expression.
+29,,,,,FALSE_POSITIVE,100,`\frac` is a correct LaTeX command for displaying fractions within a mathematical expression.
+30,,,,,FALSE_POSITIVE,100,"This is a false positive; `\frac` is a correct LaTeX command for displaying fractions, not a spelling error."
+31,,,,,FALSE_POSITIVE,100,"This is a false positive; `\frac` is a correct LaTeX command for displaying fractions, not a spelling error."
+32,,,,,FALSE_POSITIVE,100,"This is a false positive; `\frac` is a correct LaTeX command for displaying fractions, not a spelling error."
+33,,,,,FALSE_POSITIVE,100,"This is a false positive; `\frac` is a correct LaTeX command for displaying fractions, not a spelling error."
+34,,,,,FALSE_POSITIVE,100,"This is a false positive; `\frac` is a correct LaTeX command for displaying fractions, not a spelling error."
+35,,,,,FALSE_POSITIVE,100,"This is a false positive; `\frac` is a correct LaTeX command for displaying fractions, not a spelling error."
+36,,,,,FALSE_POSITIVE,100,"This is a false positive; `\frac` is a correct LaTeX command for displaying fractions, not a spelling error."
+37,,,,,FALSE_POSITIVE,100,"This is a false positive; `\frac` is a correct LaTeX command for displaying fractions, not a spelling error."
+38,,,,,FALSE_POSITIVE,100,"This is a false positive; `\frac` is a correct LaTeX command for displaying fractions, not a spelling error."
+39,,,,,FALSE_POSITIVE,100,"This is a false positive; `\frac` is a correct LaTeX command for displaying fractions, not a spelling error."
+40,,,,,FALSE_POSITIVE,100,"`frac` is a LaTeX command for fractions and is correctly used within mathematical expressions, not a word."
+41,,,,,FALSE_POSITIVE,100,"`frac` is a LaTeX command for fractions and is correctly used within mathematical expressions, not a word."
+42,,,,,FALSE_POSITIVE,100,"`frac` is a LaTeX command for fractions and is correctly used within mathematical expressions, not a word."
+43,,,,,FALSE_POSITIVE,100,"`frac` is a LaTeX command for fractions and is correctly used within mathematical expressions, not a word."
+44,,,,,PARSING_ERROR,95,The text `the same rate.'` is a fragment resulting from a parsing error where a sentence was split across table cells.
+45,,,,,PARSING_ERROR,95,"The quoted text is incomplete, indicating a parsing error where the sentence was truncated or split across table cells."
+46,,,,,PARSING_ERROR,100,"The word fragment 'nt' is a result of a severe parsing error, likely intended to be part of 'amount'."
+47,,,,,PARSING_ERROR,100,"The merged word 'montheeded' is a result of a severe parsing error, likely intended to be 'month needed'."
+48,,,,,PARSING_ERROR,100,"The word fragment 'Iy' is a result of a severe parsing error, likely intended to be part of 'interest'."
+49,,,,,PARSING_ERROR,100,"The isolated 'a' is part of a severely garbled phrase, indicating a parsing error."
+50,,,,,PARSING_ERROR,100,The word 'onthly' is a parsing error and should be 'monthly'.
+51,,,,,PARSING_ERROR,90,"The word 'save' appears to be a parsing error within a garbled sentence, likely intended to be 'saved' or part of a different phrase."
+52,,,,,PARSING_ERROR,100,The word 'nly' is a parsing error and should be 'only'.
+53,,,,,PARSING_ERROR,100,"The word 'nt' is a parsing error within a garbled sentence, likely part of a longer word like 'amount'."
+54,,,,,POSSIBLE_AMBIGUOUS_GRAMMATICAL_ERROR,75,"The phrase '√2 fraction' is not standard mathematical terminology and could be rephrased for clarity, such as 'a fraction involving √2'."
+55,,,,,FALSE_POSITIVE,100,The letter 'a' is correctly used as a mathematical variable in this context.
+56,,,,,PARSING_ERROR,100,The word 'Strano' is a parsing error and should be 'Strand'.
+57,,,,,PARSING_ERROR,100,The word 'Alç' is a parsing error and should be 'Algebraic'.
+58,,,,,PARSING_ERROR,100,"The word 'gebraic' is a parsing error, forming part of the corrupted word 'Algebraic' with the preceding 'Alç'."
+59,,,,,FALSE_POSITIVE,100,The mathematical notation '$ab$' is correctly used to represent 'a multiplied by b'.
+60,,,,,FALSE_POSITIVE,100,The highlighted text `$a` is part of a mathematical expression delimited by `$` and is correct as written.
+61,,,,,FALSE_POSITIVE,100,The highlighted text `b$` is part of a mathematical expression delimited by `$` and is correct as written.
+62,,,,,FALSE_POSITIVE,100,The highlighted text `$a` is part of a mathematical expression delimited by `$` and is correct as written.
+63,,,,,FALSE_POSITIVE,100,The highlighted text `a$` is part of a mathematical expression delimited by `$` and is correct as written.
+64,,,,,FALSE_POSITIVE,100,The highlighted text `a$` is part of a mathematical expression delimited by `$` and is correct as written.
+65,,,,,FALSE_POSITIVE,100,The highlighted text `$y$` is a complete mathematical expression delimited by `$` and is correct as written.
+66,,,,,FALSE_POSITIVE,100,The highlighted text `$a` is part of a mathematical expression delimited by `$` and is correct as written.
+67,,,,,FALSE_POSITIVE,100,The highlighted text `$a` is part of a mathematical expression delimited by `$` and is correct as written.
+68,,,,,FALSE_POSITIVE,100,The highlighted text `a$` is part of a mathematical expression delimited by `$` and is correct as written.
+69,,,,,FALSE_POSITIVE,100,The highlighted text `$a` is part of a mathematical expression delimited by `$` and is correct as written.
+70,,,,,FALSE_POSITIVE,100,The highlighted text `$a` is part of a mathematical expression correctly formatted with LaTeX delimiters.
+71,,,,,FALSE_POSITIVE,100,The highlighted text `a$` is part of a mathematical expression correctly formatted with LaTeX delimiters.
+72,,,,,FALSE_POSITIVE,100,The highlighted text `$a` is part of a mathematical expression correctly formatted with LaTeX delimiters.
+73,,,,,FALSE_POSITIVE,100,The highlighted text `$a` is part of a mathematical expression correctly formatted with LaTeX delimiters.
+74,,,,,FALSE_POSITIVE,100,The highlighted text `b$` is part of a mathematical expression correctly formatted with LaTeX delimiters.
+75,,,,,FALSE_POSITIVE,100,The highlighted text `frac` is a correct LaTeX command for fractions within a mathematical expression.
+76,,,,,FALSE_POSITIVE,100,The highlighted text `$a` is part of a mathematical expression correctly formatted with LaTeX delimiters.
+77,,,,,FALSE_POSITIVE,100,The highlighted text `b$` is part of a mathematical expression correctly formatted with LaTeX delimiters.
+78,,,,,FALSE_POSITIVE,100,"The word 'terms' is used correctly in the context 'definitions of the terms equation, expression and formula'."
+79,,,,,FALSE_POSITIVE,100,The highlighted text `$a$` is a mathematical variable correctly formatted with LaTeX delimiters.
+80,,,,,FALSE_POSITIVE,100,The mathematical variable '$b$' is correctly formatted within LaTeX math mode and is not an error.
+81,,,,,FALSE_POSITIVE,100,The mathematical variable '$x$' is correctly formatted within LaTeX math mode and is not an error.
+82,,,,,FALSE_POSITIVE,100,The mathematical variable '$a$' is correctly formatted within LaTeX math mode and is not an error.
+83,,,,,FALSE_POSITIVE,100,The mathematical variable '$b$' is correctly formatted within LaTeX math mode and is not an error.
+84,,,,,FALSE_POSITIVE,100,The mathematical variable '$t$' is correctly formatted within LaTeX math mode and is not an error.
+85,,,,,FALSE_POSITIVE,100,The mathematical variable '$y$' is correctly formatted within LaTeX math mode and is not an error.
+86,,,,,FALSE_POSITIVE,100,The mathematical variable '$k$' is correctly formatted within LaTeX math mode and is not an error.
+87,,,,,FALSE_POSITIVE,100,"The string 'frac' is part of the LaTeX command '\frac' for fractions, which is correctly used in math mode."
+88,,,,,FALSE_POSITIVE,100,"The string 'qquad' is part of the LaTeX command '\qquad' for horizontal spacing, which is correctly used in math mode."
+89,,,,,FALSE_POSITIVE,100,"The string 'frac' is part of the LaTeX command '\frac' for fractions, which is correctly used in math mode."
+90,,,,,FALSE_POSITIVE,100,"`frac` is a LaTeX command for fractions, correctly used within a mathematical expression."
+91,,,,,FALSE_POSITIVE,100,"`qquad` is a LaTeX command for horizontal spacing, correctly used within a mathematical expression."
+92,,,,,FALSE_POSITIVE,100,"`frac` is a LaTeX command for fractions, correctly used within a mathematical expression."
+93,,,,,FALSE_POSITIVE,100,"`frac` is a LaTeX command for fractions, correctly used within a mathematical expression."
+94,,,,,FALSE_POSITIVE,100,"`qquad` is a LaTeX command for horizontal spacing, correctly used within a mathematical expression."
+95,,,,,FALSE_POSITIVE,100,"`frac` is a LaTeX command for fractions, correctly used within a mathematical expression."
+96,,,,,FALSE_POSITIVE,100,"`frac` is a LaTeX command for fractions, correctly used within a mathematical expression."
+97,,,,,FALSE_POSITIVE,100,"`frac` is a LaTeX command for fractions, correctly used within a mathematical expression."
+98,,,,,FALSE_POSITIVE,100,"`frac` is a LaTeX command for fractions, correctly used within a mathematical expression."
+99,,,,,FALSE_POSITIVE,100,"`frac` is a LaTeX command for fractions, correctly used within a mathematical expression."
+100,,,,,FALSE_POSITIVE,100,"`frac` is part of a correctly formatted LaTeX math command `\frac`, which should not be flagged as an error."
+101,,,,,FALSE_POSITIVE,100,"`frac` is part of a correctly formatted LaTeX math command `\frac`, which should not be flagged as an error."
+102,,,,,FALSE_POSITIVE,100,"`frac` is part of a correctly formatted LaTeX math command `\frac`, which should not be flagged as an error."
+103,,,,,FALSE_POSITIVE,100,"`frac` is part of a correctly formatted LaTeX math command `\frac`, which should not be flagged as an error."
+104,,,,,FALSE_POSITIVE,100,"`frac` is part of a correctly formatted LaTeX math command `\frac`, which should not be flagged as an error."
+105,,,,,PARSING_ERROR,95,"The extra space before 'and' is likely a parsing artifact from the markdown conversion, as the original phrase 'linear and the other' is grammatically correct."
+106,,,,,FALSE_POSITIVE,100,`$nx$` is a correctly formatted mathematical expression in LaTeX and should not be flagged as an error.
+107,,,,,FALSE_POSITIVE,100,`$n$` is a correctly formatted mathematical variable in LaTeX and should not be flagged as an error.
+108,,,,,FALSE_POSITIVE,100,`$x$` is part of a correctly formatted mathematical expression `$x^2$` in LaTeX and should not be flagged as an error.
+109,,,,,FALSE_POSITIVE,100,`$ax$` is part of a correctly formatted mathematical expression `$ax^2$` in LaTeX and should not be flagged as an error.
+110,,,,,FALSE_POSITIVE,100,"This is a correctly formatted mathematical variable within LaTeX, not a spelling error."
+111,,,,,FALSE_POSITIVE,100,"This is a correctly formatted mathematical variable within LaTeX, not a spelling error."
+112,,,,,FALSE_POSITIVE,100,"This is a correctly formatted mathematical variable within LaTeX, not a spelling error."
+113,,,,,FALSE_POSITIVE,100,"This is a correctly formatted mathematical variable within LaTeX, not a spelling error."
+114,,,,,FALSE_POSITIVE,100,"This is a correctly formatted mathematical variable followed by a LaTeX closing delimiter, not a spelling error."
+115,,,,,FALSE_POSITIVE,100,"This is a correctly formatted mathematical variable within LaTeX, not a spelling error."
+116,,,,,FALSE_POSITIVE,100,"`\frac` is a correct LaTeX command for displaying fractions, not a spelling error."
+117,,,,,FALSE_POSITIVE,100,"`\frac` is a correct LaTeX command for displaying fractions, not a spelling error."
+118,,,,,FALSE_POSITIVE,100,"This is a correctly formatted mathematical variable followed by a LaTeX closing delimiter, not a spelling error."
+119,,,,,FALSE_POSITIVE,100,"This is a correctly formatted mathematical variable within LaTeX, not a spelling error."
+120,,,,,FALSE_POSITIVE,100,"The '$x$' is correctly formatted LaTeX for a mathematical variable, not a spelling error."
+121,,,,,FALSE_POSITIVE,100,The '$a' is the start of a correctly formatted LaTeX mathematical expression.
+122,,,,,FALSE_POSITIVE,100,The '\frac' is a correct LaTeX command for fractions within a mathematical expression.
+123,,,,,FALSE_POSITIVE,100,The 'c$' is the end of a correctly formatted LaTeX mathematical expression.
+124,,,,,FALSE_POSITIVE,100,The '$d' is the start of a correctly formatted LaTeX mathematical expression.
+125,,,,,FALSE_POSITIVE,100,The '\frac' is a correct LaTeX command for fractions within a mathematical expression.
+126,,,,,FALSE_POSITIVE,100,The '$k' is the start of a correctly formatted LaTeX mathematical expression.
+127,,,,,FALSE_POSITIVE,100,The '$n' is the start of a correctly formatted LaTeX mathematical expression.
+128,,,,,FALSE_POSITIVE,100,The '$p' is the start of a correctly formatted LaTeX mathematical expression.
+129,,,,,FALSE_POSITIVE,100,The '$A' is the start of a correctly formatted LaTeX mathematical expression.
+130,,,,,FALSE_POSITIVE,100,The highlighted text `$h` is a correct mathematical variable within LaTeX inline math mode.
+131,,,,,FALSE_POSITIVE,100,The highlighted text `$z` is a correct mathematical variable within LaTeX inline math mode.
+132,,,,,FALSE_POSITIVE,100,The highlighted text `$k` is a correct mathematical variable within LaTeX inline math mode.
+133,,,,,PARSING_ERROR,95,The highlighted text `d$` is a parsing error; it should be `$d$` to correctly represent a mathematical variable.
+134,,,,,FALSE_POSITIVE,100,The highlighted text `frac` is part of a correct LaTeX command `\frac` for displaying fractions.
+135,,,,,FALSE_POSITIVE,100,The highlighted text `frac` is part of a correct LaTeX command `\frac` for displaying fractions.
+136,,,,,PARSING_ERROR,95,The highlighted text `c$` is a parsing error; it should be `$c$` to correctly represent a mathematical variable.
+137,,,,,FALSE_POSITIVE,100,The highlighted text `frac` is part of a correct LaTeX command `\frac` for displaying fractions.
+138,,,,,PARSING_ERROR,95,The highlighted text `s$` is a parsing error; it should be `$s$` to correctly represent a mathematical variable.
+139,,,,,FALSE_POSITIVE,100,The highlighted text `frac` is part of a correct LaTeX command `\frac` for displaying fractions.
+140,,,,,PARSING_ERROR,95,"The mathematical variable '$n$' is correctly formatted, but its separation from 'th' in '$n$ th term' is a parsing error; it should be 'nth term' or '$n$-th term'."
+141,,,,,PARSING_ERROR,95,"The 'th' suffix is incorrectly separated from '$n$' in '$n$ th term', indicating a parsing error where a hyphen or correct compound word formation is missing."
+142,,,,,PARSING_ERROR,95,"The highlight '$n' indicates an incomplete mathematical expression, suggesting a parsing error where the LaTeX math environment was not fully captured."
+143,,,,,PARSING_ERROR,95,"The highlight '$n' indicates an incomplete mathematical expression, suggesting a parsing error where the LaTeX math environment was not fully captured."
+144,,,,,PARSING_ERROR,95,"The mathematical variable '$n$' is correctly formatted, but its separation from 'th' in '$n$ th term' is a parsing error; it should be 'nth term' or '$n$-th term'."
+145,,,,,PARSING_ERROR,95,"The 'th' suffix is incorrectly separated from '$n$' in '$n$ th term', indicating a parsing error where a hyphen or correct compound word formation is missing."
+146,,,,,PARSING_ERROR,95,"The highlight '$n' indicates an incomplete mathematical expression, suggesting a parsing error where the LaTeX math environment was not fully captured."
+147,,,,,PARSING_ERROR,95,"The highlight 'b$' indicates an incomplete mathematical expression, suggesting a parsing error where the LaTeX math environment was not fully captured."
+148,,,,,PARSING_ERROR,95,"The highlight '$cn' indicates an incomplete mathematical expression, suggesting a parsing error where the LaTeX math environment was not fully captured."
+149,,,,,PARSING_ERROR,95,"The highlight 'd$' indicates an incomplete mathematical expression, suggesting a parsing error where the LaTeX math environment was not fully captured."
+150,,,,,FALSE_POSITIVE,100,The highlighted text '$a' is a mathematical variable correctly formatted within a LaTeX-like expression.
+151,,,,,FALSE_POSITIVE,100,The highlighted text '$b' is a mathematical variable correctly formatted within a LaTeX-like expression.
+152,,,,,FALSE_POSITIVE,100,The highlighted text '$d' is a mathematical variable correctly formatted within a LaTeX-like expression.
+153,,,,,FALSE_POSITIVE,100,The highlighted text '$x' is a mathematical variable correctly formatted within a LaTeX-like expression.
+154,,,,,FALSE_POSITIVE,100,The highlighted text 'a$' is a mathematical variable correctly formatted within a LaTeX-like expression.
+155,,,,,FALSE_POSITIVE,100,The highlighted text '$y' is a mathematical variable correctly formatted within a LaTeX-like expression.
+156,,,,,FALSE_POSITIVE,100,The highlighted text 'b$' is a mathematical variable correctly formatted within a LaTeX-like expression.
+157,,,,,FALSE_POSITIVE,100,The highlighted text '$y' is a mathematical variable correctly formatted within a LaTeX-like expression.
+158,,,,,FALSE_POSITIVE,100,The highlighted text 'b$' is a mathematical variable correctly formatted within a LaTeX-like expression.
+159,,,,,FALSE_POSITIVE,100,The highlighted text '$y' is a mathematical variable correctly formatted within a LaTeX-like expression.
+160,,,,,FALSE_POSITIVE,100,The mathematical variable '$y$' is correctly used within a mathematical expression.
+161,,,,,FALSE_POSITIVE,100,The mathematical variable '$x$' is correctly used within a mathematical expression.
+162,,,,,FALSE_POSITIVE,100,The mathematical variable '$y$' is correctly used within a mathematical expression.
+163,,,,,FALSE_POSITIVE,100,The mathematical variable '$y$' is correctly used within a mathematical expression.
+164,,,,,FALSE_POSITIVE,100,The mathematical variable '$y$' is correctly used within a mathematical expression.
+165,,,,,FALSE_POSITIVE,100,The mathematical variable '$y$' is correctly used within a mathematical expression.
+166,,,,,FALSE_POSITIVE,100,The mathematical variable '$y$' is correctly used within a mathematical expression.
+167,,,,,FALSE_POSITIVE,100,The mathematical variable '$y$' is correctly used within a mathematical expression.
+168,,,,,FALSE_POSITIVE,100,"'frac' is part of a correctly formatted LaTeX command '\frac' for fractions, not a standalone word."
+169,,,,,FALSE_POSITIVE,100,The mathematical variable '$y$' is correctly used within a mathematical expression.
+170,,,,,FALSE_POSITIVE,100,"This is a correct mathematical expression in LaTeX format, where '$' denotes the end of an inline math environment."
+171,,,,,FALSE_POSITIVE,100,"This is a correct mathematical expression in LaTeX format, where '$' denotes the start of an inline math environment."
+172,,,,,FALSE_POSITIVE,100,"This is a correct mathematical expression in LaTeX format, where '$' denotes the end of an inline math environment."
+173,,,,,FALSE_POSITIVE,100,"This is a correct mathematical expression in LaTeX format, where '$' denotes the start of an inline math environment."
+174,,,,,FALSE_POSITIVE,100,"This is a correct mathematical expression in LaTeX format, where '$' denotes the end of an inline math environment."
+175,,,,,FALSE_POSITIVE,100,"This is a correct mathematical expression in LaTeX format, where '$' denotes the start of an inline math environment."
+176,,,,,FALSE_POSITIVE,100,"This is a correct mathematical expression in LaTeX format, where '$' denotes the end of an inline math environment."
+177,,,,,FALSE_POSITIVE,100,"This is a correct mathematical expression in LaTeX format, where '$' denotes the start of an inline math environment."
+178,,,,,FALSE_POSITIVE,100,"This is a correct mathematical expression in LaTeX format, where '$' denotes the start of an inline math environment."
+179,,,,,PARSING_ERROR,95,This appears to be a parsing error or typo; it should likely be 'Strand' to match the table header and content structure.
+180,,,,,PARSING_ERROR,100,The word 'Maps' has been incorrectly split into 'Ma' and 'aps' due to a parsing error.
+181,,,,,PARSING_ERROR,100,The word 'representation' has been incorrectly split due to a parsing error.
+182,,,,,PARSING_ERROR,100,The word 'Angle' has been incorrectly split into 'An' and 'gle' due to a parsing error.
+183,,,,,FALSE_POSITIVE,100,This is part of a correctly formatted LaTeX mathematical expression for an angle.
+184,,,,,FALSE_POSITIVE,100,This is a correctly used LaTeX command within a mathematical expression.
+185,,,,,FALSE_POSITIVE,100,This is part of a correctly formatted LaTeX mathematical expression for an angle.
+186,,,,,FALSE_POSITIVE,100,This is a correctly formatted LaTeX mathematical expression for a line segment.
+187,,,,,FALSE_POSITIVE,90,This is a correct and acceptable mathematical notation for an angle.
+188,,,,,STYLISTIC_PREFERENCE,80,"'Key words' is an acceptable compound noun, although 'keywords' is also common."
+189,,,,,FALSE_POSITIVE,90,This is a correct and acceptable mathematical notation for an angle.
+190,,,,,FALSE_POSITIVE,100,`frac` is a correct LaTeX command for displaying fractions and is not a spelling error.
+191,,,,,PARSING_ERROR,100,The word 'Geometry' has been incorrectly split across table cells due to a parsing error.
+192,,,,,FALSE_POSITIVE,100,`mpg` is a standard and correctly used abbreviation for miles per gallon.
+193,,,,,PARSING_ERROR,100,The word 'Perimeter' has been incorrectly split across table cells due to a parsing error.
+194,,,,,PARSING_ERROR,100,'Right-angled' should be hyphenated as it is a compound adjective modifying 'triangles'.
+195,,,,,PARSING_ERROR,100,`&#x27;` is an HTML entity for a single quote and should be rendered as `'`.
+196,,,,,POSSIBLE_AMBIGUOUS_GRAMMATICAL_ERROR,70,"While 'dice' is commonly used as both singular and plural, 'die' is the grammatically precise singular form in formal writing."
+197,,,,,FALSE_POSITIVE,100,`mpg` is a standard and correctly used abbreviation for miles per gallon.
+198,,,,,ABSOLUTE_GRAMMATICAL_ERROR,100,'Criteria' is a plural noun; the singular form 'criterion' should be used with the indefinite article 'a'.
+199,,,,,FALSE_POSITIVE,100,'Fete' is a correctly spelled English word referring to a public festival or fair.
+200,,,,,STYLISTIC_PREFERENCE,80,The word 'outside' is more concise and generally preferred over 'outside of' in formal writing.
+201,,,,,PARSING_ERROR,95,The compound adjective 'right-angled' requires a hyphen when preceding the noun it modifies.
+202,,,,,PARSING_ERROR,95,The compound noun 'cost-effectiveness' should be hyphenated.
+203,,,,,FALSE_POSITIVE,95,The comma is correctly used to separate items in a list of parallel clauses.
+204,,,,,STYLISTIC_PREFERENCE,85,"While 'semi-circle' is acceptable, 'semicircle' is the more common and often preferred spelling in modern English."
+205,,,,,FALSE_POSITIVE,90,The compound adjective 'multi-step' is correctly hyphenated.
+206,,,,,FALSE_POSITIVE,90,The word 'personal' is correctly used in the phrase 'Key personal and social skills'.
+207,,,,,PARSING_ERROR,95,The compound noun 'self-evaluation' requires a hyphen.

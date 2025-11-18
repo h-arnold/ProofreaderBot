@@ -1,0 +1,60 @@
+issue_id,page_number,issue,highlighted_context,pass_code,error_category,confidence_score,reasoning
+0,,,,,PARSING_ERROR,100,The word 'NTRODUCTION' is a parsing error; it should be 'INTRODUCTION'.
+1,,,,,PARSING_ERROR,100,'Un' is a parsing error; it should be 'Unit' as part of 'Unit 1'.
+2,,,,,PARSING_ERROR,100,'Un' is a parsing error; it should be 'Unit' as part of 'Unit 2'.
+3,,,,,PARSING_ERROR,100,'Un' is a parsing error; it should be 'Unit' as part of 'Unit 3'.
+4,,,,,PARSING_ERROR,100,'Un' is a parsing error; it should be 'Unit' as part of 'Unit 4'.
+5,,,,,PARSING_ERROR,100,'Un' is a parsing error; it should be 'Unit' as part of 'Unit 5'.
+6,,,,,PARSING_ERROR,100,'Un' is a parsing error; it should be 'Unit' as part of 'Unit 6'.
+7,,,,,PARSING_ERROR,100,'portunities' is a parsing error; it should be 'Opportunities' with the preceding 'Op'.
+8,,,,,PARSING_ERROR,100,'endix' is a parsing error; it should be 'Appendix A'.
+9,,,,,PARSING_ERROR,100,'endix' is a parsing error; it should be 'Appendix B'.
+10,,,,,PARSING_ERROR,95,"An extraneous space has been introduced after '𝑛th', which is a common parsing error."
+11,,,,,PARSING_ERROR,95,"An extraneous space has been introduced after '𝑛th', which is a common parsing error."
+12,,,,,PARSING_ERROR,100,The HTML/Markdown tag `</l**i&gt;&lt;**/ul&gt;` is malformed and should be `</li></ul>`.
+13,,,,,FALSE_POSITIVE,80,"The `</li>` tag is correctly used to close the list item; the actual issue lies in the mangled mathematical expression preceding it, which the tool did not highlight."
+14,,,,,PARSING_ERROR,100,The mathematical expression `d𝑦 𝑥 𝑛 (𝑛 −1) = 𝑥 then 𝑦 = + 𝑐 ≠ d𝑥 𝑛+1` is severely mangled due to a parsing error.
+15,,,,,FALSE_POSITIVE,80,"The `</li>` tag is correctly used to close the list item; the actual issue lies in the mangled mathematical expression preceding it, which the tool did not highlight."
+16,,,,,PARSING_ERROR,95,"An extraneous space has been introduced after '𝑥-axis', which is a common parsing error."
+17,,,,,PARSING_ERROR,95,"An extraneous space has been introduced after '𝑥-axis', which is a common parsing error."
+18,,,,,FALSE_POSITIVE,80,"The term 'sin𝜃,' is correctly punctuated as part of a list; the actual issue lies in the mangled mathematical expressions that follow, which the tool did not fully highlight."
+19,,,,,PARSING_ERROR,100,"The expression `𝑦 𝑦 = = cos𝜃` is a clear parsing error, likely intended to be `cos𝜃` or `y = cos𝜃`."
+20,,,,,PARSING_ERROR,100,"The text `𝑦 𝑦 = = cos𝜃 𝑦 = tan𝜃` is a clear parsing error, likely from `y = sin𝜃, y = cos𝜃, y = tan𝜃`."
+21,,,,,PARSING_ERROR,100,The `and<` is a parsing error where HTML list closing tags have been partially rendered.
+22,,,,,PARSING_ERROR,100,The mathematical identity `sin²𝜃 + cos²𝜃 ≡ 1` has been incorrectly parsed as `sin2𝜃 cos2𝜃 + ≡ 1`.
+23,,,,,PARSING_ERROR,100,This is a parsing error within the mathematical identity `sin²𝜃 + cos²𝜃 ≡ 1`.
+24,,,,,PARSING_ERROR,100,The formula for the area of a triangle `1/2 ab sinC` has been incorrectly parsed as `𝑎𝑏sin𝐶. 2`.
+25,,,,,PARSING_ERROR,100,The formula for the area of a triangle `1/2 ab sinC` has been incorrectly parsed as `1 𝑎𝑏sin𝐶 to solve problems in 2 2D`.
+26,,,,,PARSING_ERROR,100,"The compound adjective 'non-uniform' should be hyphenated, consistent with the section title."
+27,,,,,FALSE_POSITIVE,100,'An' is the correct article before 'Eulerian' because 'Eulerian' begins with a vowel sound.
+28,,,,,STYLISTIC_PREFERENCE,80,"'Outside' is sufficient without 'of' in this context, making the phrase more concise."
+29,,,,,PARSING_ERROR,100,'Solar-powered' should be hyphenated as it functions as a compound adjective modifying an implied noun.
+30,,,,,FALSE_POSITIVE,100,`$$` is a LaTeX delimiter for display math and is correctly used here.
+31,,,,,FALSE_POSITIVE,100,`\frac` is a LaTeX command for fractions and is correctly used here.
+32,,,,,FALSE_POSITIVE,100,`\frac` is a LaTeX command for fractions and is correctly used here.
+33,,,,,FALSE_POSITIVE,100,`$$` is a LaTeX delimiter for display math and is correctly used here.
+34,,,,,FALSE_POSITIVE,100,`\frac` is a LaTeX command for fractions and is correctly used here.
+35,,,,,FALSE_POSITIVE,100,`\frac` is a LaTeX command for fractions and is correctly used here.
+36,,,,,FALSE_POSITIVE,100,`\frac` is a LaTeX command for fractions and is correctly used here.
+37,,,,,FALSE_POSITIVE,100,`\frac` is a LaTeX command for fractions and is correctly used here.
+38,,,,,FALSE_POSITIVE,100,`$$` is a LaTeX delimiter for display math and is correctly used here.
+39,,,,,FALSE_POSITIVE,100,`$$` is a LaTeX delimiter for display math and is correctly used here.
+40,,,,,FALSE_POSITIVE,100,The `$$` are LaTeX delimiters for a math block and are correctly used here.
+41,,,,,FALSE_POSITIVE,100,The `$$` are LaTeX delimiters for a math block and are correctly used here.
+42,,,,,FALSE_POSITIVE,100,`\frac` is a correct LaTeX command for displaying fractions within a math block.
+43,,,,,FALSE_POSITIVE,100,`\frac` is a correct LaTeX command for displaying fractions within a math block.
+44,,,,,FALSE_POSITIVE,100,The `$$` are LaTeX delimiters for a math block and are correctly used here.
+45,,,,,FALSE_POSITIVE,100,`\frac` is a correct LaTeX command for displaying fractions within a math block.
+46,,,,,FALSE_POSITIVE,100,`\frac` is a correct LaTeX command for displaying fractions within a math block.
+47,,,,,FALSE_POSITIVE,100,The `$$` are LaTeX delimiters for a math block and are correctly used here.
+48,,,,,FALSE_POSITIVE,100,The `$$` are LaTeX delimiters for a math block and are correctly used here.
+49,,,,,FALSE_POSITIVE,100,The `$$` are LaTeX delimiters for a math block and are correctly used here.
+50,,,,,FALSE_POSITIVE,100,"The highlighted text is part of a correctly formatted LaTeX mathematical expression, where `$$` are delimiters."
+51,,,,,FALSE_POSITIVE,100,"The highlighted text is part of a correctly formatted LaTeX mathematical expression, where `$$` are delimiters."
+52,,,,,FALSE_POSITIVE,100,"The highlighted text `frac` is part of the LaTeX command `\frac`, which is correct within a mathematical expression."
+53,,,,,FALSE_POSITIVE,100,"The highlighted text is part of a correctly formatted LaTeX mathematical expression, where `$$` are delimiters."
+54,,,,,FALSE_POSITIVE,100,"The highlighted text is part of a correctly formatted LaTeX mathematical expression, where `$$` are delimiters."
+55,,,,,FALSE_POSITIVE,100,"The highlighted text `frac` is part of the LaTeX command `\frac`, which is correct within a mathematical expression."
+56,,,,,FALSE_POSITIVE,100,"The highlighted text is part of a correctly formatted LaTeX mathematical expression, where `$$` are delimiters."
+57,,,,,POSSIBLE_AMBIGUOUS_GRAMMATICAL_ERROR,80,"While not strictly incorrect, 'If it forms a cycle' would be more direct and standard for an algorithm instruction than 'If it would form a cycle'."
+58,,,,,PARSING_ERROR,95,"The HTML entity `&#x27;` should be rendered as a literal prime symbol (G') in mathematical notation, indicating a parsing error from the original document."

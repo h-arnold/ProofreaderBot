@@ -1,0 +1,148 @@
+issue_id,page_number,issue,highlighted_context,pass_code,error_category,confidence_score,reasoning
+0,,,,,STYLISTIC_PREFERENCE,75,"Adding a comma before 'but' in this context would improve readability, though it is not strictly grammatically required as it does not separate two independent clauses."
+1,,,,,STYLISTIC_PREFERENCE,80,"While 'outside of' is common, 'outside' is more concise and generally preferred in formal writing."
+2,,,,,STYLISTIC_PREFERENCE,75,"Adding a comma before 'but' in this context would improve readability, though it is not strictly grammatically required as it does not separate two independent clauses."
+3,,,,,STYLISTIC_PREFERENCE,75,"Adding a comma before 'but' in this context would improve readability, though it is not strictly grammatically required as it does not separate two independent clauses."
+4,,,,,FALSE_POSITIVE,100,"The word 'centres' is correctly used as a plural noun, not a possessive, so no apostrophe is needed."
+5,,,,,FALSE_POSITIVE,100,"The text '(an)statt' is a correct German grammatical notation indicating that 'anstatt' can also be written as 'statt', and does not require a hyphen."
+6,,,,,FALSE_POSITIVE,100,"'er' is a German pronoun and is correctly lowercase in this list of pronouns, as it does not begin a sentence."
+7,,,,,FALSE_POSITIVE,100,'[ei/ai]' is a correct representation of German sound-spelling correspondence and does not require punctuation.
+8,,,,,FALSE_POSITIVE,100,'[au]' is a correct representation of German sound-spelling correspondence and does not require punctuation.
+9,,,,,PARSING_ERROR,95,'Ever-changing' should be hyphenated as a compound adjective modifying 'language' in UK English.
+10,,,,,PARSING_ERROR,95,Gender-neutral should be hyphenated as a compound adjective modifying 'language' in UK English.
+11,,,,,PARSING_ERROR,95,School-leaving should be hyphenated as a compound adjective modifying 'exam' in UK English.
+12,,,,,PARSING_ERROR,90,Inter-City should be hyphenated as a compound adjective modifying 'train' for standard UK English usage.
+13,,,,,FALSE_POSITIVE,100,"The hyphen after 'hell-' correctly indicates it is a prefix, and the phrase accurately explains its meaning in context."
+14,,,,,PARSING_ERROR,95,24-hour should be hyphenated as a compound adjective modifying 'clock' in UK English.
+15,,,,,FALSE_POSITIVE,100,Österreich is the correct German spelling for Austria and is used appropriately in a German vocabulary list.
+16,,,,,FALSE_POSITIVE,100,Schweiz is the correct German spelling for Switzerland and is used appropriately in a German vocabulary list.
+17,,,,,SPELLING_ERROR,95,"Coca-Cola is a proper noun and registered trademark, requiring capitalization and hyphenation."
+18,,,,,FALSE_POSITIVE,100,"Gateau is a correct and commonly accepted English spelling for a rich cake, as listed in authoritative dictionaries."
+19,,,,,STYLISTIC_PREFERENCE,80,"Aeroplane is the preferred spelling in UK English, which WJEC documents typically follow, though airplane is also understood."
+20,,,,,FALSE_POSITIVE,95,The parenthesis is correctly used to indicate an optional part of the translation in this dictionary-style entry.
+21,,,,,FALSE_POSITIVE,95,"The repetition is intentional, representing the German word 'Arm' followed by its English translation 'arm' in a dictionary format."
+22,,,,,FALSE_POSITIVE,95,"The repetition is intentional, representing the German word 'Bank' followed by its English translation 'bank' in a dictionary format."
+23,,,,,FALSE_POSITIVE,95,"The repetition is intentional, representing the German word 'Euro' followed by its English translation 'euro' in a dictionary format."
+24,,,,,FALSE_POSITIVE,95,'Grippe' is the correct German word for 'flu' and is used correctly in this German-English vocabulary list.
+25,,,,,FALSE_POSITIVE,95,"The repetition is intentional, representing the German word 'Integration' followed by its English translation 'integration' in a dictionary format."
+26,,,,,FALSE_POSITIVE,95,"The repetition is intentional, representing the German word 'Job' followed by its English translation 'job' in a dictionary format."
+27,,,,,STYLISTIC_PREFERENCE,80,'Movie theater' is American English; 'movie theatre' or simply 'cinema' (already present) would be preferred for UK English consistency.
+28,,,,,FALSE_POSITIVE,95,'Köln' is the correct German name for the city and is used correctly in this German-English vocabulary list.
+29,,,,,FALSE_POSITIVE,95,'an' is correctly used as part of the German phrase 'Mangel an Bewegung' meaning 'lack of movement'.
+30,,,,,FALSE_POSITIVE,100,München is the correct German spelling for the city Munich and is correctly paired with its English equivalent.
+31,,,,,FALSE_POSITIVE,100,The English word 'message' is correctly spelled and used as an equivalent for the German word 'Nachricht'.
+32,,,,,FALSE_POSITIVE,100,The term 'eco-tourism' is correctly spelled and hyphenated as per common UK English usage.
+33,,,,,SPELLING_ERROR,95,'Baltic Sea' is a proper noun and requires both words to be capitalized.
+34,,,,,PARSING_ERROR,100,"The missing pipe character between the German word 'Post' and its English translation 'post' has caused them to merge, indicating a parsing error."
+35,,,,,PARSING_ERROR,100,"The missing pipe character between the German word 'Portion' and its English translation 'portion' has caused them to merge, indicating a parsing error."
+36,,,,,PARSING_ERROR,100,"The missing pipe character between the German word 'Problem' and its English translation 'problem' has caused them to merge, indicating a parsing error."
+37,,,,,FALSE_POSITIVE,100,Wien is the correct German spelling for the city Vienna and is correctly paired with its English equivalent.
+38,,,,,FALSE_POSITIVE,100,"The English word 'apartment' is correctly spelled and used as an equivalent, despite the surrounding table formatting issue."
+39,,,,,PARSING_ERROR,95,The missing separator between 'ask' and 'asking' makes the phrase grammatically awkward and is likely a parsing error from the original document.
+40,,,,,FALSE_POSITIVE,95,The word 'an!' is part of the complete German phrase 'es kommt darauf an!' and is correct in this context.
+41,,,,,PARSING_ERROR,90,"The words 'depart' and 'departing' should be separated by a single space, not merged, indicating a parsing error."
+42,,,,,PARSING_ERROR,90,"The words 'off' and 'taking' should be separated by a single space, not merged, indicating a parsing error."
+43,,,,,PARSING_ERROR,90,There are multiple spaces between 'accept' and 'accepting'; it should be a single space for correct formatting.
+44,,,,,PARSING_ERROR,90,There are multiple spaces between 'arrive' and 'arriving'; it should be a single space for correct formatting.
+45,,,,,PARSING_ERROR,90,There are multiple spaces between 'call' and 'calling'; it should be a single space for correct formatting.
+46,,,,,PARSING_ERROR,90,There are multiple spaces between 'annoy' and 'annoying'; it should be a single space for correct formatting.
+47,,,,,PARSING_ERROR,90,"The words 'breathe' and 'breathing' should be separated by a single space, not merged, indicating a parsing error."
+48,,,,,PARSING_ERROR,90,There are multiple spaces between 'up' and 'giving'; it should be a single space for correct formatting.
+49,,,,,PARSING_ERROR,90,There are multiple spaces between 'stop' and 'stopping'; it should be a single space for correct formatting.
+50,,,,,PARSING_ERROR,95,The extra spaces between 'up' and 'growing up' are likely a formatting artifact from PDF conversion and should be reduced to a single space for standard readability.
+51,,,,,ABSOLUTE_GRAMMATICAL_ERROR,90,"A comma is required to separate the two distinct infinitive/gerund pairs: '(to) check out, try out, checking out, trying out'."
+52,,,,,STYLISTIC_PREFERENCE,80,"The document consistently uses multiple spaces to separate the infinitive and gerund forms, so adding a comma would deviate from the established style."
+53,,,,,STYLISTIC_PREFERENCE,80,"The document consistently uses multiple spaces to separate the infinitive and gerund forms, so adding a comma would deviate from the established style."
+54,,,,,STYLISTIC_PREFERENCE,80,"The document consistently uses multiple spaces to separate the infinitive and gerund forms, so adding a comma would deviate from the established style."
+55,,,,,STYLISTIC_PREFERENCE,80,"The document consistently uses multiple spaces to separate the infinitive and gerund forms, so adding a comma would deviate from the established style."
+56,,,,,STYLISTIC_PREFERENCE,80,"The document consistently uses multiple spaces to separate the infinitive and gerund forms, so adding a comma would deviate from the established style."
+57,,,,,STYLISTIC_PREFERENCE,80,"The document consistently uses multiple spaces to separate the infinitive and gerund forms, so adding a comma would deviate from the established style."
+58,,,,,STYLISTIC_PREFERENCE,80,"The document consistently uses multiple spaces to separate the infinitive and gerund forms, so adding a comma would deviate from the established style."
+59,,,,,STYLISTIC_PREFERENCE,80,"The document consistently uses multiple spaces to separate the infinitive and gerund forms, so adding a comma would deviate from the established style."
+60,,,,,PARSING_ERROR,100,"The missing hyphen between the infinitive and the present participle is a parsing error, consistent with the document's formatting."
+61,,,,,PARSING_ERROR,100,"The missing hyphen between the infinitive and the present participle is a parsing error, consistent with the document's formatting."
+62,,,,,PARSING_ERROR,100,"The missing hyphen between the infinitive and the present participle is a parsing error, consistent with the document's formatting."
+63,,,,,PARSING_ERROR,100,"The missing hyphen between the infinitive and the present participle is a parsing error, consistent with the document's formatting."
+64,,,,,PARSING_ERROR,100,"The missing hyphen between the infinitive and the present participle is a parsing error, consistent with the document's formatting."
+65,,,,,PARSING_ERROR,100,"The missing hyphen between the infinitive and the present participle is a parsing error, consistent with the document's formatting."
+66,,,,,PARSING_ERROR,100,"The missing hyphen between the infinitive and the present participle is a parsing error, consistent with the document's formatting."
+67,,,,,PARSING_ERROR,100,"The missing hyphen between the infinitive and the present participle is a parsing error, consistent with the document's formatting."
+68,,,,,PARSING_ERROR,95,"The missing hyphen between the infinitive phrase and its present participle form is a parsing error, consistent with the document's formatting."
+69,,,,,PARSING_ERROR,100,"The missing hyphen between the infinitive and the present participle is a parsing error, consistent with the document's formatting."
+70,,,,,FALSE_POSITIVE,100,The spacing between the infinitive and present participle forms of the verb is intentional for consistent formatting in this dictionary-style list.
+71,,,,,FALSE_POSITIVE,100,The spacing between the infinitive and present participle forms of the verb is intentional for consistent formatting in this dictionary-style list.
+72,,,,,FALSE_POSITIVE,100,The spacing between the infinitive and present participle forms of the verb is intentional for consistent formatting in this dictionary-style list.
+73,,,,,FALSE_POSITIVE,100,The spacing between the infinitive and present participle forms of the verb is intentional for consistent formatting in this dictionary-style list.
+74,,,,,FALSE_POSITIVE,100,The spacing between the infinitive and present participle forms of the verb is intentional for consistent formatting in this dictionary-style list.
+75,,,,,PARSING_ERROR,95,"The expected three spaces separating the infinitive and present participle forms of the verb are missing, indicating a parsing error."
+76,,,,,FALSE_POSITIVE,100,The spacing between the infinitive and present participle forms of the verb is intentional for consistent formatting in this dictionary-style list.
+77,,,,,FALSE_POSITIVE,100,The spacing between the infinitive and present participle forms of the verb is intentional for consistent formatting in this dictionary-style list.
+78,,,,,FALSE_POSITIVE,100,The spacing between the infinitive and present participle forms of the verb is intentional for consistent formatting in this dictionary-style list.
+79,,,,,FALSE_POSITIVE,100,The spacing between the infinitive and present participle forms of the verb is intentional for consistent formatting in this dictionary-style list.
+80,,,,,PARSING_ERROR,100,"A space is missing between the base verb 'ask' and its -ing form 'asking', which is a common parsing error."
+81,,,,,PARSING_ERROR,100,"A space is missing between the base verb 'freeze' and its -ing form 'freezing', which is a common parsing error."
+82,,,,,PARSING_ERROR,100,"A space is missing between the base verb 'feel' and its -ing form 'feeling', which is a common parsing error."
+83,,,,,PARSING_ERROR,100,"A space is missing between the base verb 'give' and its -ing form 'giving', which is a common parsing error."
+84,,,,,PARSING_ERROR,100,"A space is missing between the base verb 'go' and its -ing form 'going', which is a common parsing error."
+85,,,,,PARSING_ERROR,100,"A space is missing between the base verb 'belong' and its -ing form 'belonging', which is a common parsing error."
+86,,,,,PARSING_ERROR,100,"A space is missing between the base verb 'enjoy' and its -ing form 'enjoying', which is a common parsing error."
+87,,,,,PARSING_ERROR,100,"A space is missing between the base verb 'have' and its -ing form 'having', which is a common parsing error."
+88,,,,,PARSING_ERROR,100,"A space is missing between the base verb 'marry' and its -ing form 'marrying', which is a common parsing error."
+89,,,,,PARSING_ERROR,100,"A space is missing between the base verb 'download' and its -ing form 'downloading', which is a common parsing error."
+90,,,,,STYLISTIC_PREFERENCE,90,"The document consistently lists verb infinitive and gerund forms separated by a space, not a comma, making the suggestion a stylistic preference."
+91,,,,,STYLISTIC_PREFERENCE,90,"The document consistently lists verb infinitive and gerund forms separated by a space, not a comma, making the suggestion a stylistic preference."
+92,,,,,STYLISTIC_PREFERENCE,90,"The document consistently lists verb infinitive and gerund forms separated by a space, not a comma, making the suggestion a stylistic preference."
+93,,,,,STYLISTIC_PREFERENCE,90,"The document consistently lists verb infinitive and gerund forms separated by a space, not a comma, making the suggestion a stylistic preference."
+94,,,,,STYLISTIC_PREFERENCE,90,"The document consistently lists verb infinitive and gerund forms separated by a space, not a comma, making the suggestion a stylistic preference."
+95,,,,,STYLISTIC_PREFERENCE,90,"The document consistently lists verb infinitive and gerund forms separated by a space, not a comma, making the suggestion a stylistic preference."
+96,,,,,STYLISTIC_PREFERENCE,90,"The document consistently lists verb infinitive and gerund forms separated by a space, not a comma, making the suggestion a stylistic preference."
+97,,,,,STYLISTIC_PREFERENCE,90,"The document consistently lists verb infinitive and gerund forms separated by a space, not a comma, making the suggestion a stylistic preference."
+98,,,,,STYLISTIC_PREFERENCE,90,"The document consistently lists verb infinitive and gerund forms separated by a space, not a comma, making the suggestion a stylistic preference."
+99,,,,,STYLISTIC_PREFERENCE,90,"The document consistently lists verb infinitive and gerund forms separated by a space, not a comma, making the suggestion a stylistic preference."
+100,,,,,PARSING_ERROR,100,Multiple spaces should be replaced with a single space to match the established formatting convention for verb forms.
+101,,,,,PARSING_ERROR,100,Multiple spaces should be replaced with a single space to match the established formatting convention for verb forms.
+102,,,,,PARSING_ERROR,100,Multiple spaces should be replaced with a single space to match the established formatting convention for verb forms.
+103,,,,,FALSE_POSITIVE,100,"The original text already uses a single space, which aligns with the established formatting convention for verb forms."
+104,,,,,FALSE_POSITIVE,100,"The original text already uses a single space, which aligns with the established formatting convention for verb forms."
+105,,,,,PARSING_ERROR,100,Multiple spaces should be replaced with a single space to match the established formatting convention for verb forms.
+106,,,,,FALSE_POSITIVE,100,"The original text already uses a single space, which aligns with the established formatting convention for verb forms."
+107,,,,,PARSING_ERROR,100,Multiple spaces should be replaced with a single space to match the established formatting convention for verb forms.
+108,,,,,PARSING_ERROR,100,Multiple spaces should be replaced with a single space to match the established formatting convention for verb forms.
+109,,,,,PARSING_ERROR,100,Multiple spaces should be replaced with a single space to match the established formatting convention for verb forms.
+110,,,,,PARSING_ERROR,95,"A space is missing between the base verb and its -ing form, which is a common parsing error in this document's format."
+111,,,,,PARSING_ERROR,95,"A space is missing between the base verb and its -ing form, which is a common parsing error in this document's format."
+112,,,,,PARSING_ERROR,95,"A space is missing between the base verb and its -ing form, which is a common parsing error in this document's format."
+113,,,,,PARSING_ERROR,95,"A space is missing between the base verb and its -ing form, which is a common parsing error in this document's format."
+114,,,,,PARSING_ERROR,95,"A space is missing between the base verb and its -ing form, which is a common parsing error in this document's format."
+115,,,,,PARSING_ERROR,95,"A space is missing between the base verb and its -ing form, which is a common parsing error in this document's format."
+116,,,,,PARSING_ERROR,95,"A space is missing between the base verb and its -ing form, which is a common parsing error in this document's format."
+117,,,,,PARSING_ERROR,95,"A space is missing between the base verb and its -ing form, which is a common parsing error in this document's format."
+118,,,,,PARSING_ERROR,95,"A space is missing between the base verb and its -ing form, which is a common parsing error in this document's format."
+119,,,,,PARSING_ERROR,95,"A space is missing between the base verb and its -ing form, which is a common parsing error in this document's format."
+120,,,,,PARSING_ERROR,100,The double space should be a comma to correctly separate the infinitive and present participle forms.
+121,,,,,PARSING_ERROR,100,A comma is required to separate the infinitive and present participle forms.
+122,,,,,PARSING_ERROR,100,The double space should be a comma to correctly separate the infinitive and present participle forms.
+123,,,,,PARSING_ERROR,100,A comma is required to separate the infinitive phrase and its corresponding present participle phrase.
+124,,,,,PARSING_ERROR,100,A comma is required to separate the infinitive phrase and its corresponding present participle phrase.
+125,,,,,PARSING_ERROR,100,The double space should be a comma to correctly separate the infinitive and present participle forms.
+126,,,,,PARSING_ERROR,100,A comma is required to separate the infinitive and present participle forms.
+127,,,,,PARSING_ERROR,100,The double space should be a comma to correctly separate the infinitive and present participle forms.
+128,,,,,PARSING_ERROR,100,The double space should be a comma to correctly separate the infinitive and present participle forms.
+129,,,,,PARSING_ERROR,100,A comma is required to separate the infinitive and present participle forms.
+130,,,,,STYLISTIC_PREFERENCE,85,The omission of a comma between the infinitive and present participle is a consistent stylistic choice in this dictionary-like table format.
+131,,,,,STYLISTIC_PREFERENCE,85,The omission of a comma between the infinitive and present participle is a consistent stylistic choice in this dictionary-like table format.
+132,,,,,STYLISTIC_PREFERENCE,85,The omission of a comma between the infinitive and present participle is a consistent stylistic choice in this dictionary-like table format.
+133,,,,,STYLISTIC_PREFERENCE,85,The omission of a comma between the infinitive and present participle is a consistent stylistic choice in this dictionary-like table format.
+134,,,,,STYLISTIC_PREFERENCE,85,The omission of a comma between the infinitive and present participle is a consistent stylistic choice in this dictionary-like table format.
+135,,,,,STYLISTIC_PREFERENCE,85,The omission of a comma between the infinitive and present participle is a consistent stylistic choice in this dictionary-like table format.
+136,,,,,PARSING_ERROR,95,"The duplication of 'vorstellen' immediately after 'sichdat. vorstellen' is an unusual structure, likely a parsing error or data entry mistake."
+137,,,,,STYLISTIC_PREFERENCE,85,The omission of a comma between the infinitive and present participle is a consistent stylistic choice in this dictionary-like table format.
+138,,,,,STYLISTIC_PREFERENCE,85,The omission of a comma between the infinitive and present participle is a consistent stylistic choice in this dictionary-like table format.
+139,,,,,STYLISTIC_PREFERENCE,85,The omission of a comma between the infinitive and present participle is a consistent stylistic choice in this dictionary-like table format.
+140,,,,,POSSIBLE_AMBIGUOUS_GRAMMATICAL_ERROR,85,"The lack of a separator (e.g., comma or slash) between the infinitive and present participle verb forms makes the presentation awkward and less clear for educational materials."
+141,,,,,POSSIBLE_AMBIGUOUS_GRAMMATICAL_ERROR,85,"The lack of a separator (e.g., comma or slash) between the infinitive and present participle verb forms makes the presentation awkward and less clear for educational materials."
+142,,,,,POSSIBLE_AMBIGUOUS_GRAMMATICAL_ERROR,85,"The lack of a separator (e.g., comma or slash) between the infinitive and present participle verb forms makes the presentation awkward and less clear for educational materials."
+143,,,,,POSSIBLE_AMBIGUOUS_GRAMMATICAL_ERROR,85,"The lack of a separator (e.g., comma or slash) between the infinitive and present participle verb forms makes the presentation awkward and less clear for educational materials."
+144,,,,,POSSIBLE_AMBIGUOUS_GRAMMATICAL_ERROR,85,"The lack of a separator (e.g., comma or slash) between the infinitive and present participle verb forms makes the presentation awkward and less clear for educational materials."
+145,,,,,POSSIBLE_AMBIGUOUS_GRAMMATICAL_ERROR,85,"The lack of a separator (e.g., comma or slash) between the infinitive and present participle verb forms makes the presentation awkward and less clear for educational materials."
+146,,,,,POSSIBLE_AMBIGUOUS_GRAMMATICAL_ERROR,85,"The lack of a separator (e.g., comma or slash) between the infinitive and present participle verb forms makes the presentation awkward and less clear for educational materials."

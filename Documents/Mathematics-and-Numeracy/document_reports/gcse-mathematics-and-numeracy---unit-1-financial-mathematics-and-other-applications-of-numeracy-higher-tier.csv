@@ -1,0 +1,58 @@
+issue_id,page_number,issue,highlighted_context,pass_code,error_category,confidence_score,reasoning
+0,,,,,PARSING_ERROR,100,The `**frac**` is a misinterpretation of the LaTeX command `\frac` during parsing.
+1,,,,,FALSE_POSITIVE,100,"`h$$` is correctly used as part of a LaTeX mathematical expression, where `$$` denotes the end of a display math block."
+2,,,,,SPELLING_ERROR,90,"The compound noun 'cross-section' should be hyphenated in this technical context according to standard UK English conventions (OED, Collins)."
+3,,,,,PARSING_ERROR,100,The `**frac**` is a misinterpretation of the LaTeX command `\frac` during parsing.
+4,,,,,PARSING_ERROR,100,The `**frac**` is a misinterpretation of the LaTeX command `\frac` during parsing.
+5,,,,,FALSE_POSITIVE,100,"`h$` is correctly used as part of a LaTeX mathematical expression, where `$` denotes the end of an inline math block."
+6,,,,,FALSE_POSITIVE,100,"`rl$` is correctly used as part of a LaTeX mathematical expression, where `$` denotes the end of an inline math block."
+7,,,,,PARSING_ERROR,100,The `**frac**` is a misinterpretation of the LaTeX command `\frac` during parsing.
+8,,,,,PARSING_ERROR,100,"`shaı` is a parsing error, likely a garbled word from the original document, and the surrounding text is also fragmented."
+9,,,,,PARSING_ERROR,100,"`Cald` appears to be part of a severe parsing error, where text has been corrupted and repeated, likely from 'calculate' or similar."
+10,,,,,PARSING_ERROR,100,The word 'culate' is a parsing error; it should be 'Calculate'.
+11,,,,,PARSING_ERROR,100,"'Cald' is a parsing error, likely a misreading of 'and' or part of a name, given the context 'Siar Kim Cald'."
+12,,,,,PARSING_ERROR,100,The word 'culate' is a parsing error; it should be 'Calculate'.
+13,,,,,PARSING_ERROR,100,"'Cald' is a parsing error, likely a misreading of 'and' or part of a name, given the context 'Siar Kim Cald'."
+14,,,,,PARSING_ERROR,100,The word 'culate' is a parsing error; it should be 'Calculate'.
+15,,,,,PARSING_ERROR,100,"'Cald' is a parsing error, likely a misreading of 'and' or part of a name, given the context 'Siar Kim Cald'."
+16,,,,,PARSING_ERROR,100,The word 'culate' is a parsing error; it should be 'Calculate'.
+17,,,,,PARSING_ERROR,100,"'Cald' is a parsing error, likely a misreading of 'and' or part of a name, given the context 'Siar Kim Cald'."
+18,,,,,PARSING_ERROR,100,The word 'culate' is a parsing error; it should be 'Calculate'.
+19,,,,,PARSING_ERROR,100,"'Cald' is a parsing error, likely a misreading of 'and' or part of a name, given the context 'Siar Kim Cald'."
+20,,,,,PARSING_ERROR,100,"The word 'calculate' is truncated, missing its initial 'C', indicating a parsing error during conversion."
+21,,,,,PARSING_ERROR,95,"The word 'Cald' appears to be a parsing error, likely a corrupted word or part of a repeated phrase due to table extraction issues."
+22,,,,,PARSING_ERROR,100,"The word 'calculate' is truncated, missing its initial 'C', indicating a parsing error during conversion."
+23,,,,,PARSING_ERROR,95,"The word 'Cald' appears to be a parsing error, likely a corrupted word or part of a repeated phrase due to table extraction issues."
+24,,,,,PARSING_ERROR,100,"The word 'calculate' is truncated, missing its initial 'C', indicating a parsing error during conversion."
+25,,,,,PARSING_ERROR,95,"The word 'Cald' appears to be a parsing error, likely a corrupted word or part of a repeated phrase due to table extraction issues."
+26,,,,,PARSING_ERROR,100,"The word 'calculate' is truncated, missing its initial 'C', indicating a parsing error during conversion."
+27,,,,,PARSING_ERROR,100,"The word 'calculate' is truncated, missing its initial 'C', indicating a parsing error during conversion."
+28,,,,,PARSING_ERROR,95,"The word 'Cald' appears to be a parsing error, likely a corrupted word or part of a repeated phrase due to table extraction issues."
+29,,,,,PARSING_ERROR,100,"The word 'calculate' is truncated, missing its initial 'C', indicating a parsing error during conversion."
+30,,,,,FALSE_POSITIVE,100,"This is a correct LaTeX syntax for a mathematical formula, not an error."
+31,,,,,FALSE_POSITIVE,100,"`\frac` is a correct LaTeX command used within a mathematical formula, not an error."
+32,,,,,SPELLING_ERROR,95,"'£correct' is a placeholder that should be replaced with a numerical value, indicating incomplete content."
+33,,,,,FALSE_POSITIVE,100,"'Qu9c' is an internal reference code, correct in this specific context within a document title."
+34,,,,,PARSING_ERROR,100,"`&#x27;` is an HTML entity that should be rendered as a single quote or apostrophe, indicating a parsing error."
+35,,,,,PARSING_ERROR,100,"`&#x27;` is an HTML entity that should be rendered as a single quote or apostrophe, indicating a parsing error."
+36,,,,,STYLISTIC_PREFERENCE,85,"Standard UK English currency formatting places the Euro symbol directly before the amount without a space (e.g., '€540')."
+37,,,,,PARSING_ERROR,95,"There is an extraneous opening parenthesis, likely a parsing error or a typo."
+38,,,,,PARSING_ERROR,100,"`&#x27;` is an HTML entity that should be rendered as a single quote or apostrophe, indicating a parsing error."
+39,,,,,FALSE_POSITIVE,90,"'M1 m1' is a specific notation used in mark schemes, likely indicating a main method mark and a dependent or minor method mark."
+40,,,,,PARSING_ERROR,95,The extra parenthesis is a conversion error; the original likely intended `4(painters)`.
+41,,,,,PARSING_ERROR,95,The extra parenthesis is a conversion error; the original likely intended `4(painters)`.
+42,,,,,FALSE_POSITIVE,100,`\frac` is a correct LaTeX command for fractions and should not be flagged.
+43,,,,,FALSE_POSITIVE,100,`\frac` is a correct LaTeX command for fractions and should not be flagged.
+44,,,,,PARSING_ERROR,95,The bolding markdown `**` around 'and' is a parsing error from the conversion process.
+45,,,,,FALSE_POSITIVE,100,`\frac` is a correct LaTeX command for fractions and should not be flagged.
+46,,,,,FALSE_POSITIVE,100,`\frac` is a correct LaTeX command for fractions and should not be flagged.
+47,,,,,FALSE_POSITIVE,100,`\frac` is a correct LaTeX command for fractions and should not be flagged.
+48,,,,,FALSE_POSITIVE,100,`\frac` is a correct LaTeX command for fractions and should not be flagged.
+49,,,,,PARSING_ERROR,95,The bolding markdown `**` around 'Qu9c' is a parsing error from the conversion process.
+50,,,,,FALSE_POSITIVE,100,`\qquad` is a correct LaTeX command for horizontal spacing within a mathematical expression.
+51,,,,,FALSE_POSITIVE,100,`\qquad` is a correct LaTeX command for horizontal spacing within a mathematical expression.
+52,,,,,PARSING_ERROR,95,The space between `$` and `24` is incorrect; it should be `$24` to correctly initiate the LaTeX math environment.
+53,,,,,PARSING_ERROR,95,The space between `$` and `43` is incorrect; it should be `$43` to correctly initiate the LaTeX math environment.
+54,,,,,FALSE_POSITIVE,100,The single quote is correctly used as part of the notation `'their 39.5'` in the mark scheme.
+55,,,,,FALSE_POSITIVE,100,`ocw` is a standard WJEC acronym for 'Opportunity for Communication and Written accuracy' used correctly in the assessment mapping table.
+56,,,,,FALSE_POSITIVE,90,`st form` is a common abbreviation for 'standard form' in a mathematical context.
