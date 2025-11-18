@@ -125,6 +125,21 @@ class CategoriserState:
         
         self._save()
     
+    def remove_batch_completion(self, key: DocumentKey, batch_index: int) -> None:
+        """Remove a batch from completed state (for refetching).
+        
+        Args:
+            key: DocumentKey identifying the document
+            batch_index: Zero-based batch index to remove
+        """
+        subjects = self._data.get("subjects", {})
+        subject_data = subjects.get(key.subject, {})
+        doc_data = subject_data.get(key.filename, {})
+        
+        if "completed_batches" in doc_data and batch_index in doc_data["completed_batches"]:
+            doc_data["completed_batches"].remove(batch_index)
+            self._save()
+    
     def clear_document(self, key: DocumentKey) -> None:
         """Clear all state for a document.
         

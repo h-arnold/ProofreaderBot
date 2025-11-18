@@ -105,6 +105,9 @@ Examples:
   # Fetch specific jobs
   python -m src.llm_review.llm_categoriser batch-fetch --job-names batch-123 batch-456
 
+  # Refetch batches completed in last 6 hours
+  python -m src.llm_review.llm_categoriser batch-fetch --refetch-hours 6
+
   # Use custom tracking file
   python -m src.llm_review.llm_categoriser batch-fetch --check-all-pending --tracking-file data/my_jobs.json
         """,
@@ -120,6 +123,12 @@ Examples:
         "--check-all-pending",
         action="store_true",
         help="Check all pending jobs for completion",
+    )
+    
+    fetch_parser.add_argument(
+        "--refetch-hours",
+        type=float,
+        help="Refetch and reprocess batches completed within this many hours (resets them to pending)",
     )
     
     fetch_parser.add_argument(
@@ -414,6 +423,7 @@ def handle_batch_fetch(args: argparse.Namespace) -> int:
             report_path=args.from_report,
             job_names=args.job_names,
             check_all_pending=args.check_all_pending,
+            refetch_hours=args.refetch_hours,
         )
         
         return 0

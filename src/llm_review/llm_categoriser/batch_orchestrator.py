@@ -120,6 +120,46 @@ class BatchJobTracker:
             for data in self._data.values()
             if data.get("status") == "pending"
         ]
+    
+    def get_completed_jobs_within_hours(self, hours: float) -> list[BatchJobMetadata]:
+        """Get jobs completed within the specified number of hours.
+        
+        Args:
+            hours: Number of hours to look back from now
+            
+        Returns:
+            List of completed jobs within the time window
+        """
+        from datetime import datetime, timezone, timedelta
+        
+        cutoff = datetime.now(timezone.utc) - timedelta(hours=hours)
+        completed_jobs = []
+        
+        for data in self._data.values():
+            if data.get("status") != "completed":
+                continue
+            
+            try:
+                # Parse created_at timestamp (ISO format)
+                created_at_str = data.get("created_at", "")
+                # Handle both 'Z' and timezone-aware formats
+                if created_at_str.endswith('Z'):
+                    created_at = datetime.fromisoformat(created_at_str.replace('Z', '+00:00'))
+                else:
+                    created_at = datetime.fromisoformat(created_at_str)
+                
+                # Ensure timezone-aware comparison
+                if created_at.tzinfo is None:
+                    created_at = created_at.replace(tzinfo=timezone.utc)
+                
+                if created_at >= cutoff:
+                    completed_jobs.append(BatchJobMetadata(**data))
+            except (ValueError, TypeError) as e:
+                # Skip jobs with invalid timestamps
+                print(f"Warning: Skipping job with invalid timestamp: {e}")
+                continue
+        
+        return completed_jobs
 
 
 class BatchOrchestrator:
@@ -258,6 +298,7 @@ class BatchOrchestrator:
         *,
         job_names: list[str] | None = None,
         check_all_pending: bool = False,
+        refetch_hours: float | None = None,
     ) -> dict[str, Any]:
         """Fetch results from completed batch jobs.
         
@@ -266,6 +307,7 @@ class BatchOrchestrator:
             report_path: Path to language-check-report.csv for loading original issues
             job_names: Optional list of specific job names to fetch
             check_all_pending: If True, check all pending jobs for completion
+            refetch_hours: If specified, refetch jobs completed within this many hours
             
         Returns:
             Summary statistics dictionary
@@ -278,8 +320,28 @@ class BatchOrchestrator:
             ]
         elif check_all_pending:
             jobs_to_check = self.tracker.get_pending_jobs()
+        elif refetch_hours is not None:
+            # Get completed jobs within the time window and reset them
+            jobs_to_refetch = self.tracker.get_completed_jobs_within_hours(refetch_hours)
+            print(f"Found {len(jobs_to_refetch)} job(s) completed within last {refetch_hours} hour(s)")
+            
+            if not jobs_to_refetch:
+                print("No jobs to refetch")
+                return {"checked_jobs": 0, "completed_jobs": 0, "failed_jobs": 0, "refetched": 0}
+            
+            # Reset jobs to pending and clear completed state
+            for job in jobs_to_refetch:
+                key = DocumentKey(subject=job.subject, filename=job.filename)
+                # Remove batch completion from state so it will be reprocessed
+                state.remove_batch_completion(key, job.batch_index)
+                # Reset tracker status to pending
+                self.tracker.update_job_status(job.job_name, "pending", None)
+                print(f"Reset {job.job_name[:16]}... ({job.subject}/{job.filename} batch {job.batch_index}) to pending")
+            
+            # Now fetch these jobs
+            jobs_to_check = jobs_to_refetch
         else:
-            print("No jobs specified. Use --job-names or --check-all-pending")
+            print("No jobs specified. Use --job-names, --check-all-pending, or --refetch-hours")
             return {"checked_jobs": 0, "completed_jobs": 0, "failed_jobs": 0}
         
         if not jobs_to_check:
@@ -379,14 +441,21 @@ class BatchOrchestrator:
         print(f"  Completed: {completed}")
         print(f"  Failed: {failed}")
         print(f"  Still pending: {still_pending}")
+        if refetch_hours is not None:
+            print(f"  Refetched: {len(jobs_to_check)}")
         print(f"{'=' * 60}")
         
-        return {
+        result = {
             "checked_jobs": checked,
             "completed_jobs": completed,
             "failed_jobs": failed,
             "still_pending": still_pending,
         }
+        
+        if refetch_hours is not None:
+            result["refetched"] = len(jobs_to_check)
+        
+        return result
     
     def _process_batch_response(
         self,
