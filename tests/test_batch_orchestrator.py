@@ -407,7 +407,7 @@ def test_state_remove_batch_completion(tmp_path: Path) -> None:
     from src.models import DocumentKey
     
     state_file = tmp_path / "state.json"
-    state = CategoriserState(state_file)
+    state = StateManager(state_file)
     
     key = DocumentKey(subject="Geography", filename="gcse-geography.md")
     
@@ -428,7 +428,7 @@ def test_state_remove_batch_completion(tmp_path: Path) -> None:
     assert state.is_batch_completed(key, 2)
     
     # Verify persistence
-    state2 = CategoriserState(state_file)
+    state2 = StateManager(state_file)
     assert state2.is_batch_completed(key, 0)
     assert not state2.is_batch_completed(key, 1)
     assert state2.is_batch_completed(key, 2)

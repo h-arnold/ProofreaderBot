@@ -26,6 +26,9 @@ class MistralLLM(LLMProvider):
 
     name = "mistral"
     MODEL = "magistral-medium-latest"
+    # Endpoint used by the batch request lines; kept stable for testing and
+    # for compatibility with the SDK batch upload/execute workflow.
+    _BATCH_ENDPOINT = "/v1/conversations"
 
     def __init__(
         self,

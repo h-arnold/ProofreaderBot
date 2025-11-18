@@ -295,6 +295,7 @@ class BatchOrchestrator:
         self,
         state: StateManager,
         *,
+    report_path: Path,
         job_names: list[str] | None = None,
         check_all_pending: bool = False,
         refetch_hours: float | None = None,
@@ -401,7 +402,7 @@ class BatchOrchestrator:
                 validated_results = self._process_batch_response(
                     response,
                     job_metadata,
-                    report_path
+                    report_path,
                 )
                 
                 if validated_results:
@@ -487,6 +488,18 @@ class BatchOrchestrator:
             print(f"  Warning: Response is empty")
             return validated_results
         
+        # Build a map of original issues indexed by issue_id for merging LLM
+        # categorisation with the existing detection fields. We load only the
+        # issues matching the job's subject/filename from the supplied CSV.
+        try:
+            grouped = load_issues(report_path, subjects={job_metadata.subject}, documents={job_metadata.filename})
+            issues = grouped.get(DocumentKey(subject=job_metadata.subject, filename=job_metadata.filename), [])
+        except Exception as e:  # pragma: no cover - defensive
+            print(f"  Error: Could not load original issues for validation: {e}")
+            issues = []
+
+        issue_map = {issue.issue_id: issue for issue in issues}
+
         # Process each issue in the response
         for issue_dict in response:
             if not isinstance(issue_dict, dict):
