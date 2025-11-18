@@ -25,7 +25,6 @@ from src.llm_review.core.batcher import Batch
 from src.llm_review.llm_categoriser.persistence import save_batch_results, load_document_results
 from src.llm_review.llm_categoriser.runner import CategoriserRunner
 from src.models.document_key import DocumentKey
-from src.llm_review.core.state_manager import CategoriserState
 
 
 def test_parse_csv(tmp_path: Path) -> None:
