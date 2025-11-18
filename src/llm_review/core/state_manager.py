@@ -17,7 +17,7 @@ from typing import Any
 from src.models.document_key import DocumentKey
 
 
-class CategoriserState:
+class StateManager:
     """Manages state tracking for the categoriser workflow.
     
     The state file has this structure:

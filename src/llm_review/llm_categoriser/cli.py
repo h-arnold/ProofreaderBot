@@ -14,7 +14,7 @@ from src.llm.provider_registry import create_provider_chain
 from src.llm.service import LLMService
 
 from .runner import CategoriserRunner
-from ..core.state_manager import CategoriserState
+from ..core.state_manager import StateManager
 from .batch_cli import add_batch_subparsers, handle_batch_create, handle_batch_fetch, handle_batch_list, handle_batch_refresh_errors, handle_batch_cancel
 
 
@@ -290,7 +290,7 @@ def main(args: list[str] | None = None) -> int:
         return 1
     
     # Create state manager
-    state = CategoriserState(parsed_args.state_file)
+    state = StateManager(parsed_args.state_file)
     
     # Create runner
     log_responses_flag = True if parsed_args.log_responses else None

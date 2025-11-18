@@ -14,7 +14,7 @@ from src.llm.provider_registry import create_provider_chain
 from src.llm.service import LLMService
 
 from .batch_orchestrator import BatchOrchestrator, BatchJobTracker
-from ..core.state_manager import CategoriserState
+from ..core.state_manager import StateManager
 
 
 def add_batch_subparsers(subparsers: argparse._SubParsersAction) -> None:
@@ -331,7 +331,7 @@ def handle_batch_create(args: argparse.Namespace) -> int:
     
     # Create tracker and orchestrator
     tracker = BatchJobTracker(args.tracking_file)
-    state = CategoriserState(args.state_file)
+    state = StateManager(args.state_file)
     orchestrator = BatchOrchestrator(
         llm_service=llm_service,
         tracker=tracker,
@@ -407,7 +407,7 @@ def handle_batch_fetch(args: argparse.Namespace) -> int:
         return 1
     
     # Create state manager, tracker, and orchestrator
-    state = CategoriserState(args.state_file)
+    state = StateManager(args.state_file)
     tracker = BatchJobTracker(args.tracking_file)
     orchestrator = BatchOrchestrator(
         llm_service=llm_service,
@@ -454,7 +454,7 @@ def handle_batch_list(args: argparse.Namespace) -> int:
         from src.llm.service import LLMService
         
         # Create a dummy state (not used for listing)
-        state = CategoriserState(Path("data/llm_categoriser_state.json"))
+        state = StateManager(Path("data/llm_categoriser_state.json"))
         
         orchestrator = BatchOrchestrator(
             llm_service=LLMService([]),  # Empty service, not used for listing
@@ -630,7 +630,7 @@ def handle_batch_cancel(args: argparse.Namespace) -> int:
     tracker = BatchJobTracker(args.tracking_file)
     
     # Create a dummy state (not used for cancellation)
-    state = CategoriserState(Path("data/llm_categoriser_state.json"))
+    state = StateManager(Path("data/llm_categoriser_state.json"))
     
     orchestrator = BatchOrchestrator(
         llm_service=llm_service,

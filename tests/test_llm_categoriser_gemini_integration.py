@@ -28,7 +28,7 @@ if str(PROJECT_ROOT) not in sys.path:
 from src.llm.gemini_llm import GeminiLLM
 from src.llm.service import LLMService
 from src.llm_review.llm_categoriser.runner import CategoriserRunner
-from src.llm_review.core.state_manager import CategoriserState
+from src.llm_review.core.state_manager import StateManager
 
 
 class _MockResponse:
@@ -153,7 +153,7 @@ def test_categoriser_runner_with_mocked_gemini(tmp_path: Path) -> None:
     
     # Create state in temp directory
     state_path = tmp_path / "llm_categoriser_state.json"
-    state = CategoriserState(state_file=state_path)
+    state = StateManager(state_file=state_path)
     
     # Create and run categoriser runner
     runner = CategoriserRunner(
@@ -226,7 +226,7 @@ def test_categoriser_runner_dry_run_with_documents_filter(tmp_path: Path) -> Non
     
     llm_service = LLMService([gemini_llm])
     state_path = tmp_path / "llm_categoriser_state.json"
-    state = CategoriserState(state_file=state_path)
+    state = StateManager(state_file=state_path)
     
     runner = CategoriserRunner(llm_service=llm_service, state=state)
     

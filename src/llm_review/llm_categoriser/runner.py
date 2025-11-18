@@ -23,7 +23,7 @@ from ..core.batcher import Batch, iter_batches
 from ..core.document_loader import load_issues
 from .persistence import save_batch_results, save_failed_issues
 from .prompt_factory import build_prompts
-from ..core.state_manager import CategoriserState
+from ..core.state_manager import StateManager
 
 
 class CategoriserRunner:
@@ -32,7 +32,7 @@ class CategoriserRunner:
     def __init__(
         self,
         llm_service: LLMService,
-        state: CategoriserState,
+        state: StateManager,
         *,
         batch_size: int = 10,
         max_retries: int = 2,

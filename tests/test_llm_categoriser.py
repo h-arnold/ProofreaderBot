@@ -18,7 +18,7 @@ from src.language_check.language_issue import LanguageIssue
 from src.models import PassCode
 from src.llm_review.core.document_loader import load_issues, _parse_csv
 from src.llm_review.core.batcher import iter_batches
-from src.llm_review.core.state_manager import CategoriserState
+from src.llm_review.core.state_manager import StateManager
 from src.llm.provider import LLMQuotaError
 from src.llm.service import LLMService
 from src.llm_review.core.batcher import Batch
@@ -130,7 +130,7 @@ def test_batcher_creates_markdown_table(tmp_path: Path) -> None:
 def test_state_tracks_completed_batches(tmp_path: Path) -> None:
     """Test state manager tracks completed batches."""
     state_file = tmp_path / "state.json"
-    state = CategoriserState(state_file)
+    state = StateManager(state_file)
     
     key = DocumentKey(subject="Test", filename="test.md")
     
@@ -151,14 +151,14 @@ def test_state_tracks_completed_batches(tmp_path: Path) -> None:
     assert state_file.exists()
     
     # Load fresh state and verify persistence
-    state2 = CategoriserState(state_file)
+    state2 = StateManager(state_file)
     assert state2.is_batch_completed(key, 0)
 
 
 def test_state_clear_document(tmp_path: Path) -> None:
     """Test clearing state for a document."""
     state_file = tmp_path / "state.json"
-    state = CategoriserState(state_file)
+    state = StateManager(state_file)
     
     key = DocumentKey(subject="Test", filename="test.md")
     
@@ -355,7 +355,7 @@ def test_runner_accepts_single_issue_dict_response(tmp_path: Path) -> None:
     """Ensure _validate_response requires a top-level array (not a bare dict)."""
     runner = CategoriserRunner(
         llm_service=MagicMock(),
-        state=CategoriserState(tmp_path / "state.json"),
+    state=StateManager(tmp_path / "state.json"),
     )
 
     issue = LanguageIssue(
@@ -393,7 +393,7 @@ def test_runner_array_of_issue_dicts_validates_using_model(tmp_path: Path) -> No
     """
     runner = CategoriserRunner(
         llm_service=MagicMock(),
-        state=CategoriserState(tmp_path / "state.json"),
+    state=StateManager(tmp_path / "state.json"),
     )
 
     issue = LanguageIssue(
@@ -433,7 +433,7 @@ def test_runner_array_of_issue_dicts_validates_using_model(tmp_path: Path) -> No
 def test_runner_logs_raw_response_when_enabled(tmp_path: Path) -> None:
     runner = CategoriserRunner(
         llm_service=MagicMock(),
-        state=CategoriserState(tmp_path / "state.json"),
+    state=StateManager(tmp_path / "state.json"),
         log_raw_responses=True,
         log_response_dir=tmp_path / "responses",
     )
@@ -471,7 +471,7 @@ def test_runner_uses_env_toggle_for_logging(tmp_path: Path, monkeypatch: pytest.
 
     runner = CategoriserRunner(
         llm_service=MagicMock(),
-        state=CategoriserState(tmp_path / "state.json"),
+        state=StateManager(tmp_path / "state.json"),
     )
 
     key = DocumentKey(subject="Env", filename="doc.md")
@@ -525,7 +525,7 @@ def test_runner_handles_provider_quota_gracefully(tmp_path: Path) -> None:
 
     llm_service = LLMService([_QuotaProvider()])
 
-    state = CategoriserState(tmp_path / "state.json")
+    state = StateManager(tmp_path / "state.json")
     runner = CategoriserRunner(llm_service=llm_service, state=state)
 
     issue = LanguageIssue(
@@ -564,7 +564,7 @@ def test_runner_aborts_on_503(tmp_path: Path) -> None:
     llm_service = MagicMock()
     llm_service.generate.side_effect = _ServiceUnavailable("503 Service Unavailable")
 
-    state = CategoriserState(tmp_path / "state.json")
+    state = StateManager(tmp_path / "state.json")
     runner = CategoriserRunner(llm_service=llm_service, state=state)
 
     issue = LanguageIssue(

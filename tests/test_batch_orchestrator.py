@@ -15,7 +15,7 @@ try:
         BatchJobTracker,
         BatchOrchestrator,
     )
-    from src.llm_review.core.state_manager import CategoriserState
+    from src.llm_review.core.state_manager import StateManager
     from src.llm.provider import LLMProvider
     from src.llm.service import LLMService
 except ImportError:
@@ -27,7 +27,7 @@ except ImportError:
         BatchJobTracker,
         BatchOrchestrator,
     )
-    from src.llm_review.core.state_manager import CategoriserState
+    from src.llm_review.core.state_manager import StateManager
     from src.llm.provider import LLMProvider
     from src.llm.service import LLMService
 
@@ -176,7 +176,7 @@ def test_batch_orchestrator_process_batch_response_validates_correctly() -> None
     """Test that batch response processing validates correctly."""
     
     tracker = BatchJobTracker(Path("/tmp/test_jobs.json"))
-    state = CategoriserState(Path("/tmp/test_state.json"))
+    state = StateManager(Path("/tmp/test_state.json"))
     orchestrator = BatchOrchestrator(
         llm_service=LLMService([]),
         tracker=tracker,
@@ -205,13 +205,28 @@ def test_batch_orchestrator_process_batch_response_validates_correctly() -> None
         },
         {
             "issue_id": 2,
-            "error_category": "GRAMMAR_ERROR",
+                "error_category": "ABSOLUTE_GRAMMATICAL_ERROR",
             "confidence_score": 90,
             "reasoning": "Grammar issue",
         },
     ]
     
-    results = orchestrator._process_batch_response(response, metadata)
+    # Prepare a temporary language-check-report.csv with matching original issues
+    report_path = Path("/tmp/test_batch_orchestrator_report.csv")
+    # We need at least 4 issues so the issue_ids [1,2,3] exist
+    report_path.write_text(
+        "Subject,Filename,Page,Rule ID,Type,Issue,Message,Suggestions,Highlighted Context,Pass Code\n"
+        "Geography,gcse-geography.md,1,RULE1,style,word,Test,fix,ctx,LT\n"
+        "Geography,gcse-geography.md,1,RULE2,style,word,Test,fix,ctx,LT\n"
+        "Geography,gcse-geography.md,1,RULE3,style,word,Test,fix,ctx,LT\n"
+        "Geography,gcse-geography.md,1,RULE4,style,word,Test,fix,ctx,LT\n"
+    )
+    # Create matching markdown file so load_issues doesn't skip this document
+    md_path = Path("Documents") / "Geography" / "markdown"
+    md_path.mkdir(parents=True, exist_ok=True)
+    (md_path / "gcse-geography.md").write_text("{1} Sample page")
+
+    results = orchestrator._process_batch_response(response, metadata, report_path)
     
     assert len(results) == 2
     assert results[0]["issue_id"] == 1
@@ -222,7 +237,7 @@ def test_batch_orchestrator_process_batch_response_filters_invalid() -> None:
     """Test that batch response processing filters out invalid entries."""
     
     tracker = BatchJobTracker(Path("/tmp/test_jobs.json"))
-    state = CategoriserState(Path("/tmp/test_state.json"))
+    state = StateManager(Path("/tmp/test_state.json"))
     orchestrator = BatchOrchestrator(
         llm_service=LLMService([]),
         tracker=tracker,
@@ -263,7 +278,17 @@ def test_batch_orchestrator_process_batch_response_filters_invalid() -> None:
         },
     ]
     
-    results = orchestrator._process_batch_response(response, metadata)
+    report_path = Path("/tmp/test_batch_orchestrator_report.csv")
+    report_path.write_text(
+        "Subject,Filename,Page,Rule ID,Type,Issue,Message,Suggestions,Highlighted Context,Pass Code\n"
+        "Geography,gcse-geography.md,1,RULE1,style,word,Test,fix,ctx,LT\n"
+        "Geography,gcse-geography.md,1,RULE2,style,word,Test,fix,ctx,LT\n"
+    )
+    md_path = Path("Documents") / "Geography" / "markdown"
+    md_path.mkdir(parents=True, exist_ok=True)
+    (md_path / "gcse-geography.md").write_text("{1} Sample page")
+
+    results = orchestrator._process_batch_response(response, metadata, report_path)
     
     # Only first entry should be valid
     assert len(results) == 1
@@ -274,7 +299,7 @@ def test_batch_orchestrator_process_batch_response_handles_non_list() -> None:
     """Test that non-list responses are handled gracefully."""
     
     tracker = BatchJobTracker(Path("/tmp/test_jobs.json"))
-    state = CategoriserState(Path("/tmp/test_state.json"))
+    state = StateManager(Path("/tmp/test_state.json"))
     orchestrator = BatchOrchestrator(
         llm_service=LLMService([]),
         tracker=tracker,
@@ -296,6 +321,13 @@ def test_batch_orchestrator_process_batch_response_handles_non_list() -> None:
     # Non-list response
     response = {"error": "Invalid format"}
     
-    results = orchestrator._process_batch_response(response, metadata)
+    report_path = Path("/tmp/test_batch_orchestrator_report.csv")
+    report_path.write_text(
+        "Subject,Filename,Page,Rule ID,Type,Issue,Message,Suggestions,Highlighted Context,Pass Code\n"
+        "Geography,gcse-geography.md,1,RULE1,style,word,Test,fix,ctx,LT\n"
+        "Geography,gcse-geography.md,1,RULE2,style,word,Test,fix,ctx,LT\n"
+    )
+
+    results = orchestrator._process_batch_response(response, metadata, report_path)
     
     assert len(results) == 0

@@ -19,7 +19,7 @@ from ..core.batcher import iter_batches
 from ..core.document_loader import load_issues
 from .persistence import save_batch_results
 from .prompt_factory import build_prompts
-from ..core.state_manager import CategoriserState
+from ..core.state_manager import StateManager
 
 
 @dataclass
@@ -169,7 +169,7 @@ class BatchOrchestrator:
         self,
         llm_service: LLMService,
         tracker: BatchJobTracker,
-        state: CategoriserState,
+        state: StateManager,
         batch_size: int = 10,
     ):
         """Initialize the orchestrator.
@@ -293,7 +293,7 @@ class BatchOrchestrator:
     
     def fetch_batch_results(
         self,
-        state: CategoriserState,
+        state: StateManager,
         report_path: Path,
         *,
         job_names: list[str] | None = None,
