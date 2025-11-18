@@ -80,7 +80,7 @@ from ..core.batcher import Batch, iter_batches
 
 **Changes needed:**
 1. Copy file to new location
-2. Rename class if needed (optional: keep `CategoriserState` or rename to `StateManager`)
+2. Rename class if needed (optional: keep `StateManager` or rename to `StateManager`)
 3. Update module docstring
 
 **Update imports in:**
@@ -91,14 +91,14 @@ from ..core.batcher import Batch, iter_batches
 
 **Old import:**
 ```python
-from .state import CategoriserState
+from .state import StateManager
 ```
 
 **New import:**
 ```python
-from ..core.state_manager import CategoriserState
+from ..core.state_manager import StateManager
 # Or if renamed:
-from ..core.state_manager import StateManager as CategoriserState
+from ..core.state_manager import StateManager as StateManager
 ```
 
 ### Step 1.5: Update core/__init__.py
@@ -112,7 +112,7 @@ review passes (categorisation, fact-checking, style validation, etc.).
 
 from .document_loader import load_issues
 from .batcher import Batch, iter_batches
-from .state_manager import CategoriserState as StateManager
+from .state_manager import StateManager as StateManager
 
 __all__ = [
     "load_issues",
@@ -518,7 +518,7 @@ class CategoriserConfiguration(ReviewConfiguration):
 
 from .document_loader import load_issues
 from .batcher import Batch, iter_batches
-from .state_manager import CategoriserState as StateManager
+from .state_manager import StateManager as StateManager
 from .config import ReviewConfiguration
 from .persistence import PersistenceManager
 
@@ -545,7 +545,7 @@ from ..core.persistence import PersistenceManager
 def __init__(
     self,
     llm_service: LLMService,
-    state: CategoriserState,
+    state: StateManager,
     config: CategoriserConfiguration,
     ...
 ):

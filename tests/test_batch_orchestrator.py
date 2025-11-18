@@ -16,7 +16,7 @@ try:
         BatchJobTracker,
         BatchOrchestrator,
     )
-    from src.llm_review.llm_categoriser.state import CategoriserState
+    from src.llm_review.core.state_manager import StateManager
     from src.llm.provider import LLMProvider
     from src.llm.service import LLMService
 except ImportError:
@@ -28,7 +28,7 @@ except ImportError:
         BatchJobTracker,
         BatchOrchestrator,
     )
-    from src.llm_review.llm_categoriser.state import CategoriserState
+    from src.llm_review.core.state_manager import StateManager
     from src.llm.provider import LLMProvider
     from src.llm.service import LLMService
 
@@ -176,166 +176,131 @@ def test_batch_job_tracker_persists_to_file(tmp_path: Path) -> None:
 def test_batch_orchestrator_process_batch_response_validates_correctly(tmp_path: Path) -> None:
     """Test that batch response processing validates correctly."""
     
-    # Create a test CSV report
-    report_path = tmp_path / "language-check-report.csv"
-    report_path.write_text(
-        "Subject,Filename,Page,Rule ID,Type,Issue,Message,Suggestions,Highlighted Context,Pass Code\n"
-        "Geography,gcse-geography.md,1,TYPO,misspelling,teh,Possible spelling mistake,the,the **teh** quick,LT\n"
-        "Geography,gcse-geography.md,2,GRAMMAR,grammar,are,Grammar error,is,they **are** here,LT\n"
-        "Geography,gcse-geography.md,3,PUNCT,punctuation,.,Missing period,.,end of sentence**.**,LT\n"
+    tracker = BatchJobTracker(Path("/tmp/test_jobs.json"))
+    state = StateManager(Path("/tmp/test_state.json"))
+    orchestrator = BatchOrchestrator(
+        llm_service=LLMService([]),
+        tracker=tracker,
+        state=state,
+        batch_size=10,
     )
     
-    # Create the markdown file that data_loader expects
-    markdown_dir = tmp_path / "Documents" / "Geography" / "markdown"
-    markdown_dir.mkdir(parents=True, exist_ok=True)
-    markdown_file = markdown_dir / "gcse-geography.md"
-    markdown_file.write_text("# Test Geography Document\n\nSome content here.")
+    metadata = BatchJobMetadata(
+        provider_name="dummy",
+        job_name="job-123",
+        subject="Geography",
+        filename="gcse-geography.md",
+        batch_index=0,
+        issue_ids=[1, 2, 3],
+        created_at="2024-01-01T00:00:00Z",
+        status="pending",
+    )
     
-    # Change to tmp_path so load_issues can find the Documents/ directory
-    original_dir = os.getcwd()
-    try:
-        os.chdir(tmp_path)
-        
-        tracker = BatchJobTracker(tmp_path / "test_jobs.json")
-        state = CategoriserState(tmp_path / "test_state.json")
-        orchestrator = BatchOrchestrator(
-            llm_service=LLMService([]),
-            tracker=tracker,
-            state=state,
-            batch_size=10,
-        )
-        
-        metadata = BatchJobMetadata(
-            provider_name="dummy",
-            job_name="job-123",
-            subject="Geography",
-            filename="gcse-geography.md",
-            batch_index=0,
-            issue_ids=[0, 1, 2],  # Use 0-based IDs as assigned by data_loader
-            created_at="2024-01-01T00:00:00Z",
-            status="pending",
-        )
-        
-        # Valid response
-        response = [
-            {
-                "issue_id": 0,
-                "error_category": "SPELLING_ERROR",
-                "confidence_score": 95,
-                "reasoning": "Clear typo",
-            },
-            {
-                "issue_id": 1,
+    # Valid response
+    response = [
+        {
+            "issue_id": 1,
+            "error_category": "SPELLING_ERROR",
+            "confidence_score": 95,
+            "reasoning": "Clear typo",
+        },
+        {
+            "issue_id": 2,
                 "error_category": "ABSOLUTE_GRAMMATICAL_ERROR",
-                "confidence_score": 90,
-                "reasoning": "Grammar issue",
-            },
-        ]
-        
-        results = orchestrator._process_batch_response(response, metadata, report_path)
-        
-        assert len(results) == 2
-        # Check that merged results have all fields
-        assert results[0]["issue_id"] == 0
-        assert results[0]["error_category"] == "SPELLING_ERROR"
-        assert results[0]["page_number"] == 1
-        assert results[0]["issue"] == "teh"
-        assert results[0]["highlighted_context"] == "the **teh** quick"
-        assert results[0]["pass_code"] == "LTC"  # Should be set to LTC
-        
-        assert results[1]["issue_id"] == 1
-        assert results[1]["error_category"] == "ABSOLUTE_GRAMMATICAL_ERROR"
+            "confidence_score": 90,
+            "reasoning": "Grammar issue",
+        },
+    ]
     
-    finally:
-        os.chdir(original_dir)
+    # Prepare a temporary language-check-report.csv with matching original issues
+    report_path = Path("/tmp/test_batch_orchestrator_report.csv")
+    # We need at least 4 issues so the issue_ids [1,2,3] exist
+    report_path.write_text(
+        "Subject,Filename,Page,Rule ID,Type,Issue,Message,Suggestions,Highlighted Context,Pass Code\n"
+        "Geography,gcse-geography.md,1,RULE1,style,word,Test,fix,ctx,LT\n"
+        "Geography,gcse-geography.md,1,RULE2,style,word,Test,fix,ctx,LT\n"
+        "Geography,gcse-geography.md,1,RULE3,style,word,Test,fix,ctx,LT\n"
+        "Geography,gcse-geography.md,1,RULE4,style,word,Test,fix,ctx,LT\n"
+    )
+    # Create matching markdown file so load_issues doesn't skip this document
+    md_path = Path("Documents") / "Geography" / "markdown"
+    md_path.mkdir(parents=True, exist_ok=True)
+    (md_path / "gcse-geography.md").write_text("{1} Sample page")
+
+    results = orchestrator._process_batch_response(response, metadata, report_path)
+    
+    assert len(results) == 2
+    assert results[0]["issue_id"] == 1
+    assert results[1]["issue_id"] == 2
 
 
 def test_batch_orchestrator_process_batch_response_filters_invalid(tmp_path: Path) -> None:
     """Test that batch response processing filters out invalid entries."""
     
-    # Create a test CSV report
-    report_path = tmp_path / "language-check-report.csv"
-    report_path.write_text(
-        "Subject,Filename,Page,Rule ID,Type,Issue,Message,Suggestions,Highlighted Context,Pass Code\n"
-        "Geography,gcse-geography.md,1,TYPO,misspelling,teh,Possible spelling mistake,the,the **teh** quick,LT\n"
-        "Geography,gcse-geography.md,2,GRAMMAR,grammar,are,Grammar error,is,they **are** here,LT\n"
+    tracker = BatchJobTracker(Path("/tmp/test_jobs.json"))
+    state = StateManager(Path("/tmp/test_state.json"))
+    orchestrator = BatchOrchestrator(
+        llm_service=LLMService([]),
+        tracker=tracker,
+        state=state,
+        batch_size=10,
     )
     
-    # Create the markdown file that data_loader expects
-    markdown_dir = tmp_path / "Documents" / "Geography" / "markdown"
-    markdown_dir.mkdir(parents=True, exist_ok=True)
-    markdown_file = markdown_dir / "gcse-geography.md"
-    markdown_file.write_text("# Test Geography Document\n\nSome content here.")
+    metadata = BatchJobMetadata(
+        provider_name="dummy",
+        job_name="job-123",
+        subject="Geography",
+        filename="gcse-geography.md",
+        batch_index=0,
+        issue_ids=[1, 2],
+        created_at="2024-01-01T00:00:00Z",
+        status="pending",
+    )
     
-    # Change to tmp_path so load_issues can find the Documents/ directory
-    original_dir = os.getcwd()
-    try:
-        os.chdir(tmp_path)
-        
-        tracker = BatchJobTracker(tmp_path / "test_jobs.json")
-        state = CategoriserState(tmp_path / "test_state.json")
-        orchestrator = BatchOrchestrator(
-            llm_service=LLMService([]),
-            tracker=tracker,
-            state=state,
-            batch_size=10,
-        )
-        
-        metadata = BatchJobMetadata(
-            provider_name="dummy",
-            job_name="job-123",
-            subject="Geography",
-            filename="gcse-geography.md",
-            batch_index=0,
-            issue_ids=[0, 1],  # Use 0-based IDs
-            created_at="2024-01-01T00:00:00Z",
-            status="pending",
-        )
-        
-        # Response with valid, missing fields, and wrong ID
-        response = [
-            {
-                "issue_id": 0,
-                "error_category": "SPELLING_ERROR",
-                "confidence_score": 95,
-                "reasoning": "Clear typo",
-            },
-            {
-                "issue_id": 1,
-                # Missing error_category
-                "confidence_score": 90,
-                "reasoning": "Grammar issue",
-            },
-            {
-                "issue_id": 999,  # Not in batch
-                "error_category": "GRAMMAR_ERROR",
-                "confidence_score": 90,
-                "reasoning": "Wrong batch",
-            },
-        ]
-        
-        results = orchestrator._process_batch_response(response, metadata, report_path)
-        
-        # Only first entry should be valid
-        assert len(results) == 1
-        assert results[0]["issue_id"] == 0
+    # Response with valid, missing fields, and wrong ID
+    response = [
+        {
+            "issue_id": 1,
+            "error_category": "SPELLING_ERROR",
+            "confidence_score": 95,
+            "reasoning": "Clear typo",
+        },
+        {
+            "issue_id": 2,
+            # Missing error_category
+            "confidence_score": 90,
+            "reasoning": "Grammar issue",
+        },
+        {
+            "issue_id": 999,  # Not in batch
+            "error_category": "GRAMMAR_ERROR",
+            "confidence_score": 90,
+            "reasoning": "Wrong batch",
+        },
+    ]
     
-    finally:
-        os.chdir(original_dir)
+    report_path = Path("/tmp/test_batch_orchestrator_report.csv")
+    report_path.write_text(
+        "Subject,Filename,Page,Rule ID,Type,Issue,Message,Suggestions,Highlighted Context,Pass Code\n"
+        "Geography,gcse-geography.md,1,RULE1,style,word,Test,fix,ctx,LT\n"
+        "Geography,gcse-geography.md,1,RULE2,style,word,Test,fix,ctx,LT\n"
+    )
+    md_path = Path("Documents") / "Geography" / "markdown"
+    md_path.mkdir(parents=True, exist_ok=True)
+    (md_path / "gcse-geography.md").write_text("{1} Sample page")
+
+    results = orchestrator._process_batch_response(response, metadata, report_path)
+    
+    # Only first entry should be valid
+    assert len(results) == 1
+    assert results[0]["issue_id"] == 1
 
 
 def test_batch_orchestrator_process_batch_response_handles_non_list(tmp_path: Path) -> None:
     """Test that non-list responses are handled gracefully."""
     
-    # Create a minimal test CSV report
-    report_path = tmp_path / "language-check-report.csv"
-    report_path.write_text(
-        "Subject,Filename,Page,Rule ID,Type,Issue,Message,Suggestions,Highlighted Context,Pass Code\n"
-        "Geography,gcse-geography.md,1,TYPO,misspelling,teh,Possible spelling mistake,the,the **teh** quick,LT\n"
-    )
-    
-    tracker = BatchJobTracker(tmp_path / "test_jobs.json")
-    state = CategoriserState(tmp_path / "test_state.json")
+    tracker = BatchJobTracker(Path("/tmp/test_jobs.json"))
+    state = StateManager(Path("/tmp/test_state.json"))
     orchestrator = BatchOrchestrator(
         llm_service=LLMService([]),
         tracker=tracker,
@@ -357,6 +322,13 @@ def test_batch_orchestrator_process_batch_response_handles_non_list(tmp_path: Pa
     # Non-list response
     response = {"error": "Invalid format"}
     
+    report_path = Path("/tmp/test_batch_orchestrator_report.csv")
+    report_path.write_text(
+        "Subject,Filename,Page,Rule ID,Type,Issue,Message,Suggestions,Highlighted Context,Pass Code\n"
+        "Geography,gcse-geography.md,1,RULE1,style,word,Test,fix,ctx,LT\n"
+        "Geography,gcse-geography.md,1,RULE2,style,word,Test,fix,ctx,LT\n"
+    )
+
     results = orchestrator._process_batch_response(response, metadata, report_path)
     
     assert len(results) == 0

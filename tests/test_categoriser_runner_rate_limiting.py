@@ -17,8 +17,8 @@ if str(PROJECT_ROOT) not in sys.path:
 from src.llm.gemini_llm import GeminiLLM
 from src.llm.service import LLMService
 from src.llm_review.llm_categoriser.runner import CategoriserRunner
-from src.llm_review.llm_categoriser.state import CategoriserState
-from src.llm_review.llm_categoriser.batcher import Batch
+from src.llm_review.core.state_manager import StateManager
+from src.llm_review.core.batcher import Batch
 from src.models import DocumentKey, LanguageIssue
 
 
@@ -68,7 +68,7 @@ def test_categoriser_runner_respects_gemini_rate_limit(tmp_path: Path, monkeypat
     )
     
     service = LLMService([gemini])
-    state = CategoriserState(tmp_path / "state.json")
+    state = StateManager(tmp_path / "state.json")
     
     # GeminiLLM handles its own rate limiting
     runner = CategoriserRunner(

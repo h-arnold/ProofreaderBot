@@ -59,13 +59,13 @@ def test_runner_saves_failed_issues(tmp_path: Path, monkeypatch) -> None:
 
     from src.llm.service import LLMService
     from src.llm_review.llm_categoriser.runner import CategoriserRunner
-    from src.llm_review.llm_categoriser.state import CategoriserState
-    from src.llm_review.llm_categoriser.batcher import Batch
+    from src.llm_review.core.state_manager import StateManager
+    from src.llm_review.core.batcher import Batch
     from src.models.document_key import DocumentKey
 
     providers = [DummyProvider(system_prompt="s", filter_json=True, dotenv_path=None)]
     llm_service = LLMService(providers)
-    state = CategoriserState(tmp_path / "state.json")
+    state = StateManager(tmp_path / "state.json")
 
     # Create runner
     runner = CategoriserRunner(llm_service, state, max_retries=1)
@@ -134,13 +134,13 @@ def test_runner_writes_errors_to_data(tmp_path: Path, monkeypatch) -> None:
 
     from src.llm.service import LLMService
     from src.llm_review.llm_categoriser.runner import CategoriserRunner
-    from src.llm_review.llm_categoriser.state import CategoriserState
-    from src.llm_review.llm_categoriser.batcher import Batch
+    from src.llm_review.core.state_manager import StateManager
+    from src.llm_review.core.batcher import Batch
     from src.models.document_key import DocumentKey
 
     providers = [DummyProvider(system_prompt="s", filter_json=True, dotenv_path=None)]
     llm_service = LLMService(providers)
-    state = CategoriserState(tmp_path / "state.json")
+    state = StateManager(tmp_path / "state.json")
 
     runner = CategoriserRunner(llm_service, state, max_retries=1)
 

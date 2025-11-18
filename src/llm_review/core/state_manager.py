@@ -1,8 +1,11 @@
-"""Track completed batches for resume support.
+"""Generic state manager for LLM review passes.
 
-This module maintains a JSON state file to track which batches have been
-successfully processed for each document, enabling the CLI to resume work
-after interruptions.
+This module provides reusable functionality to track completed batches for 
+resume support. It maintains a JSON state file to track which batches have been
+successfully processed for each document, enabling workflows to resume after 
+interruptions.
+
+This is a generic component that can be used by any review pass.
 """
 
 from __future__ import annotations
@@ -14,7 +17,7 @@ from typing import Any
 from src.models.document_key import DocumentKey
 
 
-class CategoriserState:
+class StateManager:
     """Manages state tracking for the categoriser workflow.
     
     The state file has this structure:

@@ -15,11 +15,11 @@ from dataclasses import dataclass, asdict
 from src.models import DocumentKey, PassCode
 from src.llm.service import LLMService
 
-from .batcher import iter_batches
-from .data_loader import load_issues
+from ..core.batcher import iter_batches
+from ..core.document_loader import load_issues
 from .persistence import save_batch_results
 from .prompt_factory import build_prompts
-from .state import CategoriserState
+from ..core.state_manager import StateManager
 
 
 @dataclass
@@ -169,7 +169,7 @@ class BatchOrchestrator:
         self,
         llm_service: LLMService,
         tracker: BatchJobTracker,
-        state: CategoriserState,
+        state: StateManager,
         batch_size: int = 10,
     ):
         """Initialize the orchestrator.
@@ -294,7 +294,6 @@ class BatchOrchestrator:
     def fetch_batch_results(
         self,
         state: CategoriserState,
-        report_path: Path,
         *,
         job_names: list[str] | None = None,
         check_all_pending: bool = False,
@@ -486,27 +485,6 @@ class BatchOrchestrator:
         
         if not response:
             print(f"  Warning: Response is empty")
-            return validated_results
-        
-        # Load original issues from CSV for this document
-        try:
-            from .data_loader import load_issues
-            key = DocumentKey(
-                subject=job_metadata.subject,
-                filename=job_metadata.filename
-            )
-            all_grouped = load_issues(report_path)
-            original_issues = all_grouped.get(key, [])
-            
-            if not original_issues:
-                print(f"  Warning: No original issues found for {key}")
-                return validated_results
-            
-            # Build map of original issues by issue_id
-            issue_map = {issue.issue_id: issue for issue in original_issues}
-            
-        except Exception as e:
-            print(f"  Error loading original issues: {e}")
             return validated_results
         
         # Process each issue in the response
