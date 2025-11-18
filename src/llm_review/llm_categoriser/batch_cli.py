@@ -123,6 +123,13 @@ Examples:
     )
     
     fetch_parser.add_argument(
+        "--from-report",
+        type=Path,
+        default=Path("Documents/language-check-report.csv"),
+        help="Path to language-check-report.csv (for loading original issue data)",
+    )
+    
+    fetch_parser.add_argument(
         "--tracking-file",
         type=Path,
         default=Path("data/batch_jobs.json"),
@@ -404,6 +411,7 @@ def handle_batch_fetch(args: argparse.Namespace) -> int:
     try:
         orchestrator.fetch_batch_results(
             state=state,
+            report_path=args.from_report,
             job_names=args.job_names,
             check_all_pending=args.check_all_pending,
         )
