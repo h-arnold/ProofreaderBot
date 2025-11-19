@@ -27,7 +27,7 @@ from src.llm_review.categoriser_verifier.persistence import (
 from src.llm_review.categoriser_verifier.prompt_factory import build_prompts
 from src.llm_review.categoriser_verifier.runner import VerifierRunner
 from src.llm_review.core.batcher import Batch
-from src.models import DocumentKey, LanguageIssue, PassCode
+from src.models import DocumentKey, ErrorCategory, LanguageIssue, PassCode
 
 
 class TestVerifierConfiguration:
@@ -261,3 +261,50 @@ class TestVerifierRunner:
         assert len(validated) == 0
         assert len(failed) == 1
         assert "batch_errors" in errors
+
+    def test_filter_false_positives(self):
+        """Ensure the runner filters out FALSE_POSITIVE issues."""
+        mock_llm_service = MagicMock()
+        mock_state = MagicMock()
+
+        runner = VerifierRunner(mock_llm_service, mock_state)
+
+        issues = [
+            LanguageIssue(
+                filename="test.csv",
+                rule_id="TEST_RULE",
+                message="Test message",
+                issue_type="grammar",
+                replacements=["test"],
+                context="This is a test",
+                highlighted_context="This is a **test**",
+                issue="test",
+                page_number=1,
+                issue_id=0,
+                pass_code=PassCode.LTC,
+                error_category=ErrorCategory.FALSE_POSITIVE,
+                confidence_score=100,
+                reasoning="Marked as a false positive",
+            ),
+            LanguageIssue(
+                filename="test.csv",
+                rule_id="TEST_RULE",
+                message="Another message",
+                issue_type="grammar",
+                replacements=["test"],
+                context="This is a test",
+                highlighted_context="This is a **test**",
+                issue="test",
+                page_number=1,
+                issue_id=1,
+                pass_code=PassCode.LTC,
+                error_category=ErrorCategory.SPELLING_ERROR,
+                confidence_score=95,
+                reasoning="Likely a real spelling error",
+            ),
+        ]
+
+        filtered = runner._filter_false_positives(issues)
+
+        assert len(filtered) == 1
+        assert filtered[0].issue_id == 1

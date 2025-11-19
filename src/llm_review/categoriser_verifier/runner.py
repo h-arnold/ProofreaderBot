@@ -19,7 +19,7 @@ from typing import Any
 from pydantic import ValidationError
 
 from src.llm.service import LLMService
-from src.models import LanguageIssue, PassCode
+from src.models import ErrorCategory, LanguageIssue, PassCode
 
 from ..core.batcher import Batch
 from ..core.state_manager import StateManager
@@ -157,6 +157,19 @@ class VerifierRunner:
         from ..core.batcher import iter_batches
 
         for key, issues in grouped_issues.items():
+            # Filter out FALSE_POSITIVE issues before doing any batching or LLM calls.
+            original_count = len(issues)
+            issues = self._filter_false_positives(issues)
+            filtered_count = len(issues)
+
+            if filtered_count < original_count:
+                print(
+                    f"Filtered out {original_count - filtered_count} FALSE_POSITIVE issue(s) from {key}"
+                )
+
+            if not issues:
+                print(f"  No issues left after filtering for {key}, skipping")
+                continue
             print(f"\nProcessing {key} ({len(issues)} issues)...")
             total_issues += len(issues)
 
@@ -402,6 +415,39 @@ class VerifierRunner:
             error_messages.setdefault("batch_errors", []).append(msg)
 
         return validated_results, failed_issue_ids, error_messages
+
+    def _filter_false_positives(
+        self, issues: list[LanguageIssue]
+    ) -> list[LanguageIssue]:
+        """Return a new list with any FALSE_POSITIVE issues removed.
+
+        The categoriser sometimes tags issues which are actually correct as
+        FALSE_POSITIVE. We don't need to send those rows to the verifier LLM,
+        so filter them out here.
+
+        Args:
+            issues: Original list of LanguageIssue objects
+
+        Returns:
+            List of issues with FALSE_POSITIVE removed
+        """
+        filtered: list[LanguageIssue] = []
+        for issue in issues:
+            # If the issue has no error_category (yet) or has a non-FALSE value,
+            # keep it. Accept both Enum and string values for error_category.
+            cat = issue.error_category
+            if cat is None:
+                filtered.append(issue)
+                continue
+            # Allow string or ErrorCategory enum
+            if isinstance(cat, str):
+                if cat != ErrorCategory.FALSE_POSITIVE.value:
+                    filtered.append(issue)
+            else:
+                if cat != ErrorCategory.FALSE_POSITIVE:
+                    filtered.append(issue)
+
+        return filtered
 
     def _call_llm(self, prompts: list[str], key, batch_index: int, attempt: int):
         """Call LLM with filter_json=True for categoriser."""
