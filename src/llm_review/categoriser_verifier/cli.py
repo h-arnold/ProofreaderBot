@@ -201,13 +201,9 @@ def main(args: list[str] | None = None) -> int:
 
     try:
         # Render the system prompt and pass it to the provider chain
-        from src.prompt.render_prompt import render_prompts
+        from .prompt_factory import get_system_prompt_text
 
-        system_prompt_text, _ = render_prompts(
-            "system_categoriser_verifier",
-            "user_language_tool_categoriser.md",
-            {},
-        )
+        system_prompt_text = get_system_prompt_text()
 
         provider_chain = create_provider_chain(
             system_prompt=system_prompt_text,

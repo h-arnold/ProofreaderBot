@@ -297,13 +297,9 @@ def handle_batch_create(args: argparse.Namespace) -> int:
         return 1
 
     try:
-        from src.prompt.render_prompt import render_prompts
+        from .prompt_factory import get_system_prompt_text
 
-        system_prompt_text, _ = render_prompts(
-            "system_categoriser_verifier",
-            "user_language_tool_categoriser.md",
-            {},
-        )
+        system_prompt_text = get_system_prompt_text()
 
         providers = create_provider_chain(
             system_prompt=system_prompt_text,
@@ -376,13 +372,9 @@ def handle_batch_fetch(args: argparse.Namespace) -> int:
         load_dotenv(override=True)
 
     try:
-        from src.prompt.render_prompt import render_prompts
+        from .prompt_factory import get_system_prompt_text
 
-        system_prompt_text, _ = render_prompts(
-            "system_categoriser_verifier",
-            "user_language_tool_categoriser.md",
-            {},
-        )
+        system_prompt_text = get_system_prompt_text()
 
         providers = create_provider_chain(
             system_prompt=system_prompt_text,
@@ -589,13 +581,9 @@ def handle_batch_cancel(args: argparse.Namespace) -> int:
         load_dotenv(override=True)
 
     try:
-        from src.prompt.render_prompt import render_prompts
+        from .prompt_factory import get_system_prompt_text
 
-        system_prompt_text, _ = render_prompts(
-            "system_categoriser_verifier",
-            "user_language_tool_categoriser.md",
-            {},
-        )
+        system_prompt_text = get_system_prompt_text()
 
         providers = create_provider_chain(
             system_prompt=system_prompt_text,
