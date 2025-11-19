@@ -11,7 +11,7 @@ This is the **Final "Human" Pass**. The document has already been scanned by aut
 
 ---
 
-## 🚫 Negative Constraints (What to IGNORE)
+## Negative Constraints (What to IGNORE)
 This document was converted from PDF via OCR. You will likely see conversion artifacts. **Do NOT report the following:**
 * **Hyphenation Issues:** (e.g., "ta- ble", "effec- tive"). Assume a separate script cleans these.
 * **Character Swaps:** (e.g., `1` instead of `l`, `0` instead of `O`) unless it creates a valid but wrong word (e.g., `10` instead of `to`).
@@ -19,7 +19,7 @@ This document was converted from PDF via OCR. You will likely see conversion art
 
 ---
 
-## 🎯 Detection Guidelines
+## Detection Guidelines
 Scan the text specifically for these high-level issues:
 
 ### 1. Contextual Spelling & Homophones
@@ -38,16 +38,7 @@ Scan the text specifically for these high-level issues:
 
 ---
 
-## Output Format
-
-Return a **single JSON array**.
-
-* **issue_id**: Integer, starting at **0** for the first issue you find and incrementing by 1.
-* **error_category**: Select from the list below.
-* **error_string**: The specific word or short phrase containing the error.
-* **context**: The sentence containing the error (plus the preceding sentence if necessary for clarity). **Maximum 2 sentences.**
-* **reasoning**: A concise explanation of why this is an error.
-* **correction**: Your suggested fix.
+{{>llm_proofreader_output_format}}
 
 **Allowed Categories:**
 * `CONTEXTUAL_SPELLING`: Valid words used incorrectly (homophones, wrong word).
