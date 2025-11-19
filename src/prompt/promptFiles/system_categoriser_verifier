@@ -42,7 +42,7 @@ Compound adjectives are a common pain point.
 
 For **each issue** in the table:
 
-1.  **Contextualise:** Look at the `highlighted_context` and the `Page Context`.
+1.  **Contextualise:** Think deeply about this. Look at the `highlighted_context` and the `Page Context`.
     * *Is this inside a URL?* -> **STOP.** Return `FALSE_POSITIVE`.
     * *Is this a proper noun?* -> **STOP.** Verify spelling.
 2.  **Diagnose:**
