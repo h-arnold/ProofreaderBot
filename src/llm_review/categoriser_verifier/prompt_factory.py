@@ -55,7 +55,7 @@ def build_prompts(batch: Batch) -> list[str]:
 
     # Render both prompts
     system_prompt, user_prompt = render_prompts(
-        "system_categoriser_verifier",
+        "system_categoriser_verifier.md",
         "user_language_tool_categoriser.md",
         context,
     )
