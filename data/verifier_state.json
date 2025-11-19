@@ -16,9 +16,66 @@
           3,
           4,
           5,
-          7
+          7,
+          8,
+          11,
+          12,
+          13,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20
         ],
         "total_issues": 202
+      },
+      "gcse-computer-science---guidance-for-teaching-unit-2.csv": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 8
+      },
+      "gcse-computer-science---option-evening-flyer.csv": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 1
+      },
+      "gcse-computer-science---unit-1-understanding-computer-science.csv": {
+        "completed_batches": [
+          1,
+          2
+        ],
+        "total_issues": 21
+      },
+      "gcse-computer-science---unit-2-computer-programming-pre-released-materials.csv": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 1
+      },
+      "gcse-computer-science---unit-2-computer-programming.csv": {
+        "completed_batches": [
+          0,
+          1,
+          2
+        ],
+        "total_issues": 27
+      },
+      "overview-of-consultation-findings.csv": {
+        "completed_batches": [
+          1
+        ],
+        "total_issues": 14
+      },
+      "wjec-gcse-computer-science-specification.csv": {
+        "completed_batches": [
+          0,
+          1,
+          2
+        ],
+        "total_issues": 32
       }
     }
   }
