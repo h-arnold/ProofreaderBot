@@ -162,8 +162,38 @@ def main(argv: list[str] | None = None) -> int:
 
     # Synchronous processing mode
     try:
+        # Load .env file
+        from dotenv import load_dotenv
+        load_dotenv(override=True)
+
+        # Validate report file exists
+        if not args.from_report.exists():
+            print(
+                f"Error: Report file not found: {args.from_report}", file=sys.stderr
+            )
+            return 1
+
+        # Render the system prompt and pass it to the provider chain
+        from src.prompt.render_prompt import render_prompts
+
+        system_prompt_text, _ = render_prompts(
+            "llm_proofreader.md",
+            "user_llm_proofreader.md",
+            {},
+        )
+
         # Initialize LLM service with provider chain
-        provider_chain = create_provider_chain()
+        provider_chain = create_provider_chain(
+            system_prompt=system_prompt_text,
+            filter_json=True,
+            dotenv_path=None,
+        )
+
+        if not provider_chain:
+            print("Error: No LLM providers configured", file=sys.stderr)
+            return 1
+
+        print(f"Using LLM provider(s): {[p.name for p in provider_chain]}")
         llm_service = LLMService(provider_chain)
 
         # Initialize state manager

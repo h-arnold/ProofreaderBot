@@ -9,13 +9,6 @@ import argparse
 import os
 from pathlib import Path
 
-from src.llm.provider_registry import create_provider_chain
-from src.llm.service import LLMService
-
-from ..core.state_manager import StateManager
-from .batch_orchestrator import ProofreaderBatchOrchestrator
-from .config import ProofreaderConfiguration
-
 
 def add_batch_subparsers(subparsers: argparse._SubParsersAction) -> None:
     """Add batch-related subcommands to the parser.
@@ -146,45 +139,6 @@ Examples:
 def handle_batch_create(args: argparse.Namespace) -> int:
     """Handle batch-create command."""
     print("Creating batch jobs for proofreading...")
-    
-    # Initialize LLM service
-    provider_chain = create_provider_chain()
-    llm_service = LLMService(provider_chain)
-    
-    # Initialize state manager
-    state = StateManager(args.state_file)
-    
-    # Create configuration
-    config = ProofreaderConfiguration(
-        input_csv_path=args.from_report,
-        output_base_dir=Path("Documents"),
-        output_subdir="llm_proofreader_reports",
-        batch_size=args.batch_size,
-        max_retries=2,
-        state_file=args.state_file,
-        subjects=set(args.subjects) if args.subjects else None,
-        documents=set(args.documents) if args.documents else None,
-        llm_provider=None,
-        fail_on_quota=True,
-        log_raw_responses=False,
-        log_response_dir=Path("data/llm_proofreader_responses"),
-        output_csv_columns=[
-            "issue_id",
-            "page_number",
-            "issue",
-            "highlighted_context",
-            "pass_code",
-            "error_category",
-            "confidence_score",
-            "reasoning",
-        ],
-    )
-    
-    # Create orchestrator
-    orchestrator = ProofreaderBatchOrchestrator(llm_service, state, config)
-    
-    # Create batch jobs
-    # Note: actual implementation depends on core BatchOrchestrator methods
     print("Batch creation not fully implemented yet")
     return 0
 

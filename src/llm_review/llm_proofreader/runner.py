@@ -115,8 +115,8 @@ class ProofreaderRunner(ReviewRunner):
             Summary statistics dictionary
         """
         # Import here to avoid circular import
-        from .data_loader import load_proofreader_issues
         from ..core.batcher import iter_batches
+        from .data_loader import load_proofreader_issues
 
         # Update config with runtime parameters
         self.config.input_csv_path = report_path
