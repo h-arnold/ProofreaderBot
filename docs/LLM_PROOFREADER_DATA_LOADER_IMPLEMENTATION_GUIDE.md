@@ -284,7 +284,7 @@ from dataclasses import dataclass
 from pathlib import Path
 from typing import Iterable
 
-from src.models import LanguageIssue
+from src.models.language_issue import LanguageIssue
 from src.utils.page_utils import extract_pages_text, find_page_markers
 
 
@@ -393,6 +393,8 @@ def build_page_prompts(batch: PageBatch) -> list[str]:
     Returns:
         A list with two strings: [system_prompt, user_prompt]
     """
+
+    
     # Build structured page data with pre-existing issues
     page_data = []
     for page_num in sorted(batch.page_context.keys()):
