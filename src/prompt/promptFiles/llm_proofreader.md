@@ -20,26 +20,15 @@ The user will provide the text in Markdown format.
 
 ## Detection Guidelines
 
-Scan the text specifically for these high-level issues:
-
 ### 1. Contextual Spelling & Homophones
 * **Atomic Typos:** Words that are spelled correctly but are wrong for the context (e.g., "leaners" vs "learners", "their" vs "there", "assess" vs "access", "trial" vs "trail").
-* **Homophones:** e.g., "pair" vs "pear", "board" vs "bored".
-* **Proper Noun Accuracy:** Ensure terminology like "Wi-Fi" or "PowerPoint" is capitalized/spelled correctly if standard.
+* **Technical Terms:** Ensure terms like "Graphics card" (plural/singular usage) or "nanotransistors" are spelled correctly.
 
 ### 2. Complex Grammar & Syntax
 * **Strict Subject-Verb Agreement:**
-    * **Distractor Nouns:** Ensure the verb agrees with the true subject, not the nearest noun (e.g., "The list of items *are*..." -> "*is*").
-    * **Compound Technical Subjects:** Flag instances where two distinct technical concepts joined by "and" take a singular verb. In formal specifications, "A and B" are plural, even if they achieve a single result.
-        * *Error:* "Indentation and white space *improves* readability." (Implies they are one single concept).
-        * *Correction:* "Indentation and white space *improve* readability." (Acknowledges two distinct tools).
-* **Dangling Modifiers:** Ensure the introductory phrase logically modifies the subject immediately following it.
-    * *Error:* "Walking down the road, the building came into view." (The building was not walking).
-* **Ambiguity:** Flag sentences where pronouns ("it", "this", "they") could refer to multiple preceding nouns, forcing the reader to guess.
-
-### 3. Consistency (The "Editor's Eye")
-* **Variations:** If the text uses "co-ordinate" on page 1 and "coordinate" on page 5, flag the inconsistency.
-* **Formatting:** Inconsistent capitalization in headers or bullet points.
+    * **Distractor Nouns:** Ensure the verb agrees with the true subject (e.g., "The list of items *are*..." -> "*is*").
+    * **Compound Technical Subjects:** "Indentation and white space *improve* readability."
+* **Comma Splices:** Flag independent clauses joined only by a comma (e.g., "It is shared among cores, this cache is..."). This is a critical error.
 
 Think deeply and consider the provided context before flagging any issue.
 
