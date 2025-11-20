@@ -13,7 +13,7 @@ from typing import Any
 from pydantic import ValidationError
 
 from src.llm.service import LLMService
-from src.models import LanguageIssue, PassCode
+from src.models import DocumentKey, LanguageIssue, PassCode
 
 from ..core.batcher import Batch
 from ..core.review_runner import ReviewRunner
@@ -93,6 +93,10 @@ class ProofreaderRunner(ReviewRunner):
                 f"{self.config.log_response_dir} (subject folders will be created automatically)"
             )
 
+        # Track sequential issue IDs per document so we can assign them after validation
+        self._next_issue_id: dict[DocumentKey, int] = {}
+        self._active_document_key: DocumentKey | None = None
+
     def run(
         self,
         *,
@@ -134,6 +138,9 @@ class ProofreaderRunner(ReviewRunner):
         for key, issues in grouped_issues.items():
             print(f"\nProcessing {key} ({len(issues)} issues)...")
             total_issues += len(issues)
+
+            # Ensure issue-id counter is initialised for this document
+            self._initialise_issue_counter(key, reset=force)
 
             # Get Markdown path - convert .csv extension to .md if needed
             md_filename = key.filename
@@ -211,14 +218,19 @@ class ProofreaderRunner(ReviewRunner):
         Returns:
             Tuple of (validated_results, failed_issue_ids, error_messages)
         """
+        document_key = self._active_document_key
+        if document_key is None:
+            raise RuntimeError("ProofreaderRunner.validate_response called without active document context")
+
+        self._ensure_issue_counter(document_key)
+
         validated_results: list[dict[str, Any]] = []
-        failed_issue_ids: set[int] = set(issue.issue_id for issue in issues)
+        failed_issue_ids: set[int] = {issue.issue_id for issue in issues}
 
         # Map of issue ids or 'batch_errors' to lists of messages
-        error_messages: dict[object, list[str]] = {
-            issue.issue_id: [] for issue in issues
-        }
-        error_messages.setdefault("batch_errors", [])
+        error_messages: dict[object, list[str]] = {"batch_errors": []}
+        for issue in issues:
+            error_messages.setdefault(issue.issue_id, [])
 
         # Only accept a top-level JSON array of objects from the LLM.
         if not isinstance(response, list):
@@ -227,95 +239,141 @@ class ProofreaderRunner(ReviewRunner):
             error_messages.setdefault("batch_errors", []).append(msg)
             return validated_results, failed_issue_ids, error_messages
 
-        # Get filename from first issue (all issues in a batch are from same document)
-        filename = issues[0].filename if issues else ""
+        # Remember starting counter so we can roll back if validation fails
+        starting_counter = self._next_issue_id[document_key]
+        had_errors = False
 
-        if not response:
-            msg = "Response is empty; no issues to validate"
-            print(f"    Warning: {msg}")
-            error_messages.setdefault("batch_errors", []).append(msg)
-            return validated_results, failed_issue_ids, error_messages
-
-        # Build a map of original issues indexed by issue_id for merging LLM
-        # proofreading results with the existing detection fields.
-        issue_map = {issue.issue_id: issue for issue in issues}
+        # Get filename from the active context or fallback to first issue
+        fallback_filename = (
+            document_key.filename
+            if document_key is not None
+            else (issues[0].filename if issues else "")
+        )
 
         # Process the flat response list
-        for issue_dict in response:
+        for index, issue_dict in enumerate(response):
             # Only accept dictionaries
             if not isinstance(issue_dict, dict):
                 warn = "Entry in response array is not a JSON object"
                 print(f"    Warning: {warn}")
                 error_messages.setdefault("batch_errors", []).append(warn)
+                had_errors = True
                 continue
 
-            # Try to construct a LanguageIssue from the LLM response. When the
-            # LLM returns only proofreading fields (no tool fields), we
-            # merge those fields into the original LanguageIssue for the
-            # final stored result. This ensures the resulting object has the
-            # detection fields present.
-            try:
-                iid = issue_dict.get("issue_id")
+            original_issue = issues[index] if index < len(issues) else None
 
-                if iid is not None and iid in issue_map:
-                    # Merge proofreader results into the original detection
-                    # issue so we end up with a fully-populated LanguageIssue.
-                    orig = issue_map[iid]
-                    merged = {
-                        "filename": orig.filename,
-                        "rule_id": orig.rule_id,
-                        "message": orig.message,
-                        "issue_type": orig.issue_type,
-                        "replacements": orig.replacements,
-                        "context": orig.context,
-                        "highlighted_context": orig.highlighted_context,
-                        "issue": orig.issue,
-                        "page_number": orig.page_number,
-                        "issue_id": orig.issue_id,
-                        "pass_code": PassCode.LP,
-                        # LLM fields
-                        "error_category": issue_dict.get("error_category"),
-                        "confidence_score": issue_dict.get("confidence_score"),
-                        "reasoning": issue_dict.get("reasoning"),
-                    }
-                    validated = LanguageIssue(**merged)
-                else:
-                    # Fall back to creating from full LLM response mapping
-                    validated = LanguageIssue.from_llm_response(
-                        issue_dict, filename=filename
-                    )
-                    # Ensure pass_code is LP
-                    validated = validated.model_copy(update={"pass_code": PassCode.LP})
-                    
+            try:
+                merged = self._build_validated_issue_payload(
+                    issue_dict,
+                    original_issue,
+                    fallback_filename,
+                )
+
+                validated = LanguageIssue(**merged)
+                assigned_id = self._assign_issue_id(document_key)
+                validated = validated.model_copy(update={"issue_id": assigned_id})
                 validated_results.append(validated.model_dump())
 
-                # If the LLM supplied an explicit issue_id, mark it as validated.
-                if validated.issue_id >= 0:
-                    failed_issue_ids.discard(validated.issue_id)
-
             except ValidationError as e:
-                # Validation errors are expected when required detection fields
-                # are missing — attach the message to the specific issue id if
-                # present, otherwise add to batch-level errors.
-                iid = issue_dict.get("issue_id")
-                if iid is not None:
-                    error_messages.setdefault(iid, []).append(str(e))
-                else:
-                    error_messages.setdefault("batch_errors", []).append(str(e))
+                had_errors = True
+                target_key = original_issue.issue_id if original_issue else "batch_errors"
+                error_messages.setdefault(target_key, []).append(str(e))
                 continue
             except Exception as e:
-                iid = issue_dict.get("issue_id")
-                if iid is not None:
-                    error_messages.setdefault(iid, []).append(str(e))
-                else:
-                    error_messages.setdefault("batch_errors", []).append(str(e))
+                had_errors = True
+                target_key = original_issue.issue_id if original_issue else "batch_errors"
+                error_messages.setdefault(target_key, []).append(str(e))
                 continue
 
-        if not validated_results:
-            msg = "Response contained no valid issue objects"
-            error_messages.setdefault("batch_errors", []).append(msg)
+        if had_errors:
+            # Roll back counter so IDs remain contiguous on retry
+            self._next_issue_id[document_key] = starting_counter
+            validated_results = []
+        else:
+            failed_issue_ids.clear()
 
         return validated_results, failed_issue_ids, error_messages
+
+    def _initialise_issue_counter(self, key: DocumentKey, *, reset: bool = False) -> None:
+        """Ensure the next issue-id counter is ready for a document."""
+        if reset:
+            self._next_issue_id[key] = 0
+            return
+
+        if key in self._next_issue_id:
+            return
+
+        existing_rows = self.persistence.load_document_results(key)
+        next_index = 0
+        if existing_rows:
+            for row in existing_rows:
+                raw_id = row.get("issue_id") if isinstance(row, dict) else None
+                if raw_id is None or str(raw_id).strip() == "":
+                    continue
+                try:
+                    next_index = max(next_index, int(raw_id) + 1)
+                except ValueError:
+                    continue
+
+        self._next_issue_id[key] = next_index
+
+    def _ensure_issue_counter(self, key: DocumentKey) -> None:
+        if key not in self._next_issue_id:
+            self._initialise_issue_counter(key)
+
+    def _assign_issue_id(self, key: DocumentKey) -> int:
+        self._ensure_issue_counter(key)
+        next_id = self._next_issue_id[key]
+        self._next_issue_id[key] = next_id + 1
+        return next_id
+
+    def _build_validated_issue_payload(
+        self,
+        llm_issue: dict[str, Any],
+        original_issue: LanguageIssue | None,
+        fallback_filename: str,
+    ) -> dict[str, Any]:
+        """Merge LLM fields with detection metadata for validation."""
+
+        def _get_page_number() -> int | None:
+            raw = llm_issue.get("page_number")
+            if raw is None:
+                return original_issue.page_number if original_issue else None
+            try:
+                return int(raw)
+            except (TypeError, ValueError):
+                raise ValueError("page_number must be an integer if provided")
+
+        return {
+            "filename": original_issue.filename if original_issue else fallback_filename,
+            "rule_id": original_issue.rule_id if original_issue else "LLM_PROOFREADER",
+            "message": original_issue.message if original_issue else "Issue detected by LLM proofreader",
+            "issue_type": original_issue.issue_type if original_issue else "proofreading",
+            "replacements": original_issue.replacements if original_issue else [],
+            "context": llm_issue.get("highlighted_context")
+            or (original_issue.context if original_issue else ""),
+            "highlighted_context": llm_issue.get("highlighted_context")
+            or (original_issue.highlighted_context if original_issue else ""),
+            "issue": llm_issue.get("issue") or (original_issue.issue if original_issue else ""),
+            "page_number": _get_page_number(),
+            "issue_id": original_issue.issue_id if original_issue else -1,
+            "pass_code": PassCode.LP,
+            "error_category": llm_issue.get("error_category")
+            or (original_issue.error_category if original_issue else None),
+            "confidence_score": llm_issue.get("confidence_score")
+            or (original_issue.confidence_score if original_issue else None),
+            "reasoning": llm_issue.get("reasoning")
+            or (original_issue.reasoning if original_issue else None),
+        }
+
+    def _process_batch(self, key: DocumentKey, batch: Batch) -> bool:
+        """Set active document context before delegating to base implementation."""
+        self._active_document_key = key
+        self._ensure_issue_counter(key)
+        try:
+            return super()._process_batch(key, batch)
+        finally:
+            self._active_document_key = None
 
     def _call_llm(self, prompts: list[str], key, batch_index: int, attempt: int):
         """Override parent to add filter_json=True for proofreader."""

@@ -21,6 +21,11 @@
 {{{issue_table}}}
 {{/issue_pages}}
 
-**REMEMBER**: Use the error descriptions provided to categorise each issue accurately. You are assessing a piece of formal writing where the highest spelling and grammatical standards are expected.
+---
 
-Always categorise hyphenation errors as parsing errors. This is a common issue with the PDF to markdown converter.
+**IMPORTANT**:
+
+1. Use the error descriptions provided to categorise each issue accurately. You are assessing a piece of formal writing where the highest spelling and grammatical standards are expected.
+2. Check the "Pre-existing issues" table in the user prompt. Do not output any error that appears in that table.
+3. Do not output errors found inside code blocks or intentional exam questions.
+4. Always return a valid JSON array.
