@@ -263,7 +263,14 @@ The project uses a few environment variables (and supports loading them from a `
 - LLM_CATEGORISER_LOG_DIR — Directory where raw responses should be stored (default: `data/llm_categoriser_responses`).
 - LLM_FAIL_ON_QUOTA — When set (true/1/yes/on) the LLM categoriser will abort the run on provider quota/rate-limit exhaustion. Default: `true`. Use `--no-fail-on-quota` or set the var to false to continue processing other documents.
 - GEMINI_MIN_REQUEST_INTERVAL — Minimum number of seconds to wait between Gemini requests (default: 0). Useful to avoid rate limits.
+- GEMINI_ENABLE_GROUNDING_TOOL — Set to `1`, `true`, `yes` to enable the Gemini grounding/tooling feature (e.g., GoogleSearch tools). Default: `false`.
 
 Notes:
 - The `--dotenv` flag in the LLM categoriser CLI (`src/llm_review/llm_categoriser/cli.py`) can be used to point to a `.env` file with these variables. You can also override the logging behaviour directly via `--log-responses` and `--log-responses-dir` when running the CLI.
 - The `google-genai` client used by `GeminiLLM` will also read `GEMINI_API_KEY` or `GOOGLE_API_KEY` from the environment; we recommend using `GEMINI_API_KEY` for clarity.
+
+Example: enable grounding tool via environment
+
+```bash
+GEMINI_ENABLE_GROUNDING_TOOL=true GEMINI_API_KEY=xxx uv run python -m src.llm_review.llm_categoriser --help
+```

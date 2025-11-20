@@ -56,6 +56,8 @@ def test_generate_joins_prompts_and_sets_config(tmp_path: Path) -> None:
     assert config.system_instruction == system_text
     assert config.thinking_config is not None
     assert config.thinking_config.thinking_budget == llm.MAX_THINKING_BUDGET
+    # By default the grounding tool is not enabled
+    assert not getattr(config, "tools", None)
 
 
 def test_system_prompt_property_returns_file_contents(tmp_path: Path) -> None:
@@ -132,3 +134,42 @@ def test_generate_raises_when_response_has_no_text(tmp_path: Path) -> None:
 
     with pytest.raises(AttributeError):
         llm.generate(["Prompt"])
+
+
+def test_generate_excludes_grounding_tool_by_default(tmp_path: Path) -> None:
+    system_prompt_path = tmp_path / "system.md"
+    system_text = "## System\nFollow the rules."
+    system_prompt_path.write_text(system_text, encoding="utf-8")
+    client = _DummyClient()
+    llm = GeminiLLM(system_prompt=system_prompt_path, client=cast(genai.Client, client))
+
+    _ = llm.generate(["Line one"])
+    call = client.models.calls[0]
+    config = call["config"]
+    assert isinstance(config, types.GenerateContentConfig)
+    assert not getattr(config, "tools", None)
+
+
+def test_generate_includes_grounding_tool_when_enabled(tmp_path: Path) -> None:
+    system_prompt_path = tmp_path / "system.md"
+    system_text = "## System\nFollow the rules."
+    system_prompt_path.write_text(system_text, encoding="utf-8")
+    client = _DummyClient()
+    llm = GeminiLLM(
+        system_prompt=system_prompt_path,
+        client=cast(genai.Client, client),
+        use_grounding_tool=True,
+    )
+
+    _ = llm.generate(["Line one"])
+    call = client.models.calls[0]
+    config = call["config"]
+    # The config.tools should include a Tool with google_search
+    tools = getattr(config, "tools", []) or []
+    assert isinstance(tools, list)
+    assert len(tools) >= 1
+    # Ensure the Tool includes google_search property
+    found_google_search = any(
+        getattr(t, "google_search", None) is not None for t in tools
+    )
+    assert found_google_search

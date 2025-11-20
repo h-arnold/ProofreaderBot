@@ -134,6 +134,26 @@ def test_create_batch_job_builds_inlined_requests(tmp_path: Path) -> None:
     assert req2.contents == "Second prompt"
 
 
+def test_create_batch_job_includes_grounding_tool_when_enabled(tmp_path: Path) -> None:
+    system_prompt_path = tmp_path / "system.md"
+    system_prompt_path.write_text("System instructions", encoding="utf-8")
+    client = _DummyClient()
+    llm = GeminiLLM(
+        system_prompt=system_prompt_path,
+        client=cast(genai.Client, client),
+        use_grounding_tool=True,
+    )
+
+    llm.create_batch_job([["Prompt"]])
+    job_data = client.batches.created_jobs[0]
+    req = job_data["src"][0]
+    config = req.config
+    tools = getattr(config, "tools", None) or []
+    assert isinstance(tools, list)
+    assert len(tools) >= 1
+    assert any(getattr(t, "google_search", None) is not None for t in tools)
+
+
 def test_create_batch_job_stores_filter_json_in_metadata(tmp_path: Path) -> None:
     system_prompt_path = tmp_path / "system.md"
     system_prompt_path.write_text("System", encoding="utf-8")

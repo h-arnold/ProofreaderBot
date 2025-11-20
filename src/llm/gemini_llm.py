@@ -40,6 +40,7 @@ class GeminiLLM:
         filter_json: bool = False,
         min_request_interval: float | None = None,
         max_retries: int | None = None,
+        use_grounding_tool: bool | None = None,
     ) -> None:
         # Accept either a direct string or a path to a file containing the prompt
         if isinstance(system_prompt, (str, Path)):
@@ -95,6 +96,19 @@ class GeminiLLM:
         # Initialize to 0 so first request is not rate limited
         self._last_request_time = 0.0
 
+        # Grounding/tooling configuration: allow opt-in via constructor or environment
+        if use_grounding_tool is None:
+            try:
+                env_val = os.environ.get("GEMINI_ENABLE_GROUNDING_TOOL", "false")
+                use_grounding_tool = str(env_val).strip().lower() in (
+                    "1",
+                    "true",
+                    "yes",
+                )
+            except Exception:
+                use_grounding_tool = False
+        self._use_grounding_tool = bool(use_grounding_tool)
+
     @property
     def system_prompt(self) -> str:
         return self._system_prompt
@@ -111,13 +125,26 @@ class GeminiLLM:
         apply_filter = self._filter_json if filter_json is None else filter_json
 
         contents = "\n".join(user_prompts)
-        config = types.GenerateContentConfig(
+        # Build base config
+        config_kwargs = dict(
             system_instruction=self._system_prompt,
             thinking_config=types.ThinkingConfig(
                 thinking_budget=self.MAX_THINKING_BUDGET
             ),
             temperature=0.2,
         )
+
+        # Optionally include the grounding tool
+        if self._use_grounding_tool:
+            try:
+                grounding_tool = types.Tool(google_search=types.GoogleSearch())
+                config_kwargs["tools"] = [grounding_tool]
+            except Exception as e:  # pragma: no cover - defensive: library missing
+                raise RuntimeError(
+                    "Failed to configure Gemini grounding tool: %s" % e
+                ) from e
+
+        config = types.GenerateContentConfig(**config_kwargs)
 
         # Implement retry logic with exponential backoff for rate limit errors
         for attempt in range(self._max_retries + 1):
@@ -214,13 +241,24 @@ class GeminiLLM:
                 )
 
             contents = "\n".join(user_prompts)
-            config = types.GenerateContentConfig(
+            config_kwargs = dict(
                 system_instruction=self._system_prompt,
                 thinking_config=types.ThinkingConfig(
                     thinking_budget=self.MAX_THINKING_BUDGET
                 ),
                 temperature=0.2,
             )
+
+            if self._use_grounding_tool:
+                try:
+                    grounding_tool = types.Tool(google_search=types.GoogleSearch())
+                    config_kwargs["tools"] = [grounding_tool]
+                except Exception as e:  # pragma: no cover - defensive: library missing
+                    raise RuntimeError(
+                        "Failed to configure Gemini grounding tool: %s" % e
+                    ) from e
+
+            config = types.GenerateContentConfig(**config_kwargs)
 
             # Store filter setting in metadata for later retrieval
             metadata = {"filter_json": str(apply_filter).lower()}
