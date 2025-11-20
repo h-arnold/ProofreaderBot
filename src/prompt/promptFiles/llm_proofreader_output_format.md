@@ -13,8 +13,6 @@ For each issue, output a full object following the format below:
 - `confidence_score`: integer 0–100 (if you prefer to provide 0–1 floats, the runner will convert them)
 - `reasoning`: single-sentence justification
 
-Do **not** include an `issue_id` field. The runner will assign sequential IDs per document after validation.
-
 ### Example Output
 
 ```json
@@ -37,7 +35,7 @@ Do **not** include an `issue_id` field. The runner will assign sequential IDs pe
 ```
 
 
-Each error object **must** include only the fields described above.
+Each error object **must** include **all and only** the fields above.
 
 IMPORTANT: Always return a JSON array even for a single issue.
 
