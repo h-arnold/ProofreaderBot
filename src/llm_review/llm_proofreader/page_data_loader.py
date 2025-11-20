@@ -8,7 +8,6 @@ from __future__ import annotations
 
 import csv
 from pathlib import Path
-from typing import Generator
 
 from src.models import DocumentKey, LanguageIssue, PassCode
 from src.utils.page_utils import find_page_markers
