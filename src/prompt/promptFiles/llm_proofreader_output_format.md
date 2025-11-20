@@ -6,7 +6,6 @@ Return a **single top-level JSON array** (no surrounding object, no page keys) a
 
 For each issue, output a full object following the format below:
 
-- `issue_id`: integer — start at 0 
 - `issue`: The specific word or short phrase containing the error.
 - `page_number`: The page number where the issue is located from your context.
 - `highlighted_context`: The sentence containing the error (plus the preceding and succeeding sentence, if necessary for clarity) with the error highlighted using double asterisks `**` before and after the error.
@@ -14,12 +13,13 @@ For each issue, output a full object following the format below:
 - `confidence_score`: integer 0–100 (if you prefer to provide 0–1 floats, the runner will convert them)
 - `reasoning`: single-sentence justification
 
+Do **not** include an `issue_id` field. The runner will assign sequential IDs per document after validation.
+
 ### Example Output
 
 ```json
 [
   {
-    "issue_id": 0,
     "issue": "loose",
     "highlighted_context": "The students **loose** several marks for poor grammar.",
     "error_category": "SPELLING_ERROR",
@@ -27,7 +27,6 @@ For each issue, output a full object following the format below:
     "reasoning": "Common misspelling of 'lose' in this context."
   },
   {
-    "issue_id": 1,
     "issue": "well-run",
     "highlighted_context": "This was a **well-run** event that concluded smoothly.",
     "error_category": "STYLISTIC_PREFERENCE",

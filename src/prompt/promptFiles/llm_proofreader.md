@@ -11,6 +11,11 @@ This is the **Final "Human" Pass**. The document has already been scanned by aut
 
 {{>authoritative_sources}}
 
+## Input Format Awareness
+The user will provide the text in Markdown format.
+1. **Page Markers:** Pages are marked with `{n}` (e.g., `{18}`). You must extract this number for the `page_number` field.
+2. **Pre-existing Issues:** The user will provide a table of issues already flagged. **You must deduplicate.** If you find an error that is already listed in that table for that specific page, **do not report it**.
+
 ## Negative Constraints (What to IGNORE)
 This document was converted from PDF via OCR. You will likely see conversion artifacts. **Do NOT report the following:**
 * **Hyphenation Issues:** (e.g., "ta- ble", "effec- tive"). Assume a separate script cleans these.
