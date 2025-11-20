@@ -26,12 +26,17 @@ import traceback
 from pathlib import Path
 
 
-def find_pdf_files(root: Path) -> list[Path]:
+def find_pdf_files(root: Path, force: bool = False) -> list[Path]:
     """Return sorted list of PDF file paths (relative to root) that need to be converted to Markdown.
 
     This looks for:
     1. PDFs in subject root (will be copied to pdfs/ and converted)
     2. PDFs in pdfs/ subdirectory that don't have a corresponding .md file in markdown/
+       (or all PDFs if force=True)
+
+    Args:
+        root: Root directory containing subject folders
+        force: If True, include all PDFs regardless of whether markdown exists
     """
     if not root.exists() or not root.is_dir():
         return []
@@ -50,13 +55,13 @@ def find_pdf_files(root: Path) -> list[Path]:
             # Store relative path from root
             pdf_files.append(pdf_path.relative_to(root))
 
-        # Look for PDFs in pdfs/ subdirectory that haven't been converted yet
+        # Look for PDFs in pdfs/ subdirectory
         pdfs_subdir = subject_dir / "pdfs"
         if pdfs_subdir.exists() and pdfs_subdir.is_dir():
             for pdf_path in pdfs_subdir.glob("*.pdf"):
-                # Check if corresponding markdown file exists
+                # Check if corresponding markdown file exists (unless force mode)
                 markdown_path = markdown_dir / f"{pdf_path.stem}.md"
-                if not markdown_path.exists():
+                if force or not markdown_path.exists():
                     # This PDF needs to be converted
                     pdf_files.append(pdf_path.relative_to(root))
 
@@ -82,6 +87,33 @@ def find_subject_directories(root: Path) -> list[str]:
         subjects.append(item.name)
 
     return sorted(subjects)
+
+
+def detect_state_file_format(state_file: Path) -> str:
+    """Detect whether state file contains subjects or file paths.
+
+    Returns:
+        'files' if entries contain paths like 'Subject/pdfs/file.pdf'
+        'subjects' if entries are just directory names like 'Subject'
+        'empty' if file doesn't exist or is empty
+    """
+    if not state_file.exists():
+        return "empty"
+
+    entries = [
+        line.strip()
+        for line in state_file.read_text(encoding="utf-8").splitlines()
+        if line.strip()
+    ]
+
+    if not entries:
+        return "empty"
+
+    # Check first entry - if it contains '/' it's a file path
+    if "/" in entries[0] or "\\" in entries[0]:
+        return "files"
+
+    return "subjects"
 
 
 def read_state_file(state_file: Path) -> list[str]:
@@ -288,6 +320,7 @@ def process_subject(
     converter: str,
     uv_cmd: str,
     cwd: Path,
+    force: bool = False,
 ) -> bool:
     """Process a single subject by invoking the conversion subprocess.
 
@@ -295,6 +328,14 @@ def process_subject(
     spawns a subprocess using the provided ``uv_cmd`` token (for example
     "uv run python"), consumes stdout lines and returns True when the
     subprocess exit code is zero and False otherwise.
+
+    Args:
+        subject: Subject directory name
+        root: Root directory containing subject folders
+        converter: Converter type to use
+        uv_cmd: Command prefix to invoke Python
+        cwd: Working directory for subprocess
+        force: If True, process all PDFs regardless of existing markdown
     """
     # If a per-subject helper script exists, prefer calling it via subprocess.
     helper_script = cwd / "scripts" / "process_single_subject.py"
@@ -306,6 +347,9 @@ def process_subject(
                 "--converter",
                 converter,
             ]
+            if force:
+                cmd.append("--force")
+
             proc = subprocess.Popen(
                 cmd,
                 cwd=cwd,
@@ -335,7 +379,7 @@ def process_subject(
     if not subject_dir.exists() or not subject_dir.is_dir():
         return False
 
-    # Collect PDFs in the subject root and in pdfs/ that lack markdown
+    # Collect PDFs in the subject root and in pdfs/
     pdfs_to_process: list[Path] = []
     markdown_dir = subject_dir / "markdown"
 
@@ -346,7 +390,7 @@ def process_subject(
     if pdfs_subdir.exists() and pdfs_subdir.is_dir():
         for pdf_path in pdfs_subdir.glob("*.pdf"):
             markdown_path = markdown_dir / f"{pdf_path.stem}.md"
-            if not markdown_path.exists():
+            if force or not markdown_path.exists():
                 pdfs_to_process.append(pdf_path)
 
     if not pdfs_to_process:
@@ -361,6 +405,189 @@ def process_subject(
         # continue processing other PDFs even if one fails
 
     return any_success
+
+
+def commit_file_changes(
+    pdf_path: Path, markdown_path: Path, documents_root: Path, cwd: Path
+) -> bool:
+    """Commit changes after processing a single PDF file.
+
+    Stages the markdown file and commits it with a descriptive message.
+
+    Args:
+        pdf_path: Path to the processed PDF (relative to documents_root)
+        markdown_path: Path to the generated markdown file
+        documents_root: Root directory containing subject folders
+        cwd: Repository root directory
+
+    Returns:
+        True on success or when there is nothing to commit.
+    """
+    if not markdown_path.exists():
+        print(f"No markdown file at '{markdown_path}' -> nothing to commit")
+        return True
+
+    # Stage the markdown file
+    rel_path = str(markdown_path)
+    exit_code, output = git_command(["add", "--", rel_path], cwd)
+    if exit_code != 0:
+        print(
+            f"Failed to stage markdown file '{rel_path}': {output}",
+            file=sys.stderr,
+        )
+        return False
+
+    # Check if there are staged changes
+    exit_code, output = git_command(["diff", "--cached", "--quiet"], cwd)
+    if exit_code == 0:
+        print(f"No staged changes to commit for '{pdf_path.name}'")
+        return True
+
+    commit_message = f"Process file: {pdf_path}"
+    exit_code, output = git_command(["commit", "-m", commit_message], cwd)
+    if exit_code != 0:
+        print(f"Failed to commit changes: {output}", file=sys.stderr)
+        return False
+
+    print(f"Committed markdown for '{pdf_path.name}'")
+
+    # Determine current branch and push
+    exit_code, branch = git_command(["rev-parse", "--abbrev-ref", "HEAD"], cwd)
+    if exit_code != 0:
+        print(f"Failed to determine current branch: {branch}", file=sys.stderr)
+        return True  # commit succeeded; treat push as non-fatal
+
+    branch = branch.strip()
+    if not branch:
+        print("Unable to determine current branch to push", file=sys.stderr)
+        return True
+
+    print(f"Pushing branch '{branch}' to origin...")
+    exit_code, output = git_command(["push", "--set-upstream", "origin", branch], cwd)
+    if exit_code != 0:
+        print(f"Warning: failed to push branch '{branch}': {output}", file=sys.stderr)
+        # push failure is non-fatal for the conversion process
+
+    return True
+
+
+def process_with_file_tracking(
+    root: Path,
+    state_file: Path,
+    branch_name: str,
+    converter: str,
+    force: bool,
+    dry_run: bool,
+    repo_root: Path,
+) -> int:
+    """Process PDFs with per-file state tracking.
+
+    This enables resuming mid-subject if the script is interrupted.
+
+    Args:
+        root: Root directory containing subject folders
+        state_file: Path to state file tracking unprocessed files
+        branch_name: Git branch to use
+        converter: Converter type to use
+        force: If True, process all PDFs regardless of existing markdown
+        dry_run: If True, don't make any changes
+        repo_root: Repository root directory
+
+    Returns:
+        Exit code (0 for success, non-zero for failure)
+    """
+    # Read or initialize state file (file paths)
+    pdf_files = read_state_file(state_file)
+
+    if not pdf_files:
+        print(f"Discovering PDF files in '{root}'...")
+        discovered = find_pdf_files(root, force=force)
+
+        if not discovered:
+            print(f"No PDF files found in '{root}'")
+            return 1
+
+        # Convert Path objects to strings for state file
+        pdf_files = [str(p) for p in discovered]
+        print(f"Found {len(pdf_files)} PDF file(s)")
+        write_state_file(state_file, pdf_files)
+        print(f"Initialized state file '{state_file}' with {len(pdf_files)} file(s)")
+    else:
+        print(
+            f"Resuming from state file '{state_file}' with {len(pdf_files)} file(s) remaining"
+        )
+
+    # Show a sample of files to be processed
+    print("\nPDF files to process:")
+    for entry in pdf_files[:10]:
+        print(f"  - {entry}")
+    if len(pdf_files) > 10:
+        print(f"  ... and {len(pdf_files) - 10} more")
+
+    if dry_run:
+        print("\nDry run mode: no changes will be made")
+        return 0
+
+    # Ensure git branch
+    if not ensure_branch(branch_name, repo_root):
+        return 2
+
+    processed_count = 0
+    failed: list[str] = []
+
+    # Process PDF files one by one
+    while pdf_files:
+        current_str = pdf_files[0]
+        current = root / current_str
+
+        success = process_pdf_file(current, converter, repo_root)
+
+        if not success:
+            print(f"\nWarning: Failed to process file '{current_str}'", file=sys.stderr)
+            failed.append(current_str)
+            # Remove from list to avoid infinite loop
+            pdf_files.pop(0)
+            write_state_file(state_file, pdf_files)
+            continue
+
+        # Determine markdown path for commit
+        if current.parent.name == "pdfs":
+            subject_dir = current.parent.parent
+        else:
+            subject_dir = current.parent
+
+        markdown_path = subject_dir / "markdown" / f"{current.stem}.md"
+
+        # Commit changes for this file
+        if not commit_file_changes(Path(current_str), markdown_path, root, repo_root):
+            print(
+                f"\nWarning: Failed to commit changes for file '{current_str}'",
+                file=sys.stderr,
+            )
+            # Continue anyway
+
+        pdf_files.pop(0)
+        write_state_file(state_file, pdf_files)
+        processed_count += 1
+        print(f"\nProgress: {processed_count} completed, {len(pdf_files)} remaining")
+
+    # Final summary
+    print(f"\n{'=' * 60}")
+    print("Processing complete!")
+    print(f"Successfully processed: {processed_count} file(s)")
+
+    if failed:
+        print(f"Failed to process: {len(failed)} file(s)")
+        for file_path in failed:
+            print(f"  - {file_path}")
+        return 2
+
+    # Clean up state file
+    if state_file.exists():
+        state_file.unlink()
+        print(f"Removed state file '{state_file}'")
+
+    return 0
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -384,6 +611,15 @@ Examples:
 
   # Use markitdown converter instead of marker
   uv run python scripts/process_all_subjects.py --converter markitdown
+
+  # Force re-processing of all PDFs (even if markdown exists)
+  uv run python scripts/process_all_subjects.py --force
+
+  # Use per-file tracking for finer-grained resume capability
+  uv run python scripts/process_all_subjects.py --use-file-tracking
+
+  # Force re-processing with per-file tracking
+  uv run python scripts/process_all_subjects.py --force --use-file-tracking
         """,
     )
 
@@ -433,6 +669,18 @@ Examples:
         help="Reset state file to start from scratch (rediscover all PDF files)",
     )
 
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="Process all PDFs regardless of whether markdown files already exist",
+    )
+
+    parser.add_argument(
+        "--use-file-tracking",
+        action="store_true",
+        help="Use per-file state tracking instead of per-subject tracking (more granular resume capability)",
+    )
+
     return parser
 
 
@@ -466,7 +714,24 @@ def main(argv: list[str] | None = None) -> int:
             state_file.unlink()
         print("State file reset")
 
-    # Read or initialize state file (subject-oriented)
+    # Detect and handle state file format
+    state_format = detect_state_file_format(state_file)
+
+    # Use file-level tracking if requested or if existing state file has file paths
+    use_file_tracking = args.use_file_tracking or state_format == "files"
+
+    if use_file_tracking:
+        return process_with_file_tracking(
+            args.root,
+            state_file,
+            args.branch,
+            args.converter,
+            args.force,
+            args.dry_run,
+            repo_root,
+        )
+
+    # Subject-level tracking (original behavior)
     subjects = read_state_file(state_file)
 
     if not subjects:
@@ -509,7 +774,7 @@ def main(argv: list[str] | None = None) -> int:
         current = subjects[0]
 
         success = process_subject(
-            current, args.root, args.converter, args.uv_cmd, repo_root
+            current, args.root, args.converter, args.uv_cmd, repo_root, args.force
         )
 
         if not success:
