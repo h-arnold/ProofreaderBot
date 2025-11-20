@@ -361,11 +361,14 @@ def handle_batch_list(args: argparse.Namespace) -> int:
         
         # Print each job
         for job in all_jobs:
+            job_display = (
+                job.job_name[:16] + "..." if len(job.job_name) > 18 else job.job_name
+            )
             doc_name = (
                 job.filename[:22] + "..." if len(job.filename) > 25 else job.filename
             )
             print(
-                f"{job.job_name[:16]}... {job.status:<12} {job.subject:<20} {doc_name:<25}"
+                f"{job_display:<18} {job.status:<12} {job.subject:<20} {doc_name:<25}"
             )
         
         print(f"{'=' * 80}")
