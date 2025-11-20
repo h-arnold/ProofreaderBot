@@ -271,16 +271,22 @@ class ProofreaderBatchOrchestrator(BatchOrchestrator):
 
                 # Build prompts
                 prompts = self.build_prompts(batch)
+                
+                # Prepare batch payload
+                # The LLM service expects a list of prompt sequences
+                # Each prompt sequence is [system_prompt, user_prompt, ...]
+                # For batch API, we wrap in an outer list: [[system, user, ...]]
+                if len(prompts) > 1:
+                    user_prompts = prompts[1:]  # Skip system prompt
+                else:
+                    user_prompts = prompts
+                
+                batch_payload = [user_prompts]
 
                 # Create batch job
                 try:
-                    job_name = self.llm_service.create_batch_job(
-                        prompts,
-                        metadata={
-                            "subject": key.subject,
-                            "filename": key.filename,
-                            "batch_index": batch.index,
-                        },
+                    provider_name, job_name = self.llm_service.create_batch_job(
+                        batch_payload, filter_json=True
                     )
 
                     # Track the job
@@ -288,7 +294,7 @@ class ProofreaderBatchOrchestrator(BatchOrchestrator):
                     from datetime import datetime, timezone
 
                     job_metadata = BatchJobMetadata(
-                        provider_name=self.llm_service.providers[0].name,
+                        provider_name=provider_name,
                         job_name=job_name,
                         subject=key.subject,
                         filename=key.filename,

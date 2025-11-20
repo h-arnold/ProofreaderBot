@@ -137,21 +137,244 @@ Examples:
 
 
 def handle_batch_create(args: argparse.Namespace) -> int:
-    """Handle batch-create command."""
-    print("Creating batch jobs for proofreading...")
-    print("Batch creation not fully implemented yet")
-    return 0
+    """Handle batch-create command.
+    
+    Args:
+        args: Parsed command-line arguments
+        
+    Returns:
+        Exit code (0 for success, 1 for error)
+    """
+    import sys
+    from dotenv import load_dotenv
+    
+    from src.llm.provider_registry import create_provider_chain
+    from src.llm.service import LLMService
+    
+    from ..core.batch_orchestrator import BatchJobTracker
+    from ..core.state_manager import StateManager
+    from .batch_orchestrator import ProofreaderBatchOrchestrator
+    from .config import ProofreaderConfiguration
+    
+    # Load environment
+    load_dotenv(override=True)
+    
+    # Validate report file
+    if not args.from_report.exists():
+        print(f"Error: Report file not found: {args.from_report}", file=sys.stderr)
+        return 1
+    
+    # Create LLM service
+    try:
+        from .prompt_factory import get_system_prompt_text
+        
+        system_prompt_text = get_system_prompt_text()
+        
+        providers = create_provider_chain(
+            system_prompt=system_prompt_text,
+            filter_json=True,
+            dotenv_path=None,
+            primary=None,  # Use default
+        )
+        
+        if not providers:
+            print("Error: No LLM providers configured", file=sys.stderr)
+            return 1
+        
+        print(f"Using LLM provider(s): {[p.name for p in providers]}")
+        llm_service = LLMService(providers)
+        
+    except Exception as e:
+        print(f"Error creating LLM service: {e}", file=sys.stderr)
+        import traceback
+        traceback.print_exc()
+        return 1
+    
+    # Create configuration
+    config = ProofreaderConfiguration(
+        input_csv_path=args.from_report,
+        output_base_dir=Path("Documents"),
+        output_subdir="proofreader_reports",
+        batch_size=args.batch_size,
+        max_retries=0,  # Not used for batch API
+        state_file=args.state_file,
+        subjects=set(args.subjects) if args.subjects else None,
+        documents=set(args.documents) if args.documents else None,
+        llm_provider=None,
+        fail_on_quota=True,
+        log_raw_responses=False,
+        log_response_dir=Path("data/llm_proofreader_responses"),
+        output_csv_columns=[],  # Not used for batch API
+    )
+    
+    # Create tracker, state, and orchestrator
+    tracker = BatchJobTracker(args.tracking_file)
+    state = StateManager(args.state_file)
+    orchestrator = ProofreaderBatchOrchestrator(
+        llm_service=llm_service,
+        tracker=tracker,
+        state=state,
+        config=config,
+    )
+    
+    # Create batch jobs
+    try:
+        orchestrator.create_batch_jobs(force=False)
+        return 0
+        
+    except KeyboardInterrupt:
+        print("\nInterrupted by user", file=sys.stderr)
+        return 130
+    except Exception as e:
+        print(f"Error: {e}", file=sys.stderr)
+        import traceback
+        traceback.print_exc()
+        return 1
 
 
 def handle_batch_fetch(args: argparse.Namespace) -> int:
-    """Handle batch-fetch command."""
-    print("Fetching batch job results...")
-    print("Batch fetch not fully implemented yet")
-    return 0
+    """Handle batch-fetch command.
+    
+    Args:
+        args: Parsed command-line arguments
+        
+    Returns:
+        Exit code (0 for success, 1 for error)
+    """
+    import sys
+    from dotenv import load_dotenv
+    
+    from src.llm.provider_registry import create_provider_chain
+    from src.llm.service import LLMService
+    
+    from ..core.batch_orchestrator import BatchJobTracker
+    from ..core.state_manager import StateManager
+    from .batch_orchestrator import ProofreaderBatchOrchestrator
+    from .config import ProofreaderConfiguration
+    
+    # Load environment
+    load_dotenv(override=True)
+    
+    # Create LLM service
+    try:
+        from .prompt_factory import get_system_prompt_text
+        
+        system_prompt_text = get_system_prompt_text()
+        
+        providers = create_provider_chain(
+            system_prompt=system_prompt_text,
+            filter_json=True,
+            dotenv_path=None,
+            primary=None,
+        )
+        
+        if not providers:
+            print("Error: No LLM providers configured", file=sys.stderr)
+            return 1
+        
+        print(f"Using LLM provider(s): {[p.name for p in providers]}")
+        llm_service = LLMService(providers)
+        
+    except Exception as e:
+        print(f"Error creating LLM service: {e}", file=sys.stderr)
+        import traceback
+        traceback.print_exc()
+        return 1
+    
+    # Create configuration
+    config = ProofreaderConfiguration(
+        input_csv_path=args.from_report,
+        output_base_dir=Path("Documents"),
+        output_subdir="proofreader_reports",
+        batch_size=10,  # Not used for fetching
+        max_retries=0,
+        state_file=args.state_file,
+        subjects=None,
+        documents=None,
+        llm_provider=None,
+        fail_on_quota=True,
+        log_raw_responses=False,
+        log_response_dir=Path("data/llm_proofreader_responses"),
+        output_csv_columns=[],
+    )
+    
+    # Create state manager, tracker, and orchestrator
+    state = StateManager(args.state_file)
+    tracker = BatchJobTracker(args.tracking_file)
+    orchestrator = ProofreaderBatchOrchestrator(
+        llm_service=llm_service,
+        tracker=tracker,
+        state=state,
+        config=config,
+    )
+    
+    # Fetch batch results
+    try:
+        orchestrator.fetch_batch_results(
+            job_names=args.job_names,
+            check_all_pending=args.check_all_pending,
+        )
+        
+        return 0
+        
+    except KeyboardInterrupt:
+        print("\nInterrupted by user", file=sys.stderr)
+        return 130
+    except Exception as e:
+        print(f"Error: {e}", file=sys.stderr)
+        import traceback
+        traceback.print_exc()
+        return 1
 
 
 def handle_batch_list(args: argparse.Namespace) -> int:
-    """Handle batch-list command."""
-    print("Listing batch jobs...")
-    print("Batch list not fully implemented yet")
-    return 0
+    """Handle batch-list command.
+    
+    Args:
+        args: Parsed command-line arguments
+        
+    Returns:
+        Exit code (0 for success, 1 for error)
+    """
+    import sys
+    
+    from ..core.batch_orchestrator import BatchJobTracker
+    
+    try:
+        tracker = BatchJobTracker(args.tracking_file)
+        
+        # List all jobs
+        all_jobs = tracker.get_all_jobs()
+        
+        # Filter by status if specified
+        if args.status:
+            all_jobs = [j for j in all_jobs if j.status == args.status]
+        
+        if not all_jobs:
+            print("No jobs found")
+            return 0
+        
+        # Print header
+        print(f"\n{'=' * 80}")
+        print(f"{'Job Name':<18} {'Status':<12} {'Subject':<20} {'Document':<25}")
+        print(f"{'=' * 80}")
+        
+        # Print each job
+        for job in all_jobs:
+            doc_name = (
+                job.filename[:22] + "..." if len(job.filename) > 25 else job.filename
+            )
+            print(
+                f"{job.job_name[:16]}... {job.status:<12} {job.subject:<20} {doc_name:<25}"
+            )
+        
+        print(f"{'=' * 80}")
+        print(f"Total: {len(all_jobs)} job(s)")
+        
+        return 0
+        
+    except Exception as e:
+        print(f"Error: {e}", file=sys.stderr)
+        import traceback
+        traceback.print_exc()
+        return 1
