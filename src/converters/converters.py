@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import os
 from abc import ABC, abstractmethod
 from dataclasses import dataclass
 from pathlib import Path
@@ -197,12 +198,26 @@ class MarkerConverter(PdfToMarkdownConverter):
     """Converter using the marker library."""
 
     def __init__(self) -> None:
+        from dotenv import load_dotenv
         from marker.converters.pdf import PdfConverter
         from marker.models import create_model_dict
 
+        # Load environment variables from .env file before accessing GEMINI_API_KEY
+        load_dotenv()
+
         self._model_dict = create_model_dict()
         # Enable page markers so output matches marker CLI --paginate flag.
-        self._config: dict[str, Any] = {"paginate_output": True}
+        # Default marker config: enable page markers and LLM mode with Gemini.
+        # Use GEMINI_API_KEY environment variable by default; if not present,
+        # Marker will still attempt to read credentials from the environment
+        # but verify_config_keys will raise if the service is configured without
+        # the required values at runtime.
+        self._config: dict[str, Any] = {
+            "paginate_output": True,
+            "use_llm": True,
+            "gemini_api_key": os.environ.get("GEMINI_API_KEY"),
+            "gemini_model_name": "gemini-2.5-flash-lite",
+        }
         self._converter = PdfConverter(
             artifact_dict=self._model_dict,
             config=self._config,
@@ -237,9 +252,10 @@ class MarkerConverter(PdfToMarkdownConverter):
             if details is not None:
                 metadata["metadata"] = details
 
-        cleaned_markdown = _normalise_marker_markdown(markdown_text)
+        # LLM-enhanced OCR should produce cleaner output; skip normalization for now.
+        # cleaned_markdown = _normalise_marker_markdown(markdown_text)
 
-        return ConversionResult(markdown=cleaned_markdown, metadata=metadata)
+        return ConversionResult(markdown=markdown_text, metadata=metadata)
 
     def close(self) -> None:
         """Clean up marker resources if needed."""
