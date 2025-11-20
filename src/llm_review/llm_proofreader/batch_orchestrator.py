@@ -6,7 +6,6 @@ asynchronous processing of proofreading issues through the Gemini batch API.
 
 from __future__ import annotations
 
-from pathlib import Path
 from typing import Any
 
 from pydantic import ValidationError
