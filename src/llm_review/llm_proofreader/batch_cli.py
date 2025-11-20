@@ -7,7 +7,50 @@ from __future__ import annotations
 
 import argparse
 import os
+import sys
 from pathlib import Path
+
+
+def _create_llm_service():
+    """Create and return LLM service, or None on error.
+    
+    Returns:
+        Tuple of (llm_service, error_code) where error_code is 0 on success, 1 on error.
+    """
+    from dotenv import load_dotenv
+    
+    from src.llm.provider_registry import create_provider_chain
+    from src.llm.service import LLMService
+    
+    # Load environment
+    load_dotenv(override=True)
+    
+    # Create LLM service
+    try:
+        from .prompt_factory import get_system_prompt_text
+        
+        system_prompt_text = get_system_prompt_text()
+        
+        providers = create_provider_chain(
+            system_prompt=system_prompt_text,
+            filter_json=True,
+            dotenv_path=None,
+            primary=None,  # Use default
+        )
+        
+        if not providers:
+            print("Error: No LLM providers configured", file=sys.stderr)
+            return None, 1
+        
+        print(f"Using LLM provider(s): {[p.name for p in providers]}")
+        llm_service = LLMService(providers)
+        return llm_service, 0
+        
+    except Exception as e:
+        print(f"Error creating LLM service: {e}", file=sys.stderr)
+        import traceback
+        traceback.print_exc()
+        return None, 1
 
 
 def add_batch_subparsers(subparsers: argparse._SubParsersAction) -> None:
@@ -90,6 +133,13 @@ Examples:
     )
 
     fetch_parser.add_argument(
+        "--from-report",
+        type=Path,
+        default=Path("Documents/verified-llm-categorised-language-check-report.csv"),
+        help="Path to verified categorised report CSV",
+    )
+
+    fetch_parser.add_argument(
         "--tracking-file",
         type=Path,
         default=Path("data/proofreader_batch_jobs.json"),
@@ -146,49 +196,21 @@ def handle_batch_create(args: argparse.Namespace) -> int:
         Exit code (0 for success, 1 for error)
     """
     import sys
-    from dotenv import load_dotenv
-    
-    from src.llm.provider_registry import create_provider_chain
-    from src.llm.service import LLMService
     
     from ..core.batch_orchestrator import BatchJobTracker
     from ..core.state_manager import StateManager
     from .batch_orchestrator import ProofreaderBatchOrchestrator
     from .config import ProofreaderConfiguration
     
-    # Load environment
-    load_dotenv(override=True)
-    
     # Validate report file
     if not args.from_report.exists():
         print(f"Error: Report file not found: {args.from_report}", file=sys.stderr)
         return 1
     
-    # Create LLM service
-    try:
-        from .prompt_factory import get_system_prompt_text
-        
-        system_prompt_text = get_system_prompt_text()
-        
-        providers = create_provider_chain(
-            system_prompt=system_prompt_text,
-            filter_json=True,
-            dotenv_path=None,
-            primary=None,  # Use default
-        )
-        
-        if not providers:
-            print("Error: No LLM providers configured", file=sys.stderr)
-            return 1
-        
-        print(f"Using LLM provider(s): {[p.name for p in providers]}")
-        llm_service = LLMService(providers)
-        
-    except Exception as e:
-        print(f"Error creating LLM service: {e}", file=sys.stderr)
-        import traceback
-        traceback.print_exc()
-        return 1
+    # Create LLM service using shared helper
+    llm_service, error_code = _create_llm_service()
+    if error_code != 0:
+        return error_code
     
     # Create configuration
     config = ProofreaderConfiguration(
@@ -242,44 +264,16 @@ def handle_batch_fetch(args: argparse.Namespace) -> int:
         Exit code (0 for success, 1 for error)
     """
     import sys
-    from dotenv import load_dotenv
-    
-    from src.llm.provider_registry import create_provider_chain
-    from src.llm.service import LLMService
     
     from ..core.batch_orchestrator import BatchJobTracker
     from ..core.state_manager import StateManager
     from .batch_orchestrator import ProofreaderBatchOrchestrator
     from .config import ProofreaderConfiguration
     
-    # Load environment
-    load_dotenv(override=True)
-    
-    # Create LLM service
-    try:
-        from .prompt_factory import get_system_prompt_text
-        
-        system_prompt_text = get_system_prompt_text()
-        
-        providers = create_provider_chain(
-            system_prompt=system_prompt_text,
-            filter_json=True,
-            dotenv_path=None,
-            primary=None,
-        )
-        
-        if not providers:
-            print("Error: No LLM providers configured", file=sys.stderr)
-            return 1
-        
-        print(f"Using LLM provider(s): {[p.name for p in providers]}")
-        llm_service = LLMService(providers)
-        
-    except Exception as e:
-        print(f"Error creating LLM service: {e}", file=sys.stderr)
-        import traceback
-        traceback.print_exc()
-        return 1
+    # Create LLM service using shared helper
+    llm_service, error_code = _create_llm_service()
+    if error_code != 0:
+        return error_code
     
     # Create configuration
     config = ProofreaderConfiguration(
