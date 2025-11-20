@@ -75,6 +75,7 @@ class PageBasedProofreaderRunner(ReviewRunner):
             log_raw_responses=log_raw_responses,
             log_response_dir=Path(log_response_dir),
             output_csv_columns=[
+                "issue_id",
                 "page_number",
                 "issue",
                 "highlighted_context",
