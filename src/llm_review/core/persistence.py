@@ -77,6 +77,75 @@ class PersistenceManager:
 
         return output_file
 
+    def append_results(
+        self,
+        key: DocumentKey,
+        new_results: list[dict[str, Any]],
+    ) -> Path:
+        """Append new results with auto-assigned issue IDs.
+
+        This method loads existing results, finds the maximum issue_id,
+        assigns sequential IDs to new results starting from max_id + 1,
+        and saves all results merged together.
+
+        Args:
+            key: DocumentKey identifying the document
+            new_results: List of issue dictionaries (issue_id will be auto-assigned)
+
+        Returns:
+            Path to the saved file
+        """
+        output_file = self.config.get_output_path(key)
+        output_file.parent.mkdir(parents=True, exist_ok=True)
+
+        # Load existing results
+        existing_rows: dict[int, dict[str, str]] = {}
+        if output_file.exists():
+            existing_rows = self._read_existing_rows(output_file)
+
+        # Find the maximum existing issue_id
+        max_issue_id = max(existing_rows.keys()) if existing_rows else -1
+
+        # Assign sequential IDs to new results
+        new_rows: dict[int, dict[str, str]] = {}
+        for issue in new_results:
+            candidate_issue_id = max_issue_id + 1
+            issue_with_id = issue.copy()
+            issue_with_id["issue_id"] = candidate_issue_id
+
+            try:
+                iid, row = self._normalise_issue_row(issue_with_id)
+            except ValueError as exc:
+                print(f"    Warning: Skipping issue without valid issue_id: {exc}")
+                continue
+            max_issue_id = candidate_issue_id
+            new_rows[iid] = row
+
+        if not new_rows and not existing_rows:
+            return output_file
+
+        # Merge existing and new rows
+        merged_rows = existing_rows | new_rows
+
+        # Write atomically
+        temp_file = output_file.with_suffix(".tmp")
+        try:
+            with open(temp_file, "w", encoding="utf-8", newline="") as f:
+                writer = csv.DictWriter(f, fieldnames=self.config.output_csv_columns)
+                writer.writeheader()
+                for issue_id in sorted(merged_rows):
+                    writer.writerow(merged_rows[issue_id])
+
+            temp_file.replace(output_file)
+
+        except OSError as e:
+            print(f"Error writing to {output_file}: {e}")
+            if temp_file.exists():
+                temp_file.unlink()
+            raise
+
+        return output_file
+
     def save_failed_issues(
         self,
         key: DocumentKey,
