@@ -308,18 +308,14 @@ class ProofreaderRunner(ReviewRunner):
                 # Validation errors are expected when required detection fields
                 # are missing — attach the message to the specific issue id if
                 # present, otherwise add to batch-level errors.
-                iid = (
-                    issue_dict.get("issue_id") if isinstance(issue_dict, dict) else None
-                )
+                iid = issue_dict.get("issue_id")
                 if iid is not None:
                     error_messages.setdefault(iid, []).append(str(e))
                 else:
                     error_messages.setdefault("batch_errors", []).append(str(e))
                 continue
             except Exception as e:
-                iid = (
-                    issue_dict.get("issue_id") if isinstance(issue_dict, dict) else None
-                )
+                iid = issue_dict.get("issue_id")
                 if iid is not None:
                     error_messages.setdefault(iid, []).append(str(e))
                 else:
