@@ -109,15 +109,16 @@ class PersistenceManager:
         # Assign sequential IDs to new results
         new_rows: dict[int, dict[str, str]] = {}
         for issue in new_results:
-            max_issue_id += 1
+            candidate_issue_id = max_issue_id + 1
             issue_with_id = issue.copy()
-            issue_with_id["issue_id"] = max_issue_id
+            issue_with_id["issue_id"] = candidate_issue_id
 
             try:
                 iid, row = self._normalise_issue_row(issue_with_id)
             except ValueError as exc:
                 print(f"    Warning: Skipping issue without valid issue_id: {exc}")
                 continue
+            max_issue_id = candidate_issue_id
             new_rows[iid] = row
 
         if not new_rows and not existing_rows:
