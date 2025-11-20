@@ -6,7 +6,8 @@ For each issue, output a full object following the format below:
 
 - `issue_id`: integer — the issue identifier from the input CSV (auto-increment per-document)
 - `issue`: The specific word or short phrase containing the error.
-- `highlighted_context`: The sentence containing the error (plus the preceding sentence if necessary for clarity) with the error highlighted using double asterisks `**` before and after the error. **Maximum 2 sentences.**
+- `page_number`: The page number where the issue is located from your context.
+- `highlighted_context`: The sentence containing the error (plus the preceding and succeeding sentence, if necessary for clarity) with the error highlighted using double asterisks `**` before and after the error.
 - `error_category`: one of the enum values listed in "Error Categories" above (e.g., `SPELLING_ERROR`)
 - `confidence_score`: integer 0–100 (if you prefer to provide 0–1 floats, the runner will convert them)
 - `reasoning`: single-sentence justification
@@ -27,7 +28,7 @@ For each issue, output a full object following the format below:
     "issue_id": 1,
     "issue": "well-run",
     "highlighted_context": "This was a **well-run** event that concluded smoothly.",
-    "error_category": "PARSING_ERROR",
+    "error_category": "POSSIBLE_AMBIGUOUS_GRAMMATICAL_ERROR",
     "confidence_score": 88,
     "reasoning": "Compound adjective requires hyphenation in UK English when used before a noun."
   }

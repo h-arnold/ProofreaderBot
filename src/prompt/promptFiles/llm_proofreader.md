@@ -17,7 +17,7 @@ This document was converted from PDF via OCR. You will likely see conversion art
 * **Character Swaps:** (e.g., `1` instead of `l`, `0` instead of `O`) unless it creates a valid but wrong word (e.g., `10` instead of `to`).
 * **Known Issues:** Do not report any issue listed in the **Exclusion List** below.
 
----
+{{>authoritative_sources}}
 
 ## Detection Guidelines
 Scan the text specifically for these high-level issues:

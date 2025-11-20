@@ -1,23 +1,24 @@
 ### Error Categories
 
-- `SPELLING_ERROR`: Incorrect spelling or wrong word form for the context, including incorrect regional spelling variants.
-    - **Examples:** `definately` instead of `definitely`, `organise` instead of `organize` in American English context, `affect` instead of `effect`.
-- `CONTEXTUAL_SPELLING: `: Valid words used incorrectly (homophones, wrong word).
+- `SPELLING_ERROR`: The token is not a valid word in the dictionary for the target dialect (e.g., US vs UK English).
+    - **Examples:** `definately`, `teh`, or using `colour` in a document explicitly defined as US English.
+- `CONTEXTUAL_SPELLING`: Valid dictionary words used incorrectly (homophones, typos resulting in real words).
     - **Examples:** `their` vs `there`, `assess` vs `access`, `leaners` vs `learners`.
-- `ABSOLUTE_GRAMMATICAL_ERROR`: Definite grammar breach (agreement, tense, article/preposition misuse, apostrophe misuse) not attributable to style.
-- `POSSIBLE_AMBIGUOUS_GRAMMATICAL_ERROR`: Grammatically debatable or awkward; improvement advisable but optional. Might be considered 'sloppy' for formal writing.
-- `STYLISTIC_PREFERENCE`: Stylistic suggestion where the original is acceptable.
-- `CONSISTENCY_ERROR`: Valid in isolation but inconsistent with the rest of the document.
-    - **Examples:** Mixing `web site` and `website`, inconsistent capitalisation in headers or bullet points, inconsistent use of initialisms (e.g., `UK` vs `U.K.`).
-- `AMBIGUOUS_PHRASING`: Grammatically correct but confusing, clusmy or unclear in meaning. This is particularly important for areas where precision is critical e.g. terminology definitions, assessment criteria.
-
+- `GRAMMATICAL_ERROR`: An objective breach of syntax rules. If the sentence structure is technically invalid, it belongs here.
+    - **Includes:** Subject-verb agreement, incorrect verb tense, article misuse, prepositions used incorrectly, comma splices, and sentence fragments.
+- `STYLISTIC_PREFERENCE`: The text is grammatically correct and the meaning is clear, but the phrasing is verbose, passive, awkward, or informal.
+    - **Includes:** Passive voice suggestions, removing redundancy, improving flow, and optional punctuation changes (e.g., Oxford comma).
+- `CONSISTENCY_ERROR`: The usage is valid in isolation but contradicts patterns established elsewhere in the text.
+    - **Examples:** Mixing `web site` and `website`, alternating between Title Case and Sentence case in headers, or switching between `UK` and `U.K.`
+- `AMBIGUOUS_PHRASING`: The text is grammatically correct, but the semantic meaning is unclear or open to multiple interpretations.
+    - **Criteria:** Use this when a reader could reasonably interpret the sentence in two different ways.
 
 Always return the enum values exactly as written above (UPPER_SNAKE_CASE).
 
-#### Notes on commas before conjunctions separating independent clauses
+#### Rules for Commas before Conjunctions (and, but, or)
 
-When LanguageTool suggests adding a comma before a conjunction (e.g., "and", "but", "or") that separates two independent clauses, note this as:
+Classify comma issues between independent clauses using the following hierarchy:
 
-    - `STYLISTIC_PREFERENCE` if adding a comma wouldn't impact on flow or clarity.
-    - `POSSIBLE_AMBIGUOUS_GRAMMATICAL_ERROR` if the adding a comma would improve flow but is not necessary for clarity.
-    - `ABSOLUTE_GRAMMATICAL_ERROR` if the absence of a comma creates ambiguity or misleads the reader.
+1.  **`GRAMMATICAL_ERROR`**: Use this if the text contains a **comma splice** (two independent clauses joined only by a comma without a conjunction) or a **run-on sentence** (two independent clauses joined with no punctuation).
+2.  **`AMBIGUOUS_PHRASING`**: Use this if the absence (or presence) of the comma causes the subject of the second clause to be misidentified.
+3.  **`STYLISTIC_PREFERENCE`**: Use this for all other optional comma suggestions intended to change the pacing or "flow" of the sentence.
