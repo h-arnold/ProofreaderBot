@@ -138,6 +138,51 @@ Environment Variables:
         help="Validate data loading without calling LLM",
     )
 
+    # Provider options
+    parser.add_argument(
+        "--provider",
+        help="Primary LLM provider (default: gemini or LLM_PRIMARY)",
+    )
+
+    parser.add_argument(
+        "--dotenv",
+        type=Path,
+        help="Path to .env file for API keys",
+    )
+
+    # Special modes
+    parser.add_argument(
+        "--emit-batch-payload",
+        action="store_true",
+        help="Write batch payloads to data/batch_payloads/ and exit (for manual testing)",
+    )
+
+    parser.add_argument(
+        "--emit-prompts",
+        action="store_true",
+        help=(
+            "Write plain-text prompts (system + user) to files under data/prompt_payloads/ "
+            "and exit (useful for manual testing in AI Studio)"
+        ),
+    )
+
+    # Quota behaviour: default True, can be overridden by env or CLI switch
+    parser.add_argument(
+        "--fail-on-quota",
+        dest="fail_on_quota",
+        action="store_true",
+        default=None,
+        help="Exit the run when LLM providers report quota/rate-limit exhaustion (default: true)",
+    )
+
+    parser.add_argument(
+        "--no-fail-on-quota",
+        dest="fail_on_quota",
+        action="store_false",
+        default=None,
+        help="Do not abort the whole run on quota exhaustion; continue processing other documents",
+    )
+
     return parser.parse_args(args)
 
 
@@ -164,7 +209,11 @@ def main(argv: list[str] | None = None) -> int:
     try:
         # Load .env file
         from dotenv import load_dotenv
-        load_dotenv(override=True)
+
+        if args.dotenv:
+            load_dotenv(dotenv_path=str(args.dotenv), override=True)
+        else:
+            load_dotenv(override=True)
 
         # Validate report file exists
         if not args.from_report.exists():
@@ -172,6 +221,14 @@ def main(argv: list[str] | None = None) -> int:
                 f"Error: Report file not found: {args.from_report}", file=sys.stderr
             )
             return 1
+
+        # Handle --emit-batch-payload mode
+        if args.emit_batch_payload:
+            return emit_batch_payloads(args)
+
+        # Handle --emit-prompts mode
+        if args.emit_prompts:
+            return emit_prompts(args)
 
         # Render the system prompt and pass it to the provider chain
         from src.prompt.render_prompt import render_prompts
@@ -187,6 +244,7 @@ def main(argv: list[str] | None = None) -> int:
             system_prompt=system_prompt_text,
             filter_json=True,
             dotenv_path=None,
+            primary=args.provider,
         )
 
         if not provider_chain:
@@ -239,6 +297,176 @@ def main(argv: list[str] | None = None) -> int:
 
         traceback.print_exc()
         return 1
+
+
+def emit_batch_payloads(parsed_args: argparse.Namespace) -> int:
+    """Emit batch payloads to files for manual testing.
+
+    This mode loads issues, creates batches, builds prompts, and writes them
+    to data/batch_payloads/ as JSON files. Useful for manually submitting to
+    provider batch consoles.
+    """
+    import json
+
+    from ..core.batcher import iter_batches
+    from .data_loader import load_proofreader_issues
+    from .prompt_factory import build_prompts
+
+    print("Emitting batch payloads (not calling LLM)...")
+
+    try:
+        grouped_issues = load_proofreader_issues(
+            parsed_args.from_report,
+            subjects=set(parsed_args.subjects) if parsed_args.subjects else None,
+            documents=set(parsed_args.documents) if parsed_args.documents else None,
+        )
+    except Exception as e:
+        print(f"Error loading issues: {e}", file=sys.stderr)
+        return 1
+
+    if not grouped_issues:
+        print("No issues found matching the filters")
+        return 0
+
+    output_dir = Path("data/batch_payloads")
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    payload_count = 0
+
+    for key, issues in grouped_issues.items():
+        # Get Markdown path - convert .csv extension to .md if needed
+        md_filename = key.filename
+        if md_filename.endswith(".csv"):
+            md_filename = md_filename[:-4] + ".md"
+        elif not md_filename.endswith(".md"):
+            md_filename = md_filename + ".md"
+        
+        markdown_path = Path("Documents") / key.subject / "markdown" / md_filename
+
+        for batch in iter_batches(
+            issues,
+            parsed_args.batch_size,
+            markdown_path,
+            subject=key.subject,
+            filename=key.filename,
+        ):
+            prompts = build_prompts(batch)
+
+            # Determine system and user parts for the payload; keep 'prompts'
+            # for backward compatibility but also expose explicit keys.
+            if len(prompts) > 1:
+                system_text = prompts[0]
+                user_prompts = prompts[1:]
+            else:
+                system_text = ""
+                user_prompts = prompts
+
+            # Create payload file
+            payload = {
+                "subject": batch.subject,
+                "filename": batch.filename,
+                "batch_index": batch.index,
+                "issue_count": len(batch.issues),
+                "prompts": prompts,
+                "system": system_text,
+                "user": user_prompts,
+            }
+
+            # Safe filename
+            safe_subject = batch.subject.replace("/", "-")
+            safe_filename = batch.filename.replace("/", "-").replace(".md", "")
+            output_file = (
+                output_dir / f"{safe_subject}_{safe_filename}_batch{batch.index}.json"
+            )
+
+            with open(output_file, "w", encoding="utf-8") as f:
+                json.dump(payload, f, indent=2)
+
+            print(f"  Wrote {output_file}")
+            payload_count += 1
+
+    print(f"\nEmitted {payload_count} batch payload(s) to {output_dir}")
+    return 0
+
+
+def emit_prompts(parsed_args: argparse.Namespace) -> int:
+    """Emit prompts as plain-text files for AI studio testing.
+
+    For each batch this writes a system file (if present) and a user file.
+    """
+    from ..core.batcher import iter_batches
+    from .data_loader import load_proofreader_issues
+    from .prompt_factory import build_prompts
+
+    print("Emitting prompts (plain text)...")
+
+    try:
+        grouped_issues = load_proofreader_issues(
+            parsed_args.from_report,
+            subjects=set(parsed_args.subjects) if parsed_args.subjects else None,
+            documents=set(parsed_args.documents) if parsed_args.documents else None,
+        )
+    except Exception as e:
+        print(f"Error loading issues: {e}", file=sys.stderr)
+        return 1
+
+    if not grouped_issues:
+        print("No issues found matching the filters")
+        return 0
+
+    output_dir = Path("data/prompt_payloads")
+    output_dir.mkdir(parents=True, exist_ok=True)
+
+    file_count = 0
+
+    for key, issues in grouped_issues.items():
+        # Get Markdown path - convert .csv extension to .md if needed
+        md_filename = key.filename
+        if md_filename.endswith(".csv"):
+            md_filename = md_filename[:-4] + ".md"
+        elif not md_filename.endswith(".md"):
+            md_filename = md_filename + ".md"
+        
+        markdown_path = Path("Documents") / key.subject / "markdown" / md_filename
+
+        for batch in iter_batches(
+            issues,
+            parsed_args.batch_size,
+            markdown_path,
+            subject=key.subject,
+            filename=key.filename,
+        ):
+            prompts = build_prompts(batch)
+
+            # System prompt is optional
+            system_text = prompts[0] if len(prompts) > 1 else ""
+            user_prompts = prompts[1:] if len(prompts) > 1 else prompts
+
+            safe_subject = batch.subject.replace("/", "-")
+            safe_filename = batch.filename.replace("/", "-").replace(".md", "")
+
+            # Use a simple plain-text format: one file per role
+            if system_text:
+                system_file = (
+                    output_dir
+                    / f"{safe_subject}_{safe_filename}_batch{batch.index}_system.txt"
+                )
+                system_file.write_text(system_text, encoding="utf-8")
+                print(f"  Wrote {system_file}")
+                file_count += 1
+
+            # Write user prompt(s). If multiple prompts, join them with a separator.
+            user_text = "\n\n---\n\n".join(user_prompts)
+            user_file = (
+                output_dir
+                / f"{safe_subject}_{safe_filename}_batch{batch.index}_user.txt"
+            )
+            user_file.write_text(user_text, encoding="utf-8")
+            print(f"  Wrote {user_file}")
+            file_count += 1
+
+    print(f"\nEmitted {file_count} prompt file(s) to {output_dir}")
+    return 0
 
 
 if __name__ == "__main__":
