@@ -1,14 +1,15 @@
-## Issue Batch
-
 {{#issue_pages}}
 ### Page {{page_number}}
+
+#### Pre-existing issues (Ignore - these have been flagged already)
+
 | issue_id | issue | highlighted_context |
 | --- | --- | --- |
 {{#issues}}
 | {{issue_id}} | {{issue}} | {{highlighted_context}} |
 {{/issues}}
 
-Page context:
+#### Page context:
 ```markdown
 {{{page_content}}}
 ```
@@ -19,10 +20,6 @@ Page context:
 {{^issue_pages}}
 {{{issue_table}}}
 {{/issue_pages}}
-
----
-
----
 
 **REMEMBER**: Use the error descriptions provided to categorise each issue accurately. You are assessing a piece of formal writing where the highest spelling and grammatical standards are expected.
 
