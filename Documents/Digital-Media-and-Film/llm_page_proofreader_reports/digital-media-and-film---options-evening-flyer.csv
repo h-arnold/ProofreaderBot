@@ -1,0 +1,2 @@
+issue_id,page_number,issue,highlighted_context,error_category,confidence_score,reasoning
+0,0,are,"With new platforms and technologies developing all the time, the media industry is constantly evolving which can make it a very exciting and dynamic place to work. The list of job roles in the media industry **are** extensive, but some options may include:",ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,100,"The subject 'list' is singular, requiring the singular verb 'is' for correct subject-verb agreement."
