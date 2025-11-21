@@ -2,13 +2,10 @@
 
 from __future__ import annotations
 
-from .converters import (
-    ConversionResult,
-    DoclingConverter,
-    MarkerConverter,
-    PdfToMarkdownConverter,
-    create_converter,
-)
+from .base import ConversionResult, PdfToMarkdownConverter
+from .converters import create_converter
+from .docling_converter import DoclingConverter
+from .marker_converter import MarkerConverter
 
 # LLM providers live under `src.llm` now — import directly from there when needed.
 
