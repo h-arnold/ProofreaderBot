@@ -1,0 +1,51 @@
+issue_id,page_number,issue,highlighted_context,error_category,confidence_score,reasoning
+0,3,Unit 1 Portfolio,"This pack contains the assessment materials for Unit 1: Portfolio.
+
+Within this pack, you will find:
+
+- information for teachers on how to manage arrangements for assessment
+- a mark record sheet
+- a **candidate pack** which includes:
+  - details of the assignment
+  - a detailed breakdown of each task
+  - information for candidates, which tells candidates about things that they must and must not do when they are completing the assessment
+  - the mark scheme which must be used to assess candidate work
+  - a Candidate Declaration Form
+
+#### **You must provide each candidate with a copy of the complete candidate assessment pack.**
+
+# <span id=""page-3-1""></span>Managing the assessment
+
+This is a centre-marked (internal) non-examination assessment. The following arrangements must be followed when managing and marking the assessment
+
+#### **Time**
+
+There are no set timings for **Unit 1 Portfolio**, but centres are encouraged to follow the suggested framework in the specification to ensure that time for learners is manageable.",ErrorCategory.CONSISTENCY_ERROR,95,The unit name is inconsistently presented as 'Unit 1: Portfolio' and 'Unit 1 Portfolio' within the same document.
+1,4,is summarised,"#### **Candidate evidence**
+
+The acceptable formats for evidence of each of the tasks **is summarised** in the task tables. Any modified assessment must enable the candidate to generate the evidence required in this table",ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,"Subject-verb agreement error: 'formats' is plural, so the verb should be 'are summarised'."
+2,4,authentic; reliable,"- they are clear about the requirements of the assessment and marking scheme prior to commencing assessment
+- evidence presented for assessment is valid, **authentic; reliable** and credible
+- assessment decisions are accurately recorded",ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,90,"The semicolon is used incorrectly in a simple list of adjectives; commas should be used for consistency (e.g., 'valid, authentic, reliable, and credible')."
+3,6,of the spring term,"It is recommended that portfolio work should begin during the spring or summer term in the first year of study, and end before Unit 2 (Externally Set Assignment) is released to learners **of the spring term** of final year of study.",ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,The preposition 'of' is incorrect here; 'in' or 'by' would be more appropriate to indicate the timing of the release.
+4,8,however;,Marks should be awarded using the full range of marks defined in the mark scheme for the question (**however;** the use of the full mark range may be limited according to the quality of the candidate responses seen).,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,"This is a comma splice. A semicolon should precede 'however' when it introduces an independent clause, and 'however' should be followed by a comma."
+5,8,look at and make notes about the candidate's response holistically to pick out,An assessor should first **look at and make notes about the candidate's response holistically to pick out** the evidence that is being assessed.,ErrorCategory.STYLISTIC_PREFERENCE,75,"The phrasing is somewhat awkward and could be rephrased for better flow and conciseness, e.g., 'holistically review the candidate's response and make notes to identify'."
+6,8,Assessors,"Beginning at the lowest band, **Assessors** should look at the candidate's response and check whether it matches the descriptors for that band.",ErrorCategory.CONSISTENCY_ERROR,90,"The term 'Assessors' is inconsistently capitalised; it appears in lowercase earlier in the document (e.g., 'Guidance for Assessors')."
+7,9,is appropriate,"Assessors are reminded of the need to revisit the standardising material as they apply the mark scheme in order to confirm that the band and the mark allocated **is appropriate** to the work submitted.
+
+Candidates are free to choose any approach that is relevant to the set task.",ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,98,"The compound subject 'the band and the mark allocated' is plural, requiring the verb 'are' instead of 'is'."
+8,10,processes are that confidently controlled,"Ideas are refined and explored through relevant selection and creative experimentation. Effective use of media, materials, techniques and **processes are that confidently controlled** and exploited. Effective and thorough ongoing review and evaluation informs the refinement and development of work as it progresses.",ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,The phrasing 'processes are that confidently controlled' is ungrammatical; it should be 'processes that are confidently controlled'.
+9,11,processes are reasonably controlled,"Ideas are refined and explored through relevant selection and experimentation. Appropriate use of media, materials, techniques and **processes are reasonably controlled** and exploited. Reasonable ongoing review and evaluation of explorations supports the refinement and development of work as it progresses.",ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,"The subject 'Appropriate use' is singular, requiring the verb 'is' instead of 'are'. Alternatively, it could be 'processes that are reasonably controlled'."
+10,13,: The portfolio,The following needs to be taken into consideration when developing your portfolio:** : The portfolio** must contain evidence of how you have met each of the assessment objectives,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,"A colon should not be used to introduce a new independent clause; it should introduce a list, an explanation, or an elaboration that is grammatically connected to the preceding clause."
+11,15,portfolio,"You must complete your **portfolio** before you start Unit 2. It will be stored securely at your centre, and you cannot amend it once submitted.
+- The Portfolio must be clearly identified with your centre and candidate name and number.
+- If you are entered for more than one pathway you must submit a different **portfolio** for each one.",ErrorCategory.CONSISTENCY_ERROR,95,"The term 'portfolio' is inconsistently capitalised throughout the document, appearing as both 'portfolio' and 'Portfolio', despite referring to a specific assessment component which is capitalised in the formal title on page 17."
+12,16,non[examination assessments],The following information has been taken from the [JCQ Information for candidates –](https://www.jcq.org.uk/wp-content/uploads/2021/08/IFC-NE_Assessments_2021_v4.pdf) **non[examination assessments]**(https://www.jcq.org.uk/wp-content/uploads/2021/08/IFC-NE_Assessments_2021_v4.pdf) and the [JCQ Artificial Intelligence (AI) Use in Assessments:](https://www.jcq.org.uk/exams-office/malpractice/artificial-intelligence/) [Protecting the Integrity of Qualifications.](https://www.jcq.org.uk/exams-office/malpractice/artificial-intelligence/) This tells you about things that you **must** and **must not** do when you are completing your assessment.,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,98,"The phrase 'non-examination assessments' is incorrectly formatted, splitting the word 'non' from the rest of the phrase and creating a broken link structure within the sentence."
+13,16,specialists they,"Markers can spot changes in the style of writing and use of language.
+- Markers are highly experienced subject **specialists they** may have read the source you are using, or even marked the work you have copied from!
+- Internet search engines and specialised computer software can be used to match phrases or pieces of text with original sources and to detect changes in the grammar and style of writing or punctuation.",ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,"This sentence contains a comma splice, joining two independent clauses ('Markers are highly experienced subject specialists' and 'they may have read the source you are using') without appropriate punctuation or a coordinating conjunction."
+14,17,are that,"Ideas are refined and explored through relevant selection and creative experimentation. Effective use of media, materials, techniques and processes **are that** confidently controlled and exploited. Effective and thorough ongoing review and evaluation informs the refinement and development of work as it progresses.",ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,98,"The phrase 'processes are that confidently controlled' is grammatically incorrect; it should be rephrased, for example, as 'processes that are confidently controlled' or 'processes are confidently controlled'."
+15,18,are,"Ideas are refined and explored through relevant selection and experimentation. Appropriate use of media, materials, techniques and processes **are** reasonably controlled and exploited. Reasonable ongoing review and evaluation of explorations supports the refinement and development of work as it progresses.",ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,"The subject of the sentence is 'use' (singular), so the verb should be 'is' for subject-verb agreement."
+16,18,meaningful and intentions,"The response is to some extent, personal and **meaningful and intentions** are realised in a basic manner. The presentation shows some understanding of visual language and the purpose and intention of the work is conveyed in a partly convincing way.",ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,90,"Two independent clauses are joined by 'and' without a preceding comma, creating a run-on sentence."
+17,19,chatbots1 :,List of software packages/AI tools/**chatbots1 :** Give brief details of how these have been used in the assignment.,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,85,"The footnote reference '1' should be a superscript (¹) and there should be no space before the colon, adhering to standard punctuation and formatting."
+18,19,"must,","You **must,** retain a copy of the question(s) and computer-generated content for reference and authentication purposes, in a noneditable format (such as a screenshot) and provide a brief explanation of how it has been used.",ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,The comma after 'must' is superfluous and grammatically incorrect in this context.
