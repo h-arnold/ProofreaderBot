@@ -200,6 +200,7 @@ class MarkerConverter(PdfToMarkdownConverter):
     def __init__(self) -> None:
         from dotenv import load_dotenv
         from marker.converters.pdf import PdfConverter
+        from marker.converters.ocr import OCRConverter
         from marker.models import create_model_dict
 
         # Load environment variables from .env file before accessing GEMINI_API_KEY
@@ -218,7 +219,7 @@ class MarkerConverter(PdfToMarkdownConverter):
             "gemini_api_key": os.environ.get("GEMINI_API_KEY"),
             "gemini_model_name": "gemini-2.5-flash-lite",
         }
-        self._converter = PdfConverter(
+        self._converter = OcrConverter(
             artifact_dict=self._model_dict,
             config=self._config,
         )
