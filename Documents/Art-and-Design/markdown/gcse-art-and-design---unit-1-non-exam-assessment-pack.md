@@ -1,3 +1,5 @@
+{1}------------------------------------------------
+
 <!-- image -->
 
 ## WJEC GCSE Art and Design
@@ -14,7 +16,19 @@ Unit 1: Portfolio Teaching from 2025
 
 <!-- image -->
 
+
+
+{2}------------------------------------------------
+
+
+
 WJEC would like to thank the students and teachers of Fitzalan High School, Cardiff and Llanwern High School, Newport for their participation in the creation of these covers.
+
+
+
+{3}------------------------------------------------
+
+
 
 ## Contents
 
@@ -32,6 +46,12 @@ WJEC would like to thank the students and teachers of Fitzalan High School, Card
 ## Copyright
 
 © WJEC CBAC Limited 2024
+
+
+
+{4}------------------------------------------------
+
+
 
 ## About this pack: information for teachers
 
@@ -75,6 +95,12 @@ Collaboration is permitted. Candidates are permitted to work in groups.
 Whilst group work may be permitted, group assessment is not. Members of the group will have made different contributions, and the work of each candidate must be individually assessed and therefore will not receive the same mark.
 
 The teacher's record must describe individual candidates' contribution to any group work.
+
+
+
+{5}------------------------------------------------
+
+
 
 ## Supervision
 
@@ -121,6 +147,12 @@ GCSE Art and Design Unit 1 - Portfolio
 
 © WJEC CBAC Limited 2024.
 
+
+
+{6}------------------------------------------------
+
+
+
 A mark record sheet must be completed for each candidate.
 
 ## Further information
@@ -128,6 +160,12 @@ A mark record sheet must be completed for each candidate.
 You should refer the to WJEC Assessment Guide / JCQ Instructions for conducting nonexamination assessment for further information on managing assessment within our GCSE Qualifications.
 
 This pack is the live assessment. It must not be used for practice purposes.
+
+
+
+{7}------------------------------------------------
+
+
 
 ## Unit 1 - Portfolio
 
@@ -166,6 +204,12 @@ The following needs to be taken into consideration when developing the portfolio
 - work must be selected and presented for assessment by the learner
 - learners should develop their intentions through the work in one portfolio.
 
+
+
+{8}------------------------------------------------
+
+
+
 ## Submitting the Portfolio
 
 - The Portfolio must be submitted internally before the start of Unit 2.
@@ -187,6 +231,12 @@ Centres should ensure consistency in marking across all pathways and teaching gr
 | No controls | Resources      |
 | Permitted   | Collaboration  |
 | Timing      | Not controlled |
+
+
+
+{9}------------------------------------------------
+
+
 
 ## Generic marking principles
 
@@ -222,6 +272,12 @@ GCSE Art and Design Unit 1 - Portfolio
 
 ## Guidance for Assessors
 
+
+
+{10}------------------------------------------------
+
+
+
 Assessors should use the full range of marks available to them. The awarding of marks must be directly related to the marking criteria, and all responses must be marked according to the banded levels provided.
 
 Standardising material that has already been awarded a mark will be available on Portal (WJEC secure website) and this should be used as a reference material when assessing work. Assessors are reminded of the need to revisit the standardising material as they apply the mark scheme in order to confirm that the band and the mark allocated is appropriate to the work submitted.
@@ -229,6 +285,12 @@ Standardising material that has already been awarded a mark will be available on
 Candidates are free to choose any approach that is relevant to the set task.
 
 GCSE Art and Design Unit 1 - Portfolio
+
+
+
+{11}------------------------------------------------
+
+
 
 | Mark Scheme for GCSE ART AND DESIGN                                                                                                                                                                                   | Mark Scheme for GCSE ART AND DESIGN                                                                                                                                                                                                                                                                                               | Mark Scheme for GCSE ART AND DESIGN                                                                                                                                                                                                                                                                                      | Unit                                                                                                                                                                                                                                                                                      | Unit                                                                                                                                                                                                                                                                                                   |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -238,6 +300,12 @@ GCSE Art and Design Unit 1 - Portfolio
 | Sophisticated and thorough development of ideas through sustained, focused and coherent investigations. Perceptive and rigorous critical analysis of sources, providing the basis for assured, independent responses. | Ideas are refined and explored rigorous selection and purposeful, creative experimentation. Perceptive and sophisticated use of media, materials, techniques and processes that are skilfully controlled and imaginatively exploited. Perceptive and discriminating review and evaluation consistently informs the refinement and | through ongoing development of work as it progresses.                                                                                                                                                                                                                                                                    | Sophisticated recording of ideas, observations and insights through extensive, coherent research and enquiry that is highly relevant to personal intentions. Perceptive, rigorous and effective critical reflection as work progresses, demonstrating depth of understanding and meaning. | Highly imaginative, personal and meaningful response which realises intentions in a sophisticated, coherent and assured manner. The presentation shows a perceptive and thorough understanding of visual language and the purpose and intention of the work is very clearly and convincingly conveyed. |
 | 4                                                                                                                                                                                                                     | 19 - 24 marks                                                                                                                                                                                                                                                                                                                     | 19 - 24 marks                                                                                                                                                                                                                                                                                                            | 19 - 24 marks                                                                                                                                                                                                                                                                             | 19 - 24 marks                                                                                                                                                                                                                                                                                          |
 | Effective and thorough development of ideas through sustained and focused investigations. Confident and rigorous critical analysis of sources, providing the basis for purposeful, independent responses.             |                                                                                                                                                                                                                                                                                                                                   | Ideas are refined and explored through relevant selection and creative experimentation. Effective use of media, materials, techniques and processes are that confidently controlled and exploited. Effective and thorough ongoing review and evaluation informs the refinement and development of work as it progresses. | Confident recording of ideas, observations and insights by appropriate means through effective research and enquiry that is relevant to personal intentions. Rigorous and effective critical reflection as work progresses, demonstrating a good level of understanding and meaning.      | Imaginative, personal and meaningful response which realises intentions in a confident and effective manner. The presentation shows a good understanding of visual language and the purpose and intention of the work is clearly and convincingly conveyed.                                            |
+
+
+
+{12}------------------------------------------------
+
+
 
 | 3   | 13 - 18 marks                                                                                                                                                                                            | 13 - 18 marks                                                                                                                                                                                                                                                                                                    | 13 - 18 marks                                                                                                                                                                                                                                                             | 13 - 18 marks                                                                                                                                                                                                                                                  |
 |-----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -249,6 +317,12 @@ GCSE Art and Design Unit 1 - Portfolio
 | 0   | 0 marks                                                                                                                                                                                                  | 0 marks                                                                                                                                                                                                                                                                                                          | 0 marks                                                                                                                                                                                                                                                                   | 0 marks                                                                                                                                                                                                                                                        |
 |     | Response not worthy of credit or not attempted.                                                                                                                                                          | Response not worthy of credit or not attempted.                                                                                                                                                                                                                                                                  | Response not worthy of credit or not attempted.                                                                                                                                                                                                                           | Response not worthy of credit or not attempted.                                                                                                                                                                                                                |
 
+
+
+{13}------------------------------------------------
+
+
+
 <!-- image -->
 
 ## WJEC Art and Design
@@ -258,6 +332,12 @@ GCSE Art and Design Unit 1 - Portfolio
 ## Unit 1: Portfolio
 
 Art, Craft and Design (3610 QSL-1 ) Fine Art (3611 QSL-1 ) Textile Design (3612 QSL-1 ) Graphic Communication (3613 QSL-1 ) Three-Dimensional Design (3614 QSL-1 ) Photography (3615 QSL-1 )
+
+
+
+{14}------------------------------------------------
+
+
 
 ## About this pack: information and instructions for candidates
 
@@ -290,6 +370,12 @@ The portfolio must contain evidence of how you have met each of the assessment o
 - Work will be selected and presented for assessment by you
 
 GCSE Art and Design Unit 1 - Portfolio
+
+
+
+{15}------------------------------------------------
+
+
 
 The guidance in the graphic below will outlines what your work should include.
 
@@ -337,12 +423,24 @@ Demonstrate control of creative skills, whilst using them imaginatively
 
 Review and refine your work to take it forward
 
+
+
+{16}------------------------------------------------
+
+
+
 ## Submitting the Portfolio
 
 - You must complete your portfolio before you start Unit 2. It will be stored securely at your centre, and you cannot amend it once submitted.
 - The Portfolio must be clearly identified with your centre and candidate name and number.
 - If you are entered for more than one pathway you must submit a different portfolio for each one.
 - Using the Candidate Declaration Form you should declare that the work was completed independently and without any assistance beyond what should be permitted. You should clearly reference any sources and any Artificial Intelligence tools used in the work. A false declaration should be considered a form of malpractice. All work must be your own, except for any non-original material that should be clearly credited in the form. This work should not be submitted for any other qualification.
+
+
+
+{17}------------------------------------------------
+
+
 
 ## Information for candidates
 
@@ -378,6 +476,12 @@ WJEC will decide which penalty is appropriate.
 
 Remember - it's your qualification so it needs to be your own work.
 
+
+
+{18}------------------------------------------------
+
+
+
 | Mark Scheme for GCSE ART AND DESIGN                                                                                                                                                                                   | Mark Scheme for GCSE ART AND DESIGN                                                                                                                                                                                                                                                                                                                                                     | Unit One: Portfolio (Total Marks = 120)                                                                                                                                                                                                                                                   | Unit One: Portfolio (Total Marks = 120)                                                                                                                                                                                                                                                                |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Band                                                                                                                                                                                                                  | AO1 AO2                                                                                                                                                                                                                                                                                                                                                                                 | AO3                                                                                                                                                                                                                                                                                       | AO4                                                                                                                                                                                                                                                                                                    |
@@ -386,6 +490,12 @@ Remember - it's your qualification so it needs to be your own work.
 | Sophisticated and thorough development of ideas through sustained, focused and coherent investigations. Perceptive and rigorous critical analysis of sources, providing the basis for assured, independent responses. | Ideas are refined and explored through rigorous selection and purposeful, creative experimentation. Perceptive and sophisticated use of media, materials, techniques and processes that are skilfully controlled and imaginatively exploited. Perceptive and discriminating ongoing review and evaluation consistently informs the refinement and development of work as it progresses. | Sophisticated recording of ideas, observations and insights through extensive, coherent research and enquiry that is highly relevant to personal intentions. Perceptive, rigorous and effective critical reflection as work progresses, demonstrating depth of understanding and meaning. | Highly imaginative, personal and meaningful response which realises intentions in a sophisticated, coherent and assured manner. The presentation shows a perceptive and thorough understanding of visual language and the purpose and intention of the work is very clearly and convincingly conveyed. |
 | 4 19 - 24 marks                                                                                                                                                                                                       | 19 - 24 marks                                                                                                                                                                                                                                                                                                                                                                           | 19 - 24 marks                                                                                                                                                                                                                                                                             | 19 - 24 marks                                                                                                                                                                                                                                                                                          |
 | Thorough development of ideas through sustained and focused investigations. Rigorous critical analysis of sources, providing the basis for purposeful, independent responses.                                         | Ideas are refined and explored through relevant selection and creative experimentation. Effective use of media, materials, techniques and processes are that confidently controlled and exploited. Effective and thorough ongoing review and evaluation informs the refinement and development of work as it progresses.                                                                | Confident recording of ideas, observations and insights by appropriate means through effective research and enquiry that is relevant to personal intentions. Rigorous and effective reflection as work progresses, demonstrating a good level of understanding and meaning.               | Imaginative, personal and meaningful response which realises intentions in a confident and effective manner. The presentation shows a good understanding of visual language and the purpose and intention of the work is clearly and convincingly conveyed.                                            |
+
+
+
+{19}------------------------------------------------
+
+
 
 | 13 - 18 marks                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | 13 - 18 marks                                                                                                                                                                                                                                                          | 13 - 18 marks                                                                                                                                                                                                                                                 | 13 - 18 marks                                                                                                                                                                                                                                                  |
 |---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -396,6 +506,12 @@ Remember - it's your qualification so it needs to be your own work.
 | Limited development of ideas through investigations. Limited analysis of sources which have had minimal influence on responses.                                                                                                                                                                                                                                                                                                                                                                                           | Limited refinement and exploration of ideas. Limited attempt to control and exploit media, materials, techniques and processes. Limited ongoing review and evaluation, with minimal impact on the work as it progresses.                                               | Limited recording of ideas, observations and insights by appropriate means through research and enquiry that has limited relevance to personal intentions. Limited reflection on work as it progresses, which demonstrates limited understanding and meaning. | A limited personal response, with minimal attempts to show meaning, and which realises intentions in a limited manner. The presentation shows limited understanding of visual language and the purpose and intention of the work is conveyed in a limited way. |
 | 0 marks                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | 0 marks                                                                                                                                                                                                                                                                | 0 marks                                                                                                                                                                                                                                                       | 0 marks                                                                                                                                                                                                                                                        |
 | Response not worthy of credit or not attempted.                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Response not worthy of credit or not attempted.                                                                                                                                                                                                                        | Response not worthy of credit or not attempted.                                                                                                                                                                                                               | Response not worthy of credit or not attempted.                                                                                                                                                                                                                |
+
+
+
+{20}------------------------------------------------
+
+
 
 ## Candidate Declaration Form
 
@@ -427,6 +543,12 @@ Date:
 
 1  Where you have used AI tools as a source of information, you must show the name of the AI source used and the date the content was generated. For example: ChatGPT 3.5 (https://openai.com/blog/chatgpt/), 25/01/2023. You must, retain a copy of the question(s) and computer-generated content for reference and authentication purposes, in a noneditable format (such as a screenshot) and provide a brief explanation of how it has been used.  This must be submitted with your work, so your teacher/assessor is able to review the work, the AI-generated content and how it has been used.
 
+
+
+{21}------------------------------------------------
+
+
+
 ## Part B: GDPR Consent
 
 - WJEC may select your work for use at teacher training events and subsequently upload it onto WJEC's secure website (accessible only to teachers via a secure login). Your name would be removed from your work before we use it. All materials are reviewed regularly and are removed when no longer relevant to our qualifications.
@@ -437,5 +559,11 @@ Date:
 - [ ] If you prefer that WJEC does not use your work in this way, please tick here: ☐
 
 2  You must be over 13 to provide consent. You may withdraw your consent at any time by contacting WJEC on qualifications@wjec.co.uk.  Please include the title of the work, the year of assessment, centre name and number, candidate name and the unit title in the communication. The work will then be removed from the secure website.
+
+
+
+{22}------------------------------------------------
+
+
 
 ## End of Candidate Assessment Pack

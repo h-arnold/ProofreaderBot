@@ -1,3 +1,5 @@
+{1}------------------------------------------------
+
 <!-- image -->
 
 ## WJEC GCSE ART AND DESIGN
@@ -8,7 +10,13 @@
 
 <!-- image -->
 
-MadeforWales. Readyfortheworld.
+Made forWales. Ready for the world.
+
+
+
+{2}------------------------------------------------
+
+
 
 ## General
 
@@ -51,6 +59,12 @@ A: No, information must remain secure until after 2nd January. This is strictly 
 - Q: Who should decide which 'big idea' the learners do for Unit 2 - ESA?
 
 A: Learners must be offered the entire ESA digital paper and should select their own topic.
+
+
+
+{3}------------------------------------------------
+
+
 
 ## Q: My centre has previously carried out the 10-hour supervised time period within lesson time - how will we manage this now that there is a requirement to start with a minimum two-hour session?
 

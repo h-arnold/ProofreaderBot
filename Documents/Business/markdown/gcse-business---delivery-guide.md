@@ -1,3 +1,5 @@
+{1}------------------------------------------------
+
 <!-- image -->
 
 ## WJEC GCSE Business
@@ -14,7 +16,19 @@ Made for Wales. Ready for the world.
 
 <!-- image -->
 
+
+
+{2}------------------------------------------------
+
+
+
 WJEC would like to thank the students and teachers of Fitzalan High School, Cardiff and Llanwern High School, Newport for their participation in the creation of these covers.
+
+
+
+{3}------------------------------------------------
+
+
 
 ## Contents
 
@@ -37,6 +51,12 @@ WJEC would like to thank the students and teachers of Fitzalan High School, Card
 | Command words.............................................................................................................. 8 Mark Schemes.......................................................................................................................13 |
 | Dates .....................................................................................................................15                                                                                                                                       |
 | Important                                                                                                                                                                                                                                                           |
+
+
+
+{4}------------------------------------------------
+
+
 
 ## Aims of the Delivery Guide
 
@@ -73,6 +93,12 @@ The unit will be based on the following concepts:
 - innovation
 - opportunities and challenges
 - sustainability.
+
+
+
+{5}------------------------------------------------
+
+
 
 ## Unit 2
 
@@ -113,6 +139,12 @@ This assessment contributes to 15% of the overall qualification grade and will t
 
 This unit will be assessed through an externally set assignment and will be set and marked by WJEC. Assessments must be submitted digitally (they may be hand written and scanned, or completed digitally).
 
+
+
+{6}------------------------------------------------
+
+
+
 ## Unit 3
 
 The purpose of this unit is to:
@@ -142,6 +174,12 @@ The unit will be based on the following concepts:
 - innovation
 - opportunities and challenges
 - sustainability.
+
+
+
+{7}------------------------------------------------
+
+
 
 ## Unit 4
 
@@ -184,6 +222,12 @@ The assignment, which will include a brief and several tasks, will be issued to 
 This assessment contributes to 25% of the overall qualification grade and will take 8 hours to complete. The assignment could be completed in one sitting, or in multiple, shorter sessions. The assignment will be marked out of a total of 60 marks.
 
 This unit will be assessed through an externally set assignment and will be marked by the centre and moderated by WJEC. Assessments must be submitted digitally (they may be hand written and scanned, or completed digitally).
+
+
+
+{8}------------------------------------------------
+
+
 
 ## Summary of assessment
 
@@ -228,6 +272,12 @@ Non-examination assessment: 8 hours
 60 marks
 
 Set by WJEC, marked by the Centre and moderated by WJEC. The assignment, which will include a brief and several tasks, will be available via the WJEC Portal, and will remain the same for the lifetime of the specification.
+
+
+
+{9}------------------------------------------------
+
+
 
 ## Assessment Objectives
 
@@ -283,6 +333,12 @@ The distribution of the assessment objectives for this unit is:
 |-------|-------|-------|-------|---------|
 | -     | 5%    | 5%    | 15%   | 25%     |
 
+
+
+{10}------------------------------------------------
+
+
+
 ## Specification and Assessment Pack
 
 When we develop new qualifications, we produce the following documents:
@@ -319,6 +375,12 @@ Each stem is used for a slightly different reason:
 | Learners should understand  | When learners are required to demonstrate greater depth of knowledge and understanding, application of knowledge to familiar or unfamiliar contexts and analysis and evaluation of information for a given purpose.                    |
 | Learners should be able to  | When learners need to apply their knowledge and understanding to a practical situation or demonstrate application of practical skills and techniques.                                                                                  |
 
+
+
+{11}------------------------------------------------
+
+
+
 ## Command words
 
 Learners should be made aware of:
@@ -353,6 +415,12 @@ The following tables are not exhaustive, but will give you a good idea of the co
 | Outline                           | Set out the main characteristics.                                                                                                                                                                        |
 | Place                             | Put in a particular position.                                                                                                                                                                            |
 
+
+
+{12}------------------------------------------------
+
+
+
 | Sort/ Order   | Arrange systematically.   |
 |---------------|---------------------------|
 | State         | Express in clear terms.   |
@@ -380,6 +448,12 @@ The following tables are not exhaustive, but will give you a good idea of the co
 | Explain                                                  | Give reasons or causes. Show an understanding of how or why something has occurred.                                                                             |
 | Explore                                                  | Investigate without preconceptions about the outcome.                                                                                                           |
 | Express                                                  | Use given information to rewrite a number or an expression in a specified form.                                                                                 |
+
+
+
+{13}------------------------------------------------
+
+
 
 | Illustrate/Show      | Use a diagram or words to make clear how a concept or theory works in a particular context. Present clarifying examples. Refer to a case study or example.   |
 |----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -411,6 +485,12 @@ The following tables are not exhaustive, but will give you a good idea of the co
 | Translate            | Change words into a different language.                                                                                                                      |
 | Use                  | Apply the information provided to a particular theory or concept.                                                                                            |
 
+
+
+{14}------------------------------------------------
+
+
+
 |       | Employ, take or hold something for a purpose.       |
 |-------|-----------------------------------------------------|
 | Write | Formulate and write down (for example an algorithm) |
@@ -440,11 +520,23 @@ The following tables are not exhaustive, but will give you a good idea of the co
 | Reflect                                      | To consider thoughts, experiences, situation or issue.                                                                                                                                             |
 | Review                                       | To consider something with the intention making changes if necessary.                                                                                                                              |
 
+
+
+{15}------------------------------------------------
+
+
+
 | Solve      | Obtain the answer(s) using a relevant or specified mathematical method.   |
 |------------|---------------------------------------------------------------------------|
 | Suggest    | State a possible reason or course of action.                              |
 | Support    | To maintain or advocate.                                                  |
 | Synthesise | Combine information, objects or ideas.                                    |
+
+
+
+{16}------------------------------------------------
+
+
 
 ## Mark Schemes
 
@@ -470,6 +562,12 @@ For short answer questions with a range of possible responses
 |            | (a)                                                                                                                                                                                                                              | Identify two external sources of finance Kyle could use to buy the items he needs to start his business.                                                                                                                              | Identify two external sources of finance Kyle could use to buy the items he needs to start his business.                                                                                                                         | Identify two external sources of finance Kyle could use to buy the items he needs to start his business.                                                                                                                         | Identify two external sources of finance Kyle could use to buy the items he needs to start his business.                                                                                                                         | Identify two external sources of finance Kyle could use to buy the items he needs to start his business.                                                                                                                         |
 |            |                                                                                                                                                                                                                                  | Award one mark for each external source of finance, up to a maximum of two marks: • bank loans • government grants • leasing/hire purchase • new investors • overdraft • share issue • trade credit. Credit any other valid response. | 2                                                                                                                                                                                                                                |                                                                                                                                                                                                                                  |                                                                                                                                                                                                                                  | 2                                                                                                                                                                                                                                |
 
+
+
+{17}------------------------------------------------
+
+
+
 ## Levels based mark schemes
 
 For questions requiring extended responses
@@ -480,6 +578,12 @@ For questions requiring extended responses
 | 1                                                                                                                                                                                                                                                         | 2                                                                                                                                                                                                                                             | 3                                                                                                                                                                                                                                              | 4                                                                                                                                                                                                                                          | 5                                                                                                                                                                                                                                         | 6                                                                                                                                                                                                                                              |
 | Minimal evaluation of the potential success of the entrepreneurial proposal using Elkington's triple bottom line. Points are one-sided. Partial coverage of one or more elements of Elkington's triple bottom line model are considered but lack context. | Limited evaluation of the potential success of the entrepreneurial proposal using Elkington's triple bottom line. Points may be one-sided. At least two elements of Elkington's triple bottom line model are considered but may lack context. | Some evaluation of the potential success of the entrepreneurial proposal, using Elkington's triple bottom line. Points may be one-sided. At least two elements of Elkington's triple bottom line model are considered and most are in context. | Detailed evaluation of the potential success of the entrepreneurial proposal using Elkington's triple bottom line. Points may be one-sided. All elements of Elkington's triple bottom line model are considered and mostly are in context. | Effective and detailed evaluation of the potential success of the entrepreneurial proposal, using Elkington's triple bottom line, which may lack balance. All elements of Elkington's triple bottom line model are considered in context. | Highly effective, balanced and highly detailed evaluation of the potential success of the entrepreneurial proposal using Elkington's triple bottom line. All elements of Elkington's triple bottom line model are fully considered in context. |
 | Total: /6                                                                                                                                                                                                                                                 | Total: /6                                                                                                                                                                                                                                     | Total: /6                                                                                                                                                                                                                                      | Total: /6                                                                                                                                                                                                                                  | Total: /6                                                                                                                                                                                                                                 | Total: /6                                                                                                                                                                                                                                      |
+
+
+
+{18}------------------------------------------------
+
+
 
 ## Important Dates
 
