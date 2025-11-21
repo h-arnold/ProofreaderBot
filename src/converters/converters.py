@@ -292,20 +292,19 @@ class DoclingConverter(PdfToMarkdownConverter):
             The markdown text with numbered page markers
         """
         placeholder = self._PAGE_MARKER_PLACEHOLDER + "-" * self._PAGE_MARKER_DASHES
-        lines = markdown.split("\n")
-        page_number = 0
-        result_lines = []
-        
-        for line in lines:
-            if line.strip() == placeholder:
-                # Replace with numbered page marker
-                page_marker = "{" + str(page_number) + "}" + "-" * self._PAGE_MARKER_DASHES
-                result_lines.append(page_marker)
-                page_number += 1
-            else:
-                result_lines.append(line)
-        
-        return "\n".join(result_lines)
+        # Split the markdown into page chunks
+        pages = markdown.split(placeholder)
+        result_chunks = []
+        for i, page_content in enumerate(pages):
+            page_marker = "{" + str(i) + "}" + "-" * self._PAGE_MARKER_DASHES
+            # Only add marker if page_content is not empty or if it's the first page
+            # (to ensure marker at start even if first chunk is empty)
+            result_chunks.append(page_marker)
+            # Avoid adding extra newlines if page_content is empty
+            if page_content.strip():
+                result_chunks.append(page_content)
+        # Join with double newlines for separation
+        return "\n\n".join(result_chunks)
 
     def close(self) -> None:
         """Clean up docling resources if needed."""
