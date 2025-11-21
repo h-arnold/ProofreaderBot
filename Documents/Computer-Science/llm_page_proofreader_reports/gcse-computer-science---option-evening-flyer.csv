@@ -1,0 +1,12 @@
+issue_id,page_number,issue,highlighted_context,error_category,confidence_score,reasoning
+0,0,Computer science,"A WJEC GCSE in **Computer science** will help you to make the most of the power of computers, from understanding how they work, to using programming skills to create your own applications and solutions to problems in the world around you.",ErrorCategory.CONSISTENCY_ERROR,90,"The term 'Computer Science' is consistently capitalised elsewhere in the document (e.g., unit titles), so it should be consistent here."
+1,0,-,"# Unit 1: Understanding Computer Science **-**
+
+This unit helps you to build your understanding of practical aspects of computing such as hardware, software, systems, networks and communication, whilst developing your ability to plan, manage and deliver computer-based solutions for everyday needs and problems.",ErrorCategory.STYLISTIC_PREFERENCE,80,The trailing hyphen in the heading is unnecessary and stylistically awkward.
+2,0,-,"#### Unit 2: Computer Programming **-**
+
+This unit gives you the opportunity to develop your programming skills, before using them to create a solution to a real-world problem.",ErrorCategory.STYLISTIC_PREFERENCE,80,The trailing hyphen in the heading is unnecessary and stylistically awkward.
+3,0,computer science,- Understand and apply principles and concepts of **computer science**,ErrorCategory.CONSISTENCY_ERROR,90,"The term 'Computer Science' is consistently capitalised elsewhere in the document (e.g., unit titles), so it should be consistent here."
+4,0,in order to,- Analyse problems **in order to** develop and implement strategies to solve them,ErrorCategory.STYLISTIC_PREFERENCE,70,'In order to' can often be replaced by 'to' for conciseness without loss of meaning.
+5,0,Marketing,- Social media platforms and **Marketing**,ErrorCategory.CONSISTENCY_ERROR,85,'Marketing' should be lowercase for consistency with other general career areas listed in the bullet points.
+6,0,-TALK,FIND OUT MORE **-TALK** TO YOUR TEACHER TODAY!,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,90,There should be a space after the dash for readability and correct punctuation.
