@@ -17,6 +17,7 @@ dependencies = [
     "pydantic>=2.12.4",
     "mistralai>=1.9.11",
     "isort>=7.0.0",
+    "docling>=2.63.0",
 ]
 
 [tool.uv.sources]
