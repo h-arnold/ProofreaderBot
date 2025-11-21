@@ -126,3 +126,46 @@ def test_marker_converter_injects_page_markers(
     assert result.markdown.startswith("\n\n{1}")
     assert "Page body" in result.markdown
     assert result.metadata == {"metadata": {"page_count": 1}, "images": {}}
+
+
+def test_marker_converter_uses_config_parser(
+    monkeypatch: pytest.MonkeyPatch, sample_pdf_path: Path
+) -> None:
+    """Test that MarkerConverter uses ConfigParser to generate configuration."""
+    config_parser_called = {"called": False, "cli_options": None}
+
+    class MockConfigParser:
+        def __init__(self, cli_options: dict):
+            config_parser_called["called"] = True
+            config_parser_called["cli_options"] = cli_options
+
+        def generate_config_dict(self) -> dict:
+            # Return a config that mimics what ConfigParser would return
+            return {
+                "use_llm": True,
+                "paginate_output": True,
+                "gemini_model_name": "gemini-2.5-flash-lite",
+            }
+
+    class DummyPdfConverter:
+        def __init__(self, artifact_dict, config=None):
+            pass
+
+        def __call__(self, path: str):
+            return types.SimpleNamespace(markdown="# Test", images=None, metadata=None)
+
+    monkeypatch.setattr("marker.models.create_model_dict", lambda: {"model": object()})
+    monkeypatch.setattr("marker.converters.pdf.PdfConverter", DummyPdfConverter)
+    monkeypatch.setattr("marker.config.parser.ConfigParser", MockConfigParser)
+
+    converter = MarkerConverter()
+
+    # Verify ConfigParser was used
+    assert config_parser_called["called"] is True
+    assert config_parser_called["cli_options"] is not None
+    assert config_parser_called["cli_options"]["use_llm"] is True
+    assert config_parser_called["cli_options"]["paginate_output"] is True
+    assert config_parser_called["cli_options"]["gemini_model_name"] == "gemini-2.5-flash-lite"
+
+    converter.close()
+

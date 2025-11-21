@@ -199,8 +199,8 @@ class MarkerConverter(PdfToMarkdownConverter):
 
     def __init__(self, *, dotenv_path: str | Path | None = None) -> None:
         from dotenv import load_dotenv
+        from marker.config.parser import ConfigParser
         from marker.converters.pdf import PdfConverter
-        from marker.converters.ocr import OCRConverter
         from marker.models import create_model_dict
 
         # Load environment variables from .env file before accessing GEMINI_API_KEY
@@ -210,18 +210,29 @@ class MarkerConverter(PdfToMarkdownConverter):
             load_dotenv()
 
         self._model_dict = create_model_dict()
+        
+        # Use ConfigParser to create configuration properly
         # Enable page markers so output matches marker CLI --paginate flag.
         # Default marker config: enable page markers and LLM mode with Gemini.
-        # Use GEMINI_API_KEY environment variable by default; if not present,
-        # Marker will still attempt to read credentials from the environment
-        # but verify_config_keys will raise if the service is configured without
-        # the required values at runtime.
-        self._config: dict[str, Any] = {
-            "paginate_output": True,
+        cli_options = {
             "use_llm": True,
-            "gemini_api_key": os.environ.get("GEMINI_API_KEY"),
+            "paginate_output": True,
             "gemini_model_name": "gemini-2.5-flash-lite",
         }
+        
+        # Add Gemini API key - ConfigParser will filter out None values,
+        # so we need to manually ensure the key is in the final config
+        gemini_api_key = os.environ.get("GEMINI_API_KEY")
+        if gemini_api_key:
+            cli_options["gemini_api_key"] = gemini_api_key
+        
+        config_parser = ConfigParser(cli_options)
+        self._config = config_parser.generate_config_dict()
+        
+        # Ensure gemini_api_key is always in config (even if None) for compatibility
+        if "gemini_api_key" not in self._config:
+            self._config["gemini_api_key"] = gemini_api_key
+        
         self._converter = PdfConverter(
             artifact_dict=self._model_dict,
             config=self._config,
