@@ -188,9 +188,7 @@ def process_single_pdf(
     return result
 
 
-def process_subject(
-    subject_dir: Path, converter_type: str = "marker"
-) -> SubjectResult:
+def process_subject(subject_dir: Path, converter_type: str = "marker") -> SubjectResult:
     """Copy PDFs and render Markdown for a single subject directory."""
     pdf_directory = subject_dir / "pdfs"
     markdown_directory = subject_dir / "markdown"

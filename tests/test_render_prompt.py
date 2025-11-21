@@ -102,7 +102,10 @@ class TestReadPrompt:
         content_sys = _read_prompt("system_language_tool_categoriser.md")
         content_user = _read_prompt("user_language_tool_categoriser.md")
         # Check for partial tags instead of literal content
-        assert "{{> error_descriptions}}" in content_sys or "{{> output_format}}" in content_sys
+        assert (
+            "{{> error_descriptions}}" in content_sys
+            or "{{> output_format}}" in content_sys
+        )
         # The document header (Document Under Review) has been moved to the
         # system prompt; the user template should not contain it.
         assert "Document Under Review" in content_sys

@@ -11,11 +11,12 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from types import SimpleNamespace
 from __future__ import annotations
+
 import os
 import sys
 from pathlib import Path
+from types import SimpleNamespace
 
 from src.converters.converters import (
     ConversionResult,
@@ -62,13 +63,10 @@ def test_create_converter_invalid_type() -> None:
         assert "marker" in str(e).lower()
         """Tests for PDF to Markdown converters."""
 
-
-
         # Add project root to path
         PROJECT_ROOT = Path(__file__).resolve().parents[1]
         if str(PROJECT_ROOT) not in sys.path:
             sys.path.insert(0, str(PROJECT_ROOT))
-
 
         from src.converters.converters import (
             ConversionResult,
@@ -79,20 +77,17 @@ def test_create_converter_invalid_type() -> None:
             create_converter,
         )
 
-
         def test_conversion_result_creation() -> None:
             """Test that ConversionResult can be created."""
             result = ConversionResult(markdown="# Test")
             assert result.markdown == "# Test"
             assert result.metadata is None
 
-
         def test_conversion_result_with_metadata() -> None:
             """Test that ConversionResult can store metadata."""
             result = ConversionResult(markdown="# Test", metadata={"key": "value"})
             assert result.markdown == "# Test"
             assert result.metadata == {"key": "value"}
-
 
         def test_create_converter_case_insensitive() -> None:
             """Test that converter type is case-insensitive for 'marker'."""
@@ -105,7 +100,6 @@ def test_create_converter_invalid_type() -> None:
             converter1.close()
             converter2.close()
 
-
         def test_create_converter_invalid_type() -> None:
             """Test that invalid converter type raises ValueError."""
             try:
@@ -114,7 +108,6 @@ def test_create_converter_invalid_type() -> None:
             except ValueError as e:
                 assert "Unknown converter type: invalid" in str(e)
                 assert "marker" in str(e).lower()
-
 
         def test_create_docling_converter_case_insensitive() -> None:
             """Factory should return DoclingConverter for 'docling' regardless of case."""
@@ -127,15 +120,15 @@ def test_create_converter_invalid_type() -> None:
             conv1.close()
             conv2.close()
 
-
         def test_converter_close_is_safe() -> None:
             """Test that calling close multiple times is safe for MarkerConverter."""
             converter = MarkerConverter()
             converter.close()
             converter.close()  # Should not raise
 
-
-        def test_marker_converter_handles_markdown_output(monkeypatch, tmp_path: Path) -> None:
+        def test_marker_converter_handles_markdown_output(
+            monkeypatch, tmp_path: Path
+        ) -> None:
             """Marker should accept MarkdownOutput objects without a renderer."""
 
             class DummyMarkdownOutput:
@@ -164,9 +157,13 @@ def test_create_converter_invalid_type() -> None:
                 def __call__(self, document):  # pragma: no cover - guard
                     raise AssertionError("MarkdownRenderer should not be used")
 
-            monkeypatch.setattr("marker.models.create_model_dict", lambda: {"fake": True})
+            monkeypatch.setattr(
+                "marker.models.create_model_dict", lambda: {"fake": True}
+            )
             monkeypatch.setattr("marker.converters.pdf.PdfConverter", DummyPdfConverter)
-            monkeypatch.setattr("marker.renderers.markdown.MarkdownRenderer", FailingRenderer)
+            monkeypatch.setattr(
+                "marker.renderers.markdown.MarkdownRenderer", FailingRenderer
+            )
 
             converter = MarkerConverter()
             try:
@@ -184,8 +181,9 @@ def test_create_converter_invalid_type() -> None:
             finally:
                 converter.close()
 
-
-        def test_marker_converter_falls_back_to_renderer(monkeypatch, tmp_path: Path) -> None:
+        def test_marker_converter_falls_back_to_renderer(
+            monkeypatch, tmp_path: Path
+        ) -> None:
             """Marker should fall back to MarkdownRenderer when needed."""
 
             dummy_document = SimpleNamespace(name="doc")
@@ -217,9 +215,13 @@ def test_create_converter_invalid_type() -> None:
                     assert document is dummy_document
                     return DummyMarkdownOutput()
 
-            monkeypatch.setattr("marker.models.create_model_dict", lambda: {"fake": True})
+            monkeypatch.setattr(
+                "marker.models.create_model_dict", lambda: {"fake": True}
+            )
             monkeypatch.setattr("marker.converters.pdf.PdfConverter", DummyPdfConverter)
-            monkeypatch.setattr("marker.renderers.markdown.MarkdownRenderer", CapturingRenderer)
+            monkeypatch.setattr(
+                "marker.renderers.markdown.MarkdownRenderer", CapturingRenderer
+            )
 
             converter = MarkerConverter()
             try:
@@ -234,13 +236,11 @@ def test_create_converter_invalid_type() -> None:
             finally:
                 converter.close()
 
-
         def test_normalise_marker_markdown_preserves_tables_without_breaks() -> None:
             """Normalisation should leave tables without <br> untouched."""
 
             markdown = "| A | B |\n| - | - |\n| 1 | 2 |"
             assert _normalise_marker_markdown(markdown) == markdown
-
 
         def test_normalise_marker_markdown_converts_breaks_to_lists() -> None:
             """Normalisation should replace marker <br> sequences while preserving structure."""
@@ -263,73 +263,84 @@ def test_create_converter_invalid_type() -> None:
 
             assert _normalise_marker_markdown(raw) == expected
 
-
-        def test_marker_converter_accepts_dotenv_path(monkeypatch, tmp_path: Path) -> None:
+        def test_marker_converter_accepts_dotenv_path(
+            monkeypatch, tmp_path: Path
+        ) -> None:
             """Test that MarkerConverter accepts and uses dotenv_path parameter."""
             # Create a test .env file with a custom API key
             env_file = tmp_path / "test.env"
             env_file.write_text("GEMINI_API_KEY=test_key_from_file\n", encoding="utf-8")
-            
+
             # Clear any existing GEMINI_API_KEY from environment
             monkeypatch.delenv("GEMINI_API_KEY", raising=False)
-            
+
             # Mock the marker components
             class DummyPdfConverter:
                 def __init__(self, artifact_dict, config=None):
                     # Store the config for verification
                     self.config = config
-                    
+
                 def __call__(self, path: str):
-                    return SimpleNamespace(markdown="# Test", images=None, metadata=None)
-            
-            monkeypatch.setattr("marker.models.create_model_dict", lambda: {"fake": True})
+                    return SimpleNamespace(
+                        markdown="# Test", images=None, metadata=None
+                    )
+
+            monkeypatch.setattr(
+                "marker.models.create_model_dict", lambda: {"fake": True}
+            )
             monkeypatch.setattr("marker.converters.pdf.PdfConverter", DummyPdfConverter)
-            
+
             # Create converter with dotenv_path
             converter = MarkerConverter(dotenv_path=env_file)
-            
+
             # Verify that the environment variable was loaded
             assert os.environ.get("GEMINI_API_KEY") == "test_key_from_file"
-            
+
             # Verify that the converter config has the API key
             assert converter._config["gemini_api_key"] == "test_key_from_file"
-            
+
             converter.close()
 
-
-        def test_create_converter_passes_dotenv_path(monkeypatch, tmp_path: Path) -> None:
+        def test_create_converter_passes_dotenv_path(
+            monkeypatch, tmp_path: Path
+        ) -> None:
             """Test that create_converter factory passes dotenv_path to MarkerConverter."""
             # Create a test .env file
             env_file = tmp_path / "factory_test.env"
             env_file.write_text("GEMINI_API_KEY=factory_test_key\n", encoding="utf-8")
-            
+
             # Clear any existing GEMINI_API_KEY from environment
             monkeypatch.delenv("GEMINI_API_KEY", raising=False)
-            
+
             # Mock the marker components
             class DummyPdfConverter:
                 def __init__(self, artifact_dict, config=None):
                     self.config = config
-                    
+
                 def __call__(self, path: str):
-                    return SimpleNamespace(markdown="# Test", images=None, metadata=None)
-            
-            monkeypatch.setattr("marker.models.create_model_dict", lambda: {"fake": True})
+                    return SimpleNamespace(
+                        markdown="# Test", images=None, metadata=None
+                    )
+
+            monkeypatch.setattr(
+                "marker.models.create_model_dict", lambda: {"fake": True}
+            )
             monkeypatch.setattr("marker.converters.pdf.PdfConverter", DummyPdfConverter)
-            
+
             # Create converter through factory with dotenv_path
             converter = create_converter("marker", dotenv_path=env_file)
-            
+
             # Verify that the environment variable was loaded
             assert os.environ.get("GEMINI_API_KEY") == "factory_test_key"
-            
+
             # Verify that the converter config has the API key
             assert converter._config["gemini_api_key"] == "factory_test_key"
-            
+
             converter.close()
 
-
-        def test_docling_converter_convert_uses_docling(monkeypatch, tmp_path: Path) -> None:
+        def test_docling_converter_convert_uses_docling(
+            monkeypatch, tmp_path: Path
+        ) -> None:
             """DoclingConverter should call DocumentConverter.convert and use export_to_markdown."""
 
             # Track the called path for verification
@@ -339,9 +350,15 @@ def test_create_converter_invalid_type() -> None:
 
                 def convert(self, path: Path):
                     self.convert_called_with = path
-                    return SimpleNamespace(document=SimpleNamespace(export_to_markdown=lambda: "# Docling Converted"))
+                    return SimpleNamespace(
+                        document=SimpleNamespace(
+                            export_to_markdown=lambda: "# Docling Converted"
+                        )
+                    )
 
-            monkeypatch.setattr("docling.document_converter.DocumentConverter", DummyDocumentConverter)
+            monkeypatch.setattr(
+                "docling.document_converter.DocumentConverter", DummyDocumentConverter
+            )
 
             converter = create_converter("docling")
             try:
@@ -359,12 +376,12 @@ def test_create_converter_invalid_type() -> None:
             finally:
                 converter.close()
 
-
         def test_docling_converter_close_is_safe() -> None:
             """Ensure close() on DoclingConverter is a no-op and safe to call multiple times."""
             conv = DoclingConverter()
             conv.close()
             conv.close()
+
 
 def test_converter_close_is_safe() -> None:
     """Test that calling close multiple times is safe for MarkerConverter."""
@@ -507,31 +524,31 @@ def test_marker_converter_accepts_dotenv_path(monkeypatch, tmp_path: Path) -> No
     # Create a test .env file with a custom API key
     env_file = tmp_path / "test.env"
     env_file.write_text("GEMINI_API_KEY=test_key_from_file\n", encoding="utf-8")
-    
+
     # Clear any existing GEMINI_API_KEY from environment
     monkeypatch.delenv("GEMINI_API_KEY", raising=False)
-    
+
     # Mock the marker components
     class DummyPdfConverter:
         def __init__(self, artifact_dict, config=None):
             # Store the config for verification
             self.config = config
-            
+
         def __call__(self, path: str):
             return SimpleNamespace(markdown="# Test", images=None, metadata=None)
-    
+
     monkeypatch.setattr("marker.models.create_model_dict", lambda: {"fake": True})
     monkeypatch.setattr("marker.converters.pdf.PdfConverter", DummyPdfConverter)
-    
+
     # Create converter with dotenv_path
     converter = MarkerConverter(dotenv_path=env_file)
-    
+
     # Verify that the environment variable was loaded
     assert os.environ.get("GEMINI_API_KEY") == "test_key_from_file"
-    
+
     # Verify that the converter config has the API key
     assert converter._config["gemini_api_key"] == "test_key_from_file"
-    
+
     converter.close()
 
 
@@ -540,28 +557,28 @@ def test_create_converter_passes_dotenv_path(monkeypatch, tmp_path: Path) -> Non
     # Create a test .env file
     env_file = tmp_path / "factory_test.env"
     env_file.write_text("GEMINI_API_KEY=factory_test_key\n", encoding="utf-8")
-    
+
     # Clear any existing GEMINI_API_KEY from environment
     monkeypatch.delenv("GEMINI_API_KEY", raising=False)
-    
+
     # Mock the marker components
     class DummyPdfConverter:
         def __init__(self, artifact_dict, config=None):
             self.config = config
-            
+
         def __call__(self, path: str):
             return SimpleNamespace(markdown="# Test", images=None, metadata=None)
-    
+
     monkeypatch.setattr("marker.models.create_model_dict", lambda: {"fake": True})
     monkeypatch.setattr("marker.converters.pdf.PdfConverter", DummyPdfConverter)
-    
+
     # Create converter through factory with dotenv_path
     converter = create_converter("marker", dotenv_path=env_file)
-    
+
     # Verify that the environment variable was loaded
     assert os.environ.get("GEMINI_API_KEY") == "factory_test_key"
-    
+
     # Verify that the converter config has the API key
     assert converter._config["gemini_api_key"] == "factory_test_key"
-    
+
     converter.close()
