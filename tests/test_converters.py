@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import os
 import sys
 from pathlib import Path
 
@@ -239,8 +240,6 @@ def test_normalise_marker_markdown_converts_breaks_to_lists() -> None:
 
 def test_marker_converter_accepts_dotenv_path(monkeypatch, tmp_path: Path) -> None:
     """Test that MarkerConverter accepts and uses dotenv_path parameter."""
-    import os
-    
     # Create a test .env file with a custom API key
     env_file = tmp_path / "test.env"
     env_file.write_text("GEMINI_API_KEY=test_key_from_file\n", encoding="utf-8")
@@ -274,8 +273,6 @@ def test_marker_converter_accepts_dotenv_path(monkeypatch, tmp_path: Path) -> No
 
 def test_create_converter_passes_dotenv_path(monkeypatch, tmp_path: Path) -> None:
     """Test that create_converter factory passes dotenv_path to MarkerConverter."""
-    import os
-    
     # Create a test .env file
     env_file = tmp_path / "factory_test.env"
     env_file.write_text("GEMINI_API_KEY=factory_test_key\n", encoding="utf-8")
