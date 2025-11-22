@@ -22,3 +22,31 @@ issue_id,page_number,issue,highlighted_context,error_category,confidence_score,r
 20,12,Objective based,# **Objective **based** mark scheme:**,ErrorCategory.STYLISTIC_PREFERENCE,90,Compound adjective 'objective-based' used before a noun should be hyphenated for clarity and formality in British English.
 21,12,TCP / IP,Name three items found in a **TCP / IP** packet.,ErrorCategory.CONSISTENCY_ERROR,95,The standard abbreviation for the protocol suite is 'TCP/IP' without spaces.
 22,13,Levels based,#### **Levels **based** mark schemes**,ErrorCategory.STYLISTIC_PREFERENCE,90,Compound adjective 'levels-based' used before a noun should be hyphenated for clarity and formality in British English.
+23,4,in better understanding,"It will offer an introduction to the specification, an assessment overview, and will support teachers **in better understanding** how to prepare their learners for the assessment of the different units. More information on each unit can be found in the separate unit guides.",ErrorCategory.STYLISTIC_PREFERENCE,75,The phrasing 'in better understanding' is less concise and slightly awkward; 'to better understand' would be more direct.
+24,5,systems development lifecycle.,"operating systems
+- **systems development lifecycle.**
+
+Legal, social, ethical, environmental and professional dimensions and reference to the evolution of technologies will be integrated where appropriate into the above topics.",ErrorCategory.CONSISTENCY_ERROR,90,"This item is formatted as a top-level category but lacks a colon, unlike other similar categories in the list, creating an inconsistency."
+25,6,TKINTER,"The materials will be released, written using the standard Python IDLE IDE and will use **TKINTER** library for graphical user elements.",ErrorCategory.SPELLING_ERROR,98,"The Python library name is conventionally spelled 'Tkinter', not 'TKINTER', as it is a proper noun."
+26,6,prerelease,"However, learners are required to use the Python IDLE IDE version specified in the **prerelease** for the Unit 2 examination.",ErrorCategory.CONSISTENCY_ERROR,95,The term 'pre-release' should be hyphenated for consistency with 'pre-released brief' used elsewhere in the document (page 4).
+27,8,i.e.:,"- Assessment Pack - this contains the Sample Assessment Materials (SAMs) **i.e.:** sample exam papers and sample NEA tasks, relevant controls for the NEA and, mark schemes This guide builds upon the information in the specification and assessment pack to help further your understanding of said documents.",ErrorCategory.STYLISTIC_PREFERENCE,85,The colon after 'i.e.' is non-standard; 'i.e.' is typically followed by a comma or no punctuation in British English.
+28,8,mark schemes This,"Assessment Pack - this contains the Sample Assessment Materials (SAMs) i.e.: sample exam papers and sample NEA tasks, relevant controls for the NEA and, **mark schemes This** guide builds upon the information in the specification and assessment pack to help further your understanding of said documents.",ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,"This is a run-on sentence where two independent clauses are joined without proper punctuation, creating a comma splice or missing period."
+29,9,Command words for direct recall,| Command words for direct recall | **Command words for direct recall** |,ErrorCategory.FACTUAL_INACCURACY,90,"The second column header is incorrectly duplicated; it should reflect the content of the column, which is 'Requirements of response'."
+30,11,Re-write,Simplify | **Re-write** an expression or a number in a simpler form,ErrorCategory.STYLISTIC_PREFERENCE,90,The preferred British English spelling for this verb is 'rewrite' (without a hyphen).
+31,11,components identify,Analyse | Separate information into **components identify** their characteristics.,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,"A conjunction (e.g., 'and') is missing between 'components' and 'identify' to connect the two clauses."
+32,11,similarities .,Compare | Identify **similarities .**,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,98,There is an unnecessary space before the full stop.
+33,11,info,Consider | Review and respond to given **info**.,ErrorCategory.STYLISTIC_PREFERENCE,90,The informal abbreviation 'info' should be replaced with 'information' in a formal document.
+34,11,only .,Contrast | Identify differences **only .**,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,98,There is an unnecessary space before the full stop.
+35,12,Support case,Justify | **Support case** with evidence.,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,"A definite or indefinite article (e.g., 'a' or 'the') is missing before 'case'."
+36,12,To suggest as appropriate.,Recommend/Improve | **To suggest as appropriate.**,ErrorCategory.AMBIGUOUS_PHRASING,90,The definition 'To suggest as appropriate' is too vague and does not adequately define the command word 'Improve'.
+37,12,intention making,Review | To consider something with the **intention making** changes if necessary.,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,The preposition 'of' is missing after 'intention' to form the correct phrase 'intention of making'.
+38,13,Objective based,"## **Objective based** mark scheme:
+
+For very short answer questions requiring one correct response.",ErrorCategory.STYLISTIC_PREFERENCE,85,The compound adjective 'objective-based' should be hyphenated when preceding the noun 'mark scheme' for clarity and standard British English style.
+39,13,Points based,"## **Points based** mark scheme
+
+For short answer questions with a range of possible responses",ErrorCategory.STYLISTIC_PREFERENCE,85,The compound adjective 'points-based' should be hyphenated when preceding the noun 'mark scheme' for clarity and standard British English style.
+40,13,i.e. checks,"A checksum that authenticates the data, **i.e. checks** it hasn't been corrupted.",ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,90,The abbreviation 'i.e.' should typically be followed by a comma in formal British English writing.
+41,14,Levels based,"## **Levels based** mark schemes
+
+For questions requiring extended responses",ErrorCategory.STYLISTIC_PREFERENCE,85,The compound adjective 'levels-based' should be hyphenated when preceding the noun 'mark schemes' for clarity and standard British English style.

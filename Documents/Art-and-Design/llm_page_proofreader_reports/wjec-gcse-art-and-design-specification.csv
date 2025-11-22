@@ -55,3 +55,84 @@ The GCSE Art and Design qualification must support **Learners** to:
 37,22,eight point scale,"GCSE qualifications are reported on an **eight point scale** from A*-G, where A* is the highest grade.",ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,The phrase 'eight-point scale' functions as a compound adjective modifying 'scale' and requires hyphenation in British English.
 38,23,help,Learning that statistics represent data and that probability models chance **help** us make informed inferences and decisions,ErrorCategory.CONSISTENCY_ERROR,80,"The subject, 'Learning that statistics represent data and that probability models chance', is a compound nominal clause treated as a singular concept in similar preceding table entries ('Understanding... helps', 'Learning... helps'), thus 'helps' would be consistent."
 39,24,Solving,| Critical Thinking and Problem **Solving** | ✓ | ✓ |,ErrorCategory.STYLISTIC_PREFERENCE,85,"A space is missing between 'Solving' and the pipe symbol, which affects the visual alignment and readability of the table column."
+40,3,Approved,- Made for Wales GCSE Qualification Approval Criteria which set out requirements for any new GCSE qualification **Approved** for first teaching from September 2025 and beyond.,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,"The word 'Approved' should be lowercase as it is a descriptive adjective modifying 'qualification', not part of a proper noun or title in this context."
+41,3,contains,- Standard Conditions of Recognition which **contains** the rules that all awarding bodies and their qualifications must meet when offering qualifications to learners in Wales.,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,98,"The plural subject 'Standard Conditions of Recognition' requires the plural verb 'contain', not 'contains'."
+42,6,Learners,"The GCSE Art and Design qualification must support **Learners** to:
+
+- explore and appreciate the creative art, design and craft work of other people, develop their own creative talents and support investigative curiosity",ErrorCategory.CONSISTENCY_ERROR,95,The term 'learners' is not a proper noun and is used in lowercase elsewhere in the document; capitalisation here is inconsistent.
+43,6,"art, design and craft work","- explore and appreciate the creative **art, design and craft work** of other people, develop their own creative talents and support investigative curiosity
+- develop knowledge, appreciation and understanding of how meaning is communicated in art, design, and craft",ErrorCategory.CONSISTENCY_ERROR,90,"The document inconsistently uses the Oxford comma in lists; for consistency, 'art, design, and craft work' should be used."
+44,6,"art, design and craft work","- respond to and reflect on the **art, design and craft work** created by other people, applying knowledge of context to evaluate the effectiveness of ideas and techniques used to communicate meaning
+- develop creative skills through experimenting and investigating to plan, devise and design images, artefacts and products with purpose and intent, recognising opportunities to realise ambitions",ErrorCategory.CONSISTENCY_ERROR,90,"The document inconsistently uses the Oxford comma in lists; for consistency, 'art, design, and craft work' should be used."
+45,6,Wales',"These aims are set out in Qualifications **Wales'** Approval Criteria.
+
+## 1.2 Curriculum for Wales",ErrorCategory.STYLISTIC_PREFERENCE,80,"For a singular proper noun ending in 's', the possessive 'Wales's' is often preferred for clarity in formal British English."
+46,6,subject specific skills,"Central to this design are the principles of progression, along with the statements of what matters and those **subject specific skills** and concepts outlined in the 'Designing your Curriculum' section of the Expressive Arts Area of Learning and Experiences.",ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,"When 'subject-specific' acts as a compound adjective modifying 'skills', it should be hyphenated."
+47,7,"1 ,","The GCSE Art and Design qualification supports the Curriculum for Wales by:
+
+- supporting the statements of what matters **1 ,** by giving learners the opportunity to:
+- develop artistic skills and knowledge",ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,A comma should not immediately follow a superscript footnote reference number.
+48,7,"2 ,","- be innovative and bold in developing their own artistic identity.
+- supporting the principles of progression **2 ,** by giving learners the opportunity to:
+- make links in the creative process as they explore and innovate",ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,A comma should not immediately follow a superscript footnote reference number.
+49,7,"3 ,","- gain confidence and resilience in giving and receiving feedback.
+- supporting the key considerations for Art and Design **3 ,** by giving learners the opportunity to:
+- experiment and develop work through a range of resources, materials, techniques and processes",ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,A comma should not immediately follow a superscript footnote reference number.
+50,8,"art, craft and design","## Art, craft, and design
+
+The **art, craft and design** pathway is designed to promote learning across a variety of experiences. This can involve the creative use of a broad range of media, techniques, tools, digital technologies and processes appropriate to learners' intentions and requirements, to create artefacts and to generate diverse evidence of the creative process, working methods and outcomes.",ErrorCategory.CONSISTENCY_ERROR,90,"The Oxford comma is used in the preceding bulleted list of pathways ('Art, craft, and design') but omitted here, creating an inconsistency."
+51,8,Photography.,"Learners undertaking this pathway could pursue areas of study from the following pathways:
+
+- Fine art
+- Graphic communication
+- Textile design
+- Three-dimensional design
+- **Photography.**",ErrorCategory.CONSISTENCY_ERROR,90,"Bullet points in this list and other similar lists are presented as fragments without terminal punctuation, making the full stop here inconsistent."
+52,9,"art, craft and design","## Fine art
+
+The fine art pathway is the aspect of **art, craft and design** where work is developed primarily for aesthetic, intellectual or conceptual purposes rather than considerations that are principally functional and utilitarian. This pathway offers a choice of traditional and digital media and processes and involves expressive use of a wide range of materials, techniques and skills.",ErrorCategory.CONSISTENCY_ERROR,90,"The Oxford comma is used in the bulleted list of pathways on page 8 ('Art, craft, and design') but omitted here, creating an inconsistency."
+53,9,Lens based media,"Learners undertaking this pathway could pursue the following areas of study:
+
+- Drawing
+- Installation
+- **Lens based media**
+- Mixed media",ErrorCategory.SPELLING_ERROR,95,'Lens-based' is a compound adjective and should be hyphenated when modifying a noun like 'media' in British English.
+54,9,Fine art textiles.,"Learners undertaking this pathway could pursue the following areas of study:
+
+- Painting
+- Printing
+- Sculpture
+- **Fine art textiles.**",ErrorCategory.CONSISTENCY_ERROR,90,"Bullet points in this list are presented as fragments without terminal punctuation, making the full stop here inconsistent."
+55,9,Typography.,"Learners undertaking this pathway could pursue the following areas of study:
+
+- Packaging design
+- **Typography.**",ErrorCategory.CONSISTENCY_ERROR,90,"Bullet points in this list are presented as fragments without terminal punctuation, making the full stop here inconsistent."
+56,10,Thet,"## Textile design
+
+**Thet** textile design pathway is defined as the creation of designs and products for woven, knitted, stitched, or printed fabrics and involves an understanding of fibres, yarns, and fabrics.",ErrorCategory.SPELLING_ERROR,98,The word 'Thet' is a misspelling of 'The' in this context.
+57,11,"purposes, intentions, and functions","Learners undertaking this pathway must explore practical and relevant critical and contextual sources such as the work of historical and contemporary threedimensional designers and makers, as well as the different **purposes, intentions, and functions** of three-dimensional design as appropriate to their own outcomes.",ErrorCategory.CONSISTENCY_ERROR,90,"The use of the Oxford comma here is inconsistent with the phrasing 'purposes, intentions and functions' on page 10, which omits it. A consistent style should be adopted throughout the document."
+58,12,this title,"Work is not limited to one area of study.
+
+Learners undertaking **this title** must explore practical and relevant critical and contextual sources such as the work of historical and contemporary photographers and the different purposes, intentions, and functions of photography as appropriate to their own outcomes.",ErrorCategory.CONSISTENCY_ERROR,95,"The term 'pathway' has been used consistently on previous pages (e.g., 'Textile design pathway', 'Three-dimensional design pathway') to refer to areas of study. Using 'this title' here is inconsistent with the established terminology."
+59,13,specific as possible,"Language used should be **specific as possible**. Staying informed and adaptable is crucial, as inclusive language promotes dignity and equity.",ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,The phrase requires 'as' before 'specific' to form the correct comparative structure 'as specific as possible'.
+60,13,up to date,WJEC will inform centres of any amendments and the most **up to date** version of the specification will always be on the website.,ErrorCategory.STYLISTIC_PREFERENCE,85,"When used as a compound adjective before a noun ('up-to-date version'), 'up-to-date' should be hyphenated in British English."
+61,14,understanding and appreciating,"- **develop understanding and appreciating** the unique and diverse traditions, history, and culture of these artistic practices",ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,The phrase lacks parallelism; it should be either 'develop understanding and appreciation' (both nouns) or 'develop an understanding of and appreciate' (verb and noun phrase).
+62,14,"own, individual","- 1.1.1 the creative process through exploring ideas and experimenting with a range of media, techniques, tools, digital technologies, and processes appropriate to their **own, individual** intentions",ErrorCategory.STYLISTIC_PREFERENCE,70,"The comma between 'own' and 'individual' is unnecessary as 'own individual' functions as a compound modifier, and removing it improves flow."
+63,14,others work,- 1.1.4 how to critically analyse and reflect on their own and **others work**.,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,The possessive form 'others'' is required here to indicate the work belonging to others.
+64,15,own creative work,"1.2.7 consider their own creative intentions and how to convey these to an audience through effective and appropriate presentation, exhibition and/or sharing of **own creative work**",ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,90,The possessive pronoun 'their' is missing before 'own creative work' to maintain consistency with 'their own creative intentions' and clarify ownership.
+65,15,others work,1.2.10 critically analyse and reflect on their own and **others work** to: • inform the development of ideas • evaluate the effectiveness of the processes and outcomes of creative work • consider if it effectively communicates the intended meaning and purpose • review how work can be interpreted by and responded to by an audience.,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,The possessive form 'others'' is required here to indicate the work belonging to others.
+66,15,consider if it effectively communicates,• evaluate the effectiveness of the processes and outcomes of creative work • **consider if it effectively communicates** the intended meaning and purpose • review how work can be interpreted by and responded to by an audience.,ErrorCategory.STYLISTIC_PREFERENCE,80,"In formal writing, 'whether' is generally preferred over 'if' when introducing an indirect question or expressing alternatives."
+67,17,Big Ideas,"## Examples of **Big Ideas**:
+
+<!-- image -->
+
+These are examples of big ideas that could be included in the Externally Set Assignment.",ErrorCategory.CONSISTENCY_ERROR,90,"The term 'big ideas' is consistently used in lowercase within the body text of the document, but capitalised in this heading, creating an inconsistency."
+68,20,in order to,Teachers can review learners' work and provide oral and written advice at a general level **in order to** secure a functional outcome.,ErrorCategory.STYLISTIC_PREFERENCE,70,The phrase 'in order to' can often be replaced by 'to' for conciseness in formal writing.
+69,20,and/preparatory,Learners can have access to resources **and/preparatory** notes.,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,The phrase 'and/preparatory' is ungrammatical; it should likely be 'and/or preparatory' or 'and preparatory'.
+70,20,Candidates work,"**Candidates work** should be stored securely after submission and during the marking, moderation and review periods.",ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,'Candidates work' should be 'Candidates' work' to indicate possession.
+71,20,Candidates work,**Candidates work** should not be released until the Review of Marking and Moderation period has expired.,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,'Candidates work' should be 'Candidates' work' to indicate possession.
+72,21,and/preparatory,Learners can have access to resources **and/preparatory** notes produced in Part 1 only.,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,The phrase 'and/preparatory' is ungrammatical; it should likely be 'and/or preparatory' or 'and preparatory'.
+73,23,eight point scale,"GCSE qualifications are reported on an **eight point scale** from A*-G, where A* is the highest grade.",ErrorCategory.STYLISTIC_PREFERENCE,90,The compound adjective 'eight-point' should be hyphenated when preceding the noun 'scale' for clarity in British English.
+74,24,&,"Local, National **&** International Contexts",ErrorCategory.STYLISTIC_PREFERENCE,85,The ampersand (&) is generally avoided in formal prose; 'and' should be used instead.
+75,24,position and learning,"Learning about geometry helps us understand shape, space and **position and learning** about measurement helps us quantify in the real world",ErrorCategory.STYLISTIC_PREFERENCE,80,A comma before 'and' would improve readability by separating two long independent clauses in this compound sentence.
+76,24,help,Learning that statistics represent data and that probability models chance **help** us make informed inferences and decisions,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,The singular gerund phrase 'Learning that statistics represent data and that probability models chance' requires the singular verb 'helps' for subject-verb agreement.
