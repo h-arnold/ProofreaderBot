@@ -12,6 +12,11 @@ RUN apt-get update \
     curl \
     unzip \
     default-jdk-headless \
+    libgl1-mesa-glx \
+    libglib2.0-0 \
+    libsm6 \
+    libxext6 \
+    libxrender-dev \
  && rm -rf /var/lib/apt/lists/*
 
 ENV PIP_NO_CACHE_DIR=1
