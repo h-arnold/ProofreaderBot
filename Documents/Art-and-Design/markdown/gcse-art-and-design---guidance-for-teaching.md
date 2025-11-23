@@ -63,21 +63,21 @@ The WJEC GCSE Art and Design has been approved by Qualifications Wales and is av
 
 ## Aims of the Guidance for Teaching
 
-The principal aim of the Guidance for Teaching is to support teachers in the delivery of WJEC GCSE Art and Design and to offer guidance on the requirements of the qualification and the assessment process. The Guidance for Teaching is not intended as a comprehensive reference , but as support for teachers to develop stimulating and exciting courses tailored to the needs and skills of their learners. The guide offers possible classroom activities and links to useful resources (including our own, freely available digital materials and some from external sources) to provide ideas for immersive and engaging lessons.
+WJEC GCSEArt andDesign and to offer guidance on therequirementsof the qualification and the assessment process.The Guidance for Teaching is not intended as a activities and linksto useful resources(including our own,freely availabledigital materials and some from external sources) to provide ideas forimmersive and engaging lessons.
 
-## Additional ways that WJEC can offer support:
+## AdditionalwaysthatWJECcanoffersupport:
 
-- sample assessment materials and mark schemes
-- professional learning events
-- examiners' reports on each unit
-- direct access to the subject officer
-- free online resources
+- sampleassessmentmaterialsandmarkschemes
+- professionallearningevents
+- examiners'reportsoneachunit
+- directaccesstothesubjectofficer
+- freeonlineresources
 - Exam Results Analysis
-- Online Examination Review
+- OnlineExaminationReview
 
 ## Quick links
 
-- Cross-cutting themes - pathway specific resources embedded into sections
+- Cross-cutting themes-pathway specificresources embedded into sections
 - Cross-curricular skills - pathway specific resources embedded into sections
 
 
@@ -88,9 +88,7 @@ The principal aim of the Guidance for Teaching is to support teachers in the del
 
 ## Assessment Summary of Assessment
 
-Unit 1:
-
-Portfolio
+Unit 1: Portfolio
 
 Non-examination assessment
 
@@ -112,26 +110,26 @@ Non-examination assessment
 
 The externally set assignment will be set by WJEC, marked by centres and moderated by WJEC.
 
-## Overview of Unit 1
+## OverviewofUnit 1
 
-This unit is designed to enable learners to develop their knowledge, understanding and skills within the creative process. Learners should be encouraged to make personal discoveries and take creative risks through their own investigations.
+This unit is designed to enable learners to develop their knowledge, understanding and skills within the creativeprocess.Learners should be encouraged to makepersonal discoveries and takecreativerisks throughtheirown investigations.
 
 Learners will be required to produce a portfolio:
 
-- through a sustained project demonstrating development, refinement, reflection and presentation
+- throughasustainedprojectdemonstrating development,refinement,reflection and presentation
 - that is internally set, in consultation with the teacher from personal and/or given starting point
 - based on a theme, concept or specific design brief.
 
 ## Overview of Unit 2
 
-The purpose of this unit is to undertake contextual and practical research and supporting studies during a preparatory period. This will inform the learner's response during a 10-hour period of sustained focus.
+The purpose of this unit is to undertake contextual and practical research and supporting studies during a preparatory period. This will inform the learner's response during a 10-hour periodofsustainedfocus.
 
 The Externally Set Assignment contains five overarching big ideas. Learners must choose one big idea only and use any of the stimuli from the big idea as a starting point to inform their work.
 
-Learners will be required to produce a response:
+Learnerswillberequiredtoproducearesponse:
 
-- demonstrating development, refinement, reflection and presentation
-- that is based on one of the big ideas.
+- demonstrating development,refinement,reflection and presentation
+- that isbasedononeofthebigideas.
 
 
 
@@ -141,9 +139,9 @@ Learners will be required to produce a response:
 
 In this unit, learners will apply the knowledge, understanding and skills developed during Unit 1 in response to the big ideas set by WJEC.
 
-The Externally Set Assignment will be released to centres prior to the end of the autumn term in the final year of the course to allow for planning and preparation of supporting materials. The Externally Set Assignment should be released to learners during the spring term in the final year of study.
+The ExternallySet Assignment will bereleased to centres prior to the end of the autumn term in the final year of the course to allow for planning and preparation of supporting term in the final year of study.
 
-## Examples of Big Ideas
+## Examples ofBig Ideas
 
 <!-- image -->
 
@@ -217,7 +215,7 @@ These are examples of big ideas that could be included in the Externally Set Ass
 
 <!-- image -->
 
-Similarly, AO2 requires that learners 'explore ideas, selecting and experimenting with appropriate media'. While it is clear that schools will not have access to every technique available, learners should be encouraged to try out using new materials and styles within the parameters that the school can offer.
+Similarly, AO2 requires that learners'explore ideas, selecting and experimenting with appropriate media'. While it is clear that schools will not have access to every technique available,learners should be encouraged to try out using new materials and styles within the parametersthattheschoolcanoffer.
 
 While it is vital that learners are open to a variety of workshop experiences and demonstrations in the early part of the GCSE course, there is no advantage to demonstrating many different techniques within the learner's portfolio unless the investigations have purpose and are evident in developing an outcome.
 
@@ -227,24 +225,24 @@ While it is vital that learners are open to a variety of workshop experiences an
 
 
 
-## 1.2.2 Learners should be able to:
+## 1.2.2 Learnersshouldbe ableto:
 
 - develop and refine practical and technical skills, communicating artistic intent with purpose.
 
-The suggested structure of the course allows for the first two terms of Year 10 to be dedicated to building skills in the selected Pathway. These sessions are most likely to be delivered by the teacher in demonstrations of techniques that they are knowledgeable about or they might be delivered by outside agencies. This may include specialisms such as (this list is not limited to the following):
+The suggested structure of the course allows for the first two terms of Year 10tobededicated tobuildingskillsintheselectedPathway.These sessionsaremostlikelytobedeliveredbytheteacherindemonstrations of techniques that they are knowledgeable about or they might be delivered by outside agencies. This may include specialisms such as (this list is not limited to the following):
 
 - painting on canvas
 - relief or intaglio printmaking
 - digital machine embroidery
-- digital graphics programmes such as Photoshop
+- digital graphicsprogrammessuch asPhotoshop
 - model making
 - using an enlarger to print light-based media.
 
 <!-- image -->
 
-This opportunity to use time to develop and refine practical skills should include drawing - a requirement of the Specification. Each Pathway will have a slightly different approach - digital resources provided by WJEC can be used to support this.
+This opportunity to use time to develop and refine practical skills should include drawing - a requirement of the Specification. Each Pathway will canbeused tosupport this.
 
-As learners move forward into the Portfolio phase of the course, these skills are likely to be developed further - either supported by the teacher or driven by the independent wishes of the learner.
+As learners move forward into the Portfolio phase of the course, these skillsarelikelytobedevelopedfurther-eithersupportedbytheteacher ordrivenbytheindependentwishesof thelearner.
 
 
 
@@ -261,7 +259,7 @@ As learners move forward into the Portfolio phase of the course, these skills ar
 
 
 
-## 1.2.3 Learners should be able to:
+## 1.2.3 Learnersshouldbeableto:
 
 - use and adapt drawing skills for different needs and purposes.
 
@@ -271,7 +269,7 @@ The importance of drawing, used in its widest sense as a recording tool and mean
 
 The ability to draw is a requirement of the Art and Design Specification. In every Pathway, learners must show evidence of drawing within both Unit 1 and Unit 2. There are a variety of ways to respond to this and every Pathway offers the opportunity to develop different drawing skills of various kinds - resources provided by WJEC can be used to support this. Drawing is not assessed separately from the body of work presented but should be embedded within it.
 
-Drawing fulfils a variety of roles and serves many different purposes. It may take the form of sketches, analytical observational studies, storyboards, thumbnail sketches, layouts, roughs, experimental or expressive studies, two or three-dimensional modelling, detailed designs and drawing with light. Drawings can be made using digital tools or traditional media or using a combination of both.
+Drawing fulfils a variety of roles and serves many different purposes. It may take theform of sketches, analytical observational studies, storyboards,thumbnail sketches, layouts,roughs, experimental or expressive studies,two or three-dimensional modelling, detailed designs and drawingwithlight.Drawingscanbemadeusing digital tools or traditional mediaorusingacombinationofboth.
 
 
 
@@ -307,19 +305,19 @@ Drawing fulfils a variety of roles and serves many different purposes. It may ta
 
 
 
-## 1.2.7 Learners should be able to:
+## 1.2.7 Learnersshouldbeableto:
 
 - consider their own creative intentions and how to convey these to an audience through effective and appropriate presentation, exhibition and/or sharing of own creative work.
 
-It is not anticipated that all work carried out during Unit 1 or Unit 2 is presented for assessment. Learners should, in conjunction with their teacher, select an appropriate level of work which clearly demonstrates their intentions and outcomes. Each Assessment Objective should be clearly met and evidence shown - albeit in a holistic nature across the work as a whole
+It isnotanticipatedthatallworkcarriedoutduringUnit 1orUnit2is presented for assessment. Learners should, in conjunction with their s theirintentionsandoutcomes.EachAssessmentObjectiveshouldbe clearly met and evidence shown - albeit in a holistic nature across the workasawhole
 
 Learners should consider the visual impact of their work and the preparation and outcomes of Unit 1 and Unit 2 should be presented in an appropriate way.
 
 <!-- image -->
 
-There is no specific requirement to use sketchbooks or folders, or the nature of the display, however learners should become aware of the impact of their work on audience.
+There is no specific requirement to use sketchbooks or folders, or the nature of the display,however learners should become aware of the impactoftheirworkonaudience.
 
-Display types are likely to be significantly different across Pathways and provision made for two dimensional as well as three dimensional work should be made. Every effort should be made to show digital work on screen.
+Display types are likely to be significantly different across Pathways and provisionmadefortwodimensionalaswellasthreedimensionalwork shouldbemade.Everyeffortshouldbemadetoshowdigitalworkon screen.
 
 
 
@@ -340,13 +338,13 @@ Display types are likely to be significantly different across Pathways and provi
 
 ## Learning Experiences
 
-Learners should be encouraged to consider the following learning experiences and skills to further develop their understanding, appreciation and awareness of the subject content. Information in the table below provides opportunities for teachers to integrate the learning experiences into delivery.
+Learners should be encouraged to consider the following learning experiences and skills to further develop their understanding, appreciation and awareness of the subject content. Information in the table below provides opportunities for teachers to integrate the learning experiencesintodelivery.
 
 | Learning Experience                                                                                                               | Exemplification of Learning Experience                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |-----------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Experience a variety of professional works through workshops and gallery/exhibitions/museum visits either in person or on- screen | The specification allows teachers to develop a curriculum that provides opportunities for a full range of artistic creative encounters of varying scope, duration and intensity. Examples of professional works include the online workshops run by the Tate Modern and resources developed for the qualification. There are also resources such as 'Go and See' on Hwb, which is a virtual collection from the Arts Council of Wales that offers live resources for both teachers and learners. These experiences show learners how other artists and designers go about developing their ideas and may inspire them to develop their own ideas. There are resources on BBC Bitesize 1 where young people reveal their sources of inspiration. There are young people's programmes in many Welsh art galleries such as: • The Mission Gallery, Swansea • MOMA, Machynlleth • Mostyn, Llandudno • The Rodd, Presteigne Where possible, teachers should invite working artists and designers to come in to visit schools to talk about how to develop their ideas through the media that they use. Centres can apply for Have-a-go funding which will support new hands-on activities if they are not available in school. Current BA or MA students are often happy to come into schools to discuss their practice - especially if they are school alumni. Develop your own skills - workshops are often available either through local makers or art colleges • Surface Pattern Design, UWTSD |
 
-1  BBC Bitesize has Eduqas resources for use, however, please be aware that there are differences between specifications.
+1 BBC Bitesize has Eduqas resourcesfor use, however, please be aware that there are differences between specifications.
 
 
 
@@ -357,7 +355,7 @@ Learners should be encouraged to consider the following learning experiences and
 | Develop confidence in giving and receiving feedback, promoting independent thinking, originality and creative resilience   | The design of the specification allows for learners to develop imaginative and intuitive personal creative responses to stimuli, linking these responses to potential career pathways and work- related experiences. Opportunities should be given for classroom feedback, peer review and assessment for learning 2 . The best way that learners develop as artists and designers is to reflect on their work. There are several ways to encourage that: • Guided reflective evaluation and analysis • Teacher general feedback • Peer review • Visiting artist/designer/teacher review It's vital that all of these experiences become positive for learners so that they feel free to talk about their work and become confident in presenting their work for feedback as well as equipped to critique the work of others (peers included). Guided reflection and analysis can be supported in the early stages of the GCSE course through providing structured evaluation handouts; there are many available on resource sharing sites such as TES and these can be adapted to suit your cohort. Teachers should ensure that these can support differentiated outcomes. Sentence starters could be provided to support learners to begin talking about their work. Use of the 5Ws help them remember this: • Who will see it? Who is the audience? • What have they done? So far ... what will they do next? • Where are their sources from? Reflect on contexts. • Why have they done it? What inspired this stage of work? • When will they complete the phase? Do they have a plan? By embedding this approach in learning in the first phase of Year 10, learners will be able to integrate reflection to their work when they begin Unit 1. This could be carried out through annotation across the sketchbook/preparatory studies or more formally. Peer review during the skill building phase, can be seen as challenging however approached carefully, can be highly influential. Learners should be given time to review each other's work at key phases in the project. Encourage learners to present their work to the group and, using the 5Ws identified above (in the first instance) explain what they are aiming to achieve. Encourage peers to provide positive comments, basing their input on the assessment objectives, offering ideas on how to achieve them. This will not only provide peer insight but will reinforce understanding of how to meet the Aos, by both recipients and providers of the feedback.   |
 |----------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
-2Please refer to Appendix D - Guide to Controls in SAMs
+2PleaserefertoAppendixD-GuidetoControlsinSAMs
 
 
 
@@ -368,7 +366,7 @@ Learners should be encouraged to consider the following learning experiences and
 | Visiting artist/designer/teacher supplementary perspective than could be provided by any visitors or even other related teachers effective, the reviewer should information in advance, so that There is a useful resource to support BBC Bitesize 3 . As a plenary to lessons, learners they have achieved during that they are working to and identify imposed deadline, giving experience discipline. Teacher formative feedback Teachers may: • review candidates' work and general level. • provide advice at a general and re-draft work. General advice of this nature into account when the work is assistance which goes beyond this assistance and take it into submit it to the external examiner. Examples of this assistance include: • providing detailed specific meet the assessment criteria. • giving detailed feedback on candidates' opportunities • intervening personally to improve work. Guidance by teachers or others broad approaches to improvement of Unit 2.   |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
-3  BBC Bitesize has Eduqas resources for use, however, please be aware that there are differences between specifications.
+3 BBC Bitesize has Eduqas resources for use,however, please be aware that there are differences betweenspecifications.
 
 
 
@@ -462,8 +460,8 @@ Learners should be encouraged to consider the following learning experiences and
 
 
 
-| There is an outstanding ceramic collection and archive at Aberystwyth University (Arts Centre) is well worth a visit - there are usually temporary exhibitions in the galleries from a variety of Art and Design disciplines.  This would provide learners to understand how arts and crafts from different places and times can be used to influence learners' own work, through critical thinking.  ## Graphic Communications Example:  Learners could be introduced to the origins of the modernist design movement which had huge influence on the development of graphic design and typography. While investigating the importance of The Bauhaus on twentieth century design in Europe and North America, learners could be introduced to the context in which the Bauhaus was operating - between WW1 and WW2, the end of the Weimar Republic and the rise of the Nazi party in Germany.  Consideration of the influence that this group of designers (see Herbert Bayer) had on the development of modern graphic design could be developed into the work of current graphic design agencies and how typography is used to influence brand design.  Learners could look at contemporary design agencies such as Smorgasbord Studio, based in West Wales and Amsterdam and Graphic Thought Facility in London to help them develop inspiration and ideas for a corporate identity project.  This would enable learners to recognise the importance of diverse contexts while reviewing the work of artists and designers while recognising the links that can be applied across different societies and time.   |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| There is an outstanding ceramic collection and archive at Aberystwyth University(Arts Centre) is well worth a visit -there are andDesigndisciplines.  Thiswouldprovidelearnerstounderstandhowartsandcraftsfrom differentplacesandtimescanbeusedtoinfluencelearners'own work, through critical thinking.  ## GraphicCommunicationsExample:  Learners could be introduced to the origins of the modernist design movementwhichhadhugeinfluenceonthedevelopmentofgraphic design and typography. While investigating the importance of The Bauhaus on twentieth century design in Europe and North America, learnerscouldbeintroducedtothecontextinwhichtheBauhaus was operating-betweenWw1 and ww2, the end of the Weimar Republic and the rise of the Nazi party in Germany.  Consideration of the influence that this group of designers (see Herbert Bayer) had on the development of modern graphic design could be developed into the work of current graphic design agencies and how typography is used to influence brand design.  Learners could look at contemporary design agencies such as SmorgasbordStudio,basedinWestWalesandAmsterdamand Graphic Thought Facility in London to help them develop inspiration and ideas for a corporate identity project.  This would enable learners to recognise the importance of diverse contextswhilereviewingtheworkofartistsanddesignerswhile recognising the links that can be applied across different societies and time.   |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 
 
@@ -600,7 +598,7 @@ Learners should be encouraged to consider the following learning experiences and
 |-----------|---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 |           | 1.1.4 1.2.8 1.2.10        | Critically analyse and reflect on their own and others work Reflect on, refine, and evaluate their own work Critically analyse and reflect on their own and others work evaluate the effectiveness of the processes and outcomes creative work | of So that learners can meet Assessment Objective 1 where they need to demonstrate that they have a critical and contextual understanding of their sources, learners need to show that they have carried out research and are conscious of the intentions of the artist or designer, their techniques and the relative success of their outcomes. This is carried out through writing and must be in the learners own words - copying verbatim of information from websites, particularly where it is presented as research, learners need to be made aware that no credit will be given where they are attempting to submit such work as their own. As a general rule, biographical information alone is not adequate and where it is considered to be relevant, should be woven through the learners writing about the artists work. In order to successfully meet all of the Assessment Objectives, it is important to use annotation to support sketchbook/ preparatory work. Opportunities to develop writing skills will be found here. Writing does not have to be in essay format - notes created 'in the moment' can have as much fluency as paragraphs written in retrospect. This type of reflection is expected to be evident in AO1, AO2 and AO3. BBC Bitesize 4 have some useful pages that should provide further guidance for learners in this area. On conclusion of the final outcome of both Units 1 and 2, it is expected that learners will create an evaluation of their work. This will encompass the preparation and sketchbook work, how the learner has approached their project, whether or not the |
 
-4  BBC Bitesize has Eduqas resources for use, however, please be aware that there are differences between specifications.
+4 BBC Bitesize has Eduqas resources for use,however, please be aware that there are differences between specifications.
 
 
 
@@ -623,7 +621,7 @@ Learners should be encouraged to consider the following learning experiences and
 |----------------------------------------------------------------------------------------------------------------|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Understanding the number system helps us to represent and compare relationships between numbers and quantities | Specification Reference 1.1.2 | Amplification Art, craft, and design from a range of diverse cultures, societies, and times influences present cultures and societies | Example Textile Design Example: Through the study of Islamic design, learners will develop mathematical understanding of pattern repeat, the use of grids and a ruler, and set of compasses. This can be taught at a wide variety of levels, starting with colouring in pre-designed patterns, through to the construction of Islamic design layouts. Even the colouring exercise, if done carefully, will develop a quick understanding of geometrical repeat pattern. The most obvious application for this is for surface pattern repeat, perhaps through screen printing or other repeat methods. This could lead on to developing understanding of different types of pattern repeats and the geometries involved. BBC bitesize 5 provides a revision guide for patterns in art and design. Additionally, here is an example of repeat print patterns. |
 
-5  BBC Bitesize has Eduqas resources for use, however, please be aware that there are differences between specifications.
+5 BBC Bitesize has Eduqas resources for use, however, please be aware that there are differences between specifications.
 
 
 
@@ -634,7 +632,7 @@ Learners should be encouraged to consider the following learning experiences and
 | Fine Art Example: Across the history of art, symmetry has played a vital and sometimes sacred role in painting and sculpture. From the tombs and sarcophagi of the ancient Egyptians, Medieval paintings of stories from the Bible (sometimes as tryptichs), the sculptural forms of Barbara Hepworth, the 'zip' paintings of Barnett Newman (which pose questions on the balance of paintings) to the kaleidoscopic paintings of Damien Hirst, all use symmetry as a formula for composition. It is useful to consider what is meant by symmetry through exploring it in art and design as it is present in every area. Within Fine Art, consideration should be made about how symmetry affects composition, balance and how it can be manipulated to create tension and interest in a work. Equally, the different forms of symmetry and asymmetry could be explored: • Reflective • Rotational/radial • Translational (related to pattern) • Inverted • Biaxial. The following revision guide from BBC Bitesize 6 explores symmetry and balance in art and design.   |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
-6  BBC Bitesize has Eduqas resources for use, however, please be aware that there are differences between specifications.
+6 BBC Bitesize has Eduqas resources for use, however, please be aware that there are differences between specifications.
 
 
 
@@ -722,8 +720,8 @@ Learners should be encouraged to consider the following learning experiences and
 
 
 
-| ## Photography Example:  Photography for GCSE Art and Design is the practice of creating images by drawing with light. This can be with or without a camera and in this instance it should be digitally produced.  Learners must explore relevant contextual sources such as the work of contemporary photographers or methods of making digital lens- based images. Welsh photographers have contributed enormously to the development of the traditional genre, such as this resource created by the National Library of Wales. How could this be updated for the digital age?  In order that learners might understand the idea of producing a digital outcome, they might be set a brief that they are required to respond to.  An example of this might be:  'A new boutique hotel is opening which will cater for those seeking sustainable tourism. Create high quality images (stills and/or moving) through your preferred digital method which capture the essence of the environment. The images could be used in the marketing campaign surrounding the launch of the hotel to attract eco-conscious travellers and convey the cynefin. Images could suggest the mood and style of the hotel,  be either portrait or landscape, black and white or colour, wide angle or detailed. Images could appear on the web or be projected within the hotel as large format images.'  Learners must demonstrate the ability to work creatively with digital processes and techniques such as time-lapse photography, video, photomontage and digital manipulation in order to show understanding of creative making in response to producing digital and commercial outcomes.   |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ## PhotographyExample:  Photography for GCSE Art and Design is the practice of creating images by drawing with light. This can be with or without a camera and in this instance it should be digitally produced.  Learners must explore relevant contextual sources such as the work of contemporary photographers or methods of making digital lens- tothedevelopmentofthetraditionalgenre,suchasthisresource created by the National Library of Wales. How could this be updated for the digital age?  digital outcome, they might be set a brief that they are required to respondto.  Anexampleofthismightbe:  'Anewboutiquehotel isopeningwhichwill caterforthoseseeking sustainabletourism.Createhighqualityimages(stillsand/or moving)throughyourpreferred digital methodwhichcapturethe essence of the environment.Theimages couldbeused in the marketingcampaignsurrounding thelaunchofthehoteltoattract eco-conscioustravellers and conveythecynefin.Imagescould suggestthemoodandstyleofthehotel，beeitherportraitor landscape,blackandwhiteorcolour,wideangleordetailed.lmages could appear on theweborbeprojectedwithin thehotel aslarge formatimages.'  Learners must demonstrate the ability to work creatively with digital processes and techniques such as time-lapse photography, video, photomontageanddigitalmanipulationinordertoshow and commercialoutcomes.   |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 
 
@@ -743,7 +741,7 @@ Learners should be encouraged to consider the following learning experiences and
 | Learners could be encouraged to gather anthropometric data and to generate a log to show evidence to support the design decisions they are making. This might be the 'reach' of an arm when designing a task light, the diameter of wrists when designing jewellery or appropriate special requirements when moving around a building. As this is an enormous area of research, it is not anticipated that learners would investigate in depth, however learners could show, through the use of graphs or diagrams, that they understand that data is important in the development of products. A useful book to support this in architecture projects is the 'New Metric Handbook'. Support for this topic can be found on BBC Bitesize 7 .   |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
-7  BBC Bitesize has Eduqas resources for use, however, please be aware that there are differences between specifications.
+7 BBC Bitesize has Eduqas resources for use,however, please be aware that there are differences between specifications.
 
 
 
@@ -782,8 +780,8 @@ Learners should be encouraged to consider the following learning experiences and
 
 
 
-| Reflection should also be applied in the exploring and experimenting phases ( AO2 ). Learners can annotate their sketchbooks with their thoughts on their achievements, where they are pleased with an outcomes, where things have gone wrong and how they are planning on moving to the next stage.  AO3  is where there is a formal requirement to 'reflect on own  work, and record ideas, observations and insights relevant to  intentions as work progresses'. This is assessed across the  whole portfolio/ESA submission and is not expected to be a  stand-alone piece of work. The reflection of work should be  seen, as mentioned above, in annotation throughout the AOs.  The recording of ideas could be written, recorded drawings or  photos, these could be diagrams to demonstrate thinking and  reflecting on design development or they could be diarised  entries into a blog, audio recording or other digital media. This  recording can include possible approaches to solving problems,  projection of different outcomes and an approach to planning  which is adaptable and explorative.  Critical evaluation can take place at the end of a project (though there is no formal requirement to do this). Learners are allowed to do this on completion of Unit 1 and Unit 2. In Unit 1, this must take place in the time period within the allotted time for the project (and time can be given to this at the teacher's discretion). In Unit 2, final evaluation can take place after the supervised time period. Teachers can insert the final evaluation into the work on behalf of the learner prior to assessment. Writing frames or prompt guidance for this evaluation is not permitted and must be carried out in a supervised environment so that the use of AI or generative software is not available.   |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Reflection should also be applied in the exploring and experimentingphases(Ao2).Learnerscanannotate their sketchbookswiththeir thoughtsontheirachievements,where they are pleased with an outcomes, where things have gone  work,andrecordideas,observations and insightsrelevantto  intentionsasworkprogresses'.Thisisassessedacrossthe  wholeportfolio/ESAsubmissionandisnotexpectedtobea  stand-alonepieceofwork.Thereflectionofworkshouldbe  seen,asmentionedabove,inannotationthroughouttheAOs.  Therecordingofideascouldbewritten,recordeddrawingsor  reflecting on design development or they could be diarised  recordingcanincludepossibleapproachestosolvingproblems,  projection of different outcomes and an approach to planning  which is adaptable andexplorative.  Criticalevaluationcantakeplaceattheendofaproject (thoughthereisnoformalrequirementtodothis).Learnersare allowed todo this oncompletion of Unit 1andUnit 2. InUnit 1, this must take place in the time period within the allotted time for the project (and time can be given to this at the teacher's discretion).InUnit2,finalevaluationcantakeplaceafterthe n intotheworkonbehalfofthelearnerpriortoassessment. permitted and must be carried out in a supervised environment s   |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
 
 
@@ -824,45 +822,38 @@ Learners should be encouraged to consider the following learning experiences and
 
 ## Interpretation of Assessment Objectives in Pathways
 
-## AO1
+## A01
 
-Develop ideas and demonstrate critical and contextual understanding of sources.
+Developideas and demonstrate critical andcontextual understanding ofsources.
 
-Develop ideas that are informed by investigating contextual studies of art and design relevant to the selected areas of study in leaners' local, national and international settings. This can include sources such as architecture, music, dance, drama, film and published media.
+relevant to the selected areas of study in leaners' local, national and international settings. This can include sources such as architecture, music, dance, drama, film and published media.
 
 Explore a variety of work produced by artists and designers. Identify their methods, approaches, purposes and intentions and why it is relevant to the learners' investigations.
 
-Show evidence of analytical skills by evaluating, comparing and contrasting the work of relevant artists, craftspeople and designers and/or other historical and contextual sources. Explain how this evidence informs their own work.
+Show evidence of analytical skills by evaluating, comparing and contrasting the work of relevant artists, craftspeople and designers and/or other historical and contextual sources. Explainhowthisevidenceinformstheirownwork.
 
 Increase awareness of the wide variety of art and design processes and outcomes and the differences between specialist areas within the various pathways, i.e:
 
 - craft metal working, drawing and painting and installation within art, craft and design
 - sculpture, ceramics, printmaking and painting within fine art
 - printed surface pattern, woven textiles and fashion design within textile design
-- product design, architecture, puppetry within 3D design
-- illustration, web design and packaging design in graphic communication.
 - Photojournalism, filmmaking and video artists
 
-## AO2
+## A02
 
-Refine work by exploring ideas, selecting and experimenting with appropriate media, techniques, tools, digital technologies, and processes.
+Refineworkby exploring ideas, selecting and experimentingwith appropriate media, techniques, tools, digital technologies, and processes.
 
-Refine and reflect upon work as it progresses by exploring ideas through selecting and experimenting with appropriate media, materials, techniques and processes. Use these safely and skilfully to maximise creative potential and produce quality outcomes.
+experimenting with appropriate media,materials,techniques and processes.Use these safely and skilfully to maximise creative potential and produce quality outcomes.
 
-Explore a stimulating and rich variety of resources to initiate and develop innovative ideas. Pay due regard to line, tone, colour, shape, texture and other visual elements, using drawing to explore and communicate ideas.
+Explore a stimulating and richvariety of resources to initiate and develop innovativeideas. Pay due regard to line, tone, colour, shape, texture and other visual elements, using drawing to explore and communicate ideas.
 
 Provide evidence of appropriate depth and breadth of study, demonstrate control of media and techniques appropriate to the selected pathway, i.e:
 
-- Refining the design and production of ceramic pieces in art craft and design
 - Using tone or colour effectively in fine art
 - Refining detail in the development of a surface pattern in textile design
-- Through consideration of appropriate materials in 3D design
-- Establishing relationships between typography and images in graphic communication.
 - Refining digital or chemical processes, composition and the use of lighting in photography
 
 Show discrimination in reviewing ideas as work develops. Explain key decisions visually or using annotation.
-
-© WJEC CBAC Ltd. 2025
 
 
 
@@ -872,34 +863,32 @@ Show discrimination in reviewing ideas as work develops. Explain key decisions v
 
 ## AO3
 
-Reflect on own work, and record ideas, observations and insights relevant to intentions as work progresses .
+Reflectonownwork,andrecordideas,observationsandinsightsrelevantto intentionsasworkprogresses.
 
 Through thoughtful personal research, gather, select, organise and communicate information from a variety of primary sources.
 
-Record ideas, observations, insights and judgments through drawing, photographs and annotation or other suitable means, to support personal intentions and relevant to the selected pathway i.e:
+Record ideas, observations, insights and judgments through drawing, photographs and annotation or other suitable means, to support personal intentions and relevant to the selectedpathwayi.e:
 
 - Through line, colour, tonal and textural studies in art, craft and design
-- Through daily sketchbook journals in fine art
+- Throughdailysketchbookjournalsinfine art
 - Through combining layers and stitch using free-arm embroidery in textile design
 - Through sketches, diagrams and technical drawings in 3D Design
-- Through thumbnail sketches and storyboards in graphic communication
-- Through annotated contact sheets in photography
 
-Critically reflect on work as it progresses to review what has been learned and to consider how to move forward, identifying opportunities to transfer knowledge, skills and understanding to new contexts.
+Criticallyreflect onwork as it progressestoreviewwhat hasbeen learned and toconsider how to move forward, identifying opportunities to transfer knowledge, skills and understandingtonewcontexts.
 
-## AO4
+## A04
 
-Present a personal and meaningful response that realises intentions and demonstrates understanding of visual language.
+Present apersonal and meaningful response thatrealises intentions and demonstrates understanding of visual language.
 
-Present personal and imaginative final outcomes that, together with selective evidence of the thinking and production processes, effectively realise the student's stated intentions and demonstrate critical understanding of visual, tactile and, where appropriate, other forms of communication.
+Presentpersonalandimaginativefinaloutcomesthat,togetherwithselectiveevidenceof the thinking and production processes, effectively realise the student's stated intentions and demonstrate critical understanding of visual, tactile and, where appropriate, other forms of communication.
 
-Make explicit connections between the different elements of the submission, including contextual, practical and written responses, presenting work that is meaningful, wellinformed and in a sequence that can be easily followed.
+Make explicit connections between the different elements of the submission, including contextual, practical and written responses, presenting work that is meaningful, wellinformed and in asequence that canbeeasilyfollowed.
 
-Consider different presentational formats and select the most appropriate for the submission. Consideration should be given to how to engage the interest of a real or imagined audience. This will be for different purposes and is likely to take different forms depending on the selected pathway i.e:
+Consider different presentational formats and select the most appropriate for the submission. Consideration should be given to how to engage the interest of a real or imagined audience. This will be for different purposes and is likely to take different forms dependingontheselectedpathwayi.e:
 
 - Installation of printed banners in a space for the general public in an art, craft and design submission.
-- A portrait painting of a family member, communicating with a general audience at a fine art exhibition.
-- A theatre costume for a school production for a textile design submission, addressing a school community.
+- g e m bno   e go bd d a
+- ssss   s
 - Demonstrating combination of aesthetic and function of furniture for customers of a suggested retailer in 3D Design.
 - The representative display of full size poster or online advertising for a music festival, for a graphic communication submission.
 - Projecting images through analogue or digital slides for a general audience at exhibition.

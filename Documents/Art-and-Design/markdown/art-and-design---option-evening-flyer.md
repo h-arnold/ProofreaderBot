@@ -4,57 +4,57 @@
 
 ## ART AND DESIGN?
 
-The WJEC GCSE Art and Design qualification will support you to:
+TheWJEC GCSE Art and Design qualification will supportyou to:
 
-- explore  the  work  of  artists  and  designers  to help develop your own creative talent
-- develop  creative  skills  so  that  you  can  plan, devise and design your own work
-- gain practical skills,  becoming  increasingly sophisticated and controlled
-- reflect on, evaluate and refine your work
-- explore diversity, identity and culture
+- exploretheworkofartistsanddesignersto helpdevelopyourowncreative talent
+- developcreativeskillssothatyoucanplan, deviseand designyour ownwork
+- gainpractical skills，becoming increasingly sophisticatedandcontrolled
+- reflecton,evaluateandrefineyourwork
+- explorediversity,identityandculture
 
-## WHAT WILL I STUDY?
+## WHAT WILLISTUDY?
 
-The GCSE Art and Design qualification is available in the following pathways:
+TheGCSEArtandDesignqualificationisavailable in the following pathways:
 
-- Art, craft, and design
+- Art,craft,and design
 - Fine art
-- Graphic communication
-- Textile design
+- Graphiccommunication
+- Textiledesign
 - Three-dimensional design
 - Photography
 
-## HOW WILL I BE ASSESSED?
+## HOWWILLIBEASSESSED?
 
 ## Unit 1 - Portfolio
 
-Assessment Type: Non-exam assessment 60% of qualification: 120 marks
+AssessmentType:Non-examassessment 60%ofqualification:120marks
 
-This  unit  is  designed  to  enable  you  to  develop knowledge,  understanding  and  skills  within  the creative process. You will be encouraged to make personal discoveries and take creative risks through  your  own  investigations.  You  will  be required to produce a portfolio:
+Thisunitisdesignedtoenableyoutodevelop knowledge，understandingandskills within the creativeprocess.Youwillbeencouragedtomake personaldiscoveriesandtakecreativerisks through your own investigations. You will be requiredtoproduceaportfolio:
 
-- through a sustained project that shows development, refinement, reflection and presentation
-- that is internally set, in consultation with your teacher, based on a theme, concept or specific design brief.
+- throughasustainedprojectthatshows development,refinement,reflectionand presentation
+- thatisinternallyset,in consultationwithyour teacher,basedona theme,conceptor specific design brief.
 
 ## Unit 2 - Externally Set Assignment (ESA)
 
-Assessment Type: Non-exam assessment 40% of qualification: 80 marks
+AssessmentType:Non-examassessment 40%ofqualification:80marks
 
-The ESA contains five overarching 'big ideas'. You must choose one big idea and use given stimuli as a starting point to inform your work.
+TheESAcontains five overarching'bigideas'.You mustchooseonebigidea andusegivenstimuli as astartingpointtoinformyourwork.
 
-## WHAT SKILLS WILL I DEVELOP?
+## WHATSKILLSWILLIDEVELOP?
 
-You  will  learn  to  use  a  broad  range  of  media, techniques, tools, digital technologies and processes  depending  on  which  pathway  you choose.  You  will  develop  the  skills  to  create artefacts -  whether  that  is  painting,  fashion design, content creation, photography, or architectural models (to name a few possibilities). You will learn how to develop creative processes and  working  methods  to  develop  the  visual outcomes that you choose.
+Youwilllearntouseabroadrangeofmedia, techniques，tools，digital technologies and processesdependingonwhichpathwayyou choose.Youwilldeveloptheskillstocreate artefacts-whetherthatispainting,fashion design，contentcreation，photography，or architecturalmodels(toname afewpossibilities). Youwill learnhowtodevelopcreativeprocesses andworkingmethodstodevelopthevisual outcomesthatyou choose.
 
-You will also learn and understand about working independently (with teacher support) to develop your own ideas and to meet deadlines set for your work. Through  all of this, you  will gain an awareness of sustainability in art and design as well  as  a  deeper  understanding  of  culture  and identity  through  engaging  with  your  emerging work.
+You will also learn and understand about working independently(withteachersupport)todevelop yourown ideas and tomeet deadlinessetforyour work.Through allof this,youwillgainan awarenessofsustainabilityinartanddesignas wellasadeeperunderstandingofcultureand identitythroughengagingwithyouremerging work.
 
-## CAREERS IN ART AND DESIGN
+## CAREERSINARTANDDESIGN
 
-This qualification provides a suitable foundation for the study of Art and Design at A-level. It will also provide a satisfying course of study for you if you choose not to progress to study further.
+Thisqualificationprovidesasuitablefoundation for the study of Art and Design at A-level.It will alsoprovideasatisfyingcourseofstudyforyou ifyou choosenottoprogresstostudyfurther.
 
-The  career  possibilities  that  come  through  the study of art and design are vast, a few are listed here:
+Thecareerpossibilitiesthatcomethroughthe studyofartanddesignarevast,afewarelisted here:
 
-Advertising,  Animator,  Architect,  Art  Therapist, Book Designer, Cartoonist, Ceramicist, Cinematographer, Costume Designer, Digital Artist,  Exhibition  Designer,  Furniture  Designer, Fashion  Designer,  Fine  Artist,  Film  researcher, Food  Stylist, Graphic  Artist,  Game  Designer, Interior  Designer,  Illustrator,  Jewellery  Designer, Knitwear designer, Landscape Architect, Lighting Designer, Make-up artist, Medical Illustrator, Model Maker, Muralist, Product Designer, Photographer, Potter, Puppet Maker, Printmaker, Production Designer, Sculptor, Silversmith, Special Effects Artist, Stained Glass Artist, Tattoo Artist,  Teacher,  Theatre  Designer,  TV  Director, Textile  Designer,  Typographer,  Urban  Designer, Video artist.
+Advertising,Animator, Architect,Art Therapist, Book Designer, Cartoonist, Ceramicist, Cinematographer，CostumeDesigner，Digital Artist，Exhibition Designer,Furniture Designer, Fashion Designer, Fine Artist,Film researcher, Food Stylist, Graphic Artist, Game Designer, Interior Designer,Illustrator,Jewellery Designer, Knitwear designer,Landscape Architect,Lighting Designer, Make-up artist，Medical llustrator, ModelMaker,Muralist，ProductDesigner, Photographer,Potter,Puppet Maker,Printmaker, ProductionDesigner，Sculptor，Silversmith, Special Effects Artist,Stained Glass Artist,Tattoo Artist,Teacher,Theatre Designer, TV Director, Textile Designer,Typographer,Urban Designer, Video artist.
 
-FIND OUT MORE -TALK TO YOUR TEACHER TODAY!
+FINDOUTMORE-TALKTOYOURTEACHERTODAY!
 
 <!-- image -->
 

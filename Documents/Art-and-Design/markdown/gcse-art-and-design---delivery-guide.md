@@ -12,7 +12,7 @@ Teaching from 2025 For award from 2027
 
 <!-- image -->
 
-This Qualifications Wales regulated qualification is not available to centres in England.
+ThisQualificationsWalesregulatedqualification isnotavailabletocentresinEngland.
 
 Made for Wales. Ready for the world.
 
@@ -60,11 +60,11 @@ WJEC would like to thank the students and teachers of Fitzalan High School, Card
 
 ## Aims of the Delivery Guide
 
-The aim of the Delivery Guide is to give an overview of the qualification and to help teachers understand how we assess the GCSE. It will offer an introduction to the specification, an assessment overview, and will support teachers in better understanding how to prepare their learners for the assessment of the different units. More information on each unit can be found in the accompanying Qualification Guide.
+The aim of the Delivery Guide is to give an overview of the qualification and to help teachers understandhowwe assess theGCSE.Itwillofferanintroductionto thespecification,an assessment overview, and will support teachers inbetter understanding how toprepare their learnersfortheassessmentofthedifferentunits.Moreinformationoneachunitcanbe found in the accompanying Qualification Guide.
 
 ## Qualification Structure
 
-WJEC GCSE Art and Design consists of 2 units:
+WJECGCSEArtandDesignconsistsof2units:
 
 <!-- image -->
 
@@ -76,7 +76,7 @@ WJEC GCSE Art and Design consists of 2 units:
 
 This is a linear qualification. It is not tiered.
 
-The Externally Set Assignment will be released to centres in the autumn term (December) of each series. The first release will be in the autumn term (December) 2026.
+The Externally Set Assignment will be released to centres in the autumn term (December) of eachseries.Thefirstreleasewillbeintheautumnterm(December)2026.
 
 Unit 1: Portfolio must be completed before Unit 2: Externally Set Assignment is presented to learners.
 
@@ -89,8 +89,8 @@ The GCSE Art and Design qualification is available in the following pathways wit
 - Art, craft, and design
 - Fine art
 - Graphic communication
-- Textile design
 - Three-dimensional design
+- Textile design
 - Photography
 
 Learners must select a pathway. The subject content in 1.1, 1.2 and 1.3 must be followed for each pathway.
@@ -105,27 +105,25 @@ Learners must select a pathway. The subject content in 1.1, 1.2 and 1.3 must be 
 
 ## Portfolio
 
-Assessment Type: Non-examination assessment 60% of qualification 120 marks
-
-This unit is designed to enable learners to develop their knowledge, understanding and skills within the creative process. Learners should be encouraged to make personal discoveries and take creative risks through their own investigations.
+Assessment Type: Non-examination assessment 60%ofqualification 120 marks within thecreativeprocess.Learners should be encouraged tomakepersonaldiscoveries and takecreativerisksthroughtheirowninvestigations.
 
 Learners will be required to produce a portfolio:
 
-- through a sustained project demonstrating development, refinement, reflection and presentation
+- presentation
 - that is internally set, in consultation with the teacher from personal and/or given starting point
 - based on a theme, concept or specific design brief.
 
 ## Unit 1: Arrangements for non-examination assessment
 
-Learners should start developing their portfolio after they have been introduced to the knowledge, understanding and skills outlined in the subject content. Learners should be provided with opportunities to develop and expand practical knowledge and understanding through workshops in the chosen pathway.
+Learners should start developing their portfolio after they have been introduced to the knowledge,understandingandskillsoutlinedinthesubjectcontent.Learnersshouldbe provided with opportunities to develop and expand practical knowledge and understanding throughworkshops in the chosenpathway.
 
-Teachers can review learners' work and provide oral and written advice at a general level in order to secure a functional outcome.
+order to secure a functional outcome.
 
-The centre must ensure that the work a learner submits for assessment is their own.
+Thecentre must ensure that the work a learner submits for assessment is their own.
 
-Learners can have access to resources and/preparatory notes.
+Learnerscanhaveaccesstoresourcesand/preparatorynotes.
 
-There is no set time limit for the completion of the portfolio. It is recommended that portfolio work should begin during the spring or summer term in the first year of study The portfolio must be completed before Unit 2 (Externally Set Assignment) is released to learners in the spring term of the final year of study. Candidates work should be stored securely after submission and during the marking, moderation and review periods. Candidates work should not be released until the Review of Marking and Moderation period has expired.
+There is no set time limit for the completion of the portfolio. It is recommended that portfolio work should begin during the spring or summer term in the first year of study The portfolio spring term of the final year of study. Candidates work should be stored securely after submission and during the marking, moderation and review periods. Candidates work should not be released until the Review of Marking and Moderation period has expired.
 
 
 
@@ -135,28 +133,28 @@ There is no set time limit for the completion of the portfolio. It is recommende
 
 ## Unit 2 Overview
 
-## Externally Set Assignment
+## ExternallySetAssignment
 
-Assessment Type: Non-examination assessment 40% of qualification 80 marks
+AssessmentType:Non-examinationassessment 40%of qualification 80 marks
 
-The purpose of this unit is to undertake contextual and practical research and supporting studies during a preparatory period. This will inform the learner's response during a 10-hour period of sustained focus.
+The purpose of this unit is to undertake contextual and practical research and supporting studies during a preparatory period. This will inform the learner's response during a 10-hour periodofsustainedfocus.
 
 The Externally Set Assignment contains five overarching big ideas. Learners must choose one big idea only and use any of the stimuli from the big idea as a starting point to inform their work.
 
-Learners will be required to produce a response:
+Learnerswillberequiredtoproducearesponse:
 
 - demonstrating development, refinement, reflection and presentation
 - that is based on one of the big ideas.
 
 In this unit, learners will apply the knowledge, understanding and skills developed during Unit 1 in response to the big ideas set by WJEC.
 
-The Externally Set Assignment will be released to centres prior to the end of the autumn term in the final year of the course to allow for planning and preparation of supporting materials. The Externally Set Assignment should be released to learners during the spring term in the final year of study.
+The Externally Set Assignment will be released to centres prior to the end of the autumn
 
 Examples of Big Ideas:
 
 <!-- image -->
 
-These are examples of big ideas that could be included in the Externally Set Assignment.
+These are examples of bigideas that could be included in the ExternallySet Assignment.
 
 
 
@@ -174,31 +172,29 @@ There is no restriction on content, format or scale of work or the amount of evi
 
 Units could be presented in any appropriate format(s) such as:
 
-- display sheets
+- displaysheets
 - visual diaries
 - sketchbook(s)/workbook(s)
 - a digital portfolio
-- mounted exhibitions
+- mountedexhibitions
 - installations
 - digital presentation.
 
 ## Unit 2: Arrangements for non-examination assessment
 
-The Externally Set Assignment will be released on the WJEC Portal on December 1st in the final year of each series. This is strictly for teachers only, to prepare resources for learners.
+The ExternallySet Assignment willbereleased on theWJECPortal onDecember 1st for learners.
 
-The Externally Set Assignment should be introduced to learners after the submission of the portfolio, during the second term of the final year of study.
+TheExternallySetAssignmentshouldbeintroducedtolearnersafterthesubmission of the portfolio, during the second term of the final year of study.
 
-Learners are required to select one of the big ideas and develop it in the form of:
-
-- a personal response
+- a personalresponse
 - a specific design brief
-- or another suitable approach.
+- or anothersuitableapproach.
 
-## PART 1: preparatory study period
+## PART 1:preparatory studyperiod
 
-Learners will develop their response over a preparatory study period. The amount of time allocated to this is determined by the centre.
+Learners will develop their response over a preparatory study period. The amount of timeallocated tothisisdeterminedbythecentre.
 
-Responses will be researched, developed and refined during the preparatory study period. They should take the form of practical, critical and contextual preparatory work/supporting studies along with reflections on the process. Only work produced during the preparatory period can be used and taken forward to Part 2.
+Responses will be researched, developed and refined during the preparatory study period.They should take the form of practical, critical and contextual preparatory work/supporting studies along with reflections on the process. Only work produced during the preparatory period can be used and taken forward to Part 2.
 
 
 
@@ -208,21 +204,19 @@ Responses will be researched, developed and refined during the preparatory study
 
 Part 1 of Unit 2 has the same controls as Unit 1 as stated in the Assessment Pack.
 
-## PART 2: sustained focus period
+## PART 2:sustained focusperiod
 
 This must be undertaken with direct supervision.
 
-The teacher cannot provide any advice or feedback on learners' work.
+only.
 
-Learners can have access to resources and/preparatory notes produced in Part 1 only.
+Learners have a maximum of 10 hours to produce their outcome, which must begin
 
-Learners have a maximum of 10 hours to produce their outcome, which must begin with a minimum 2-hour session. Part 1 and Part 2 must be assessed together.
+## Submissionofmarks
 
-## Submission of marks
+Centres are required to submit marks for both internally assessed units online during the
 
-Centres are required to submit marks for both internally assessed units online during the summer term of the final year of study in preparation for moderation.
-
-When marks have been submitted to WJEC, the online system will apply the sample formula based on the overall rank order for the total entry and immediately identify the sample of candidates whose work is selected for moderation.
+When marks have been submitted to WJEC, the online system will apply the sample formulabasedontheoverallrankorderforthetotalentryandimmediatelyidentifythe sample of candidateswhosework is selected for moderation.
 
 
 
@@ -234,7 +228,7 @@ When marks have been submitted to WJEC, the online system will apply the sample 
 
 ## Unit 1
 
-The distribution of the assessment objectives for this unit is:
+Thedistribution of the assessment objectivesfor this unit is:
 
 | AO1   | AO2   | AO3   | AO4   | Total   |
 |-------|-------|-------|-------|---------|
@@ -258,19 +252,19 @@ The distribution of the assessment objectives for this unit is:
 
 When we develop new qualifications, we produce the following documents:
 
-- Specification - this covers all the information and skills that learners are expected to know by the end of their course.
-- Assessment Pack - this contains the Sample Assessment Materials(SAMs) i.e.: sample exam papers and sample NEA tasks, relevant controls for the NEA and, mark schemes
+- Specification- this covers all the information and skills that learners are expected to knowbytheendof theircourse.
+- Assessment Pack-this contains the Sample Assessment Materials(SAMs) i.e.: sample exam papers and sample NEA tasks, relevant controls for the NEA and, mark schemes
 
 This guide builds upon the information in the specification and assessment pack to help further your understanding of said documents.
 
 ## Understanding the specification amplification
 
-Learners should be made aware of:
+Learnersshouldbemadeawareof:
 
-- the specification stems
+- thespecificationstems
 - what the specification stems mean.
 
-## Specification Stems
+## SpecificationStems
 
 When you look through the specification you will notice in the amplification column, we use a variety of wording before the list of content learners need to know; we call this a stem:
 
@@ -292,11 +286,11 @@ Each stem is used for a slightly different reason:
 
 ## Mark Schemes
 
-Mark schemes and/or assessment criteria test the intended learning outcomes for a component. They describe the knowledge and skills (and possibly attitude) that a candidate is expected to demonstrate in their responses and they are then used in marking the work.
+Mark schemes and/or assessment criteria test the intended learning outcomes for a component. They describe the knowledge and skills (and
 
-## Levels based mark schemes
+## Levelsbasedmarkschemes
 
-For questions requiring extended responses
+Forquestionsrequiringextendedresponses
 
 | Mark Scheme for GCSE ART AND DESIGN   | Mark Scheme for GCSE ART AND DESIGN                                                                                                                                                                                   | Mark Scheme for GCSE ART AND DESIGN                                                                                                                                                                                                                                                                                                                                                     | Unit One: Portfolio (Total Marks = 120)                                                                                                                                                                                                                                                   | Unit One: Portfolio (Total Marks = 120)                                                                                                                                                                                                                                                                |
 |---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
