@@ -1,6 +1,6 @@
 
 
-{0}------------------------------------------------
+{1}------------------------------------------------
 
 ![](_page_0_Picture_0.jpeg)
 
@@ -20,11 +20,11 @@ Ready for the world. This Qualifications Wales regulated qualification is not av
 
 Made for Wales.
 
-{1}------------------------------------------------
+{2}------------------------------------------------
 
 ![](_page_1_Picture_0.jpeg)
 
-{2}------------------------------------------------
+{3}------------------------------------------------
 
 ## Contents
 
@@ -50,7 +50,7 @@ Made for Wales.
 | Opportunities for embedding elements of the Curriculum for Wales | 27 |
 | Glossary for Unit 1                                              | 45 |
 
-{3}------------------------------------------------
+{4}------------------------------------------------
 
 <span id="page-3-0"></span>
 
@@ -76,7 +76,7 @@ The principal aim of the Guidance for Teaching is to support teachers in the del
 - Exam Results Analysis
 - Online Examination Review.
 
-{4}------------------------------------------------
+{5}------------------------------------------------
 
 <span id="page-4-0"></span>
 
@@ -109,7 +109,7 @@ Written examination: 1 hour 15 minutes
 
 Questions requiring objective responses, short and extended answers, with some based around applied situations.
 
-{5}------------------------------------------------
+{6}------------------------------------------------
 
 <span id="page-5-0"></span>
 
@@ -151,7 +151,7 @@ Introduction to the Business World 30% of the qualification 60 marks
 | 1.4.2 | The impact of stakeholders on business success               |
 | 1.4.3 | The impact of business on stakeholders                       |
 
-{6}------------------------------------------------
+{7}------------------------------------------------
 
 | 1.4.4 | Types of conflict between stakeholders and business           |
 |-------|---------------------------------------------------------------|
@@ -176,7 +176,7 @@ Introduction to the Business World 30% of the qualification 60 marks
 | AO3 | Analyse, evaluate, or make judgements on<br>business issues using business concepts,<br>theories, and business data. | 5%  |
 | AO4 | Select, use and apply skills and techniques in<br>practice to undertake enquiries relevant to<br>business.           | -   |
 
-{7}------------------------------------------------
+{8}------------------------------------------------
 
 ## Unit 1 Teacher Guidance
 
@@ -195,15 +195,15 @@ Introduction to the Business World 30% of the qualification 60 marks
 | 1.1.5<br>Different<br>business<br>sectors                                                                                                                                                                                              | Learners should be aware of the following business sectors at local, national and global levels:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | Teacher led                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 |                                                                                                                                                                                                                                        | agricultureconstructionenergyhealthcarehospitalitymanufacturingretailsciencetechnologytourismtransport.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | Introduce the range of business sectors in Wales and learners to provide examples in their local areas.<br>Provide <b>research opportunities</b> for learners to explore the sectors at a national level and global level and identify which are in decline or on an increase.<br>Learners to create a fact sheet of the main business sectors in the local/regional area. Identify examples of employment opportunities in those sectors.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 
-{8}------------------------------------------------
-
 {9}------------------------------------------------
-
-they try to achieve the aims.
 
 {10}------------------------------------------------
 
+they try to achieve the aims.
+
 {11}------------------------------------------------
+
+{12}------------------------------------------------
 
 ### 1.1.6 The role of the consumer
 
@@ -239,7 +239,7 @@ For example:
 |--------------------|----------------------------------------------------------------------------------------|
 | Providing Feedback | Writing a review when a product is bought.<br>Completing a survey on customer service. |
 
-{12}------------------------------------------------
+{13}------------------------------------------------
 
 ### 1.1.7 Sustainability
 
@@ -263,7 +263,7 @@ Teacher to create fact finding activities centred around 'The Well being of Futu
 
 Learners can create posters/educational videos to raise awareness of a chosen UN goal. Explore opportunities to display in school and raise awareness at KS3 assemblies.
 
-{13}------------------------------------------------
+{14}------------------------------------------------
 
 <span id="page-13-0"></span>
 
@@ -272,7 +272,7 @@ Learners can create posters/educational videos to raise awareness of a chosen UN
 | Content Amplification                          | Teacher Guidance                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | 1.2.1<br>Business<br>careers and<br>employment | Learners should know:<br>different business careers and employment opportunities available in:private sector and public sectordifferent business sectorswhat careers advice and guidance are available, such as:Careers WalesNational Careers ServiceUCAS. | Classification activity of careers into private or public sector.<br>Learners are provided with the business sectors listed in 1.1.5 and asked to create a thought shower of employment opportunities within in each sector.<br>Opportunity to arrange careers talk or fayre/University open days/Public sector organisations.<br>Learners to create a leaflet on careers advice available in Wales for Year 11 leavers, including the support they offer, contact details and how to make an enquiry.<br>Learners to make a list of their own top three career choices and how they can get guidance on these choices. |
 
-{14}------------------------------------------------
+{15}------------------------------------------------
 
 ### 1.2.2 Exploring job market trends in Wales, UK and the wider world
 
@@ -299,7 +299,7 @@ Teachers can print off graphs/raw data from the ONS and create a question and an
 
 **Whole class discussion** into the reasons for changes in job market trends and how such changes can impact skills needed by employers in the future. This may include hybrid working and skills required to work from home.
 
-{15}------------------------------------------------
+{16}------------------------------------------------
 
 <span id="page-15-0"></span>
 
@@ -315,13 +315,13 @@ Teachers can print off graphs/raw data from the ONS and create a question and an
 | 1.4.1<br>Internal and<br>external<br>stakeholders                   | Learners should know:<br>internal stakeholders, such as:employees and managersowners and shareholdersexternal stakeholders, such as:competitorscustomersgovernmentlocal communitiessupplierstrade unions.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Independent starter – learners to identify all the stakeholders of their school and why they have an interest in the activities of the school.<br>Teacher led - outline the definition of a stakeholder and explain why various stakeholders are interested in business activity. Discuss internal and external stakeholders and how their interests differ.<br>Learner activity – select a business in the local area and identify its internal and external stakeholders. Give an outline of each stakeholder.                                                                                                                                                                                                                                                                                 |
 | 1.4.2<br>The impact<br>of<br>stakeholders<br>on business<br>success | Learners should understand the impact of stakeholders on business success, including:<br>aimscostsdecision-makingoperational issuesprofitssalessocial, ethical and environmental actions.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       | Teacher led – whole class discussion and worksheet to include list of stakeholders. Learners can discuss and explain how each stakeholder can impact business success.<br>Use https://www.bbc.co.uk/bitesize/guides/z6scbdm/revision/4 as a guide.<br>Learners to extend knowledge by explaining how stakeholders can influence business success and activity. Learners to use examples to exemplify their explanations.<br>Research task – learners to research one business and identify the stakeholders and describe how these stakeholders impact the business.                                                                                                                                                                                                                             |
 
-{16}------------------------------------------------
-
 {17}------------------------------------------------
+
+{18}------------------------------------------------
 
 <span id="page-17-0"></span>
 
-{18}------------------------------------------------
+{19}------------------------------------------------
 
 ### 1.4.3 The impact of business on stakeholders
 
@@ -374,7 +374,7 @@ What has the government done to try to restrict the issue of sugar in fizzy drin
 
 **Research task** – use the internet to find out one recent business example of conflict between different stakeholders
 
-{19}------------------------------------------------
+{20}------------------------------------------------
 
 <span id="page-19-0"></span>
 
@@ -383,7 +383,7 @@ What has the government done to try to restrict the issue of sugar in fizzy drin
 |                                                                                    | Content Amplification                                                                                                                                                                                                                                                                                       | Teacher Guidance                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | 1.5.1<br>The features<br>of limited and<br>unlimited<br>liability<br>organisations | Learners should understand the:<br>concept of limited and unlimited liabilitymain features of unlimited liability business organisations including sole traders and partnershipsmain features of limited liability business organisations including private limited companies and public limited companies. | Teacher led – give learners a blank diagram/chart with the headings of the four different types of business ownership and a space to record the features of each type. Teacher to go through each ownership highlighting its features and learners to record these on the diagram/chart.<br><br>In pairs – learners to define the concept of limited and unlimited liability.<br><br>Group work – learners to work in groups of three to research one form of ownership using different resources e.g. textbooks, internet, a case study. The group each identifies and defines key terms and the advantages and disadvantages of that ownership model.<br><br>Learner activity – use past paper questions or other questions to answer extended response questions on the features of different types of business ownership.<br><br>Any group research information could be done on google jam board or an interactive Canva whiteboard. https://www.canva.com/online-whiteboard/templates/ |
 
-{20}------------------------------------------------
+{21}------------------------------------------------
 
 ### 1.5.2 The features of purpose driven businesses
 
@@ -429,7 +429,7 @@ Discuss why a business might decide to change its ownership from:
 - two advantages
 - two disadvantages.
 
-{21}------------------------------------------------
+{22}------------------------------------------------
 
 <span id="page-21-0"></span>
 
@@ -438,7 +438,7 @@ Discuss why a business might decide to change its ownership from:
 | Content Amplification                                                    |                                                                                                                                                                                                                                                                                                                                                         | Teacher Guidance                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | 1.6.1<br>The<br>importance<br>of effective<br>supply chain<br>management | Learners should know:<br>the role of procurement, logistics and stock control stages of the supply chainhow the supply chain will differ for businesses:selling different goods and servicesoperating at different scales.Learners should understand the impact on businesses and its stakeholders of having an appropriate and effective supply chain. | Teacher led – key terms and explanation of the role of procurement/logistics and stock control and how this makes up the supply chain.<br><br>Learner activity – create a flow chart that summarise the stages of the supply chain. Select one business and add examples of its supply chain to the flowchart.<br><br>Learners list the main procurement and logistics decisions they would need to make if they were running a small café – buying food, ensuring delivery of food, replacing broken plates, etc. For each decision they should identify the impact on the café.<br><br>Watch the video about Coca-Cola's supply chain (YouTube) and summarise Coca-Cola's supply chain.<br><br>Give each learner a business or product and get them to create a pictorial representation of its possible supply chain.<br><br>Teacher led – use examples to illustrate how the supply chain will differ for businesses selling different types of products and operate at different scales.<br><br>Discuss Fairtrade products and the supply chain for cocoa beans and bananas.<br><br>https://www.fairtrade.org.uk/for-business/fairtrade-sourcing/<br>The Story of Fairtrade footballs<br><br>https://www.youtube.com/watch?app=desktop&v=wTrFOLLvlGs<br>Teacher to highlight the importance of having an effective supply chain and how this can impact its stakeholders. |
 
-{22}------------------------------------------------
+{23}------------------------------------------------
 
 ### 1.6.2 The features of the green and circular economy
 
@@ -472,7 +472,7 @@ Teacher to bring into class some plastic bottles and ask the class to investigat
 - economy
 - environment.
 
-{23}------------------------------------------------
+{24}------------------------------------------------
 
 <span id="page-23-0"></span>
 
@@ -491,15 +491,15 @@ Teacher to bring into class some plastic bottles and ask the class to investigat
 | 1.8.1<br>Influences on<br>location                              | Learners should understand:<br>the factors influencing the location of a business, including:<br>costsinfrastructurelabour supplyproximity to marketsupplies/materialsthe factors influencing the siting of a business within a location, including:<br>accessibilitycostsfootfallpersonal reasonsproximity/closeness to competitorssize. | Teacher led – teacher to outline the factors affecting location and siting of different types of business including manufacturers, retailers and online businesses. Use of PowerPoint and worksheets. Teacher to make clear the difference between location and site.<br><br>Learner activity – produce a diagram that clearly shows the difference between location and site and the relative factors.<br><br>Learner activity – give learners a few scenarios of businesses with different needs and get them to describe the factors that were important for them in choosing a location.<br><br>Paired work – learners to discuss and report back to the class what location factors would be important for the following businesses:<br>Multinational manufacturer of carsOnline-only UK wide retail shop selling furnitureA local entrepreneur wanting to open a new restaurant<br>Learner activity – learners to select a local business and summarise the factors that influenced its site.<br><br>Research task – learners to think of a business idea in their local area and choose a suitable site, giving the reason for their choice of site.<br><br>Paired work – give each pair a different business from different business sectors and operating at different scales and get them to plot on a local map where they would site the business. Learners write a paragraph justifying their siting decision for the business explaining clearly why they have chosen the location and any issues that they may face. |
 | 1.8.2<br>The impact<br>of technology<br>on business<br>location | Learners should know the impact of using the following<br>technology on business location:<br>e-commerce/m-commerceremote working.                                                                                                                                                                                                        | Teacher led – definitions and examples of e-commerce, m-commerce<br>and remote working.<br><br>Paired work – learners to consider how the growth in e-commerce, m-commerce and remote working have impacted on business location.<br><br>Research task – learners to investigate how one business has been impacted by the growth in e-commerce, m-commerce and remote working and produce a summary or present back to the class.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 
-{24}------------------------------------------------
-
 {25}------------------------------------------------
-
-<span id="page-25-0"></span>
 
 {26}------------------------------------------------
 
+<span id="page-25-0"></span>
+
 {27}------------------------------------------------
+
+{28}------------------------------------------------
 
 <span id="page-27-1"></span><span id="page-27-0"></span>
 
@@ -522,9 +522,9 @@ Learners should be encouraged to consider the following learning experiences and
 | engage in collaborative<br>working                                                                                                                   | 1.1.3, 1.1.6, 1.1.7<br>There are opportunities for collaborative working throughout<br>Unit 1. Specifically in areas where learners can use<br>collaborative digital tools such as Canva, Google Jamboard,<br>etc.<br>During collaboration learners should be able to show they are<br>responsive to feedback and use it to show any adaptations<br>and improvements.                                                                                                                                 |
 | gain awareness and<br>appreciation of some of the<br>different careers and work<br>related areas, linked to the<br>subject content                   | 1.2.1, 1.2.2<br>Learners could research jobs of the past, present and future<br>using the ONS<br>website, in particularly, the Business, Industry<br>and Trade<br>section, producing statistics regarding employment<br>types and societal needs, both locally and nationally.<br>Learners could also explore the<br>skills required for any<br>future<br>career opportunities<br>and<br>make considered predictions on<br>industry needs<br>in the future.                                           |
 
-{28}------------------------------------------------
-
 {29}------------------------------------------------
+
+{30}------------------------------------------------
 
 ## Opportunities for embedding elements of the Curriculum for Wales
 
@@ -538,7 +538,7 @@ Learners should be encouraged to consider the following learning experiences and
 |                                             | 1.3.1                      | Different scales of<br>business operation | Learners can use case studies, articles and videos that<br>provide examples of local, national and global<br>businesses and how the products and services differ in<br>each market. They can research the rise of local Welsh<br>businesses and examine their context and the reasons<br>for success. |
 |                                             | 1.3.3                      | The nature of<br>multinational business   | Learners could also look at current employment<br>opportunities in their local area via local job searches.                                                                                                                                                                                           |
 
-{30}------------------------------------------------
+{31}------------------------------------------------
 
 | There are many opportunities to include Sustainability in GCSE Business. These opportunities    |
 |-------------------------------------------------------------------------------------------------|
@@ -566,15 +566,15 @@ Learners should be encouraged to consider the following learning experiences and
 |                                                                                           | 1.2.2                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | Exploring job market<br>trends in Wales, UK and<br>the wider world | The explosion of online purchasing has enabled consumers to be targeted on a global basis. Learners could explore the diverse nature of consumers from both within the UK as well as from a global market.                                                                                                                                                                                                               |
 |                                                                                           | 1.1.4                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | Different markets                                                  | Learners could be made aware of the 9 protected characteristics of the Equality Act 2010 and discuss how businesses can ensure that discrimination isn't experienced by anybody holding these characteristics.                                                                                                                                                                                                           |
 
-{31}------------------------------------------------
-
 {32}------------------------------------------------
+
+{33}------------------------------------------------
 
 Learners could explore diversity in society and the positive impact it has had on business growth. They could look at job market trends and how these have changed in line with the changing family structures within society and the changing norms of sexuality and gender over time, including the lives of LGBTQ+.
 
 <span id="page-32-0"></span>Learners could be given the opportunity to explore the growth of women in innovation and STEM subjects, as well as the recent growth of professional sports careers for women, such as with the Welsh Rugby Union: [Welsh Rugby Union](https://www.wru.wales/2024/09/new-professional-contracts-for-wales-women/)  [| Wales & Regions | New professional contracts](https://www.wru.wales/2024/09/new-professional-contracts-for-wales-women/)  [for Wales Women.](https://www.wru.wales/2024/09/new-professional-contracts-for-wales-women/)
 
-{33}------------------------------------------------
+{34}------------------------------------------------
 
 | There are many opportunities to include Human Rights Education and Diversity in GCSE<br>Business. These opportunities are important to learners because it will allow them to see how<br>they can contribute to being ethical citizens, and how to promote these into businesses in the<br>future. They will also be able to explore how they themselves as consumers have rights and what<br>this means when purchasing goods and services.<br>Below are some examples of how Human Rights Education and Diversity can be embedded<br>into teaching and learning: |                            |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 |--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -595,7 +595,7 @@ Learners could explore diversity in society and the positive impact it has had o
 | Reading                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | All areas                  | Teachers should use recent news articles (such as BBC news)<br>and case studies, to engage learners in developing independent<br>reading and research. Learners should summarise and<br>synthesise these news articles and case studies in areas such as<br>globalisation (1.3.2), supply chain management (1.6.1) and the<br>green and circular economy (1.6.2). Teachers could have set<br>questions following the study of these articles to ensure learners<br>have absorbed the necessary information, and they are able to<br>search through texts to find relevant sources of information.                                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | Speaking                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | All areas                  | Q&A sessions and group collaborative working and feedback.<br>Teachers should be using Q&A sessions in all topic areas, both in<br>small groups, as well as a class. This not only enhances<br>understanding for the learners, but builds their confidence in<br>speaking in front of others, expressing their opinion.<br>Teachers could facilitate a collaborative, group working<br>opportunity when teaching 'The features of limited and unlimited<br>liability organisations' (1.5.1). Within the teaching of this topic,<br>learners could work in groups to explore the features of limited and<br>unlimited liability organisations. |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 
-{34}------------------------------------------------
+{35}------------------------------------------------
 
 **There are many opportunities to include Career and Work-Related Experiences (CWRE) in GCSE Business. These opportunities are important to learners because they will start to critically evaluate the pathways available for them in the future. It will provide information on what support and guidance is available and help with making decisions for further study or employment.**
 
@@ -603,17 +603,17 @@ Learners could explore diversity in society and the positive impact it has had o
 
 **Below are some examples of how CWRE can be embedded into teaching and learning:**
 
-{35}------------------------------------------------
-
 {36}------------------------------------------------
 
 {37}------------------------------------------------
+
+{38}------------------------------------------------
 
 |         | Specification Reference | Example                                                                                                                                                                                                                                                                                                                                                                                                                               |
 |---------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Writing | All areas               | Learners will use a variety of writing techniques when performing<br>different tasks such as:<br>summarisingsynthesisinginformative writingevaluation techniques.When tackling 'Sustainability' (1.1.7), learners could create a<br>sustainability poster to raise awareness for younger learners in the<br>school. It is imperative that learners use different language (formal<br>and informal) when targeting specific audiences. |
 
-{38}------------------------------------------------
+{39}------------------------------------------------
 
 ## Cross-curricular Skills - Numeracy
 
@@ -631,7 +631,7 @@ Learners could explore diversity in society and the positive impact it has had o
 | 1.7.2                      | The purpose of break<br>even   | Learners could use a case study on a local business.<br>When researching this business, learners could<br>calculate revenue, costs and profit.     |
 | 1.7.3                      | Break-even and<br>contribution | Learners will calculate break-even<br>using the<br>contribution<br>method and use raw data from teacher<br>developed case studies.                 |
 
-{39}------------------------------------------------
+{40}------------------------------------------------
 
 | Understanding the number<br>system helps us to represent<br>and compare relationships<br>between numbers and quantities                              | Specification<br>Reference | Amplification                                                      | Example                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
 |------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|--------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -640,7 +640,7 @@ Learners could explore diversity in society and the positive impact it has had o
 |                                                                                                                                                      | 1.8.1                      | Influences on location                                             | Teachers could outline the factors which influence<br>business location. Learners could research and plot a<br>range of businesses on a local map, considering the<br>factors which have influenced specific business<br>locations. This can then be reinforced when studying<br>a business' supply chain.                                                                                                                                                                                                                                           |
 |                                                                                                                                                      | 1.6.1                      | The importance of<br>effective supply chain<br>management          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
 
-{40}------------------------------------------------
+{41}------------------------------------------------
 
 |                                                                                                                                    | Specification<br>Reference | Amplification                  | Example                                                                                                                                                       |
 |------------------------------------------------------------------------------------------------------------------------------------|----------------------------|--------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -648,11 +648,11 @@ Learners could explore diversity in society and the positive impact it has had o
 |                                                                                                                                    | 1.7.2                      | The purpose of break-even      | Learners could use a case study on a local business<br>to calculate revenue, costs and profit, calculating<br>break-even, using the contribution method. They |
 |                                                                                                                                    | 1.7.3                      | Break-even and<br>contribution | could use raw data from case studies that the teacher<br>has developed to manipulate outcomes.                                                                |
 
-{41}------------------------------------------------
+{42}------------------------------------------------
 
 ## Cross-curricular Skills - Digital Competence Citizenship There are many opportunities to include Digital Competence in GCSE Business. These opportunities are important to learners because this will enable learners in becoming digital citizens and to navigate the world of technology in safe and informed manner. Learners will be encouraged to utilise digital tools to present work and collaborate as well as identifying innovative business solutions in the dynamic environment. Below are some examples of how Digital Competence can be embedded into teaching and learning: Specification Reference Amplification Example 1.1.6 1.2.1 The role of the consumer Business careers and employment Learners should understand how consumer protection and rights reinforces the importance of the role of the consumer. Learners should understand the importance of social media on employment prospects, and how to use it responsibly. They could use advice platforms from agencies such as [Careers Wales,](https://careerswales.gov.wales/) and [The National](https://nationalcareers.service.gov.uk/) [Careers Service,](https://nationalcareers.service.gov.uk/) on how to use social media effectively when securing/searching for employment, and, from a business perspective, when recruiting.
 
-{42}------------------------------------------------
+{43}------------------------------------------------
 
 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | Specification<br>Reference                                                                                                                                                                                                                                                                                                                                                                        | Amplification                                                       | Example                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -676,11 +676,11 @@ Learners could explore diversity in society and the positive impact it has had o
 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | 1.3.2                                                                                                                                                                                                                                                                                                                                                                                             | The challenge of globalisation                                      | as a critical thinking and problem-solving tool to critically assess how the external environment could impact on Tesco's success.                                                                                                                                                                                                                                                                                                      |
 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |                                                                                                                                                                                                                                                                                                                                                                                                   |                                                                     | Teachers could ask meaningful questions such as who/what/where/how/why to encourage learners critical thinking to assess Tesco's failure in America.                                                                                                                                                                                                                                                                                    |
 
-{43}------------------------------------------------
-
 {44}------------------------------------------------
 
 {45}------------------------------------------------
+
+{46}------------------------------------------------
 
 **There are many opportunities to include Planning and Organisation in GCSE Business. These opportunities are important to learners because it will allow learners to understand the importance of how planning leads to efficiency and productivity in any workplace. Planning strategies enable learners to identify, plan and carry out a project achieving planned outcomes.**
 
@@ -698,9 +698,9 @@ Learners could explore diversity in society and the positive impact it has had o
 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |                                                                                                         | Learners could research companies and assess how<br>each business<br>has adapted and changed to succeed<br>in a competitive and dynamic environment.                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |                                                                                                         | Learners could identify companies in the UK<br>and/or<br>Wales, that are now able to reach further consumers<br>via digital technology, for example,<br>GymShark/YBL/Haia.                     |                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 
-{46}------------------------------------------------
-
 {47}------------------------------------------------
+
+{48}------------------------------------------------
 
 <span id="page-47-1"></span><span id="page-47-0"></span>
 
@@ -806,19 +806,19 @@ Learners could explore diversity in society and the positive impact it has had o
 | Variable Costs                     | Costs that change with output, such as raw materials.                                                                                                                                                                                                   |
 | Wants                              | Wants are items that an individual would like to have but do not<br>require for survival.                                                                                                                                                               |
 
-{48}------------------------------------------------
+{49}------------------------------------------------
 
 <span id="page-48-0"></span>
 
-{49}------------------------------------------------
-
 {50}------------------------------------------------
-
-<span id="page-50-0"></span>
 
 {51}------------------------------------------------
 
-<span id="page-51-2"></span><span id="page-51-1"></span><span id="page-51-0"></span>
+<span id="page-50-0"></span>
 
 {52}------------------------------------------------
+
+<span id="page-51-2"></span><span id="page-51-1"></span><span id="page-51-0"></span>
+
+{53}------------------------------------------------
 
