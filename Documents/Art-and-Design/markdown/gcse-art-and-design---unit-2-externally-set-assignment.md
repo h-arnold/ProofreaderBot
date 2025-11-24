@@ -1,6 +1,6 @@
 
 
-{0}------------------------------------------------
+{1}------------------------------------------------
 
 ![](_page_0_Picture_0.jpeg)
 
@@ -18,11 +18,11 @@ Ready for the world. This Qualifications Wales regulated qualification is not av
 
 Made for Wales.
 
-{1}------------------------------------------------
+{2}------------------------------------------------
 
 ![](_page_1_Picture_0.jpeg)
 
-{2}------------------------------------------------
+{3}------------------------------------------------
 
 ## Contents
 
@@ -40,7 +40,7 @@ Made for Wales.
 
 ![](_page_2_Picture_2.jpeg)
 
-{3}------------------------------------------------
+{4}------------------------------------------------
 
 <span id="page-3-0"></span>
 
@@ -93,7 +93,7 @@ You should not provide input or guidance to candidates during the assessment tim
 
 Candidates can review and redraft evidence independently within the time controls for the assessment.
 
-{4}------------------------------------------------
+{5}------------------------------------------------
 
 ### Resources
 
@@ -129,7 +129,7 @@ Assessors must sign the declaration to confirm that evidence submitted for moder
 | Collaboration | Not permitted                                                                                                                                                                                                                                      |
 | Timing        | Part 1 - not controlled<br>Part 2 – controlled                                                                                                                                                                                                     |
 
-{5}------------------------------------------------
+{6}------------------------------------------------
 
 ### Marking the assessment
 
@@ -152,7 +152,7 @@ You should refer the JCQ Instructions for conducting non-examination assessment 
 
 **This pack is a sample. It must not be used for live assessment.**
 
-{6}------------------------------------------------
+{7}------------------------------------------------
 
 <span id="page-6-0"></span>
 
@@ -186,7 +186,7 @@ The duration of the preparatory period is determined by the centre. During this 
 
 It is important that the learner selects their work carefully at the end of the preparatory period, which should then be stored securely, as this is the only work they can use to support Part 2. Work cannot be amended after Part 2 begins.
 
-{7}------------------------------------------------
+{8}------------------------------------------------
 
 <span id="page-7-0"></span>
 
@@ -220,7 +220,7 @@ The following needs to be taken into consideration when developing the ESA:
 - If a learner is entered for more than one pathway, they must undertake a different assignment for each one.
 - Using the *Candidate Declaration Form* the learner should declare that their work was completed independently and without any assistance beyond what should be permitted. They should clearly reference any sources and any Artificial Intelligence tools used in the work. The learner should understand that a false declaration should be considered a form of malpractice. All work should be their own, except for any non-original material that should be clearly credited in the form. This work should not be submitted for any other qualification.
 
-{8}------------------------------------------------
+{9}------------------------------------------------
 
 <span id="page-8-0"></span>
 
@@ -236,7 +236,7 @@ Centres should ensure consistency in marking across all pathways and teaching gr
 | Collaboration | Not permitted                                                                                                                                                                                                                                      |
 | Timing        | Part 1 - not controlled<br>Part 2 - controlled                                                                                                                                                                                                     |
 
-{9}------------------------------------------------
+{10}------------------------------------------------
 
 ### Mark Scheme
 
@@ -270,7 +270,7 @@ Beginning at the lowest band, Assessors should look at the candidate's response 
 
 Having determined the appropriate band, deciding on the mark within a band will be made on the basis of a 'best fit' procedure, weaknesses in some areas being compensated for by strengths in others.
 
-{10}------------------------------------------------
+{11}------------------------------------------------
 
 Assessors should use the full range of marks available to them. The awarding of marks must be directly related to the marking criteria, and all responses must be marked according to the banded levels provided.
 
@@ -280,7 +280,7 @@ Candidates are free to choose any approach that is relevant to the set task.
 
 ![](_page_10_Picture_3.jpeg)
 
-{11}------------------------------------------------
+{12}------------------------------------------------
 
 | Mark Scheme for GCSE ART AND DESIGN                                                                                                  |                                                                                                                                                                                                                                                 |                                                                                                                                                                                                                                                                                                                                                                                               |                                                                                                                                                                                                                                                                                              |                                                                                                                                                                                                                                                                                                           |
 |--------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -296,9 +296,9 @@ Candidates are free to choose any approach that is relevant to the set task.
 | 2                                                                                                                                    | 5-8 marks                                                                                                                                                                                                                                       |                                                                                                                                                                                                                                                                                                                                                                                               |                                                                                                                                                                                                                                                                                              |                                                                                                                                                                                                                                                                                                           |
 | Some development of ideas through partially sustained investigations. Some analysis of sources, partially informing basic responses. | Ideas are partially refined and explored through selection and experimentation. Some attempt to control and exploit media, materials, techniques and processes. Some ongoing review and evaluation partially informs the work as it progresses. | Basic recording of ideas, observations and insights by appropriate means through research and enquiry that is sometimes relevant to personal intentions. Some reflection on work as it progresses, which sometimes demonstrates understanding and meaning.                                                                                                                                    | The response is to some extent, personal and meaningful and intentions are realised in a basic manner. The presentation shows some understanding of visual language and the purpose and intention of the work is conveyed in a partly convincing way.                                        |                                                                                                                                                                                                                                                                                                           |
 
-{12}------------------------------------------------
-
 {13}------------------------------------------------
+
+{14}------------------------------------------------
 
 | 1 | 1–4 marks                                                                        | 1–4 marks                                                                                                                                                                                  | 1–4 marks                                                                                                                                                           | 1–4 marks                                                                                                                                        |
 |---|----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -307,7 +307,7 @@ Candidates are free to choose any approach that is relevant to the set task.
 | 0 | 0 marks                                                                          | 0 marks                                                                                                                                                                                    | 0 marks                                                                                                                                                             | 0 marks                                                                                                                                          |
 |   | Response not worthy of credit or not<br>attempted.                               | Response not worthy of credit or not<br>attempted.                                                                                                                                         | Response not worthy of credit or not<br>attempted.                                                                                                                  | Response not worthy of credit or not<br>attempted.                                                                                               |
 
-{14}------------------------------------------------
+{15}------------------------------------------------
 
 ![](_page_14_Picture_0.jpeg)
 
@@ -321,7 +321,7 @@ Unit 2: Externally Set Assignment
 
 Art, Craft and Design **(3610QSL-2)** Fine Art **(3611QSL-2)** Textile Design **(3612QSL-2)**  Graphic Communication **(3613QSL-2)** Three-Dimensional Design **(3614QSL-2)**  Photography **(3615QSL-2)** 
 
-{15}------------------------------------------------
+{16}------------------------------------------------
 
 ## About this pack: information and instructions for candidates
 
@@ -357,7 +357,7 @@ The duration of the preparatory period is determined by the centre.
 
 You will need to produce preparatory work relevant to your chosen pathway.
 
-{16}------------------------------------------------
+{17}------------------------------------------------
 
 ### Part 2 (sustained focus period)
 
@@ -378,7 +378,7 @@ The guidance in the graphic below will outlines what your work should include.
 
 ![](_page_16_Figure_10.jpeg)
 
-{17}------------------------------------------------
+{18}------------------------------------------------
 
 ### Submitting the Portfolio
 
@@ -389,7 +389,7 @@ The guidance in the graphic below will outlines what your work should include.
 
 ![](_page_17_Picture_5.jpeg)
 
-{18}------------------------------------------------
+{19}------------------------------------------------
 
 ### Information for candidates
 
@@ -425,7 +425,7 @@ WJEC will decide which penalty is appropriate.
 
 **Remember – it's your qualification so it needs to be your own work.**
 
-{19}------------------------------------------------
+{20}------------------------------------------------
 
 ![](_page_19_Picture_0.jpeg)
 
@@ -454,7 +454,7 @@ Both Part 1 and Part 2 of the assignment must be submitted for assessment.
 
 Art, Craft & Design Fine Art Graphic Communication Textile Design Three-Dimensional Design Photography.
 
-{20}------------------------------------------------
+{21}------------------------------------------------
 
 ## 1. Big Idea – Habitat
 
@@ -476,7 +476,7 @@ The following visuals are prompts to help you to explore and develop your own id
 
 WJEC GCSE Art and Design Unit 2 – Externally set assignment
 
-{21}------------------------------------------------
+{22}------------------------------------------------
 
 The following written brief is to help you to explore and develop your own ideas in a specific direction.
 
@@ -491,7 +491,7 @@ Communities often have key individuals who, through their actions and attitudes,
 - Grayson Perry
 - The Singh Twins
 
-{22}------------------------------------------------
+{23}------------------------------------------------
 
 ## 2. Big Idea – Collections
 
@@ -511,7 +511,7 @@ The following visuals are prompts to help you to explore and develop your own id
 
 ![](_page_22_Picture_8.jpeg)
 
-{23}------------------------------------------------
+{24}------------------------------------------------
 
 The following written brief is to help you to explore and develop your own ideas in a specific direction.
 
@@ -530,7 +530,7 @@ Investigate a local exhibition, gallery, or museum that you are familiar with an
 
 ![](_page_23_Picture_10.jpeg)
 
-{24}------------------------------------------------
+{25}------------------------------------------------
 
 ## 3. Big Idea - Structures
 
@@ -550,7 +550,7 @@ The following visuals are prompts to help you to explore and develop your own id
 
 ![](_page_24_Picture_8.jpeg)
 
-{25}------------------------------------------------
+{26}------------------------------------------------
 
 The following written brief is to help you to explore and develop your own ideas in a specific direction.
 
@@ -567,7 +567,7 @@ Investigate a structure which is important to you and from your investigations p
 
 ![](_page_25_Picture_10.jpeg)
 
-{26}------------------------------------------------
+{27}------------------------------------------------
 
 ## 4. Big Idea - Belonging
 
@@ -587,7 +587,7 @@ The following visuals are prompts to help you to explore and develop your own id
 
 ![](_page_26_Picture_8.jpeg)
 
-{27}------------------------------------------------
+{28}------------------------------------------------
 
 The following written brief is to help you to explore and develop your own ideas in a specific direction.
 
@@ -604,7 +604,7 @@ Research a community event, such as a carnival, an eisteddfod, a music festival,
 
 ![](_page_27_Picture_10.jpeg)
 
-{28}------------------------------------------------
+{29}------------------------------------------------
 
 ## 5. Big Idea - Perspective
 
@@ -624,7 +624,7 @@ The following visuals are prompts to help you to explore and develop your own id
 
 ![](_page_28_Picture_8.jpeg)
 
-{29}------------------------------------------------
+{30}------------------------------------------------
 
 The following written brief is to help you to explore and develop your own ideas in a specific direction.
 
@@ -639,7 +639,7 @@ How could you change the perspective of an individual or group for positive chan
 - Issy Miyake
 - Banksy
 
-{30}------------------------------------------------
+{31}------------------------------------------------
 
 | Mark Scheme for GCSE ART AND DESIGN<br>Unit Two: Externally Set Assignment (Total Marks = 80) |                                                                                                                                                                                                                                            |                                                                                                                                                                                                                                                                                                                                                                                                                       |                                                                                                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                                                                                |
 |-----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -654,9 +654,9 @@ How could you change the perspective of an individual or group for positive chan
 | 2                                                                                             | 5-8 marks                                                                                                                                                                                                                                  | 5-8 marks                                                                                                                                                                                                                                                                                                                                                                                                             | 5-8 marks                                                                                                                                                                                                                                                                                                         | 5-8 marks                                                                                                                                                                                                                                                                                                                      |
 |                                                                                               | Some development of ideas through partially sustained investigations.<br>Some analysis of sources, partially informing basic responses.                                                                                                    | Ideas are partially refined and explored through selection and experimentation.<br>Some attempt to control and exploit media, materials, techniques and processes.<br>Some ongoing review and evaluation partially informs the work as it progresses.                                                                                                                                                                 | Basic recording of ideas, observations and insights by appropriate means through research and enquiry that is sometimes relevant to personal intentions.<br>Some reflection on work as it progresses, which sometimes demonstrates understanding and meaning.                                                     | The response is to some extent, personal and meaningful and intentions are realised in a basic manner.<br>The presentation shows some understanding of visual language and the purpose and intention of the work is conveyed in a partly convincing way.                                                                       |
 
-{31}------------------------------------------------
-
 {32}------------------------------------------------
+
+{33}------------------------------------------------
 
 | 1 | 1–4 marks                                                                        | 1–4 marks                                                                                                                                                                                  | 1–4 marks                                                                                                                                                           | 1–4 marks                                                                                                                                        |
 |---|----------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -665,7 +665,7 @@ How could you change the perspective of an individual or group for positive chan
 | 0 | 0 marks                                                                          | 0 marks                                                                                                                                                                                    | 0 marks                                                                                                                                                             | 0 marks                                                                                                                                          |
 |   | Response not worthy of credit or not<br>attempted.                               | Response not worthy of credit or not<br>attempted.                                                                                                                                         | Response not worthy of credit or not<br>attempted.                                                                                                                  | Response not worthy of credit or not<br>attempted.                                                                                               |
 
-{33}------------------------------------------------
+{34}------------------------------------------------
 
 ### Candidate Declaration Form
 
@@ -683,7 +683,7 @@ How could you change the perspective of an individual or group for positive chan
 
 <span id="page-33-0"></span><sup>1</sup> Where you have used AI tools as a source of information, you must show the name of the AI source used and the date the content was generated. For example: ChatGPT 3.5 [\(https://openai.com/blog/chatgpt/\)](https://openai.com/blog/chatgpt/), 25/01/2023. You must, retain a copy of the question(s) and computer-generated content for reference and authentication purposes, in a noneditable format (such as a screenshot) and provide a brief explanation of how it has been used. This must be submitted with your work, so your teacher/assessor is able to review the work, the AI-generated content and how it has been used.
 
-{34}------------------------------------------------
+{35}------------------------------------------------
 
 #### Part B: GDPR Consent
 
@@ -696,7 +696,7 @@ If you prefer that WJEC does not use your work in this way, please tick here:
 
 SAMPLE<span id="page-34-0"></span><sup>2</sup> You must be over 13 to provide consent. You may withdraw your consent at any time by contacting WJEC on [qualifications@wjec.co.uk.](mailto:qualifications@wjec.co.uk) Please include the title of the work, the year of assessment, centre name and number, candidate name and the unit title in the communication. The work will then be removed from the secure website.
 
-{35}------------------------------------------------
+{36}------------------------------------------------
 
 ## Candidate Time Record Sheet
 
@@ -727,7 +727,7 @@ The timed, supervised hours took place as follows:
 |       |       |    |      |            |
 | Total |       |    |      | (10 hours) |
 
-{36}------------------------------------------------
+{37}------------------------------------------------
 
 #### End of Candidate Assessment Pack
 
