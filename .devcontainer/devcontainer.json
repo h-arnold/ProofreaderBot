@@ -21,6 +21,5 @@
   "containerEnv": {
     "JAVA_TOOL_OPTIONS": "-Djava.awt.headless=true"
   },
-  "postCreateCommand": "cd ~ && bash ~/.devcontainer/post_create.sh",
-  "remoteUser": "vscode"
+  "postCreateCommand": "${containerWorkspaceFolder}/.devcontainer/post_create.sh"
 }
