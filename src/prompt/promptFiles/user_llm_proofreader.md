@@ -27,10 +27,10 @@
 
 **IMPORTANT**:
 
-- Use the error descriptions provided to categorise each issue accurately. You are assessing a piece of formal writing where the highest spelling and grammatical standards are expected.
+- Remember your ignore list. **Do not flag these errors.**
+- Use the error descriptions provided to categorise each remaining issue accurately. You are assessing a piece of formal writing where the highest spelling and grammatical standards are expected.
 {{#has_any_existing_issues}}
 - Check the "Pre-existing issues" table in the user prompt. Never output any error that appears in that table.
 {{/has_any_existing_issues}}
 - Ignore intentional errors in context, such as non-examples, code blocks or exercises where that is the purpose.
-- Ignore PDF conversion artifacts as specified in the guidelines.
 - Always return a valid JSON array.

@@ -23,6 +23,7 @@ The user will provide the text in Markdown format.
 ### 1. Contextual Spelling & Homophones
 * **Atomic Typos:** Words that are spelt correctly but are wrong for the context (e.g., "leaners" vs "learners", "their" vs "there", "assess" vs "access", "trial" vs "trail").
 * **Technical Terms:** Ensure terms like "Graphics card" (plural/singular usage) or "nanotransistors" are spelt correctly.
+* **Domain Specific Terminology:** Enforce standard {{subject}} spelling over generic variations (e.g., prefer "Cipher" over "Cypher", "Program" over "Programme" in code contexts).
 
 ### 2. Complex Grammar & Syntax
 * **Strict Subject-Verb Agreement:**
@@ -31,22 +32,22 @@ The user will provide the text in Markdown format.
 * **Comma Splices:** Flag independent clauses joined only by a comma (e.g., "It is shared among cores, this cache is..."). This is a critical error.
 
 ### 3. Structural & OCR Formatting Context (CRITICAL)
-**Sometimes, the input text has been flattened from a two-column PDF. The layout (tables, sidebars) has been lost.** You must apply the following logic to avoid false positives:
+**The input text is flattened from a PDF. You must aggressively filter out extraction artifacts to avoid false positives.**
 
-* **Merged Column Artefacts:** You will frequently encounter a Term followed immediately by its Definition without punctuation.
-    * *Input:* "Motherboard is the main circuit board..."
-    * *Interpretation:* This is likely a table row: [Col A: Motherboard] [Col B: is the main...].
-    * **Action:** Do NOT flag this as a run-on sentence, a missing comma, or a capitalisation error.
-* **Telegraphic/Slide Style (Bullet Points):** In bullet points and definitions, authors often omit the leading verb ("to be") or subject.
+* **The "Header Echo" (Frequent Issue):** PDF headings often get merged into the paragraph immediately following them during extraction.
+    * *Input:* "**Input Devices** Input devices are used to..."
+    * *Analysis:* The first "Input Devices" was a bold header; the second is the sentence start.
+    * *Action:* **IGNORE** this repetition. Do NOT flag as redundant, a run-on, or a grammar error.
+* **Ghost Spaces (Kerning Artifacts):** PDF extractors often insert spaces where letters were visually spaced out (kerning).
+    * *Input:* "The **letter s** are..." (instead of "letters"), "E -waste" (instead of "E-waste"), "Multi -core".
+    * *Action:* If removing the space/hyphen creates a valid word that fits the context, **IGNORE** the issue entirely.
+* **Merged Definitions (Table Rows):** You will frequently encounter a Term followed immediately by its Definition without punctuation.
+    * *Input:* "**Motherboard** Is the main circuit board..."
+    * *Interpretation:* This is a table row: [Col A: Motherboard] [Col B: Is the main...].
+    * *Action:* Do NOT flag as a run-on sentence, missing comma, or capitalization error.
+* **Telegraphic Style:** In bullet points and definitions, authors often omit the leading verb ("to be") or subject.
     * *Input:* "USB - Used to connect devices." or "Wireless NICs responsible for..."
-    * *Interpretation:* This is valid documentation shorthand.
-    * **Action:** Do NOT flag as "Missing verb 'is'" or "Fragment". Only flag if the fragment is unintelligible.
-* **Visual Placement:** Do NOT flag consistency issues related to where text appears (e.g., "This heading is placed differently"). You are reading a flat text stream; you cannot accurately judge visual placement.
-* **False Run-ons:** If you see a term followed immediately by a definition without punctuation (e.g., "Context. Put into effect..."), assume this is a **Table Row** where the column separator was lost. **Do not flag this as a grammatical error.**
-* **Fragments:** Bullet points and table cells are often sentence fragments. Do not flag them as grammar errors.
-* **Table of Contents:** Ignore the "Contents" page entirely regarding flow, consistency, or page number formatting.
-* **Forward References:** Do not flag "The following tables" as factual inaccuracy if you only see one table immediately. The others may follow on the next page.
-* **Page Numbers:** These start at 0, so you may find that references to a page in the text refer to the page after. E.g., "see page 5" may refer to the content on page 6.
+    * *Action:* Do NOT flag as "Missing verb 'is'" or "Fragment".
 
 ### 4. Consistency
 * **Terminology:** Flag if the text uses "WiFi" on page 1 and "Wi-Fi" on page 5.
@@ -55,21 +56,24 @@ The user will provide the text in Markdown format.
 ### IGNORE these issues (Exclusion List):
 This document was converted from PDF via OCR. You will likely see conversion artefacts. **Do NOT report the following:**
 
-* **Hyphenation Issues:** (e.g., "ta- ble", "effec- tive"). Assume a separate script cleans these.
+* **Header Repetition:** Words repeated at the very start of a block (e.g., "**Output Devices** Output devices..."). This is a layout artefact; ignore the duplication.
+* **Split Words / Ghost Spaces:** (e.g., "letter s", "te acher"). If joining the parts makes a valid word that fits the context, ignore it.
+* **Floating Hyphens:** (e.g., "E -waste", "mid -20th", "multi -core"). Ignore spaces surrounding hyphens if the resulting compound word is valid.
+* **Hyphenation Issues:** (e.g., "ta- ble", "effec- tive"). Assume a separate script cleans these line-break artefacts.
 * **Hyphenation Stylistics:** British English is flexible (e.g., "pre-released" vs "pre released"). Unless the lack/presence of a hyphen creates ambiguity (e.g., "man eating chicken"), **do NOT flag it**.
 * **Character Swaps:** (e.g., `1` instead of `l`, `0` instead of `O`) unless it creates a valid but wrong word (e.g., `10` instead of `to`).
 * **Missing Dashes:** (e.g., "- Specification **missing em-dash here** this covers all the information ...). Likely an OCR error.
 * **Dash Types:** Treat en-dashes (–), em-dashes (—), and hyphens (-) as interchangeable. OCR often confuses these.
 * **Missing colons:** (e.g., "**Wireless NICs** uses Wi-Fi technology to connect to a ... "). Some writers prefer endashes to colons which gets missed in OCR.
-* **Known Issues:** Do not report any issue listed in the **Exclusion List** below.
 * **Intentional Errors in Context:** Do not flag spelling or grammar errors that appear inside code blocks, pseudo-code, or when the text is explicitly discussing a specific error (e.g., in a Mark Scheme answer key like "Error: total is iteger").
 * **OCR "Run-ons":** If you encounter a sentence that seems to merge two distinct thoughts without punctuation (e.g., "...mark schemes This guide..."), assume this is an OCR error splitting two list items or table rows and ignore.
+
 
 {{>llm_proofreader_error_descriptions}}
 
 
 ## Confidence Calibration
-* **Score < 60:** If the error could plausibly be a result of PDF-to-Markdown flattening (missing headers, merged columns, lost bullet points), **do not output it**.
-* **Score > 90:** Reserved for undeniable errors (e.g., "The dogs is running", "Recieve").
+* **Score < 70:** If the error could plausibly be a result of PDF extraction (extra spaces, merged headers, missing punctuation in lists), **do not output it**.
+* **Score > 90:** Reserved for undeniable errors (e.g., "The dogs is running", "Recieve") that are NOT explained by PDF formatting.
 
 {{>llm_proofreader_output_format}}
