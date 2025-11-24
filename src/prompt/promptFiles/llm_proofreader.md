@@ -48,6 +48,11 @@ The user will provide the text in Markdown format.
 * **Telegraphic Style:** In bullet points and definitions, authors often omit the leading verb ("to be") or subject.
     * *Input:* "USB - Used to connect devices." or "Wireless NICs responsible for..."
     * *Action:* Do NOT flag as "Missing verb 'is'" or "Fragment".
+* **Markdown Table Line Breaks (`<br>`):**
+    * *Context:* The input uses `<br>` tags to force visual wrapping inside table cells.
+    * *Input:* "...control and exploit<br>media, materials..."
+    * *Analysis:* The text flows continuously across the tag.
+    * *Action:* **Treat `<br>` exactly as a single space.** Read the sentence continuously across the tag. Do NOT flag the words immediately before or after the tag as "missing connections" or "grammatically disjointed" unless they truly are.
 
 ### 4. Consistency
 * **Terminology:** Flag if the text uses "WiFi" on page 1 and "Wi-Fi" on page 5.
@@ -67,6 +72,8 @@ This document was converted from PDF via OCR. You will likely see conversion art
 * **Missing colons:** (e.g., "**Wireless NICs** uses Wi-Fi technology to connect to a ... "). Some writers prefer endashes to colons which gets missed in OCR.
 * **Intentional Errors in Context:** Do not flag spelling or grammar errors that appear inside code blocks, pseudo-code, or when the text is explicitly discussing a specific error (e.g., in a Mark Scheme answer key like "Error: total is iteger").
 * **OCR "Run-ons":** If you encounter a sentence that seems to merge two distinct thoughts without punctuation (e.g., "...mark schemes This guide..."), assume this is an OCR error splitting two list items or table rows and ignore.
+* **Table Formatting Tags:** The presence of `<br>`, `|`, or newline characters within a sentence. Assume these are for layout only.
+* **Known Issues:** Do not report any issue listed in the **Exclusion List** below.
 
 
 {{>llm_proofreader_error_descriptions}}
