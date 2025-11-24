@@ -1,78 +1,62 @@
-{1}------------------------------------------------
 
-<!-- image -->
 
-## WJEC GCSE Art and Design
+{0}------------------------------------------------
+
+![](_page_0_Picture_0.jpeg)
+
+![](_page_0_Picture_1.jpeg)
+
+# WJEC GCSE Art and Design
 
 Approved by Qualifications Wales
 
-## Delivery Guide
+# Delivery Guide
 
 Teaching from 2025 For award from 2027
 
-<!-- image -->
+![](_page_0_Picture_6.jpeg)
 
-This Qualifications Wales regulated qualification is not available to centres in England.
+Ready for the world. This Qualifications Wales regulated qualification is not available to centres in England.
 
-Made for Wales. Ready for the world.
+Made for Wales.
 
-<!-- image -->
+{1}------------------------------------------------
 
-
+![](_page_1_Picture_0.jpeg)
 
 {2}------------------------------------------------
 
+# Contents
 
-
-WJEC would like to thank the students and teachers of Fitzalan High School, Cardiff and Llanwern High School, Newport for their participation in the creation of these covers.
-
-
+| Aims of the Delivery Guide                                   | 1  |
+|--------------------------------------------------------------|----|
+| Qualification Structure                                      | 1  |
+| Pathways                                                     | 1  |
+| Unit 1 Overview                                              | 2  |
+| Unit 1: Arrangements for non-examination assessment          | 2  |
+| Unit 2 Overview                                              | 3  |
+| Summary of assessment                                        | 4  |
+| Unit 2: Arrangements for non-examination assessment          | 4  |
+| Assessment Objectives (contribution to entire qualification) | 6  |
+| Unit 1                                                       | 6  |
+| Unit 2                                                       | 6  |
+| Specification and Assessment Pack                            | 7  |
+| Understanding the specification amplification                | 7  |
+| Specification Stems                                          | 7  |
+| Mark Schemes                                                 | 8  |
+| Important Dates                                              | 11 |
 
 {3}------------------------------------------------
 
-
-
-## Contents
-
-| Aims of the Delivery Guide ......................................................................................................1       |
-|------------------------------------------------------------------------------------------------------------------------------------------|
-| Qualification Structure..............................................................................................................1   |
-| Pathways ......................................................................................................................... 1     |
-| Unit 1 Overview ............................................................................................................... 2        |
-| Unit 1: Arrangements for non-examination assessment.................................................. 2                                  |
-| Unit 2 Overview ............................................................................................................... 3        |
-| Summary of assessment .........................................................................................................4         |
-| Unit 2: Arrangements for non-examination assessment.................................................. 4                                  |
-| Assessment Objectives (contribution to entire qualification)....................................................6                        |
-| Unit 1 ............................................................................................................................... 6 |
-| Unit 2 ............................................................................................................................... 6 |
-| Specification and Assessment Pack........................................................................................7               |
-| Understanding the specification amplification.................................................................. 7                        |
-| Specification Stems ......................................................................................................... 7          |
-| Mark Schemes.........................................................................................................................8   |
-| Important Dates .....................................................................................................................11  |
-
-
-
-{4}------------------------------------------------
-
-
-
-## Aims of the Delivery Guide
+# <span id="page-3-0"></span>Aims of the Delivery Guide
 
 The aim of the Delivery Guide is to give an overview of the qualification and to help teachers understand how we assess the GCSE. It will offer an introduction to the specification, an assessment overview, and will support teachers in better understanding how to prepare their learners for the assessment of the different units. More information on each unit can be found in the accompanying Qualification Guide.
 
-## Qualification Structure
+# <span id="page-3-1"></span>Qualification Structure
 
 WJEC GCSE Art and Design consists of 2 units:
 
-<!-- image -->
-
-| Unit 1: Portfolio Non-examination assessment 60% of qualification 120 marks                                                                 |
-|---------------------------------------------------------------------------------------------------------------------------------------------|
-| Work undertaken within the unit will be internally set, marked by centres and moderated by WJEC.                                            |
-| Unit 2: Externally Set Assignment 10 hours sustained focus, plus preparatory study Non-examination assessment 40% of qualification 80 marks |
-| The externally set assignment will be set by WJEC, marked by centres and moderated by WJEC.                                                 |
+![](_page_3_Figure_5.jpeg)
 
 This is a linear qualification. It is not tiered.
 
@@ -82,7 +66,7 @@ Unit 1: Portfolio must be completed before Unit 2: Externally Set Assignment is 
 
 The qualification will be first awarded in summer 2027.
 
-## Pathways
+# <span id="page-3-2"></span>Pathways
 
 The GCSE Art and Design qualification is available in the following pathways with no prohibited entry combination:
 
@@ -95,13 +79,9 @@ The GCSE Art and Design qualification is available in the following pathways wit
 
 Learners must select a pathway. The subject content in 1.1, 1.2 and 1.3 must be followed for each pathway.
 
+{4}------------------------------------------------
 
-
-{5}------------------------------------------------
-
-
-
-## Unit 1 Overview
+# <span id="page-4-0"></span>Unit 1 Overview
 
 ## Portfolio
 
@@ -115,6 +95,8 @@ Learners will be required to produce a portfolio:
 - that is internally set, in consultation with the teacher from personal and/or given starting point
 - based on a theme, concept or specific design brief.
 
+<span id="page-4-1"></span>
+
 ## Unit 1: Arrangements for non-examination assessment
 
 Learners should start developing their portfolio after they have been introduced to the knowledge, understanding and skills outlined in the subject content. Learners should be provided with opportunities to develop and expand practical knowledge and understanding through workshops in the chosen pathway.
@@ -127,13 +109,9 @@ Learners can have access to resources and/preparatory notes.
 
 There is no set time limit for the completion of the portfolio. It is recommended that portfolio work should begin during the spring or summer term in the first year of study The portfolio must be completed before Unit 2 (Externally Set Assignment) is released to learners in the spring term of the final year of study. Candidates work should be stored securely after submission and during the marking, moderation and review periods. Candidates work should not be released until the Review of Marking and Moderation period has expired.
 
+{5}------------------------------------------------
 
-
-{6}------------------------------------------------
-
-
-
-## Unit 2 Overview
+# <span id="page-5-0"></span>Unit 2 Overview
 
 ## Externally Set Assignment
 
@@ -152,23 +130,19 @@ In this unit, learners will apply the knowledge, understanding and skills develo
 
 The Externally Set Assignment will be released to centres prior to the end of the autumn term in the final year of the course to allow for planning and preparation of supporting materials. The Externally Set Assignment should be released to learners during the spring term in the final year of study.
 
-Examples of Big Ideas:
+## Examples of Big Ideas:
 
-<!-- image -->
+![](_page_5_Picture_12.jpeg)
 
 These are examples of big ideas that could be included in the Externally Set Assignment.
 
+{6}------------------------------------------------
 
-
-{7}------------------------------------------------
-
-
-
-## Summary of assessment
+# <span id="page-6-0"></span>Summary of assessment
 
 The framework below is the suggested schedule for centres.
 
-<!-- image -->
+![](_page_6_Figure_3.jpeg)
 
 There is no restriction on content, format or scale of work or the amount of evidence to be selected and presented, although emphasis should be on quality rather than quantity.
 
@@ -181,6 +155,8 @@ Units could be presented in any appropriate format(s) such as:
 - mounted exhibitions
 - installations
 - digital presentation.
+
+<span id="page-6-1"></span>
 
 ## Unit 2: Arrangements for non-examination assessment
 
@@ -200,11 +176,7 @@ Learners will develop their response over a preparatory study period. The amount
 
 Responses will be researched, developed and refined during the preparatory study period. They should take the form of practical, critical and contextual preparatory work/supporting studies along with reflections on the process. Only work produced during the preparatory period can be used and taken forward to Part 2.
 
-
-
-{8}------------------------------------------------
-
-
+{7}------------------------------------------------
 
 Part 1 of Unit 2 has the same controls as Unit 1 as stated in the Assessment Pack.
 
@@ -216,7 +188,7 @@ The teacher cannot provide any advice or feedback on learners' work.
 
 Learners can have access to resources and/preparatory notes produced in Part 1 only.
 
-Learners have a maximum of 10 hours to produce their outcome, which must begin with a minimum 2-hour session. Part 1 and Part 2 must be assessed together.
+Learners have a maximum of 10 hours to produce their outcome, which must begin with a minimum 2-hour session. Part 1 and Part 2 **must** be assessed together.
 
 ## Submission of marks
 
@@ -224,73 +196,61 @@ Centres are required to submit marks for both internally assessed units online d
 
 When marks have been submitted to WJEC, the online system will apply the sample formula based on the overall rank order for the total entry and immediately identify the sample of candidates whose work is selected for moderation.
 
+{8}------------------------------------------------
 
+# <span id="page-8-0"></span>Assessment Objectives (contribution to entire qualification)
+
+<span id="page-8-1"></span>
+
+## Unit 1 The distribution of the assessment objectives for this unit is:
+
+| AO1 | AO2 | AO3 | AO4 | Total |
+|-----|-----|-----|-----|-------|
+| 15% | 15% | 15% | 15% | 60%   |
+
+<span id="page-8-2"></span>
+
+## Unit 2 The distribution of the assessment objectives for this unit is:
+
+| AO1 | AO2 | AO3 | AO4 | Total |
+|-----|-----|-----|-----|-------|
+| 10% | 10% | 10% | 10% | 40%   |
 
 {9}------------------------------------------------
 
-
-
-## Assessment Objectives (contribution to entire qualification)
-
-## Unit 1
-
-The distribution of the assessment objectives for this unit is:
-
-| AO1   | AO2   | AO3   | AO4   | Total   |
-|-------|-------|-------|-------|---------|
-| 15%   | 15%   | 15%   | 15%   | 60%     |
-
-## Unit 2
-
-The distribution of the assessment objectives for this unit is:
-
-| AO1   | AO2   | AO3   | AO4   | Total   |
-|-------|-------|-------|-------|---------|
-| 10%   | 10%   | 10%   | 10%   | 40%     |
-
-
-
-{10}------------------------------------------------
-
-
-
-## Specification and Assessment Pack
+# <span id="page-9-0"></span>Specification and Assessment Pack
 
 When we develop new qualifications, we produce the following documents:
 
-- Specification - this covers all the information and skills that learners are expected to know by the end of their course.
-- Assessment Pack - this contains the Sample Assessment Materials(SAMs) i.e.: sample exam papers and sample NEA tasks, relevant controls for the NEA and, mark schemes
+- Specification this covers all the information and skills that learners are expected to know by the end of their course.
+- Assessment Pack this contains the Sample Assessment Materials(SAMs) i.e.: sample exam papers and sample NEA tasks, relevant controls for the NEA and, mark schemes
 
 This guide builds upon the information in the specification and assessment pack to help further your understanding of said documents.
 
-## Understanding the specification amplification
+# <span id="page-9-1"></span>Understanding the specification amplification
 
 Learners should be made aware of:
 
 - the specification stems
 - what the specification stems mean.
 
-## Specification Stems
+# <span id="page-9-2"></span>Specification Stems
 
 When you look through the specification you will notice in the amplification column, we use a variety of wording before the list of content learners need to know; we call this a stem:
 
-<!-- image -->
+![](_page_9_Figure_12.jpeg)
 
 Each stem is used for a slightly different reason:
 
-| Specification Stem                  | When it is used                                                                                                                                                                                                                            |
-|-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Learners should know and understand | When learners are required to demonstrate their knowledge and use it to apply to familiar and unfamiliar contexts.                                                                                                                         |
-| Learners should be able to          | When learners need to apply their knowledge and understanding to situations or demonstrate application of practical skills and techniques.                                                                                                 |
-| Learners should be aware of         | When learners should expand knowledge of the specified content through a range of contexts. Teachers should refer to Guidance for Teaching documents for further guidance on the depth and breadth to which this content should be taught. |
+| Specification<br>Stem                        | When it is used                                                                                                                                                                                                                                     |
+|----------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Learners should<br>know<br>and<br>understand | When learners are required to demonstrate their knowledge and<br>use it to apply to familiar and unfamiliar contexts.                                                                                                                               |
+| Learners should<br>be able to                | When learners need to apply their knowledge and understanding to<br>situations or demonstrate application of practical skills and<br>techniques.                                                                                                    |
+| Learners should<br>be aware of               | When learners should expand knowledge of the specified content<br>through a range of contexts. Teachers should refer to Guidance for<br>Teaching documents for further guidance on the depth and breadth<br>to which this content should be taught. |
 
+{10}------------------------------------------------
 
-
-{11}------------------------------------------------
-
-
-
-## Mark Schemes
+# Mark Schemes
 
 Mark schemes and/or assessment criteria test the intended learning outcomes for a component. They describe the knowledge and skills (and possibly attitude) that a candidate is expected to demonstrate in their responses and they are then used in marking the work.
 
@@ -298,46 +258,34 @@ Mark schemes and/or assessment criteria test the intended learning outcomes for 
 
 For questions requiring extended responses
 
-| Mark Scheme for GCSE ART AND DESIGN   | Mark Scheme for GCSE ART AND DESIGN                                                                                                                                                                                   | Mark Scheme for GCSE ART AND DESIGN                                                                                                                                                                                                                                                                                                                                                     | Unit One: Portfolio (Total Marks = 120)                                                                                                                                                                                                                                                   | Unit One: Portfolio (Total Marks = 120)                                                                                                                                                                                                                                                                |
-|---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Band                                  | AO1                                                                                                                                                                                                                   | AO2                                                                                                                                                                                                                                                                                                                                                                                     | AO3                                                                                                                                                                                                                                                                                       | AO4                                                                                                                                                                                                                                                                                                    |
-|                                       | Develop ideas and demonstrate critical and contextual understanding of sources                                                                                                                                        | Refine work by exploring ideas, selecting and experimenting with appropriate media, techniques, tools, digital technologies, and processes                                                                                                                                                                                                                                              | Reflect on own work, and record ideas, observations and insights relevant to intentions as work progresses                                                                                                                                                                                | Present a personal and meaningful response that realises intentions and demonstrates understanding of visual language                                                                                                                                                                                  |
-| 5                                     | 25-30 marks                                                                                                                                                                                                           | 25-30 marks                                                                                                                                                                                                                                                                                                                                                                             | 25-30 marks                                                                                                                                                                                                                                                                               | 25-30 marks                                                                                                                                                                                                                                                                                            |
-|                                       | Sophisticated and thorough development of ideas through sustained, focused and coherent investigations. Perceptive and rigorous critical analysis of sources, providing the basis for assured, independent responses. | Ideas are refined and explored through rigorous selection and purposeful, creative experimentation. Perceptive and sophisticated use of media, materials, techniques and processes that are skilfully controlled and imaginatively exploited. Perceptive and discriminating ongoing review and evaluation consistently informs the refinement and development of work as it progresses. | Sophisticated recording of ideas, observations and insights through extensive, coherent research and enquiry that is highly relevant to personal intentions. Perceptive, rigorous and effective critical reflection as work progresses, demonstrating depth of understanding and meaning. | Highly imaginative, personal and meaningful response which realises intentions in a sophisticated, coherent and assured manner. The presentation shows a perceptive and thorough understanding of visual language and the purpose and intention of the work is very clearly and convincingly conveyed. |
+<span id="page-10-0"></span>
 
+| Mark Scheme for GCSE ART AND DESIGN |                                                                                                                                                                                                                          |                                                                                                                                                                                                                                                                                                                                                                                               |                                                                                                                                                                                                                                                                                              |                                                                                                                                                                                                                                                                                                           | Unit One: Portfolio (Total Marks = 120) |  |  |  |  |
+|-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------|--|--|--|--|
+| Band                                | AO1                                                                                                                                                                                                                      | AO2                                                                                                                                                                                                                                                                                                                                                                                           | AO3                                                                                                                                                                                                                                                                                          | AO4                                                                                                                                                                                                                                                                                                       |                                         |  |  |  |  |
+|                                     | Develop ideas and demonstrate critical and contextual understanding of sources                                                                                                                                           | Refine work by exploring ideas, selecting and experimenting with appropriate media, techniques, tools, digital technologies, and processes                                                                                                                                                                                                                                                    | Reflect on own work, and record ideas, observations and insights relevant to intentions as work progresses                                                                                                                                                                                   | Present a personal and meaningful response that realises intentions and demonstrates understanding of visual language                                                                                                                                                                                     |                                         |  |  |  |  |
+| 5                                   | 25-30 marks                                                                                                                                                                                                              | 25-30 marks                                                                                                                                                                                                                                                                                                                                                                                   | 25-30 marks                                                                                                                                                                                                                                                                                  | 25-30 marks                                                                                                                                                                                                                                                                                               |                                         |  |  |  |  |
+|                                     | Sophisticated and thorough development of ideas through sustained, focused and coherent investigations.<br>Perceptive and rigorous critical analysis of sources, providing the basis for assured, independent responses. | Ideas are refined and explored through rigorous selection and purposeful, creative experimentation.<br>Perceptive and sophisticated use of media, materials, techniques and processes that are skilfully controlled and imaginatively exploited.<br>Perceptive and discriminating ongoing review and evaluation consistently informs the refinement and development of work as it progresses. | Sophisticated recording of ideas, observations and insights through extensive, coherent research and enquiry that is highly relevant to personal intentions.<br>Perceptive, rigorous and effective critical reflection as work progresses, demonstrating depth of understanding and meaning. | Highly imaginative, personal and meaningful response which realises intentions in a sophisticated, coherent and assured manner.<br>The presentation shows a perceptive and thorough understanding of visual language and the purpose and intention of the work is very clearly and convincingly conveyed. |                                         |  |  |  |  |
 
+{11}------------------------------------------------
+
+| 4                                                                                                                                                   | 19-24 marks                                                                                                                                                                                                                                                             |                                                                                                                                                                                                                                                                                                                                                        |                                                                                                                                                                                                                                                                                                              |                                                                                                                                                                                                                                                                                     |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                                                                                                                                     | Effective and thorough<br>development of ideas through<br>sustained and focused<br>investigations.<br>Confident and rigorous critical<br>analysis of sources, providing the<br>basis for purposeful, independent<br>responses.                                          | Ideas are refined and explored<br>through relevant selection and<br>creative experimentation.<br>Effective use of media, materials,<br>techniques and processes are that<br>confidently controlled and<br>exploited.<br>Effective and thorough ongoing<br>review and evaluation informs the<br>refinement and development of<br>work as it progresses. | Confident recording of ideas,<br>observations and insights by<br>appropriate means through<br>effective research and enquiry that<br>is relevant to personal intentions.<br>Rigorous and effective critical<br>reflection as work progresses,<br>demonstrating a good level of<br>understanding and meaning. | Imaginative, personal and<br>meaningful response which<br>realises intentions in a confident<br>and effective manner.<br>The presentation shows a good<br>understanding of visual language<br>and the purpose and intention of<br>the work is clearly and<br>convincingly conveyed. |
+| 3                                                                                                                                                   | 13-18 marks                                                                                                                                                                                                                                                             |                                                                                                                                                                                                                                                                                                                                                        |                                                                                                                                                                                                                                                                                                              |                                                                                                                                                                                                                                                                                     |
+|                                                                                                                                                     | Reasonable development of<br>ideas through investigations<br>which are generally sustained.<br>Reasonable critical analysis of<br>sources, providing the basis for<br>satisfactory and generally<br>independent responses.                                              | Ideas are refined and explored<br>through relevant selection and<br>experimentation.<br>Appropriate use of media,<br>materials, techniques and<br>processes are reasonably<br>controlled and exploited.<br>Reasonable ongoing review and<br>evaluation of explorations supports<br>the refinement and development of<br>work as it progresses.         | Reasonable recording of ideas,<br>observations and insights by<br>appropriate means through<br>research and enquiry that is<br>generally relevant to personal<br>intentions.<br>Reasonably critical reflection on<br>work as it progresses, generally<br>demonstrating understanding and<br>meaning.         | Reasonably imaginative personal<br>and meaningful response which<br>realises intentions in a satisfactory<br>manner.<br>The presentation shows a<br>reasonable understanding of<br>visual language and the purpose<br>and intention of the work is<br>reasonably conveyed.          |
+| 2                                                                                                                                                   | 7-12 marks                                                                                                                                                                                                                                                              | 7-12 marks                                                                                                                                                                                                                                                                                                                                             | 7-12 marks                                                                                                                                                                                                                                                                                                   | 7-12 marks                                                                                                                                                                                                                                                                          |
+| Some development of ideas<br>through partially sustained<br>investigations.<br>Some analysis of sources,<br>partially informing basic<br>responses. | Ideas are partially refined and<br>explored through selection and<br>experimentation.<br>Some attempt to control and exploit<br>media, materials, techniques and<br>processes.<br>Some ongoing review and<br>evaluation partially informs the<br>work as it progresses. | Basic recording of ideas,<br>observations and insights by<br>appropriate means through<br>research and enquiry that is<br>sometimes relevant to personal<br>intentions.<br>Some reflection on work as it<br>progresses, which sometimes<br>demonstrates understanding and<br>meaning.                                                                  | The response is to some extent,<br>personal and meaningful and<br>intentions are realised in a basic<br>manner.<br>The presentation shows some<br>understanding of visual language<br>and the purpose and intention of<br>the work is conveyed in a partly<br>convincing way.                                |                                                                                                                                                                                                                                                                                     |
+| 1                                                                                                                                                   | 1-6 marks                                                                                                                                                                                                                                                               | 1-6 marks                                                                                                                                                                                                                                                                                                                                              | 1-6 marks                                                                                                                                                                                                                                                                                                    | 1-6 marks                                                                                                                                                                                                                                                                           |
+| Limited development of ideas<br>through investigations.<br>Limited analysis of sources which<br>have had minimal influence on<br>responses.         | Limited refinement and exploration<br>of ideas.<br>Limited attempt to control and<br>exploit media, materials,<br>techniques and processes.<br>Limited ongoing review and<br>evaluation, with minimal impact on<br>the work as it progresses.                           | Limited recording of ideas,<br>observations and insights by<br>appropriate means through<br>research and enquiry that has<br>limited relevance to personal<br>intentions.<br>Limited reflection on work as it<br>progresses, which<br>demonstrates limited<br>understanding and meaning.                                                               | A limited personal response,<br>with minimal attempts to show<br>meaning, and which realises<br>intentions in a limited manner.<br>The presentation shows limited<br>understanding of visual<br>language and the purpose and<br>intention of the work is<br>conveyed in a limited way.                       |                                                                                                                                                                                                                                                                                     |
+| 0                                                                                                                                                   | 0 marks                                                                                                                                                                                                                                                                 | 0 marks                                                                                                                                                                                                                                                                                                                                                | 0 marks                                                                                                                                                                                                                                                                                                      | 0 marks                                                                                                                                                                                                                                                                             |
+| Response not worthy of credit or<br>not attempted.                                                                                                  | Response not worthy of credit or<br>not attempted.                                                                                                                                                                                                                      | Response not worthy of credit or<br>not attempted.                                                                                                                                                                                                                                                                                                     | Response not worthy of credit or<br>not attempted.                                                                                                                                                                                                                                                           |                                                                                                                                                                                                                                                                                     |
 
 {12}------------------------------------------------
 
-
-
-| 4   | 19-24 marks                                                                                                                                                                                               | 19-24 marks                                                                                                                                                                                                                                                                                                              | 19-24 marks                                                                                                                                                                                                                                                                          | 19-24 marks                                                                                                                                                                                                                                                 |
-|-----|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|     | Effective and thorough development of ideas through sustained and focused investigations. Confident and rigorous critical analysis of sources, providing the basis for purposeful, independent responses. | Ideas are refined and explored through relevant selection and creative experimentation. Effective use of media, materials, techniques and processes are that confidently controlled and exploited. Effective and thorough ongoing review and evaluation informs the refinement and development of work as it progresses. | Confident recording of ideas, observations and insights by appropriate means through effective research and enquiry that is relevant to personal intentions. Rigorous and effective critical reflection as work progresses, demonstrating a good level of understanding and meaning. | Imaginative, personal and meaningful response which realises intentions in a confident and effective manner. The presentation shows a good understanding of visual language and the purpose and intention of the work is clearly and convincingly conveyed. |
-| 3   | 13-18 marks                                                                                                                                                                                               | 13-18 marks                                                                                                                                                                                                                                                                                                              | 13-18 marks                                                                                                                                                                                                                                                                          | 13-18 marks                                                                                                                                                                                                                                                 |
-|     | Reasonable development of ideas through investigations which are generally sustained. Reasonable critical analysis of sources, providing the basis for satisfactory and generally independent responses.  | Ideas are refined and explored through relevant selection and experimentation. Appropriate use of media, materials, techniques and processes are reasonably controlled and exploited. Reasonable ongoing review and evaluation of explorations supports the refinement and development of work as it progresses.         | Reasonable recording of ideas, observations and insights by appropriate means through research and enquiry that is generally relevant to personal intentions. Reasonably critical reflection on work as it progresses, generally demonstrating understanding and meaning.            | Reasonably imaginative personal and meaningful response which realises intentions in a satisfactory manner. The presentation shows a reasonable understanding of visual language and the purpose and intention of the work is reasonably conveyed.          |
-
-
-
 {13}------------------------------------------------
 
-
-
-| 7-12 marks                                                                                                                                                                                                                                                                                                                                        | 7-12 marks                                                                                                                                                                                                               | 7-12 marks                                                                                                                                                                                                                                                    | 7-12 marks                                                                                                                                                                                                                                                     |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Some development of ideas through partially sustained investigations. Some analysis of sources, partially informing basic responses. Ideas are partially refined and explored through selection and experimentation. Some attempt to control and media, materials, techniques processes. Some ongoing review and evaluation partially informs the | exploit and work as it progresses.                                                                                                                                                                                       | Basic recording of ideas, observations and insights by appropriate means through research and enquiry that is sometimes relevant to personal intentions. Some reflection on work as it progresses, which sometimes demonstrates understanding and meaning.    | The response is to some extent, personal and meaningful and intentions are realised in a basic manner. The presentation shows some understanding of visual language and the purpose and intention of the work is conveyed in a partly convincing way.          |
-| 1-6 marks                                                                                                                                                                                                                                                                                                                                         | 1-6 marks                                                                                                                                                                                                                | 1-6 marks                                                                                                                                                                                                                                                     | 1-6 marks                                                                                                                                                                                                                                                      |
-| Limited development of ideas through investigations. Limited analysis of sources which have had minimal influence on responses.                                                                                                                                                                                                                   | Limited refinement and exploration of ideas. Limited attempt to control and exploit media, materials, techniques and processes. Limited ongoing review and evaluation, with minimal impact on the work as it progresses. | Limited recording of ideas, observations and insights by appropriate means through research and enquiry that has limited relevance to personal intentions. Limited reflection on work as it progresses, which demonstrates limited understanding and meaning. | A limited personal response, with minimal attempts to show meaning, and which realises intentions in a limited manner. The presentation shows limited understanding of visual language and the purpose and intention of the work is conveyed in a limited way. |
-| 0 marks                                                                                                                                                                                                                                                                                                                                           | 0 marks                                                                                                                                                                                                                  | 0 marks                                                                                                                                                                                                                                                       | 0 marks                                                                                                                                                                                                                                                        |
-| Response not worthy of credit or not attempted. Response not not attempted.                                                                                                                                                                                                                                                                       | worthy of credit or                                                                                                                                                                                                      | Response not worthy of credit or not attempted.                                                                                                                                                                                                               | Response not worthy of credit or not attempted.                                                                                                                                                                                                                |
-
-
-
-{14}------------------------------------------------
-
-
-
-## Important Dates
+# <span id="page-13-0"></span>Important Dates
 
 | First Teaching of WJEC GCSE Art and Design        | 2025         |
 |---------------------------------------------------|--------------|
