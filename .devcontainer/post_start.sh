@@ -24,6 +24,7 @@ echo "[post_start] Ensuring pre-commit hooks are installed"
 uv run pre-commit install --install-hooks || true
 
 echo "[post_start] Running pre-commit hooks across the repository (this may modify files)"
+# Don't fail container start if hooks fail; allow developer to inspect
 uv run pre-commit run --all-files || true
 
 echo "[post_start] post-start script complete"
