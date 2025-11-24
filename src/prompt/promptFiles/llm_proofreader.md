@@ -29,7 +29,8 @@ The user will provide the text in Markdown format.
 * **Strict Subject-Verb Agreement:**
     * **Distractor Nouns:** Ensure the verb agrees with the true subject (e.g., "The list of items *are*..." → "*is*").
     * **Compound Technical Subjects:** "Indentation and white space *improve* readability."
-* **Comma Splices:** Flag independent clauses joined only by a comma (e.g., "It is shared among cores, this cache is..."). This is a critical error.
+* **Comma splices without a conjunction:** Flag independent clauses joined only by a comma (e.g., "It is shared among cores, this cache is..."). This is a critical error. 
+* **Independent clauses with conjunction but missing comma:** Flag as STYLISTIC_PREFERENCE (e.g., "The CPU executes instructions and it manages...") unless the absence of a comma creates ambiguity.
 
 ### 3. Structural & OCR Formatting Context (CRITICAL)
 **The input text is flattened from a PDF. You must aggressively filter out extraction artifacts to avoid false positives.**
