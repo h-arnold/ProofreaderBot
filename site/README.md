@@ -30,6 +30,8 @@ outputs with modern browser tooling.
 
 4. Open `http://localhost:8080` in a browser.
 
+Note: `papaparse` does not ship an ES module entry in the npm package, so the site loads it as a classic script tag and exposes it as `window.Papa`. Arquero and ApexCharts are used as native ES modules via an `importmap` that resolves these bare specifiers to `node_modules` paths.
+
 ## Building for Production
 
 To generate the final CSS file:
@@ -45,9 +47,13 @@ Once merged, point GitHub Pages at the `site/` directory (or rename it to `docs/
 
 - Installed Node.js/npm locally in the environment so the Tailwind CLI can run.
 - Initialized a `package.json` in the `site/` directory and installed `tailwindcss` v4 and the `@tailwindcss/cli` package.
+ - Bootstrapped the `site/` project using `npm` and installed dependencies with the npm CLI (no uv wrapper): `tailwindcss`, `@tailwindcss/cli` (dev), and `papaparse`, `arquero`, and `apexcharts` (runtime).
 - Added `site/src/input.css` with a small WJEC-branded theme (custom properties for colors and fonts).
 - Added `npm` scripts (`build` and `watch`) to generate `site/styles.css` from `site/src/input.css` using the Tailwind CLI.
 - Updated `site/index.html` to use the locally built `site/styles.css` instead of the CDN version.
+ - Updated `site/index.html` to use the locally built `site/styles.css` and an `importmap` to resolve `papaparse`, `arquero`, and `apexcharts` from local `node_modules`.
+ - Switched `site/scripts/main.js` to import the modules by name, which will resolve via the import map to the local packages rather than CDN URLs.
+ - Switched `site/scripts/main.js` to import Arquero and ApexCharts by name (ES modules) and to access Papa Parse via the global `window.Papa` since papaparse doesn't provide an ESM entry.
 
 ## Notes & Recommendations
 

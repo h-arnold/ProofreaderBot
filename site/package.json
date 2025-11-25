@@ -4,17 +4,20 @@
   "description": "This directory hosts the boilerplate for a lightweight GitHub Pages site that showcases the WJEC document scraper outputs with modern browser tooling.",
   "main": "index.js",
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "npx @tailwindcss/cli -i ./src/input.css -o ./styles.css",
     "watch": "npx @tailwindcss/cli -i ./src/input.css -o ./styles.css --watch"
   },
   "keywords": [],
   "author": "",
-  "license": "MIT",
+  "license": "ISC",
   "dependencies": {
+    "apexcharts": "^5.3.6",
+    "arquero": "^8.0.3",
+    "papaparse": "^5.5.3"
+  },
+  "devDependencies": {
     "@tailwindcss/cli": "^4.1.17",
-    "tailwindcss": "^4.1.17",
-    "papaparse": "5.4.1",
-    "arquero": "^5.6.0",
-    "apexcharts": "3.49.0"
+    "tailwindcss": "^4.1.17"
   }
 }

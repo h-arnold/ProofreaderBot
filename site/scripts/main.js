@@ -1,7 +1,10 @@
 // Boilerplate wiring for the GitHub Pages prototype. It wires Papa Parse (CSV) + Arquero (data wrangling) +
 // ApexCharts (visuals) with Tailwind-styled controls so the scraper data can be explored in the browser.
 
-import Papa from 'papaparse';
+// papaparse exposes `Papa` as a global in the bundled UMD build. We load it
+// via a classic <script> tag in index.html and reference the global here so it
+// works inside this ES module. See index.html for the script tag.
+const Papa = window.Papa;
 import * as aq from 'arquero';
 import ApexCharts from 'apexcharts';
 
