@@ -14,8 +14,8 @@ from pathlib import Path
 from typing import Iterable
 
 from src.language_check.language_issue import LanguageIssue
-from src.language_check.report_utils import build_issue_batch_table
 from src.utils.page_utils import extract_pages_text, find_page_markers
+from src.utils.report_utils import build_issue_batch_table
 
 
 @dataclass

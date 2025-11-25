@@ -12,7 +12,7 @@ The tool downloads GCSE PDF documents from WJEC "Made for Wales" qualification p
 - Gemini helper: `src/llm/gemini_llm.py` module — wraps the Google GenAI client, reads system instructions from Markdown, and loads `.env` values (such as `GEMINI_API_KEY`)
 - LLM orchestration: `src/llm/provider.py`, `src/llm/service.py`, and `src/llm/provider_registry.py` describe the shared `LLMProvider` contract, a quota-aware `LLMService` orchestrator, and a registry that builds the active provider list (currently Gemini and the batch-enabled Mistral implementation) while honoring `LLM_PRIMARY`/`LLM_FALLBACK` hints; unit tests cover fallback, quota handling, and reporting behavior.
 - Page utilities: `src.utils.page_utils` module (page marker extraction and navigation)
-- Language check: `src.language_check.language_check` module (spelling and grammar checking) with report builders in `src.language_check.report_utils`
+- Language check: `src.language_check.language_check` module (spelling and grammar checking) with report builders in `src.utils.report_utils`
 
 Python >= 3.12. Dependencies are managed with uv (see `docs/UV_GUIDE.md`).
 

@@ -6,10 +6,10 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Sequence
 
-from src.language_check.report_utils import build_issue_batch_table
 from src.llm.provider import LLMQuotaError
 from src.llm.service import LLMService
 from src.models import DocumentKey, LanguageIssue
+from src.utils.report_utils import build_issue_batch_table
 
 from .batcher import Batch, iter_batches
 from .config import ReviewConfiguration

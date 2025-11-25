@@ -19,13 +19,13 @@ from typing import Any, Iterable, Optional
 from language_tool_python.utils import LanguageToolError
 
 from src.models import PassCode
+from src.utils.report_utils import build_report_csv, build_report_markdown
 
 from .language_check_config import DEFAULT_DISABLED_RULES, DEFAULT_IGNORED_WORDS
 from .language_issue import LanguageIssue
 from .language_tool_manager import LanguageToolManager
 from .language_tool_patch import apply_post_request_patch
 from .page_utils import build_page_number_map
-from .report_utils import build_report_csv, build_report_markdown
 
 # Apply POST request patch to handle large documents (>300KB)
 # The default language_tool_python uses GET requests which fail for large documents
