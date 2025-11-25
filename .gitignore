@@ -14,6 +14,7 @@ wheels/
 
 unprocessedFiles.txt
 progress.log
+pr-progress.log
 
 # This one is because I typed out my nohup command wrong but didn't want to stop the job.
 2 
