@@ -1,80 +1,78 @@
+
+
 {1}------------------------------------------------
 
-<!-- image -->
+![](_page_0_Picture_0.jpeg)
 
-## WJEC GCSE Drama
+![](_page_0_Picture_1.jpeg)
+
+# WJEC GCSE Drama
 
 Approved by Qualifications Wales
 
-## Delivery Guide
+# Delivery Guide
 
 Teaching from 2025 For award from 2027
 
-<!-- image -->
+![](_page_0_Picture_6.jpeg)
 
-Made for Wales. Ready for the world.
+Ready for the world. This Qualifications Wales regulated qualification is not available to centres in England.
 
-<!-- image -->
-
-
+Made for Wales.
 
 {2}------------------------------------------------
 
-
-
-WJEC would like to thank the students and teachers of Fitzalan High School, Cardiff and Llanwern High School, Newport for their participation in the creation of these covers.
-
-
+![](_page_1_Picture_0.jpeg)
 
 {3}------------------------------------------------
 
-
-
 ## Contents
 
-| Aims of the Delivery Guide.................................................................................................... 3      |
-|---------------------------------------------------------------------------------------------------------------------------------------|
-| Qualification Structure........................................................................................................... 3  |
-| Unit 1 .............................................................................................................................3 |
-| Unit 2 .............................................................................................................................6 |
-| Unit 3 .............................................................................................................................8 |
-| Summary of assessment....................................................................................................... 9        |
-| Assessment Objectives....................................................................................................... 10       |
-| Unit 1 ........................................................................................................................... 10 |
-| Unit 2 ........................................................................................................................... 10 |
-| Unit 3 ........................................................................................................................... 10 |
-| Specification and Assessment Pack.................................................................................... 11              |
-| Understanding the specification amplification............................................................... 11                       |
-| Specification Stems ..................................................................................................... 11          |
-| Command words.......................................................................................................... 12            |
-| Mark Schemes.................................................................................................................... 14   |
-| Important Dates .................................................................................................................. 17 |
-| Appendix A: Theatre Practitioners and Genres................................................................ 18                       |
-| Appendix B: Glossary of Terminology.............................................................................. 22                  |
-
-
+| Aims of the Delivery Guide                    | Page |
+|-----------------------------------------------|------|
+| Qualification Structure                       |      |
+| Unit 1                                        |      |
+| Unit 2                                        |      |
+| Unit 3                                        |      |
+| Summary of assessment                         |      |
+| Assessment Objectives                         |      |
+| Unit 1                                        | 1    |
+| Unit 2                                        | 1    |
+| Unit 3                                        | 1    |
+| Specification and Assessment Pack             | 1    |
+| Understanding the specification amplification | 1    |
+| Specification Stems                           | 1    |
+| Command words                                 | 1    |
+| Mark Schemes                                  | 1    |
+| Important Dates                               | 1    |
+| Appendix A: Theatre Practitioners and Genres  | 1    |
+| Appendix B: Glossary of Terminology           | 2    |
 
 {4}------------------------------------------------
 
-
+<span id="page-3-0"></span>
 
 ## Aims of the Delivery Guide
 
 The aim of the Delivery Guide is to give an overview of the qualification and to help teachers understand how we assess the GCSE. It will offer an introduction to the specification, an assessment overview, and will support teachers in better understanding how to prepare their learners for the assessment of the different units. More information on each unit can be found in the separate unit guides.
 
+<span id="page-3-1"></span>
+
 ## Qualification Structure
 
-WJEC GCSE Drama consists of 3 units:
+## WJEC GCSE Drama consists of 3 units:
 
-| Unit title              | Type of Assessment                   | Weighting   |
-|-------------------------|--------------------------------------|-------------|
-| Devising Theatre        | Practical Non-examination assessment | Unit 1 40%  |
-| Performance from a Text | Practical Non-examination assessment | Unit 2 30%  |
-| Interpreting Theatre    | On-screen examination                | Unit 3 30%  |
+|        | Unit title              | Type of Assessment                      | Weighting |
+|--------|-------------------------|-----------------------------------------|-----------|
+| Unit 1 | Devising Theatre        | Practical<br>Non-examination assessment | 40%       |
+| Unit 2 | Performance from a Text | Practical<br>Non-examination assessment | 30%       |
+| Unit 3 | Interpreting Theatre    | On-screen examination                   | 30%       |
 
 All units are compulsory.
 
-## Unit 1
+<span id="page-3-2"></span>
+
+# Unit 1
 
 ## Devising Theatre
 
@@ -86,27 +84,21 @@ The purpose of this unit is to:
 
 - develop an awareness and understanding of a range of theatrical practitioners/companies/styles and genres
 - develop learners' awareness and skills regarding the creation and development of their own work
-- develop learners' application of performance or design skills within a live performance
+- develop learners' application of performance **or** design skills within a live performance
 - provide an opportunity for learners to develop their ability to reflect, analyse and evaluate their creative decisions
 - develop learners' resilience, determination and confidence.
 
-© WJEC CBAC Ltd.2025.
-
-
-
 {5}------------------------------------------------
 
+## This unit will focus on:
 
+- **exploring** learners will have the opportunity to explore a range of theatrical practitioners/companies/styles and genres. This will include a range of techniques, forms, styles, contexts and means of presenting drama. Exploration could also be through the means of live and/or digital theatre, as possible sources of influence for performance or design ideas. Learners should have the opportunity to explore diversity, including different perspectives, identity, culture, and contributions that span Wales and the world.
+- **responding and reflecting** learners will be able to reflect on their own work and respond to the feedback from others as an on-going process throughout the development period, allowing them to improve in the performances they give or in the designs they create
+- **creating** learners will contribute to the creation of a devised performance in response to a choice of stimuli set by WJEC.
 
-This unit will focus on:
+Learners may choose to complete this unit as actors **or** designers, regardless of their chosen pathway in Unit 2.
 
-- exploring - learners will have the opportunity to explore a range of theatrical practitioners/companies/styles and genres. This will include a range of techniques, forms, styles, contexts and means of presenting drama. Exploration could also be through the means of live and/or digital theatre, as possible sources of influence for performance or design ideas. Learners should have the opportunity to explore diversity, including different perspectives, identity, culture, and contributions that span Wales and the world.
-- responding and reflecting - learners will be able to reflect on their own work and respond to the feedback from others as an on-going process throughout the development period, allowing them to improve in the performances they give or in the designs they create
-- creating - learners will contribute to the creation of a devised performance in response to a choice of stimuli set by WJEC.
-
-Learners may choose to complete this unit as actors or designers, regardless of their chosen pathway in Unit 2.
-
-Learners choosing design must choose one
+Learners choosing design must choose **one** of the following options:
 
 - lighting design
 - sound design
@@ -115,54 +107,30 @@ Learners choosing design must choose one
 
 For this assessment learners are required to:
 
-- create and develop a piece of theatre in response to a stimulus, using either the techniques of an influential theatre practitioner, company or the characteristics of a theatrical style or genre and demonstrate and apply their performance or design skills in a live performance
+- create and develop a piece of theatre in response to a stimulus, using either the techniques of an influential theatre practitioner, company or the characteristics of a theatrical style or genre and demonstrate and apply their performance **or** design skills in a live performance
 - produce a reflective log.
 
-Learners can choose to be assessed on either acting or design.
+Learners can choose to be assessed on either acting **or** design.
 
-Learners can work in groups of between two and five actors. Each group may have up to four designers, each offering a different design skill.
+Learners can work in groups of between **two** and **five** actors. Each group may have up to **four** designers, each offering a different design skill.
 
 The length of this piece of theatre will depend on the number of actors in the group and should be as follows:
 
-- •
-
-- Group of two actors: 5-10 minutes
-
-- •
-
-- Group of three actors: 7-12 minutes
-
-- •
-
-- Group of four actors: 9-14 minutes
-
-- •
-
-- Group of five actors: 11-16 minutes.
-
-of the following options:
-
-
+• Group of two actors: 5-10 minutes • Group of three actors: 7-12 minutes • Group of four actors: 9-14 minutes • Group of five actors: 11-16 minutes. 
 
 {6}------------------------------------------------
 
-
-
-Each actor must interact with other actors and/or the audience for a minimum of five minutes . The number of designers in a group does not impact on the length of the piece. Learners may complete the assessment anytime during the course. However, centres should ensure that assessment is completed only when learners have undertaken the necessary teaching and learning and developed the required skills and knowledge.
+Each actor must interact with other actors and/or the audience **for a minimum of five minutes**. The number of designers in a group does not impact on the length of the piece. Learners may complete the assessment anytime during the course. However, centres should ensure that assessment is completed only when learners have undertaken the necessary teaching and learning and developed the required skills and knowledge.
 
 The assessment contributes to 40% of the overall qualification. The unit will be marked out of total of 96 marks.
 
 The stimuli will be released on WJEC's portal during the September of the first year of study.
 
-This unit will be assessed by the centre and externally moderated by WJEC.
-
-
+<span id="page-5-0"></span>This unit will be assessed by the centre and externally moderated by WJEC.
 
 {7}------------------------------------------------
 
-
-
-## Unit 2
+# Unit 2
 
 ## Performance from a Text
 
@@ -177,14 +145,14 @@ The purpose of this unit is to:
 
 This unit will focus on:
 
-- exploring - learners will have the opportunity to explore and perform a range of theatrical texts, from various genres and periods and linked to different cultures, perspectives and contributions in Wales and the world. Exploration could also be linked to a range of theatrical styles and genres, to various practitioner/theatre companies' artistic aims and through the means of live and/or digital theatre, as a possible source of influence for performance or design ideas
-- creating - linked to the process of creating and the realisation of the final text-based performance and could be experienced as actors or designers.
+- **exploring** learners will have the opportunity to explore and perform a range of theatrical texts, from various genres and periods and linked to different cultures, perspectives and contributions in Wales and the world. Exploration could also be linked to a range of theatrical styles and genres, to various practitioner/theatre companies' artistic aims and through the means of live and/or digital theatre, as a possible source of influence for performance or design ideas
+- **creating** linked to the process of creating and the realisation of the final text-based performance and could be experienced as actors **or** designers.
 
 Learners will have free choice of text for Unit 2, however, the choice of text must be different to the set text selected in Unit 3.
 
-Learners may choose to complete this unit as actors or designers, regardless of their chosen pathway in Unit 1.
+Learners may choose to complete this unit as actors **or** designers, regardless of their chosen pathway in Unit 1.
 
-Learners choosing design must choose one of the following options:
+Learners choosing design must choose **one** of the following options:
 
 - lighting design
 - sound design
@@ -194,37 +162,21 @@ Learners choosing design must choose one of the following options:
 For this assessment learners are required to:
 
 - create and develop an extract(s) from a published performance text for performance
-- demonstrate and apply performance or design skills that will be realised in the final performance .
+- demonstrate and apply performance **or** design skills that will be realised in the final performance*.*
 
-Learners will have free choice of text for Unit 2, however, the choice of text must be different to the set text selected in Unit 3.
+Learners will have free choice of text for Unit 2, however, the choice of text **must** be different to the set text selected in Unit 3.
 
-Learners can choose to be assessed on either acting or design.
+Learners can choose to be assessed on either acting **or** design.
 
 Learners work in groups of between two and four actors. Each group may have up to two designers, each offering a different design skill.
 
-
-
 {8}------------------------------------------------
-
-
 
 The length of this piece of theatre will depend on the number of actors in the group and should be as follows:
 
-- Group of two actors:
+• Group of two actors: 5-10 minutes • Group of three actors: 7-12 minutes • Group of four actors: 9-14 minutes
 
-5-10 minutes
-
-- •
-
-- Group of three actors:
-
-7-12 minutes
-
-- •
-
-- Group of four actors: 9-14 minutes
-
-Each actor must interact with other actors and/or the audience for a minimum of five minutes . The number of designers in a group does not impact on the length of the piece.
+Each actor must interact with other actors and/or the audience **for a minimum of five minutes**. The number of designers in a group does not impact on the length of the piece.
 
 ## Viva
 
@@ -236,13 +188,11 @@ The assessment contributes to 30% of the overall qualification. The unit will be
 
 This unit will be assessed by a visiting examiner.
 
-
-
 {9}------------------------------------------------
 
+<span id="page-8-0"></span>
 
-
-## Unit 3
+# Unit 3
 
 ## Interpreting Theatre
 
@@ -256,40 +206,58 @@ The purpose of this unit is to:
 - develop learners' creative skills as an actor, designer and director through the context of prepared and unprepared works
 - reflect on and analyse the work of others through the context of unprepared work.
 
-This unit will focus on:
+## This unit will focus on:
 
-- exploring - learners will have the opportunity to explore various theatrical viewpoints and experiences. This should include a range of techniques, forms, styles and contexts. This exploration will be linked to their chosen set text as well as a range of theatrical productions of contrasting styles/genres, contrasting periods/contexts, works created in or inspired by Wales and works written by a diverse range of writers, including those from Black, Asian and minority ethnic backgrounds. Learners should have the opportunity for theatrical exploration as an actor, designer and director gathering ideas from a variety of sources to enhance their understanding of drama.
-- responding and reflecting - linked to live and/or recorded/live streamed performances as possible theatrical influences for the set texts and unprepared works. As learners make progress in Unit 3 they increasingly evaluate and create more sophisticated responses, independently to live and/or pre-recorded theatre. Their evaluation of work of others reflects a developing understanding of theatrical experience enabling them to form effective critique.
+- exploring learners will have the opportunity to explore various theatrical viewpoints and experiences. This should include a range of techniques, forms, styles and contexts. This exploration will be linked to their chosen set text as well as a range of theatrical productions of contrasting styles/genres, contrasting periods/contexts, works created in or inspired by Wales and works written by a diverse range of writers, including those from Black, Asian and minority ethnic backgrounds. Learners should have the opportunity for theatrical exploration as an actor, designer and director gathering ideas from a variety of sources to enhance their understanding of drama.
+- responding and reflecting linked to live and/or recorded/live streamed performances as possible theatrical influences for the set texts and unprepared works. As learners make progress in Unit 3 they increasingly evaluate and create more sophisticated responses, independently to live and/or pre-recorded theatre. Their evaluation of work of others reflects a developing understanding of theatrical experience enabling them to form effective critique.
 
 The texts chosen for Units 2 and 3 must be different.
 
-
-
 {10}------------------------------------------------
 
-
+<span id="page-9-0"></span>
 
 ## Summary of assessment
 
-Unit 3: Interpreting Theatre
+## Unit 1: Devising Theatre *Practical non-examination assessment* **40% of qualification**
 
-On-screen examination : 2 hours 30% of qualification
+**96 marks**
 
-<!-- image -->
+## Summary of assessment
+
+Response to a stimuli set by WJEC, assessed by the centre and moderated by WJEC. The stimuli will be available on the WJEC Portal during the September of the first year of study. The stimuli will be changed annually.
+
+Learners can choose either acting **or** design. Learners will create, refine and perform a piece of theatre. Learners will also produce a Reflective Log of the process in a non-prescribed format. Learners can work in groups of between **two** and **five** actors. Up
+
+to **four** additional learners, each working on a different design skill, may work with each performing group.
+
+## Unit 2: Performance from a Text *Practical non-examination assessment* **30% of qualification**
+
+**72 marks**
+
+## Summary of assessment
+
+Marked by visiting examiner. Learners can choose either acting **or** design.
+
+Each actor must interact with other actors and/or the audience for a minimum of five minutes. Designers will give a non-assessed viva outlining their ideas.
+
+Learners can work in groups of between **two** and **four** actors. Up to **two** additional learners, each working on a different design skill, may work with each performing group.
+
+## Unit 3: Interpreting Theatre *On-screen examination*: **2 hours 30% of qualification**
+
+**72 marks**
+
+## Summary of assessment
+
+Questions requiring objective responses, short and extended answers, in response to set text and unseen texts.
 
 This is a linear qualification.
 
 The qualification is not tiered.
 
-There is no hierarchy in the order in which the units are presented. The order does not imply the teaching order of the units.
-
-© WJEC CBAC Ltd.2025.
-
-
+<span id="page-9-1"></span>There is no hierarchy in the order in which the units are presented. The order does not imply the teaching order of the units.
 
 {11}------------------------------------------------
-
-
 
 ## Assessment Objectives
 
@@ -309,40 +277,48 @@ Reflect on, analyse and evaluate their own work and the work of others
 
 Create and develop ideas to communicate meaning in theatrical designs and/or performances
 
-Unit 1 The distribution of the assessment objectives for this unit is:
+<span id="page-10-0"></span>
 
-| AO1   | AO2   | AO3   | AO4   | Total   |
-|-------|-------|-------|-------|---------|
-| -     | 22.5% | 5%    | 12.5% | 40%     |
-
-Unit 2 The distribution of the assessment objectives for this unit is:
-
-| AO1   | AO2   | AO3   | AO4   | Total   |
-|-------|-------|-------|-------|---------|
-| -     | 22.5% | -     | 7.5%  | 30%     |
-
-## Unit 3
+# Unit 1
 
 The distribution of the assessment objectives for this unit is:
 
-| AO1   | AO2   | AO3   | AO4   | Total   |
-|-------|-------|-------|-------|---------|
-| 20%   | -     | 10%   | -     | 30%     |
+| AO1 | AO2   | AO3 | AO4   | Total |
+|-----|-------|-----|-------|-------|
+| -   | 22.5% | 5%  | 12.5% | 40%   |
 
-© WJEC CBAC Ltd.2025.
+<span id="page-10-1"></span>
 
+# Unit 2
 
+The distribution of the assessment objectives for this unit is:
+
+| AO1 | AO2   | AO3 | AO4  | Total |
+|-----|-------|-----|------|-------|
+| -   | 22.5% | -   | 7.5% | 30%   |
+
+<span id="page-10-2"></span>
+
+# Unit 3
+
+The distribution of the assessment objectives for this unit is:
+
+| AO1 | AO2 | AO3 | AO4 | Total |
+|-----|-----|-----|-----|-------|
+| 20% | -   | 10% | -   | 30%   |
 
 {12}------------------------------------------------
 
-
+<span id="page-11-0"></span>
 
 ## Specification and Assessment Pack
 
 When we develop new qualifications, we produce the following documents:
 
-- Specification - this covers all the information and skills that learners are expected to know by the end of their course.
-- Assessment Pack - this contains the Sample Assessment Materials (SAMs) i.e.: sample exam papers and sample NEA tasks, relevant controls for the NEA and, mark schemes This guide builds upon the information in the specification and assessment pack to help further your understanding of said documents.
+- Specification this covers all the information and skills that learners are expected to know by the end of their course.
+- Assessment Pack this contains the Sample Assessment Materials (SAMs) i.e.: sample exam papers and sample NEA tasks, relevant controls for the NEA and, mark schemes This guide builds upon the information in the specification and assessment pack to help further your understanding of said documents.
+
+<span id="page-11-1"></span>
 
 ## Understanding the specification amplification
 
@@ -351,29 +327,29 @@ Learners should be made aware of:
 - the specification stems
 - what the specification stems mean.
 
+<span id="page-11-2"></span>
+
 ## Specification Stems
 
 When you look through the specification you will notice in the amplification column, we use a variety of wording before the list of content learners need to know; we call this a stem:
 
-| Specification Stem         | Amplification                                                                   |
-|----------------------------|---------------------------------------------------------------------------------|
-| Learners are required to   | develop and apply their performance or design skills within a live performance. |
-| Learners should be able to | reflect on, analyse and evaluate their own work                                 |
+| Specification<br>Stem         | Amplification                                                                      |
+|-------------------------------|------------------------------------------------------------------------------------|
+| Learners are<br>required to   | develop and apply their performance or design skills within a live<br>performance. |
+| Learners should<br>be able to | reflect on, analyse and evaluate their own work                                    |
 
-## Each stem is used for a slightly different reason
+Each stem is used for a slightly different reason
 
-| Specification Stem         | When it is used                                                                                                                                                                                                                          |
-|----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Learners should know       | When learners are required to use direct recall.                                                                                                                                                                                         |
-| Learners are required to   | When learners show the requirements of individual units.                                                                                                                                                                                 |
-| Learners should understand | When learners are required to demonstrate greater depth than straight identification or recall, for example they can apply knowledge to familiar or unfamiliar contexts and can synthesise and evaluate information for a given purpose. |
-| Learners should be able to | When learners need to apply their knowledge and understanding to a practical situation or demonstrate application of practical skills and techniques.                                                                                    |
-
-
+| Specification<br>Stem         | When it is used                                                                                                                                                                                                                                   |
+|-------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Learners should<br>know       | When learners are required to use direct recall.                                                                                                                                                                                                  |
+| Learners are<br>required to   | When learners show the requirements of individual units.                                                                                                                                                                                          |
+| Learners should<br>understand | When learners are required to demonstrate greater depth than<br>straight identification or recall, for example they can apply<br>knowledge to familiar or unfamiliar contexts and can synthesise and<br>evaluate information for a given purpose. |
+| Learners should<br>be able to | When learners need to apply their knowledge and understanding to<br>a practical situation or demonstrate application of practical skills and<br>techniques.                                                                                       |
 
 {13}------------------------------------------------
 
-
+<span id="page-12-0"></span>
 
 ## Command words
 
@@ -385,62 +361,51 @@ Learners should be made aware of:
 
 Command words are the words and phrases used in assessments that tell learners how they should answer the question or complete the task. Command words direct the learner through the question or task and indicate the nature of the response required.
 
-<!-- image -->
+![](_page_12_Picture_7.jpeg)
 
 The following tables are not exhaustive, but will give you a good idea of the command words we typically use:
 
-<!-- image -->
-
-| Command words for direct recall   | Command words for direct recall                                                                                                                                                                          |
-|-----------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Command Word                      | Requirements of response                                                                                                                                                                                 |
-| Describe                          | Identify distinctive features and give descriptive, factual detail. This is one of the most widely used command words. If an explanation is required then use two command words: 'describe and explain'. |
-| Drag and drop                     | Move to another part of a screen using a mouse or similar device.                                                                                                                                        |
-| Give                              | Produce an answer from recall.                                                                                                                                                                           |
-| Identify/ Tick/ Click / Circle    | Point out and name from a number of possibilities.                                                                                                                                                       |
-| Label                             | To designate with a name.                                                                                                                                                                                |
-| Name                              | Identify or make a list.                                                                                                                                                                                 |
-| Outline                           | Set out the main characteristics.                                                                                                                                                                        |
-| State                             | Express in clear terms.                                                                                                                                                                                  |
-
-
+| Command words for direct recall   |                                                                                                                                                                                                                        |
+|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Command Word                      | Requirements of response                                                                                                                                                                                               |
+| Describe                          | Identify distinctive features and give descriptive, factual detail.<br><i>This is one of the most widely used command words. If an explanation is<br/>required then use two command words: 'describe and explain'.</i> |
+| Drag and drop                     | Move to another part of a screen using a mouse or similar device.                                                                                                                                                      |
+| Give                              | Produce an answer from recall.                                                                                                                                                                                         |
+| Identify/ Tick/ Click /<br>Circle | Point out and name from a number of possibilities.                                                                                                                                                                     |
+| Label                             | To designate with a name.                                                                                                                                                                                              |
+| Name                              | Identify or make a list.                                                                                                                                                                                               |
+| Outline                           | Set out the main characteristics.                                                                                                                                                                                      |
+| State                             | Express in clear terms.                                                                                                                                                                                                |
 
 {14}------------------------------------------------
 
+| Command words for application/ demonstration of skills: |                                                                                        |
+|---------------------------------------------------------|----------------------------------------------------------------------------------------|
+| Command Word                                            | Requirements of response                                                               |
+| Demonstrate                                             | Exemplify, describe with reference to examples.                                        |
+| Design                                                  | Decide upon the look and functioning of something by making or drawing<br>plans.       |
+| Discuss                                                 | Present key points.                                                                    |
+| Explain                                                 | Give reasons or causes. Show an understanding of how or why<br>something has occurred. |
+| Propose                                                 | Suggest a course of action based on supported reasons.                                 |
+| Select/Choose                                           | Make an appropriate choice from a range of options.                                    |
+| Suggest                                                 | Put forward an idea, reason or course of action.                                       |
+| Command words for synthesis and evaluation              |                                                                                        |
+| Command Word                                            | Requirements of response                                                               |
 
+<span id="page-13-0"></span>
 
-## Command words for application/ demonstration of skills:
-
-| Command Word   | Requirements of response                                                            |
-|----------------|-------------------------------------------------------------------------------------|
-| Demonstrate    | Exemplify, describe with reference to examples.                                     |
-| Design         | Decide upon the look and functioning of something by making or drawing plans.       |
-| Discuss        | Present key points.                                                                 |
-| Explain        | Give reasons or causes. Show an understanding of how or why something has occurred. |
-| Propose        | Suggest a course of action based on supported reasons.                              |
-| Select/Choose  | Make an appropriate choice from a range of options.                                 |
-| Suggest        | Put forward an idea, reason or course of action.                                    |
-
-## Command words for synthesis and evaluation
-
-| Command Word   | Requirements of response                                                             |
-|----------------|--------------------------------------------------------------------------------------|
-| Analyse        | Separate information into components identify their characteristics.                 |
-| Compare        | Identify similarities .                                                              |
-| Consider       | Review and respond to given info.                                                    |
-| Discuss        | Examine an issue in detail in a structured way, taking into account different ideas. |
-| Evaluate       | Judge from available evidence.                                                       |
-| Justify        | Support case with evidence.                                                          |
-| Reflect        | To consider thoughts, experiences, situation or issue.                               |
-| Suggest        | State a possible reason or course of action.                                         |
-
-© WJEC CBAC Ltd.2025.
-
-
+| Command Word | Requirements of response                                                             |
+|--------------|--------------------------------------------------------------------------------------|
+| Analyse      | Separate information into components identify their characteristics.                 |
+| Compare      | Identify similarities.                                                               |
+| Consider     | Review and respond to given info.                                                    |
+| Discuss      | Examine an issue in detail in a structured way, taking into account different ideas. |
+| Evaluate     | Judge from available evidence.                                                       |
+| Justify      | Support case with evidence.                                                          |
+| Reflect      | To consider thoughts, experiences, situation or issue.                               |
+| Suggest      | State a possible reason or course of action.                                         |
 
 {15}------------------------------------------------
-
-
 
 ## Mark Schemes
 
@@ -450,14 +415,14 @@ Mark schemes and/or assessment criteria test the intended learning outcomes for 
 
 For very short answer questions requiring one correct response.
 
-| Question   | Question                                      | Answer                                        | Answer                                        | AO1                                           | AO2                                           | AO3                                           | Total Mark                                    |
-|------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|-----------------------------------------------|
-| 1.         | A Midsummer Night's Dream William Shakespeare | A Midsummer Night's Dream William Shakespeare | A Midsummer Night's Dream William Shakespeare | A Midsummer Night's Dream William Shakespeare | A Midsummer Night's Dream William Shakespeare | A Midsummer Night's Dream William Shakespeare | A Midsummer Night's Dream William Shakespeare |
-|            | (c)                                           | (i)                                           | Name these two stages                         | 2                                             |                                               |                                               | 2                                             |
+| Question | Answer                    | AO1 | AO2                   | AO3 | Total Mark |  |   |
+|----------|---------------------------|-----|-----------------------|-----|------------|--|---|
+| 1.       | A Midsummer Night's Dream |     | William Shakespeare   |     |            |  |   |
+|          | (c)                       | (i) | Name these two stages | 2   |            |  | 2 |
 
 ## AO1
 
-## Demonstrate knowledge and understanding of how drama and theatre is developed and performed
+## Demonstrate knowledge and understanding of how drama and theatre is developed and **performed**
 
 Award one mark for each correctly named stage up to a maximum of 2 marks.
 
@@ -468,71 +433,56 @@ Award one mark for each correctly named stage up to a maximum of 2 marks.
 
 For short answer questions with a range of possible responses
 
-| Question   | Question                                | Answer                                  | Answer                                                                                 | AO1                                     | AO2                                     | AO3                                     | Total Mark                              |
-|------------|-----------------------------------------|-----------------------------------------|----------------------------------------------------------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|-----------------------------------------|
-| 2.         | The Glass Menagerie, Tennessee Williams | The Glass Menagerie, Tennessee Williams | The Glass Menagerie, Tennessee Williams                                                | The Glass Menagerie, Tennessee Williams | The Glass Menagerie, Tennessee Williams | The Glass Menagerie, Tennessee Williams | The Glass Menagerie, Tennessee Williams |
-|            | (a)                                     | (iii)                                   | Briefly describe the tone and tempo that could be used when speaking your chosen line. | 2                                       |                                         |                                         | 2                                       |
+| Question |                                            | Answer                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |                                                                                           | AO1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | AO2           | AO3 | Total<br>Mark |
+|----------|--------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------|-----|---------------|
+| 2.       | The Glass Menagerie,<br>Tennessee Williams |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |                                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |               |     |               |
+|          | (a)                                        | (iii)                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Briefly describe the tone and tempo that could be<br>used when speaking your chosen line. | 2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |               |     | 2             |
+| Question | Answer                                     | AO1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              | AO2                                                                                       | AO3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Total<br>Mark |     |               |
+| 3.       | Blue Remembered Hills,<br>Dennis Potter    | (d) As an actor you have been asked to perform the role of<br>JOHN<br>in a production of Blue Remembered Hills.<br>Choose<br>one extract from the play and explain how you could<br>communicate the character to the audience.                                                                                                                                                                                                                                                                                                                                                                                                                                   | 15                                                                                        |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |               | 15  |               |
+|          |                                            | Do not use the extract used for questions 3(a)-3(c)<br>In your answer refer to:<br>• character motivation<br>• voice<br>• movement<br>• interaction.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |                                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |               |     |               |
+| Band     |                                            | AO1 Demonstrate knowledge and understanding of how drama and theatre is developed and performed                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |                                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |               |     |               |
+| 5        |                                            | 13-15 marks<br>• Perceptive explanation of character motivation within the chosen extract<br>• Perceptive knowledge and understanding of how voice can be used to communicate the character in the chosen extract<br>• Perceptive knowledge and understanding of how movement can be used to communicate character within the chosen extract<br>• Perceptive knowledge and understanding of how interaction can be used to communicate character within the chosen extract<br>• Highly detailed references to the extract to support the vocal/movement/interaction skills suggested<br>• Highly relevant knowledge, understanding and use of drama terminology. |                                                                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |               |     |               |
+|          |                                            | 4                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |                                                                                           | 10-12 marks<br>• Detailed explanation of character motivation within the chosen extract<br>• Detailed knowledge and understanding of how voice can be used to communicate the character in the chosen extract<br>• Detailed knowledge and understanding of how movement can be used to communicate character within the chosen extract<br>• Detailed knowledge and understanding of how interaction can be used to communicate character within the chosen extract<br>• Detailed references to the extract to support the vocal/movement/interaction skills suggested<br>• Relevant knowledge, understanding and use of drama terminology. |               |     |               |
 
 ## AO1
 
-## Demonstrate knowledge and understanding of how drama and theatre is developed and performed
+## Demonstrate knowledge and understanding of how drama and theatre is developed and **performed**
 
 - Award one mark for a suitable tone and one mark for a suitable tempo.
 - The response should link with the given line in the previous question.
-- Answers must refer to both tone and tempo to be awarded the maximum 2 marks. If only one is discussed, answers will be marked out of a maximum of 1 mark.
+- Answers must refer to **both** tone and tempo to be awarded the maximum 2 marks. If only one is discussed, answers will be marked out of a maximum of 1 mark.
 
 ## Indicative content
 
-These are examples only and all valid alternatives should be considered and marked appropriate ly.
+These are examples only and all valid alternatives should be considered and marked appropriate*ly.*
 
 - An angry tone and a fast tempo to emphasise his anger at Amanda
 - A sneering tone and fast tempo to show his dislike of Amanda and how she treats him
 - A spiteful tone and slow tempo to put Amanda in her place
 - An incredulous tone and a fast tempo to show he can't believe Amanda would confiscate his books.
 
-© WJEC CBAC Ltd.2025.
-
-
-
 {16}------------------------------------------------
-
-
 
 ## Levels based mark schemes
 
 For questions requiring extended responses
 
-| Question   | Question                             | Answer                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         | AO1                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | AO2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | AO3                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Total Mark                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-|------------|--------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 3.         | Blue Remembered Hills, Dennis Potter | Blue Remembered Hills, Dennis Potter                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Blue Remembered Hills, Dennis Potter                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Blue Remembered Hills, Dennis Potter                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Blue Remembered Hills, Dennis Potter                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           | Blue Remembered Hills, Dennis Potter                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-|            | (d)                                  | As an actor you have been asked to perform the role of JOHN in a production of Blue Remembered Hills. Choose one extract from the play and explain how you could communicate the character to the audience. Do not use the extract used for questions 3(a)-3(c) In your answer refer to: • character motivation • voice • movement • interaction.                                                                                                                                                                                                                                                                                              | 15                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | 15                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Band       | Band                                 | AO1 Demonstrate knowledge and understanding of how drama and theatre is developed and performed                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | AO1 Demonstrate knowledge and understanding of how drama and theatre is developed and performed                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | AO1 Demonstrate knowledge and understanding of how drama and theatre is developed and performed                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | AO1 Demonstrate knowledge and understanding of how drama and theatre is developed and performed                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                | AO1 Demonstrate knowledge and understanding of how drama and theatre is developed and performed                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-|            |                                      | 13-15 marks • Perceptive explanation of character motivation within the chosen extract • Perceptive knowledge and understanding of how voice can be used to communicate the character in the chosen extract • Perceptive knowledge and understanding of how movement can be used to communicate character within the chosen extract • Perceptive knowledge and understanding of how interaction can be used to communicate character within the chosen extract • Highly detailed references to the extract to support the vocal/movement/interaction skills suggested • Highly relevant knowledge, understanding and use of drama terminology. | 13-15 marks • Perceptive explanation of character motivation within the chosen extract • Perceptive knowledge and understanding of how voice can be used to communicate the character in the chosen extract • Perceptive knowledge and understanding of how movement can be used to communicate character within the chosen extract • Perceptive knowledge and understanding of how interaction can be used to communicate character within the chosen extract • Highly detailed references to the extract to support the vocal/movement/interaction skills suggested • Highly relevant knowledge, understanding and use of drama terminology. | 13-15 marks • Perceptive explanation of character motivation within the chosen extract • Perceptive knowledge and understanding of how voice can be used to communicate the character in the chosen extract • Perceptive knowledge and understanding of how movement can be used to communicate character within the chosen extract • Perceptive knowledge and understanding of how interaction can be used to communicate character within the chosen extract • Highly detailed references to the extract to support the vocal/movement/interaction skills suggested • Highly relevant knowledge, understanding and use of drama terminology. | 13-15 marks • Perceptive explanation of character motivation within the chosen extract • Perceptive knowledge and understanding of how voice can be used to communicate the character in the chosen extract • Perceptive knowledge and understanding of how movement can be used to communicate character within the chosen extract • Perceptive knowledge and understanding of how interaction can be used to communicate character within the chosen extract • Highly detailed references to the extract to support the vocal/movement/interaction skills suggested • Highly relevant knowledge, understanding and use of drama terminology. | 13-15 marks • Perceptive explanation of character motivation within the chosen extract • Perceptive knowledge and understanding of how voice can be used to communicate the character in the chosen extract • Perceptive knowledge and understanding of how movement can be used to communicate character within the chosen extract • Perceptive knowledge and understanding of how interaction can be used to communicate character within the chosen extract • Highly detailed references to the extract to support the vocal/movement/interaction skills suggested • Highly relevant knowledge, understanding and use of drama terminology. |
-|            |                                      | 10-12 marks • Detailed explanation of character motivation within the chosen extract • Detailed knowledge and understanding of how voice can be used to communicate the character in the chosen extract • Detailed knowledge and understanding of how movement can be used to communicate character within the chosen extract • Detailed knowledge and understanding of how interaction can be used to communicate character within the chosen extract • Detailed references to the extract to support the vocal/movement/interaction skills                                                                                                   | 10-12 marks • Detailed explanation of character motivation within the chosen extract • Detailed knowledge and understanding of how voice can be used to communicate the character in the chosen extract • Detailed knowledge and understanding of how movement can be used to communicate character within the chosen extract • Detailed knowledge and understanding of how interaction can be used to communicate character within the chosen extract • Detailed references to the extract to support the vocal/movement/interaction skills                                                                                                   | 10-12 marks • Detailed explanation of character motivation within the chosen extract • Detailed knowledge and understanding of how voice can be used to communicate the character in the chosen extract • Detailed knowledge and understanding of how movement can be used to communicate character within the chosen extract • Detailed knowledge and understanding of how interaction can be used to communicate character within the chosen extract • Detailed references to the extract to support the vocal/movement/interaction skills                                                                                                   | 10-12 marks • Detailed explanation of character motivation within the chosen extract • Detailed knowledge and understanding of how voice can be used to communicate the character in the chosen extract • Detailed knowledge and understanding of how movement can be used to communicate character within the chosen extract • Detailed knowledge and understanding of how interaction can be used to communicate character within the chosen extract • Detailed references to the extract to support the vocal/movement/interaction skills                                                                                                   | 10-12 marks • Detailed explanation of character motivation within the chosen extract • Detailed knowledge and understanding of how voice can be used to communicate the character in the chosen extract • Detailed knowledge and understanding of how movement can be used to communicate character within the chosen extract • Detailed knowledge and understanding of how interaction can be used to communicate character within the chosen extract • Detailed references to the extract to support the vocal/movement/interaction skills                                                                                                   |
-
-
-
 {17}------------------------------------------------
 
-
-
-| 3       | 7-9 marks • Satisfactory explanation of character motivation within the chosen extract • Satisfactory knowledge and understanding of how voice can be used to communicate the character in the chosen extract • Satisfactory knowledge and understanding of how movement can be used to communicate character within the chosen extract. • Satisfactory knowledge and understanding of how interaction can be used to communicate character within the chosen extract • General references to the extract to support the vocal/movement/interaction skills suggested • Generally relevant knowledge, understanding and use of drama terminology.   |
-|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 2       | • Basic explanation of character motivation within the chosen extract • Basic knowledge and understanding of how voice can be used to communicate the character in the chosen extract • Basic knowledge and understanding of how movement can be used to communicate character within the chosen extract • Basic knowledge and understanding of how interaction can be used to communicate character within the chosen extract • Some references to the extract to support the vocal/movement/interaction skills suggested • Some relevant knowledge, understanding and use of drama terminology.                                                  |
-| 1       | communicate character within the chosen extract                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
-| 0 marks | • Response not credit worthy / not attempted                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
-
-
+|         | 7-9 marks                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 3       | Satisfactory explanation of character motivation within the chosen extractSatisfactory knowledge and understanding of how voice can be used to communicate the character in the chosen extractSatisfactory knowledge and understanding of how movement can be used to communicate character within the chosen extract.Satisfactory knowledge and understanding of how interaction can be used to communicate character within the chosen extractGeneral references to the extract to support the vocal/movement/interaction skills suggestedGenerally relevant knowledge, understanding and use of drama terminology. |
+| 2       | Basic explanation of character motivation within the chosen extractBasic knowledge and understanding of how voice can be used to communicate the character in the chosen extractBasic knowledge and understanding of how movement can be used to communicate character within the chosen extractBasic knowledge and understanding of how interaction can be used to communicate character within the chosen extractSome references to the extract to support the vocal/movement/interaction skills suggestedSome relevant knowledge, understanding and use of drama terminology.                                      |
+| 1       | Limited explanation of character motivation within the chosen extractLimited knowledge and understanding of how voice can be used to communicate the character in the chosen extractLimited knowledge and understanding of how movement can be used to communicate character within the chosen extractLimited knowledge and understanding of how interaction can be used to communicate character within the chosen extractLimited references to the extract to support the vocal/movement/interaction skills suggestedLimited knowledge, understanding and use of relevant drama terminology.                        |
+| 0 marks | Response not credit worthy / not attempted                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 
 {18}------------------------------------------------
 
-
-
 ## Indicative content
 
-The following are examples only and all valid alternatives should be considered and marked appropriately according to the chosen scene .
+*The following are examples only and all valid alternatives should be considered and marked appropriately according to the chosen scene*.
 
-If candidates use the same extract as in Question 1(a) - 1(c) they cannot score higher than band 2.
+**If candidates use the same extract as in Question 1(a) – 1(c) they cannot score higher than band 2.**
 
 ## John's character
 
@@ -554,15 +504,11 @@ Candidates may consider: quality of movement, gestures, facial expressions, move
 
 With the other characters, audience, set/props.
 
-All the above should be linked closely to characters/moments within the chosen extract
-
-© WJEC CBAC Ltd.2025.
-
-
+**All the above should be linked closely to characters/moments within the chosen extract**
 
 {19}------------------------------------------------
 
-
+<span id="page-18-0"></span>
 
 ## Important Dates
 
@@ -575,11 +521,9 @@ All the above should be linked closely to characters/moments within the chosen e
 | First submission of Unit 2 NEA                    | May 2027       |
 | First Certification                               | 2027           |
 
-
-
 {20}------------------------------------------------
 
-
+<span id="page-19-0"></span>
 
 ## Appendix A: Theatre Practitioners and Genres
 
@@ -618,11 +562,7 @@ The following list outlines some of the main techniques of each practitioner or 
 - episodic structure
 - political perspectives.
 
-
-
 {21}------------------------------------------------
-
-
 
 ## Berkoff:
 
@@ -670,11 +610,7 @@ The following list outlines some of the main techniques of each practitioner or 
 - message
 - audience participation.
 
-
-
 {22}------------------------------------------------
-
-
 
 ## Physical Theatre:
 
@@ -699,11 +635,9 @@ The following list outlines some of the main techniques of each practitioner or 
 - anger or hate
 - chorus.
 
-
-
 {23}------------------------------------------------
 
-
+<span id="page-22-0"></span>
 
 ## Appendix B: Glossary of Terminology
 
@@ -713,70 +647,306 @@ They are not aligned to specific assessment criteria within individual units but
 
 ## Vocal skills
 
-Pitch Pace/tempo Tone Pause Accent Volume Clarity Musicality Intonation Rhythm
+Pitch
+
+Pace/tempo
+
+Tone
+
+Pause
+
+Accent
+
+Volume
+
+Clarity
+
+Musicality
+
+Intonation
+
+Rhythm
 
 ## Physical skills
 
-Gesture Stillness Fluency Expression Posture Facial expressions Movement Proxemics
+Gesture
+
+Stillness
+
+Fluency
+
+Expression
+
+Posture
+
+Facial expressions
+
+Movement
+
+Proxemics
 
 ## Interaction
 
-Eye contact Listening and responding Pace Fluency Motivation Positioning Status
+Eye contact
 
+Listening and responding
 
+Pace
+
+Fluency
+
+Motivation
+
+Positioning
+
+Status
 
 {24}------------------------------------------------
-
-
 
 ## Development/Rehearsal
 
 Conscience corridor (also known as 'conscience alley' or 'thought tunnel')
 
-Emotional memory Freeze-frame/tableau(x) Hot seating Improvisation Role reversal Role transfer Role on the wall Sculpting Subtext improvisation Thoughts in the head or thought tracking
+Emotional memory
+
+Freeze-frame/tableau(x)
+
+Hot seating
+
+Improvisation
+
+Role reversal
+
+Role transfer
+
+Role on the wall
+
+Sculpting
+
+Subtext improvisation
+
+Thoughts in the head or thought tracking
 
 ## Lighting design
 
-Intensity Blackout Snap Fade (in/out) Fade Crossfade Spotlight Flood light Follow spot Lights up Lights down Preset House lights Lighting cue Projections Lanterns Cold wash Warm wash Gobos Specials Strobe Cue sheets Smoke machine Gauze (scrim)
+Intensity
 
+Blackout
 
+Snap
+
+Fade (in/out)
+
+Fade
+
+Crossfade
+
+Spotlight
+
+Flood light
+
+Follow spot
+
+Lights up
+
+Lights down
+
+Preset
+
+House lights
+
+Lighting cue
+
+Projections
+
+Lanterns
+
+Cold wash
+
+Warm wash
+
+Gobos
+
+Specials
+
+Strobe
+
+Cue sheets
+
+Smoke machine
+
+Gauze (scrim)
 
 {25}------------------------------------------------
 
-
-
 ## Sound design
 
-Music Sound effects Sound cue Live sounds Recorded sounds Volume Reverb/echo Sound sources Surround sound Amplification Microphones Ambience Filter Sample Fade (in/out) Soundscape Diegetic/non-diegetic Distortion Feedback Cue sheets White noise Underscore
+Music
+
+Sound effects
+
+Sound cue
+
+Live sounds
+
+Recorded sounds
+
+Volume
+
+Reverb/echo
+
+Sound sources
+
+Surround sound
+
+Amplification
+
+Microphones
+
+Ambience
+
+Filter
+
+Sample
+
+Fade (in/out)
+
+Soundscape
+
+Diegetic/non-diegetic
+
+Distortion
+
+Feedback
+
+Cue sheets
+
+White noise
+
+Underscore
 
 Leitmotif
 
-
-
 {26}------------------------------------------------
-
-
 
 ## Set design/staging
 
-Entrances/exits Proscenium Arch Apron Theatre in the round Thrust stage Traverse stage End-on stage Promenade Site-specific Fly in/out Revolve Raked stage Trapdoor Gauze Ground plan Sight lines Stage left Stage right Up stage Down stage Centre stage Backdrop/cyclorama Site specific Wings/flats Set dressing Props Furniture Projection Texture/fabrics Model set Levels
+Entrances/exits
+
+Proscenium Arch
+
+Apron
+
+Theatre in the round
+
+Thrust stage
+
+Traverse stage
+
+End-on stage
+
+Promenade
+
+Site-specific
+
+Fly in/out
+
+Revolve
+
+Raked stage
+
+Trapdoor
+
+Gauze
+
+Ground plan
+
+Sight lines
+
+Stage left
+
+Stage right
+
+Up stage
+
+Down stage
+
+Centre stage
+
+Backdrop/cyclorama
+
+Site specific
+
+Wings/flats
+
+Set dressing
+
+Props
+
+Furniture
+
+Projection
+
+Texture/fabrics
+
+Model set
+
+Levels
 
 Furniture
 
 ## Costume design (including hair and make-up)
 
-Accessories Materials/fabrics Garments Hairstyles Wigs Contouring Pattern Period Style
+Accessories
 
+Materials/fabrics
 
+Garments
+
+Hairstyles
+
+Wigs
+
+Contouring
+
+Pattern
+
+Period
+
+Style
 
 {27}------------------------------------------------
 
-
-
 ## Performance Styles
 
-Naturalistic Epic Theatre/Brechtian Non-naturalistic Physical Theatre Artaudian/Theatre of Cruelty Berkoffian Theatre in Education Theatre of the Oppressed/Boal/Total Theatre Musical Theatre
+Naturalistic
+
+Epic Theatre/Brechtian
+
+Non-naturalistic
+
+Physical Theatre
+
+Artaudian/Theatre of Cruelty
+
+Berkoffian
+
+Theatre in Education
+
+Theatre of the Oppressed/Boal/Total Theatre
+
+Musical Theatre
 
 ## Design styles
 
-Naturalistic Epic Theatre / Brechtian Non-naturalistic Expressionistic Minimalistic Realism
+Naturalistic
+
+Epic Theatre / Brechtian
+
+Non-naturalistic
+
+Expressionistic
+
+Minimalistic
+
+Realism
