@@ -1,50 +1,47 @@
+
+
 {1}------------------------------------------------
 
-<!-- image -->
+![](_page_0_Picture_0.jpeg)
 
-## WJEC GCSE Business
+![](_page_0_Picture_1.jpeg)
+
+# WJEC GCSE Business
 
 Approved by Qualifications Wales
 
 ## Non-Examination Assessment Handbook
 
-Unit 2: Key Business Considerations (3160U2) Teaching from 2025 For assessment from 2026
+Unit 2: Key Business Considerations (3160U2)
 
-<!-- image -->
+Teaching from 2025
 
-Made for Wales. Ready for the world.
+For assessment from 2026
 
-<!-- image -->
+![](_page_0_Picture_8.jpeg)
 
-
+Made for Wales.
 
 {2}------------------------------------------------
 
-
-
-WJEC would like to thank the students and teachers of Fitzalan High School, Cardiff and Llanwern High School, Newport for their participation in the creation of these covers.
-
-
+![](_page_1_Picture_0.jpeg)
 
 {3}------------------------------------------------
 
-
-
 ## Contents
 
-## About this pack: information for teachers .............................................................................. 1 Managing the assessment .................................................................................................... 1 Assessment details ............................................................................................................... 4
+| About this pack: information for teachers | 1 |
+|-------------------------------------------|---|
+| Managing the assessment                   | 1 |
+| Assessment details                        | 4 |
 
-## Copyright
+### Copyright
 
 © WJEC CBAC Limited 2025
 
-
-
 {4}------------------------------------------------
 
-
-
-## About this pack: information for teachers
+## <span id="page-3-0"></span>About this pack: information for teachers
 
 This handbook contains information and instructions for Unit 2 - Key Business Considerations.
 
@@ -55,15 +52,17 @@ Within this pack you will find:
 
 A separate NEA brief for candidates will be released on Portal in September
 
-## Managing the assessment
+<span id="page-3-1"></span>
+
+#### Managing the assessment
 
 This is a WJEC marked (external) non-examination assessment. The following arrangements must be followed when managing the assessment.
 
-## Task setting
+##### Task setting
 
 This assignment has been produced by WJEC and cannot be changed.
 
-## Time
+##### Time
 
 Candidates must be allowed five hours to complete this assessment. Candidates should spend approximately:
 
@@ -73,31 +72,27 @@ Candidates must be allowed five hours to complete this assessment. Candidates sh
 
 The time suggested for each task takes account of the contribution of the task to the overall assessment requirements. There can be no changes to the total time available for this assessment. Centres can, however, amend the suggested time available for each task.
 
-## Resources
+##### Resources
 
 Candidates must have access to the candidate brief and any necessary resources, as specified in the detailed task tables within the brief.
 
-## Collaboration
+##### Collaboration
 
 Group work is not allowed. Candidates must complete all tasks individually.
 
-
-
 {5}------------------------------------------------
 
-
-
-## Supervision
+##### Supervision
 
 All tasks in this unit are taken under indirect supervision:
 
-| Type     | Description                                                                                                                                                                                                                                                                                                                                                                                                          |
-|----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Indirect | Candidates do not need to be directly supervised at all times. The centre must ensure that: • all candidates participate in the assessment • there is sufficient supervision to ensure that work can be authenticated • the work an individual candidate submits for assessment is his/her own. Candidates' work must remain within the centre at all times and must be stored securely between timetabled sessions. |
+| Type     | Description                                                                                                                                                                                                                                                                                                                                                                                                       |
+|----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Indirect | Candidates do not need to be directly supervised at all times.<br>The centre must ensure that:<br>all candidates participate in the assessmentthere is sufficient supervision to ensure that work can be authenticatedthe work an individual candidate submits for assessment is his/her own.Candidates' work must remain within the centre at all times and must be stored securely between timetabled sessions. |
 
 Centres must have in place systems to ensure candidates cannot access evidence they have been developing outside of supervised activities.
 
-## Authentication
+##### Authentication
 
 Supervision must be in place to ensure the authenticity of evidence produced for summative assessment.
 
@@ -109,44 +104,36 @@ Candidates must sign the declaration to confirm that the work was completed with
 
 Assessors must sign the declaration to confirm that evidence submitted for moderation was completed under the controlled conditions set out in this assessment.
 
-## Candidate evidence
+##### Candidate evidence
 
 The acceptable formats for evidence of each of the tasks is summarised in the task tables. Any modified assessment must enable the candidate to generate the evidence required in this table
 
-
-
 {6}------------------------------------------------
 
-
-
-## Task marking
+##### Task marking
 
 WJEC will mark all evidence produced by candidates.
 
-Centres must ensure that a candidate cover sheet is completed for every candidate and attached to the front of the candidate's work.
+Centres **must** ensure that a candidate cover sheet is completed for every candidate and attached to the front of the candidate's work.
 
-Centres must also ensure that candidates complete a candidate declaration form.
+Centres **must** also ensure that candidates complete a candidate declaration form.
 
-## Notes on the completion of the Candidate Declaration Form
+##### Notes on the completion of the Candidate Declaration Form
 
 - The form must be completed and securely attached to the Candidate's work, and sent to WJEC
 - The form can be completed electronically or manually. Electronic signatures will be accepted.
 
-## Further information
+##### Further information
 
 You should refer the JCQ Instructions for conducting non-examination assessment for further information on managing assessment within our GCSE Qualifications.
 
-
-
 {7}------------------------------------------------
 
-
-
-## Assessment details
+## <span id="page-6-0"></span>Assessment details
 
 For this assessment learners are required to investigate a business that operates in their locality. The business they investigate can be a local scale business only operating in the locality or a national or global business that has a presence in the locality.
 
-Learners will be required to undertake research on their chosen business and to use their research findings to produce a report. Part A of the report will be compulsory, but for part B WJEC will select two themes from the specification content (Business ethics, Business and the environment and Business and Technology) and centres and/or learners will choose one of the selected themes.
+Learners will be required to undertake research on their chosen business and to use their research findings to produce a report. Part A of the report will be compulsory, but for part B WJEC will select two themes from the specification content (Business ethics, Business and the environment and Business and Technology) and centres and/or learners will choose **one** of the selected themes.
 
 The assignment, featuring the two selected themes and the associated tasks, will be released during the first week of September for assessment for that academic year and will change annually. Centres have the flexibility to decide when, during the assessment year, learners undertake the assignment.
 
@@ -156,14 +143,14 @@ This unit will be assessed through an externally set assignment and will be set 
 
 The two themes selected each year from the specification content are shown below:
 
-| Year of submission           | Choice of theme (Part B) (Centres and/or candidates to select one from the selected themes)   | Choice of theme (Part B) (Centres and/or candidates to select one from the selected themes)   |
-|------------------------------|-----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| 2026 Ethics                  | environment                                                                                   | Business and the                                                                              |
-| Business and technology      | Ethics                                                                                        | 2027                                                                                          |
-| Business and the environment | Business and technology                                                                       | 2028                                                                                          |
-| Ethics                       | Business and the environment                                                                  | 2029                                                                                          |
-| Business and technology      | Ethics                                                                                        | 2030                                                                                          |
+| Year of<br>submission | Choice of theme<br>(Part B)<br>(Centres and/or candidates to select one from the selected<br>themes) |
+|-----------------------|------------------------------------------------------------------------------------------------------|
+| 2026                  | Ethics<br>Business and the environment                                                               |
+| 2027                  | Business and technology<br>Ethics                                                                    |
+| 2028                  | Business and the<br>environment<br>Business and technology                                           |
+| 2029                  | Ethics<br>Business and the environment                                                               |
+| 2030                  | Business and technology<br>Ethics                                                                    |
 
-Centres and/or candidates select one theme from the two above to answer Part B.
+Centres and/or candidates select **one** theme from the two above to answer Part B.
 
-It is important that centres select the topic from the year that they plan to submit the work for marking as this may be different to the year that the candidates undertake the assessment.
+It is important that centres select the topic from the year that they plan to **submit** the work for marking as this may be different to the year that the candidates undertake the assessment.
