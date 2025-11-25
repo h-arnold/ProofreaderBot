@@ -1,9 +1,9 @@
 // Boilerplate wiring for the GitHub Pages prototype. It wires Papa Parse (CSV) + Arquero (data wrangling) +
 // ApexCharts (visuals) with Tailwind-styled controls so the scraper data can be explored in the browser.
 
-import Papa from 'https://cdn.jsdelivr.net/npm/papaparse@5.4.1/+esm';
-import * as aq from 'https://cdn.jsdelivr.net/npm/arquero@5.6.3/dist/arquero.mjs';
-import ApexCharts from 'https://cdn.jsdelivr.net/npm/apexcharts@3.49.0/dist/apexcharts.esm.js';
+import Papa from 'papaparse';
+import * as aq from 'arquero';
+import ApexCharts from 'apexcharts';
 
 const DEFAULT_CSV_URL = './data/sample.csv';
 

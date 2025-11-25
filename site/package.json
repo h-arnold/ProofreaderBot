@@ -12,6 +12,9 @@
   "license": "MIT",
   "dependencies": {
     "@tailwindcss/cli": "^4.1.17",
-    "tailwindcss": "^4.1.17"
+    "tailwindcss": "^4.1.17",
+    "papaparse": "5.4.1",
+    "arquero": "^5.6.0",
+    "apexcharts": "3.49.0"
   }
 }

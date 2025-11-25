@@ -8,11 +8,17 @@ Read this primer first, then consult the linked focus docs before changing code 
 
 **Always follow these steps first** - you will fail in your task if you do not.
 
+### If doing anything outside of `./site` (i.e. not the GitHub Pages Site)
+
 - Always use `uv` for everything (run, deps, tests). **NEVER** use pip/venv directly.
    - The **ONLY** exception to this is when creating GitHub actions, which don't have `uv` installed by default.
 - Before editing scraping logic or filenames, you must read: docs/ARCHITECTURE.md.
 - Before running commands or changing dependencies, you **must** read: docs/UV_GUIDE.md.
 - For testing, debugging, or quick checks, you must read: docs/DEV_WORKFLOWS.md.
+
+### If doing anything *inside* of `./site` (.i.e. doing something with the GitHub pages site)
+
+Check `./site/README.md` for more details.
 
 ## Runtime facts
 
