@@ -577,7 +577,8 @@
         "completed_batches": [
           0,
           1,
-          2
+          2,
+          3
         ],
         "total_issues": 59
       }
