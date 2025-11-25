@@ -5,7 +5,7 @@ A command-line tool that:
  - Scrapes WJEC GCSE "Made-for-Wales" qualification pages for linked PDF documents.
  - Converts PDFs to Markdown for easier reading and processing.
  - Uses LanguageTool to check converted documents for spelling and grammar issues, with multi-language support for French and German (Spanish support coming soon).
- - Uses LLMs to help categorise and prioritise issues and to assist with advanced proofreading.
+ - Uses LLMs to help categorise and prioritise issues, and to assist with advanced proofreading.
 
 ## Why does this tool need to exist?
 
@@ -13,7 +13,7 @@ A command-line tool that:
 
 Because it's clear that the WJEC do not have any quality assurance process for their qualification materials, and teachers in Wales are left to pick up the pieces.
 
-At the moment, no one with any power to do anything seems to care. It's too easy to fob off concerns by pretending that it's an isolated incident. I intend to change that by demonstrating that this is a systemic issue across *all* WJEC GCSE Made-for-Wales qualification materials and I will make some pretty graphs to prove it.
+At the moment, no one with any power to do anything seems to care. It's too easy to dismiss concerns as isolated incidents. I intend to change that by demonstrating this is a systemic issue across *all* WJEC GCSE Made-for-Wales qualification materials—and I will make some pretty graphs to prove it.
 
 Speaking of pretty graphs, here's a sneak preview of what's to come:
 
@@ -22,54 +22,81 @@ American spellings found: <img src="badges/ize-suffixes.svg" alt="Ize suffixes c
 
 ### Why count the word 'Leaner'?
 
-'Leaner' and 'leaners' are common misspellings of 'learner' and 'learners' in educational documents. 'Learners' are referred to often; 'leaners' rarely. This makes it an easy metric for whether basic proofreading has taken place — one of the first things someone should do on receiving a draft is use `Ctrl` + `F` to find and replace any instances of 'leaner' with 'learner'.
+'Leaner' and 'leaners' are common misspellings of 'learner' and 'learners' in educational documents. 'Learners' are referred to often; 'leaners' rarely. This makes it an easy metric for whether basic proofreading has taken place—one of the first things someone should do on receiving a draft is use `Ctrl` + `F` to find and replace any instances of 'leaner' with 'learner'.
 
-## The Process
+## Progress on the Process
 
-### Document Acquisition and Processing
+This project has been designed to use a multi-pass approach to document processing, with each subsequent pass building on the previous one to gradually improve the quality of the documents.
+
+### 1. Document Acquisition and Processing
 
 1. ✅ [COMPLETE] Scrape all WJEC GCSE Made-for-Wales qualification pages for linked PDF documents.
-2. ✅ [COMPLETE] Convert PDFs to Markdown format for easier reading and processing. See the [processedDocuments](https://github.com/h-arnold/WjecDocumentScraper/tree/processedDocuments) for progress.
+2. ⏳ [IN PROGRESS] Convert PDFs to Markdown format for easier reading and processing. See the [processedDocuments](https://github.com/h-arnold/WjecDocumentScraper/tree/processedDocuments) for progress. 
 
-### Multi-pass copyediting and proofreading
+Third time's the charm! After experimenting with a few different converters, I've settled on [Marker + LLM (Gemini 2.5 Flash Lite)](https://github.com/datalab-to/marker) as it gives the most reliable output with the fewest errors. Previous attempts resulted in too many false positives due to conversion errors.
 
-3. ✅ [COMPLETE]  Use [Language Tool](https://languagetool.org/) to check the converted documents for spelling and grammar issues and create an ignore and exception list to reduce false positives. 
+### 2. Multi-pass copyediting and proofreading
+
+3. ✅ [COMPLETE]  **Do the equivalent for running a spellcheck on all the documents**: Use [Language Tool](https://languagetool.org/) to check the converted documents for spelling and grammar issues and create an ignore and exception list to reduce false positives. 
 	- Ignore list created. Still lots of false positives but it is now skimmable to find the real issues.
-4. ⏳ [IN PROGRESS] Use LLMs to categorise the issues identified in 3. 
-5. ⏳ [IN PROGRESS] Use LLMs to proofread documents in small chunks (maximum 10 pages to reduce hallucinations) to spot issues missed by traditional grammar and spell checkers like incorrect homophones, missing words, and contextually incorrect phrases.
-6. ❌ [NOT STARTED] Use LLMs to check for factual errors.
+4. ✅ [COMPLETE] **Get Gemini whittle down the false positives and categorise the issues**: Use LLMs to categorise the issues identified in 3. 
+	- I will probably run this step again once the final conversion to markdown is complete.
+5. ⏳ [IN PROGRESS]**Get Gemini to pretend to be a proofreader, focusing on small details**: Use LLMs to proofread documents in small chunks (maximum 10 pages to reduce hallucinations) to spot issues missed by traditional grammar and spell checkers like incorrect homophones, missing words, and contextually incorrect phrases.
+ - With 250 free requests to Gemini 2.5. Flash per day, this will take a while. I experimented with other Mistral models (who also offer a free tier) but I found that it was too strict on some rules and too lax on others. Gemini has clearly been well trained!
+ - To maintain accuracy and minimise the chances of hallucinations, each document is broken into 3-page chunks. While slow, my experiments show that any more than that and Gemini Flash starts missing certain details.
+6. ⏳ [IN PROGRESS] Use LLMs to check for factual errors.
 
-### Consistency Checking
+### 3. Consistency Checking
 
-7. ❌ [NOT Started] Check style guide adherence. I don't have access to the WJEC style guide, so I will need to settle for internal consistency checks instead. 
+7. ❌ [NOT STARTED] Check style guide adherence. I don't have access to the WJEC style guide, so I will need to settle for internal consistency checks instead. 
 8. ❌ [NOT STARTED] Use LLMs to check for factual consistency *within documents*. E.g. all Unit weightings are consistent within the document.
 9. ❌ [NOT STARTED] **Stretch Goal**: Construct a 'truth document' by aggregating the data from all the documents for a subject and identify inconsistencies between documents for the same subject.
 
-### The pretty graphs
+### 4. The pretty graphs
 
-10. ❌ [NOT STARTED] Take the eventual json file containing the fully cleansed data and create some pretty graphs to illustrate the issues found.
+10. ⏳ [IN PROGRESS] Take the eventual ~~json~~ csv file containing the fully cleansed data and create some pretty graphs to illustrate the issues found.
 11. ❌ [NOT STARTED] Send this report to the Welsh Education Minister and the national press.
 
 ## Limitations
 
 The goal of this project is to shine a light on the absence of quality assurance at the WJEC. It is not designed to be a fully comprehensive copy-editing solution, nor will it come close in accuracy or quality of a proper, human-led proofreading process.
 
+### False Positives
+
+There will inevitably be some false positives. These can come from PDF conversion errors being mistaken as real errors (this is the most common), or from the LLM misinterpreting the context of a sentence. I've tried to keep these to a minimum, and when I'm done, I'll randomly sample some of the errors and verify them to estimate a false positive percentage and use that to adjust the final counts.
+
 ### False Negatives
 
-False positives will undermine this tools credibility. There are *so* many errors across the different documents that missing a few will not affect the overall picture. Remember, that for public facing, natinal documents, the only acceptable number of errors is zero.
+This tool doesn't currently check images in the documents. There are errors in some of them. See *'Potfolio'* from one of the Art documents below:
+
+![](Documents/Art-and-Design/markdown/_page_6_Figure_3.jpeg)
+
+ Thankfully(?) there are *so* many errors across the different documents that missing a few does not affect the overall picture. Remember, for public-facing, national documents, the only acceptable number of errors is zero.
 
 False negatives will certainly result from:
 
- - **The PDF Conversion Process**: [Marker](https://github.com/datalab-to/marker) is great, but it combine words, miss hyphens, misinterpret characters and break some tables. As a result, I've had to filter out any of those types of errors, whether they exist or not.
+ - **The PDF Conversion Process**: [Marker](https://github.com/datalab-to/marker) is great, but it combines words, misses hyphens, misinterprets characters, and breaks some tables. As a result, I've had to filter out any of those types of errors, whether they exist or not.
  - **Lack of specialist knowledge**: I'm reliant on LLMs to correctly identify specialist terminology. I don't have the skills, subject knowledge or time to verify each item in each subject. That is what the WJEC should be doing.
 
  ### Code Quality
 
- This project is a throwaway stereotype to prove a point and hopefully inspire meaningful change. It's vibe-coded and whenever I look at the code it makes me sad so I don't look at it too hard. LLMs seems to be managing ok for now though. If you want to contribute or adjust the code, I wish you the very best of luck. You'll need it. 
+ This project is a throwaway project to prove a point and hopefully inspire meaningful change.
+
+ Like the Made-for-Wales GCSEs, this code has been hastily cobbled together without any thoughts for long-term maintainability. Thankfully, this is a personal passion project, not a set of national qualifications that the students of Wales will all be studying for the next few years.
+
+ The project is simple enough that it's easier to ask Claude/Codex/Gemini to generate the code and for me to not care too much about whether it's duplicated. I haven't reached the point where LLMs have weaved an unintelligible web of code, and I'm hoping I'll be done before I do.
+
+ If you want to contribute or adjust the code, I suggest you [heed the following warning](https://en.wikipedia.org/wiki/Long-term_nuclear_waste_warning_messages#Message):
+
+ 
+> This ~~place~~ code is not a place of honor... no highly esteemed ~~deed~~ code is commemorated here... nothing valued is here.<br>
+> <br>
+> What is here was dangerous and repulsive to us. This message is a warning about danger.<br>
+> <br>
+> The danger is in a particular location... it increases towards ~~a center~~ `./src`...<br>
+
 
 # Technical Details
-
-American spellings found: <img src="badges/ize-suffixes.svg" alt="Ize suffixes count" />
 
 Command-line tool for downloading PDF documents exposed on the WJEC GCSE Made-for-Wales qualification pages. The scraping logic lives in `src/scraper/__init__.py` and can be reused programmatically, while `main.py` provides a friendly CLI.
 
