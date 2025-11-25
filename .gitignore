@@ -5,7 +5,8 @@ build/
 dist/
 wheels/
 *.egg-info
-.ptest_cache
+.ruff_cache
+.pytest_cache
 
 # Virtual environments
 .venv
@@ -14,10 +15,6 @@ wheels/
 
 unprocessedFiles.txt
 progress.log
-
-# This one is because I typed out my nohup command wrong but didn't want to stop the job.
-2 
-
 
 # LLM categoriser artifacts
 data/language-ignore
@@ -31,3 +28,16 @@ Documents/*/document_reports/*.json
 
 # Environment Variables
 .env
+
+# Node/Tailwind local artifacts (site/)
+# - `node_modules/` is large and not required in VCS
+# - `styles.css` is a generated file; remove it from the ignore list if you'd like to commit
+#   the compiled CSS for static hosting (e.g. GitHub Pages) instead of building on deploy.
+site/node_modules/
+site/npm-debug.log*
+site/pnpm-debug.log*
+site/yarn-debug.log*
+site/.cache/
+site/.parcel-cache/
+site/.vite/
+site/styles.css

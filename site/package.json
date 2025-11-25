@@ -1,0 +1,17 @@
+{
+  "name": "site",
+  "version": "1.0.0",
+  "description": "This directory hosts the boilerplate for a lightweight GitHub Pages site that showcases the WJEC document scraper outputs with modern browser tooling.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./styles.css",
+    "watch": "npx @tailwindcss/cli -i ./src/input.css -o ./styles.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.17",
+    "tailwindcss": "^4.1.17"
+  }
+}

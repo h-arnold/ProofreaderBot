@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WJEC Document Explorer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="./styles.css" rel="stylesheet">
+</head>
+<body class="bg-white text-brand-text antialiased">
+  <div class="mx-auto flex min-h-screen max-w-6xl flex-col gap-12 px-4 py-10">
+    <header class="flex flex-col gap-4 border-b border-slate-200 pb-10">
+      <div class="flex items-center gap-3">
+        <div class="h-10 w-10 rounded bg-brand flex items-center justify-center text-white font-heading font-bold text-xl">W</div>
+        <p class="text-sm uppercase tracking-[0.2em] text-brand font-heading font-bold">Prototype</p>
+      </div>
+      <h1 class="text-4xl font-heading font-bold tracking-tight text-brand-dark sm:text-5xl">WJEC Document Explorer</h1>
+      <p class="max-w-3xl text-lg text-slate-600">
+        Test theme for a GitHub Pages Site
+      </p>
+    </header>
+
+    <section class="grid gap-6 rounded-2xl border border-slate-200 bg-brand-light/30 p-6 shadow-sm">
+      <h2 class="text-xl font-heading font-semibold text-brand-dark">1. Load data</h2>
+      <p class="text-sm text-slate-600">
+        Drop a CSV from your local machine or reference one hosted online. The sample dataset below is bundled by
+        default so you can start exploring immediately.
+      </p>
+      <div class="flex flex-col gap-4 sm:flex-row">
+        <label class="flex flex-1 cursor-pointer flex-col items-center justify-center gap-3 rounded-xl border-2 border-dashed border-slate-300 bg-white px-6 py-8 text-center transition hover:border-brand hover:bg-brand-light/50">
+          <span class="text-sm font-medium text-brand-dark">Upload CSV</span>
+          <span class="text-xs text-slate-500">Papaparse will process the header row automatically</span>
+          <input id="file-input" type="file" accept=".csv" class="hidden" />
+        </label>
+        <form id="remote-csv-form" class="flex flex-1 flex-col gap-2 rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+          <label for="remote-csv-url" class="text-sm font-medium text-brand-dark">Or fetch from URL</label>
+          <div class="flex flex-col gap-3 sm:flex-row">
+            <input
+              id="remote-csv-url"
+              name="remoteCsvUrl"
+              type="url"
+              placeholder="https://example.com/documents.csv"
+              class="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-brand-text placeholder:text-slate-400 focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/20"
+            />
+            <button
+              type="submit"
+              class="inline-flex items-center justify-center rounded-lg bg-brand px-4 py-2 text-sm font-semibold text-white shadow-md shadow-brand/20 transition hover:bg-brand-dark focus:outline-none focus:ring-2 focus:ring-brand focus:ring-offset-2"
+            >
+              Fetch CSV
+            </button>
+          </div>
+          <p class="text-xs text-slate-500">Remote URLs must allow CORS; otherwise, use the file upload option.</p>
+        </form>
+      </div>
+      <div class="flex flex-wrap items-center gap-3 text-xs text-slate-500">
+        <button
+          id="load-sample"
+          class="inline-flex items-center gap-2 rounded-full border border-brand/30 bg-white px-3 py-1 text-brand-dark transition hover:border-brand hover:bg-brand-light"
+          type="button"
+        >
+          <span class="inline-block h-2 w-2 rounded-full bg-brand"></span>
+          Use bundled sample data
+        </button>
+        <span id="data-status" class="rounded-full border border-slate-200 bg-white px-3 py-1 text-slate-500">No dataset loaded</span>
+      </div>
+    </section>
+
+    <section class="grid gap-5 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+      <h2 class="text-xl font-heading font-semibold text-brand-dark">2. Configure analysis</h2>
+      <div class="grid gap-4 md:grid-cols-3">
+        <label class="grid gap-2">
+          <span class="text-sm font-medium text-brand-dark">Dimension (categorical)</span>
+          <select
+            id="dimension-select"
+            class="rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-brand-text focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/20"
+          ></select>
+        </label>
+        <label class="grid gap-2">
+          <span class="text-sm font-medium text-brand-dark">Measure (numeric)</span>
+          <select
+            id="measure-select"
+            class="rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-brand-text focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/20"
+          ></select>
+        </label>
+        <label class="grid gap-2">
+          <span class="text-sm font-medium text-brand-dark">Aggregation</span>
+          <select
+            id="aggregation-select"
+            class="rounded-lg border border-slate-300 bg-white px-3 py-2 text-sm text-brand-text focus:border-brand focus:outline-none focus:ring-2 focus:ring-brand/20"
+          >
+            <option value="sum" selected>Sum</option>
+            <option value="average">Average</option>
+            <option value="median">Median</option>
+            <option value="count">Count rows</option>
+            <option value="max">Maximum</option>
+            <option value="min">Minimum</option>
+          </select>
+        </label>
+      </div>
+      <div class="flex flex-wrap gap-3 text-xs text-slate-500">
+        <label class="inline-flex items-center gap-2">
+          <input id="sort-desc" type="checkbox" class="h-4 w-4 rounded border-slate-300 text-brand focus:ring-brand" checked />
+          Sort descending
+        </label>
+        <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1" id="row-count">0 rows</span>
+      </div>
+    </section>
+
+    <section class="grid gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+      <div class="flex items-center justify-between gap-4">
+        <h2 class="text-xl font-heading font-semibold text-brand-dark">3. Visualise</h2>
+        <div class="text-xs text-slate-500" id="chart-summary">Select fields to render the chart.</div>
+      </div>
+      <div id="chart" class="min-h-[320px] rounded-xl border border-slate-100 bg-white p-4"></div>
+    </section>
+
+    <section class="grid gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+      <div class="flex items-center justify-between gap-4">
+        <h2 class="text-xl font-heading font-semibold text-brand-dark">4. Inspect data</h2>
+        <div class="text-xs text-slate-500" id="preview-info">Previewing the first 10 rows of the current table.</div>
+      </div>
+      <div class="overflow-x-auto rounded-lg border border-slate-200">
+        <table class="min-w-full divide-y divide-slate-200 text-left text-sm text-slate-600" id="data-table">
+          <thead class="bg-slate-50 text-xs uppercase tracking-wide text-slate-500 font-heading font-semibold"></thead>
+          <tbody class="divide-y divide-slate-200 bg-white"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer class="border-t border-slate-200 pt-6 text-xs text-slate-500">
+      <p>
+        Built with Tailwind CSS, Papa Parse, Arquero, and ApexCharts.
+        <span class="text-brand">WJEC</span> colours and typography applied.
+      </p>
+    </footer>
+  </div>
+
+  <div id="toast" class="pointer-events-none fixed inset-x-0 bottom-6 flex justify-center px-4"></div>
+
+  <script type="module" src="./scripts/main.js"></script>
+</body>
+</html>
