@@ -1,6 +1,6 @@
 
 
-{0}------------------------------------------------
+{1}------------------------------------------------
 
 ![](_page_0_Picture_0.jpeg)
 
@@ -18,11 +18,11 @@ Ready for the world. This Qualifications Wales regulated qualification is not av
 
 Made for Wales.
 
-{1}------------------------------------------------
+{2}------------------------------------------------
 
 ![](_page_1_Picture_0.jpeg)
 
-{2}------------------------------------------------
+{3}------------------------------------------------
 
 This specification meets the requirements of the following regulatory documents published by Qualifications Wales:
 
@@ -30,51 +30,54 @@ This specification meets the requirements of the following regulatory documents 
 - [Standard Conditions of Recognition](https://qualifications.wales/media/p54jkkfe/standard-conditions-of-recognition.pdf) which contains the rules that all awarding bodies and their qualifications must meet when offering qualifications to learners in Wales.
 - Approval Criteria for GCSE [Music](https://qualifications.wales/media/bgaauerk/gcse-music-approval-criteria.pdf) which sets out the subject specific requirements for GCSE Music qualifications from September 2025 and beyond.
 
-{3}------------------------------------------------
-
-#### **CONTENTS**
-
-| SU      | MMA    | RY OF ASSESSMENT                                                | 4  |
-|---------|--------|-----------------------------------------------------------------|----|
-| 1       | INTE   | RODUCTION                                                       | 6  |
-|         | 1.1    | Aims                                                            | 6  |
-|         | 1.2    | Curriculum for Wales                                            | 6  |
-|         | 1.3    | Prior learning and progression                                  | 7  |
-|         | 1.4    | Guided learning hours                                           |    |
-|         | 1.5    | Use of language                                                 | 8  |
-|         | 1.6    | Equality and fair access                                        | 8  |
-| 2 EX |  | JECT CONTENT AND INTEGRATION OF LEARNING ENCES AND SKILLS | 9 |
-|         | How    | to read the amplification                                       | 9  |
-|         | Unit 1 |                                                                 |    |
-|         | Unit 2 |                                                                 |    |
-|         | Unit   | 3                                                               | 14 |
-|         | Орр    | ortunities for integration of learning experiences              | 16 |
-| 3       | ASS    | ESSMENT                                                         | 17 |
-|         | 3.1    | Assessment objectives and weightings                            | 17 |
-|         | 3.2    | Overview of arrangements for non-examination assessment         | 18 |
-| 4       | MAL    | PRACTICE                                                        | 20 |
-| 5       | TEC    | HNICAL INFORMATION                                              | 21 |
-|         | 5.1    | Making entries                                                  | 21 |
-|         | 5.2    | Grading, awarding and reporting                                 | 21 |
-| App     |        | x A: Opportunities for embedding elements of the Curriculum for |    |
-|         |        |                                                                 | 22 |
-| App     | pendi  | x B – Glossary of Musical Terminology                           | 25 |
-
 {4}------------------------------------------------
 
-## GCSE MUSIC
+## CONTENTS
 
-## <span id="page-4-0"></span>SUMMARY OF ASSESSMENT
+| SUMMARY OF ASSESSMENT                                                        |                                                                    |                                                         | 4  |
+|------------------------------------------------------------------------------|--------------------------------------------------------------------|---------------------------------------------------------|----|
+| 1                                                                            | INTRODUCTION                                                       |                                                         | 6  |
+|                                                                              | 1.1                                                                | Aims                                                    | 6  |
+|                                                                              | 1.2                                                                | Curriculum for Wales                                    | 6  |
+|                                                                              | 1.3                                                                | Prior learning and progression                          | 7  |
+|                                                                              | 1.4                                                                | Guided learning hours                                   | 7  |
+|                                                                              | 1.5                                                                | Use of language                                         | 8  |
+|                                                                              | 1.6                                                                | Equality and fair access                                | 8  |
+| 2                                                                            | SUBJECT CONTENT AND INTEGRATION OF LEARNING EXPERIENCES AND SKILLS |                                                         | 9  |
+|                                                                              | How to read the amplification                                      |                                                         | 9  |
+|                                                                              | Unit 1                                                             |                                                         | 10 |
+|                                                                              | Unit 2                                                             |                                                         | 12 |
+|                                                                              | Unit 3                                                             |                                                         | 14 |
+|                                                                              | Opportunities for integration of learning experiences              |                                                         | 16 |
+| 3                                                                            | ASSESSMENT                                                         |                                                         | 17 |
+|                                                                              | 3.1                                                                | Assessment objectives and weightings                    | 17 |
+|                                                                              | 3.2                                                                | Overview of arrangements for non-examination assessment | 18 |
+| 4                                                                            | MALPRACTICE                                                        |                                                         | 20 |
+| 5                                                                            | TECHNICAL INFORMATION                                              |                                                         | 21 |
+|                                                                              | 5.1                                                                | Making entries                                          | 21 |
+|                                                                              | 5.2                                                                | Grading, awarding and reporting                         | 21 |
+| Appendix A: Opportunities for embedding elements of the Curriculum for Wales |                                                                    |                                                         | 22 |
+| Appendix B – Glossary of Musical Terminology                                 |                                                                    |                                                         | 25 |
 
-#### **Unit 1: Performing**
+{5}------------------------------------------------
+
+# GCSE MUSIC
+
+<span id="page-4-0"></span>
+
+## SUMMARY OF ASSESSMENT
+
+### Unit 1: Performing
 
 **Non-examination assessment** 
 
 Performance: 4-6 minutes (at least two pieces) **Marked by the centre and moderated by WJEC**
 
-#### **32.5% of qualification 78 marks**
+### 32.5% of qualification 78 marks
 
-#### **Summary of assessment**
+78 marks
+
+### Summary of assessment
 
 Learners perform a minimum of **two** pieces of music giving a total performance time of 4-6 minutes (each piece should be a minimum of 1 minute).
 
@@ -82,7 +85,7 @@ Learners can choose to perform solos or independent parts within ensembles, or a
 
 Learners can choose to perform on any instrument or voice, or technology, or a combination of these.
 
-#### **Unit 2: Composing**
+### Unit 2: Composing
 
 **Non-examination assessment**
 
@@ -92,21 +95,25 @@ Reflective Log
 
 **Marked by the centre and moderated by WJEC**
 
-#### **32.5% of qualification 78 marks**
+### 32.5% of qualification 78 marks
 
-#### **Summary of assessment**
+78 marks
+
+### Summary of assessment
 
 Learners compose **two** original pieces of music with a recommended total duration of between 3-6 minutes, **one** in response to their own devised brief and **one** in response to a brief set by WJEC. Learners present a reflective log based on the compositional process of **either** the composition in response to their own devised brief **or** the composition based on the brief set by WJEC.
 
-#### **Unit 3: Appraising**
+### Unit 3: Appraising
 
 Digital only examination: 1 hour 30 minutes
 
 **Marked by WJEC**
 
-#### **35% of the qualification 84 marks**
+### 35% of the qualification 84 marks
 
-#### **Summary of assessment**
+84 marks
+
+### Summary of assessment
 
 Questions requiring objective responses, short and extended answers, in response to the chosen set works and unseen extracts.
 
@@ -114,7 +121,7 @@ This is a linear qualification.
 
 The qualification is not tiered.
 
-{5}------------------------------------------------
+{6}------------------------------------------------
 
 There is no hierarchy in the order in which the units are presented. The order does not imply the teaching order of the units.
 
@@ -124,13 +131,17 @@ First awarding of this qualification will be in the summer 2027 series.
 
 Qualification Approval Number: C00/4967/7
 
-{6}------------------------------------------------
+{7}------------------------------------------------
 
-## GCSE MUSIC
+# GCSE MUSIC
 
-### <span id="page-6-0"></span>1 INTRODUCTION
+<span id="page-6-0"></span>
 
-#### <span id="page-6-1"></span>1.1 Aims
+## 1 INTRODUCTION
+
+<span id="page-6-1"></span>
+
+### 1.1 Aims
 
 GCSE Music supports learners to:
 
@@ -145,7 +156,9 @@ GCSE Music supports learners to:
 
 These aims are set out in Qualifications Wales' Approval Criteria.
 
-#### <span id="page-6-2"></span>1.2 Curriculum for Wales
+<span id="page-6-2"></span>
+
+### 1.2 Curriculum for Wales
 
 This GCSE Music qualification is underpinned by the Curriculum for Wales framework and has been designed to ensure that learners can continue to make progress towards the four purposes whilst studying for this qualification. Central to this design are the [principles of progression,](https://hwb.gov.wales/curriculum-for-wales/expressive-arts/principles-of-progression/) along with the [statements of what](https://hwb.gov.wales/curriculum-for-wales/expressive-arts/statements-of-what-matters/)  [matters](https://hwb.gov.wales/curriculum-for-wales/expressive-arts/statements-of-what-matters/) and those [subject specific skills and concepts](https://hwb.gov.wales/curriculum-for-wales/expressive-arts/designing-your-curriculum/#discipline-specific-considerations) outlined in the ['Designing your](https://hwb.gov.wales/curriculum-for-wales/expressive-arts/designing-your-curriculum/)  [Curriculum'](https://hwb.gov.wales/curriculum-for-wales/expressive-arts/designing-your-curriculum/) section of the Expressive Arts Area of Learning and Experiences.
 
@@ -153,7 +166,7 @@ In developing this qualification, we have considered where there are opportuniti
 
 We have also considered where the qualification can generate opportunities for integrating the learning experiences noted in Opportunities for Integration of Learning Experiences and Skills on page 16. The Guidance for Teaching will include further information on integrating these learning experiences into delivery.
 
-{7}------------------------------------------------
+{8}------------------------------------------------
 
 The GCSE Music qualification supports the Curriculum for Wales by:
 
@@ -168,13 +181,17 @@ The GCSE Music qualification supports the Curriculum for Wales by:
 - supporting the subject specific considerations[3](#page-7-4) for Music:
   - through the creative process, allowing learners to explore, respond to stimuli and create and reflect on their own work while engaging in rich, authentic experiences.
 
-#### <span id="page-7-0"></span>1.3 Prior learning and progression
+<span id="page-7-0"></span>
+
+### 1.3 Prior learning and progression
 
 Although there is no specific requirement for prior learning, the qualification is designed primarily for learners between the ages of 14 and 16 and builds on the conceptual understanding learners have developed through their learning from ages 3 – 14.
 
 The qualification allows learners to develop a strong foundation of knowledge, skills and understanding which supports progression to post-16 study and prepares learners for life, learning and work. The qualification provides a suitable foundation for the study of Music at either AS or A level. In addition, the specification provides a coherent, satisfying and worthwhile course of study for learners who do not progress to further study in this subject.
 
-### <span id="page-7-1"></span>1.4 Guided learning hours
+<span id="page-7-1"></span>
+
+## 1.4 Guided learning hours
 
 GCSE Music has been designed to be delivered within 120 – 140 guided learning hours. The qualification has been primarily designed as a 2-year programme for learners in years 10 and 11.
 
@@ -184,13 +201,17 @@ GCSE Music has been designed to be delivered within 120 – 140 guided learning 
 
 <span id="page-7-4"></span><sup>3</sup> [https://hwb.gov.wales/curriculum-for-wales/expressive-arts/designing-your-curriculum/#specific](https://hwb.gov.wales/curriculum-for-wales/expressive-arts/designing-your-curriculum/#specific-considerations-for-this-area)[considerations-for-this-area](https://hwb.gov.wales/curriculum-for-wales/expressive-arts/designing-your-curriculum/#specific-considerations-for-this-area)
 
-{8}------------------------------------------------
+{9}------------------------------------------------
 
-#### <span id="page-8-0"></span>1.5 Use of language
+<span id="page-8-0"></span>
+
+### 1.5 Use of language
 
 As our understanding of diversity, equity, and inclusion evolves, so must our language. Updated terminology better reflects individual identities and fosters respect and accuracy. Language used should be specific as possible. Staying informed and adaptable is crucial, as inclusive language promotes dignity and equity. Recognising that language will continue to evolve, we will remain open to further amendments to ensure it accurately represents and supports all individuals. WJEC will inform centres of any amendments and the most up to date version of the specification will always be on the website.
 
-#### <span id="page-8-1"></span>1.6 Equality and fair access
+<span id="page-8-1"></span>
+
+### 1.6 Equality and fair access
 
 The specification may be followed by any learner, irrespective of gender, ethnic, religious or cultural background. It has been designed to avoid, where possible, features that could, without justification, make it more difficult for a learner to access and achieve because they have a particular protected characteristic.
 
@@ -202,9 +223,11 @@ Information on access arrangements and reasonable adjustments is found in the fo
 
 We will be following the principles set out in this document and, as a consequence of provision for reasonable adjustments, very few learners will encounter a complete barrier to any part of the assessment.
 
-{9}------------------------------------------------
+{10}------------------------------------------------
 
-## <span id="page-9-0"></span>2 SUBJECT CONTENT AND INTEGRATION OF LEARNING EXPERIENCES AND SKILLS
+<span id="page-9-0"></span>
+
+# 2 SUBJECT CONTENT AND INTEGRATION OF LEARNING EXPERIENCES AND SKILLS
 
 This GCSE Music qualification is based on the study and application of the elements of music, as listed below:
 
@@ -220,7 +243,9 @@ This GCSE Music qualification is based on the study and application of the eleme
 
 These will be explored through all three units.
 
-#### <span id="page-9-1"></span>How to read the amplification
+<span id="page-9-1"></span>
+
+### How to read the amplification
 
 The amplification provided in the right-hand column, titled 'Further Information' uses the following five stems:
 
@@ -234,15 +259,17 @@ The use of the word 'including' indicates that the specified content must be tau
 
 The use of the words 'for example' or 'such as' indicates that the specified content is for guidance only, and alternative examples could be chosen.
 
-{10}------------------------------------------------
+{11}------------------------------------------------
 
-#### <span id="page-10-0"></span>Unit 1
+<span id="page-10-0"></span>
 
-#### **Performing**
+### Unit 1
+
+### Performing
 
 Non-examination assessment Performance: 4-6 minutes (a minimum of two pieces) Marked by the centre and moderated by WJEC 32.5% of qualification 78 marks
 
-#### **Overview**
+### Overview
 
 The purpose of this unit is to:
 
@@ -251,17 +278,17 @@ The purpose of this unit is to:
 - provide opportunities for learners to perform individually and/or as part of an ensemble and develop the skills required to become proficient
 - develop learners' resilience, determination and confidence.
 
-#### This unit will focus on:
+### This unit will focus on:
 
 - **exploring** learners will have the opportunity to explore and perform a range of repertoire, from various genres and periods and linked to different cultures in Wales and the world. This could include performing using any instrument, voice, or technology, as a soloist or as part of an ensemble
 - **responding and reflecting** learners will have the opportunity to reflect on their own work and respond to the feedback from others to focus their practice, allowing them to improve in the performances they give, with increased technical ability and communication
 - **creating** learners will have the opportunity to include improvisation in their performances, and with practice, to become more proficient and confident in this skill. In experiencing the process of creating their final performances, they will also be able to interpret repertoire in a way which is appropriate to their own ability and personal style choices.
 
-{11}------------------------------------------------
+{12}------------------------------------------------
 
-#### **Areas of content**
+### Areas of content
 
-#### **1.1 Performing**
+### 1.1 Performing
 
 In this unit learners will develop knowledge, skills and understanding in:
 
@@ -269,22 +296,23 @@ In this unit learners will develop knowledge, skills and understanding in:
 - 1.1.2 Communication through performing or realisation with technical control, fluency and expression
 - 1.1.3 The elements of music and how they are represented in the music they perform
 
-| Content                                                                                                          | Further information                                                                                                                                                                                                                                                                                                  |  |  |  |
-|------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--|--|--|
-| 1.1.1 Performing music as a soloist and/or part of an ensemble | Learners should be able to: <ul><li>(following exploration of a range of relevant repertoire) perform solos or independent parts within ensembles, or a combination of both, in their chosen style(s) of music, without a conductor. Learners are required to:</li></ul> |  |  |  |
-|  | <ul><li>perform a minimum of two pieces of music giving a total performance time of 4-6 minutes.</li></ul> |  |  |  |
-| 1.1.2 Communication through performing or realisation with technical control, fluency and expression | Learners should be able to: <ul><li>perform music in their chosen style(s) using instruments, voice or technology, with appropriate technical control, fluency and expression</li><li>understand how to communicate music, in their chosen style(s), including reading notation as appropriate.</li></ul> |  |  |  |
-| 1.1.3 The elements of music and how they are represented in the music they perform | Learners should be able to: <ul><li>demonstrate an understanding of how the elements of music are used in the music they perform including following performance directions.</li></ul> |  |  |  |
+| Content                                                                                                          | Further information                                                                                                                                                                                                                                                                                                                                                      |
+|------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1.1.1<br>Performing music as a<br>soloist and/or part of an<br>ensemble                                          | Learners should be able to:<br>• (following exploration of a range of relevant repertoire)<br>perform solos or independent parts within ensembles, or<br>a combination of both, in their chosen style(s) of music,<br>without a conductor.<br>Learners are required to:<br>• perform a minimum of two pieces of music giving a total<br>performance time of 4-6 minutes. |
+| 1.1.2<br>Communication through<br>performing or realisation<br>with technical control,<br>fluency and expression | Learners should be able to:<br>• perform music in their chosen style(s) using instruments,<br>voice or technology, with appropriate technical control,<br>fluency and expression<br>• understand how to communicate music, in their chosen<br>style(s), including reading notation as appropriate.                                                                       |
+| 1.1.3<br>The elements of music and<br>how they are represented<br>in the music they perform                      | Learners should be able to:<br>• demonstrate an understanding of how the elements of<br>music are used in the music they perform including<br>following performance directions.                                                                                                                                                                                          |
 
-{12}------------------------------------------------
+{13}------------------------------------------------
 
-#### <span id="page-12-0"></span>Unit 2
+<span id="page-12-0"></span>
 
-#### **Composing**
+### Unit 2
+
+### Composing
 
 Non-examination assessment 2 compositions (3-6 minutes total recommended) Reflective Log Marked by centre and moderated by WJEC 32.5% of qualification 78 marks
 
-#### **Overview**
+### Overview
 
 The purpose of this unit is to:
 
@@ -293,15 +321,15 @@ The purpose of this unit is to:
 - develop a sense of writing music for a specific purpose
 - allow learners to explore creating music in a variety of different genres and styles, from different periods.
 
-#### The unit will focus on:
+### The unit will focus on:
 
 - **exploring** learners will have the opportunity to explore various styles and genres of music linked to different cultures in Wales and the world and understand how they have been created to produce the intended effect. They will be able to use these methods to create and develop their own ideas. They will also be able to compose through exploring ideas in improvisation
 - **responding and reflecting** learners will be able to evaluate and refine their work through reflection and feedback from others to create a successful finished product
 - **creating** learners will create their own original music in a style of their choosing, and a piece to meet a brief specified by WJEC using the techniques they have explored and reflected upon.
 
-#### **Areas of content**
+### Areas of content
 
-#### **1.2 Composing**
+### 1.2 Composing
 
 In this unit learners will gain knowledge, skills and understanding of the following areas:
 
@@ -310,27 +338,28 @@ In this unit learners will gain knowledge, skills and understanding of the follo
 - 1.2.3 Reflecting on the compositional process
 - 1.2.4 Realising their compositions using instrument(s), voice(s) and/or technology as appropriate
 
-| Content                                                                                   | Further information                                                                                                                                                                                                                       |  |  |
-|-------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--|--|
-| 1.2.1 Composing their own music, in a style of their choosing and to a set brief | Learners should be able to: <ul><li>(following exploration of a range of relevant musical styles and genres) create and develop ideas to communicate meaning in composition.</li></ul> |  |  |
-|  | Learners are required to: <ul><li>compose two original pieces of music with a recommended total duration of between 3-6 minutes, one in response to their own devised brief and one in response to a brief set by WJEC.</li></ul> |  |  |
-
-{13}------------------------------------------------
-
-| 1.2.2 Controlling the elements of music and musical devices in developing ideas | Learners should understand: <ul><li>how knowledge gained in performing and appraising music can be used to develop their compositions. This includes their understanding of:</li><li>the elements of music</li><li>musical forms and devices</li><li>styles and genres to communicate meaning and develop ideas within their own original work.</li></ul> |
-|---------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1.2.3 Reflecting on the compositional process | Learners should be able to: <ul><li>reflect on, analyse and evaluate their own work</li><li>critically evaluate the effectiveness and impact of their:</li><li>response to a brief and the social, cultural and historical context</li><li>creative choices, including their initial ideas</li><li>use of elements of music to develop their initial ideas.</li></ul> |
-| 1.2.4 Realising their compositions using instrument(s), voice(s) and/or technology as appropriate | Learners should understand how to: <ul><li>create an audio version of their compositions in the most appropriate way. For example:</li><li>live performance</li><li>output from computer software.</li><li>create notation of the compositions in an appropriate format. For example:</li><li>staff notation</li><li>lead sheet</li><li>graphic notation</li><li>written commentary.</li></ul> |
+| Content                                                                                   | Further information                                                                                                                                                                                                                                                                                                                                                                                                  |
+|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1.2.1<br>Composing their own<br>music, in a style of their<br>choosing and to a set brief | Learners should be able to:<br>• (following exploration of a range of relevant musical<br>styles and genres) create and develop ideas to<br>communicate meaning in composition.<br><br>Learners are required to:<br>• compose two original pieces of music with a<br>recommended total duration of between 3-6 minutes,<br>one in response to their own devised brief and one<br>in response to a brief set by WJEC. |
 
 {14}------------------------------------------------
 
-#### <span id="page-14-0"></span>Unit 3
+| 1.2.2<br>Controlling the elements<br>of music and musical<br>devices in developing<br>ideas                         | Learners should understand:<br>• how knowledge gained in performing and appraising<br>music can be used to develop their compositions. This<br>includes their understanding of:<br>• the elements of music<br>• musical forms and devices<br>• styles and genres<br>to communicate meaning and develop ideas within their<br>own original work.                    |
+|---------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1.2.3<br>Reflecting on the<br>compositional process                                                                 | Learners should be able to:<br>• reflect on, analyse and evaluate their own work<br>• critically evaluate the effectiveness and impact of their:<br>• response to a brief and the social, cultural and<br>historical context<br>• creative choices, including their initial ideas<br>• use of elements of music to develop their initial<br>ideas.                 |
+| 1.2.4<br>Realising their<br>compositions using<br>instrument(s), voice(s)<br>and/or technology<br>as<br>appropriate | Learners should understand how to:<br>• create an audio version of their compositions in the most<br>appropriate way. For example:<br>• live performance<br>• output from computer software.<br>• create notation of the compositions in an appropriate<br>format. For example:<br>• staff notation<br>• lead sheet<br>• graphic notation<br>• written commentary. |
 
-#### **Appraising**
+{15}------------------------------------------------
+
+<span id="page-14-0"></span>
+
+### Unit 3
+
+### Appraising
 
 Digital only examination: 1 hour 30 minutes Marked by WJEC 35% of qualification 84 marks
 
-#### **Overview of unit**
+### Overview of unit
 
 The purpose of this unit is to:
 
@@ -340,14 +369,14 @@ The purpose of this unit is to:
 - demonstrate aural skills in relation to familiar and unfamiliar music
 - allow learners to develop as creative musicians through understanding the music of others.
 
-#### The unit will focus on:
+### The unit will focus on:
 
 - **exploring** learners will have the opportunity to experience listening to a wide range of music to understand how the composers and performers create the intended effect, tell a story or convey emotions including through the use of music technology
 - **responding and reflecting** learners will be able to identify links between different pieces of music in terms of the use of the elements of music and respond to the effectiveness of these in contrasting styles or genres.
 
-#### **Areas of content**
+### Areas of content
 
-#### **1.3 Appraising**
+### 1.3 Appraising
 
 In this unit learners will gain knowledge and understanding of the following areas:
 
@@ -356,13 +385,13 @@ In this unit learners will gain knowledge and understanding of the following are
 - 1.3.3 How meaning is communicated musically
 - 1.3.4 How music is notated and captured
 
-| Content                                                                                                                                                                                                            | Further information                                                                                                                                                                                                                                                                                                                                                                                                                                                           |  |  |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--|--|
-| 1.3.1 Identifying and describing how the elements of music are applied in different genres and styles of music (as noted within the Glossary of Musical Terminology – Appendix B) | Learners should be able to: <ul><li>identify and describe, using musical vocabulary, how the elements of music are used in a variety of extracts of music</li><li>identify and describe how musical devices are used in a variety of extracts showing an understanding of the conventions of genre, period, style and context as appropriate</li><li>identify and describe how music technology has been used to create aural effects.</li></ul> |  |  |
+| Content                                                                                                                                                                                                   | Further information                                                                                                                                                                                                                                                                                                                                                                                             |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1.3.1<br>Identifying and describing<br>how the elements of music<br>are applied in different<br>genres and styles of music<br>(as noted within the<br>Glossary of Musical<br>Terminology – Appendix<br>B) | Learners should be able to:<br>identify and describe, using musical vocabulary, how the elements of music are used in a variety of extracts of musicidentify and describe how musical devices are used in a variety of extracts showing an understanding of the conventions of genre, period, style and context as appropriateidentify and describe how music technology has been used to create aural effects. |
 
-{15}------------------------------------------------
+{16}------------------------------------------------
 
-#### 1.3.2
+### 1.3.2
 
 Studying a choice of set works in depth from a diverse variety of genres and styles
 
@@ -385,46 +414,48 @@ List A
 
 **Palladio (allegretto) for string orchestra** Karl Jenkins **Elizabeth Remembered** Debbie Wiseman
 
-#### List B
+### List B
 
 **Hwyl Ti, Gymru** Fleur De Lys **Tale of Two Dragons** Calan **One Day Like This** Elbow **Burn (Hamilton)** Lin-Manuel Miranda **I Don't Wanna Know** Mared **Sir Duke** Stevie Wonder
 
-#### Learners should know:
+### Learners should know:
 
 • the social, cultural and historical context of the chosen set works.
 
-#### 1.3.3
+### 1.3.3
 
 How meaning is communicated musically
 
-#### Learners should be able to:
+### Learners should be able to:
 
 • use technical vocabulary to describe how the elements of music are used.
 
-#### Learners should understand:
+### Learners should understand:
 
 • how the elements of music are used by composers and performers descriptively or to convey a mood.
 
-#### 1.3.4
+### 1.3.4
 
 How music is notated and captured
 
-#### Learners should be able to:
+### Learners should be able to:
 
 - read treble and bass clef staff notation, in simple time and compound time, in major and minor keys with up to four sharps or flats
 - notate pitch in the treble and bass clef
 - notate rhythms in simple time and compound time.
 
-#### Learners should understand:
+### Learners should understand:
 
 - how music is notated and captured, including:
   - stave notation
   - lead sheets showing piano, guitar and vocal lines
 - roman numerals for chords I, ii, iii, IV, V and vi in a major key and contemporary chord symbols for chords within a major key. For example: C, Dm, Em, F, G<sup>7</sup> and Am.
 
-{16}------------------------------------------------
+{17}------------------------------------------------
 
-#### <span id="page-16-0"></span>Opportunities for integration of learning experiences
+<span id="page-16-0"></span>
+
+### Opportunities for integration of learning experiences
 
 The GCSE Music qualification generates opportunities for the following experiences to be developed (the experiences will not be directly assessed):
 
@@ -439,27 +470,31 @@ The GCSE Music qualification generates opportunities for the following experienc
 
 Further amplification of the opportunities to develop cross-cutting themes, cross-curricular skills and integral skills can be found in Appendix C. The Guidance for Teaching will include further information on the opportunities provided by the qualification for teachers/centres to integrate these learning experiences into delivery.
 
-{17}------------------------------------------------
+{18}------------------------------------------------
 
-## <span id="page-17-0"></span>3 ASSESSMENT
+<span id="page-17-0"></span>
 
-#### <span id="page-17-1"></span>3.1 Assessment objectives and weightings
+# 3 ASSESSMENT
+
+<span id="page-17-1"></span>
+
+### 3.1 Assessment objectives and weightings
 
 Below are the assessment objectives for this specification. Learners must:
 
-#### **AO1**
+### AO1
 
 Demonstrate and apply knowledge and understanding of a range of music
 
-#### **AO2**
+### AO2
 
 Develop and apply performance and/or realisation skills
 
-#### **AO3**
+### AO3
 
 Reflect on, analyse and evaluate their own work and the work of others
 
-#### **AO4**
+### AO4
 
 Create and develop ideas to communicate meaning in compositions
 
@@ -472,17 +507,19 @@ The table below shows the weighting of each assessment objective for each unit a
 | Unit 3            | 20% | -     | 15%   | -   | 35%   |
 | Overall weighting | 20% | 32.5% | 17.5% | 30% | 100%  |
 
-{18}------------------------------------------------
+{19}------------------------------------------------
 
-#### <span id="page-18-0"></span>3.2 Overview of arrangements for non-examination assessment
+<span id="page-18-0"></span>
 
-#### **Unit 1: Overview**
+### 3.2 Overview of arrangements for non-examination assessment
+
+### Unit 1: Overview
 
 For this assessment learners are required:
 
 • to perform a minimum of **two** pieces of music giving a total performance time of 4-6 minutes (each piece should be a minimum of 1 minute).
 
-#### Learners can:
+### Learners can:
 
 - choose to perform solos or independent parts within ensembles, or a combination of both, in their chosen style(s) of music, without a conductor
 - choose to perform on any instrument or voice, or use technology, or a combination of these
@@ -499,7 +536,7 @@ The assessment contributes to 32.5% of the overall qualification and has a recom
 
 This unit will be assessed by the centre and externally moderated by WJEC.
 
-#### **Unit 2: Overview**
+### Unit 2: Overview
 
 For this assessment learners are required to:
 
@@ -510,15 +547,17 @@ Learners may compose at any time during the GCSE course. However, centres should
 
 The assessment contributes to 32.5% of the overall qualification and has a recommended teaching time of 39 hours which should incorporate exploring, teaching and learning, creating and reflecting. The unit will be marked out of a total of 78 marks.
 
-{19}------------------------------------------------
+{20}------------------------------------------------
 
 The set briefs will be released on the WJEC Portal during the September of the first year of study.
 
 This unit will be assessed by the centre and externally moderated by WJEC.
 
-{20}------------------------------------------------
+{21}------------------------------------------------
 
-## <span id="page-20-0"></span>4 MALPRACTICE
+<span id="page-20-0"></span>
+
+# 4 MALPRACTICE
 
 Before the course starts, the teacher is responsible for informing candidates of WJEC's regulations concerning malpractice. Candidates must not take part in any unfair practice in the preparation of work for GCSE Music.
 
@@ -528,11 +567,15 @@ All cases of suspected or actual malpractice must be reported immediately to WJE
 
 In all cases of malpractice, centres are advised to consult the JCQ booklet [Suspected Malpractice: Policies and Procedures.](https://www.jcq.org.uk/exams-office/malpractice)
 
-{21}------------------------------------------------
+{22}------------------------------------------------
 
-## <span id="page-21-0"></span>5 TECHNICAL INFORMATION
+<span id="page-21-0"></span>
 
-#### <span id="page-21-1"></span>5.1 Making entries
+# 5 TECHNICAL INFORMATION
+
+<span id="page-21-1"></span>
+
+### 5.1 Making entries
 
 This is a linear qualification in which all assessments must be taken at the end of the course. Non-examination assessment units can be completed earlier in the course but must be submitted at the end of the course.
 
@@ -546,66 +589,66 @@ Marks for non-examination assessment (NEA) may be carried forward for the life o
 
 The entry code appears below.
 
-|                 | Entry code     |              |
-|-----------------|----------------|--------------|
-|                 | English medium | Welsh medium |
-| WJEC GCSE Music | 3630QS         | 3630CS       |
+|                 |                | Entry code   |  |
+|-----------------|----------------|--------------|--|
+|                 | English medium | Welsh medium |  |
+| WJEC GCSE Music | 3630QS         | 3630CS       |  |
 
 The current edition of our Entry Procedures and Coding Information gives up-to-date entry procedures.
 
-### <span id="page-21-2"></span>5.2 Grading, awarding and reporting
+<span id="page-21-2"></span>
+
+### 5.2 Grading, awarding and reporting
 
 GCSE qualifications are reported on an eight-point scale from A\*-G, where A\* is the highest grade. Results not attaining the minimum standard for the award will be reported as U (unclassified).
 
-{22}------------------------------------------------
+{23}------------------------------------------------
 
 ### Appendix A: Opportunities for embedding elements of the Curriculum for Wales
 
 <span id="page-22-0"></span>
 
-| Curriculum for Wales Strands                                         | Unit 1 | Unit 2 | Unit 3 |  |  |  |
-|----------------------------------------------------------------------|--------|--------|--------|--|--|--|
-| Cross-cutting Themes                                                 |        |        |        |  |  |  |
-| Local, National & International Contexts | ✓ | ✓ |  |  |  |  |
-| Sustainability aspect of Local, National & International Contexts | ✓ | ✓ |  |  |  |  |
-| Relationships and Sexuality Education | ✓ | ✓ | ✓ |  |  |  |
-| Human Rights                                                         | ✓      | ✓      | ✓      |  |  |  |
-| Diversity                                                            | ✓      | ✓      | ✓      |  |  |  |
-| Careers and Work-Related Experiences | ✓ | ✓ | ✓ |  |  |  |
-| Cross-curricular Skills - Literacy |  |  |  |  |  |  |
-| Listening                                                            | ✓      | ✓      | ✓      |  |  |  |
-| Reading                                                              | ✓      | ✓      | ✓      |  |  |  |
-| Speaking                                                             | ✓      | ✓      | ✓      |  |  |  |
-| Writing                                                              | ✓      | ✓      | ✓      |  |  |  |
-
-{23}------------------------------------------------
-
-| Curriculum for Wales Strands                                                                                                                         | Unit 1             | Unit 2 | Unit 3 |  |  |  |
-|------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|--------|--------|--|--|--|
-| Cross-curricular Skills - Numeracy |  |  |  |  |  |  |
-| Developing Mathematical Proficiency | ✓ | ✓ | ✓ |  |  |  |
-| Understanding the number system helps us to represent and compare relationships between numbers and quantities | ✓ | ✓ | ✓ |  |  |  |
-| Learning about geometry helps us understand shape, space and position and learning about measurement helps us quantify in the real world | ✓ | ✓ | ✓ |  |  |  |
-| Learning that statistics represent data and that probability models chance help us make informed inferences and decisions |  |  |  |  |  |  |
-|                                                                                                                                                      | Digital Competence |        |        |  |  |  |
-| Citizenship                                                                                                                                          | ✓                  | ✓      | ✓      |  |  |  |
-| Interacting and Collaborating                                                                                                                        | ✓                  | ✓      | ✓      |  |  |  |
-| Producing                                                                                                                                            | ✓                  | ✓      | ✓      |  |  |  |
-| Data and Computational Thinking                                                                                                                      | ✓                  | ✓      | ✓      |  |  |  |
+| Curriculum for Wales Strands                                                                                                             | Unit 1 | Unit 2 | Unit 3 |
+|------------------------------------------------------------------------------------------------------------------------------------------|--------|--------|--------|
+| Cross-cutting Themes                                                                                                                     |        |        |        |
+| Local, National & International Contexts                                                                                                 | ✓      | ✓      |        |
+| Sustainability aspect of Local, National & International Contexts                                                                        | ✓      | ✓      |        |
+| Relationships and Sexuality Education                                                                                                    | ✓      | ✓      | ✓      |
+| Human Rights                                                                                                                             | ✓      | ✓      | ✓      |
+| Diversity                                                                                                                                | ✓      | ✓      | ✓      |
+| Careers and Work-Related Experiences                                                                                                     | ✓      | ✓      | ✓      |
+| Cross-curricular Skills - Literacy                                                                                                       |        |        |        |
+| Listening                                                                                                                                | ✓      | ✓      | ✓      |
+| Reading                                                                                                                                  | ✓      | ✓      | ✓      |
+| Speaking                                                                                                                                 | ✓      | ✓      | ✓      |
+| Writing                                                                                                                                  | ✓      | ✓      | ✓      |
+| Curriculum for Wales Strands                                                                                                             | Unit 1 | Unit 2 | Unit 3 |
+| Cross-curricular Skills - Numeracy                                                                                                       |        |        |        |
+| Developing Mathematical Proficiency                                                                                                      | ✓      | ✓      | ✓      |
+| Understanding the number system helps us to represent and compare relationships between numbers and quantities                           | ✓      | ✓      | ✓      |
+| Learning about geometry helps us understand shape, space and position and learning about measurement helps us quantify in the real world | ✓      | ✓      | ✓      |
+| Learning that statistics represent data and that probability models chance help us make informed inferences and decisions                |        |        |        |
+| Digital Competence                                                                                                                       |        |        |        |
+| Citizenship                                                                                                                              | ✓      | ✓      | ✓      |
+| Interacting and Collaborating                                                                                                            | ✓      | ✓      | ✓      |
+| Producing                                                                                                                                | ✓      | ✓      | ✓      |
+| Data and Computational Thinking                                                                                                          | ✓      | ✓      | ✓      |
+| Curriculum for Wales Strands                                                                                                             | Unit 1 | Unit 2 | Unit 3 |
+| Integral Skills                                                                                                                          |        |        |        |
+| Creativity and Innovation                                                                                                                | ✓      | ✓      | ✓      |
+| Critical Thinking and Problem<br>Solving                                                                                                 | ✓      | ✓      | ✓      |
+| Planning and Organisation                                                                                                                | ✓      | ✓      | ✓      |
+| Personal Effectiveness                                                                                                                   | ✓      | ✓      | ✓      |
 
 {24}------------------------------------------------
 
-| Curriculum for Wales Strands             | Unit 1 | Unit 2 | Unit 3 |  |  |  |
-|------------------------------------------|--------|--------|--------|--|--|--|
-| Integral Skills                          |        |        |        |  |  |  |
-| Creativity and Innovation                | ✓      | ✓      | ✓      |  |  |  |
-| Critical Thinking and Problem Solving | ✓ | ✓ | ✓ |  |  |  |
-| Planning and Organisation                | ✓      | ✓      | ✓      |  |  |  |
-| Personal Effectiveness                   | ✓      | ✓      | ✓      |  |  |  |
-
 {25}------------------------------------------------
 
-## <span id="page-25-0"></span>Appendix B – Glossary of Musical Terminology
+{26}------------------------------------------------
+
+<span id="page-25-0"></span>
+
+# Appendix B – Glossary of Musical Terminology
 
 The study of GCSE Music integrates the activities of performing, composing and appraising and as such teachers and learners should use the terms given below in all relevant contexts.
 
@@ -613,7 +656,7 @@ Learners will be required to know and understand the musical terms listed in the
 
 \*The lists for Devices and Musical Styles are not exhaustive, and centres may explore devices found in the styles of music which are appropriate to the learners and their exploration of the music of Wales and the World.
 
-#### **Articulation**
+### Articulation
 
 Staccato
 
@@ -629,7 +672,7 @@ Tongued
 
 Detached
 
-#### **Devices\***
+### Devices\*
 
 Pedal
 
@@ -655,7 +698,7 @@ Drone
 
 Call and Response
 
-#### **Dynamics**
+### Dynamics
 
 Pianissimo / pp
 
@@ -679,11 +722,11 @@ Loud(er)
 
 Quiet(er)
 
-#### **Form and Structure**
+### Form and Structure
 
 Binary / AB Ternary / ABA' Rondo / ABACADA 
 
-{26}------------------------------------------------
+{27}------------------------------------------------
 
 Minuet and Trio
 
@@ -733,7 +776,7 @@ Riff
 
 Phrasing (balanced / regular / irregular)
 
-#### **Harmony**
+### Harmony
 
 Primary Chords
 
@@ -771,7 +814,7 @@ Dissonance
 
 Power chords
 
-#### **Melody**
+### Melody
 
 Anacrusis / up -beat / pick up
 
@@ -793,7 +836,7 @@ Range
 
 Sequence
 
-{27}------------------------------------------------
+{28}------------------------------------------------
 
 Imitation
 
@@ -825,6 +868,10 @@ Major 6th
 
 Minor 6th
 
+## Minor 6
+
+Major 7th
+
 Major 7th
 
 Minor 7th
@@ -845,7 +892,7 @@ Thematic
 
 Fanfare
 
-#### **Metre**
+### Metre
 
 Time signature
 
@@ -869,7 +916,7 @@ Compound 6
 
 8
 
-#### **Musical Styles\***
+### Musical Styles\*
 
 Western Classical Tradition
 
@@ -903,7 +950,7 @@ Rock n Roll
 
 Soul
 
-{28}------------------------------------------------
+{29}------------------------------------------------
 
 Hip -hop
 
@@ -917,7 +964,7 @@ Fusion
 
 Club Dance / EDM
 
-#### **Performance Techniques**
+### Performance Techniques
 
 Humming
 
@@ -967,7 +1014,7 @@ Plucked
 
 Strum
 
-#### **Rhythm**
+### Rhythm
 
 Note values and associated rests:
 
@@ -1003,9 +1050,9 @@ Dance rhythms
 
 Rock rhythms
 
-{29}------------------------------------------------
+{30}------------------------------------------------
 
-#### **Technology**
+### Technology
 
 Synthesised/Electronic
 
@@ -1037,7 +1084,7 @@ Delay
 
 Equalisation
 
-#### **Tempo**
+### Tempo
 
 Presto
 
@@ -1073,7 +1120,7 @@ Fast(er)
 
 Slow(er)
 
-#### **Texture**
+### Texture
 
 Monophonic
 
@@ -1111,9 +1158,9 @@ Stab chords
 
 Walking bass
 
-{30}------------------------------------------------
+{31}------------------------------------------------
 
-#### **Timbre**
+### Timbre
 
 Instruments, Voices and Groupings
 
@@ -1225,7 +1272,7 @@ Alto
 
 Tenor
 
-{31}------------------------------------------------
+{32}------------------------------------------------
 
 Bass
 
@@ -1255,7 +1302,7 @@ Solo
 
 Accompaniment
 
-#### **Tonality**
+### Tonality
 
 Major
 
