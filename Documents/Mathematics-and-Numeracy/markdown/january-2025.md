@@ -1,95 +1,85 @@
+
+
 {1}------------------------------------------------
 
-## GCSE MATHEMATICS, GCSE MATHEMATICS - NUMERACY Newsletter - January 2025
+![](_page_0_Picture_0.jpeg)
 
-## PROFESSIONAL LEARNING (PL) TRAINING COURSES
+# GCSE MATHEMATICS, GCSE MATHEMATICS – NUMERACY Newsletter – January 2025
 
-## New Made for Wales GCSE Mathematics and Numeracy (Double Award)
+# PROFESSIONAL LEARNING (PL) TRAINING COURSES
 
-We are excited to launch the new Specimen Assessment Materials for GCSE Mathematics and Numeracy, to accompany the specification, which was published in September. The web page for the new GCSE is here: GCSE Mathematics and Numeracy (Double Award) | Made for Wales (wjec.co.uk). Here are some key dates for your diaries including information on upcoming Professional Learning opportunities.
+# New Made for Wales GCSE Mathematics and Numeracy (Double Award)
 
-## Key dates
+We are excited to launch the new Specimen Assessment Materials for GCSE Mathematics and Numeracy, to accompany the specification, which was published in September. The web page for the new GCSE is here: [GCSE Mathematics and](https://www.wjec.co.uk/qualifications/gcse-mathematics-and-numeracy-double-award-teaching-from-2025/?sub_nav_level=courses#tab_training)  [Numeracy \(Double Award\) | Made for Wales \(wjec.co.uk\).](https://www.wjec.co.uk/qualifications/gcse-mathematics-and-numeracy-double-award-teaching-from-2025/?sub_nav_level=courses#tab_training) Here are some key dates for your diaries including information on upcoming Professional Learning opportunities.
+
+#### Key dates
 
 Publication of Sample Assessment Materials: 19th December 2024
 
 Guidance for Teaching Published: 31st January 2025
 
-## PL Events and Materials
+### PL Events and Materials
 
-| PL Type                                                                         | Aims                                                                                 | Format and Notes                                                                                                                                                     |
-|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Your Guide to the new specification module Available from end of September 2024 | To support your understanding of the specification document.                         | This asynchronous module will be on the "training on demand" tab of your qualification page on the WJEC website. You will need to register to access a link to view. |
-| Parent / Options evening flyers Available from end of September 2024            | To support you to provide information to parents and learners before start of study. | This PDF will be published on your qualification's home page.                                                                                                        |
-
-<!-- image -->
-
-
+| PL Type                                                                                                                                                                                                                                                                       | Aims                                                                                                                                                                                                                                                            | Format and Notes                                                                                                                                                                                                                                       |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Your Guide to the new<br>specification module<br><span style="color:green;">Available from end of<br/>September 2024</span>                                                                                                                                                   | To support your<br>understanding of the<br>specification document.                                                                                                                                                                                              | This asynchronous<br>module will be on the<br>"training on demand" tab<br>of your qualification<br>page on the WJEC<br>website. You will need to<br>register to access a link<br>to view.                                                              |
+| Parent / Options evening<br>flyers<br><span style="color:green;">Available from end of<br/>September 2024</span>                                                                                                                                                              | To support you to<br>provide information to<br>parents and learners<br>before start of study.                                                                                                                                                                   | This PDF will be<br>published on your<br>qualification's home<br>page.                                                                                                                                                                                 |
+| Recording of the Online Qualification Briefing & Q&A<br>Available now<br>Visit the On Demand Courses section within the Training tab on your new qualification's webpage to view the recording:<br>GCSE Mathematics and Numeracy (Double Award)   Made for Wales (wjec.co.uk) | To support your understanding of the new qualification, its content and assessment structure. The recording also refers to resources and upcoming PL and answers questions that were put to our Subject Teams and specification experts during the live events. | The Online Briefing was presented by the WJEC Mathematics Subject Adviser with support from the WJEC Mathematics Subject Officer. The recording is on the "training on demand" tab of your qualification page on the WJEC website.                     |
+| * Preparing to Teach (face-to-face)<br>Available from 14/02/25 to 07/04/25<br>Registrations for the Pan Wales INSET days will be collected via your head teacher. No registrations through WJEC's website.                                                                    | To support teaching the new specification. There will be a focus on understanding the assessments, assessment objectives, content and teaching approaches based on the specification, sample assessment materials and guidance for teaching.                    | These days take place on designated regional INSET days – there are 12 days in this series held across Wales, including 2 Welsh medium days and 1 bilingual day.<br>These events will be led by WJEC Subject Advisors and our expert presenting teams. |
+| Exam and NEA Walk-throughs<br>Available summer Term 2025<br>Access via the WJEC Portal secure website                                                                                                                                                                         | To support you and your learners to understand the structure of question papers/NEA briefs, question types, assessment objectives and marking methods.                                                                                                          | These pre-recorded PPT will initially be published on the WJEC Portal secure website only.                                                                                                                                                             |
 
 {2}------------------------------------------------
 
+![](_page_1_Picture_0.jpeg)
 
+<sup>\*</sup> Your designated regional WJEC face-to-face INSET date (Preparing to Teach) can be found here: [Made-for-Wales GCSEs \(wjec.co.uk\)](https://www.wjec.co.uk/home/professional-learning/made-for-wales-gcses-professional-learning/)
 
-<!-- image -->
-
-| Recording of the Online Qualification Briefing & Q&A Available now Visit the On Demand Courses section within the Training tab on your new qualification's webpage to view the recording: GCSE Mathematics and Numeracy (Double Award) | Made for Wales (wjec.co.uk)   | To support your understanding of the new qualification, its content and assessment structure. The recording also refers to resources and upcoming PL and answers questions that were put to our Subject Teams and specification experts during the live events.   | The Online Briefing was presented by the WJEC Mathematics Subject Adviser with support from the WJEC Mathematics Subject Officer. The recording is on the "training on demand" tab of your qualification page on the WJEC website.                  |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| * Preparing to Teach (face-to-face) Available from 14/02/25 to 07/04/25 Registrations for the Pan Wales INSET days will be collected via your head teacher. No registrations through WJEC's website.                                                                   | To support teaching the new specification. There will be a focus on understanding the assessments, assessment objectives, content and teaching approaches based on the specification, sample assessment materials and guidance for teaching.                      | These days take place on designated regional INSET days - there are 12 days in this series held across Wales, including 2 Welsh medium days and 1 bilingual day. These events will be led by WJEC Subject Advisors and our expert presenting teams. |
-| Exam and NEA Walk- throughs Available summer Term 2025 Access via the WJEC Portal secure website                                                                                                                                                                       | To support you and your learners to understand the structure of question papers/NEA briefs, question types, assessment objectives and marking methods.                                                                                                            | These pre-recorded PPT will initially be published on the WJEC Portal secure website only.                                                                                                                                                          |
-
-* Your designated regional WJEC face-to-face INSET date (Preparing to Teach) can be found here: Made-for-Wales GCSEs (wjec.co.uk)
-
-## Context Sourcing for GCSE Mathematics and Numeracy (Double Award)
+### Context Sourcing for GCSE Mathematics and Numeracy (Double Award)
 
 As part of our new GCSE Mathematics and Numeracy, we are looking for suggestions for new contexts that can be utilised within our assessments.
 
-
-
 {3}------------------------------------------------
 
+![](_page_2_Picture_0.jpeg)
 
+We welcome suggestions from across Wales. Submissions are welcomed from all stakeholders, including learners, teachers, lecturers and industry workers. Our team will consider all suggestions, irrespective of background. For more information, please visit: [Help shape the future of GCSE](https://www.wjec.co.uk/home/help-shape-the-future-of-gcse-mathematics-and-numeracy-double-award-assessments/)  Mathematics [and Numeracy \(Double Award\)](https://www.wjec.co.uk/home/help-shape-the-future-of-gcse-mathematics-and-numeracy-double-award-assessments/) assessments (wjec.co.uk).
 
-<!-- image -->
+# PRINCIPAL EXAMINERS' REPORTS
 
-We welcome suggestions from across Wales. Submissions are welcomed from all stakeholders, including learners, teachers, lecturers and industry workers. Our team will consider all suggestions, irrespective of background. For more information, please visit: Help shape the future of GCSE Mathematics and Numeracy (Double Award) assessments (wjec.co.uk).
+Principal examiners' reports will soon be available for the Autumn 2024 series for GCSE Mathematics and GCSE Mathematics – Numeracy. They can be found under the Key Documents tab on the GCSE Mathematics web page: [GCSE Mathematics and GCSE Mathematics - Numeracy Key Documents](https://www.wjec.co.uk/qualifications/mathematics-gcse/#tab_keydocuments)  [\(wjec.co.uk\)](https://www.wjec.co.uk/qualifications/mathematics-gcse/#tab_keydocuments)
 
-## PRINCIPAL EXAMINERS' REPORTS
+# FREE ACCESS TO SCRIPTS
 
-Principal examiners' reports will soon be available for the Autumn 2024 series for GCSE Mathematics and GCSE Mathematics - Numeracy. They can be found under the Key Documents tab on the GCSE Mathematics web page: GCSE Mathematics and GCSE Mathematics - Numeracy Key Documents (wjec.co.uk)
+WJEC teachers also benefit from access to free marked exam scripts from the Autumn 2024 assessment series.
 
-## FREE ACCESS TO SCRIPTS
+Candidates' scripts will be available to download from our [Secure Website](https://www.wjecservices.co.uk/login.asp) from results day onwards.
 
-WJEC teachers also benefit from access to free marked exam scripts from the Autumn 2024 assessment series. Candidates' scripts will be available to download from our Secure Website from results day onwards.
+# BLENDED LEARNING AND KNOWLEDGE ORGANISERS
 
-## BLENDED LEARNING AND KNOWLEDGE ORGANISERS
+Blended learning packages, exam walkthroughs and knowledge organisers are available for GCSE Mathematics and GCSE Mathematics – Numeracy. Visit the [Home Page WJEC Educational Resources Website.](https://resources.wjec.co.uk/)
 
-Blended learning packages, exam walkthroughs and knowledge organisers are available for GCSE Mathematics and GCSE Mathematics - Numeracy. Visit the Home Page WJEC Educational Resources Website.
+# LEVEL 2 ADDITIONAL MATHEMATICS
 
-## LEVEL 2 ADDITIONAL MATHEMATICS
+#### PROFESSIONAL LEARNING (PL)
 
-## PROFESSIONAL LEARNING (PL)
+Assessment Feedback materials relating to the Summer 2024 series are available on [WJEC Portal.](https://portal.wjec.co.uk/) The materials can be accessed by first selecting 'Resources', then 'Subject-Specific Support Materials inc CPD & Exemplars'.
 
-Assessment Feedback materials relating to the Summer 2024 series are available on WJEC Portal. The materials can be accessed by first selecting 'Resources', then 'Subject-Specific Support Materials inc CPD &amp; Exemplars'.
+#### MADE FOR WALES QUALIFICATIONS
 
-## MADE FOR WALES QUALIFICATIONS
-
-A subject page for the NEW Level 2 Additional Mathematics qualification will be available in Spring 2025.  The qualification is for first teaching from September 2026. Please see the Made for Wales webpage for further updates.
-
-
+A subject page for the NEW Level 2 Additional Mathematics qualification will be available in Spring 2025. The qualification is for first teaching from September 2026. Please see the [Made for Wales](https://www.wjec.co.uk/home/qualifications-in-development/made-for-wales-wjec-is-ready-to-deliver/) webpage for further updates.
 
 {4}------------------------------------------------
 
+![](_page_3_Picture_0.jpeg)
 
-
-## AS/A LEVEL MATHEMATICS AND AS/A LEVEL FURTHER MATHEMATICS
+# AS/A LEVEL MATHEMATICS AND AS/A LEVEL FURTHER MATHEMATICS
 
 ## PROFESSIONAL LEARNING (PL) TRAINING COURSES
 
-Materials from all of the Professional Learning events that have taken place this academic year for GCE Mathematics and GCE Further Mathematics are available on WJEC Portal.  The materials can be accessed by first selecting 'Resources', then 'Subject-Specific Support Materials inc CPD &amp; Exemplars'. The documents that contain the links can be found quickly by entering 'Mathematics', 'WJEC' and 'GCE' in the first three search boxes.
+Materials from all of the Professional Learning events that have taken place this academic year for GCE Mathematics and GCE Further Mathematics are available on [WJEC Portal.](https://portal.wjec.co.uk/) The materials can be accessed by first selecting 'Resources', then 'Subject-Specific Support Materials inc CPD & Exemplars'. The documents that contain the links can be found quickly by entering 'Mathematics', 'WJEC' and 'GCE' in the first three search boxes.
 
-## KNOWLEDGE ORGANISERS AND OTHER RESOURCES
+# KNOWLEDGE ORGANISERS AND OTHER RESOURCES
 
 Exam walkthroughs and knowledge organisers are available.
 
-Visit the Home Page WJEC Educational Resources Website.
-
-<!-- image -->
+Visit the [Home Page WJEC Educational Resources Website.](https://resources.wjec.co.uk/)
