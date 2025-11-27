@@ -1,6 +1,6 @@
 
 
-{0}------------------------------------------------
+{1}------------------------------------------------
 
 ![](_page_0_Picture_0.jpeg)
 
@@ -22,38 +22,37 @@ Ready for the world. This Qualifications Wales regulated qualification is not av
 
 Made for Wales.
 
-{1}------------------------------------------------
+{2}------------------------------------------------
 
 ![](_page_1_Picture_0.jpeg)
 
-{2}------------------------------------------------
+{3}------------------------------------------------
 
 # SUMMARY OF AMENDMENTS
 
-| Description                                                                              | Page number                                                                     |
-|------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------|
-| To clarify that this document is a sample and not to be used with live assessment: |  |
-|  | Throughout 3 |
-| • • | A watermark has been added The further information section has been updated. |
+| Version | Description                                                                                                                                          | Page number |
+|---------|------------------------------------------------------------------------------------------------------------------------------------------------------|-------------|
+| 2       | To clarify that this document is a sample and not to be used:<br>• A watermark has been added<br>• The further information section has been updated. | Throughout  |
+|         |                                                                                                                                                      | 3           |
 
-{3}------------------------------------------------
+{4}------------------------------------------------
 
-#### Contents
+### Contents
 
 | About this pack: information for teachers | 1 |
 |-------------------------------------------|---|
 | Managing the assessment                   | 1 |
 | Assessment details                        | 4 |
-| Candidate Mark Record Sheet               |   |
+| Candidate Mark Record Sheet               | 5 |
 | Candidate Assessment Pack                 | 6 |
 
 Sample not for use with live assessments
 
-#### Copyright
+### Copyright
 
 © WJEC CBAC Limited 2024.
 
-{4}------------------------------------------------
+{5}------------------------------------------------
 
 # <span id="page-4-0"></span>About this pack: information for teachers
 
@@ -77,7 +76,7 @@ Within this pack, you will find:
 
 This is a centre-marked (internal) non-examination assessment. The following arrangements must be followed when managing and marking the assessment
 
-# **Time**
+### Time
 
 Candidates must be allowed **6 hours** to complete this assessment. Candidates should spend approximately:
 
@@ -89,57 +88,36 @@ Candidates must be allowed **6 hours** to complete this assessment. Candidates s
 
 The time suggested for each task takes account of the contribution of the task to the overall assessment requirements. There can be no changes to the total time available for this assessment. Centres can, however, amend the suggested time available for each task.
 
-#### **Resources**
+### Resources
 
 Candidates must have access to the candidate assessment pack and any necessary resources, as specified in the detailed task tables within the candidate pack.
 
-#### **Collaboration**
+### Collaboration
 
 Group work is **not** allowed. Candidates must complete all tasks individually.
 
-{5}------------------------------------------------
+{6}------------------------------------------------
 
-#### **Supervision**
+### Supervision
 
 Tasks in this unit are taken under a mixture of direct and indirect supervision:
 
 Task 1: indirect supervision Task 2: direct supervision Task 3: indirect supervision Task 4: direct supervision Task 5: indirect supervision
 
-| The use of resources is tightly prescribed. The centre must ensure that:                |  |  |  |
-|-----------------------------------------------------------------------------------------|--|--|--|
-|                                                                                         |  |  |  |
-|                                                                                         |  |  |  |
-| all candidates are within direct sight of the supervisor throughout the                 |  |  |  |
-|                                                                                         |  |  |  |
-|                                                                                         |  |  |  |
-|                                                                                         |  |  |  |
-|                                                                                         |  |  |  |
-|                                                                                         |  |  |  |
-|                                                                                         |  |  |  |
-| Candidates' work must remain within the centre at all times and must                    |  |  |  |
-|                                                                                         |  |  |  |
-| Where direct supervision is specified, the centre must ensure that the JCQ No Mobile |  |  |  |
-|                                                                                         |  |  |  |
-|                                                                                         |  |  |  |
-|                                                                                         |  |  |  |
-|                                                                                         |  |  |  |
-|                                                                                         |  |  |  |
-|                                                                                         |  |  |  |
-| the work an individual candidate submits for assessment is his/her                      |  |  |  |
-|                                                                                         |  |  |  |
-| and must be                                                                             |  |  |  |
-|                                                                                         |  |  |  |
-| display materials which might provide assistance are removed or                         |  |  |  |
+| Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Direct | The use of resources is tightly prescribed. The centre must ensure that:all candidates are within direct sight of the supervisor throughout the session(s)display materials which might provide assistance are removed or coveredthere is no access to e-mail, the internet or mobile phonescandidates complete their work independentlyno interaction with other candidates does not occurno assistance of any description is provided.Candidates' work must remain within the centre at all times and must be stored securely between timetabled sessions.Where direct supervision is specified, the centre must ensure that the JCQ No Mobile Phone poster and JCQ Warning to Candidates is displayed. |
+|        | Indirect                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 
 Centres must have in place systems to ensure candidates cannot access evidence they have been developing outside of supervised activities.
 
-#### **Authentication**
+### Authentication
 
 Supervision must be in place to ensure the authenticity of evidence produced for summative assessment.
 
 You should not provide input or guidance to candidates during the assessment time. This includes providing formative feedback on the evidence being produced. You can provide guidance on the requirements of the task and remind candidates of the mark bands and how they can be interpreted.
 
-{6}------------------------------------------------
+{7}------------------------------------------------
 
 Candidates can review and redraft evidence independently within the time controls for the assessment.
 
@@ -149,7 +127,7 @@ Assessors must sign the declaration to confirm that evidence submitted for moder
 
 Assessors must check pre-assessment research notes to ensure that pre-prepared answers are not used for completion of tasks.
 
-#### **Candidate evidence**
+### Candidate evidence
 
 The acceptable formats for evidence of each of the tasks is summarised in the task tables. Any modified assessment must enable the candidate to generate the evidence required in this table
 
@@ -168,11 +146,11 @@ All marking of evidence must be made against the marking scheme provided. Eviden
 
 A mark record sheet must be completed for each candidate.
 
-#### **Further information**
+### Further information
 
 You should refer the JCQ Instructions for conducting non-examination assessment for further information on managing assessment within our GCSE Qualifications.
 
-{7}------------------------------------------------
+{8}------------------------------------------------
 
 # <span id="page-7-0"></span>Assessment details
 
@@ -201,14 +179,14 @@ This assessment contributes to 20% of the overall qualification grade and will t
 
 This unit will be assessed through an externally set assignment and will be internally marked by the centre and externally moderated by WJEC. Assessments must be submitted digitally (they may be handwritten and scanned or completed digitally).
 
-{8}------------------------------------------------
+{9}------------------------------------------------
 
 # <span id="page-8-0"></span>Candidate Mark Record Sheet
 
-| Centre No:       |  | Centre Name:       |  |
-|------------------|--|--------------------|--|
-| Candidate No: |  | Candidate Name: |  |
-| Unit Title:      |  |                    |  |
+| Centre No:       |  |  |  |
+|------------------|--|--|--|
+| Candidate<br>No: |  |  |  |
+| Unit Title:      |  |  |  |
 
 | Task       | Mark Awarded |
 |------------|--------------|
@@ -221,12 +199,12 @@ This unit will be assessed through an externally set assignment and will be inte
 
 I have authenticated the candidate's work and am satisfied that to the best of my knowledge the work produced is solely that of the candidate. The candidate has clearly referenced any sources and any AI tools used in the work. I understand that false declaration is a form of malpractice
 
-| Assessor Signature |          |  |  |  |
-|--------------------|----------|--|--|--|
-| Name (printed)     |          |  |  |  |
-| Date | / /20 |  |  |  |
+| Assessor Signature |       |
+|--------------------|-------|
+| Name (printed)     |       |
+| Date               | / /20 |
 
-{9}------------------------------------------------
+{10}------------------------------------------------
 
 ![](_page_9_Picture_0.jpeg)
 
@@ -236,7 +214,7 @@ I have authenticated the candidate's work and am satisfied that to the best of m
 
 Unit 2: Religion and relationships (3150U2)
 
-{10}------------------------------------------------
+{11}------------------------------------------------
 
 # About this pack: information and instructions for candidates
 
@@ -266,7 +244,7 @@ It is important that you work independently from other candidates and the work p
 
 You are advised to check your work carefully to make sure that it is accurate and correct.
 
-{11}------------------------------------------------
+{12}------------------------------------------------
 
 # Assessment
 
@@ -307,13 +285,13 @@ Relating to the statement provided, you should research the relevant:
 
 You are permitted to produce a maximum of **four** sides of A4 written or printed research notes to interpret during the non-examination assessment. These research notes **must** be submitted alongside the response to the tasks.
 
-{12}------------------------------------------------
+{13}------------------------------------------------
 
 # Tasks
 
-|   | Task                                                                                                                                                                                                                                                                                                                                       | Evidence                                                                                  | Controls                                                                                                             |
-|---|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| 1 | Based on your research: <ul><li>summarise the relevant beliefs, teachings, practices and perspectives of the two religions you have studied in relation to the statement provided</li><li>summarise the relevant non-religious beliefs and perspectives in relation to the statement provided. [15 marks]</li></ul> | A maximum of four sides of A4 written or typed research notes A written response | Supervision: Indirect Guidance: Not permitted Resources: Permitted Collaboration: Not permitted |
+|   | Task                                                                                                                                                                                                                                                                                       | Evidence                                                                            | Controls                                                                                                             |
+|---|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| 1 | Based on your research:<br>summarise the relevant beliefs, teachings, practices and perspectives of the two religions you have studied in relation to the statement providedsummarise the relevant non-religious beliefs and perspectives in relation to the statement provided.[15 marks] | A maximum of four sides of A4 written or typed research notes<br>A written response | Supervision:<br>Indirect<br>Guidance:<br>Not permitted<br>Resources:<br>Permitted<br>Collaboration:<br>Not permitted |
 
 You should spend approximately **1 hour 30 minutes** completing this task.
 
@@ -321,15 +299,14 @@ Resources permitted:
 
 The maximum of four sides of A4 written or printed research notes.
 
-|                                                                                                  | Task                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Evidence           | Controls                                                                                 |
-|--------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|------------------------------------------------------------------------------------------|
-| 2 | Based on your research: | A written response | Supervision: Direct |
-|  | Examine the similarities and differences in beliefs, teachings, practices and perspectives. Include: <ul><li>any similarities between the two religions you have studied</li><li>any differences between the two religions you have studied</li><li>any similarities between each religion and the non-religious perspectives</li><li>any differences between each religion and the non-religious perspectives.</li></ul> |  | Guidance: Not permitted Resources: Permitted Collaboration: Not permitted |
-|                                                                                                  | [10 marks]                                                                                                                                                                                                                                                                                                                                                                                                                                             |                    |                                                                                          |
-|  | You should spend approximately 1 hour completing this task. |  |  |
-| Resources permitted: The maximum of four sides of A4 written or printed research notes. |  |  |  |
+|                                                                                            | Task                                                                                                                                                                                                                                                                                                                                                                                                                                              | Evidence           | Controls                                                                                                           |
+|--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|--------------------------------------------------------------------------------------------------------------------|
+| 2                                                                                          | Based on your research:<br>Examine the similarities and<br>differences in beliefs,<br>teachings, practices and<br>perspectives. Include:<br>any similarities between<br>the two religions you<br>have studiedany differences between<br>the two religions you<br>have studiedany similarities between<br>each religion and the<br>non-religious<br>perspectivesany differences between<br>each religion and the<br>non-religious<br>perspectives. | A written response | Supervision:<br>Direct<br>Guidance:<br>Not permitted<br>Resources:<br>Permitted<br>Collaboration:<br>Not permitted |
+|                                                                                            | [10 marks]                                                                                                                                                                                                                                                                                                                                                                                                                                        |                    |                                                                                                                    |
+| You should spend approximately 1 hour completing this task.                                |                                                                                                                                                                                                                                                                                                                                                                                                                                                   |                    |                                                                                                                    |
+| Resources permitted:<br>The maximum of four sides of A4 written or printed research notes. |                                                                                                                                                                                                                                                                                                                                                                                                                                                   |                    |                                                                                                                    |
 
-{13}------------------------------------------------
+{14}------------------------------------------------
 
 # Select or produce sources
 
@@ -348,27 +325,17 @@ Examples of sources could include the following:
 
 You are permitted to take a maximum of **six** written or printed sources you have selected or produced to use in your assessment. These sources **must** be submitted alongside the response to the task.
 
-|   | Task                                                                                                    | Evidence                                             | Controls                        |
-|---|---------------------------------------------------------------------------------------------------------|------------------------------------------------------|---------------------------------|
-| 3 | Based on the statement provided, explain why you have selected or produced | A maximum of six written or printed sources | Supervision: Indirect |
-|  | each source. In your answer, you could refer to one or more of the | A written response | Guidance: Not permitted |
-|  | following: |  | Resources: Permitted |
-|  | <ul><li>to provide clear information, supported by reasoning and/or evidence</li></ul> |  | Collaboration: Not permitted |
-|  | <ul><li>to prove the reliability of another source used</li></ul> |  |  |
-|  | <ul><li>to provide a different perspective leading to greater understanding</li></ul> |  |  |
-|  | <ul><li>to help diminish any bias</li></ul> |  |  |
-|  | <ul><li>to provide a different source type, leading to greater understanding</li></ul> |  |  |
-|  | <ul><li>provide evidence of lived experience.</li></ul> |  |  |
-|  | [10 marks] |  |  |
-|  | You should spend approximately 1 hour completing this task |  |  |
-|  | Resources permitted: A maximum of six written/printed sources that you have selected or produced. |  |  |
+|                                                                                                      | Task                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Evidence                                                          | Controls                                                                                                             |
+|------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| 3                                                                                                    | Based on the statement provided, explain why you have selected or produced each source. In your answer, you could refer to one or more of the following:<br>• to provide clear information, supported by reasoning and/or evidence<br>• to prove the reliability of another source used<br>• to provide a different perspective leading to greater understanding<br>• to help diminish any bias<br>• to provide a different source type, leading to greater understanding<br>• provide evidence of lived experience.<br>[10 marks] | A maximum of six written or printed sources<br>A written response | Supervision:<br>Indirect<br>Guidance:<br>Not permitted<br>Resources:<br>Permitted<br>Collaboration:<br>Not permitted |
+| You should spend approximately 1 hour completing this task                                           |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |                                                                   |                                                                                                                      |
+| Resources permitted:<br>A maximum of six written/printed sources that you have selected or produced. |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |                                                                   |                                                                                                                      |
 
-{14}------------------------------------------------
+{15}------------------------------------------------
 
-| Task |                                                                                                                                                                                                               | Evidence           | Controls                                                                        |
-|------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|---------------------------------------------------------------------------------|
-| 4 | Analyse and evaluate the statement provided, using the sources from Task 3. You must refer to religious and non-religious beliefs, teachings, practices and perspectives in your answer. | A written response | Supervision: Direct Guidance: Not permitted Resources: Permitted |
-|  | [20 marks] |  | Collaboration: Not permitted |
+| Task                                                                                                                                                                                                                             | Evidence           | Controls                                                                                                           |
+|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|--------------------------------------------------------------------------------------------------------------------|
+| 4<br>Analyse and evaluate the<br>statement provided, using<br>the sources from Task 3.<br>You must refer to religious<br>and non-religious beliefs,<br>teachings, practices and<br>perspectives in your<br>answer.<br>[20 marks] | A written response | Supervision:<br>Direct<br>Guidance:<br>Not permitted<br>Resources:<br>Permitted<br>Collaboration:<br>Not permitted |
 
 You should spend approximately **2 hours** completing this task.
 
@@ -378,12 +345,9 @@ You should spend approximately **2 hours** completing this task.
 - The maximum of six written/printed sources that you have selected or produced for Task 3.
 - Your answers to Tasks 1, 2 and 3.
 
-| Task |                                                                                       | Evidence           | Controls                        |
-|------|---------------------------------------------------------------------------------------|--------------------|---------------------------------|
-| 5 | Justify your own values and beliefs in relation to the statement provided. (You | A written response | Supervision: Indirect |
-|  | could reflect on your findings from previous |  | Guidance: Not permitted |
-|  | tasks). |  | Resources: Permitted |
-|  | [5 marks] |  | Collaboration: Not permitted |
+| Task | Evidence                                                                                                                                          | Controls           |                                                                                                                      |
+|------|---------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|----------------------------------------------------------------------------------------------------------------------|
+| 5    | Justify your own values and beliefs in relation to the statement provided. (You could reflect on your findings from previous tasks).<br>[5 marks] | A written response | Supervision:<br>Indirect<br>Guidance:<br>Not permitted<br>Resources:<br>Permitted<br>Collaboration:<br>Not permitted |
 
 You should spend approximately **30 minutes** completing this task.
 
@@ -393,13 +357,13 @@ Your answers to Tasks 1, 2, 3 and 4.
 
 #### **End of tasks**
 
-{15}------------------------------------------------
+{16}------------------------------------------------
 
 # Information for candidates
 
 The following information has been taken from the [JCQ Information for candidates](https://www.jcq.org.uk/wp-content/uploads/2021/08/IFC-NE_Assessments_2021_v4.pdf) – non[examination assessments](https://www.jcq.org.uk/wp-content/uploads/2021/08/IFC-NE_Assessments_2021_v4.pdf) and the [JCQ Artificial Intelligence \(AI\) Use in Assessments:](https://www.jcq.org.uk/exams-office/malpractice/artificial-intelligence/)  [Protecting the Integrity of Qualifications.](https://www.jcq.org.uk/exams-office/malpractice/artificial-intelligence/) This tells you about things that you **must** and **must not** do when you are completing your assessment. If there is anything that you do not understand, you **must** ask your teacher.
 
-## **Preparing your work**
+### Preparing your work
 
 - When you submit your work and sign your candidate declaration form, you need to ensure that your final product reflects your own independent work and isn't copied or paraphrased from another source such as an AI tool.
 - If you receive help and guidance from someone other than your teacher, you **must** tell your teacher who will then record the nature of the assistance given to you.
@@ -408,7 +372,7 @@ The following information has been taken from the [JCQ Information for candidate
 - **Do not** be tempted to use pre-prepared online solutions (such as those produced by AI tools and chatbots) – this is cheating. Electronic tools used by WJEC can detect this sort of copying.
 - You **must not** write inappropriate, offensive or obscene material.
 
-# **Plagiarism**
+### Plagiarism
 
 Plagiarism involves taking someone else's words, thoughts or ideas and trying to pass them off as your own. **It is a form of cheating which is taken very seriously.** Don't think you won't be caught; there are many ways to detect plagiarism:
 
@@ -416,7 +380,7 @@ Plagiarism involves taking someone else's words, thoughts or ideas and trying to
 - Markers are highly experienced subject specialists they may have read the source you are using, or even marked the work you have copied from!
 - Internet search engines and specialised computer software can be used to match phrases or pieces of text with original sources and to detect changes in the grammar and style of writing or punctuation.
 
-#### **Penalties for breaking the regulations**
+### Penalties for breaking the regulations
 
 If it is discovered that you have broken the regulations, one of the following penalties will be applied:
 
@@ -429,7 +393,7 @@ WJEC will decide which penalty is appropriate.
 
 **Remember – it's your qualification so it needs to be your own work.**
 
-{16}------------------------------------------------
+{17}------------------------------------------------
 
 # Mark scheme
 
@@ -437,7 +401,7 @@ The following mark scheme will be used to assess your work.
 
 **0 marks will be awarded if there is no evidence or submitted work is not worthy of credit.**
 
-#### **Task 1**
+### Task 1
 
 Based on your research:
 
@@ -446,23 +410,23 @@ Based on your research:
 
 [15 marks]
 
-| Band | AO2                                                                                                                                                                                                                                                                                                                                                                                                                                                          |  |
-|------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--|
-| 5 | 13-15 marks <ul><li>an excellent summary in which knowledge and understanding of the relevant beliefs, teachings, practices and perspectives of the two religions studied has been consistently applied in the context of the statement provided</li><li>an excellent summary in which knowledge and understanding of the relevant non-religious beliefs and perspectives has been consistently applied in the context of the statement provided</li></ul> |  |
-| 4 | 10-12 marks <ul><li>a good summary in which knowledge and understanding of the relevant beliefs, teachings, practices and perspectives of the two religions studied has been applied in the context of the statement provided</li><li>a good summary in which knowledge and understanding of the relevant non-religious beliefs and perspectives has been applied in the context of the statement provided</li></ul> |  |
-| 3 | 7-9 marks <ul><li>a satisfactory summary in which knowledge and understanding of the relevant beliefs, teachings, practices and perspectives of the two religions has mostly been applied in the context of the statement provided</li><li>a satisfactory summary in which knowledge and understanding of the relevant non-religious beliefs and perspectives has mostly been applied in the context of the statement provided</li></ul> |  |
-
-{17}------------------------------------------------
-
-| 2 | 4-6 marks <ul><li>a basic summary of the relevant beliefs, teachings, practices and perspectives of the two religions studied; knowledge and understanding has been superficially applied in the context of the statement provided</li><li>a basic summary of the relevant non-religious beliefs and perspectives; knowledge and understanding has been superficially applied in the context of the statement provided</li></ul> |
-|---|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1 | 1-3 marks <ul><li>a limited summary of the relevant beliefs, teachings, practices and perspectives of the two religions studied with minimal application of knowledge and understanding in the context of the statement provided</li><li>a limited summary of the relevant non-religious beliefs and perspectives with minimal application of knowledge and understanding in the context of the statement provided</li></ul> |
-| 0 | 0 marks No response attempted or nothing worthy of credit. |
-|  | Total: /15 |
+| Band | AO2                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 5    | 13-15 marks<br>an excellent summary in which knowledge and understanding of the relevant beliefs, teachings, practices and perspectives of the two religions studied has been consistently applied in the context of the statement providedan excellent summary in which knowledge and understanding of the relevant non-religious beliefs and perspectives has been consistently applied in the context of the statement provided |
+| 4    | 10-12 marks<br>a good summary in which knowledge and understanding of the relevant beliefs, teachings, practices and perspectives of the two religions studied has been applied in the context of the statement provideda good summary in which knowledge and understanding of the relevant non-religious beliefs and perspectives has been applied in the context of the statement provided                                       |
+| 3    | 7-9 marks<br>a satisfactory summary in which knowledge and understanding of the relevant beliefs, teachings, practices and perspectives of the two religions has mostly been applied in the context of the statement provideda satisfactory summary in which knowledge and understanding of the relevant non-religious beliefs and perspectives has mostly been applied in the context of the statement provided                   |
 
 {18}------------------------------------------------
 
-### **Task 2**
+| 2 | 4-6 marks | a basic summary of the relevant beliefs, teachings, practices and perspectives of the two religions studied; knowledge and understanding has been superficially applied in the context of the statement provideda basic summary of the relevant non-religious beliefs and perspectives; knowledge and understanding has been superficially applied in the context of the statement provided |
+|---|-----------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1 | 1-3 marks | a limited summary of the relevant beliefs, teachings, practices and perspectives of the two religions studied with minimal application of knowledge and understanding in the context of the statement provideda limited summary of the relevant non-religious beliefs and perspectives with minimal application of knowledge and understanding in the context of the statement provided     |
+| 0 | 0 marks   | No response attempted or nothing worthy of credit.                                                                                                                                                                                                                                                                                                                                          |
+|   |           | Total: /15                                                                                                                                                                                                                                                                                                                                                                                  |
+
+{19}------------------------------------------------
+
+### Task 2
 
 Based on your research:
 
@@ -475,23 +439,23 @@ Examine the similarities and differences in beliefs, teachings, practices and pe
 
 [10 marks]
 
-| Band | AO3                                                                                                                                                                                                                                                                                                                          |
-|------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 5 | 9-10 marks <ul><li>an excellent examination of any similarities and differences between the beliefs, teachings, practices and perspectives of:</li><li>the two religions studied</li><li>each religion studied and non-religious perspectives</li><li>the research is interpreted convincingly and accurately</li></ul> |
-| 4 | 7-8 marks <ul><li>a good examination of any similarities and differences between the beliefs, teachings, practices and perspectives of:</li><li>the two religions studied</li><li>each religion studied and non-religious perspectives</li><li>the research is interpreted clearly and mainly accurately</li></ul> |
-| 3 | 5-6 marks <ul><li>a satisfactory examination of any similarities and differences between the beliefs, teachings, practices and perspectives of:</li><li>the two religions studied</li><li>each religion studied and non-religious perspectives</li><li>the research is interpreted with some clarity and some accuracy</li></ul> |
-
-{19}------------------------------------------------
-
-| 2 | 3-4 marks <ul><li>a basic examination of any similarities and differences between the beliefs, teachings, practices and perspectives of:</li><li>the two religions studied</li><li>each religion studied and non-religious perspectives</li><li>the research is interpreted superficially</li></ul> |
-|---|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 1 | 1-2 marks <ul><li>a limited examination of any similarities and differences between the beliefs, teachings, practices and perspectives of:</li><li>the two religions studied</li><li>each religion studied and non-religious perspectives</li><li>there is minimal interpretation of the research</li></ul> |
-|  | 0 marks No response attempted or nothing worthy of credit. |
-|  | Total: /10 |
+| Band | AO3                                                                                                                                                                                                                                                                                    |
+|------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 5    | 9-10 marks<br>an excellent examination of any similarities and differences between the beliefs, teachings, practices and perspectives of:the two religions studiedeach religion studied and non-religious perspectivesthe research is interpreted convincingly and accurately          |
+| 4    | 7-8 marks<br>a good examination of any similarities and differences between the beliefs, teachings, practices and perspectives of:the two religions studiedeach religion studied and non-religious perspectivesthe research is interpreted clearly and mainly accurately               |
+| 3    | 5-6 marks<br>a satisfactory examination of any similarities and differences between the beliefs, teachings, practices and perspectives of:the two religions studiedeach religion studied and non-religious perspectivesthe research is interpreted with some clarity and some accuracy |
 
 {20}------------------------------------------------
 
-### **Task 3**
+| 2 | 3-4 marks<br>a basic examination of any similarities and differences between the beliefs, teachings, practices and perspectives of:the two religions studiedeach religion studied and non-religious perspectivesthe research is interpreted superficially         |
+|---|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1 | 1-2 marks<br>a limited examination of any similarities and differences between the beliefs, teachings, practices and perspectives of:the two religions studiedeach religion studied and non-religious perspectivesthere is minimal interpretation of the research |
+|   | 0 marks<br>No response attempted or nothing worthy of credit.                                                                                                                                                                                                     |
+|   | Total: /10                                                                                                                                                                                                                                                        |
+
+{21}------------------------------------------------
+
+### Task 3
 
 Based on the statement provided, explain why you have selected or produced each source. In your answer, you could refer to one or more of the following:
 
@@ -504,17 +468,17 @@ Based on the statement provided, explain why you have selected or produced each 
 
 [10 marks]
 
-| Band | AO4                                                                                                                                                    |
-|------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 5 | 9-10 marks <ul><li>a very clear response which includes a precise and convincing rationale for the selection or production of the sources</li></ul> |
-| 4 | 7-8 marks <ul><li>a clear response which includes a mostly convincing rationale for the selection or production of the sources</li></ul> |
-| 3 | 5-6 marks <ul><li>a mostly clear response which includes a rationale for the selection or production of the sources that is convincing in places</li></ul> |
-| 2 | 3-4 marks <ul><li>the response includes a basic rationale for the selection or production of the sources</li></ul> |
-| 1 | 1-2 marks <ul><li>the response includes a limited attempt at providing a rationale for the selection or production of sources</li></ul> |
-|  | 0 marks No response attempted or nothing worthy of credit. |
-|  | Total: /10 |
+| Band | AO4                                                                                                                                           |
+|------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| 5    | 9-10 marks<br>• a very clear response which includes a precise and convincing rationale for the selection or production of the sources        |
+| 4    | 7-8 marks<br>• a clear response which includes a mostly convincing rationale for the selection or production of the sources                   |
+| 3    | 5-6 marks<br>• a mostly clear response which includes a rationale for the selection or production of the sources that is convincing in places |
+| 2    | 3-4 marks<br>• the response includes a basic rationale for the selection or production of the sources                                         |
+| 1    | 1-2 marks<br>• the response includes a limited attempt at providing a rationale for the selection or production of sources                    |
+|      | 0 marks<br>No response attempted or nothing worthy of credit.                                                                                 |
+|      | Total: /10                                                                                                                                    |
 
-{21}------------------------------------------------
+{22}------------------------------------------------
 
 **Task 4**
 
@@ -522,74 +486,75 @@ Analyse and evaluate the statement provided, using the sources from Task 3. You 
 
 [20 marks]
 
-| Band | AO3                                                                                                                                                                                                                                                                                                                                                                                    |
-|------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 5 | 17-20 marks <ul><li>an excellent analysis and evaluation of the statement provided which comprehensively and effectively uses the sources from Task 3</li><li>the response comprehensively and effectively explores relevant religious and non-religious beliefs, teachings, practices and perspectives</li><li>the response reaches a well-argued and highly coherent judgement</li></ul> |
-| 4 | 13-16 marks <ul><li>a good analysis and evaluation of the statement provided which comprehensively uses the sources from Task 3</li><li>the response comprehensively explores relevant religious and non-religious beliefs, teachings, practices and perspectives</li><li>the response reaches an argued and coherent judgement</li></ul> |
-| 3 | 9-12 marks <ul><li>a satisfactory analysis and evaluation of the statement provided which makes adequate use of the sources from Task 3</li><li>the response adequately explores relevant religious and non-religious beliefs, teachings, practices and perspectives the response</li><li>the response reaches a partially argued and mostly coherent judgment</li></ul> |
-| 2 | 5-8 marks <ul><li>a basic analysis and evaluation of the statement provided which makes superficial use of the sources from Task 3</li><li>the response superficially explores relevant religious and non-religious beliefs, teachings, practices and perspectives</li><li>the response reaches a superficially argued and somewhat coherent judgment</li></ul> |
-
-{22}------------------------------------------------
-
-| 1 | 1-4 marks <ul><li>a limited analysis and evaluation of the statement provided which makes little use of the sources from Task 3</li><li>the response includes minimal exploration of relevant religious and non-religious beliefs, teachings, practices and perspectives</li><li>the response reaches a loosely argued and emerging judgment</li></ul> |
-|---|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 0 | 0 marks No response attempted or nothing worthy of credit. |
-|  | Total: /20 |
+| Band | AO3                                                                                                                                                                                                                                                                                                                                                                     |
+|------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 5    | 17-20 marks<br>• an excellent analysis and evaluation of the statement provided which comprehensively and effectively uses the sources from Task 3<br>• the response comprehensively and effectively explores relevant religious and non-religious beliefs, teachings, practices and perspectives<br>• the response reaches a well-argued and highly coherent judgement |
+| 4    | 13-16 marks<br>• a good analysis and evaluation of the statement provided which comprehensively uses the sources from Task 3<br>• the response comprehensively explores relevant religious and non-religious beliefs, teachings, practices and perspectives<br>• the response reaches an argued and coherent judgement                                                  |
+| 3    | 9-12 marks<br>• a satisfactory analysis and evaluation of the statement provided which makes adequate use of the sources from Task 3<br>• the response adequately explores relevant religious and non-religious beliefs, teachings, practices and perspectives the response<br>• the response reaches a partially argued and mostly coherent judgment                   |
+| 2    | 5-8 marks<br>• a basic analysis and evaluation of the statement provided which makes superficial use of the sources from Task 3<br>• the response superficially explores relevant religious and non-religious beliefs, teachings, practices and perspectives<br>• the response reaches a superficially argued and somewhat coherent judgment                            |
 
 {23}------------------------------------------------
+
+| 1 | 1-4 marks<br>a limited analysis and evaluation of the statement provided which makes little use of the sources from Task 3the response includes minimal exploration of relevant religious and non-religious beliefs, teachings, practices and perspectivesthe response reaches a loosely argued and emerging judgment |
+|---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0 | 0 marks<br>No response attempted or nothing worthy of credit.                                                                                                                                                                                                                                                         |
+|   | Total: /20                                                                                                                                                                                                                                                                                                            |
+
+{24}------------------------------------------------
 
 **Task 5** Justify your own values and beliefs in relation to the statement provided. (You could reflect on your findings from previous tasks).
 
 [5 marks]
 
-| Band | AO4                                                                                                                           |        |    |
-|------|-------------------------------------------------------------------------------------------------------------------------------|--------|----|
-| 3 | 5 marks <ul><li>an excellent justification of why these values and beliefs are held in relation to the statement provided</li></ul> |  |  |
-| 2 | 3-4 marks <ul><li>a good justification of why these values and beliefs are held in relation to the statement provided</li></ul> |  |  |
-| 1 | 1-2 marks <ul><li>a satisfactory justification of why these values and beliefs are held in relation to the statement provided</li></ul> |  |  |
-| 0 | 0 marks No response attempted or nothing worthy of credit. |  |  |
-|      |                                                                                                                               | Total: | /5 |
-
-{24}------------------------------------------------
-
-# Mapping of tasks to unit content and assessment objectives
-
-|       | Unit Content |       |       |       | T - 4 - 1 | 400            | 4.00         | 404          |              |
-|-------|--------------|-------|-------|-------|-----------|----------------|--------------|--------------|--------------|
-| Tasks | 2.1.1 | 2.1.2 | 2.2.1 | 2.2.2 | 2.2.3 | Total Marks | AO2 Marks | AO3 Marks | AO4 Marks |
-| 1     | Х            |       |       |       | S         | 15             | 15           |              |              |
-| 2     |              | х     |       |       | 0,0       | 10             |              |              | 10           |
-| 3     |              |       | х     |       | 70        | 10             |              | 10           |              |
-| 4     |              |       |       | х     |           | 20             |              | 20           |              |
-| 5     |              |       |       |       | х         | 5              |              |              | 5            |
-| Total |              |       |       | 0,    |           | 60             | 15           | 30           | 15           |
+| Band | AO4                                                                                                                        |
+|------|----------------------------------------------------------------------------------------------------------------------------|
+| 3    | 5 marks<br>• an excellent justification of why these values and beliefs are held in relation to the statement provided     |
+| 2    | 3-4 marks<br>• a good justification of why these values and beliefs are held in relation to the statement provided         |
+| 1    | 1-2 marks<br>• a satisfactory justification of why these values and beliefs are held in relation to the statement provided |
+| 0    | 0 marks<br>No response attempted or nothing worthy of credit.                                                              |
+|      | Total: /5                                                                                                                  |
 
 {25}------------------------------------------------
 
+# Mapping of tasks to unit content and assessment objectives
+
+| Tasks | Unit Content |       |       |       |       | Total<br>Marks | AO2<br>Marks | AO3<br>Marks | AO4<br>Marks |
+|-------|--------------|-------|-------|-------|-------|----------------|--------------|--------------|--------------|
+|       | 2.1.1        | 2.1.2 | 2.2.1 | 2.2.2 | 2.2.3 |                |              |              |              |
+| 1     | x            |       |       |       |       | 15             | 15           |              |              |
+| 2     |              | x     |       |       |       | 10             |              |              | 10           |
+| 3     |              |       | x     |       |       | 10             |              | 10           |              |
+| 4     |              |       |       | x     |       | 20             |              | 20           |              |
+| 5     |              |       |       |       | x     | 5              |              |              | 5            |
+| Total |              |       |       |       |       | 60             | 15           | 30           | 15           |
+
+{26}------------------------------------------------
+
 # Candidate Declaration Form
 
-## **You must complete Part A and Part B of this form**
+### You must complete Part A and Part B of this form
 
-| Centre No:       | Centre Name:       |  |
-|------------------|--------------------|--|
-| Candidate No: | Candidate Name: |  |
-| Unit Title:      |                    |  |
-|                  |                    |  |
+| Centre No:       |  |  |  |  |  |  | Centre Name:       |  |
+|------------------|--|--|--|--|--|--|--------------------|--|
+| Candidate<br>No: |  |  |  |  |  |  | Candidate<br>Name: |  |
+| Unit Title:      |  |  |  |  |  |  |                    |  |
 
-#### **Part A: Candidate Declaration**
+### Part A: Candidate Declaration
 
-| References: Give details of the exact source of any non-original material used in the assignment. | List of software packages/AI tools/chatbots1 : Give brief details of how these have been used in the assignment. |
-|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-|                                                                                                      |                                                                                                                           |
+| References: Give details of the exact source of<br>any non-original material used in the assignment.                               |  |
+|------------------------------------------------------------------------------------------------------------------------------------|--|
+| List of software packages/AI tools/chatbots <sup>1</sup> :<br>Give brief details of how these have been used in<br>the assignment. |  |
 
-#### **Authentication Declaration**
+### Authentication Declaration
 
 I declare that my work was completed independently and without any assistance beyond that which was permitted. All work is my own, except for any non-original material clearly credited above. This work has not been submitted for any other qualification. I have clearly referenced any sources and any Artificial Intelligence tools used in the work. I understand that false declaration is a form of malpractice.
 
-| Candidate Signature: | Date: |
-|----------------------|-------|
-|                      |       |
+| Candidate Signature: |  |
+|----------------------|--|
+| Date:                |  |
 
 <span id="page-25-0"></span><sup>1</sup> Where you have used AI tools as a source of information, you must show the name of the AI source used and the date the content was generated. For example: ChatGPT 3.5 [\(https://openai.com/blog/chatgpt/\)](https://openai.com/blog/chatgpt/), 25/01/2023. You must, retain a copy of the question(s) and computer-generated content for reference and authentication purposes, in a noneditable format (such as a screenshot) and provide a brief explanation of how it has been used. This must be submitted with your work, so your teacher/assessor is able to review the work, the AI-generated content and how it has been used.
 
-{26}------------------------------------------------
+{27}------------------------------------------------
+
+Sample not for use with live assessments
