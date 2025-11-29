@@ -1459,9 +1459,380 @@
       "unit-3---upskilling.md": {
         "completed_batches": [
           0,
-          1
+          1,
+          2,
+          3,
+          4
         ],
         "total_issues": 15
+      },
+      "wjec-gcse-food-and-nutrition-specification.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "total_issues": 36
+      }
+    },
+    "French": {
+      "gcse-french---delivery-guide.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "total_issues": 21
+      },
+      "gcse-french---guidance-for-teaching-unit-1.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "total_issues": 32
+      },
+      "gcse-french---guidance-for-teaching-unit-2.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "total_issues": 30
+      },
+      "gcse-french---guidance-for-teaching-unit-3.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "total_issues": 23
+      },
+      "gcse-french---guidance-for-teaching-unit-4.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "total_issues": 29
+      },
+      "gcse-french---option-evening-flyer.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 1
+      },
+      "gcse-french---unit-1-oracy.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "total_issues": 70
+      },
+      "gcse-french---unit-2-reading-and-writing.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "total_issues": 30
+      },
+      "gcse-french---unit-3-listening.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "total_issues": 34
+      },
+      "gcse-french---unit-4-reading-and-writing.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "total_issues": 34
+      },
+      "gcse-french--faqs.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 3
+      },
+      "overview-of-consultation-findings.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "total_issues": 22
+      },
+      "wjec-gcse-french-specification.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "total_issues": 95
+      }
+    },
+    "Geography": {
+      "cardiff-metropolitan-university-teacher-survey.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 1
+      },
+      "cylchlythyr-ionawr-2025.md": {
+        "completed_batches": [
+          0,
+          1
+        ],
+        "total_issues": 4
+      },
+      "fieldwork-opportunities-at-gwersyll-yr-urdd-pentre-ifan.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 1
+      },
+      "fsc-teacher-open-days-new-gcse-wales-geography-curriculum.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 1
+      },
+      "gcse-geography---delivery-guide.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "total_issues": 19
+      },
+      "gcse-geography---faqs.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 3
+      },
+      "gcse-geography---guidance-for-teaching-unit-1.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26
+        ],
+        "total_issues": 81
+      },
+      "gcse-geography---guidance-for-teaching-unit-2.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "total_issues": 55
+      },
+      "gcse-geography---guidance-for-teaching-unit-3.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "total_issues": 64
+      },
+      "gcse-geography---guidance-for-teaching-unit-4.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "total_issues": 33
       }
     }
   }
