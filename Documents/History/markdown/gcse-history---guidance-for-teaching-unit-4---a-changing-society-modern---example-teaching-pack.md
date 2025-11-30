@@ -122,6 +122,8 @@ After the [December 1918] election was safely over, Lloyd George toned down his 
 
 **Topic** Britain, the First World War and efforts for peace
 
+Item 7
+
 **Item 7** John Maynard Keynes, an economist and chief representative of HM Treasury at the Paris Peace Settlement, in his book *The Economic Consequences of the Peace* (December 1919). Keynes was a strong critic of the settlement and, in June 1919, had resigned his position in protest at the agreement.
 
 The Treaty includes no provisions for the economic rehabilitation of Europe – nothing to make the defeated Central Empires into good neighbours, nothing to stabilize the new States of Europe, nothing to reclaim Russia; nor does it promote in any way a compact of economic solidarity amongst the Allies themselves; no arrangement was reached at Paris for restoring the disordered finances of France and Italy, or to adjust the systems of the Old World and the New.
@@ -335,21 +337,23 @@ Mervyn Griffith-Jones's question in the Lady Chatterley's Lover trial is the mos
 
 **Theme** Sex, sexuality and gender **Topic** A permissive society
 
+Item 27
+
 **Item 27** The Hansard report of the debate on the National Health Service (Family Planning) Act, 1967 (23 October 1967). Edwin Brooks was the MP for the Bebington constituency between 1966 and 1970; Kenneth Robinson was the Minister of Health between 1964 and 1968.
 
-#### **Mr Brooks**
+## **Mr Brooks**
 
 asked the Minister of Health what action he has taken in the light of the National Health Service (Family Planning) Act, 1967.
 
-#### **Mr Robinson**
+## **Mr Robinson**
 
 I wrote to all local authorities in July urging them to review their family planning facilities and to make the widest possible use of their extended powers under the new Act. I have also called for reports by 31 March 1968, on action taken or proposed.
 
-# **Mr Brooks**
+## **Mr Brooks**
 
 I congratulate my right hon. Friend upon the prompt action he has taken and welcome, in particular, the stress upon the domiciliary service. Would he care to comment upon the fears which have been expressed recently about possible legal difficulties arising from giving help to the young unmarried?
 
-#### **Mr Robinson**
+## **Mr Robinson**
 
 I do not know whether my hon. Friend is referring to some speculation about the possibility of giving help to girls under 16. In that case, I am assured that it would be only in the most exceptional circumstances that a doctor would be prepared to see a girl under 16 at a family planning clinic, even with parental consent. Perhaps it would not be wise to exclude these girls completely from receiving advice. I am told that there would be no legal difficulties of the kind which have been envisaged.
 
@@ -363,13 +367,27 @@ Writing in 1966, Quant was already famous world-wide as the leader of the revolu
 
 {17}------------------------------------------------
 
+# Theme
+
 **Theme** Religion
 
+# Tonic
+
+Religion
+
+A mo
+
 **Topic** A movement in decline?
+
+Item 29
 
 **Item 29** The Bala Pilgrimage, June 1952. Over 20,000 Catholic pilgrims from across Wales, England and Ireland attended the pilgrimage to commemorate fifteenyear-old Mary Jones, who in 1800, after saving money for 6 years, walked 26 miles from Llanfihangel-y-Pennant to Bala to buy a Bible.
 
 ![](_page_16_Picture_7.jpeg)
+
+# Theme
+
+# Topic
 
 **Theme** Religion
 
@@ -384,6 +402,8 @@ This book is about the death of Christian Britain – the demise of the nation's
 **Theme** Religion **Topic** A movement in decline?
 
 **Item 31** A graph entitled 'Historical patterns of church attendance' on the website of Christian Research (2018). The graph shows the pattern for Anglican and Roman Catholic church attendance in the UK across the twentieth century
+
+(between 1901 and 2007).
 
 ![](_page_17_Figure_4.jpeg)
 
@@ -403,13 +423,13 @@ One major difference between scholars is those who see religious change being dr
 
 [The Year Of Punk Documentary London Weekend Television 01/01/78](https://www.youtube.com/watch?v=4jal1D_7NaQ&t=2336s) Extract from 38:54
 
-#### **JSP (voiceover):**
+## **JSP (voiceover):**
 
 For groups like Slaughter and the Dogs the last 12 months have been transition from minority cult to commercial success. At the same time the music has become more sophisticated. At the other end of the scale, punk has given to many young people with no ambition to climb the pop charts the chance to play in a band. A year ago, the punks made their own rules. Now that punk and the music industry have come together, the rules have changed.
 
 Some groups haven't been able to play by these new rules.
 
-#### **JSP (to Siouxsie Sioux of Siouxsie and the Banshees):**
+## **JSP (to Siouxsie Sioux of Siouxsie and the Banshees):**
 
 When you were at 100 Club, you told me you weren't nervous at all. You just got up and sang 'Twist and Shout' and the Lord's Prayer and you just got up and did it, and now you're nervous.
 
@@ -457,19 +477,19 @@ Come the 2020s and punk still stains the cultural fabric. Nostalgia, that most u
 
 {21}------------------------------------------------
 
-# **Acknowledgements:**
+## **Acknowledgements:**
 
 | 1.  | From DeMarco, N and Radway R. 1997. The Twentieth Century 1900–1995: A<br>World Transformed London: Hodder & Stoughton, pp.134–5                                           |
 |-----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 2.  | Great speeches of the 20th century: Emmeline Pankhurst's Freedom or death  <br>Emmeline Pankhurst   The Guardian<br>[Accessed 21.10.2024]                                  |
-| 3.  | From Murphy, D et al.<br>2003. Britain 1783–1918. London: Collins Educational, p.436                                                                                       |
+| 3.  | From Murphy, D et al. 2003. Britain 1783–1918. London: Collins Educational, p.436                                                                                          |
 | 4.  | https://c7.alamy.com/comp/2D9TBYG/the-cat-and-mouse-act-poster-replica<br>memorabilia-relating-to-the-suffragette-movement-in-britain-2D9TBYG.jpg<br>[Accessed 21.10.2024] |
-| 5.  | BBC -<br>History -<br>World Wars: The Origins of World War One<br>[Accessed 21.10.2024]                                                                                    |
+| 5.  | BBC - History - World Wars: The Origins of World War One<br>[Accessed 21.10.2024]                                                                                          |
 | 6.  | Lowe, N. 2009. Modern British History (Fourth Edition). Basingstoke: Palgrave<br>Macmillan p.452                                                                           |
-| 7.  | The Economic Consequences of the Peace -<br>Econlib<br>[Accessed 21.10.2024] Ch. 6                                                                                         |
-| 8.  | The women's<br>peace petition full text   Peoples Collection Wales<br>[Accessed 21.10.2024]                                                                                |
+| 7.  | The Economic Consequences of the Peace - Econlib<br>[Accessed 21.10.2024] Ch. 6                                                                                            |
+| 8.  | The women's peace petition full text   Peoples Collection Wales<br>[Accessed 21.10.2024]                                                                                   |
 | 9.  | Evans, RP and May S. 2017. The Elizabethan Age 1558–1603 & Depression, War<br>and Recovery 1930–1951. London: Hodder Education, p.119                                      |
-| 10. | British industry in the 1920s -<br>The coming of the Depression -<br>WJEC -<br>GCSE<br>History Revision -<br>WJEC -<br>BBC Bitesize<br>[Accessed 21.10.2024]               |
+| 10. | British industry in the 1920s - The coming of the Depression - WJEC - GCSE<br>History Revision - WJEC - BBC Bitesize<br>[Accessed 21.10.2024]                              |
 | 11. | History of Brynmawr, Wales<br>[Accessed 21.10.2024]                                                                                                                        |
 | 12. | Research datasets   Bank of England<br>[Accessed 22.10.2024]                                                                                                               |
 | 13. | Evans, RP and Quinn, R. 2018. My Revision Notes: WJEC GCSE History. London:<br>Hodder Education, p. 51                                                                     |
@@ -481,27 +501,24 @@ Come the 2020s and punk still stains the cultural fabric. Nostalgia, that most u
 | 19. | Evans, RP and May S. 2017. The Elizabethan Age 1558–1603 & Depression, War<br>and Recovery 1930–1951. London: Hodder Education, p.142                                      |
 | 20. | ATL: Unpublished Collections<br>[Accessed 23.10.2024]                                                                                                                      |
 | 21. | Bygott, DW. 1992. Black and British.<br>Oxford: Oxford University Press, p.51                                                                                              |
-| 22. | What is the Windrush Generation? -<br>BBC Newsround                                                                                                                        |
-| 23. | Tiger Bay, 1950's -<br>Film 96861 -<br>YouTube                                                                                                                             |
+| 22. | What is the Windrush Generation? - BBC Newsround                                                                                                                           |
+| 23. | Tiger Bay, 1950's - Film 96861 - YouTube                                                                                                                                   |
 | 24. | Shameful Episode Aka Racial Riots (1958)                                                                                                                                   |
 | 25. | Lady Chatterley's Lover and the Attic Orators: The Social Composition of the<br>Athenian Jury on JSTOR: [Accessed 24.10.2024]                                              |
-|     |                                                                                                                                                                            |
+| 26. | The Lady Chatterley's Lover Trial and the Infamous Question That Laid Bare the Hypocrisy of British Obscenity Law ( CrimeReads [Accessed 24.10.2024]                       |
+| 27. | National Health Service (Family Planning) Act, 1967 - Hansard - UK Parliament [Accessed 24.10.2024]                                                                        |
+| 28. | How Mary Quant Changed Fashion Forever   British Vogue [Accessed 24.10.2024]                                                                                               |
+| 29. | LOOK: Nostalgic pictures show religion in North Wales through the decades - North Wales Live [Accessed 29.10.2024]                                                         |
+| 30. | Brown, C. 2001. The Death of Christian Britain: Understanding secularisation 1800-2000. London: Routledge, p.1                                                             |
+| 31. | Anglican UK - Archives & statistics - Christian Research [Accessed 23.10.2024]                                                                                             |
+| 32. | McLeod, H. 2007. The Religious Crisis of the 1960s. Oxford: Oxford University Press, p.13                                                                                  |
+| 33. | The Year Of Punk Documentary London Weekend Television 01/01/78 Extract from 38:54 [Accessed 21.10.2024]                                                                   |
+| 34. | BBC Wales - Music - Rock - Punk music in Wales - part one [Accessed 23.10.2024]                                                                                            |
+| 35. | Sex Pistols - Anarchy in the UK                                                                                                                                            |
+| 36. | Punk - Museum of Youth Culture [Accessed 23.10.2024]                                                                                                                       |
 
 {22}------------------------------------------------
 
-| 26. | The Lady Chatterley's Lover Trial and the Infamous Question That Laid Bare the<br>Hypocrisy of British Obscenity Law ‹ CrimeReads<br>[Accessed 24.10.2024] |
-|-----|------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 27. | National Health Service (Family Planning) Act, 1967 -<br>Hansard -<br>UK Parliament<br>[Accessed 24.10.2024]                                               |
-| 28. | How Mary Quant Changed Fashion Forever   British Vogue<br>[Accessed 24.10.2024]                                                                            |
-| 29. | LOOK: Nostalgic pictures show religion in North Wales through the decades -<br>North<br>Wales Live<br>[Accessed 29.10.2024]                                |
-| 30. | Brown, C. 2001. The Death of Christian Britain: Understanding secularisation 1800–<br>2000. London: Routledge, p.1                                         |
-| 31. | Anglican UK -<br>Archives & statistics -<br>Christian Research<br>[Accessed 23.10.2024]                                                                    |
-| 32. | McLeod,<br>H. 2007. The Religious Crisis of the 1960s. Oxford: Oxford University<br>Press, p.13                                                            |
-| 33. | The Year Of Punk Documentary London Weekend Television 01/01/78<br>Extract from<br>38:54 [Accessed 21.10.2024]                                             |
-| 34. | BBC Wales -<br>Music -<br>Rock -<br>Punk music in Wales -<br>part one<br>[Accessed 23.10.2024]                                                             |
-| 35. | Sex Pistols -<br>Anarchy in the UK                                                                                                                         |
-| 36. | Punk -<br>Museum of Youth Culture<br>[Accessed 23.10.2024]                                                                                                 |
-
-# **Copyright**
+## **Copyright**
 
 Every effort has been made to contact copyright owners where extracts are deemed beyond the scope of fair dealing, some without response. If this causes any concern to the publisher or other interested parties, then please contact us and we will act appropriately. To the best of our knowledge, all other items are being used in compliance with the Fair Use Policy; if there are omissions or inaccuracies, please inform us so that any necessary corrections can be made. [qualificationdevelopment@wjec.co.uk.](mailto:qualificationdevelopment@wjec.co.uk)
