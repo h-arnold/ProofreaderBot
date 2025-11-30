@@ -49,9 +49,9 @@ Made for Wales.
 
 # SUMMARY OF AMENDMENTS
 
-| Version | Description                                               | Page number |
-|---------|-----------------------------------------------------------|-------------|
-| 2       | Amended to,<br>awarded for the first time in Summer 2028. | 1           |
+| Version | Description                                            | Page number |
+|---------|--------------------------------------------------------|-------------|
+| 2       | Amended to, awarded for the first time in Summer 2028. | 1           |
 
 {5}------------------------------------------------
 
@@ -59,11 +59,15 @@ Made for Wales.
 
 The WJEC GCSE History has been approved by Qualifications Wales and is available to all centres in Wales. It will be awarded for the first time in Summer 2028, using grades A\* to G.
 
-#### <span id="page-4-1"></span>Aims of the Guidance for Teaching
+<span id="page-4-1"></span>
+
+## Aims of the Guidance for Teaching
 
 The principal aim of the Guidance for Teaching is to support teachers in the delivery of WJEC GCSE History and to offer guidance on the requirements of the qualification and the assessment process. The Guidance for Teaching is **not intended as a comprehensive reference**, but as support for teachers to develop stimulating and exciting courses tailored to the needs and skills of their learners.
 
-#### <span id="page-4-2"></span>Additional ways that WJEC can offer support:
+<span id="page-4-2"></span>
+
+## Additional ways that WJEC can offer support:
 
 - sample assessment materials and mark schemes
 - professional learning events
@@ -94,9 +98,11 @@ The qualification is unitised and does not contain tiering. There is no hierarch
 
 # <span id="page-6-0"></span>Assessment
 
-#### <span id="page-6-1"></span>Summary of Assessment
+<span id="page-6-1"></span>
 
-#### **Unit 4: A changing society** *Non-examination assessment***: 4 hours 15 minutes 20% of qualification**
+## Summary of Assessment
+
+## Unit 4: A changing society
 
 **80 marks**
 
@@ -123,7 +129,7 @@ The themes will be published on the WJEC portal during the first week of Septemb
 
 # <span id="page-7-0"></span>Overview of Unit 4
 
-#### **A changing society**
+## A changing society
 
 (20% of the qualification)
 
@@ -188,23 +194,23 @@ It should be possible to deliver the teaching of this unit within approximately 
 
 When making decisions on historical topics to include, centres can consider how it might be appropriate to integrate the following cross-cutting themes into this unit, in line with their school's curriculum.
 
-#### **Local, National & International Contexts**
+## Local, National & International Contexts
 
 In this unit, learners will develop their knowledge and understanding of specific historical events across an extended period on a local, national and/or international scale. Centres may decide to select historical topics that extend learners' understanding and appreciation of the identity, heritage and history of Wales and the world and to develop a sense of cynefin[.](#page-9-0) 2
 
-#### **Sustainability**
+## Sustainability
 
 Centres should consider whether there are appropriate opportunities to consider sustainability within the range of topics selected.
 
-#### **Relationships and Sexuality Education**
+## Relationships and Sexuality Education
 
 Centres can incorporate the cross-cutting theme of Relationships and Sexuality Education through the focus on themes of sex, sexuality and gender, and equality and inequality within this unit.
 
-#### **Human Rights Education and Diversity**
+## Human Rights Education and Diversity
 
 Centres can incorporate the cross-cutting theme of Human Rights Education and Diversity through the focus on themes of ethnicity, religion, equality and inequality, culture and international relations.
 
-#### **Careers and Work-Related Experiences**
+## Careers and Work-Related Experiences
 
 Centres can incorporate the cross-cutting theme of Careers and Work-Related Experiences through the focus on the theme of social and economic issues, allowing learners to learn about careers of the past.
 
@@ -233,11 +239,11 @@ WJEC defines interpretations as viewpoints on an issue of historical debate
 - interpretations may be those of, for example, politicians, journalists, documentary makers, writers, or directors
 - interpretations should offer a reflection on the event/issue in the question that demonstrates that a period of time has elapsed between the event and the formation of the interpretation.
 
-#### Adapting language
+## Adapting language
 
 Centres may need to amend, adapt or abridge an item in order to make the wording more accessible for learners. The location of the original item must be provided within the classroom and assessment pack.
 
-#### Where to find appropriate items
+## Where to find appropriate items
 
 Centres might find useful items to use in their unit on the following platforms:
 
@@ -249,7 +255,7 @@ Centres might find useful items to use in their unit on the following platforms:
 
 {12}------------------------------------------------
 
-#### Example classroom packs
+## Example classroom packs
 
 We have created three example teaching packs to demonstrate the way this unit could be designed by teachers. Each of these packs has a historical topic per theme, and four items (two sources and two interpretations) to support each topic.
 
@@ -263,7 +269,7 @@ c.1060–c.1153.
 
 **Modern** The Twentieth Century – A Social Revolution?
 
-#### Other resources
+## Other resources
 
 The Open University has a free online course titled *Contemporary Wales*. This could be a valuable resource for teachers who decide on the Modern period for this unit. This course is available in Welsh and in English: [Contemporary Wales: Introduction | OpenLearn -](https://www.open.edu/openlearn/society-politics-law/sociology/contemporary-wales/content-section-0?intro=1) Open [University](https://www.open.edu/openlearn/society-politics-law/sociology/contemporary-wales/content-section-0?intro=1) / [Y Gymru Gyfoes: Cyflwyniad | OpenLearn -](https://www.open.edu/openlearn/society-politics-law/y-gymru-gyfoes/content-section-0?intro=1) Open University
 
@@ -287,26 +293,26 @@ Stage 3: Plan the response Stage 4: Develop the response
 
 Stage 5: Critically reflect on the process they have undertaken and the conclusion they have reached.
 
-# <span id="page-12-1"></span>Assessment preparation
+<span id="page-12-1"></span>
+
+## Assessment preparation
 
 During the course, learners will have engaged with four items per theme in the classroom (two sources and two historical interpretations). From these items (36 in total), 15 will be selected by the centre as the pack of evidence for learners to use in their assessments. These will include four items for each of the two set themes, and 1 item for each of the other 7 themes.
 
 For example, if **Culture** and **Politics** are selected as the set themes one year, the 15 items selected for the assessment pack of evidence would be as follows:
 
-| Culture                                     | Equality and inequality                                         | Ethnicity                                                        |
-|---------------------------------------------|-----------------------------------------------------------------|------------------------------------------------------------------|
-| Two sources                                 | One source OR                                                   | One source OR                                                    |
-| Two interpretations                         | interpretation                                                  | interpretation                                                   |
-| International relations                     | Peace and conflict                                              | Politics                                                         |
-| One source OR                               | One source OR                                                   | Two sources                                                      |
-| interpretation                              | interpretation                                                  | Two interpretations                                              |
-| Religion<br>One source OR<br>interpretation | Sex, sexuality and<br>gender<br>One source OR<br>interpretation | Social and economic<br>issues<br>One source OR<br>interpretation |
+| Culture<br>Two sources<br>Two interpretations              | Equality and inequality<br>One source OR<br>interpretation      | Ethnicity<br>One source OR<br>interpretation                     |
+|------------------------------------------------------------|-----------------------------------------------------------------|------------------------------------------------------------------|
+| International relations<br>One source OR<br>interpretation | Peace and conflict<br>One source OR<br>interpretation           | Politics<br>Two sources<br>Two interpretations                   |
+| Religion<br>One source OR<br>interpretation                | Sex, sexuality and<br>gender<br>One source OR<br>interpretation | Social and economic<br>issues<br>One source OR<br>interpretation |
 
 Centres will be able to place these items into an assessment pack template that is available to download from the WJEC website.
 
 {14}------------------------------------------------
 
-#### <span id="page-13-0"></span>Completing the assessment
+<span id="page-13-0"></span>
+
+## Completing the assessment
 
 Learners will have 4 hours and 15 minutes to complete the assessment. There is a suggestion of how much time should be spent on each stage, which can be found along with all other assessment directions in the Sample Assessment Pack for Unit 4 (available on [WJEC GCSE History page\)](https://www.wjec.co.uk/qualifications/gcse-history-teaching-from-2025/#tab_keydocuments).
 
@@ -320,20 +326,18 @@ There is an optional blank assessment template available for centres (available 
 
 Learners should be encouraged to consider the following learning experiences and skills to further develop their understanding, appreciation and awareness of the subject content. Information in the table below provides opportunities for teachers to integrate the learning experiences into delivery.
 
-| Learning Experience                                                                                                                                          | Exemplification of Learning Experience                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| make appropriate use of digital<br>technology when completing the<br>qualification, for example through<br>accessing historical source<br>material digitally | Learners should have the opportunity to access<br>online archives from around the world. This will<br>enable<br>them<br>to access a range of source materials<br>such as letters, diaries or government documents.<br>Learners may also make use of digital technology to<br>research the topic of study and to further their<br>understanding of the historical context.<br>Learners should also be encouraged to make use of<br>a range of digital formats completing the assessment |
-|                                                                                                                                                              | itself.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| participate in educational visits in<br>person or digitally                                                                                                  | Centres should consider whether any of the topics<br>studied could be enhanced through educational<br>visits. This might be in person, should centres have<br>selected local historical topics, or digitally.                                                                                                                                                                                                                                                                          |
-|                                                                                                                                                              | For example, Cadw has a range of Virtual Visits<br>accessible from its website: Virtual Visits -<br>Cadw                                                                                                                                                                                                                                                                                                                                                                               |
-| develop empathy, tolerance,<br>compassion and curiosity through<br>studying different historical<br>contexts                                                 | When designing the unit, centres should consider<br>how the topics selected provide opportunities for<br>learners to reflect on<br>events and develop empathy,<br>tolerance, compassion and curiosity.                                                                                                                                                                                                                                                                                 |
-| engage in collaborative working                                                                                                                              | Students will develop their understanding of<br>viewpoints and content through debate and<br>discussion.                                                                                                                                                                                                                                                                                                                                                                               |
+| Learning Experience                                                                                                                                          | Exemplification of Learning Experience                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| make appropriate use of digital<br>technology when completing the<br>qualification, for example through<br>accessing historical source<br>material digitally | Learners should have the opportunity to access<br>online archives from around the world. This will<br>enable them to access a range of source materials<br>such as letters, diaries or government documents.<br>Learners may also make use of digital technology to<br>research the topic of study and to further their<br>understanding of the historical context.<br>Learners should also be encouraged to make use of<br>a range of digital formats completing the assessment<br>itself. |
+| participate in educational visits in<br>person or digitally                                                                                                  | Centres should consider whether any of the topics<br>studied could be enhanced through educational<br>visits. This might be in person, should centres have<br>selected local historical topics, or digitally.<br>For example, Cadw has a range of Virtual Visits<br>accessible from its website: Virtual Visits -<br>Cadw                                                                                                                                                                   |
+| develop empathy, tolerance,<br>compassion and curiosity through<br>studying different historical<br>contexts                                                 | When designing the unit, centres should consider<br>how the topics selected provide opportunities for<br>learners to reflect on events and develop empathy,<br>tolerance, compassion and curiosity.                                                                                                                                                                                                                                                                                         |
+| engage in collaborative working                                                                                                                              | Students will develop their understanding of<br>viewpoints and content through debate and<br>discussion.                                                                                                                                                                                                                                                                                                                                                                                    |
 
 {16}------------------------------------------------
 
 # Opportunities for embedding the Curriculum for Wales' cross-curricular skills and cross-cutting themes
 
-#### **Cross-curricular Skills – Literacy**
+## Cross-curricular Skills – Literacy
 
 There are many opportunities to include Literacy in GCSE History. These opportunities include the analysis of source material, extended writing opportunities, vocabulary development, debating and discussion. These opportunities are important to learners because they will develop cross-curricular skills which underpin the four purposes of the Curriculum for Wales, as well as communication skills which can be used across subjects and prepare them for future education or employment.
 
@@ -341,9 +345,11 @@ Below are some examples of how Literacy can be embedded into teaching and learni
 
 Learners will have the opportunity to assess the accuracy and reliability of source material and share views through discussion and verbal questioning techniques when being taught the specification content.
 
-#### **Examples**
+### Examples
 
-# <span id="page-15-0"></span>Listening
+<span id="page-15-0"></span>
+
+## Listening
 
 - Learners are encouraged to debate and respond to the views of others.
 - Learners will have opportunities to listen to podcasts and recordings in order to develop their vocabulary and listening skills.
@@ -352,9 +358,9 @@ Learners will have the opportunity to assess the accuracy and reliability of sou
 
 Learners will have the opportunity to read contemporary source material as well as a variety of historical interpretations, before critically evaluating the sources, analysing their content, and comparing and contrasting sources focusing on the interpretation they give on events.
 
-# Reading
+## Reading
 
-#### **Examples**
+### Examples
 
 - Learners can use a range of reading techniques such as skimming and scanning or reading for a purpose.
 - Reading extracts from a wide range of sources such as speeches, articles, diary extracts, historians and newspapers.
@@ -363,18 +369,17 @@ Learners will have the opportunity to read contemporary source material as well 
 
 {17}------------------------------------------------
 
-| Speaking | Learners will have the opportunity to develop their understanding of viewpoints and content through debate,<br>discussion, presentations and group work.                                                                                            |
-|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|          | Examples                                                                                                                                                                                                                                            |
-|          | •<br>Debating the most important reason why an event happened<br>•<br>Asking questions for clarification and development of understanding.<br>•<br>Learners can develop speaking skills through group and pair work.                                |
-|          |                                                                                                                                                                                                                                                     |
-| Writing  | Learners will have the opportunity to use a range of subject-specific vocabulary, idiomatic language and be able<br>to present their work digitally. They will also have opportunities to reflect on the structure and content of their<br>writing. |
-|          | Examples                                                                                                                                                                                                                                            |
-|          | •<br>Role modelling of answers through teacher, peer and self-assessment activities.<br>•<br>Learners have the opportunity to<br>use a wide range of writing styles such as formal, informal and first person.                                      |
+| Speaking | Learners will have the opportunity to develop their understanding of viewpoints and content through debate, discussion, presentations and group work.                                                                                         |
+|----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|          | Examples                                                                                                                                                                                                                                      |
+|          | Debating the most important reason why an event happenedAsking questions for clarification and development of understanding.Learners can develop speaking skills through group and pair work.                                                 |
+| Writing  | Learners will have the opportunity to use a range of subject-specific vocabulary, idiomatic language and be able to present their work digitally. They will also have opportunities to reflect on the structure and content of their writing. |
+|          | Examples                                                                                                                                                                                                                                      |
+|          | Role modelling of answers through teacher, peer and self-assessment activities.Learners have the opportunity to use a wide range of writing styles such as formal, informal and first person.                                                 |
 
 {18}------------------------------------------------
 
-#### **Cross-curricular Skills – Numeracy**
+## Cross-curricular Skills – Numeracy
 
 There are many opportunities to include Numeracy in GCSE History, for example analysing population change, interpreting statistics in primary and secondary sources, analysing graphs and timelines and engaging with concepts such as chronological awareness. These opportunities are important to learners because it allows them to contextualise events and quantify change. Learners can draw evidencebased conclusions based on statistics and numerical data.
 
@@ -384,7 +389,7 @@ Learning about geometry helps us understand shape, space and position and learni
 
 Learners will have opportunities to analyse maps in order to understand the growth and development of empires or the geographical representation of wars.
 
-#### **Examples**
+### Examples
 
 - Learners can analyse maps, structures and artifacts.
 - Learners can then analyse land division and urban planning.
@@ -394,7 +399,7 @@ Learning that statistics represent data and that probability models chance help 
 
 Learners will have the opportunities to examine or interpret data and graphs through source analysis.
 
-### **Examples**
+### Examples
 
 - Learners can analyse data to draw conclusions on statistics such as population growth, costs and land expansion.
 - Secondary material such as graphs and charts can be interpreted.
@@ -402,54 +407,49 @@ Learners will have the opportunities to examine or interpret data and graphs thr
 
 {19}------------------------------------------------
 
-#### **Cross-curricular Skills – Digital Competence**
+## Cross-curricular Skills – Digital Competence
 
 There are many opportunities to include Digital Competence in GCSE History. Learners can make use of digital technology to access a broad range of historical sources and to undertake research of a historical topic. Learners will also have the opportunity to develop their digital skills in preparing and completing their non-examination assessments. These opportunities will allow learners to develop crosscurricular skills which underpin the four purposes of the curriculum, as well as allowing further access to historical information while fostering current and future critical thinking and ethical awareness.
 
 Below are some examples of how Digital Competence can be embedded into teaching and learning for GCSE History.
 
-| Citizenship                      | Learners will develop an understanding of the importance of attributions, including the use of resources in digital<br>formats such as e-books and online articles. Learners will be required to address attributions when analysing<br>items for their historical enquiry and to think critically about the authors of digital evidence. |
-|----------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                  | Example                                                                                                                                                                                                                                                                                                                                   |
-|                                  | Learners should be made aware of copyright and plagiarism when looking at historical evidence and when<br>developing and presenting their own arguments in relation to a topic.                                                                                                                                                           |
-|                                  |                                                                                                                                                                                                                                                                                                                                           |
-| Interacting and<br>Collaborating | Learners can work collaboratively (digitally) on tasks in preparation for the exam. These could include peer<br>assessment, responding to teacher feedback or work creation.                                                                                                                                                              |
-|                                  | Example                                                                                                                                                                                                                                                                                                                                   |
-|                                  | In groups, learners could research and present a topic to introduce an area of study.                                                                                                                                                                                                                                                     |
-|                                  |                                                                                                                                                                                                                                                                                                                                           |
-| Producing                        | Learners will have opportunities<br>to research a variety of sources digitally and could develop digital skills when<br>producing non-examinations assessments<br>should they decide to complete<br>the enquiry<br>in a digital format.                                                                                                   |
-|                                  | Examples                                                                                                                                                                                                                                                                                                                                  |
-|                                  | •<br>Use of national and international archives to find source materials that link to the area of study.<br>•<br>Complete stages of the assessment using digital technology.                                                                                                                                                              |
+| Citizenship                   | Learners will develop an understanding of the importance of attributions, including the use of resources in digital formats such as e-books and online articles. Learners will be required to address attributions when analysing items for their historical enquiry and to think critically about the authors of digital evidence. |
+|-------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                               | Example                                                                                                                                                                                                                                                                                                                             |
+|                               | Learners should be made aware of copyright and plagiarism when looking at historical evidence and when developing and presenting their own arguments in relation to a topic.                                                                                                                                                        |
+| Interacting and Collaborating | Learners can work collaboratively (digitally) on tasks in preparation for the exam. These could include peer assessment, responding to teacher feedback or work creation.                                                                                                                                                           |
+|                               | Example                                                                                                                                                                                                                                                                                                                             |
+|                               | In groups, learners could research and present a topic to introduce an area of study.                                                                                                                                                                                                                                               |
+| Producing                     | Learners will have opportunities to research a variety of sources digitally and could develop digital skills when producing non-examinations assessments should they decide to complete the enquiry in a digital format.                                                                                                            |
+|                               | Examples                                                                                                                                                                                                                                                                                                                            |
+|                               | Use of national and international archives to find source materials that link to the area of study.Complete stages of the assessment using digital technology.                                                                                                                                                                      |
 
 {20}------------------------------------------------
 
-| Integral Skills                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |  |
-|------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--|
-| Creativity and Innovation                | There are many opportunities to include Creativity and Innovation in GCSE History. These opportunities are<br>important to learners to become more engaged in lessons and enjoy learning through stimulating tasks. Deeper<br>understanding is developed through the encouragement for learners to take an active role in their learning.                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |  |
-|                                          | Examples                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |  |
-|                                          | •<br>Learners will demonstrate creativity when developing responses, expressing their opinions about relevant<br>historical issues<br>and critically evaluating sources and evidence within assessments.<br>•<br>Learners have opportunities to be creative and innovative when presenting information and findings.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |  |
-|                                          |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |  |
-| Critical Thinking and<br>Problem Solving | There are many opportunities to include Critical Thinking and Problem Solving in GCSE History. These<br>opportunities are important to learners because they develop the ability to think analytically, and to collect,<br>reflect and critically evaluate evidence in order to<br>make informed judgements on a range of topics. This skill can<br>be applied to real-life scenarios.                                                                                                                                                                                                                                                                                                                                                                                                                     |  |
-|                                          | Examples                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |  |
-|                                          | •<br>Learners will have opportunities to ask meaningful questions of source material and historical<br>interpretations, as well as to evaluate them as part of their process of developing relevant critical<br>arguments.<br>•<br>Learners will develop their ability to see issues from multiple viewpoints.<br>•<br>Studying continuity and change over time allows learners to develop their problem-solving skills that can be<br>applied in their future lives.<br>•<br>Learners will evaluate sources and historical interpretations in terms of reliability, bias and purpose.<br>•<br>Critical thinking and problem solving encourages<br>independent learning and promotes the ability to come to<br>reasoned and informed decisions in other aspects of life such as further education or work. |  |
+| Integral Skills                       |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|---------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Creativity and Innovation             | There are many opportunities to include Creativity and Innovation in GCSE History. These opportunities are important to learners to become more engaged in lessons and enjoy learning through stimulating tasks. Deeper understanding is developed through the encouragement for learners to take an active role in their learning.                                                                                                                                                                                                                                                                                                                                                                                                                                |
+|                                       | <b>Examples</b> Learners will demonstrate creativity when developing responses, expressing their opinions about relevant historical issues and critically evaluating sources and evidence within assessments.Learners have opportunities to be creative and innovative when presenting information and findings.                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Critical Thinking and Problem Solving | There are many opportunities to include Critical Thinking and Problem Solving in GCSE History. These opportunities are important to learners because they develop the ability to think analytically, and to collect, reflect and critically evaluate evidence in order to make informed judgements on a range of topics. This skill can be applied to real-life scenarios.                                                                                                                                                                                                                                                                                                                                                                                         |
+|                                       | <b>Examples</b> Learners will have opportunities to ask meaningful questions of source material and historical interpretations, as well as to evaluate them as part of their process of developing relevant critical arguments.Learners will develop their ability to see issues from multiple viewpoints.Studying continuity and change over time allows learners to develop their problem-solving skills that can be applied in their future lives.Learners will evaluate sources and historical interpretations in terms of reliability, bias and purpose.Critical thinking and problem solving encourages independent learning and promotes the ability to come to reasoned and informed decisions in other aspects of life such as further education or work. |
 
 {21}------------------------------------------------
 
-#### Planning and Organisation
+### Planning and Organisation
 
 There are many opportunities to include Planning and Organisation in GCSE History. These opportunities are important to Learners because these integral skills allow Learners to engage with the past, analyse information and communicate their findings which allow Learners to enhance their academic understanding and prepare them to apply historical knowledge in modern contexts.
 
 Below are some examples of how Planning and Organisation can be embedded into teaching and learning of GCSE History.
 
-# **Example**
+### Example
 
 • Learners will have opportunities to plan and then complete their response to an enquiry question.
 
 There are many opportunities to include Personal Effectiveness in GCSE History. These opportunities are important to learners because it develops resilience and the ability to work effectively. This helps to develop learners' time management skills and the ability to prioritise tasks, enhancing learners' ability to become adaptable individuals.
 
-#### **Examples**
+### Examples
 
-#### Personal Effectiveness
+### Personal Effectiveness
 
 - Learning about potentially sensitive topics will allow learners to develop their emotional intelligence and historical awareness.
 - Opportunities for peer, self and teacher assessment encourage learners to develop effective strategies to improve their work.
