@@ -43,7 +43,7 @@ Made for Wales.
 
 ![](_page_2_Picture_2.jpeg)
 
-#### **Copyright**
+#### Copyright
 
 © WJEC CBAC Limited 2024.
 
@@ -51,19 +51,19 @@ Made for Wales.
 
 ![](_page_3_Picture_0.jpeg)
 
-## **GCSE**
+## GCSE
 
-## **3130UB0-1**
+## 3130UB0-1
 
 **GCSE History – Unit 1 An in-depth study on Welsh history 1: Early Modern**
 
 **1 hour SAMPLE ASSESSMENT MATERIALS**
 
-#### **Additional materials**
+#### Additional materials
 
 A WJEC pink 16-page answer booklet.
 
-#### **Instructions to candidates**
+#### Instructions to candidates
 
 Answer all questions in **either** section A **or** Section B.
 
@@ -79,7 +79,7 @@ Write the question number in the two boxes in the left-hand margin at the start 
 
 Leave at least two lines between each answer.
 
-#### **Information for candidates**
+#### Information for candidates
 
 The number of marks is given in brackets at the end of each question.
 
@@ -91,9 +91,9 @@ The sources used may include words that are no longer in common use and are now 
 
 #### Answer all questions in **either** Section A **or** Section B
 
-#### **Section A**
+## Section A
 
-#### **1.3 Wales and the early Tudors c.1485–c.1547**
+### 1.3 Wales and the early Tudors c.1485–c.1547
 
 Answer **all** parts of Question 1.  **0 1**
 
@@ -118,9 +118,9 @@ Explain why Henry, Earl of Richmond had a claim to the English throne. **[10] 0 
   - **(a)** Describe the problems facing Henry VIII in trying to control Wales between 1509 and 1531. **[5]**
   - **(b)** How valuable is **Item 1** to our understanding of Henry VIII's relationship with Sir Rhys ap Gruffudd? **[15]**
 
-| Item 1 | Huw Llywelyn Rees writing on his personal Facebook blog<br>The History of Wales<br>(2021) |
-|--------|-------------------------------------------------------------------------------------------|
-|--------|-------------------------------------------------------------------------------------------|
+| Item 1 | Huw Llywelyn Rees writing on his personal Facebook blog<br>The History of Wales (2021) |
+|--------|----------------------------------------------------------------------------------------|
+|--------|----------------------------------------------------------------------------------------|
 
 Sir Rhys ap Gruffudd was critical of Henry's relationship with Anne Boleyn, instead supporting both Katherine of Aragon and Cardinal Wolsey. Henry accused Rhys of treason on the charge of plotting with James V of Scotland to overthrow him and install himself as Prince of Wales. Rhys was found guilty and subsequently executed.
 
@@ -130,15 +130,15 @@ Sir Rhys ap Gruffudd was critical of Henry's relationship with Anne Boleyn, inst
   - **(a)** Outline the background to the introduction of the Acts of Union in 1536 and 1543. **[5]**
   - **(b)** To what extent do **Item 2** and **Item 3** persuade you that the Acts of Union had a positive impact on Wales? **[20]**
 
-| Item 2 | Lloyd Bowen, a historian, writing in his academic textbook<br>Early Modern Wales c.1536–1689<br>(2022) |
-|--------|--------------------------------------------------------------------------------------------------------|
-|--------|--------------------------------------------------------------------------------------------------------|
+| Item 2 | Lloyd Bowen, a historian, writing in his academic textbook<br><i>Early Modern Wales c. 1536–1689</i> (2022) |
+|--------|-------------------------------------------------------------------------------------------------------------|
+|--------|-------------------------------------------------------------------------------------------------------------|
 
 The Welsh were to enjoy the same rights and freedoms as the English. The counties and large towns of Wales were allowed to elect Members of Parliament to represent their communities at the centre of government in London.
 
-|  | Item 3 | From the Act for the Government of Wales<br>(1536) |
-|--|--------|----------------------------------------------------|
-|--|--------|----------------------------------------------------|
+| Item 3 | From the Act for the Government of Wales (1536) |
+|--------|-------------------------------------------------|
+|--------|-------------------------------------------------|
 
 No one that uses the Welsh language shall hold office in England, Wales or the King's other territories. Those who do will have to give up those offices unless they use the English language.
 
@@ -148,13 +148,15 @@ No one that uses the Welsh language shall hold office in England, Wales or the K
 
 {8}------------------------------------------------
 
-#### **Section B**
+## Section B
 
-#### **1.4 Wales in the era of the Civil War c. 1603 - 1660**
+### 1.4 Wales in the era of the Civil War c. 1603 - 1660
 
 Answer **all** parts of Question 5.  **0 5**
 
 Select the correct answers to the following questions using the table below. **[5]**
+
+[5
 
 - **(a)** When did Prince Henry become Prince of Wales?
 - **(b)** Who was the influential Welsh man during the reign of Charles I?
@@ -177,9 +179,13 @@ This is a two-part question. Answer part (a) then part (b). Part (b) must be ans
 
 **(a)** Describe the religious problems facing James I in his kingdoms. **[5]**
 
+[5]
+
 **(b)** How valuable is **Item 1** to our understanding of the reasons why James I had problems ruling his kingdoms? **[15]**
 
-## **Item 1**
+[15
+
+## Item 1
 
 John Simkin, a History teacher and author, writing in an article about King James VI of Scotland and I of England on his website *Spartacus Educational* (updated 2020)
 
@@ -191,15 +197,15 @@ The English view was that Scotland should be incorporated into England, the Scot
   - **(a)** Outline the role of Welsh military personnel in the fighting during the Civil War. **[5]**
   - **(b)** To what extent do **Item 2** and **Item 3** persuade you that Wales was important to the Royalists during the Civil War? **[20]**
 
-| From a report by informers who had been sent to the House<br>Item 2<br>of Commons to provide information to Parliamentary military<br>commanders (5 April 1644) |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Item 2 | From a report by informers who had been sent to the House of Commons to provide information to Parliamentary military commanders (5 April 1644) |
+|--------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+|--------|-------------------------------------------------------------------------------------------------------------------------------------------------|
 
 We hear that 6 000 Irish rebels have landed in Wales. They are behaving in a cruel and savage way. Unless some speedy help is sent to Chirk, the whole country will be destroyed by these Irish invaders.
 
-| Item 3 | Geraint Jenkins, a professor of Welsh History, writing in his<br>academic book The Foundations of Modern Wales 1642–<br>1780 (1987) |
-|--------|-------------------------------------------------------------------------------------------------------------------------------------|
-|--------|-------------------------------------------------------------------------------------------------------------------------------------|
+| Item 3 | Geraint Jenkins, a professor of Welsh History, writing in his<br>academic book <i>The Foundations of Modern Wales</i> 1642–<br>1780 (1987) |
+|--------|--------------------------------------------------------------------------------------------------------------------------------------------|
+|--------|--------------------------------------------------------------------------------------------------------------------------------------------|
 
 From the outset it was vitally important for the king to control the borderlands. Wales could not only supply him with wealth, supplies and armies, but might also offer a route for loyal troops from Ireland if he needed them. Parliament was determined to break through the barrier of the Welsh Marches.
 
@@ -207,18 +213,18 @@ From the outset it was vitally important for the king to control the borderlands
 
 {11}------------------------------------------------
 
-#### **MARK SCHEME**
+## MARK SCHEME
 
-#### **Guidance for examiners**
+### Guidance for examiners
 
-#### **Generic marking principles**
+### Generic marking principles
 
 - Marks awarded are always whole marks (not half marks, or other fractions).
 - Answers should only be judged on the quality of spelling, punctuation and grammar when these features are specifically assessed by the question as indicated by the mark scheme. The meaning, however, should be unambiguous.
 - Marks should be awarded using the full range of marks defined in the mark scheme for the question (however; the use of the full mark range may be limited according to the quality of the candidate responses seen).
 - Marks awarded are based solely on the requirements as defined in the mark scheme. Marks should not be awarded with grade thresholds or grade descriptors in mind.
 
-#### **Positive marking**
+#### Positive marking
 
 It should be remembered that candidates are writing under examination conditions and credit should be given for what the candidate writes, rather than adopting the approach of penalising him/her for any omissions. It should be possible for a very good response to achieve full marks and a very poor one to achieve zero marks. Marks should not be deducted for a less than perfect answer if it satisfies the criteria of the mark scheme.
 
@@ -228,7 +234,7 @@ Mark schemes often list points which may be included in candidates' answers. The
 
 Appropriate terminology is reflected in exemplar responses in mark schemes. However, unless there is a specific requirement within a question, candidates may be awarded marks where the answer is accurate but expressed in their own words.
 
-#### **Banded mark schemes**
+#### Banded mark schemes
 
 For band-marked questions mark schemes are in two parts; the indicative content and the assessment grid.
 
@@ -242,7 +248,7 @@ The marking of banded mark questions should always be positive. This means that,
 
 Examiners should first read and annotate the candidate's answer to pick out the evidence that is being assessed in that question. The mark scheme can then be applied. This is done as a two-stage process.
 
-#### **Stage 1 – Deciding on the band**
+#### Stage 1 – Deciding on the band
 
 Beginning at the lowest band, examiners should look at the candidate's answer and check whether it matches the descriptors for that band. If the descriptors at the lowest band are satisfied, examiners should move up to the next band and repeat this process for each band until the descriptors match the answer.
 
@@ -250,7 +256,7 @@ If an answer covers different aspects of different bands within the mark scheme,
 
 Examiners should not seek to mark candidates down as a result of small omissions in minor areas of an answer.
 
-#### **Stage 2 – Deciding on the mark**
+#### Stage 2 – Deciding on the mark
 
 During standardising (the marking conference), detailed advice from the Principal Examiner on the qualities of each mark band will be given. Examiners will then receive examples of answers in each mark band that have been awarded a mark by the Principal Examiner. Examiners should mark the examples and compare their marks with those of the Principal Examiner.
 
@@ -258,20 +264,15 @@ When marking, examiners can use these examples to decide whether a candidate's r
 
 {13}------------------------------------------------
 
-#### **Mark scheme for Section A**
+## Mark scheme for Section A
 
-|     | Question<br>1                                                                                               | Answer          | AO1 | AO2 | AO3 | Total<br>Mark |
-|-----|-------------------------------------------------------------------------------------------------------------|-----------------|-----|-----|-----|---------------|
-| (a) | When did the Battle of Stoke take place?                                                                    |                 |     |     |     |               |
-|     | 1487                                                                                                        |                 | 1   |     |     | 1             |
-| (b) | Where was the Council of the Marches held?                                                                  |                 |     |     |     |               |
-|     | Ludlow                                                                                                      |                 | 1   |     |     | 1             |
-| (c) | Which family of Marcher lords caused problems for Henry VIII?                                               |                 |     |     |     |               |
-|     | The Herberts                                                                                                |                 | 1   |     |     | 1             |
-| (d) | Which adviser of Henry VIII was responsible for the dissolution of the monasteries in<br>England and Wales? |                 |     |     |     |               |
-|     |                                                                                                             | Thomas Cromwell | 1   |     |     | 1             |
-| (e) | Who did Henry VIII put in charge of dealing with lawlessness in Wales?                                      |                 |     |     |     |               |
-|     | Rowland Lee                                                                                                 |                 | 1   |     |     | 1             |
+|     | Question 1                                                                                               | Answer          | AO1 | AO2 | AO3 | Total Mark |
+|-----|----------------------------------------------------------------------------------------------------------|-----------------|-----|-----|-----|------------|
+| (a) | When did the Battle of Stoke take place?                                                                 | 1487            | 1   |     |     | 1          |
+| (b) | Where was the Council of the Marches held?                                                               | Ludlow          | 1   |     |     | 1          |
+| (c) | Which family of Marcher lords caused problems for Henry VIII?                                            | The Herberts    | 1   |     |     | 1          |
+| (d) | Which adviser of Henry VIII was responsible for the dissolution of the monasteries in England and Wales? | Thomas Cromwell | 1   |     |     | 1          |
+| (e) | Who did Henry VIII put in charge of dealing with lawlessness in Wales?                                   | Rowland Lee     | 1   |     |     | 1          |
 
 {14}------------------------------------------------
 
@@ -283,18 +284,18 @@ When marking, examiners can use these examples to decide whether a candidate's r
 - Henry's claim to the throne was strengthened by the support of important individuals in England who rallied to his cause. His uncle Jasper Tudor was able to rally support for Henry when he landed at Milford Haven seeking to challenge Richard III for the throne. Leading nobles Thomas and William Stanley were neutral to begin with, but their support, especially on the battlefield at Bosworth, proved critical in securing Henry's claim to the throne.
 - Henry also had a claim to the throne by marriage as, after his defeat of Richard III at the Battle of Bosworth in 1485, he married Elizabeth of York, the daughter of Richard III's predecessor Edward IV. This meant that he was now the leading representative of both the Houses of York and Lancaster, ending the rivalry of the Wars of the Roses.
 
-| Band | AO1                                                                                                                    | AO2                                                                                                                                                         |
-|------|------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 5    | 5 marks<br>•<br>Response demonstrates relevant and accurate historical<br>knowledge. Understanding is convincing.      | 5 marks<br>•<br>Precise, convincing and accurate<br>application of knowledge<br>and understanding to address the historical concept in the<br>set question. |
-| 4    | 4 marks<br>•<br>Response demonstrates relevant and mainly accurate<br>historical<br>knowledge. Understanding is clear. | 4 marks<br>•<br>Clear and mainly accurate<br>application of knowledge and<br>understanding to address the historical concept in the set<br>question.        |
+| Band | AO1                                                                                                           | AO2                                                                                                                                             |
+|------|---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------|
+| 5    | 5 marks<br>• Response demonstrates relevant and accurate historical knowledge. Understanding is convincing.   | 5 marks<br>• Precise, convincing and accurate application of knowledge and understanding to address the historical concept in the set question. |
+| 4    | 4 marks<br>• Response demonstrates relevant and mainly accurate historical knowledge. Understanding is clear. | 4 marks<br>• Clear and mainly accurate application of knowledge and understanding to address the historical concept in the set question.        |
 
 {15}------------------------------------------------
 
-| 3 | 3 marks<br>•<br>Response demonstrates relevant knowledge with some<br>historical accuracy. Understanding is implicit. | 3 marks<br>•<br>There is some accurate application of knowledge and<br>understanding to address the historical concept in the set<br>question, but it is inconsistent. |  |
-|---|-----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--|
-| 2 | 2 marks<br>•<br>Response demonstrates a limited level of relevant<br>knowledge. Limited evidence of<br>understanding. | 2 marks<br>•<br>Limited application of knowledge and understanding to<br>address the historical concept in the set question.                                           |  |
-| 1 | 1 mark<br>•<br>Response demonstrates a minimal level of relevant<br>knowledge. No evidence of<br>understanding.       | 1 mark<br>•<br>Minimal application of knowledge to address the historical<br>concept in the set question.                                                              |  |
-| 0 | 0 marks<br>No response attempted or nothing worthy of credit.                                                         |                                                                                                                                                                        |  |
+| 3 | 3 marks<br>• Response demonstrates relevant knowledge with some historical accuracy. Understanding is implicit. | 3 marks<br>• There is some accurate application of knowledge and understanding to address the historical concept in the set question, but it is inconsistent. |
+|---|-----------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2 | 2 marks<br>• Response demonstrates a limited level of relevant knowledge. Limited evidence of understanding.    | 2 marks<br>• Limited application of knowledge and understanding to address the historical concept in the set question.                                        |
+| 1 | 1 mark<br>• Response demonstrates a minimal level of relevant knowledge. No evidence of understanding.          | 1 mark<br>• Minimal application of knowledge to address the historical concept in the set question.                                                           |
+| 0 | 0 marks<br>No response attempted or nothing worthy of credit.                                                   |                                                                                                                                                               |
 
 {16}------------------------------------------------
 
@@ -306,22 +307,22 @@ When marking, examiners can use these examples to decide whether a candidate's r
 - The Council of the Marches, which had been established in the fifteenth century to help the English monarchy control the Marcher lords had not been very effective, which is why Marcher lords like the Herberts had been able to use their distance from London to exercise some independence.
 - There was a lot of resentment amongst the Marcher lords and other Welsh nobles about royal interference in their affairs. When Henry VIII took control of one of the most powerful estates in Wales he gave the inheritance of Sir Rhys ap Gruffudd to Lord Ferrers, who was a friend and ally of the King. Sir Rhys ap Gruffudd then rebelled against Henry.
 
-| Band | AO1                                                                                                                    |  |
-|------|------------------------------------------------------------------------------------------------------------------------|--|
-| 5    | 5 marks<br>•<br>Response demonstrates relevant and accurate historical<br>knowledge.<br>Understanding is convincing.   |  |
-| 4    | 4 marks<br>•<br>Response demonstrates relevant and mainly accurate historical<br>knowledge.<br>Understanding is clear. |  |
-| 3    | 3 marks<br>Response demonstrates relevant knowledge with some historical accuracy.<br>Understanding is implicit.       |  |
-| 2    | 2 marks<br>•<br>Response demonstrates a limited level of relevant knowledge. Limited<br>evidence of<br>understanding.  |  |
-| 1    | 1 mark<br>•<br>Response demonstrates a minimal level of relevant knowledge. No evidence<br>of<br>understanding.        |  |
-| 0    | 0 marks<br>No response attempted or nothing worthy of credit.                                                          |  |
+| Band | AO1                                                                                                                |
+|------|--------------------------------------------------------------------------------------------------------------------|
+| 5    | 5 marks<br>• Response demonstrates relevant and accurate historical knowledge.<br>Understanding is convincing.     |
+| 4    | 4 marks<br>• Response demonstrates relevant and mainly accurate historical knowledge.<br>Understanding is clear.   |
+| 3    | 3 marks<br>• Response demonstrates relevant knowledge with some historical accuracy.<br>Understanding is implicit. |
+| 2    | 2 marks<br>• Response demonstrates a limited level of relevant knowledge. Limited<br>evidence of understanding.    |
+| 1    | 1 mark<br>• Response demonstrates a minimal level of relevant knowledge. No evidence<br>of understanding.          |
+| 0    | 0 marks<br>No response attempted or nothing worthy of credit.                                                      |
 
 {17}------------------------------------------------
 
-| Question 3b                                                                                                                                                                                                                                                                                                                                      | Total<br>Marks |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|
-| How valuable<br>is<br>Item 1<br>to our<br>understanding of Henry VIII's relationship with Sir Rhys ap Gruffudd?                                                                                                                                                                                                                                  |                |
-| Item 1: Huw Llywelyn Rees writing on his personal Facebook blog The History of Wales (2021)                                                                                                                                                                                                                                                      |                |
-| Sir Rhys ap Gruffudd was critical of Henry's relationship with Anne Boleyn, instead supporting both Katherine of Aragon and<br>Cardinal Wolsey. Henry accused Rhys of treason on the charge of plotting with James V of Scotland to overthrow him and install<br>himself as Prince of Wales.<br>Rhys was found guilty and subsequently executed. |                |
+| Question 3b                                                                                                                                                                                                                                                                                                                             | Total<br>Marks |
+|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|
+| How valuable is Item 1 to our understanding of Henry VIII's relationship with Sir Rhys ap Gruffudd?                                                                                                                                                                                                                                     | [15]           |
+| Item 1: Huw Llywelyn Rees writing on his personal Facebook blog The History of Wales (2021)                                                                                                                                                                                                                                             |                |
+| Sir Rhys ap Gruffudd was critical of Henry's relationship with Anne Boleyn, instead supporting both Katherine of Aragon and Cardinal Wolsey. Henry accused Rhys of treason on the charge of plotting with James V of Scotland to overthrow him and install himself as Prince of Wales. Rhys was found guilty and subsequently executed. |                |
 
 - The item is valuable to our understanding of Henry VIII's relationship with Sir Rhys ap Gruffudd as it explains that Sir Rhys ap Gruffudd had been very critical of Henry VIII's choice of wife. However, its value is limited, as what it does not tell us about this is that Sir Rhys had rebelled against Henry VIII's decision to give his grandfather's inheritance to his rival Lord Ferrers
 - The item also has value in that it states that Henry VIII had Sir Rhys ap Gruffudd executed for treason. But this too is undermined by the lack of explanation of Henry VIII's difficulties with a number of the marcher lords in Wales and that he was trying various means to increase his influence there, in this case by favouring a supporter in a legal dispute.
@@ -331,43 +332,39 @@ When marking, examiners can use these examples to decide whether a candidate's r
 
 {18}------------------------------------------------
 
-| Band | AO2                                                                                                                                                                    | AO3                                                                                                                                                                                                                                            |
-|------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 5    | 5 marks<br>•<br>Precise, convincing and accurate<br>application of knowledge<br>and understanding to address the historical concept in the<br>set question.            | 9–10 marks<br>•<br>Precise, convincing and accurate<br>analysis and evaluation of<br>the items<br>linked to the set question.<br>•<br>Valid judgement reached with comprehensive support.<br>•<br>Answer expressed clearly in continuous text. |
-| 4    | 4 marks<br>•<br>Clear and mainly accurate<br>application of knowledge and<br>understanding to address the historical concept in the set<br>question.                   | 7–8 marks<br>•<br>Clear and mainly accurate<br>analysis and evaluation of the<br>items<br>linked to the set question.<br>•<br>Valid judgement reached with a good level of support.<br>•<br>Answer expressed in continuous text.               |
-| 3    | 3 marks<br>•<br>There is some accurate application of knowledge and<br>understanding to address the historical concept in the set<br>question, but it is inconsistent. | 5–6 marks<br>•<br>Inconsistent<br>analysis and evaluation of the items<br>linked to<br>the set question, with some accuracy.<br>•<br>Inconsistent<br>judgement reached with some<br>support.                                                   |
-| 2    | 2 marks<br>•<br>Limited application of knowledge and understanding to<br>address the historical concept in the set question                                            | 3–4 marks<br>•<br>Limited analysis and evaluation of the items.<br>•<br>Incomplete<br>judgement reached with limited support.                                                                                                                  |
-| 1    | 1 mark<br>•<br>Minimal application of knowledge to address the historical<br>concept in the set question.                                                              | 1–2 marks<br>•<br>Minimal analysis and evaluation of the items.<br>•<br>Superficial judgement reached.                                                                                                                                         |
-| 0    |                                                                                                                                                                        | 0 marks<br>No response attempted or nothing worthy of credit.                                                                                                                                                                                  |
+| Band | AO2                                                                                                                                                           | AO3                                                                                                                                                                                                                          |
+|------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 5    | 5 marks<br>• Precise, convincing and accurate application of knowledge and understanding to address the historical concept in the set question.               | 9–10 marks<br>• Precise, convincing and accurate analysis and evaluation of the items linked to the set question.<br>• Valid judgement reached with comprehensive support.<br>• Answer expressed clearly in continuous text. |
+| 4    | 4 marks<br>• Clear and mainly accurate application of knowledge and understanding to address the historical concept in the set question.                      | 7–8 marks<br>• Clear and mainly accurate analysis and evaluation of the items linked to the set question.<br>• Valid judgement reached with a good level of support.<br>• Answer expressed in continuous text.               |
+| 3    | 3 marks<br>• There is some accurate application of knowledge and understanding to address the historical concept in the set question, but it is inconsistent. | 5–6 marks<br>• Inconsistent analysis and evaluation of the items linked to the set question, with some accuracy.<br>• Inconsistent judgement reached with some support.                                                      |
+| 2    | 2 marks<br>• Limited application of knowledge and understanding to address the historical concept in the set question                                         | 3–4 marks<br>• Limited analysis and evaluation of the items.<br>• Incomplete judgement reached with limited support.                                                                                                         |
+| 1    | 1 mark<br>• Minimal application of knowledge to address the historical concept in the set question.                                                           | 1–2 marks<br>• Minimal analysis and evaluation of the items.<br>• Superficial judgement reached.                                                                                                                             |
+| 0    |                                                                                                                                                               | 0 marks<br>No response attempted or nothing worthy of credit.                                                                                                                                                                |
 
 {19}------------------------------------------------
 
-| Question 4a                                                                          | Total<br>Marks |
-|--------------------------------------------------------------------------------------|----------------|
-| Outline the background to<br>the introduction of the Acts of Union in 1536 and 1543. |                |
+| Question 4a                                                                       | Total<br>Marks |
+|-----------------------------------------------------------------------------------|----------------|
+| Outline the background to the introduction of the Acts of Union in 1536 and 1543. | [5]            |
 
 - English rule over Wales was not uniform as some parts of Wales were controlled by semiindependent Marcher Lords. Henry VIII was concerned that these lords were becoming too powerful, but also that they were failing to maintain law and order, which was the main reason they had been given their power. Rowland Lee was sent to try and restore law and order in Wales.
 - Henry VIII was also concerned that the Marcher Lords would not properly enforce the Henrician Reformation and that Wales might become a centre of resistance to these changes. It could even have become the focus of a foreign invasion to overturn the Reformation.
 - Henry's adviser Thomas Cromwell had a plan to increase royal power by putting all areas of Wales more directly under the control of the King. The new system would mean that government and the justice system would be the same in England and in Wales.
 
-| Band | AO1                                                                                                                   |  |
-|------|-----------------------------------------------------------------------------------------------------------------------|--|
-| 5    | 5 marks<br>•<br>Response demonstrates relevant and accurate historical<br>knowledge.<br>Understanding is convincing.  |  |
-| 4    | 4 marks<br>•<br>Response demonstrates relevant and mainly accurate historical<br>knowledge. Understanding is clear.   |  |
-| 3    | 3 marks<br>•<br>Response demonstrates relevant knowledge with some historical<br>accuracy. Understanding is implicit. |  |
-| 2    | 2 marks<br>•<br>Response demonstrates a limited level of relevant knowledge. Limited<br>evidence of<br>understanding. |  |
-| 1    | 1 mark<br>•<br>Response demonstrates a minimal level of relevant knowledge. No<br>evidence of<br>understanding.       |  |
-| 0    | 0 marks<br>No response attempted or nothing worthy of credit.                                                         |  |
+| Band | AO1                                                                                                             |
+|------|-----------------------------------------------------------------------------------------------------------------|
+| 5    | 5 marks<br>• Response demonstrates relevant and accurate historical knowledge. Understanding is convincing.     |
+| 4    | 4 marks<br>• Response demonstrates relevant and mainly accurate historical knowledge. Understanding is clear.   |
+| 3    | 3 marks<br>• Response demonstrates relevant knowledge with some historical accuracy. Understanding is implicit. |
+| 2    | 2 marks<br>• Response demonstrates a limited level of relevant knowledge. Limited evidence of understanding.    |
+| 1    | 1 mark<br>• Response demonstrates a minimal level of relevant knowledge. No evidence of understanding.          |
+| 0    | 0 marks<br>No response attempted or nothing worthy of credit.                                                   |
 
 {20}------------------------------------------------
 
-| Question 4b                                                                                                                                                                                                                     | Total<br>Marks |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|
-| To what extent do<br>Item<br>2<br>and Item<br>3<br>persuade you that the Acts of Union had a positive impact on Wales?                                                                                                          | [20]           |
-| Item 2:Lloyd Bowen, a historian, writing in his academic textbook Early Modern Wales c.1536–1689<br>(2022)                                                                                                                      |                |
-| The Welsh were to enjoy the same rights and freedoms as the English. The counties and large towns of Wales were allowed to elect<br>Members of Parliament to represent their communities at the centre of government in London. |                |
-| Item 3:From the Act for the Government of Wales<br>(1536)                                                                                                                                                                       |                |
-| No one that uses the Welsh language shall hold office in England, Wales or the King's other territories. Those who do will have to give up<br>those offices unless they use the English language.                               |                |
+| Question 4b                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   | Total<br>Marks |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|
+| To what extent do Item 2 and Item 3 persuade you that the Acts of Union had a positive impact on Wales?<br>Item 2: Lloyd Bowen, a historian, writing in his academic textbook <i>Early Modern Wales c.1536–1689</i> (2022)<br>The Welsh were to enjoy the same rights and freedoms as the English. The counties and large towns of Wales were allowed to elect Members of Parliament to represent their communities at the centre of government in London.<br>Item 3:From the <i>Act for the Government of Wales</i> (1536)<br>No one that uses the Welsh language shall hold office in England, Wales or the King's other territories. Those who do will have to give up those offices unless they use the English language. | [20]           |
 
 - The items could persuade us that the Acts of Union had a positive impact on Wales, although they offer different perspectives on this issue. Item 2 refers to the political rights Welsh people gained as a result of the Acts of Union, particularly representation in Parliament. This is contradicted in Item 3, which shows that all officials would now have to conduct their business through the medium of English rather than in Welsh.
 - However, more persuasive is idea that the Acts of Union brought an end to the lawlessness that had plagued areas of Wales under the control of the marcher lords and that more effective justice was available for everyone in Wales.
@@ -378,31 +375,26 @@ When marking, examiners can use these examples to decide whether a candidate's r
 
 • It will likely be concluded that, overall, it is possible to be persuaded either that the items do or do not support the argument that there was a positive impact on Wales, or that the impacts were positive in some ways and negative in others.
 
-| Band | AO2                                                                                                                                                                      | AO3                                                                                                                                                                                                                                            |  |
-|------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--|
-| 5    | 9–10 marks<br>•<br>Precise, convincing and accurate application of knowledge<br>and understanding to address the historical concept in the set<br>question.              | 9–10 marks<br>•<br>Precise, convincing and accurate<br>analysis and evaluation of<br>the items<br>linked to the set question.<br>•<br>Valid judgement reached with comprehensive support.<br>•<br>Answer expressed clearly in continuous text. |  |
-| 4    | 7–8 marks<br>•<br>Clear and mainly accurate application of knowledge and<br>understanding to address the historical concept in the set<br>question.                      | 7–8 marks<br>•<br>Clear and mainly accurate<br>analysis and evaluation of the<br>items<br>linked to the set question.<br>•<br>Valid judgement reached with a good level of support.<br>•<br>Answer expressed in continuous text.               |  |
-| 3    | 5–6 marks<br>•<br>There is some accurate application of knowledge and<br>understanding to address the historical concept in the set<br>question, but it is inconsistent. | 5–6 marks<br>•<br>Inconsistent<br>analysis and evaluation of the items<br>linked to the<br>set question, with some accuracy.<br>•<br>Inconsistent<br>judgement reached with some<br>support.                                                   |  |
-| 2    | 3–4 marks<br>•<br>Limited application of knowledge and understanding to<br>address the historical concept in the set question.                                           | 3–4 marks<br>•<br>Limited analysis and evaluation of the items.<br>•<br>Incomplete<br>judgement reached with limited support.                                                                                                                  |  |
-| 1    | 1–2 marks<br>•<br>Minimal application of knowledge to address the historical<br>concept in the set question.                                                             | 1–2 marks<br>•<br>Minimal analysis and evaluation of the items.<br>•<br>Superficial judgement reached.                                                                                                                                         |  |
-| 0    | 0 marks<br>No response attempted or nothing worthy of credit.                                                                                                            |                                                                                                                                                                                                                                                |  |
+| Band | AO2                                                                                                                                                                      | AO3                                                                                                                                                                                                                                      |
+|------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 5    | 9–10 marks<br>•<br>Precise, convincing and accurate application of knowledge<br>and understanding to address the historical concept in the set<br>question.              | 9–10 marks<br>•<br>Precise, convincing and accurate analysis and evaluation of<br>the items linked to the set question.<br>•<br>Valid judgement reached with comprehensive support.<br>•<br>Answer expressed clearly in continuous text. |
+| 4    | 7–8 marks<br>•<br>Clear and mainly accurate application of knowledge and<br>understanding to address the historical concept in the set<br>question.                      | 7–8 marks<br>•<br>Clear and mainly accurate analysis and evaluation of the<br>items linked to the set question.<br>•<br>Valid judgement reached with a good level of support.<br>•<br>Answer expressed in continuous text.               |
+| 3    | 5–6 marks<br>•<br>There is some accurate application of knowledge and<br>understanding to address the historical concept in the set<br>question, but it is inconsistent. | 5–6 marks<br>•<br>Inconsistent analysis and evaluation of the items<br>linked to the set question, with some accuracy.<br>•<br>Inconsistent judgement reached with some support.                                                         |
+| 2    | 3–4 marks<br>•<br>Limited application of knowledge and understanding to<br>address the historical concept in the set question.                                           | 3–4 marks<br>•<br>Limited analysis and evaluation of the items.<br>•<br>Incomplete judgement reached with limited support.                                                                                                               |
+| 1    | 1–2 marks<br>•<br>Minimal application of knowledge to address the historical<br>concept in the set question.                                                             | 1–2 marks<br>•<br>Minimal analysis and evaluation of the items.<br>•<br>Superficial judgement reached.                                                                                                                                   |
+| 0    | 0 marks<br>No response attempted or nothing worthy of credit.                                                                                                            |                                                                                                                                                                                                                                          |
 
 {22}------------------------------------------------
 
-#### **Mark scheme for Section B**
+## Mark scheme for Section B
 
-|     | Question<br>5                                                                            | Answer | AO1 | AO2 | AO3 | Total<br>Mark |
-|-----|------------------------------------------------------------------------------------------|--------|-----|-----|-----|---------------|
-| (a) | When did Prince Henry become Prince of Wales?                                            |        |     |     |     |               |
-|     | 1610                                                                                     |        | 1   |     |     | 1             |
-| (b) | Who was the influential<br>Welsh man during the reign of Charles I?                      |        |     |     |     |               |
-|     | John Owen                                                                                |        | 1   |     |     | 1             |
-| (c) | When was the<br>Battle of St Fagans?                                                     |        |     |     |     |               |
-|     | 1648                                                                                     |        | 1   |     |     | 1             |
-| (d) | What name<br>was given to the men who signed the warrant for the execution of Charles I? |        |     |     |     |               |
-|     | Regicides                                                                                |        | 1   |     |     | 1             |
-| (e) | Who was the<br>soldier that ruled Wales directly from 1655?                              |        |     |     |     |               |
-|     | James Berry                                                                              |        | 1   |     |     | 1             |
+| Question 5 | Answer                                                                                | AO1         | AO2 | AO3 | Total Mark |   |
+|------------|---------------------------------------------------------------------------------------|-------------|-----|-----|------------|---|
+| (a)        | When did Prince Henry become Prince of Wales?                                         | 1610        | 1   |     |            | 1 |
+| (b)        | Who was the influential Welsh man during the reign of Charles I?                      | John Owen   | 1   |     |            | 1 |
+| (c)        | When was the Battle of St Fagans?                                                     | 1648        | 1   |     |            | 1 |
+| (d)        | What name was given to the men who signed the warrant for the execution of Charles I? | Regicides   | 1   |     |            | 1 |
+| (e)        | Who was the soldier that ruled Wales directly from 1655?                              | James Berry | 1   |     |            | 1 |
 
 {23}------------------------------------------------
 
@@ -421,11 +413,11 @@ When marking, examiners can use these examples to decide whether a candidate's r
 
 {24}------------------------------------------------
 
-| 3 | 3 marks<br>•<br>Response demonstrates relevant knowledge with some<br>historical accuracy. Understanding is implicit. | 3 marks<br>•<br>There is some accurate application of knowledge and<br>understanding to address the historical concept in the set<br>question, but it is inconsistent. |
-|---|-----------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 2 | 2 marks<br>•<br>Response demonstrates a limited level of relevant<br>knowledge. Limited evidence of<br>understanding. | 2 marks<br>•<br>Limited application of knowledge and understanding to<br>address the historical concept in the set question.                                           |
-| 1 | 1 mark<br>•<br>Response demonstrates a minimal level of relevant<br>knowledge. No evidence of<br>understanding.       | 1 mark<br>•<br>Minimal application of knowledge to address the historical<br>concept in the set question.                                                              |
-| 0 | 0 marks<br>No response attempted or nothing worthy of credit.                                                         |                                                                                                                                                                        |
+| 3 | Response demonstrates relevant knowledge with some historical accuracy. Understanding is implicit. | There is some accurate application of knowledge and understanding to address the historical concept in the set question, but it is inconsistent. |
+|---|----------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2 | Response demonstrates a limited level of relevant knowledge. Limited evidence of understanding.    | Limited application of knowledge and understanding to address the historical concept in the set question.                                        |
+| 1 | Response demonstrates a minimal level of relevant knowledge. No evidence of understanding.         | Minimal application of knowledge to address the historical concept in the set question.                                                          |
+| 0 | No response attempted or nothing worthy of credit.                                                 |                                                                                                                                                  |
 
 {25}------------------------------------------------
 
@@ -437,22 +429,20 @@ When marking, examiners can use these examples to decide whether a candidate's r
 - Catholics were angered by continuing to be fined for not attending Protestant church services which led to the Gunpowder Plot, an attempt by a group of Catholic terrorists to blow up the King and the House of Lords to re-establish Catholic rule in England.
 - Puritans were angered by the imposition of the King James Bible, a new official version that they did not like, which was to be used in all churches. This was particularly a problem for James in Scotland as the vast majority of Scottish people were members of the Puritan state church.
 
-| Band | AO1                                                                                                                    |  |
-|------|------------------------------------------------------------------------------------------------------------------------|--|
-| 5    | 5 marks<br>•<br>Response demonstrates relevant and accurate historical<br>knowledge.<br>Understanding is convincing.   |  |
-| 4    | 4 marks<br>•<br>Response demonstrates relevant and mainly accurate historical<br>knowledge.<br>Understanding is clear. |  |
-| 3    | 3 marks<br>•<br>Response demonstrates relevant knowledge with some historical accuracy.<br>Understanding is implicit.  |  |
-| 2    | 2 marks<br>•<br>Response demonstrates a limited level of relevant knowledge. Limited<br>evidence of<br>understanding.  |  |
-| 1    | 1 mark<br>•<br>Response demonstrates a minimal level of relevant knowledge. No evidence<br>of<br>understanding.        |  |
-| 0    | 0 marks<br>No response attempted or nothing worthy of credit.                                                          |  |
+| Band | AO1                                                                                                                |
+|------|--------------------------------------------------------------------------------------------------------------------|
+| 5    | 5 marks<br>• Response demonstrates relevant and accurate historical knowledge.<br>Understanding is convincing.     |
+| 4    | 4 marks<br>• Response demonstrates relevant and mainly accurate historical knowledge.<br>Understanding is clear.   |
+| 3    | 3 marks<br>• Response demonstrates relevant knowledge with some historical accuracy.<br>Understanding is implicit. |
+| 2    | 2 marks<br>• Response demonstrates a limited level of relevant knowledge. Limited evidence of understanding.       |
+| 1    | 1 mark<br>• Response demonstrates a minimal level of relevant knowledge. No evidence of understanding.             |
+| 0    | 0 marks<br>No response attempted or nothing worthy of credit.                                                      |
 
 {26}------------------------------------------------
 
-| Question 7b                                                                                                                                                                                                                                                                                                                                                                                               | Total<br>Marks |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|
-| How<br>valuable is Item 1<br>to our<br>understanding of the reasons why James I had problems ruling his kingdoms?                                                                                                                                                                                                                                                                                         | [15]           |
-| Item 1:<br>John Simkin, a History teacher and author, writing in<br>an article about King James, VI of Scotland and I of England on his<br>website Spartacus Educational<br>(updated 2020)                                                                                                                                                                                                                |                |
-| The English view was that Scotland should be incorporated into England, the Scottish that the two kingdoms should be equal<br>partners. The contemporary historian Sir Robert Cotton argued at the time that, previously, smaller kingdoms had joined to become<br>the kingdom of England, so now the smaller kingdoms within the British Isles would come together under the ancient name of<br>Britain. |                |
+| Question 7b                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    | Total<br>Marks |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|
+| How valuable is Item 1 to our understanding of the reasons why James I had problems ruling his kingdoms?<br>Item 1: John Simkin, a History teacher and author, writing in an article about King James, VI of Scotland and I of England on his website Spartacus Educational (updated 2020)<br>The English view was that Scotland should be incorporated into England, the Scottish that the two kingdoms should be equal partners. The contemporary historian Sir Robert Cotton argued at the time that, previously, smaller kingdoms had joined to become the kingdom of England, so now the smaller kingdoms within the British Isles would come together under the ancient name of Britain. | [15]           |
 
 - The item is valuable to an understanding of the reasons why James I had problems ruling his kingdoms as it explains that James wanted to treat both of his kingdoms as if they were the same kingdom, which he wanted to call Britain. However, its value is limited as is gives no indication as to what other politicians thought of this issue of how to treat the kingdoms of England and Scotland now they were ruled by the same monarch.
 - The item also has value in that it states that England and Scotland should be treated as equal partners, but this too is undermined by the rising power and greater wealth of England compared to Scotland, potentially making a plan to treat them as equals likely to fail.
@@ -462,43 +452,39 @@ When marking, examiners can use these examples to decide whether a candidate's r
 
 {27}------------------------------------------------
 
-| Band | AO2                                                                                                                                                                    | AO3                                                                                                                                                                                                                                            |
-|------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 5    | 5 marks<br>•<br>Precise, convincing and accurate<br>application of knowledge<br>and understanding to address the historical concept in the<br>set question.            | 9–10 marks<br>•<br>Precise, convincing and accurate<br>analysis and evaluation of<br>the items<br>linked to the set question.<br>•<br>Valid judgement reached with comprehensive support.<br>•<br>Answer expressed clearly in continuous text. |
-| 4    | 4 marks<br>•<br>Clear and mainly accurate<br>application of knowledge and<br>understanding to address the historical concept in the set<br>question.                   | 7–8 marks<br>•<br>Clear and mainly accurate<br>analysis and evaluation of the<br>items<br>linked to the set question.<br>•<br>Valid judgement reached with a good level of support.<br>•<br>Answer expressed in continuous text.               |
-| 3    | 3 marks<br>•<br>There is some accurate application of knowledge and<br>understanding to address the historical concept in the set<br>question, but it is inconsistent. | 5–6 marks<br>•<br>Inconsistent<br>analysis and evaluation of the items<br>linked to<br>the set question, with some accuracy.<br>•<br>Inconsistent<br>judgement reached with some<br>support.                                                   |
-| 2    | 2 marks<br>•<br>Limited application of knowledge and understanding to<br>address the historical concept in the set question                                            | 3–4 marks<br>•<br>Limited analysis and evaluation of the items.<br>•<br>Incomplete<br>judgement reached with limited support.                                                                                                                  |
-| 1    | 1 mark<br>•<br>Minimal application of knowledge to address the historical<br>concept in the set question.                                                              | 1–2 marks<br>•<br>Minimal analysis and evaluation of the items.<br>•<br>Superficial judgement reached.                                                                                                                                         |
-| 0    | 0 marks<br>No response attempted or nothing worthy of credit.                                                                                                          |                                                                                                                                                                                                                                                |
+| Band | AO2                                                                                                                                                           | AO3                                                                                                                                                                                                                          |
+|------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 5    | 5 marks<br>• Precise, convincing and accurate application of knowledge and understanding to address the historical concept in the set question.               | 9–10 marks<br>• Precise, convincing and accurate analysis and evaluation of the items linked to the set question.<br>• Valid judgement reached with comprehensive support.<br>• Answer expressed clearly in continuous text. |
+| 4    | 4 marks<br>• Clear and mainly accurate application of knowledge and understanding to address the historical concept in the set question.                      | 7–8 marks<br>• Clear and mainly accurate analysis and evaluation of the items linked to the set question.<br>• Valid judgement reached with a good level of support.<br>• Answer expressed in continuous text.               |
+| 3    | 3 marks<br>• There is some accurate application of knowledge and understanding to address the historical concept in the set question, but it is inconsistent. | 5–6 marks<br>• Inconsistent analysis and evaluation of the items linked to the set question, with some accuracy.<br>• Inconsistent judgement reached with some support.                                                      |
+| 2    | 2 marks<br>• Limited application of knowledge and understanding to address the historical concept in the set question                                         | 3–4 marks<br>• Limited analysis and evaluation of the items.<br>• Incomplete judgement reached with limited support.                                                                                                         |
+| 1    | 1 mark<br>• Minimal application of knowledge to address the historical concept in the set question.                                                           | 1–2 marks<br>• Minimal analysis and evaluation of the items.<br>• Superficial judgement reached.                                                                                                                             |
+| 0    | 0 marks<br>No response attempted or nothing worthy of credit.                                                                                                 |                                                                                                                                                                                                                              |
 
 {28}------------------------------------------------
 
-| Question 8a                                                                        | Total<br>Marks |
-|------------------------------------------------------------------------------------|----------------|
-| Outline the role of Welsh military personnel in the fighting during the Civil War. |                |
+| Question 8a                                                                        |  | Total<br>Marks |
+|------------------------------------------------------------------------------------|--|----------------|
+| Outline the role of Welsh military personnel in the fighting during the Civil War. |  | [5]            |
 
 - Many of the men from Wales who fought in the Civil War fought on the Royalist side. 1000 Welsh soldiers were killed at the battle of Edgehill, although the outcome of the battle did not provide a clear and definite result. Welsh soldiers also played an important role in the first battle of Newbury in 1643, although this battle was also inconclusive.
 - Welsh landowners who got involved in the Civil War were mostly raising troops for the King, although there was a lot of support for Parliament in Pembrokeshire and amongst puritans such as Thomas Myddleton of Chirk Castle.
 - Men from Wales were employed as foot soldiers in Civil War battles where they would fight either as pikemen or musketeers.
 
-| Band | AO1                                                                                                                   |
-|------|-----------------------------------------------------------------------------------------------------------------------|
-| 5    | 5 marks<br>•<br>Response demonstrates relevant and accurate historical<br>knowledge.<br>Understanding is convincing.  |
-| 4    | 4 marks<br>•<br>Response demonstrates relevant and mainly accurate historical<br>knowledge. Understanding is clear.   |
-| 3    | 3 marks<br>•<br>Response demonstrates relevant knowledge with some historical<br>accuracy. Understanding is implicit. |
-| 2    | 2 marks<br>•<br>Response demonstrates a limited level of relevant knowledge. Limited<br>evidence of<br>understanding. |
-| 1    | 1 mark<br>•<br>Response demonstrates a minimal level of relevant knowledge. No<br>evidence of<br>understanding.       |
-| 0    | 0 marks<br>No response attempted or nothing worthy of credit.                                                         |
+| Band | AO1                                                                                                             |
+|------|-----------------------------------------------------------------------------------------------------------------|
+| 5    | 5 marks<br>• Response demonstrates relevant and accurate historical knowledge. Understanding is convincing.     |
+| 4    | 4 marks<br>• Response demonstrates relevant and mainly accurate historical knowledge. Understanding is clear.   |
+| 3    | 3 marks<br>• Response demonstrates relevant knowledge with some historical accuracy. Understanding is implicit. |
+| 2    | 2 marks<br>• Response demonstrates a limited level of relevant knowledge. Limited evidence of understanding.    |
+| 1    | 1 mark<br>• Response demonstrates a minimal level of relevant knowledge. No evidence of understanding.          |
+| 0    | 0 marks<br>No response attempted or nothing worthy of credit.                                                   |
 
 {29}------------------------------------------------
 
-| Question 8b                                                                                                                                                                                                                                                                                                          | Total<br>Marks |
-|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|
-| To what extent do Item<br>2<br>and Item<br>3<br>persuade you that Wales was<br>important to the Royalists during the Civil War?                                                                                                                                                                                      | [20]           |
-| Item 2: From a report by informers who had been sent to the House of Commons to provide information to Parliamentary military<br>commanders (5 April 1644)                                                                                                                                                           |                |
-| We hear that 6<br>000 Irish rebels have landed in Wales. They are behaving in a cruel and savage way. Unless some speedy help is sent to<br>Chirk, the whole country will be destroyed by these Irish invaders.                                                                                                      |                |
-| Item 3: Geraint Jenkins, a professor of Welsh History, writing in his academic book The Foundations of Modern Wales 1642–1780 (1987)                                                                                                                                                                                 |                |
-| From the outset it was vitally important for the king to control the borderlands. Wales could not only supply him with wealth, supplies and<br>armies, but might also offer a route for loyal troops from Ireland if he needed them. Parliament was determined to break through the<br>barrier of the Welsh Marches. |                |
+| Question 8b                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               | Total<br>Marks |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|
+| To what extent do Item 2 and Item 3 persuade you that Wales was important to the Royalists during the Civil War?<br><br>Item 2: From a report by informers who had been sent to the House of Commons to provide information to Parliamentary military commanders (5 April 1644)<br><br>We hear that 6 000 Irish rebels have landed in Wales. They are behaving in a cruel and savage way. Unless some speedy help is sent to Chirk, the whole country will be destroyed by these Irish invaders.<br><br>Item 3: Geraint Jenkins, a professor of Welsh History, writing in his academic book <i>The Foundations of Modern Wales</i> 1642–1780 (1987)<br><br>From the outset it was vitally important for the king to control the borderlands. Wales could not only supply him with wealth, supplies and armies, but might also offer a route for loyal troops from Ireland if he needed them. Parliament was determined to break through the barrier of the Welsh Marches. | [20]           |
 
 - The items are persuasive because both suggest that Wales was of strategic importance during the Civil War. Item 2 refers to Wales being the route for Royalist supporters from Ireland to land in mainland Britain. This is also highlighted in Item 3, which shows not only Wales as a route for the Irish to join the war, but also that the King was able to get supplies and other troops from Wales as well.
 - However, more persuasive is the idea that it was the castles of Wales providing strongholds for the Royalists that was of more strategic importance, or the strength of forces that could be commanded by parliamentarians such as Thomas Myddleton of Chirk that was of more strategic significance.
@@ -511,50 +497,50 @@ likely understand the role of Wales in the war.
 
 • Overall, the items are persuasive that Wales was strategically important to the Royalists in the Civil War, as they indicate it was a main source of supplies and manpower, as well as being a route for Irish supporters. It will likely be concluded that Wales was strategically important to the Royalists, even though this was not enough to help them win.
 
-| Band | AO2                                                                                                                                                                      | AO3                                                                                                                                                                                                                                            |
-|------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 5    | 9–10 marks<br>•<br>Precise, convincing and accurate application of knowledge<br>and understanding to address the historical concept in the set<br>question.              | 9–10 marks<br>•<br>Precise, convincing and accurate<br>analysis and evaluation of<br>the items<br>linked to the set question.<br>•<br>Valid judgement reached with comprehensive support.<br>•<br>Answer expressed clearly in continuous text. |
-| 4    | 7–8 marks<br>•<br>Clear and mainly accurate application of knowledge and<br>understanding to address the historical concept in the set<br>question.                      | 7–8 marks<br>•<br>Clear and mainly accurate<br>analysis and evaluation of the<br>items<br>linked to the set question.<br>•<br>Valid judgement reached with a good level of support.<br>•<br>Answer expressed in continuous text.               |
-| 3    | 5–6 marks<br>•<br>There is some accurate application of knowledge and<br>understanding to address the historical concept in the set<br>question, but it is inconsistent. | 5–6 marks<br>•<br>Inconsistent<br>analysis and evaluation of the items<br>linked to the<br>set question, with some accuracy.<br>•<br>Inconsistent<br>judgement reached with some<br>support.                                                   |
-| 2    | 3–4 marks<br>•<br>Limited application of knowledge and understanding to<br>address the historical concept in the set question.                                           | 3–4 marks<br>•<br>Limited analysis and evaluation of the items.<br>•<br>Incomplete<br>judgement reached with limited support.                                                                                                                  |
-| 1    | 1–2 marks<br>•<br>Minimal application of knowledge to address the historical<br>concept in the set question.                                                             | 1–2 marks<br>•<br>Minimal analysis and evaluation of the items.<br>•<br>Superficial judgement reached.                                                                                                                                         |
-| 0    |                                                                                                                                                                          | 0 marks<br>No response attempted or nothing worthy of credit.                                                                                                                                                                                  |
+| Band | AO2                                                                                                                                                                      | AO3                                                                                                                                                                                                                                      |
+|------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 5    | 9–10 marks<br>•<br>Precise, convincing and accurate application of knowledge<br>and understanding to address the historical concept in the set<br>question.              | 9–10 marks<br>•<br>Precise, convincing and accurate analysis and evaluation of<br>the items linked to the set question.<br>•<br>Valid judgement reached with comprehensive support.<br>•<br>Answer expressed clearly in continuous text. |
+| 4    | 7–8 marks<br>•<br>Clear and mainly accurate application of knowledge and<br>understanding to address the historical concept in the set<br>question.                      | 7–8 marks<br>•<br>Clear and mainly accurate analysis and evaluation of the<br>items linked to the set question.<br>•<br>Valid judgement reached with a good level of support.<br>•<br>Answer expressed in continuous text.               |
+| 3    | 5–6 marks<br>•<br>There is some accurate application of knowledge and<br>understanding to address the historical concept in the set<br>question, but it is inconsistent. | 5–6 marks<br>•<br>Inconsistent analysis and evaluation of the items linked to the<br>set question, with some accuracy.<br>•<br>Inconsistent judgement reached with some support.                                                         |
+| 2    | 3–4 marks<br>•<br>Limited application of knowledge and understanding to<br>address the historical concept in the set question.                                           | 3–4 marks<br>•<br>Limited analysis and evaluation of the items.<br>•<br>Incomplete judgement reached with limited support.                                                                                                               |
+| 1    | 1–2 marks<br>•<br>Minimal application of knowledge to address the historical<br>concept in the set question.                                                             | 1–2 marks<br>•<br>Minimal analysis and evaluation of the items.<br>•<br>Superficial judgement reached.                                                                                                                                   |
+| 0    | 0 marks<br>No response attempted or nothing worthy of credit.                                                                                                            | 0 marks<br>No response attempted or nothing worthy of credit.                                                                                                                                                                            |
 
 {31}------------------------------------------------
 
 ## Mapping of questions to specification content and assessment objectives: Unit 1.3
 
-|                              |         |                 | Specification content covered |                 |                  |                 |                  |                     |                      |                     |                      |                 |                  |                     |                      |                     |                      |                 |                  |                     |                      |                     |                      |                 |                  |                     |                      |                     |                      |                 |                  |  |  |  |
-|------------------------------|---------|-----------------|-------------------------------|-----------------|------------------|-----------------|------------------|---------------------|----------------------|---------------------|----------------------|-----------------|------------------|---------------------|----------------------|---------------------|----------------------|-----------------|------------------|---------------------|----------------------|---------------------|----------------------|-----------------|------------------|---------------------|----------------------|---------------------|----------------------|-----------------|------------------|--|--|--|
-| n<br>o<br>sti<br>e<br>u<br>Q | ks      |                 |                               |                 | 1.3.1            |                 |                  | 1.3.2               |                      |                     |                      |                 |                  | 1.3.3               |                      |                     |                      |                 |                  |                     | 1.3.4                |                     |                      |                 |                  |                     |                      | 1.3.5               |                      |                 |                  |  |  |  |
-|                              | ar<br>M | ai<br>3.1<br>1. | aii<br>3.1<br>1.              | bi<br>3.1<br>1. | bii<br>3.1<br>1. | ci<br>3.1<br>1. | cii<br>3.1<br>1. | ai<br>2<br>3.<br>1. | aii<br>2<br>3.<br>1. | bi<br>2<br>3.<br>1. | bii<br>2<br>3.<br>1. | 2ci<br>3.<br>1. | 2cii<br>3.<br>1. | ai<br>3<br>3.<br>1. | aii<br>3<br>3.<br>1. | bi<br>3<br>3.<br>1. | bii<br>3<br>3.<br>1. | 3ci<br>3.<br>1. | 3cii<br>3.<br>1. | ai<br>4<br>3.<br>1. | aii<br>4<br>3.<br>1. | bi<br>4<br>3.<br>1. | bii<br>4<br>3.<br>1. | 4ci<br>3.<br>1. | 4cii<br>3.<br>1. | ai<br>5<br>3.<br>1. | aii<br>5<br>3.<br>1. | bi<br>5<br>3.<br>1. | bii<br>5<br>3.<br>1. | 5ci<br>3.<br>1. | 5cii<br>3.<br>1. |  |  |  |
-| 1                            | 5       |                 |                               | x               |                  |                 |                  |                     | x                    |                     |                      |                 |                  |                     | x                    |                     |                      |                 |                  |                     |                      | x                   |                      |                 |                  | x                   |                      |                     |                      |                 |                  |  |  |  |
-| 2                            | 10      | x               | x                             |                 |                  |                 |                  |                     |                      |                     |                      |                 |                  |                     |                      |                     |                      |                 |                  |                     |                      |                     |                      |                 |                  |                     |                      |                     |                      |                 |                  |  |  |  |
-| 3a                           | 5       |                 |                               |                 |                  |                 |                  |                     |                      |                     |                      |                 |                  | x                   | x                    |                     |                      |                 |                  |                     |                      |                     |                      |                 |                  |                     |                      |                     |                      |                 |                  |  |  |  |
-| 3b                           | 15      |                 |                               |                 |                  |                 |                  |                     |                      |                     |                      |                 |                  |                     |                      |                     |                      | x               | x                |                     |                      |                     |                      |                 |                  |                     |                      |                     |                      |                 |                  |  |  |  |
-| 4a                           | 5       |                 |                               |                 |                  |                 |                  |                     |                      |                     |                      |                 |                  |                     |                      |                     |                      |                 |                  |                     |                      |                     |                      |                 |                  | x                   | x                    |                     |                      |                 |                  |  |  |  |
-| 4b                           | 20      |                 |                               |                 |                  |                 |                  |                     |                      |                     |                      |                 |                  |                     |                      |                     |                      |                 |                  |                     |                      |                     |                      |                 |                  | x                   | x                    | x                   | x                    | x               | x                |  |  |  |
-| Total                        | 60      |                 |                               |                 |                  |                 |                  |                     |                      |                     |                      |                 |                  |                     |                      |                     |                      |                 |                  |                     |                      |                     |                      |                 |                  |                     |                      |                     |                      |                 |                  |  |  |  |
+| Question | Marks | Specification content covered |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |  |
+|----------|-------|-------------------------------|----------|---------|----------|---------|----------|---------|----------|---------|----------|---------|----------|---------|----------|---------|----------|---------|----------|---------|----------|---------|----------|---------|----------|---------|----------|---------|----------|---------|----------|--|
+|          |       | 1.3.1                         |          |         | 1.3.2    |         |          |         | 1.3.3    |         |          |         | 1.3.4    |         |          |         | 1.3.5    |         |          |         |          |         |          |         |          |         |          |         |          |         |          |  |
+|          |       | 1.3.1ai                       | 1.3.1aii | 1.3.1bi | 1.3.1bii | 1.3.1ci | 1.3.1cii | 1.3.2ai | 1.3.2aii | 1.3.2bi | 1.3.2bii | 1.3.2ci | 1.3.2cii | 1.3.3ai | 1.3.3aii | 1.3.3bi | 1.3.3bii | 1.3.3ci | 1.3.3cii | 1.3.4ai | 1.3.4aii | 1.3.4bi | 1.3.4bii | 1.3.4ci | 1.3.4cii | 1.3.5ai | 1.3.5aii | 1.3.5bi | 1.3.5bii | 1.3.5ci | 1.3.5cii |  |
+| 1        | 5     |                               |          | x       |          |         |          |         | x        |         |          |         |          |         |          |         |          |         |          |         |          | x       |          |         |          | x       |          |         |          |         |          |  |
+| 2        | 10    | x                             | x        |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |  |
+| 3a       | 5     |                               |          |         |          |         |          |         |          |         |          |         |          |         | x        | x       |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |  |
+| 3b       | 15    |                               |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          | x       | x        |         |          |         |          |         |          |         |          |         |          |         |          |  |
+| 4a       | 5     |                               |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         | x        | x       |          |         |          |         |          |  |
+| 4b       | 20    |                               |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         | x        | x       | x        | x       | x        | x       |          |  |
+| Total    | 60    |                               |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |  |
 
 {32}------------------------------------------------
 
 ## Mapping of questions to specification content and assessment objectives: Unit 1.4
 
-|                         |               | Specification content covered |                  |                 |                  |                 |                  |                     |                      |                     |                      |                 |                  |                     |                      |                     |                      |                 |                  |                     |                      |                     |                      |                 |                  |                     |                      |                     |                      |                 |                  |  |  |  |
-|-------------------------|---------------|-------------------------------|------------------|-----------------|------------------|-----------------|------------------|---------------------|----------------------|---------------------|----------------------|-----------------|------------------|---------------------|----------------------|---------------------|----------------------|-----------------|------------------|---------------------|----------------------|---------------------|----------------------|-----------------|------------------|---------------------|----------------------|---------------------|----------------------|-----------------|------------------|--|--|--|
-| n                       |               | 1.4.1                         |                  |                 |                  |                 |                  |                     | 1.4.2                |                     |                      |                 |                  |                     | 1.4.3                |                     |                      |                 |                  |                     | 1.4.4                |                     |                      |                 |                  |                     |                      | 1.4.5               |                      |                 |                  |  |  |  |
-| o<br>sti<br>e<br>u<br>Q | ks<br>ar<br>M | ai<br>4.1<br>1.               | aii<br>4.1<br>1. | bi<br>4.1<br>1. | bii<br>4.1<br>1. | ci<br>4.1<br>1. | cii<br>4.1<br>1. | ai<br>2<br>4.<br>1. | aii<br>2<br>4.<br>1. | bi<br>2<br>4.<br>1. | bii<br>2<br>4.<br>1. | 2ci<br>4.<br>1. | 2cii<br>4.<br>1. | ai<br>3<br>4.<br>1. | aii<br>3<br>4.<br>1. | bi<br>3<br>4.<br>1. | bii<br>3<br>4.<br>1. | 3ci<br>4.<br>1. | 3cii<br>4.<br>1. | ai<br>4<br>4.<br>1. | aii<br>4<br>4.<br>1. | bi<br>4<br>4.<br>1. | bii<br>4<br>4.<br>1. | 4ci<br>4.<br>1. | 4cii<br>4.<br>1. | ai<br>5<br>4.<br>1. | aii<br>5<br>4.<br>1. | bi<br>5<br>4.<br>1. | bii<br>5<br>4.<br>1. | 5ci<br>4.<br>1. | 5cii<br>4.<br>1. |  |  |  |
-| 5                       | 5             |                               | x                |                 |                  |                 |                  |                     |                      |                     |                      |                 | x                |                     |                      |                     |                      |                 | x                |                     |                      |                     |                      |                 | x                |                     | x                    |                     |                      |                 |                  |  |  |  |
-| 6                       | 10            |                               |                  |                 |                  |                 |                  |                     |                      |                     |                      |                 |                  |                     |                      |                     |                      |                 |                  |                     |                      |                     |                      |                 |                  |                     |                      |                     |                      | x               | x                |  |  |  |
-| 7a                      | 5             |                               |                  |                 | x                |                 |                  |                     |                      |                     |                      |                 |                  |                     |                      |                     |                      |                 |                  |                     |                      |                     |                      |                 |                  |                     |                      |                     |                      |                 |                  |  |  |  |
-| 7b                      | 15            |                               |                  |                 |                  | x               | x                |                     |                      |                     |                      |                 |                  |                     |                      |                     |                      |                 |                  |                     |                      |                     |                      |                 |                  |                     |                      |                     |                      |                 |                  |  |  |  |
-| 8a                      | 5             |                               |                  |                 |                  |                 |                  |                     |                      |                     |                      |                 |                  | x                   | x                    |                     |                      |                 |                  |                     |                      |                     |                      |                 |                  |                     |                      |                     |                      |                 |                  |  |  |  |
-| 8b                      | 20            |                               |                  |                 |                  |                 |                  |                     |                      |                     |                      |                 |                  |                     |                      | x                   | x                    |                 |                  |                     |                      |                     |                      |                 |                  |                     |                      |                     |                      |                 |                  |  |  |  |
-| Total                   | 60            |                               |                  |                 |                  |                 |                  |                     |                      |                     |                      |                 |                  |                     |                      |                     |                      |                 |                  |                     |                      |                     |                      |                 |                  |                     |                      |                     |                      |                 |                  |  |  |  |
+|          |       | Specification content covered |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |  |
+|----------|-------|-------------------------------|----------|---------|----------|---------|----------|---------|----------|---------|----------|---------|----------|---------|----------|---------|----------|---------|----------|---------|----------|---------|----------|---------|----------|---------|----------|---------|----------|---------|----------|--|
+| Question | Marks | 1.4.1                         |          |         |          |         |          | 1.4.2   |          |         |          |         |          | 1.4.3   |          |         |          |         |          | 1.4.4   |          |         |          |         |          | 1.4.5   |          |         |          |         |          |  |
+|          |       | 1.4.1ai                       | 1.4.1aii | 1.4.1bi | 1.4.1bii | 1.4.1ci | 1.4.1cii | 1.4.2ai | 1.4.2aii | 1.4.2bi | 1.4.2bii | 1.4.2ci | 1.4.2cii | 1.4.3ai | 1.4.3aii | 1.4.3bi | 1.4.3bii | 1.4.3ci | 1.4.3cii | 1.4.4ai | 1.4.4aii | 1.4.4bi | 1.4.4bii | 1.4.4ci | 1.4.4cii | 1.4.5ai | 1.4.5aii | 1.4.5bi | 1.4.5bii | 1.4.5ci | 1.4.5cii |  |
+| 5        | 5     |                               | x        |         |          |         |          |         |          |         |          | x       |          |         |          |         |          | x       |          |         |          |         |          | x       |          | x       |          |         |          |         |          |  |
+| 6        | 10    |                               |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         | x        | x       |          |  |
+| 7a       | 5     |                               |          |         | x        |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |  |
+| 7b       | 15    |                               |          |         |          | x       | x        |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |  |
+| 8a       | 5     |                               |          |         |          |         |          |         |          |         |          |         | x        | x       |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |  |
+| 8b       | 20    |                               |          |         |          |         |          |         |          |         |          |         |          |         | x        | x       |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |  |
+| Total    | 60    |                               |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |         |          |  |
 
 {33}------------------------------------------------
 
-#### **Copyright**
+#### Copyright
 
 Items used within this resource are used for educational (non-commercial) purposes only, to facilitate learning and for critical analysis. A form of acknowledgement has been provided to all items. To the best of our knowledge, all items are being used in compliance with the Fair Use Policy; if there are omissions or inaccuracies, please inform us so that any necessary corrections can be made. [Qualificationdevelopment@wjec.co.uk](mailto:Qualificationdevelopment@wjec.co.uk)
 
