@@ -2,9 +2,9 @@
 
 {1}------------------------------------------------
 
-# WHY CHOOSE GCSE
+## WHY CHOOSE GCSE
 
-# HISTORY?
+### HISTORY?
 
 ![](_page_0_Picture_2.jpeg)
 
