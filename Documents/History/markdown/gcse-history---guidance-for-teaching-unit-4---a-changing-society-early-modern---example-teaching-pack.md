@@ -54,15 +54,25 @@ sixteenth-century Wales and England
 
 {4}------------------------------------------------
 
+# Theme
+
+# Tonic
+
 **Theme** Society and economy
 
 **Topic** The world of the Newport Medieval Ship (life in late medieval Wales and
 
 England)
 
+Item 1
+
 **Item 1** A description of the importance of the Newport Ship for trading links between South Wales, Bristol and the Iberian Peninsula in the 1450s and 1560s, found in the visitor guidebook *Newport Medieval Ship. A Guide to the Discovery and Preservation of a Fifteenth-Century Merchant Ship* (2017)
 
 The fifteenth century stands at a crossroads between historical eras. Many of the unmistakable characteristics of medieval life were still prominent: guilds and trade leagues, castles and royal courts. But this was also the early Renaissance: a time of accelerated advances. Few areas of life were unchanged. The economy, in particular, was transformed in part by the leaps and bounds made in the art of shipbuilding. The Newport ship is the product of the development of bigger, faster and more seaworthy ships that facilitated greater international trade. One of the major routes was that between Britain and Iberia, where the Newport ship sailed. The main cargoes appear to have been wine and iron, but there are also references to large quantities of woad being exported to Britain. Some goods went in both directions depending on circumstances: wheat (to relieve shortages) and wool (to meet the differing needs of spinners, dyers and weavers). Bristol was the main recipient of Iberian trade with Britain. While mariners from other British ports mostly stuck to familiar routes, the men of Bristol proved more willing to explore new opportunities. The journey was long and arduous: a trip from Bristol to London could take three weeks and was complicated by the harsh waters of the Bay of Biscay. Trade from the Basque coast into Bristol expanded greatly during the second half of the fifteenth century and extended to ports as far north as Chester. So it may be that the ship was a frequent sight in the Bristol Channel and possibly the River Usk. At the end of her life she came into Newport for repairs, refit, or dismantling, and never left.
+
+# Theme
+
+# Topic
 
 **Theme** Society and economy
 
@@ -76,6 +86,10 @@ England)
 
 {5}------------------------------------------------
 
+# Theme
+
+# Topic
+
 **Theme** Society and economy
 
 **Topic** The world of the Newport Medieval Ship (life in late medieval Wales and England)
@@ -83,6 +97,10 @@ England)
 **Item 3** The Medieval Boarstall map of 1444. Boarstall was a small Medieval village in Buckinghamshire. On the map can be seen the church, peasant houses, fields (with strips), woodland, demesne and main street.
 
 ![](_page_4_Picture_5.jpeg)
+
+# Theme
+
+# Topic
 
 **Theme** Society and economy
 
@@ -123,6 +141,8 @@ Most castles in the south surrendered reasonably quickly. Jasper Tudor's army wa
 **Theme** Conflict and Peace
 
 **Topic** The Wars of the Roses, 1455-1485
+
+Item 7
 
 **Item 7** An anonymous author outlines their case for the disappearance of Edward V and his brother Prince Richard from the Tower of London in the section 'Crimes alleged by Shakespeare' on the website of the Richard III society (2022)
 
@@ -172,19 +192,27 @@ Henry VIII's need for a male heir had become increasingly urgent in the twenty-s
 
 **Theme** International Relations **Topic** The Break with Rome
 
-# **Item 11** From the 1534 Act of Supremacy
+## **Item 11** From the 1534 Act of Supremacy
 
 The king's Majesty justly and rightfully is, and ought to be, the supreme head of the Church of England, and so is recognized by the clergy of this realm in their assemblies. Nevertheless, for confirmation of this and for the for the increased virtue in Christ's religion within this realm of England, and the repression and removal of all errors, it is enacted, by authority of this present Parliament, that the king, our sovereign lord, his heirs and successors, kings of this realm, shall be taken, accepted, and reputed the only supreme head on earth of the Church of England.
 
 {9}------------------------------------------------
 
+# Theme
+
+# Topic
+
 **Theme** International Relations **Topic** The Break with Rome
+
+Item 12
 
 **Item 12** Ken Petts, an artist and illustrator, depicts relics and other precious and valuable property being removed by government workers during the dissolution of the monasteries, 1536–1541, in the children's educational magazine *Look and Learn* (1974). This image is of a scene that took place in Oxford where Henry attacked the churches but refused to attack the University.
 
 ![](_page_8_Picture_5.jpeg)
 
 **Or**
+
+Item 12
 
 **Item 12** Fred Zinnemann, an Austrian-American film director, depicts the perjury of Sir Richard Rich during the trial of Sir Thomas More in his film *A Man for all Seasons* (1966)
 
@@ -206,6 +234,8 @@ For example, [A Man for All Seasons \(1966\): Rich's Perjury -](https://www.yout
 
 **Topic** Heresy, 1532–1558
 
+Item 14
+
 **Item 14** A twenty-first-century photograph of the memorial plaque to Rawlins White, mounted on the old Bethany Chapel, which became a part of the former Howells department store in Cardiff. The plaque was erected on 3 April 1907 and its inscription states:
 
 The noble army of martyrs. Praise thee.
@@ -216,7 +246,7 @@ We shall by God's grace light such a candle in England as shall never be put out
 
 ![](_page_10_Picture_8.jpeg)
 
-# **Or**
+### **Or**
 
 **Item 14** The Indian film director, Shekhar Kapur depicts the Marian burnings in the opening to his film *Elizabeth* (1998)
 
@@ -239,6 +269,8 @@ Master Latimer received the flame as if he were embracing it. After he had strok
 **Theme** Religion
 
 **Topic** Heresy 1532–1558
+
+Item 16
 
 **Item 16** Lauren Good, a digital content creator, writing in the article *A perilous game of hide and seek: the history of priest holes and hunters* on the History Extra website (2024)
 
@@ -270,6 +302,8 @@ The Act, also known as the Act of Union with Wales, the Union of Wales, and the 
 
 **Topic** The Acts of Union
 
+Item 19
+
 **Item 19** An article entitled 'Welsh had more legal status after Acts of Union than thought, lost National Library treasure trove reveals' from the culture section of the Nation Cymru website (2022). Nation Cymru describes itself as 'a news service by the people of Wales, for the people of Wales'.
 
 The Welsh language had more de facto legal status after the Acts of Union than previously thought, a treasure trove of documents once lost within the National Library has revealed.
@@ -279,6 +313,8 @@ In his new book *Ewyllysiau Cymraeg: Pennod Goll yn Hanes yr Iaith* [Welsh Wills
 **Theme** Politics
 
 **Topic** The Acts of Union
+
+Item 20
 
 **Item 20** The accusation levelled at the Caernarfonshire priest, Sir William ap Llywelyn, who was apprehended shortly after having made his alleged statement on 4 July 1533.
 
@@ -294,7 +330,7 @@ Some vagabonds were sick or too old to work. Others were fit to work but found t
 
 **Theme** Equality and Inequality **Topic** Poverty and Vagrancy
 
-#### **Item 22** A court record from the Caernarfonshire Quarter Sessions (1557)
+## **Item 22** A court record from the Caernarfonshire Quarter Sessions (1557)
 
 Margaret ferch Ieuan ap David ap Madog of Ffestiniog in the county of Merioneth, spinster, at Clynnog, stole a cheese worth 1p and money to the value of 2p being the property of Lewis ap John ap William. It is adjudged by the Justices that she shall be flogged and thereafter she is to be nailed by her ear in the marketplace at Caernarfon.
 
@@ -314,7 +350,7 @@ collection of articles on political, historical and cultural issues.
 
 English society was shattered by the Reformation in the 1530s, which destroyed centuries of provision for the poor by the Roman Catholic Church. What had once been a religious duty now was a choice. Sixty years of undirected assistance showed the limitations of philanthropy for this social problem. The Elizabethan Poor Law imposed duties across the entire country and was the first secular *national* welfare system.
 
-# **The scope of the legislation**
+## **The scope of the legislation**
 
 The law required each parish to elect two Overseers of the Poor every Easter: those who were elected were unpaid and often were unwilling appointees who acted under the supervision of the Justices of the Peace. Their duties were:
 
@@ -499,30 +535,28 @@ miscarriages.'
 | 15.     | https://www.johndclare.net/KS3/2-3-4.htm<br>[Accessed 1.11.2024]                                                                                                                                                                                                     |
 | 16.     | https://www.historyextra.com/period/elizabethan/priest-holes/<br>[Accessed 1.11.2024]                                                                                                                                                                                |
 |         |                                                                                                                                                                                                                                                                      |
+| 17.     | https://archives.parliament.uk/collections/getrecord/GB61_HL_PO_PU_1_1535_27H8n24<br>[Accessed: 31.10.2024]                                                                                                                                                          |
+| 18.     | https://exploringcelticciv.web.unc.edu/laws-in-wales-acts-1535-42/<br>[Accessed: 31.10.2024]                                                                                                                                                                         |
+| 19.     | From Welsh had more legal status after Acts of Union than thought, lost National Library treasure trove reveals.<br>[Accessed 10.11.2024]                                                                                                                            |
+| 20.     | From Williams, G. 1997. Wales and the Reformation. Cardiff: University of Wales Press, p.58                                                                                                                                                                          |
+| 21.     | Aylett, JF, 1984. In Search of History 1485–1714. London: Hodder and Stoughton, p.30                                                                                                                                                                                 |
+| 22.     | Turvey, R. 1995. Wales and Britain in the Early Modern World 1500–1760.<br>London: Hodder & Stoughton, p.30                                                                                                                                                          |
+| 23.     | From [TCP] An acte for punishment of rogues, vagabonds and sturdie beggers<br>[Accessed: 10.11.2024]                                                                                                                                                                 |
+| 24.     | https://oedeboyz.com/2019/12/12/elizabethan-poor-law-1601-the-first-national-welfare-system/<br>[Accessed 15.11.2024]                                                                                                                                                |
+| 25.     | From British History online: https://www.british-history.ac.uk/camden-record-soc/vol42/pp34-50<br>[Accessed: 1.11.2024]                                                                                                                                              |
+| 26.     | From https://www.hrp.org.uk/tower-of-london/history-and-stories/lady-jane-grey/#gs.hinl7v<br>[Accessed 31.10.2024]                                                                                                                                                   |
+| 27.     | https://www.rmg.co.uk<br>[Accessed 31.10.2024]                                                                                                                                                                                                                       |
+| 28.     | https://www.historyextra.com/period/tudor/mary-i-a-highly-impressive-queen-cut-off-in-her-prime/<br>[Accessed 1.11.2024]                                                                                                                                             |
+| 29.     | From: John Blanke and the Westminster Tournament Roll - National Portrait Gallery<br>[Accessed 31.10.2024]                                                                                                                                                           |
+| 30.     | From Yes, there were black Tudors – and they lived fascinating lives<br>[Accessed 1.11.2024]                                                                                                                                                                         |
+| 31.     | From The Bristol Archives: Inventories<br>Image from: Cattelena of Almondsbury   Black History, Tudor   History Worksheets<br>[Accessed 31.10.2024]                                                                                                                  |
+| 32.     | Adapted from www.sparknotes.com/shakespeare/life-and-times/social-context/jews-in-shakespeares-england/<br>[Accessed 31.10.2024]                                                                                                                                     |
+| 33.     | Adapted from C N Trueman 'Tudor Sports and Pastimes'<br>historylearningsite.co.uk. The History Learning Site, 17 Mar 2015. Tudor Sports and Pastimes - History Learning Site<br>[Accessed 24 November 2024]                                                          |
+| 34.     | From: https://www.englandcast.com/2022/07/elizabeth-i-holidays-kenilworth/<br>[Accessed 1.11.2024]                                                                                                                                                                   |
+| 35.     | From, Aylett, JF. 1984. In Search of History 1485–1714. London: Hodder and Stoughton, p.43.                                                                                                                                                                          |
+| 36.     | From<br>https://commons.wikimedia.org/wiki/File:Robert_Dudley_Elizabeth_Dancing.jpg<br>[Accessed 1.11.2024]                                                                                                                                                          |
 
 {24}------------------------------------------------
-
-| 17. | https://archives.parliament.uk/collections/getrecord/GB61_HL_PO_PU_1_1535_<br>27H8n24<br>[Accessed: 31.10.2024]                                                                                                      |
-|-----|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| 18. | https://exploringcelticciv.web.unc.edu/laws-in-wales-acts-1535-42/<br>[Accessed: 31.10.2024]                                                                                                                         |
-| 19  | From<br>Welsh had more legal status after Acts of Union than thought, lost National<br>Library treasure trove reveals.<br>[Accessed 10.11.2024]                                                                      |
-| 20. | From Williams, G. 1997. Wales and the Reformation. Cardiff: University of Wales<br>Press, p.58                                                                                                                       |
-| 21. | Aylett, JF, 1984. In Search of History 1485–1714. London: Hodder and<br>Stoughton, p.30                                                                                                                              |
-| 22. | Turvey, R. 1995. Wales and Britain in the Early Modern World 1500–1760.<br>London: Hodder & Stoughton, p.30                                                                                                          |
-| 23. | From [TCP] An acte for punishment of rogues, vagabonds and sturdie beggers<br>[Accessed: 10.11.2024]                                                                                                                 |
-| 24. | https://oedeboyz.com/2019/12/12/elizabethan-poor-law-1601-the-first-national<br>welfare-system/<br>[Accessed 15.11.2024]                                                                                             |
-| 25. | From British History online: https://www.british-history.ac.uk/camden-record<br>soc/vol42/pp34-50<br>[Accessed: 1.11.2024]                                                                                           |
-| 26. | From https://www.hrp.org.uk/tower-of-london/history-and-stories/lady-jane<br>grey/#gs.hinl7v<br>[Accessed 31.10.2024]                                                                                                |
-| 27. | https://www.rmg.co.uk<br>[Accessed 31.10.2024]                                                                                                                                                                       |
-| 28. | https://www.historyextra.com/period/tudor/mary-i-a-highly-impressive-queen-cut<br>off-in-her-prime/<br>[Accessed 1.11.2024]                                                                                          |
-| 29. | From: John Blanke and the Westminster Tournament Roll -<br>National Portrait<br>Gallery<br>[Accessed 31.10.2024]                                                                                                     |
-| 30. | From Yes, there were black Tudors –<br>and they lived fascinating lives<br>[Accessed 1.11.2024]                                                                                                                      |
-| 31. | From The Bristol Archives: Inventories<br>Image from: Cattelena of Almondsbury   Black History, Tudor   History<br>Worksheets<br>[Accessed 31.10.2024]                                                               |
-| 32. | Adapted from www.sparknotes.com/shakespeare/life-and-times/social<br>context/jews-in-shakespeares-england/<br>[Accessed 31.10.2024]                                                                                  |
-| 33. | Adapted from C N Trueman 'Tudor Sports and Pastimes'<br>historylearningsite.co.uk. The History Learning Site, 17 Mar 2015.<br>Tudor Sports<br>and Pastimes -<br>History Learning Site<br>[Accessed 24 November 2024] |
-| 34. | From: https://www.englandcast.com/2022/07/elizabeth-i-holidays-kenilworth/<br>[Accessed 1.11.2024]                                                                                                                   |
-| 35. | From, Aylett, JF. 1984. In Search of History 1485–1714. London: Hodder and<br>Stoughton, p.43.                                                                                                                       |
-| 36. | From<br>https://commons.wikimedia.org/wiki/File:Robert_Dudley_Elizabeth_Dancing.jpg<br>[Accessed 1.11.2024]                                                                                                          |
 
 {25}------------------------------------------------
 
