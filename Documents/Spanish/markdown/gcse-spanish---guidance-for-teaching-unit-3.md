@@ -26,7 +26,7 @@ Made for Wales.
 
 {3}------------------------------------------------
 
-# Contents
+## Contents
 
 | Introduction                                                     | 1  |
 |------------------------------------------------------------------|----|
@@ -44,15 +44,21 @@ Made for Wales.
 
 {4}------------------------------------------------
 
-# <span id="page-3-0"></span>Introduction
+<span id="page-3-0"></span>
+
+## Introduction
 
 The WJEC GCSE Spanish has been approved by Qualifications Wales and is available to all centres in Wales. It will be awarded for the first time in Summer 2027, using grades A\* to G.
 
-### <span id="page-3-1"></span>Aims of the Guidance for Teaching
+<span id="page-3-1"></span>
+
+### Aims of the Guidance for Teaching
 
 The principal aim of the Guidance for Teaching is to support teachers in the delivery of WJEC GCSE Spanish and to offer guidance on the requirements of the qualification and the assessment process. The Guidance for Teaching is **not intended as a comprehensive reference**, but as support for teachers to develop stimulating and exciting courses tailored to the needs and skills of their learners. The guide offers possible classroom activities and links to useful resources (including our own, freely available digital materials and some from external sources) to provide ideas for immersive and engaging lessons.
 
-### <span id="page-3-2"></span>Additional ways that WJEC can offer support:
+<span id="page-3-2"></span>
+
+### Additional ways that WJEC can offer support:
 
 - sample assessment materials and mark schemes
 - professional learning events
@@ -64,7 +70,9 @@ The principal aim of the Guidance for Teaching is to support teachers in the del
 
 {5}------------------------------------------------
 
-### <span id="page-4-0"></span>Qualification Structure
+<span id="page-4-0"></span>
+
+## Qualification Structure
 
 WJEC GCSE Spanish consists of 4 units. The qualification is linear and does not contain tiering. There is no hierarchy to the order the units should be taught.
 
@@ -77,7 +85,9 @@ WJEC GCSE Spanish consists of 4 units. The qualification is linear and does not 
 
 {6}------------------------------------------------
 
-# <span id="page-5-1"></span><span id="page-5-0"></span>Assessment Summary of Assessment
+<span id="page-5-1"></span><span id="page-5-0"></span>
+
+## Assessment Summary of Assessment
 
 **Unit 3: Listening Written examination***:* **45 minutes 20% of qualification** 
 
@@ -89,9 +99,11 @@ WJEC GCSE Spanish consists of 4 units. The qualification is linear and does not 
 
 {7}------------------------------------------------
 
-# <span id="page-6-0"></span>Overview of Unit 3
+<span id="page-6-0"></span>
 
-### **Listening**
+## Overview of Unit 3
+
+### Listening
 
 Written examination: 45 minutes (including 5 minutes reading time) Set and marked by WJEC 20% of the qualification 45 marks
 
@@ -128,7 +140,9 @@ The rubrics will be in Cymraeg/English. The language of response will be either 
 
 {9}------------------------------------------------
 
-### <span id="page-8-0"></span>Unit 3 Assessment objectives and weightings
+<span id="page-8-0"></span>
+
+### Unit 3 Assessment objectives and weightings
 
 | AO1 | Understand and respond to spoken language<br>through communication and expression in<br>speaking and writing   | 20% |
 |-----|----------------------------------------------------------------------------------------------------------------|-----|
@@ -137,14 +151,14 @@ The rubrics will be in Cymraeg/English. The language of response will be either 
 
 {10}------------------------------------------------
 
-# Unit 3 Teacher Guidance
+## Unit 3 Teacher Guidance
 
 <span id="page-9-1"></span><span id="page-9-0"></span>
 
-| Listening |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|           | Content Amplification                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          | Teacher Guidance                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
-| Listening | Learners should be able to:<br>•<br>develop their listening skills to understand and evaluate<br>what they hear<br>•<br>demonstrate an understanding of spoken language when<br>listening to one or more speakers in a range of contexts<br>•<br>identify the overall message, key points and opinions in<br>spoken extracts, some involving more complex language,<br>and draw conclusions where appropriate<br>•<br>use knowledge of grammar to support understanding,<br>including recognising the relationship between past,<br>present and future events. | Choose a variety of extracts that include a variety of accents from<br>Spanish-speaking countries and communities related to the three<br>broad<br>themes (language for study and work/language for leisure and<br>wellbeing/language for travel) in order for learners to familiarise<br>themselves with diverse accents and pronunciation. These could be<br>chosen from real life podcasts, songs, announcements<br>adverts or<br>generated by using AI sites such as www.narakeet.com.<br>•<br>Basic Spanish phrases:<br>https://www.youtube.com/watch?v=DAp_v7EH9AA<br>•<br>Spanish with Liliana:<br>https://www.youtube.com/watch?v=DkcohiAJLs4<br>•<br>Spanish songs for lessons:<br>https://www.youtube.com/watch?v=UJxtuIz3W1g<br>(also an excellent<br>resource for revising the future tense)<br>https://www.youtube.com/watch?v=c7jyp3DXTpU<br>https://www.youtube.com/@musicamilagrosa222<br>(this<br>channel<br>has a<br>wide range of Spanish songs with lyrics)<br>•<br>Spanish podcasts:<br>https://coffeebreaklanguages.com/category/podcast/<br>https://www.newsinslowspanish.com/<br>https://www.notesinspanish.com/category/beginners-podcast/<br>https://radioambulante.org/episodios<br>•<br>Spanish Adverts: These cover a range<br>of topics at different levels<br>with some including subtitles in English or Spanish to support<br>learning: |
+| Listening |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Present | Past | Future | Conditional |
+|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|------|--------|-------------|
+|           | Content Amplification                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            | Teacher Guidance                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |         |      |        |             |
+| Listening | Learners should be able to:<br>• develop their listening skills to understand and evaluate what they hear<br>• demonstrate an understanding of spoken language when listening to one or more speakers in a range of contexts<br>• identify the overall message, key points and opinions in spoken extracts, some involving more complex language, and draw conclusions where appropriate<br>• use knowledge of grammar to support understanding, including recognising the relationship between past, present and future events. | Choose a variety of extracts that include a variety of accents from Spanish-speaking countries and communities related to the three broad themes (language for study and work/language for leisure and wellbeing/language for travel) in order for learners to familiarise themselves with diverse accents and pronunciation. These could be chosen from real life podcasts, songs, announcements adverts or generated by using AI sites such as www.narakeet.com.<br>• Basic Spanish phrases:<br>https://www.youtube.com/watch?v=DAp_v7EH9AA<br>• Spanish with Liliana:<br>https://www.youtube.com/watch?v=DkcohiAJLs4<br>• Spanish songs for lessons:<br>https://www.youtube.com/watch?v=UJxtuIz3W1g (also an excellent resource for revising the future tense)<br>https://www.youtube.com/watch?v=c7jyp3DXTpU<br>https://www.youtube.com/@musicamilagrosa222 (this channel has a wide range of Spanish songs with lyrics)<br>• Spanish podcasts:<br>https://coffeebreaklanguages.com/category/podcast/<br>https://www.newsinslowspanish.com/<br>https://www.notesinspanish.com/category/beginners-podcast/<br>https://radioambulante.org/episodios<br>• Spanish Adverts: These cover a range of topics at different levels with some including subtitles in English or Spanish to support learning: |         |      |        |             |
 
 {11}------------------------------------------------
 
@@ -159,11 +173,6 @@ Ensure that learners listen to conversations between Spanish speakers noting the
 Encourage learners to use their previous knowledge as well as cognates to note the key elements of the extract.
 
 Choose texts that use a variety of tenses. Tasks could include noting all the verbs in the present/past/future or conditional tenses to familiarise learners with core grammatical elements.
-
-| Present | Past | Future | Conditional |
-|---------|------|--------|-------------|
-|         |      |        |             |
-|         |      |        |             |
 
 - *1. Hoy voy a ir a la fiesta de Marina.*
 - 2. *Fui de vacaciones a la playa recientemente.*
@@ -195,13 +204,12 @@ Ensure learners are familiar with temporal markers such as hoy, ayer, mañana, �
 
 Alternatively, learners could tick the correct marker that matches the event.
 
-| Ayer | Mañana | El último     | El próximo |                                |
-|------|--------|---------------|------------|--------------------------------|
-|      |        | fin de semana | mes        |                                |
-|      |        |               |            | Ir al cine.                    |
-|      |        |               |            | Tomar el bus.                  |
-|      |        |               |            | Trabajar en un<br>restaurante. |
-|      |        |               |            | Visitar el museo.              |
+| Ayer | Mañana | El último fin de semana | El próximo mes |                                |
+|------|--------|-------------------------|----------------|--------------------------------|
+|      |        |                         |                | Ir al cine.                    |
+|      |        |                         |                | Tomar el bus.                  |
+|      |        |                         |                | Trabajar en un<br>restaurante. |
+|      |        |                         |                | Visitar el museo.              |
 
 Ensure that the listening activities correlate to the WJEC vocabulary and grammar list. Use glossaries as support.
 
@@ -218,7 +226,7 @@ Ensure that learners are familiar with all formats in order to ensure familiarit
 
 Provide listening activities that provide a variety of activities such as multiple-choice questions, short answer questions (3-4 words), identifying true statements, matching statements with their source and gap-fill.
 
-### **Multiple-choice questions:**
+### Multiple-choice questions:
 
 *Hay una playa bonita cerca del hotel que es muy conveniente. El hotel tiene un comedor grande y una piscina con vistas del mar.*
 
@@ -228,7 +236,7 @@ Provide listening activities that provide a variety of activities such as multip
 
 These could increase in difficulty with single words being selected at first and then progressing to more complex sentences as well as the use of longer extracts.
 
-### **Short answer questions:**
+### Short answer questions:
 
 *Un lugar hermoso a visitar es el jardín público porque tiene monumentos importantes y un lago impresionante. Se puede ir a los numerosos restaurantes cerca del parque que sirven una gran variedad de comidas como pescado, hamburguesas y comida tradicional como la paella. Recomendemos probar el zumo de naranja fresco, es muy apetitoso.*
 
@@ -240,20 +248,20 @@ These could increase in difficulty with single words being selected at first and
 
 {14}------------------------------------------------
 
-### **Identifying true statements:**
+### Identifying true statements:
 
 *Alex: Personalmente me encanta las noticias pues un trabajo ideal para mí sería como periodista. Pienso que para ser periodista debes ser bien organizado y que debes comunicar bien con otros. Creo que me gustaría también trabajar con una variedad de gente porque sería entretenido.* 
 
 Tick (✓) **two** true statements:
 
-|                                                         | Tick<br>(✓) |
-|---------------------------------------------------------|-------------|
-| Alex<br>would like to be a lawyer.                      |             |
-| Alex thinks organisation skills are important.          |             |
-| Alex<br>would like to work with<br>different<br>people. |             |
-| Alex would like to be an entertainer.                   |             |
+|                                                | Tick<br>(✓) |
+|------------------------------------------------|-------------|
+| Alex would like to be a lawyer.                |             |
+| Alex thinks organisation skills are important. |             |
+| Alex would like to work with different people. |             |
+| Alex would like to be an entertainer.          |             |
 
-### **Matching statements with their source:**
+### Matching statements with their source:
 
 *Miguel: Voy a usar menos agua.*
 
@@ -267,7 +275,7 @@ Tick (✓) **two** true statements:
 | write a letter?  |        |           |       |
 | use less water?  |        |           |       |
 
-### **Gap fill:**
+### Gap fill:
 
 *En mi ciudad hay un problema con el tráfico > In my city there is a problem with....*
 
@@ -275,30 +283,24 @@ Tick (✓) **two** true statements:
 
 {15}------------------------------------------------
 
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                      |  | Dictation will improve learners' attention to pronunciation, grammar and<br>completing the task. | sentence structure. Starting with short simple sentences and progressing<br>to more complex passages will aid in building learners' confidence whilst |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--|--------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| When preparing learners to respond in Cymraeg/English, building up the<br>complexity of the task by first providing multiple choice answers and<br>diminishing support given over time would support their<br>Alternatively, ask learners to summarise the listening extract prior to<br>moving on to respond to specific questions in Cymraeg/English.<br>learners'<br>attention to cognates to support understanding would help with<br>this task. |  | learning.<br>Drawing                                                                             |                                                                                                                                                       |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                      |  | Cognates from the extract                                                                        | Familiar words from the extract                                                                                                                       |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                      |  | What have I understood from the extract?                                                         |                                                                                                                                                       |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                      |  |                                                                                                  |                                                                                                                                                       |
+| Dictation will improve learners' attention to pronunciation, grammar and sentence structure. Starting with short simple sentences and progressing to more complex passages will aid in building learners' confidence whilst completing the task.                                                                                                                                                                                                  |                                 |                                 |                                          |  |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------|---------------------------------|------------------------------------------|--|
+| When preparing learners to respond in Cymraeg/English, building up the complexity of the task by first providing multiple choice answers and diminishing support given over time would support their learning. Alternatively, ask learners to summarise the listening extract prior to moving on to respond to specific questions in Cymraeg/English. Drawing learners' attention to cognates to support understanding would help with this task. |                                 |                                 |                                          |  |
+| <table><tbody><tr><td>Cognates from the extract</td><td>Familiar words from the extract</td></tr><tr><td>What have I understood from the extract?</td><td></td></tr></tbody></table>                                                                                                                                                                                                                                                              | Cognates from the extract       | Familiar words from the extract | What have I understood from the extract? |  |
+| Cognates from the extract                                                                                                                                                                                                                                                                                                                                                                                                                         | Familiar words from the extract |                                 |                                          |  |
+| What have I understood from the extract?                                                                                                                                                                                                                                                                                                                                                                                                          |                                 |                                 |                                          |  |
 
 {16}------------------------------------------------
 
-### <span id="page-15-0"></span>Learning Experiences
+<span id="page-15-0"></span>
+
+### Learning Experiences
 
 Learners should be encouraged to consider the following learning experiences and skills to further develop their understanding, appreciation and awareness of the subject content. Information in the table below provides opportunities for teachers to integrate the learning experiences into delivery.
 
-| Learning Experience                                                                                                         | Exemplification of Learning Experience                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |  |  |
-|-----------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--|--|
-|                                                                                                                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |  |  |
-| learn about the culture and<br>society in the countries and<br>communities where the<br>international language is<br>spoken | Unit 3 allows learners to listen to a wide variety of extracts from<br>Spanish-speaking countries and communities allowing learners<br>to widen their awareness and knowledge of the world around<br>them whilst also re-enforcing their awareness of their own<br>language,<br>culture, identity and cynefin.                                                                                                                                                                                                                                                                            |  |  |
-|                                                                                                                             | BBC bitesize resources have a number of videos that can be<br>adapted for listening activities that focus on cultural aspects of<br>Spain and Spanish speaking countries:<br>•<br>https://www.bbc.co.uk/bitesize/subjects/z4dqxnb                                                                                                                                                                                                                                                                                                                                                         |  |  |
-|                                                                                                                             | There are a wide variety of videos also available on YouTube<br>that focus on culture,<br>a few of which are below:<br>•<br>https://www.youtube.com/watch?v=YVIsaXnLj2g<br>(Traditional Guatemalan dishes)<br>•<br>https://www.youtube.com/watch?v=nBxqXJBvsDM<br>(Colombian culture)<br>•<br>https://www.youtube.com/watch?v=nFUoaJlqI_k<br>(Venezuelan<br>culture and customs)<br>This video discusses traditional Spanish dishes with a list of<br>ingredients:<br>•<br>https://www.youtube.com/watch?v=sEMY4tciHiA<br>Ask learners to categorize the ingredients they hear into their |  |  |
-|                                                                                                                             | various food groups:<br>Fruits<br>Vegetables<br>Dairy<br>Protein<br>Carbohydrates                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |  |  |
-|                                                                                                                             | Products<br>This activity could also be adapted to categorise items into<br>healthy and unhealthy foods:                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |  |  |
-|                                                                                                                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |  |  |
-|                                                                                                                             | Sano<br>Malsano                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |  |  |
-|                                                                                                                             |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |  |  |
+| Learning Experience                                                                                                         | Exemplification of Learning Experience                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
+|-----------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
+| learn about the culture and<br>society in the countries and<br>communities where the<br>international language is<br>spoken | Unit 3 allows learners to listen to a wide variety of extracts from<br>Spanish-speaking countries and communities allowing learners<br>to widen their awareness and knowledge of the world around<br>them whilst also re-enforcing their awareness of their own<br>language, culture, identity and cynefin.<br><br>BBC bitesize resources have a number of videos that can be<br>adapted for listening activities that focus on cultural aspects of<br>Spain and Spanish speaking countries:<br>https://www.bbc.co.uk/bitesize/subjects/z4dqxnb<br>There are a wide variety of videos also available on YouTube<br>that focus on culture, a few of which are below:<br>https://www.youtube.com/watch?v=YVIsaXnLj2g<br>(Traditional Guatemalan dishes)https://www.youtube.com/watch?v=nBxqXJBvsDM<br>(Colombian culture)https://www.youtube.com/watch?v=nFUoaJlqI_k<br>(Venezuelan culture and customs)<br>This video discusses traditional Spanish dishes with a list of<br>ingredients:<br>https://www.youtube.com/watch?v=sEMY4tciHiA<br>Ask learners to categorize the ingredients they hear into their<br>various food groups:<br>FruitsVegetablesDairy<br>ProductsProteinCarbohydrates<br>This activity could also be adapted to categorise items into<br>healthy and unhealthy foods:<br>SanoMalsano |  |  |  |  |  |  |  |  |  |  |  |  |  |  |
 
 {17}------------------------------------------------
 
@@ -323,7 +325,7 @@ Use audio material or videos such as News Reports or Documentaries on migrants, 
 
 Structure the documentary into smaller extracts. Tasks could include creating a mind map of the issues discussed focusing on identity, belonging and the impact of diversity.
 
-### have direct or indirect contact with speakers of the language
+### Have direct or indirect contact with speakers of the language
 
 Centres and learners will be able to use initiatives such as MFL Mentoring – Modern Foreign Languages and Llwybrau at Ieithoedd Cymru Routes into Languages Cymru.
 
@@ -391,7 +393,7 @@ Listening to these genres from a wide variety of Spanishspeaking countries and c
 - <https://www.youtube.com/watch?v=c7jyp3DXTpU>
 - <https://www.youtube.com/@musicamilagrosa222>
 
-### demonstrate language strategies and language learning skills, including the use of dictionaries
+### Demonstrate language strategies and language learning skills, including the use of dictionaries
 
 Learners will have the opportunity to demonstrate language strategies and language learning skills, including the use of dictionaries throughout the specification.
 
@@ -465,9 +467,9 @@ Through listening to a wide variety of extracts learners will be able to make co
 
 ## Opportunities for embedding elements of the Curriculum for Wales
 
-### **Curriculum for Wales Strands**
+### Curriculum for Wales Strands
 
-### **Cross-cutting Themes**
+### Cross-cutting Themes
 
 **There are many opportunities to include Local, National & International Contexts and Sustainability in GCSE Spanish. These opportunities are important to Learners because they will be engaging in listening tasks from Spanish-speaking countries and communities.**
 
@@ -475,7 +477,9 @@ Through listening to a wide variety of extracts learners will be able to make co
 
 ### *Example*
 
-### <span id="page-20-0"></span>Local, National & International Contexts
+<span id="page-20-0"></span>
+
+### Local, National & International Contexts
 
 When choosing listening material, it is important that they come from different Spanish-speaking countries and communities as these can be used to highlight the differences and similarities between Cymru/Wales and Spanish-speaking countries and communities in order to develop learners cultural understanding.
 
@@ -500,7 +504,7 @@ Examples of possible learning activities are:
 | Vallegrande |        |             |
 | San Ignacio |        |             |
 
-# Sustainability
+## Sustainability
 
 **There are many opportunities to include Sustainability in GCSE Spanish. These opportunities are important to Learners because they will learn how sustainability is impacting the world around them and how different countries are developing a sustainable approach.**
 
@@ -512,15 +516,16 @@ Examples of possible learning activities are:
 
 {23}------------------------------------------------
 
-|                                          | •<br>Using<br>songs from Spain/Spanish-speaking countries/communities regarding sustainability<br>as<br>gap-fill exercises for learners<br>with word clouds as additional support if needed:<br>Lyricstraining.com/es.<br>•<br>Listening to an advert/message regarding environmental issues and identifying problems and<br>solutions within the text. Additional support could be provided through the use of multiple<br>choice<br>images and increasing the difficulty of the task<br>through providing less support or<br>developing the task into a multiple-choice<br>written answer and finally to a short 3-4 word<br>answer. |  |
-|------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--|
-|                                          | •<br>Whilst listening to a podcast/conversation or advert, learners could identify the comparative<br>expression in the text, which is the most…/which is the least…/ which is smaller than…/which<br>is bigger than…<br>Learners could be given a multiple-choice<br>answer or gap fill<br>task.                                                                                                                                                                                                                                                                                                                                      |  |
-|                                          | There are many opportunities to include Relationships and Sexuality Education (RSE) in<br>GCSE Spanish. These opportunities are important to Learners because they will learn<br>about different relationships as well as looking at how different cultures provide<br>Relationships and Sexuality<br>Education.<br>Below are some examples of how RSE can be embedded into teaching and learning:                                                                                                                                                                                                                                     |  |
-|                                          | Example                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |  |
-| Relationships and Sexuality<br>Education | •<br>This involves creating<br>a safe, inclusive environment for discussing topics relating<br>to<br>relationships, identity, respect, diversity and well-being in an age appropriate and respectful<br>manner –<br>all while expanding learners'<br>language skills.                                                                                                                                                                                                                                                                                                                                                                  |  |
-|                                          | •<br>Listening to videos/podcasts about the various types of family structures in Spain/Spanish<br>speaking countries/communities and identifying which statement(s)<br>is/are<br>true.                                                                                                                                                                                                                                                                                                                                                                                                                                                |  |
-|                                          | •<br>Listening to interviews/podcasts about sexuality and matching the statement with its source.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |  |
-|                                          | •<br>Listening to an interview from the LGBTQ+ community in a Spanish speaking country where<br>they talk about their experiences. Identify key language related to:<br>•<br>What challenges did the speaker face regarding identity?                                                                                                                                                                                                                                                                                                                                                                                                  |  |
+| Relationships and Sexuality Education                                                                                                                                                                                                                                                                                                                                               | • Using songs from Spain/Spanish-speaking countries/communities regarding sustainability as gap-fill exercises for learners with word clouds as additional support if needed: Lyricstraining.com/es.                                                                                                                                                                                 |
+|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                                                                                                                                                                                                                                                                                                                                                                     | • Listening to an advert/message regarding environmental issues and identifying problems and solutions within the text. Additional support could be provided through the use of multiple-choice images and increasing the difficulty of the task through providing less support or developing the task into a multiple-choice written answer and finally to a short 3-4 word answer. |
+|                                                                                                                                                                                                                                                                                                                                                                                     | • Whilst listening to a podcast/conversation or advert, learners could identify the comparative expression in the text, which is the most…/which is the least…/ which is smaller than…/which is bigger than… Learners could be given a multiple-choice answer or gap fill task.                                                                                                      |
+| There are many opportunities to include Relationships and Sexuality Education (RSE) in GCSE Spanish. These opportunities are important to Learners because they will learn about different relationships as well as looking at how different cultures provide Relationships and Sexuality Education. Below are some examples of how RSE can be embedded into teaching and learning: |                                                                                                                                                                                                                                                                                                                                                                                      |
+| Relationships and Sexuality Education                                                                                                                                                                                                                                                                                                                                               | Example                                                                                                                                                                                                                                                                                                                                                                              |
+|                                                                                                                                                                                                                                                                                                                                                                                     | • This involves creating a safe, inclusive environment for discussing topics relating to relationships, identity, respect, diversity and well-being in an age appropriate and respectful manner – all while expanding learners' language skills.                                                                                                                                     |
+|                                                                                                                                                                                                                                                                                                                                                                                     | • Listening to videos/podcasts about the various types of family structures in Spain/Spanish speaking countries/communities and identifying which statement(s) is/are true.                                                                                                                                                                                                          |
+|                                                                                                                                                                                                                                                                                                                                                                                     | • Listening to interviews/podcasts about sexuality and matching the statement with its source.                                                                                                                                                                                                                                                                                       |
+|                                                                                                                                                                                                                                                                                                                                                                                     | • Listening to an interview from the LGBTQ+ community in a Spanish speaking country where they talk about their experiences. Identify key language related to:                                                                                                                                                                                                                       |
 
 {24}------------------------------------------------
 
@@ -530,14 +535,11 @@ Examples of possible learning activities are:
 - Provide learners with a transcript about both platonic and romantic relationships containing gaps, learners must fill in the missing words while listening. A word cloud could be provided as additional support.
 - Read out arguments from a debate where speakers discuss one specific issue. Ask learners to identify the arguments for and against paying particular attention to expressions of opinion such as Creo que/Pienso que.
 
-| A favor   | En contra |  |
-|-----------|-----------|--|
-|           |           |  |
-|           |           |  |
-| Opiniones |           |  |
-|           |           |  |
-|           |           |  |
-|           |           |  |
+| A favor   | En contra |
+|-----------|-----------|
+|           |           |
+| Opiniones |           |
+|           |           |
 
 • Listening to a video on Women's rights such as UN Women - Una historia mundial de los derechos de las mujeres en 3 minutos [https://www.youtube.com/watch?v=RZyK1ScwiMo,](https://www.youtube.com/watch?v=RZyK1ScwiMo) and noting which are the true (T) or false (F) statements. These videos can be slowed down in order to make them more accessible to learners.
 
@@ -551,7 +553,7 @@ Examples of possible learning activities are:
 
 • This involves creating a safe, inclusive environment for discussing topics relating to relationships, identity, respect, diversity and well-being in an age appropriate and respectful manner – all while expanding learners' language skills.
 
-# Human Rights Education and Diversity
+## Human Rights Education and Diversity
 
 - Listen to a video regarding El día de los derechos humanos such as [https://www.youtube.com/watch?v=zDovXhK-\\_sU](https://www.youtube.com/watch?v=zDovXhK-_sU) or Sistema Interamericano de Derechos Humanos [https://www.youtube.com/watch?v=j0D0-XRnyOU.](https://www.youtube.com/watch?v=j0D0-XRnyOU) noting key vocabulary regarding Human Rights.
 - Listen to a report on events or role models from the Spanish-speaking world, such as Frida Kahlo, Sylvia Rivera or Xiuhtezcatl Martínez to celebrate diversity in Spain/Spanish-speaking countries/communities and answer in short answers for an open response question.
@@ -579,7 +581,7 @@ Examples of possible learning activities are:
 
 {27}------------------------------------------------
 
-### **Cross-curricular Skills – Literacy**
+### Cross-curricular Skills – Literacy
 
 **There are many opportunities to include Literacy in GCSE Spanish. These opportunities are important to Learners because it will help them to develop their listening and comprehension skills in Spanish whilst also developing their reading comprehension in Spanish and Cymraeg/Welsh.**
 
@@ -610,7 +612,7 @@ Examples of possible learning activities are:
 - 3. *Hago mucho ejercicio para mantenerme en forma.*
 - **Gap-fill exercises**: Provide transcripts with missing grammatical elements (e.g. verbs, articles or pronouns) that learners will fill in while listening. This video discusses El Quechua: [https://www.youtube.com/watch?v=Kv-7JZYWBoc.](https://www.youtube.com/watch?v=Kv-7JZYWBoc)
 
-### **Cross-curricular Skills – Numeracy**
+### Cross-curricular Skills – Numeracy
 
 **There are many opportunities to include Numeracy in GCSE Spanish. These opportunities are important to Learners because numeracy is essential to everyday life and prepares learners for practical, real-world situations in a Spanish-speaking environment.**
 
@@ -635,11 +637,11 @@ Ask learners to answer questions in Cymraeg/English
 - 4. When did he arrive home?
 - Listen to public transport timetables where learners hear announcements or conversations about travel times, departures and arrival. Learners can then fill a table with the required information:
 
-| El tren por… | Andén | Sale a… | Llega a… |
-|--------------|-------|---------|----------|
-| Madrid       |       |         |          |
-| Barcelona    |       |         |          |
-| Sevilla      |       |         |          |
+| El tren por... | Andén | Sale a... | Llega a... |
+|----------------|-------|-----------|------------|
+| Madrid         |       |           |            |
+| Barcelona      |       |           |            |
+| Sevilla        |       |           |            |
 
 - Using an infographic regarding the number of Spanish speakers across the world would be an opportunity to use numbers within the thematic context or listening to an extract about salaries in Spanish-speaking countries and communities.
 - Play clips where speakers describe their daily routines using time phrases.
@@ -647,18 +649,15 @@ Ask learners to answer questions in Cymraeg/English
 
 {30}------------------------------------------------
 
-# **Cross-curricular Skills – Digital Competence** Interacting and Collaborating **There are many opportunities to include Digital Competence in GCSE Spanish. These opportunities are important to Learners because learners can use their digital competence to develop their writing, listening, speaking and reading skills. Below are some examples of how Digital Competence can be embedded into teaching and learning:** *Example* • Learners could use their digital competence to find appropriate listening extras, or could use their digital competence to write and create their own listening extract through the use of sites such as [narakeet.com,](https://www.narakeet.com/) this could be done collaboratively or individually. • Alternatively, learners could produce their own text and record it themselves developing their writing and speaking skills in order to create a listening task for other learners. • Apps such as [Quizlet,](https://quizlet.com/gb) [Duolingo](https://www.duolingo.com/) and [Memrise](https://www.memrise.com/) provide listening exercises and quizzes that learners can use to practice comprehension. • Interactive websites such as [Lyricstraining.com](https://lyricstraining.com/es) offer opportunities for learners to practice listening skills through filling the gaps as they listen to the lyrics. **Integral Skills** Creativity and Innovation **There are many opportunities to include Creativity and Innovation in GCSE Spanish. These opportunities are important to Learners because they enhance learners' engagement and encourage deeper learning. Below are some examples of how Creativity and Innovation can be embedded into teaching and learning:**
+# Cross-curricular Skills – Digital Competence Interacting and Collaborating There are many opportunities to include Digital Competence in GCSE Spanish. These opportunities are important to Learners because learners can use their digital competence to develop their writing, listening, speaking and reading skills. Below are some examples of how Digital Competence can be embedded into teaching and learning: Example • Learners could use their digital competence to find appropriate listening extras, or could use their digital competence to write and create their own listening extract through the use of sites such as [narakeet.com,](https://www.narakeet.com/) this could be done collaboratively or individually. • Alternatively, learners could produce their own text and record it themselves developing their writing and speaking skills in order to create a listening task for other learners. • Apps such as [Quizlet,](https://quizlet.com/gb) [Duolingo](https://www.duolingo.com/) and [Memrise](https://www.memrise.com/) provide listening exercises and quizzes that learners can use to practice comprehension. • Interactive websites such as [Lyricstraining.com](https://lyricstraining.com/es) offer opportunities for learners to practice listening skills through filling the gaps as they listen to the lyrics. Integral Skills Creativity and Innovation There are many opportunities to include Creativity and Innovation in GCSE Spanish. These opportunities are important to Learners because they enhance learners' engagement and encourage deeper learning. Below are some examples of how Creativity and Innovation can be embedded into teaching and learning:
 
 *Example*
 
 {31}------------------------------------------------
 
-|                                          | •<br>Learners could write and create their own listening extract through the use of sites such as<br>narakeet.com, this could be done collaboratively or individually.<br>•<br>Alternatively, learners could produce their own text and record it themselves,<br>developing their<br>writing and speaking skills to<br>create a listening task for other learners.<br>•<br>Learners could create their own podcast individually or in groups on a given theme. |  |  |
-|------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--|--|
-|                                          | There are many opportunities to include Critical Thinking and Problem Solving in GCSE<br>Spanish. These opportunities are important to Learners because they will have to develop<br>their receptive skills and<br>their problem-solving skills through using the process of<br>elimination during a number of listening activities.<br>Below are some examples of how Critical Thinking and Problem Solving can be<br>embedded into teaching and learning:    |  |  |
-|                                          | Example                                                                                                                                                                                                                                                                                                                                                                                                                                                        |  |  |
-| Critical Thinking and Problem<br>Solving | •<br>Whilst listening to an extract learners can use their critical thinking skills in order to<br>discern which statement is true.                                                                                                                                                                                                                                                                                                                            |  |  |
-|                                          | •<br>Alternatively, learners can use their problem-solving skills when completing multiple<br>choice questions by discerning from the information required which is likely to be the<br>correct answer. The use of distractors can be used to increase the difficulty of the task.                                                                                                                                                                             |  |  |
+| Critical Thinking and Problem Solving | • Learners could write and create their own listening extract through the use of sites such as narakeet.com, this could be done collaboratively or individually.<br>• Alternatively, learners could produce their own text and record it themselves, developing their writing and speaking skills to create a listening task for other learners.<br>• Learners could create their own podcast individually or in groups on a given theme.                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+|---------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|                                       | There are many opportunities to include Critical Thinking and Problem Solving in GCSE Spanish. These opportunities are important to Learners because they will have to develop their receptive skills and their problem-solving skills through using the process of elimination during a number of listening activities.<br>Below are some examples of how Critical Thinking and Problem Solving can be embedded into teaching and learning:<br><b>Example</b><br>• Whilst listening to an extract learners can use their critical thinking skills in order to discern which statement is true.<br>• Alternatively, learners can use their problem-solving skills when completing multiple choice questions by discerning from the information required which is likely to be the correct answer. The use of distractors can be used to increase the difficulty of the task. |
 
 {32}------------------------------------------------
 
@@ -677,11 +676,11 @@ Ask learners to answer questions in Cymraeg/English
 
 What does Diana's first friend want to do? *Tick (*✓*) the correct box.* 
 
-|                              | Tick<br>(✓) |
-|------------------------------|-------------|
-| Get a job.                   |             |
-| Study at university.         |             |
-| Continue studying at school. |             |
+|                              | Tick (✓) |
+|------------------------------|----------|
+| Get a job.                   |          |
+| Study at university.         |          |
+| Continue studying at school. |          |
 
 {33}------------------------------------------------
 
