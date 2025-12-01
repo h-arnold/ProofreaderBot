@@ -1899,6 +1899,33 @@
           0
         ],
         "total_issues": 1
+      },
+      "overview-of-consultation-findings.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "total_issues": 22
+      },
+      "royal-meteorological-society-borrow-an-instrument-scheme.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 1
+      },
+      "wjec-gcse-geography-specification.md": {
+        "completed_batches": [
+          0,
+          1,
+          2
+        ],
+        "total_issues": 47
       }
     }
   }
