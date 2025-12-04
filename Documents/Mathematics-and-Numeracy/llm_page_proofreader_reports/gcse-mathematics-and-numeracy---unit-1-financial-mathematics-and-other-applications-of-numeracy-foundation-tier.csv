@@ -1,0 +1,13 @@
+issue_id,page_number,issue,highlighted_context,error_category,confidence_score,reasoning
+0,5,cross section length,"#### **Volume of an Object with a Uniform Cross-section (e.g. Prism, Cylinder)**
+
+Volume = area of **cross section length**
+
+![](_page_4_Picture_5.jpeg)",ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,98,"The mathematical formula is missing a multiplication operator or the word 'times' between 'cross section' and 'length', making the statement grammatically incomplete and unclear."
+1,9,kilometres .,What was the total distance that the friends walked in the 3 days?<br>Give your answer in **kilometres** **.**,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,98,There should not be a space between the last word of a sentence and the full stop in British English.
+2,16,21 /2 hours,'Most pupils in Year 11 spend less than **21<br>/2<br>hours** per week doing exercise.',ErrorCategory.AMBIGUOUS_PHRASING,90,"The representation '21 /2 hours' is ambiguous and likely an OCR error for '2½ hours' or '2.5 hours', which could lead to misinterpretation in a mathematical context."
+3,26,£6.50p,Allow **£6.50p** or 6.5(0),ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,The notation '£6.50p' is incorrect in British English; it should be either '£6.50' or '650p'.
+4,26,£6.5p,Award A1 for any of the following:<br>•<br>6.50p<br>•<br>650(p)<br>•<br>**£6.5p**,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,The notation '£6.5p' is incorrect in British English; it should be either '£6.50' or '650p'.
+5,28,dependant,'m' marks are **dependant** method marks. They are only given if the relevant previous 'M' mark has been earned.,ErrorCategory.SPELLING_ERROR,95,"The word 'dependent' (adjective) should be used here, not 'dependant' (noun)."
+6,28,awards,'SC' marks are **awards** for special cases,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,"The verb 'awarded' is required here to form the passive voice, not the noun 'awards'."
+7,29,Best buy,| 5 | **Best buy** shampoo | 5 | | 5 | | | | |,ErrorCategory.STYLISTIC_PREFERENCE,85,"When 'Best buy' functions as a compound adjective modifying 'shampoo', it should be hyphenated ('Best-buy') for clarity and standard British English style."
