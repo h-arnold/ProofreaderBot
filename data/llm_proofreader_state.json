@@ -3459,9 +3459,298 @@
       "gcse-religious-studies---unit-3-sample-assessment-materials.md": {
         "completed_batches": [
           0,
-          1
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27
         ],
         "total_issues": 84
+      },
+      "gcse-religious-studies---unit-4-non-exam-assessment-pack.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "total_issues": 29
+      },
+      "gcse-religious-studies-unit-2-nea-handbook.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "total_issues": 22
+      },
+      "overview-of-consultation-findings.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "total_issues": 22
+      },
+      "religious-studies-options-evening-flyer.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 1
+      },
+      "wjec-gcse-religious-studies-specification.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31
+        ],
+        "total_issues": 94
+      }
+    },
+    "Social-Studies": {
+      "social-studies---options-evening-flyer.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 1
+      },
+      "wjec-gcse-social-studies-specification.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ],
+        "total_issues": 43
+      }
+    },
+    "Spanish": {
+      "gcse-spanish---delivery-guide.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "total_issues": 21
+      },
+      "gcse-spanish---faqs.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 3
+      },
+      "gcse-spanish---guidance-for-teaching-unit-1.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "total_issues": 30
+      },
+      "gcse-spanish---guidance-for-teaching-unit-2.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "total_issues": 25
+      },
+      "gcse-spanish---guidance-for-teaching-unit-3.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ],
+        "total_issues": 34
+      },
+      "gcse-spanish---guidance-for-teaching-unit-4.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "total_issues": 27
+      },
+      "gcse-spanish---options-evening-flyer.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 1
+      },
+      "gcse-spanish---unit-1-oracy.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
+        ],
+        "total_issues": 69
+      },
+      "gcse-spanish---unit-2-reading-and-writing.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        "total_issues": 28
+      },
+      "gcse-spanish---unit-3-listening.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        "total_issues": 27
+      },
+      "gcse-spanish---unit-4-reading-and-writing.md": {
+        "completed_batches": [
+          0,
+          1,
+          2
+        ],
+        "total_issues": 32
       }
     }
   }
