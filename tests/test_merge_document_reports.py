@@ -70,7 +70,11 @@ def test_merge_document_reports(tmp_path: Path):
     make_sample_csv(csv_b2, rows_b2)
 
     # Run merge
-    merged = merge_document_reports(output_dir=docs, output_file_name="out.csv")
+    merged = merge_document_reports(
+        "document_reports",
+        documents_dir=docs,
+        output_file_name="out.csv",
+    )
 
     assert merged.exists()
 
@@ -94,3 +98,72 @@ def test_merge_document_reports(tmp_path: Path):
         assert rows[1]["Filename"] == "b1.csv"
         assert rows[2]["Subject"] == "Subject-B"
         assert rows[2]["Filename"] == "b2.csv"
+
+
+def test_merge_document_reports_filters(tmp_path: Path):
+    docs = tmp_path / "Documents"
+
+    subject_a = docs / "Subject-A" / "document_reports"
+    subject_b = docs / "Subject-B" / "document_reports"
+
+    rows = {
+        "Subject-A": [
+            {
+                "issue_id": "1",
+                "page_number": "1",
+                "issue": "test",
+                "highlighted_context": "c1",
+                "pass_code": "PassCode.LTC",
+                "error_category": "ErrorCategory.STYLISTIC_PREFERENCE",
+                "confidence_score": "80",
+                "reasoning": "r1",
+            }
+        ],
+        "Subject-B": [
+            {
+                "issue_id": "2",
+                "page_number": "2",
+                "issue": "test2",
+                "highlighted_context": "c2",
+                "pass_code": "PassCode.LTC",
+                "error_category": "ErrorCategory.PARSING_ERROR",
+                "confidence_score": "90",
+                "reasoning": "r2",
+            },
+            {
+                "issue_id": "3",
+                "page_number": "3",
+                "issue": "test3",
+                "highlighted_context": "c3",
+                "pass_code": "PassCode.LTC",
+                "error_category": "ErrorCategory.SPELLING",
+                "confidence_score": "95",
+                "reasoning": "r3",
+            },
+        ],
+    }
+
+    make_sample_csv(subject_a / "a1.csv", rows["Subject-A"])
+    make_sample_csv(subject_b / "b1.csv", [rows["Subject-B"][0]])
+    make_sample_csv(subject_b / "b2.csv", [rows["Subject-B"][1]])
+
+    merged = merge_document_reports(
+        "document_reports",
+        documents_dir=docs,
+        output_path=tmp_path / "filtered.csv",
+        subjects=["Subject-B"],
+        filenames=["b2"],
+    )
+
+    assert merged.exists()
+
+    with merged.open("r", encoding="utf-8", newline="") as f:
+        reader = csv.DictReader(f)
+        expected_fields = ["Subject", "Filename"] + CSV_HEADERS
+        assert reader.fieldnames == expected_fields
+
+        rows_out = list(reader)
+        assert len(rows_out) == 1
+        assert rows_out[0]["Subject"] == "Subject-B"
+        assert rows_out[0]["Filename"] == "b2.csv"
+        assert rows_out[0]["issue_id"] == "3"

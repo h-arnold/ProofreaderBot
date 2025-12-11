@@ -9,8 +9,8 @@ from __future__ import annotations
 from pathlib import Path
 from typing import TYPE_CHECKING
 
-from src.language_check.report_utils import build_issue_pages
 from src.prompt.render_prompt import PROMPTS_DIR, render_prompts
+from src.utils.report_utils import build_issue_pages
 
 if TYPE_CHECKING:
     from ..core.batcher import Batch

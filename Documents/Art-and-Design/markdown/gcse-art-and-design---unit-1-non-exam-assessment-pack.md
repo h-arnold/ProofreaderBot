@@ -1,6 +1,6 @@
 
 
-{0}------------------------------------------------
+{1}------------------------------------------------
 
 ![](_page_0_Picture_0.jpeg)
 
@@ -18,11 +18,11 @@ Ready for the world. This Qualifications Wales regulated qualification is not av
 
 Made for Wales.
 
-{1}------------------------------------------------
+{2}------------------------------------------------
 
 ![](_page_1_Picture_0.jpeg)
 
-{2}------------------------------------------------
+{3}------------------------------------------------
 
 # Contents
 
@@ -41,7 +41,7 @@ Made for Wales.
 
 © WJEC CBAC Limited 2024
 
-{3}------------------------------------------------
+{4}------------------------------------------------
 
 <span id="page-3-0"></span>
 
@@ -90,7 +90,7 @@ Whilst group work may be permitted, group assessment is not. Members of the grou
 
 The teacher's record must describe individual candidates' contribution to any group work.
 
-{4}------------------------------------------------
+{5}------------------------------------------------
 
 ## Supervision
 
@@ -133,7 +133,7 @@ Marking should only be undertaken by a designated assessor. An assessor should h
 - evidence is appropriately annotated
 - judgements are only made against the mark band statements.
 
-{5}------------------------------------------------
+{6}------------------------------------------------
 
 A mark record sheet must be completed for each candidate.
 
@@ -143,7 +143,7 @@ You should refer the to WJEC Assessment Guide / JCQ Instructions for conducting 
 
 **This pack is the live assessment. It must not be used for practice purposes.**
 
-{6}------------------------------------------------
+{7}------------------------------------------------
 
 <span id="page-6-0"></span>
 
@@ -188,7 +188,7 @@ The following needs to be taken into consideration when developing the portfolio
 - work must be selected and presented for assessment by the learner
 - learners should develop their intentions through the work in one portfolio.
 
-{7}------------------------------------------------
+{8}------------------------------------------------
 
 <span id="page-7-0"></span>
 
@@ -214,7 +214,7 @@ Centres should ensure consistency in marking across all pathways and teaching gr
 | Collaboration | Permitted      |
 | Timing        | Not controlled |
 
-{8}------------------------------------------------
+{9}------------------------------------------------
 
 ## Mark Scheme
 
@@ -248,7 +248,7 @@ Beginning at the lowest band, Assessors should look at the candidate's response 
 
 Having determined the appropriate band, deciding on the mark within a band will be made on the basis of a 'best fit' procedure, weaknesses in some areas being compensated for by strengths in others.
 
-{9}------------------------------------------------
+{10}------------------------------------------------
 
 Assessors should use the full range of marks available to them. The awarding of marks must be directly related to the marking criteria, and all responses must be marked according to the banded levels provided.
 
@@ -256,7 +256,7 @@ Standardising material that has already been awarded a mark will be available on
 
 Candidates are free to choose any approach that is relevant to the set task.
 
-{10}------------------------------------------------
+{11}------------------------------------------------
 
 | Mark Scheme for GCSE ART AND DESIGN | Unit One: Portfolio (Total Marks = 120)                                                                                                                                                                                                    |                                                                                                                                                                                                                                                                                                                                                                                                                       |                                                                                                                                                                                                                                                                                                                   |                                                                                                                                                                                                                                                                                                                                |
 |-------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -275,9 +275,9 @@ Candidates are free to choose any approach that is relevant to the set task.
 | 0                                   | 0 marks                                                                                                                                                                                                                                    | 0 marks                                                                                                                                                                                                                                                                                                                                                                                                               | 0 marks                                                                                                                                                                                                                                                                                                           | 0 marks                                                                                                                                                                                                                                                                                                                        |
 |                                     | Response not worthy of credit or not<br>attempted.                                                                                                                                                                                         | Response not worthy of credit or not<br>attempted.                                                                                                                                                                                                                                                                                                                                                                    | Response not worthy<br>of credit or not<br>attempted.                                                                                                                                                                                                                                                             | Response not worthy of credit or not<br>attempted.                                                                                                                                                                                                                                                                             |
 
-{11}------------------------------------------------
-
 {12}------------------------------------------------
+
+{13}------------------------------------------------
 
 ![](_page_12_Picture_0.jpeg)
 
@@ -291,7 +291,7 @@ Unit 1: Portfolio
 
 Art, Craft and Design **(3610QSL-1)** Fine Art **(3611QSL-1)** Textile Design **(3612QSL-1)**  Graphic Communication **(3613QSL-1)** Three-Dimensional Design **(3614QSL-1)**  Photography **(3615QSL-1)** 
 
-{13}------------------------------------------------
+{14}------------------------------------------------
 
 # About this pack: information and instructions for candidates
 
@@ -321,13 +321,13 @@ The following needs to be taken into consideration when developing your portfoli
 - You must annotate your work. This will help you meet elements of the assessment objectives
 - Work will be selected and presented for assessment by you
 
-{14}------------------------------------------------
+{15}------------------------------------------------
 
 The guidance in the graphic below will outlines what your work should include.
 
 **Produce a personal response Select work that demonstrates your meanings and intentions Communicate using appropriate elements of visual language Explain and realise your intentions, making connections between the different parts of the work and work of others Select a suitable format for presenting work to engage the audience Generate ideas Show awareness of methods and approaches used in other people's work Analyse why the work was produced (intentions) and what it was made for (purpose) Generate further creative ideas from your reflections Show how your ideas have formed Explore ideas Make informed choices through exploring a breadth of media, techniques and processes Demonstrate control of creative skills, whilst using them imaginatively Review and refine your work to take it forward Record ideas in visual and/or written forms (such as drawing, writing, photographs, speaking etc...) Make observations and insights about your intentions/work Identify the areas of your work that are personal and meaningful Reflect as your work progresses Review what you have learned and how you might use it.** AO1 AO2 AO3 AO4
 
-{15}------------------------------------------------
+{16}------------------------------------------------
 
 # Submitting the Portfolio
 
@@ -336,7 +336,7 @@ The guidance in the graphic below will outlines what your work should include.
 - If you are entered for more than one pathway you must submit a different portfolio for each one.
 - Using the *Candidate Declaration Form* you should declare that the work was completed independently and without any assistance beyond what should be permitted. You should clearly reference any sources and any Artificial Intelligence tools used in the work. A false declaration should be considered a form of malpractice. All work must be your own, except for any non-original material that should be clearly credited in the form. This work should not be submitted for any other qualification.
 
-{16}------------------------------------------------
+{17}------------------------------------------------
 
 # Information for candidates
 
@@ -372,7 +372,7 @@ WJEC will decide which penalty is appropriate.
 
 **Remember – it's your qualification so it needs to be your own work.**
 
-{17}------------------------------------------------
+{18}------------------------------------------------
 
 | Mark Scheme for GCSE ART AND DESIGN                                                                                                                                                                         |                                                                                                                                                                                                                                                                                                                        |                                                                                                                                                                                                                                                                                                                                                                                               |                                                                                                                                                                                                                                                                                              |                                                                                                                                                                                                                                                                                                           |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -392,9 +392,9 @@ WJEC will decide which penalty is appropriate.
 | 0                                                                                                                                                                                                           | 0 marks                                                                                                                                                                                                                                                                                                                |                                                                                                                                                                                                                                                                                                                                                                                               |                                                                                                                                                                                                                                                                                              |                                                                                                                                                                                                                                                                                                           |
 | Response not worthy of credit or not attempted.                                                                                                                                                             | Response not worthy of credit or not attempted.                                                                                                                                                                                                                                                                        | Response not worthy of credit or not attempted.                                                                                                                                                                                                                                                                                                                                               | Response not worthy of credit or not attempted.                                                                                                                                                                                                                                              |                                                                                                                                                                                                                                                                                                           |
 
-{18}------------------------------------------------
-
 {19}------------------------------------------------
+
+{20}------------------------------------------------
 
 # Candidate Declaration Form
 
@@ -411,7 +411,7 @@ WJEC will decide which penalty is appropriate.
 
 <span id="page-19-0"></span><sup>1</sup> Where you have used AI tools as a source of information, you must show the name of the AI source used and the date the content was generated. For example: ChatGPT 3.5 [\(https://openai.com/blog/chatgpt/\)](https://openai.com/blog/chatgpt/), 25/01/2023. You must, retain a copy of the question(s) and computer-generated content for reference and authentication purposes, in a noneditable format (such as a screenshot) and provide a brief explanation of how it has been used. This must be submitted with your work, so your teacher/assessor is able to review the work, the AI-generated content and how it has been used.
 
-{20}------------------------------------------------
+{21}------------------------------------------------
 
 ## Part B: GDPR Consent
 
@@ -424,6 +424,6 @@ If you prefer that WJEC does not use your work in this way, please tick here: �
 
 <span id="page-20-0"></span><sup>2</sup> You must be over 13 to provide consent. You may withdraw your consent at any time by contacting WJEC on [qualifications@wjec.co.uk.](mailto:qualifications@wjec.co.uk) Please include the title of the work, the year of assessment, centre name and number, candidate name and the unit title in the communication. The work will then be removed from the secure website.
 
-{21}------------------------------------------------
+{22}------------------------------------------------
 
 ![](_page_21_Picture_0.jpeg)

@@ -1,6 +1,6 @@
 
 
-{0}------------------------------------------------
+{1}------------------------------------------------
 
 ![](_page_0_Picture_0.jpeg)
 
@@ -8,13 +8,13 @@
 
 Welcome back! We hope you enjoyed a well deserved break over the summer.
 
-#### PRACTICAL ASSESSMENT UNIT (ALL GCSE SCIENCE QUALIFICATIONS)
+## PRACTICAL ASSESSMENT UNIT (ALL GCSE SCIENCE QUALIFICATIONS)
 
 The dates for the practical assessments are: Monday 5 January – Friday 13 February 2026.
 
 ## TASK BASED ASSESSMENT UNIT
 
-#### (APPLIED SCIENCE QUALIFICATIONS ONLY)
+### (APPLIED SCIENCE QUALIFICATIONS ONLY)
 
 The dates for the task based assessments are: Monday 3 November – Friday 19 December 2025.
 
@@ -26,7 +26,7 @@ WJEC teachers also benefit from access to free marked exam scripts from the Summ
 
 Your learners' scripts will be available to download from Portal from results day onwards.
 
-#### Autumn Term Professional Learning opportunities
+## Autumn Term Professional Learning opportunities
 
 Our Assessment Feedback Package for 2025-26 is an opportunity to gain a deeper understanding of how assessments are marked or moderated. This integrated suite of resources and training brings together free access to Principal Examiner reports, marked scripts, and online assessment feedback sessions. Learn more about how you and your learners can benefit from our Assessment Feedback Package here: [Assessment Feedback](https://www.wjec.co.uk/home/professional-learning/assessment-feedback-package-2025-26/)  [Package 2025-26.](https://www.wjec.co.uk/home/professional-learning/assessment-feedback-package-2025-26/) You can download the most recent Principal Examiner Reports and register for FREE, online feedback events on your qualification page.
 
@@ -36,7 +36,7 @@ Free online assessment feedback sessions based on the summer 2025 series are bei
 
 We are excited to launch the new specifications for GCSE The Sciences (Double Award) and GCSE Integrated Science (Single Award). Here are some key dates for your diaries including information on upcoming Professional Learning opportunities.
 
-#### Key dates
+## Key dates
 
 Publish approved specifications: 30 September 2025
 
@@ -44,25 +44,25 @@ Publish sample assessment materials: 17 December 2025
 
 Publish guidance for teaching: 22 January 2026
 
-{1}------------------------------------------------
+{2}------------------------------------------------
 
 ![](_page_1_Picture_0.jpeg)
 
-# PL Events and Materials
+## PL Events and Materials
 
 | PL Type                                                                                                                                                                                                                                                                                                                                                                                                                                                  | Aims                                                                                                                                                                                                                                                                     | Format and Notes                                                                                                                                                                                                                                                                                                                                                                                        |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Your Guide to the new specification module Available from end of September 2025 | To support your understanding of the specification document. | This asynchronous module will be on the "training on demand" tab of your qualification page on the WJEC website. You will need to register to access a link to view. |
-| Parent / Options evening flyers Available from end of September 2025 | To support you to provide information to parents and learners before start of study. | This PDF will be published on your qualification's home page. |
-| Live Online Qualification Briefing & Q&A Available 2nd half autumn term 2025. Events are open for registration. Visit the Training tab on your new qualification's webpage to view dates and register. GCSE The Sciences (Double Award) – 18/11/25 and 25/11/25 (English) 19/11/25 and 26/11/25 (Welsh) GCSE Integrated Science (Single Award) – 2/12/25 and 9/12/25 (English) 3/12/25 and 10/12/25 (Welsh) | To support your understanding of the new qualification, its content and assessment structure. The live event will also refer to resources and upcoming PL and offer an opportunity to put questions to our Subject Teams and specification experts. | These live online events will be advertised on the WJEC website, and you will be required to register via a link. They will be hosted on Teams Live (Townhall). The events will be presented by WJEC Subject Advisors with Q&A support from WJEC Subject Officers. There will be English medium and Welsh medium events (except for English and Welsh qualifications). |
-| * Preparing to Teach (face-to face) Available from 09/02/26 to 27/03/26 Registrations for the Pan Wales INSET days will be collected via your head teacher. No registrations through WJEC's website. | To support teaching the new specification. There will be a focus on understanding the assessments, assessment objectives, content and teaching approaches based on the specification, sample assessment materials and guidance for teaching. | These days take place on designated regional INSET days – there are 12 days in this series held across Wales, including 2 Welsh medium days and 1 bilingual day. Registrations will be collected via your head teacher/head of centre. These events will be led by WJEC Subject Advisors and our expert presenting teams. |
-| Exam and NEA Walk-throughs Available summer Term 2026 Access via the WJEC Portal secure website | To support you and your learners to understand the structure of question papers/NEA briefs, question types, assessment objectives and marking methods. | These pre-recorded PPT will initially be published on the WJEC Portal secure website only. |
+| Your Guide to the new<br>specification module<br>Available from end of September<br>2025                                                                                                                                                                                                                                                                                                                                                                 | To support your understanding of<br>the specification document.                                                                                                                                                                                                          | This asynchronous module will be<br>on the "training on demand" tab<br>of your qualification page on the<br>WJEC website. You will need to<br>register to access a link to view.                                                                                                                                                                                                                        |
+| Parent / Options evening flyers<br>Available from end of September<br>2025                                                                                                                                                                                                                                                                                                                                                                               | To support you to provide<br>information to parents and<br>learners before start of study.                                                                                                                                                                               | This PDF will be published on<br>your qualification's home page.                                                                                                                                                                                                                                                                                                                                        |
+| Live Online Qualification Briefing<br>& Q&A<br>Available 2nd half autumn term<br>2025.<br>Events are open for registration.<br>Visit the Training tab on your<br>new qualification's webpage to<br>view dates and register.<br>GCSE The Sciences (Double<br>Award) – 18/11/25 and 25/11/25<br>(English)<br>19/11/25 and 26/11/25 (Welsh)<br>GCSE Integrated Science (Single<br>Award) – 2/12/25 and 9/12/25<br>(English)<br>3/12/25 and 10/12/25 (Welsh) | To support your understanding of<br>the new qualification, its content<br>and assessment structure. The<br>live event will also refer to<br>resources and upcoming PL and<br>offer an opportunity to put<br>questions to our Subject Teams<br>and specification experts. | These live online events will be<br>advertised on the WJEC website,<br>and you will be required to<br>register via a link. They will be<br>hosted on Teams Live (Townhall).<br>The events will be presented by<br>WJEC Subject Advisors with Q&A<br>support from WJEC Subject<br>Officers. There will be English<br>medium and Welsh medium<br>events (except for English and<br>Welsh qualifications). |
+| * Preparing to Teach (face-to<br>face)<br>Available from 09/02/26 to<br>27/03/26<br>Registrations for the Pan Wales<br>INSET days will be collected via<br>your head teacher. No<br>registrations through WJEC's<br>website.                                                                                                                                                                                                                             | To support teaching the new<br>specification. There will be a<br>focus on understanding the<br>assessments, assessment<br>objectives, content and teaching<br>approaches based on the<br>specification, sample assessment<br>materials and guidance for<br>teaching.     | These days take place on<br>designated regional INSET days –<br>there are 12 days in this series<br>held across Wales, including 2<br>Welsh medium days and 1<br>bilingual day. Registrations will<br>be collected via your head<br>teacher/head of centre.<br>These events will be led by WJEC<br>Subject Advisors and our expert<br>presenting teams.                                                 |
+| Exam and NEA Walk-throughs<br>Available summer Term 2026<br>Access via the WJEC Portal<br>secure website                                                                                                                                                                                                                                                                                                                                                 | To support you and your learners<br>to understand the structure of<br>question papers/NEA briefs,<br>question types, assessment<br>objectives and marking methods.                                                                                                       | These pre-recorded PPT will<br>initially be published on the<br>WJEC Portal secure website only.                                                                                                                                                                                                                                                                                                        |
 
 <sup>\*</sup> Your designated regional WJEC face-to-face INSET date (Preparing to Teach) can be found here: [Made-for-Wales GCSEs - Professional Learning | TGAU Gwneud-i-Gymru -](https://www.wjec.co.uk/home/professional-learning/made-for-wales-gcses-professional-learning/#tab_1)  [Dysgu Proffesiynol](https://www.wjec.co.uk/home/professional-learning/made-for-wales-gcses-professional-learning/#tab_1) 
 
 Following a consultation under the guidance of Canolfan Bedwyr, which is Bangor University's Centre for Welsh Language Services, Research and Technology (who are responsible for Y Termiadur Addysg), a decision was made to change the Welsh language terminology currently in use for 'speed' and 'velocity'.
 
-{2}------------------------------------------------
+{3}------------------------------------------------
 
 ![](_page_2_Picture_0.jpeg)
 
@@ -83,13 +83,13 @@ The central issue with the current terminology is the inconsistency which exists
 
 This inconsistency confuses pupils, especially as they move from primary to secondary education or in resources or activities which encompass both periods. The recent national numeracy tests are such an example, where a decision has to be made as to which term to use, with these tests being given to primary and secondary pupils. This problem will continue despite the fact that changes will be coming to these tests over the next few years.
 
-#### The change
+### The change
 
 - **•** To use 'cyflymder' for 'speed' across all levels of education (reconciling with common speech)
 - **•** Coin the new term 'felosedd' for 'velocity'
 - **•** Dispose of the term 'buanedd' as a technical term
 
-#### Arguments for change
+### Arguments for change
 
 - **•** It would reconcile terminology across primary and secondary education
 - **•** It would reconcile school terminology with common speech
@@ -97,7 +97,7 @@ This inconsistency confuses pupils, especially as they move from primary to seco
 
 # Implementing the change
 
-#### New GCSE/Level 2 specifications (teaching from 2025/2026)
+### New GCSE/Level 2 specifications (teaching from 2025/2026)
 
 Based on the recommendations of Canolfan Bedwyr therefore, 'cyflymder' (speed) and 'felosedd' (velocity) will be used in the following new qualifications:
 
@@ -108,11 +108,11 @@ Based on the recommendations of Canolfan Bedwyr therefore, 'cyflymder' (speed) a
 
 In order to mitigate for any confusion which may be caused by this change, the English terms will be put in brackets the first time the terms appear in an examination paper.
 
-{3}------------------------------------------------
+{4}------------------------------------------------
 
 ![](_page_3_Picture_0.jpeg)
 
-#### Current GCSE/Level 2 specifications
+### Current GCSE/Level 2 specifications
 
 ## Please note: these changes relate to the new specifications only, there will be NO change to the terms used in the current specifications.
 

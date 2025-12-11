@@ -1,18 +1,18 @@
 
 
-{0}------------------------------------------------
+{1}------------------------------------------------
 
-## WHY CHOOSE GCSE
+# WHY CHOOSE GCSE
 
-# Religious Studies?
+## Religious Studies?
 
 ![](_page_0_Picture_2.jpeg)
 
-#### **INTRODUCTION**
+### INTRODUCTION
 
 Why study RS? Because it is, and will always be, relevant. The majority of the world's population is religious; GCSE RS helps you to understand some of the beliefs and teachings that these people live their lives by. You will also learn about non-religious attitudes and perspectives as this is increasingly relevant in the modern world. Not a day goes by where there isn't reference to religion or some ethical topic on the news, so take GCSE RS to be better informed about these important matters!
 
-#### WHAT WILL I STUDY?
+### WHAT WILL I STUDY?
 
 GCSE Religious Studies comprises four units, two of which are examined by non-exam assessment (NEA).
 
@@ -26,7 +26,7 @@ UNIT 4 - Religion and human rights - Unit 4 is another non-exam assessment. Firs
 
 FIND OUT MORE -TALK TO YOUR TEACHER TODAY!
 
-#### **HOW WILL I BE ASSESSED?**
+### HOW WILL I BE ASSESSED?
 
 Unit 1 A 75-minute exam, 60 marks, 30% of the qualification
 
@@ -36,7 +36,7 @@ Units 3 A 75-minute exam, 60 marks, 30% of the qualification
 
 Unit 4 Non-exam assessment, 6 hours, 20% of the qualification
 
-#### WHAT SKILLS WILL I DEVELOP?
+### WHAT SKILLS WILL I DEVELOP?
 
 Religious Studies allows you to broaden your understanding of different people and the way they live their lives, developing tolerance and empathy. The academic nature of the subject helps you to develop a range of skills, including:
 
@@ -49,7 +49,7 @@ Religious Studies allows you to broaden your understanding of different people a
 
 With the introduction of NEA, you will also have opportunities to investigate and explore issues that are relevant to today's world, developing research and interpersonal skills.
 
-### **CAREERS IN Religious Studies**
+### CAREERS IN Religious Studies
 
 GCSE Religious Studies gives you a solid foundation for studying A Level Religious Studies, which can lead you to various degrees at university:
 

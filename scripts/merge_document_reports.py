@@ -1,18 +1,16 @@
-"""Merge per-document llm categoriser CSVs into a single report file.
+"""Merge CSV reports located inside subject sub-folders.
 
-This script finds all CSVs in Documents/*/document_reports/ and writes them
-into a single csv at Documents/llm_categorised-language-check-report.csv.
+Given a sub-folder name (for example ``document_reports`` or
+``llm_page_proofreader_reports``) this module walks every subject directory
+within the ``Documents`` tree, collects the CSV files that live inside that
+sub-folder, and merges them into a single CSV file. The merged output always
+contains two leading columns (``Subject`` and ``Filename``) followed by the
+standard per-document headers defined in :mod:`src.llm_review`.
 
-The merged CSV includes two extra columns at the front:
-- Subject
-- Filename
-
-Existing per-document CSV columns are preserved. Rows are written in the order
-of subject and then filename, with rows for each document in their existing
-order.
-
-This script can be used programmatically by importing `merge_document_reports`
-and supplying an alternative `output_dir` (useful for tests).
+The public ``merge_document_reports`` helper can be imported by other scripts
+or tests. Additional filters allow callers to restrict the merge to specific
+subjects or CSV filenames, and an explicit output path can be supplied when
+writing outside the default ``Documents`` directory.
 """
 
 from __future__ import annotations
@@ -20,7 +18,7 @@ from __future__ import annotations
 import csv
 import sys
 from pathlib import Path
-from typing import Iterable, List
+from typing import Iterable, Iterator, List
 
 # Match the headers expected from per-document CSVs
 ROOT_DIR = Path(__file__).resolve().parents[1]
@@ -29,86 +27,196 @@ if str(ROOT_DIR) not in sys.path:
 
 from src.llm_review.llm_categoriser.persistence import CSV_HEADERS
 
-DEFAULT_OUTPUT_DIR = Path("Documents")
+DEFAULT_DOCUMENTS_DIR = Path("Documents")
 DEFAULT_OUTPUT_FILE = "llm_categorised-language-check-report.csv"
 
 
-def iter_document_report_csvs(output_dir: Path = DEFAULT_OUTPUT_DIR) -> Iterable[Path]:
-    """Yield all CSV files under <output_dir>/*/document_reports/*.csv."""
-    output_dir / "*" / "document_reports" / "*.csv"
-    for p in sorted(output_dir.glob("*/document_reports/*.csv")):
-        yield Path(p)
+def _normalise_subject_filter(subjects: Iterable[str] | None) -> set[str] | None:
+    """Return a lowercase subject filter set or ``None`` when no filter."""
+
+    if not subjects:
+        return None
+
+    normalised = {subject.strip().lower() for subject in subjects if subject.strip()}
+    return normalised or None
+
+
+def _normalise_filename_filter(filenames: Iterable[str] | None) -> set[str] | None:
+    """Return a lowercase filename filter set or ``None`` when no filter."""
+
+    if not filenames:
+        return None
+
+    normalised: set[str] = set()
+    for name in filenames:
+        cleaned = Path(name).name
+        if not cleaned:
+            continue
+        if not cleaned.lower().endswith(".csv"):
+            cleaned = f"{cleaned}.csv"
+        normalised.add(cleaned.lower())
+    return normalised or None
+
+
+def _iter_subject_directories(documents_dir: Path) -> Iterator[Path]:
+    """Yield sorted subject directories inside ``documents_dir``."""
+
+    if not documents_dir.exists():
+        return
+
+    subject_dirs = [p for p in documents_dir.iterdir() if p.is_dir()]
+    subject_dirs.sort(key=lambda p: p.name.lower())
+    for subject_dir in subject_dirs:
+        yield subject_dir
+
+
+def _iter_subject_csvs(
+    documents_dir: Path,
+    subfolder: Path,
+    subject_filter: set[str] | None,
+    filename_filter: set[str] | None,
+) -> Iterator[tuple[str, Path]]:
+    """Yield ``(subject_name, csv_path)`` tuples for matching CSV files."""
+
+    if subfolder.is_absolute():
+        raise ValueError("subfolder must be a relative path")
+
+    for subject_dir in _iter_subject_directories(documents_dir):
+        subject_name = subject_dir.name
+        if subject_filter and subject_name.lower() not in subject_filter:
+            continue
+
+        target_dir = subject_dir.joinpath(subfolder)
+        if not target_dir.is_dir():
+            continue
+
+        csv_files = sorted(target_dir.glob("*.csv"), key=lambda p: p.name.lower())
+        for csv_path in csv_files:
+            if filename_filter and csv_path.name.lower() not in filename_filter:
+                continue
+            yield subject_name, csv_path
+
+
+def _resolve_output_path(
+    documents_dir: Path,
+    output_path: Path | None,
+    output_file_name: str,
+) -> Path:
+    """Return the full path where the merged CSV should be written."""
+
+    if output_path is not None:
+        return output_path
+    return documents_dir / output_file_name
 
 
 def merge_document_reports(
-    output_dir: Path = DEFAULT_OUTPUT_DIR,
+    subfolder_name: str,
+    *,
+    documents_dir: Path = DEFAULT_DOCUMENTS_DIR,
+    output_path: Path | None = None,
     output_file_name: str = DEFAULT_OUTPUT_FILE,
+    subjects: Iterable[str] | None = None,
+    filenames: Iterable[str] | None = None,
 ) -> Path:
-    """Merge per-document CSVs into a single CSV file.
+    """Merge CSV files contained in a subject sub-folder.
 
     Args:
-        output_dir: Base Documents directory to search in.
-        output_file_name: Filename to write to inside `output_dir`.
+        subfolder_name: Relative path of the sub-folder inside each subject
+            directory (for example ``document_reports``).
+        documents_dir: Root folder containing subject directories. Defaults to
+            ``Documents`` in the project root when not provided.
+        output_path: Optional explicit file path for the merged CSV.
+        output_file_name: Filename to write inside ``documents_dir`` when
+            ``output_path`` is not supplied.
+        subjects: Optional iterable of subject directory names to include.
+        filenames: Optional iterable of CSV filenames to include. Filenames can
+            be supplied with or without the ``.csv`` extension.
 
     Returns:
-        Path to the created merged CSV file.
+        Path to the merged CSV file that was written.
     """
-    merged_path = output_dir / output_file_name
-    # Ensure output directory exists
-    output_dir.mkdir(parents=True, exist_ok=True)
+
+    subfolder = Path(subfolder_name)
+    documents_dir = Path(documents_dir)
+    output_path = _resolve_output_path(documents_dir, output_path, output_file_name)
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    subject_filter = _normalise_subject_filter(subjects)
+    filename_filter = _normalise_filename_filter(filenames)
 
     headers: List[str] = ["Subject", "Filename"] + CSV_HEADERS
+    csv_sources = list(
+        _iter_subject_csvs(documents_dir, subfolder, subject_filter, filename_filter)
+    )
 
-    csv_paths = list(iter_document_report_csvs(output_dir))
-
-    # Open merged file and walk through CSVs
-    with open(merged_path, "w", encoding="utf-8", newline="") as out_f:
+    with output_path.open("w", encoding="utf-8", newline="") as out_f:
         writer = csv.DictWriter(out_f, fieldnames=headers)
         writer.writeheader()
 
-        for csv_path in csv_paths:
-            # Derive subject and filename
-            try:
-                subject = csv_path.parent.parent.name
-                filename = csv_path.name
-            except Exception:
-                # Fallback to file name only
-                subject = ""
-                filename = csv_path.name
-
-            with open(csv_path, "r", encoding="utf-8", newline="") as in_f:
+        for subject_name, csv_path in csv_sources:
+            with csv_path.open("r", encoding="utf-8", newline="") as in_f:
                 reader = csv.DictReader(in_f)
                 for row in reader:
-                    # Normalise to expected CSV_HEADERS
-                    base_row = {h: row.get(h, "") for h in CSV_HEADERS}
-                    data = {"Subject": subject, "Filename": filename} | base_row
-                    writer.writerow(data)
+                    normalised = {header: row.get(header, "") for header in CSV_HEADERS}
+                    merged_row = {"Subject": subject_name, "Filename": csv_path.name}
+                    merged_row.update(normalised)
+                    writer.writerow(merged_row)
 
-    return merged_path
+    return output_path
 
 
 def main() -> None:
     import argparse
 
     parser = argparse.ArgumentParser(
-        description="Merge per-document llm categoriser CSVs into a single report"
+        description="Merge CSV reports inside subject sub-folders"
     )
     parser.add_argument(
-        "--output-dir",
-        "-o",
-        default=str(DEFAULT_OUTPUT_DIR),
-        help="Path to Documents root (default: Documents)",
+        "subfolder",
+        nargs="?",
+        default="document_reports",
+        help="Relative sub-folder name within each subject directory",
+    )
+    parser.add_argument(
+        "--documents-dir",
+        "-d",
+        default=str(DEFAULT_DOCUMENTS_DIR),
+        help="Path to the Documents root (default: Documents)",
     )
     parser.add_argument(
         "--output-file",
         "-f",
         default=DEFAULT_OUTPUT_FILE,
-        help="Name of merged file to write (default: llm_categorised-language-check-report.csv)",
+        help="Name of the merged file to write when --output-path is not supplied",
+    )
+    parser.add_argument(
+        "--output-path",
+        "-p",
+        help="Explicit path for the merged CSV; overrides --output-file",
+    )
+    parser.add_argument(
+        "--subjects",
+        "-s",
+        nargs="+",
+        help="Optional list of subject directory names to include",
+    )
+    parser.add_argument(
+        "--filenames",
+        "-n",
+        nargs="+",
+        help="Optional list of CSV filenames to include (with or without .csv)",
     )
 
     args = parser.parse_args()
 
-    merged = merge_document_reports(Path(args.output_dir), args.output_file)
+    merged = merge_document_reports(
+        args.subfolder,
+        documents_dir=Path(args.documents_dir),
+        output_path=Path(args.output_path) if args.output_path else None,
+        output_file_name=args.output_file,
+        subjects=args.subjects,
+        filenames=args.filenames,
+    )
     print(f"Wrote merged report to: {merged}")
 
 

@@ -1,0 +1,17 @@
+issue_id,page_number,issue,highlighted_context,error_category,confidence_score,reasoning
+0,8,Abdi adds yellow counters to the bag.,"Abdi adds yellow counters to the bag.
+Now, when Abdi selects a counter at random from the bag, there is an even<br>chance of selecting a yellow counter.
+How many yellow counters did Abdi add to the bag?
+**Abdi adds yellow counters to the bag.**",ErrorCategory.STYLISTIC_PREFERENCE,95,"The sentence 'Abdi adds yellow counters to the bag.' is repeated unnecessarily, creating redundancy and awkward phrasing."
+1,23,numerators<br>denominators,"(could include decimals as **numerators<br>denominators**). Allow fully correct pictorial<br>representation, e.g. equal split boxes with<br>correct shading.",ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,Missing conjunction 'and' or a comma between two nouns in a list.
+2,23,rac,12.(b) **rac**{11}{20}$ or equivalent.,ErrorCategory.SPELLING_ERROR,98,The '' character is an OCR artifact (form feed) and should be removed.
+3,23,1.a,B1 for either:<br>a numerator of 11 in a fraction less than **1.a** denominator of 20 in a fraction less than 1Penalise –1 for use of incorrect notation.,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,"This is a run-on sentence, joining two independent clauses without proper punctuation or conjunction."
+4,23,rac,14. **rac**{21}{8} 	imes rac{8}{3} - rac{1}{8}$,ErrorCategory.SPELLING_ERROR,98,The '' character is an OCR artifact (form feed) and should be removed.
+5,23,2rac,M1 for any one of the following:<br>$**2rac**{5}{8} rac{21}{8} rac{8}{3}$ $rac{1}{2^3} = rac{1}{8}$,ErrorCategory.SPELLING_ERROR,98,The '' character is an OCR artifact (form feed) and should be removed.
+6,23,rac,A1 for any one of the following:<br>$**rac**{21}{8} 	imes rac{8}{3} = 7$ final answer $rac{55}{8}$ 'their $rac{21}{8} 	imes rac{8}{3}$ ' $-rac{1}{8}$ correctly evaluated and given as a mixed number,ErrorCategory.SPELLING_ERROR,98,The '' character is an OCR artifact (form feed) and should be removed.
+7,23,correct the ratio,"If no marks, award SC1 for an answer with whole<br>numbers of knives, forks and spoons in **correct the ratio**, e.g. 80 ; 70 : 112",ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,Incorrect word order; 'the' should precede 'correct'.
+8,27,dependant,- 'm' marks are **dependant** method marks. They are only given if the relevant previous 'M' mark has been earned.,ErrorCategory.SPELLING_ERROR,98,The adjective form should be 'dependent' in British English. 'Dependant' is typically used as a noun.
+9,27,awards,- 'SC' marks are **awards** for special cases,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,"The verb 'awarded' is required here to maintain parallel structure and correct grammar, as in the preceding bullet points."
+10,28,directed num,1 | Writing numbers in words;<br>rounding; factors; **directed num** | 4 | 3 | 1 | | | |,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,'num' is an informal abbreviation for 'numbers' and should be written in full in formal documentation.
+11,28,isosceles,7 | Angles problem - two squares<br>and an **isosceles** | 6 | | | 6 | | | *,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,"'Isosceles' is an adjective and requires a noun, such as 'triangle', to complete the phrase."
+12,28,variable both sides,13 | Solve linear equation with<br>**variable both sides** | 3 | 3 | | | 1 | 3 |,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,90,"The phrase requires a preposition and/or pluralisation for grammatical correctness, such as 'variable on both sides' or 'variables on both sides'."

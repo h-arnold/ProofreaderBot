@@ -1,0 +1,11 @@
+issue_id,page_number,issue,highlighted_context,error_category,confidence_score,reasoning
+0,1,Urdo,"# Geography comes alive!
+
+Gwersyll yr **Urdo**
+
+# PENTRE IFAN",ErrorCategory.SPELLING_ERROR,98,"The correct spelling for the organisation is 'Urdd', not 'Urdo'."
+1,1,Oualitative,"Analyse the Pembrokeshire Coast National Park's 'Changing Coast' archive.
+
+#### **Oualitative** Surveys
+
+- Assess the impact of honeypot sites on local communities.",ErrorCategory.SPELLING_ERROR,98,The word 'Oualitative' is a misspelling of 'Qualitative'.

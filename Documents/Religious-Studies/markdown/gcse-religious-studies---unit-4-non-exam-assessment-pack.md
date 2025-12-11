@@ -1,6 +1,6 @@
 
 
-{0}------------------------------------------------
+{1}------------------------------------------------
 
 ![](_page_0_Picture_0.jpeg)
 
@@ -22,33 +22,35 @@ Ready for the world. This Qualifications Wales regulated qualification is not av
 
 Made for Wales.
 
-{1}------------------------------------------------
+{2}------------------------------------------------
 
 ![](_page_1_Picture_0.jpeg)
 
-{2}------------------------------------------------
+{3}------------------------------------------------
 
 # SUMMARY OF AMENDMENTS
 
 | Version | Description                                                                                                    | Page number |
 |---------|----------------------------------------------------------------------------------------------------------------|-------------|
-| 2 | Managing the assessment section updated to state this is WJEC marked (external) non-examination assessment. | 1 |
+| 2       | Managing the assessment section updated to state this is<br>WJEC marked (external) non-examination assessment. | 1           |
 |         | Candidate Time Record Sheet added.                                                                             | 18          |
-
-{3}------------------------------------------------
-
-#### Contents
-
-| About this pack: information for teachers                      | 1  |
-|----------------------------------------------------------------|----|
-| Managing the assessment | 1 |
-| Candidate Assessment Pack | 6 |
-| Mark scheme | 8 |
-| Mapping of tasks to unit content and assessment objectives | 16 |
 
 {4}------------------------------------------------
 
-### <span id="page-4-0"></span>About this pack: information for teachers
+#### Contents
+
+| About this pack: information for teachers                  | 1  |
+|------------------------------------------------------------|----|
+| Managing the assessment                                    | 1  |
+| Candidate Assessment Pack                                  | 6  |
+| Mark scheme                                                | 8  |
+| Mapping of tasks to unit content and assessment objectives | 16 |
+
+{5}------------------------------------------------
+
+<span id="page-4-0"></span>
+
+### About this pack: information for teachers
 
 This pack contains the assessment materials for Unit 4: Religion and Human Rights
 
@@ -65,7 +67,9 @@ Within this pack, you will find:
 
 **You must provide each candidate with a copy of the complete candidate assessment pack.**
 
-#### <span id="page-4-1"></span>Managing the assessment
+<span id="page-4-1"></span>
+
+#### Managing the assessment
 
 This is a WJEC marked (external) non-examination assessment. The following arrangements must be followed when managing the assessment.
 
@@ -81,7 +85,7 @@ Candidates must be allowed 6 **hours** to complete this assessment. Candidates s
 
 The time suggested for each task takes account of the contribution of the task to the overall assessment requirements. There can be no changes to the total time available for this assessment. Centres can, however, amend the suggested time available for each task.
 
-{5}------------------------------------------------
+{6}------------------------------------------------
 
 #### **Resources**
 
@@ -103,11 +107,14 @@ Group work is **not** allowed. Candidates must complete all tasks individually.
 
 Two levels of supervision feature throughout this assessment:
 
-| Type   | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
-|--------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Direct | The use of resources is tightly prescribed. The centre must ensure that: <ul><li>all candidates are within direct sight of the supervisor throughout the session(s)</li><li>display materials which might provide assistance are removed or covered</li><li>there is no access to e-mail, the internet or mobile phones</li><li>candidates complete their work independently</li><li>interaction with other candidates does not occur</li><li>no assistance of any description is provided. Candidates' work must remain within the centre at all times and must be stored securely between timetabled sessions. Where direct supervision is specified, the centre must ensure that the JCQ No Mobile Phone poster and JCQ Warning to Candidates is displayed.</li></ul> |
+| Type   | Description                                                                                                                                                                                                                                                                                                                                                   |
+|--------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Direct | The use of resources is tightly prescribed. The centre must ensure that:                                                                                                                                                                                                                                                                                      |
+|        | all candidates are within direct sight of the supervisor throughout the session(s)display materials which might provide assistance are removed or coveredthere is no access to e-mail, the internet or mobile phonescandidates complete their work independentlyinteraction with other candidates does not occurno assistance of any description is provided. |
+|        | Candidates' work must remain within the centre at all times and must be stored securely between timetabled sessions.                                                                                                                                                                                                                                          |
+|        | Where direct supervision is specified, the centre must ensure that the JCQ No Mobile Phone poster and JCQ Warning to Candidates is displayed.                                                                                                                                                                                                                 |
 
-{6}------------------------------------------------
+{7}------------------------------------------------
 
 Candidates do not need to be directly supervised at all times.
 
@@ -143,7 +150,7 @@ Teachers must sign the declaration to confirm that evidence submitted for modera
 
 The acceptable formats for evidence of each of the tasks is summarised in the task tables. Any modified assessment must enable the candidate to generate the evidence required in this table
 
-{7}------------------------------------------------
+{8}------------------------------------------------
 
 #### **Further information**
 
@@ -151,7 +158,7 @@ You should refer to the JCQ Instructions for conducting non-examination assessme
 
 **This pack is the live assessment. It must not be used for practice purposes.**
 
-{8}------------------------------------------------
+{9}------------------------------------------------
 
 #### Assessment Details
 
@@ -171,7 +178,7 @@ You must select **two** of the three human rights issues selected by WJEC on whi
 
 This investigation must be based on the **two** religions studied (Christianity or Catholic Christianity and a world religion) in all other Units, **and** non-religious perspectives.
 
-{9}------------------------------------------------
+{10}------------------------------------------------
 
 ![](_page_9_Picture_0.jpeg)
 
@@ -181,7 +188,7 @@ This investigation must be based on the **two** religions studied (Christianity 
 
 Unit 4: Religion and Human Rights (3150U4)
 
-{10}------------------------------------------------
+{11}------------------------------------------------
 
 #### About this pack: information and instructions for candidates
 
@@ -211,7 +218,7 @@ It is important that you work independently from other candidates and the work p
 
 You are advised to check your work carefully to make sure that it is accurate and correct.
 
-{11}------------------------------------------------
+{12}------------------------------------------------
 
 #### Assignment
 
@@ -250,7 +257,7 @@ You are permitted to take a maximum of six sides of A4 written or typed notes fr
 
 Gathering this information does not form part of your non-examination assessment time.
 
-{12}------------------------------------------------
+{13}------------------------------------------------
 
 #### Select and research charities or organisations
 
@@ -264,10 +271,9 @@ You are permitted to take a maximum of four sides of A4 written or typed researc
 
 #### Tasks
 
-| Task |                                                                                                                                                                                                                                                                                                  | Evidence                                                                                  | Controls                                                                                                             |
-|------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
-| 1 | Write a rationale to support the selection of each of your two charities or organisations based on the following: <ul><li>the purpose and aims of each charity or organisation</li><li>how the purpose and aims relate to the human rights issues selected. [5 marks]</li></ul> | A maximum of four sides of A4 written or typed research notes A written response | Supervision: Indirect Guidance: Not permitted Resources: Permitted Collaboration: Not permitted |
-|      |                                                                                                                                                                                                                                                                                                  |                                                                                           |                                                                                                                      |
+| Task | Evidence                                                                                                                                                                                                                                                           | Controls                                                                            |                                                                                                                      |
+|------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------|
+| 1    | Write a rationale to support the selection of each of your two charities or organisations based on the following:<br>• the purpose and aims of each charity or organisation<br>• how the purpose and aims relate to the human rights issues selected.<br>[5 marks] | A maximum of four sides of A4 written or typed research notes<br>A written response | Supervision:<br>Indirect<br>Guidance:<br>Not permitted<br>Resources:<br>Permitted<br>Collaboration:<br>Not permitted |
 
 You should spend approximately **30 minutes** completing this task.
 
@@ -275,12 +281,11 @@ Resources permitted:
 
 • The maximum of four sides of A4 written or typed research notes.
 
-{13}------------------------------------------------
+{14}------------------------------------------------
 
-| Task |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        | Evidence                                                                                                                   | Controls                                                                                                           |
-|------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| 2 | Based on the first human rights issue selected, write a summary of: a) the relevant articles of the Universal Declaration of Human Rights b) how the work of the first charity or organisation aligns with the relevant articles of the Universal Declaration of Human Rights c) relevant beliefs, teachings, practices and perspectives from the two religions you have studied d) relevant non-religious perspectives | A maximum of six sides of A4 written or typed notes from your pre-assessment period work A written response | Supervision: Direct Guidance: Not permitted Resources: Permitted Collaboration: Not permitted |
-|      | [15 marks]                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |                                                                                                                            |                                                                                                                    |
+| Task | Evidence                                                                                                                                                                                                                                                                                                                                                                                                                                          | Controls                                                                                                       |                                                                                                                    |
+|------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
+| 2    | Based on the first human rights issue selected, write a summary of:<br>a) the relevant articles of the Universal Declaration of Human Rights<br>b) how the work of the first charity or organisation aligns with the relevant articles of the Universal Declaration of Human Rights<br>c) relevant beliefs, teachings, practices and perspectives from the two religions you have studied<br>d) relevant non-religious perspectives<br>[15 marks] | A maximum of six sides of A4 written or typed notes from your pre-assessment period work<br>A written response | Supervision:<br>Direct<br>Guidance:<br>Not permitted<br>Resources:<br>Permitted<br>Collaboration:<br>Not permitted |
 
 You should spend approximately **1 hour and 30 minutes** completing this task.
 
@@ -289,12 +294,12 @@ You should spend approximately **1 hour and 30 minutes** completing this task.
 - A maximum of four sides of A4 written or typed research notes.
 - A maximum six sides of A4 written or typed notes from your pre-assessment period work.
 
-{14}------------------------------------------------
+{15}------------------------------------------------
 
-| Task |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             | Evidence                                                                                                                      | Controls                                                                                                           |
-|------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
-| 3 | Based on the second human rights issue selected, write a summary of: a) the relevant articles of the Universal Declaration of Human Rights b) how the work of the second charity or organisation aligns with the relevant articles of the Universal Declaration of Human Rights c) relevant beliefs, teachings, practices and perspectives from the two religions you have studied d) relevant non-religious perspectives | A maximum of six sides of A4 written or typed notes from your pre-assessment period work A written response | Supervision: Direct Guidance: Not permitted Resources: Permitted Collaboration: Not permitted |
-|      | [15 marks]                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |                                                                                                                               |                                                                                                                    |
+| Task                                                                                                                                                                                                                                                                                                                                                                                                                                       | Evidence                                                                                                       | Controls                                                                                                           |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
+| 3<br>Based on the second human rights issue selected, write a summary of:<br>a) the relevant articles of the Universal Declaration of Human Rights<br>b) how the work of the second charity or organisation aligns with the relevant articles of the Universal Declaration of Human Rights<br>c) relevant beliefs, teachings, practices and perspectives from the two religions you have studied<br>d) relevant non-religious perspectives | A maximum of six sides of A4 written or typed notes from your pre-assessment period work<br>A written response | Supervision:<br>Direct<br>Guidance:<br>Not permitted<br>Resources:<br>Permitted<br>Collaboration:<br>Not permitted |
+|                                                                                                                                                                                                                                                                                                                                                                                                                                            | [15 marks]                                                                                                     |                                                                                                                    |
 
 You should spend approximately **1 hour and 30 minutes** completing this task.
 
@@ -303,12 +308,12 @@ You should spend approximately **1 hour and 30 minutes** completing this task.
 - A maximum of four sides of A4 written or typed research notes.
 - A maximum of six sides of A4 written or typed notes from your pre-assessment period work.
 
-{15}------------------------------------------------
+{16}------------------------------------------------
 
-| Task |                                                                                                                                                                                                                                                                                                                                                                                                                                          | Evidence           | Controls                                                                                                           |
-|------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|--------------------------------------------------------------------------------------------------------------------|
-| 4 | Analyse and evaluate which of the two Human Rights issues you have selected is more important to society today. In your answer, refer to the points below and come to a justified conclusion: <ul><li>religious perspectives of the two religions you have studied</li><li>non-religious perspectives</li><li>the purpose, aims and work of the two charities or organisations you have selected.</li></ul> | A written response | Supervision: Direct Guidance: Not permitted Resources: Permitted Collaboration: Not permitted |
-|  | [15 marks] |  |  |
+| Task | Evidence                                                                                                                                                                                                                                                                                                                                                                          | Controls           |                                                                                                                                |
+|------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| 4    | Analyse and evaluate which of the two Human Rights issues you have selected is more important to society today.<br><br>In your answer, refer to the points below and come to a justified conclusion:<br>religious perspectives of the two religions you have studiednon-religious perspectivesthe purpose, aims and work of the two charities or organisations you have selected. | A written response | Supervision:<br>Direct<br><br>Guidance:<br>Not permitted<br><br>Resources:<br>Permitted<br><br>Collaboration:<br>Not permitted |
+|      | [15 marks]                                                                                                                                                                                                                                                                                                                                                                        |                    |                                                                                                                                |
 
 You should spend approximately **1 hour and 30 minutes** completing this task.
 
@@ -317,9 +322,9 @@ You should spend approximately **1 hour and 30 minutes** completing this task.
 - Your answers to Tasks 1, 2 and 3.
 - Your permitted notes from previous tasks.
 
-| Task |                                                                                                                                                                                              | Evidence           | Controls                                                                                                             |
-|------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|----------------------------------------------------------------------------------------------------------------------|
-| 5 | Explain which of the charities or organisations selected most aligns with your own values and beliefs. (You could reflect on your findings from previous tasks. [10 marks] | A written response | Supervision: Indirect Guidance: Not permitted Resources: Permitted Collaboration: Not permitted |
+| Task                                                                                                                                                                                              | Evidence           | Controls                                                                                                             |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|----------------------------------------------------------------------------------------------------------------------|
+| 5<br>Explain which of the charities<br>or organisations selected most<br>aligns with your own values<br>and beliefs. (You could reflect<br>on your findings from previous<br>tasks.<br>[10 marks] | A written response | Supervision:<br>Indirect<br>Guidance:<br>Not permitted<br>Resources:<br>Permitted<br>Collaboration:<br>Not permitted |
 
 You should spend approximately **1 hour** completing this task.
 
@@ -330,7 +335,7 @@ You should spend approximately **1 hour** completing this task.
 
 #### **End of tasks**
 
-{16}------------------------------------------------
+{17}------------------------------------------------
 
 #### Information for candidates
 
@@ -365,7 +370,7 @@ WJEC will decide which penalty is appropriate.
 
 **Remember – it's your qualification so it needs to be your own work.**
 
-{17}------------------------------------------------
+{18}------------------------------------------------
 
 ### Mark scheme
 
@@ -380,17 +385,19 @@ Write a rationale to support the selection of each of your **two** charities or 
 - the purpose and aims of each charity or organisation
 - how the purpose and aims relate to the human rights issues selected. [5 marks]
 
+[5 marks]
+
 <span id="page-17-0"></span>
 
-| Band   | AO4                                                                                                                                                                                                 |  |
-|--------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--|
-| 3 | 5 marks <ul><li>a precise and convincing rationale given for the selection of each charity or organisation which effectively relates their purposes and aims to the human rights issues selected</li></ul> |  |
-| 2 | 3-4 marks <ul><li>a clear and mainly convincing rationale given for the selection of each charity or organisation which relates their purposes and aims to the human rights issues selected</li></ul> |  |
-| 1 | 1-2 marks <ul><li>a limited rationale given for the selection of each charity or organisation with minimal references made to their purposes and aims</li></ul> |  |
-| 0 | 0 marks No response attempted or nothing worthy of credit. |  |
-| Total: |                                                                                                                                                                                                     |  |
+| Band      | AO4                                                                                                                                                                                           |
+|-----------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 3         | 5 marks<br>• a precise and convincing rationale given for the selection of each charity or organisation which effectively relates their purposes and aims to the human rights issues selected |
+| 2         | 3-4 marks<br>• a clear and mainly convincing rationale given for the selection of each charity or organisation which relates their purposes and aims to the human rights issues selected      |
+| 1         | 1-2 marks<br>• a limited rationale given for the selection of each charity or organisation with minimal references made to their purposes and aims                                            |
+| 0         | 0 marks<br>No response attempted or nothing worthy of credit.                                                                                                                                 |
+| Total: /5 |                                                                                                                                                                                               |
 
-{18}------------------------------------------------
+{19}------------------------------------------------
 
 #### **Task 2**
 
@@ -401,20 +408,22 @@ Based on the first human rights issue selected, write a summary of:
 - c) relevant beliefs, teachings, practices and perspectives from the **two** religions you have studied
 - d) relevant non-religious perspectives [15 marks]
 
-| Band | AO2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |  |
-|------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--|
-| 5 | 13-15 marks <ul><li>excellent application of knowledge and understanding of the Universal Declaration of Human Rights associated with the human rights issues selected and how the work of the first charity or organisation aligns with the relevant articles of the Universal Declaration of Human Rights</li><li>knowledge and understanding of the relevant beliefs, teachings, practices and perspective of the two religions and non religious perspectives has been comprehensively and effectively applied</li></ul> |  |
-| 4 | 10-12 marks <ul><li>good application of knowledge and understanding of the Universal Declaration of Human Rights associated with the human rights issues selected and of how the work of the first charity or organisation aligns with the relevant articles of the Universal Declaration of Human Rights</li><li>knowledge and understanding of the relevant beliefs, teachings, practices and perspective of two religions and non-religious perspectives has been comprehensively applied</li></ul> |  |
-| 3 | 7-9 marks <ul><li>satisfactory application knowledge and understanding of the Universal Declaration of Human Rights associated with the human rights issues selected and of how the work of the first charity or organisation aligns with the relevant articles of the Universal Declaration of Human Rights</li><li>Knowledge and understanding of the relevant beliefs, teachings, practices and perspective of two religions and non-religious perspectives has been adequately applied</li></ul> |  |
+[15 marks]
 
-{19}------------------------------------------------
-
-| 2 | 4-6 marks <ul><li>basic application of knowledge and understanding of the Universal Declaration of Human Rights associated with the human rights issues selected and how the work of the first charity or organisation aligns with the relevant articles of the Universal Declaration of Human Rights</li><li>knowledge and understanding of the relevant beliefs, teachings, practices and perspective of two religions and non-religious perspectives have been superficially applied</li></ul> |  |
-|---|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--|
-| 1 | 1-3 marks <ul><li>limited application of knowledge of the Universal Declaration of Human Rights associated with the human rights issues selected and how the work of the first charity or organisation aligns with the relevant articles of the Universal Declaration of Human Rights</li><li>knowledge and understanding of the relevant beliefs, teachings, practices and perspective of two religions and non-religious perspectives have been loosely applied</li></ul> |  |
-|  | 0 marks No response attempted or nothing worthy of credit. |  |
+| Band | AO2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+|------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 5    | 13-15 marks<br>• excellent application of knowledge and understanding of the Universal Declaration of Human Rights associated with the human rights issues selected and how the work of the first charity or organisation aligns with the relevant articles of the Universal Declaration of Human Rights<br>• knowledge and understanding of the relevant beliefs, teachings, practices and perspective of the two religions and non-religious perspectives has been comprehensively and effectively applied |
+| 4    | 10-12 marks<br>• good application of knowledge and understanding of the Universal Declaration of Human Rights associated with the human rights issues selected and of how the work of the first charity or organisation aligns with the relevant articles of the Universal Declaration of Human Rights<br>• knowledge and understanding of the relevant beliefs, teachings, practices and perspective of two religions and non-religious perspectives has been comprehensively applied                       |
+| 3    | 7-9 marks<br>• satisfactory application knowledge and understanding of the Universal Declaration of Human Rights associated with the human rights issues selected and of how the work of the first charity or organisation aligns with the relevant articles of the Universal Declaration of Human Rights<br>• Knowledge and understanding of the relevant beliefs, teachings, practices and perspective of two religions and non-religious perspectives has been adequately applied                         |
 
 {20}------------------------------------------------
+
+| 2 | 4-6 marks<br>• basic application of knowledge and understanding of the Universal Declaration of Human Rights associated with the human rights issues selected and how the work of the first charity or organisation aligns with the relevant articles of the Universal Declaration of Human Rights<br>• knowledge and understanding of the relevant beliefs, teachings, practices and perspective of two religions and non-religious perspectives have been superficially applied |
+|---|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1 | 1-3 marks<br>• limited application of knowledge of the Universal Declaration of Human Rights associated with the human rights issues selected and how the work of the first charity or organisation aligns with the relevant articles of the Universal Declaration of Human Rights<br>• knowledge and understanding of the relevant beliefs, teachings, practices and perspective of two religions and non-religious perspectives have been loosely applied                       |
+|   | 0 marks<br>No response attempted or nothing worthy of credit.                                                                                                                                                                                                                                                                                                                                                                                                                     |
+
+{21}------------------------------------------------
 
 #### **Task 3**
 
@@ -425,20 +434,25 @@ Based on the second human rights issue selected, write a summary of:
 - c) relevant beliefs, teachings, practices and perspectives from the **two** religions you have studied
 - d) relevant non-religious perspectives [15 marks]
 
-| Band | AO2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |  |
-|------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--|
-| 5 | 13-15 marks <ul><li>excellent application of knowledge and understanding of the Universal Declaration of Human Rights associated with the human rights issues selected and how the work of the first charity or organisation aligns with the relevant articles of the Universal Declaration of Human Rights</li><li>knowledge and understanding of the relevant beliefs, teachings, practices and perspective of the two religions and non religious perspectives has been comprehensively and effectively applied</li></ul> |  |
-| 4 | 10-12 marks <ul><li>good application of knowledge and understanding of the Universal Declaration of Human Rights associated with the human rights issues selected and of how the work of the first charity or organisation aligns with the relevant articles of the Universal Declaration of Human Rights</li><li>knowledge and understanding of the relevant beliefs, teachings, practices and perspective of two religions and non-religious perspectives has been comprehensively applied</li></ul> |  |
-| 3 | 7-9 marks <ul><li>satisfactory application of knowledge and understanding of the Universal Declaration of Human Rights associated with the human rights issues selected and of how the work of the first charity or organisation aligns with the relevant articles of the Universal Declaration of Human Rights</li><li>Knowledge and understanding of the relevant beliefs, teachings, practices and perspective of two religions and non-religious perspectives has been adequately applied</li></ul> |  |
+[15 marks]
 
-{21}------------------------------------------------
-
-| 2 | 4-6 marks basic application of knowledge and understanding of the Universal Declaration of Human Rights associated with the human rights issues selected and how the work of the first charity or organisation aligns with the relevant articles of the Universal Declaration of Human Rights Knowledge and understanding of the relevant beliefs, teachings, practices and perspective of two religions and non-religious perspectives have been superficially applied |  |  |  |  |  |
-|---|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--|--|--|--|--|
-| 1 | 1-3 marks <ul><li>limited application of knowledge of the Universal Declaration of Human Rights associated with the human rights issues selected and how the work of the first charity or organisation aligns with the relevant articles of the Universal Declaration of Human Rights</li><li>knowledge and understanding of the relevant beliefs, teachings, practices and perspective of two religions and non-religious perspectives have been loosely applied</li></ul> |  |  |  |  |  |
-|  | 0 marks No response attempted or nothing worthy of credit. |  |  |  |  |  |
+| Band | AO2                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+|------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 5    | 13-15 marks<br>• excellent application of knowledge and understanding of the Universal Declaration of Human Rights associated with the human rights issues selected and how the work of the first charity or organisation aligns with the relevant articles of the Universal Declaration of Human Rights<br>• knowledge and understanding of the relevant beliefs, teachings, practices and perspective of the two religions and non-religious perspectives has been comprehensively and effectively applied |
+| 4    | 10-12 marks<br>• good application of knowledge and understanding of the Universal Declaration of Human Rights associated with the human rights issues selected and of how the work of the first charity or organisation aligns with the relevant articles of the Universal Declaration of Human Rights<br>• knowledge and understanding of the relevant beliefs, teachings, practices and perspective of two religions and non-religious perspectives has been comprehensively applied                       |
+| 3    | 7-9 marks<br>• satisfactory application of knowledge and understanding of the Universal Declaration of Human Rights associated with the human rights issues selected and of how the work of the first charity or organisation aligns with the relevant articles of the Universal Declaration of Human Rights<br>• Knowledge and understanding of the relevant beliefs, teachings, practices and perspective of two religions and non-religious perspectives has been adequately applied                      |
 
 {22}------------------------------------------------
+
+|   | 4-6 marks                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+|---|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 2 | basic application of knowledge and understanding of the Universal Declaration of Human Rights associated with the human rights issues selected and how the work of the first charity or organisation aligns with the relevant articles of the Universal Declaration of Human Rights<br>• Knowledge and understanding of the relevant beliefs, teachings, practices and perspective of two religions and non-religious perspectives have been superficially applied |
+|   | 1-3 marks                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| 1 | • limited application of knowledge of the Universal Declaration of Human Rights associated with the human rights issues selected and how the work of the first charity or organisation aligns with the relevant articles of the Universal Declaration of Human Rights<br>• knowledge and understanding of the relevant beliefs, teachings, practices and perspective of two religions and non-religious perspectives have been loosely applied                     |
+|   | 0 marks                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+|   | No response attempted or nothing worthy of credit.                                                                                                                                                                                                                                                                                                                                                                                                                 |
+
+{23}------------------------------------------------
 
 #### **Task 4**
 
@@ -450,58 +464,49 @@ In your answer, refer to the points below and come to a justified conclusion:
 - non-religious perspectives
 - the purpose, aims and work of the **two** charities or organisations you have selected. [15 marks]
 
-| Band                                                                                                                                                                                                                                                                                                                                                                                              | AO3                                                                                                                                                                                                                                                                                                                                                                                   |  |  |  |  |  |  |  |  |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--|--|--|--|--|--|--|--|
-| 13-15 marks <ul><li>an excellent analysis and evaluation of the importance to society today of the human rights issues selected 5</li><li>the response makes comprehensive and effective reference to religious and non-religious perspectives and the purpose and aims of the charities or organisations selected</li><li>a convincing conclusion is reached and comprehensively justified</li></ul> |  |  |  |  |  |  |  |  |  |
-| 4 | 10-12 marks <ul><li>a good analysis and evaluation of the importance to society today of the human rights issues selected</li><li>the response makes comprehensive reference to religious and non-religious perspectives and the purpose and aims of the charities or organisations selected</li><li>a clear and mostly convincing conclusion is reached and effectively justified</li></ul> |  |  |  |  |  |  |  |  |
-| 7-9 marks <ul><li>a satisfactory analysis and evaluation of the importance to society today of the human rights issues selected</li><li>the response makes satisfactory reference to religious and non-religious perspectives and the purpose and aims of the 3 charities or organisations selected</li><li>a clear conclusion is reached with some justification</li></ul> |  |  |  |  |  |  |  |  |  |
+[15 marks
 
-{23}------------------------------------------------
-
-| 2 | 4-6 marks <ul><li>a basic analysis and evaluation of the importance to society today of the human rights issues selected</li><li>the response makes basic reference to religious and non-religious perspectives and the purpose and aims of the charities or organisations selected</li><li>a basic conclusion is reached with limited justification</li></ul> |  |  |  |  |  |  |  |
-|---|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--|--|--|--|--|--|--|
-| 1 | 1-3 marks <ul><li>a limited analysis and evaluation of the importance to society today of the human rights issues selected</li><li>the response makes limited reference to religious and non-religious perspectives and the purpose and aims of the charities or organisations selected</li><li>an incomplete conclusion is reached with minimal justification</li></ul> |  |  |  |  |  |  |  |
-| 0 | 0 marks No response attempted or nothing worthy of credit. |  |  |  |  |  |  |  |
-|  | Total: /15 |  |  |  |  |  |  |  |
+| Band | AO3                                                                                                                                                                                                                                                                                                                                                                              |
+|------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 5    | 13-15 marks<br>• an excellent analysis and evaluation of the importance to society today of the human rights issues selected<br>• the response makes comprehensive and effective reference to religious and non-religious perspectives and the purpose and aims of the charities or organisations selected<br>• a convincing conclusion is reached and comprehensively justified |
+| 4    | 10-12 marks<br>• a good analysis and evaluation of the importance to society today of the human rights issues selected<br>• the response makes comprehensive reference to religious and non-religious perspectives and the purpose and aims of the charities or organisations selected<br>• a clear and mostly convincing conclusion is reached and effectively justified        |
+| 3    | 7-9 marks<br>• a satisfactory analysis and evaluation of the importance to society today of the human rights issues selected<br>• the response makes satisfactory reference to religious and non-religious perspectives and the purpose and aims of the charities or organisations selected<br>• a clear conclusion is reached with some justification                           |
 
 {24}------------------------------------------------
+
+| 2          | 4-6 marks<br>• a basic analysis and evaluation of the importance to society today of the human rights issues selected<br>• the response makes basic reference to religious and non-religious perspectives and the purpose and aims of the charities or organisations selected<br>• a basic conclusion is reached with limited justification           | Band | AO4                                                                                                                                                                          |  |
+|------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--|
+| 1          | 1-3 marks<br>• a limited analysis and evaluation of the importance to society today of the human rights issues selected<br>• the response makes limited reference to religious and non-religious perspectives and the purpose and aims of the charities or organisations selected<br>• an incomplete conclusion is reached with minimal justification | 5    | 9-10 marks<br>• an excellent response that comprehensively and effectively explains which of the two charities or organisations most aligns with personal values and beliefs |  |
+| 0          | 0 marks<br>No response attempted or nothing worthy of credit.                                                                                                                                                                                                                                                                                         | 4    | 7-8 marks<br>• a good response that clearly explains which of the two charities or organisations most aligns with personal values and beliefs                                |  |
+|            | Total: /15                                                                                                                                                                                                                                                                                                                                            | 3    | 5-6 marks<br>• a satisfactory response that moderately explains which of the two charities or organisations most aligns with personal values and beliefs                     |  |
+| 2          | 3-4 marks<br>• a basic response that superficially explains which of the two charities or organisations most aligns with personal values and beliefs                                                                                                                                                                                                  |      |                                                                                                                                                                              |  |
+| 1          | 1-2 marks<br>• a limited response with little explanation of which of the two charities or organisations most aligns with personal values and beliefs                                                                                                                                                                                                 |      |                                                                                                                                                                              |  |
+| 0          | 0 marks<br>No response attempted or nothing worthy of credit.                                                                                                                                                                                                                                                                                         |      |                                                                                                                                                                              |  |
+| Total: /10 |                                                                                                                                                                                                                                                                                                                                                       |      |                                                                                                                                                                              |  |
+
+{25}------------------------------------------------
 
 **Task 5**
 
 Explain which of the charities or organisations selected most aligns with your own values and beliefs. (You could reflect on your findings from previous tasks) [10 marks]
 
-| Band | AO4                                                                                                                                                                                   |  |  |  |  |  |  |  |
-|------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--|--|--|--|--|--|--|
-| 5 | 9-10 marks <ul><li>an excellent response that comprehensively and effectively explains which of the two charities or organisations most aligns with personal values and beliefs</li></ul> |  |  |  |  |  |  |  |
-|      | 7-8 marks                                                                                                                                                                             |  |  |  |  |  |  |  |
-| 4 | <ul><li>a good response that clearly explains which of the two charities or organisations most aligns with personal values and beliefs</li></ul> |  |  |  |  |  |  |  |
-|      | 5-6 marks                                                                                                                                                                             |  |  |  |  |  |  |  |
-| 3 | <ul><li>a satisfactory response that moderately explains which of the two charities or organisations most aligns with personal values and beliefs</li></ul> |  |  |  |  |  |  |  |
-|      | 3-4 marks                                                                                                                                                                             |  |  |  |  |  |  |  |
-| 2 | <ul><li>a basic response that superficially explains which of the two charities or organisations most aligns with personal values and beliefs</li></ul> |  |  |  |  |  |  |  |
-|      | 1-2 marks                                                                                                                                                                             |  |  |  |  |  |  |  |
-| 1 | <ul><li>a limited response with little explanation of which of the two charities or organisations most aligns with personal values and beliefs</li></ul> |  |  |  |  |  |  |  |
-| 0    | 0 marks                                                                                                                                                                               |  |  |  |  |  |  |  |
-|      | No response attempted or nothing worthy of credit.                                                                                                                                    |  |  |  |  |  |  |  |
-|  | Total: /10 |  |  |  |  |  |  |  |
-
-{25}------------------------------------------------
+{26}------------------------------------------------
 
 #### Mapping of tasks to unit content and assessment objectives
 
 <span id="page-25-0"></span>
 
-| Tasks | Unit Content |       |       |       |                |              |              |              |  |  |  |
-|-------|--------------|-------|-------|-------|----------------|--------------|--------------|--------------|--|--|--|
-|  | 4.1.1 | 4.2.1 | 4.2.2 | 4.2.3 | Total Marks | AO2 Marks | AO3 Marks | AO4 Marks |  |  |  |
-| 1     |              | X     |       |       | 5              |              |              | 5            |  |  |  |
-| 2     | X            | X     |       |       | 15             | 15           |              |              |  |  |  |
-| 3     | X            | X     |       |       | 15             | 15           |              |              |  |  |  |
-| 4     |              |       | X     |       | 15             |              | 15           |              |  |  |  |
-| 5     |              |       |       | X     | 10             |              |              | 10           |  |  |  |
-| Total |              | 60    | 30    | 15    | 15             |              |              |              |  |  |  |
+| Tasks | Unit Content |       |       |       |                |              |              |              |
+|-------|--------------|-------|-------|-------|----------------|--------------|--------------|--------------|
+|       | 4.1.1        | 4.2.1 | 4.2.2 | 4.2.3 | Total<br>Marks | AO2<br>Marks | AO3<br>Marks | AO4<br>Marks |
+| 1     |              | X     |       |       | 5              |              |              | 5            |
+| 2     | X            | X     |       |       | 15             | 15           |              |              |
+| 3     | X            | X     |       |       | 15             | 15           |              |              |
+| 4     |              |       | X     |       | 15             |              | 15           |              |
+| 5     |              |       |       | X     | 10             |              |              | 10           |
+| Total |              |       |       |       | 60             | 30           | 15           | 15           |
 
-{26}------------------------------------------------
+{27}------------------------------------------------
 
 #### Candidate Declaration Form
 
@@ -509,57 +514,60 @@ Explain which of the charities or organisations selected most aligns with your o
 
 **Candidate Signature: Date:**
 
-| Centre No:                                                                                                                                                                                                                                                                                                                                                                                                                                                          |                               |  |  |  | Centre Name:       |                                                                                                        |  |  |  |
-|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|--|--|--|--------------------|--------------------------------------------------------------------------------------------------------|--|--|--|
-| Candidate No: |  |  |  |  | Candidate Name: |  |  |  |  |
-| Unit Title:                                                                                                                                                                                                                                                                                                                                                                                                                                                         |                               |  |  |  |                    |                                                                                                        |  |  |  |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                     | Part A: Candidate Declaration |  |  |  |                    |                                                                                                        |  |  |  |
-| References: Give details of the exact source of any non-original material used in the assignment. the assignment. |  |  |  |  |  | List of software packages/AI tools/chatbots1 : Give brief details of how these have been used in |  |  |  |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |                               |  |  |  |                    |                                                                                                        |  |  |  |
-|                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |                               |  |  |  |                    |                                                                                                        |  |  |  |
-| Authentication Declaration I declare that my work was completed independently and without any assistance beyond that which was permitted. All work is my own, except for any non-original material clearly credited above. This work has not been submitted for any other qualification. I have clearly referenced any sources and any Artificial Intelligence tools used in the work. I understand that false declaration is a form of malpractice. |  |  |  |  |  |  |  |  |  |
+| Centre No:       |  |  |  |  | Centre Name:       |  |  |
+|------------------|--|--|--|--|--------------------|--|--|
+| Candidate<br>No: |  |  |  |  | Candidate<br>Name: |  |  |
+| Unit Title:      |  |  |  |  |                    |  |  |
+
+Part A: Candidate Declaration
+
+| References: Give details of the exact source of<br>any non-original material used in the assignment. | List of software packages/AI tools/chatbots <sup>1</sup> :<br>Give brief details of how these have been used in<br>the assignment. |
+|------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+|                                                                                                      |                                                                                                                                    |
+
+Authentication DeclarationI declare that my work was completed independently and without any assistance beyond that which was  
+permitted. All work is my own, except for any non-original material clearly credited above. This work has  
+not been submitted for any other qualification. I have clearly referenced any sources and any Artificial  
+Intelligence tools used in the work. I understand that false declaration is a form of malpractice.
 
 <span id="page-26-0"></span>
 
-| 1 Where you have used AI tools as a source of information, you must show the name of the AI source used and the date the       |
-|--------------------------------------------------------------------------------------------------------------------------------|
-| content was generated. For example: ChatGPT 3.5 (https://openai.com/blog/chatgpt/), 25/01/2023. You must, retain a copy of the |
-| question(s) and computer-generated content for reference and authentication purposes, in a noneditable format (such as a       |
-| screenshot) and provide a brief explanation of how it has been used. This must be submitted with your work, so your            |
-| teacher/assessor is able to review the work, the AI-generated content and how it has been used.                                |
+| 1 Where you have used AI tools as a source of information, you must show the name of the AI source used and the date the content was generated. For example: ChatGPT 3.5 (https://openai.com/blog/chatgpt/), 25/01/2023. You must, retain a copy of the question(s) and computer-generated content for reference and authentication purposes, in a noneditable format (such as a screenshot) and provide a brief explanation of how it has been used. This must be submitted with your work, so your teacher/assessor is able to review the work, the AI-generated content and how it has been used. |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 
-{27}------------------------------------------------
+{28}------------------------------------------------
 
 #### Candidate Time Record Sheet
 
-| Centre No:                |                                                 |    |  |  |  | Centre Name:                                                                             |       |                 |         |
-|---------------------------|-------------------------------------------------|----|--|--|--|------------------------------------------------------------------------------------------|-------|-----------------|---------|
-| Candidate No: |  |  |  |  |  | Candidate Name: |  |  |  |
-| Unit Title:               |                                                 |    |  |  |  |                                                                                          |       |                 |         |
-|                           | The total time allowed must not exceed 6 hours. |    |  |  |  |                                                                                          |       |                 |         |
-| Dates                     |                                                 |    |  |  |  |                                                                                          |       | Time Allowed (6 | hours)  |
-| DD                        | MM                                              | YY |  |  |  |                                                                                          | Hours |                 | Minutes |
-|                           |                                                 |    |  |  |  |                                                                                          |       |                 |         |
-|                           |                                                 |    |  |  |  |                                                                                          |       |                 |         |
-|                           |                                                 |    |  |  |  |                                                                                          |       |                 |         |
-|                           |                                                 |    |  |  |  |                                                                                          |       |                 |         |
-|                           |                                                 |    |  |  |  |                                                                                          |       |                 |         |
-|                           |                                                 |    |  |  |  |                                                                                          |       |                 |         |
-|                           |                                                 |    |  |  |  |                                                                                          |       |                 |         |
-|                           |                                                 |    |  |  |  |                                                                                          |       |                 |         |
-|                           |                                                 |    |  |  |  |                                                                                          |       |                 |         |
-|                           |                                                 |    |  |  |  |                                                                                          |       |                 |         |
-|                           |                                                 |    |  |  |  |                                                                                          |       |                 |         |
-|                           |                                                 |    |  |  |  |                                                                                          |       |                 |         |
-|                           |                                                 |    |  |  |  |                                                                                          |       |                 |         |
-|                           |                                                 |    |  |  |  | I certify that all candidates entered were informed of the above dates.                  |       |                 |         |
-| Supervisors Signature: |  |  |  |  |  |  | Date: |  |  |
-|                           |                                                 |    |  |  |  | I confirm that the evidence submitted for assessment has been produced by me without any |       |                 |         |
+| Centre No:                                                                                                                     |    |    |  |  |  | Centre Name:    |       |                        |         |
+|--------------------------------------------------------------------------------------------------------------------------------|----|----|--|--|--|-----------------|-------|------------------------|---------|
+| Candidate No:                                                                                                                  |    |    |  |  |  | Candidate Name: |       |                        |         |
+| Unit Title:                                                                                                                    |    |    |  |  |  |                 |       |                        |         |
+| <p>The total time allowed must not exceed 6 hours.</p>                                                                         |    |    |  |  |  |                 |       |                        |         |
+| Dates                                                                                                                          |    |    |  |  |  |                 |       | Time Allowed (6 hours) |         |
+| DD                                                                                                                             | MM | YY |  |  |  |                 | Hours |                        | Minutes |
+|                                                                                                                                |    |    |  |  |  |                 |       |                        |         |
+|                                                                                                                                |    |    |  |  |  |                 |       |                        |         |
+|                                                                                                                                |    |    |  |  |  |                 |       |                        |         |
+|                                                                                                                                |    |    |  |  |  |                 |       |                        |         |
+|                                                                                                                                |    |    |  |  |  |                 |       |                        |         |
+|                                                                                                                                |    |    |  |  |  |                 |       |                        |         |
+|                                                                                                                                |    |    |  |  |  |                 |       |                        |         |
+|                                                                                                                                |    |    |  |  |  |                 |       |                        |         |
+|                                                                                                                                |    |    |  |  |  |                 |       |                        |         |
+|                                                                                                                                |    |    |  |  |  |                 |       |                        |         |
+|                                                                                                                                |    |    |  |  |  |                 |       |                        |         |
+|                                                                                                                                |    |    |  |  |  |                 |       |                        |         |
+|                                                                                                                                |    |    |  |  |  |                 |       |                        |         |
+| <p>I certify that all candidates entered were informed of the above dates.</p>                                                 |    |    |  |  |  |                 |       |                        |         |
+| Supervisors<br>Signature:                                                                                                      |    |    |  |  |  | Date:           |       |                        |         |
+| <p>I confirm that the evidence submitted for assessment has been produced by me without any assistance beyond that allowed</p> |    |    |  |  |  |                 |       |                        |         |
 
 Signature: Date:
 
 Candidate's
 
-{28}------------------------------------------------
+{29}------------------------------------------------
 
 #### **End of Candidate Assessment Pack**

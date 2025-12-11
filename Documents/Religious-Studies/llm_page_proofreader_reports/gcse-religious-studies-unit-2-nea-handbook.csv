@@ -1,0 +1,30 @@
+issue_id,page_number,issue,highlighted_context,error_category,confidence_score,reasoning
+0,3,Mapping of tasks to unit content and assessment objectives | 2,"| Information for teachers | 3 |
+|------------------------------------------------------------|----|
+| Information for candidates | 7 |
+| Mark scheme | 13 |
+| **Mapping of tasks to unit content and assessment objectives | 2** |",ErrorCategory.STYLISTIC_PREFERENCE,85,"The table of contents is not ordered numerically by page number, which is unprofessional and inconsistent with standard document structure."
+1,4,1 hours,"Candidates should spend approximately:
+
+- **1 hours** 30 minutes completing task 1
+- 1 hour completing task 2
+- 1 hour completing task 3",ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,98,The singular form 'hour' should be used when referring to '1'.
+2,5,is displayed,"Where direct supervision is specified, the centre must ensure that the JCQ No Mobile Phone poster and JCQ Warning to Candidates **is displayed**.",ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,The compound subject 'JCQ No Mobile Phone poster and JCQ Warning to Candidates' requires a plural verb 'are displayed'.
+3,6,is summarised,The acceptable formats for evidence of each of the tasks **is summarised** in the task tables. Any modified assessment must enable the candidate to generate the evidence required in this table.,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,"The subject 'formats' is plural, so the verb should be 'are summarised' to maintain subject-verb agreement."
+4,6,authentic; reliable,"- evidence presented for assessment is valid, **authentic; reliable** and credible
+- assessment decisions are accurately recorded
+- evidence is appropriately annotated",ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,90,A semicolon is incorrectly used in a list of adjectives; it should be a comma to separate 'authentic' and 'reliable'.
+5,6,refer the JCQ Instructions,You should **refer the JCQ Instructions** for conducting non-examination assessment for further information on managing assessment within our GCSE Qualifications.,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,"The verb 'refer' in this context requires the preposition 'to' (i.e., 'refer to the JCQ Instructions')."
+6,7,in the decision,The assignment should be completed in multiple sessions to allow enough time to complete research. The length of the sessions **in the decision** of the centre. The assignment will be marked out of a total of **60** marks.,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,"The sentence is grammatically incomplete; it requires a verb such as 'is' to form a complete thought (e.g., 'is the decision of the centre')."
+7,7,", (released on Portal)","This unit will be assessed through an externally set assignment on the NEA brief**, (released on Portal)** and will be internally marked by the centre and externally moderated by WJEC. Assessments must be submitted digitally (they may be handwritten and scanned or completed digitally).",ErrorCategory.STYLISTIC_PREFERENCE,85,A comma is not typically used immediately before a parenthetical phrase introduced by parentheses in formal British English writing.
+8,8,completing,This information should be given to candidates **completing**,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,"The sentence is a fragment and is grammatically incomplete, lacking an object for the verb 'completing'."
+9,8,candidates and,It is important that you work independently from other **candidates and** the work produced should be your own unaided work. You and your teacher will be required to sign a declaration that all work presented is your own work.,ErrorCategory.STYLISTIC_PREFERENCE,80,"Two independent clauses are joined by a coordinating conjunction ('and') without a preceding comma, which is a stylistic choice that can be improved in formal writing."
+10,8,nonreligious,"• summarise and examine the similarities and differences of the relevant beliefs, teachings, practices and perspectives of the two religions and **nonreligious** beliefs you have studied in relation to the statement provided",ErrorCategory.CONSISTENCY_ERROR,90,"The term 'non-religious' is hyphenated elsewhere in the document (e.g., page 9), and consistency should be maintained for compound adjectives."
+11,9,teachings practices,"• beliefs, **teachings practices** and perspectives of the two religions you have studied",ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,A comma is required to separate 'teachings' and 'practices' as distinct items in a list.
+12,9,to interpret,You are permitted to produce a maximum of **four** sides of A4 written or printed research notes **to interpret** during the non-examination assessment. These research notes **must** be submitted alongside the response to the tasks.,ErrorCategory.STYLISTIC_PREFERENCE,75,The phrasing 'to interpret' is awkward in this context; 'to refer to' or 'to use' would be more appropriate for research notes.
+13,13,specialists they,Markers are highly experienced subject **specialists they** may have read the source you are using or even marked the work you have copied from!,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,98,"Two independent clauses are fused together without proper punctuation or a conjunction, creating a run-on sentence."
+14,18,provide evidence,"- to provide a different source type, leading to greater understanding
+- **provide evidence** of lived experience.",ErrorCategory.CONSISTENCY_ERROR,90,"The bullet point is inconsistent with the preceding bullet points, which all begin with 'to provide' or 'to help'."
+15,18,Total: /10,"|      | Total: /10                                                                                                                                    |
+
+**Total: /10**",ErrorCategory.STYLISTIC_PREFERENCE,85,The 'Total: /10' is repeated unnecessarily after already being stated within the table.

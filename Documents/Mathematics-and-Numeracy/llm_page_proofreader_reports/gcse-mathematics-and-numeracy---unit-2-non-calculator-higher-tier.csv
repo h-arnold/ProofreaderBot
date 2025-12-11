@@ -1,0 +1,25 @@
+issue_id,page_number,issue,highlighted_context,error_category,confidence_score,reasoning
+0,7,the,"In this **the** question, you will be assessed on the quality of your organisation,<br>communication and accuracy in writing.",ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,98,The definite article 'the' is redundant and grammatically incorrect in the phrase 'In this the question'; it should be 'In this question'.
+1,8,90,It is rotated **90** anticlockwise about the origin.,ErrorCategory.STYLISTIC_PREFERENCE,85,"In a formal mathematics paper, it is more precise and professional to include the degree symbol (90°) or write '90 degrees' for clarity."
+2,11,daughter is,"Megan, his older daughter, is (*x* – 23) years old. Gwenda, his younger **daughter is** 5 years younger than Megan.",ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,An appositive phrase ('his younger daughter') providing non-essential information about the subject requires commas to set it off.
+3,15,equal?Complete,"When evaluated, which two of the calculations below are **equal?Complete** the statement with your decision and the evaluation of these calculations.",ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,"Two independent clauses (a question and an imperative sentence) are joined without proper punctuation or a conjunction, creating a run-on sentence. A full stop or semicolon is required after 'equal'."
+4,15,equal?Complete,(b) Which two of the following numbers are **equal?Complete** the statement with your decision and the simplified value of these two numbers.,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,"Two independent clauses (a question and an imperative sentence) are joined without proper punctuation or a conjunction, creating a run-on sentence. A full stop or semicolon is required after 'equal'."
+5,18,.,Calculate the size of $Y\widehat{P}Q$ ** .**,ErrorCategory.STYLISTIC_PREFERENCE,90,"An unnecessary space appears before the full stop, which is unprofessional in formal British English typography."
+6,18,.,Evaluate $0.\dot{4}\dot{2} \times \left(\frac{7}{4^{\frac{1}{2}} + 2^{6}}\right)^{-1}$ ** .** [4],ErrorCategory.STYLISTIC_PREFERENCE,90,"An unnecessary space appears before the full stop, which is unprofessional in formal British English typography."
+7,23,Simplify,"| 21. | Simplify | $4w2−98w2−12w$ |
+|-----|----------|----------------|
+|-----|----------|----------------|
+
+| **Simplify** | 8w <sup>2</sup> −12w |
+|---------------------------------|----------------------|
+| You must show all your working. |                      |",ErrorCategory.AMBIGUOUS_PHRASING,90,The repetition of 'Simplify' in a separate table without clear sub-numbering creates ambiguity regarding its relationship to the main question 21.
+8,24,21,"#### **END OF QUESTIONS**
+
+**21**",ErrorCategory.STYLISTIC_PREFERENCE,95,"The number '21' appears as extraneous text after 'END OF QUESTIONS', likely an OCR artifact or misplaced page number, and should be removed for professionalism."
+9,27,in correct the ratio,"If no marks, award SC1 for an answer with whole<br>numbers of knives, forks and spoons **in correct the ratio**, e.g. 80 ; 70 : 112",ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,98,The definite article 'the' is misplaced; it should precede 'correct' to form 'in the correct ratio'.
+10,27,'their lower branch 0.6,FT 0.8 × **'their lower branch 0.6**' provided 0 < 'their lower branch 0.6 < 1,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,A closing single quotation mark is missing after the second instance of '0.6' to match the opening quote.
+11,31,',quadrilateral is 180° **'**,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,"A stray single quote mark appears at the end of the sentence, which is an extraneous punctuation error."
+12,31,ext{ },"• $y **	ext{ }** -\frac{1}{2}x + 5$ and $y 	ext{ } x - 5$ , where the inequalities have an <b>incorrect</b> symbol $(<, >, \ge, \le, =)$",ErrorCategory.SPELLING_ERROR,95,"The token '	ext{ }' is an OCR artifact, likely from a LaTeX command, and is not a valid word or symbol in this plain text context."
+13,31,\dots,"B1 for one of the following: • $y **\dots** -\frac{1}{2}x + 5$ or $y \dots x - 5$ , where the inequality has an <b>incorrect</b> symbol, i.e. $(<, >, \ge, \le, =)$",ErrorCategory.SPELLING_ERROR,95,"The token '\dots' is an OCR artifact, likely from a LaTeX command for ellipsis, and is not a valid word or symbol in this plain text context."
+14,34,dependant,- 'm' marks are **dependant** method marks. They are only given if the relevant previous 'M' mark has been earned.,ErrorCategory.SPELLING_ERROR,98,"The adjective form 'dependent' should be used here, not the noun 'dependant'."
+15,34,awards,- 'SC' marks are **awards** for special cases,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,"The past participle 'awarded' is required here to form a passive construction, not the noun 'awards'."

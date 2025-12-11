@@ -12,3 +12,13 @@ issue_id,page_number,issue,highlighted_context,error_category,confidence_score,r
 
 Unit 2: Computer Programming Teaching from 2025 For award from 2027",ErrorCategory.SPELLING_ERROR,98,The word 'pre-release d' appears to be an OCR error or typo and should be 'Pre-released' to form a correct compound adjective.
 10,4,( PBPS ),Pentre Bach Pre-School **( PBPS )**,ErrorCategory.CONSISTENCY_ERROR,90,Inconsistent spacing around the acronym 'PBPS' compared to its first mention 'Pentre Bach Pre-School (PBPS)' on the same page.
+11,6,National insurance,"The following calculations should be used for the prototype software:
+
+| Tax | 19% of gross pay |
+|----------------------|-------------------------------------------------|
+| **National insurance** | 8.5% of gross pay |",ErrorCategory.CONSISTENCY_ERROR,90,"The term 'National Insurance' is inconsistently capitalised; it appears as 'National Insurance' in the subsequent table, which is the preferred and more formal usage for a specific deduction category."
+12,6,Pension contribution,"The following calculations should be used for the prototype software:
+
+| National insurance | 8.5% of gross pay |
+|----------------------|-------------------------------------------------|
+| **Pension contribution** | 10% of gross pay |",ErrorCategory.CONSISTENCY_ERROR,90,"The term 'Pension contribution' is inconsistently capitalised; it appears as 'Pension Contribution' in the subsequent table, which is the preferred and more formal usage for a specific deduction category."

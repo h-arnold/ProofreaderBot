@@ -10,6 +10,9 @@ from typing import TYPE_CHECKING
 
 if TYPE_CHECKING:  # pragma: no cover - typing only
     # These imports are only for type checkers — they are not executed at runtime
+    # The report builders were moved to src.utils.report_utils — import for typing
+    from src.utils.report_utils import build_report_csv, build_report_markdown
+
     from .language_check import (
         build_language_tool,
         build_language_tools_for_subject,
@@ -22,7 +25,6 @@ if TYPE_CHECKING:  # pragma: no cover - typing only
     )
     from .language_check_config import DEFAULT_DISABLED_RULES, DEFAULT_IGNORED_WORDS
     from .language_tool_manager import LanguageToolManager
-    from .report_utils import build_report_csv, build_report_markdown
 
 __all__ = [
     "build_language_tool",
@@ -54,8 +56,9 @@ _LAZY_EXPORTS = {
     "iter_markdown_documents": (".language_check", "iter_markdown_documents"),
     "run_language_checks": (".language_check", "run_language_checks"),
     "LanguageToolManager": (".language_tool_manager", "LanguageToolManager"),
-    "build_report_csv": (".report_utils", "build_report_csv"),
-    "build_report_markdown": (".report_utils", "build_report_markdown"),
+    # The report builder implementations were moved into the utils package
+    "build_report_csv": ("src.utils.report_utils", "build_report_csv"),
+    "build_report_markdown": ("src.utils.report_utils", "build_report_markdown"),
     "DEFAULT_DISABLED_RULES": (".language_check_config", "DEFAULT_DISABLED_RULES"),
     "DEFAULT_IGNORED_WORDS": (".language_check_config", "DEFAULT_IGNORED_WORDS"),
 }
@@ -72,7 +75,12 @@ def __getattr__(name: str):
         module_name, attr = _LAZY_EXPORTS[name]
         from importlib import import_module
 
-        mod = import_module(f"src.language_check{module_name}")
+        # Support both package-local names like ".language_check" and
+        # absolute module names (e.g. "src.utils.report_utils").
+        if module_name.startswith("src."):
+            mod = import_module(module_name)
+        else:
+            mod = import_module(f"src.language_check{module_name}")
         value = getattr(mod, attr)
         globals()[name] = value
         return value
