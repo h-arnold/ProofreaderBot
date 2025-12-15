@@ -1493,10 +1493,12 @@
           9,
           10,
           11,
+          12,
           13,
           14,
           15,
           16,
+          17,
           18,
           19,
           20,
@@ -1527,12 +1529,96 @@
       },
       "gcse-mathematics-and-numeracy---unit-3-calculator-allowed-higher-tier.md": {
         "completed_batches": [
+          0,
+          1,
           2,
           3,
           4,
           5,
+          6,
           7,
-          8
+          8,
+          9,
+          10
+        ],
+        "total_issues": 3
+      },
+      "gcse-mathematics-and-numeracy---unit-1-financial-mathematics-and-other-applications-of-numeracy-higher-tier.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ],
+        "total_issues": 7
+      },
+      "gcse-mathematics-and-numeracy---unit-2-non-calculator-foundation-tier.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "total_issues": 1
+      },
+      "gcse-mathematics-and-numeracy---unit-2-non-calculator-higher-tier.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13
+        ],
+        "total_issues": 1
+      },
+      "gcse-mathematics-and-numeracy---unit-3-calculator-allowed-foundation-tier.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "total_issues": 6
+      },
+      "gcse-mathematics-and-numeracy-double-award---faqs.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 2
+      },
+      "january-2025.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 8
+      },
+      "overview-of-consultation-findings.md": {
+        "completed_batches": [
+          0,
+          1
+        ],
+        "total_issues": 10
+      }
+    },
+    "Religious-Studies": {
+      "gcse-religious-studies---guidance-for-teaching-unit-3.md": {
+        "completed_batches": [
+          31
         ],
         "total_issues": 10
       }
