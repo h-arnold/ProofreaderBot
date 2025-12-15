@@ -1342,9 +1342,10 @@
       "gcse-history---unit-1-an-in-depth-study-on-welsh-history---modern.md": {
         "completed_batches": [
           0,
-          1
+          1,
+          2
         ],
-        "total_issues": 10
+        "total_issues": 2
       },
       "gcse-history---unit-3-a-study-of-a-period-in-world-history---early-modern.md": {
         "completed_batches": [
@@ -1356,6 +1357,7 @@
       "wjec-gcse-history-specification.md": {
         "completed_batches": [
           0,
+          1,
           2,
           3,
           4,
@@ -1379,9 +1381,10 @@
       "overview-of-consultation-findings.md": {
         "completed_batches": [
           0,
+          1,
           2
         ],
-        "total_issues": 4
+        "total_issues": 10
       },
       "gcse-history---guidance-for-teaching-unit-4---a-changing-society-modern---example-teaching-pack.md": {
         "completed_batches": [
@@ -1389,7 +1392,7 @@
           1,
           2
         ],
-        "total_issues": 3
+        "total_issues": 10
       },
       "gcse-history---unit-3-a-study-of-a-period-in-world-history---medieval.md": {
         "completed_batches": [
@@ -1403,7 +1406,7 @@
           1,
           2
         ],
-        "total_issues": 1
+        "total_issues": 10
       },
       "gcse-history---unit-4-a-changing-society.md": {
         "completed_batches": [
@@ -1411,13 +1414,19 @@
           1,
           2
         ],
-        "total_issues": 8
+        "total_issues": 10
       },
       "gcse-history---unit-1-an-in-depth-study-on-welsh-history---early-modern.md": {
         "completed_batches": [
           0
         ],
         "total_issues": 7
+      },
+      "gcse-history---guidance-for-teaching-unit-4.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 5
       }
     },
     "Integrated-Science-Single-Award": {
@@ -1425,9 +1434,10 @@
         "completed_batches": [
           0,
           1,
-          2
+          2,
+          3
         ],
-        "total_issues": 10
+        "total_issues": 9
       }
     },
     "Level-2-Additional-Mathematics": {
@@ -1442,10 +1452,12 @@
           0,
           1,
           2,
+          3,
           4,
           5,
           6,
           7,
+          8,
           9,
           10,
           11,
@@ -1470,8 +1482,11 @@
       "gcse-mathematics-and-numeracy---guidance-for-teaching.md": {
         "completed_batches": [
           0,
+          1,
           2,
           3,
+          4,
+          5,
           6,
           7,
           8,
@@ -1480,15 +1495,20 @@
           11,
           13,
           14,
+          15,
           16,
+          18,
           19,
           20,
           21,
           22,
+          23,
+          24,
           25,
           26,
           27,
           28,
+          29,
           30,
           31,
           32,
@@ -1496,7 +1516,7 @@
           34,
           35
         ],
-        "total_issues": 4
+        "total_issues": 10
       },
       "gcse-mathematics-and-numeracy---unit-1-financial-mathematics-and-other-applications-of-numeracy-foundation-tier.md": {
         "completed_batches": [
@@ -1504,6 +1524,17 @@
           1
         ],
         "total_issues": 4
+      },
+      "gcse-mathematics-and-numeracy---unit-3-calculator-allowed-higher-tier.md": {
+        "completed_batches": [
+          2,
+          3,
+          4,
+          5,
+          7,
+          8
+        ],
+        "total_issues": 10
       }
     }
   }

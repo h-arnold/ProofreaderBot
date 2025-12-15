@@ -39,7 +39,7 @@ jobs:
           DOCS_LIGHT: "1"
         run: |
           mkdir -p docs/notebooks
-          uv run python -m jupyter nbconvert --to notebook --execute notebooks/data_overview.ipynb --output docs/notebooks/data_overview.ipynb
+          uv run python -m jupyter nbconvert --to notebook --execute notebooks/data_overview.ipynb --output-dir docs/notebooks --output data_overview.ipynb
 
       - name: Configure Pages
         uses: actions/configure-pages@v5

@@ -13338,7 +13338,7 @@
       9
     ],
     "created_at": "2025-12-15T15:22:25Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/an01fy7960isyoz8tgsvnh588x6wxpinty27": {
@@ -13533,7 +13533,7 @@
       4
     ],
     "created_at": "2025-12-15T15:22:42Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/17qg5h41ydpske5ubh4bac90u39nvhdca751": {
@@ -13552,7 +13552,7 @@
       6
     ],
     "created_at": "2025-12-15T15:22:44Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/yujlr9jgnxrgyyd30shv2wzc0b60eo40am5h": {
@@ -13628,7 +13628,7 @@
       21
     ],
     "created_at": "2025-12-15T15:22:50Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/yl6yonlawuabj9qcxutp62y1mz8fgglat39f": {
@@ -13725,7 +13725,7 @@
       19
     ],
     "created_at": "2025-12-15T15:22:59Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/avq7mnmo336sh71py67fc1ufx1hgrqwtvkya": {
@@ -13782,7 +13782,7 @@
       19
     ],
     "created_at": "2025-12-15T15:23:04Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/rzl4ex2lxy1siersdw3iln2cipa4c5h1035n": {
@@ -13846,7 +13846,7 @@
       19
     ],
     "created_at": "2025-12-15T15:23:10Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/m3vztqu27kc2829df0nsfsrzo5hwrcwwu7ku": {
@@ -14038,7 +14038,7 @@
       79
     ],
     "created_at": "2025-12-15T15:23:26Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/bbs2q72e7rtfz1kuwiqnwfbazzpez4b3d3a0": {
@@ -14228,7 +14228,7 @@
       38
     ],
     "created_at": "2025-12-15T15:23:41Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/u7ghllhdtecb11qm0yo4e1msqpcbufk0cc35": {
@@ -14348,7 +14348,7 @@
       39
     ],
     "created_at": "2025-12-15T15:23:50Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/d3y2idylol0selkgwbg1mchoebatnrmo9u4l": {
@@ -14458,7 +14458,7 @@
       89
     ],
     "created_at": "2025-12-15T15:23:59Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/82jzms976qo63hka94cckwyj6ts4hrursvc1": {
@@ -14607,7 +14607,7 @@
       19
     ],
     "created_at": "2025-12-15T15:24:10Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/2xmjkkvue2ndd893w27sc2m3tntu15773dvl": {
@@ -14673,7 +14673,7 @@
       49
     ],
     "created_at": "2025-12-15T15:24:14Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/87j4ufl9gxsbo587efudeut2o7aa7hckhfu2": {
@@ -14695,7 +14695,7 @@
       59
     ],
     "created_at": "2025-12-15T15:24:16Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/zwycrukkuh78jhl3a3fdhes1naojdgoxkuby": {
@@ -14915,7 +14915,7 @@
       159
     ],
     "created_at": "2025-12-15T15:24:32Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/nd81c3301gvk1ujif3an8hxriv2e388hxc3c": {
@@ -14981,7 +14981,7 @@
       189
     ],
     "created_at": "2025-12-15T15:24:37Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/5tg4lfjz6xoo2bh9xnpe439buqd8d9k1fjs7": {
@@ -15091,7 +15091,7 @@
       239
     ],
     "created_at": "2025-12-15T15:24:45Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/6ns69brpetgtz8ik2u4usi8mfk5hkfjyb5wh": {
@@ -15113,7 +15113,7 @@
       249
     ],
     "created_at": "2025-12-15T15:24:46Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/ga6a9vx82iuhfn6c2zml7zsgi5kqrr0vzjqw": {
@@ -15223,7 +15223,7 @@
       299
     ],
     "created_at": "2025-12-15T15:24:54Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/q5ucgappb6eh0c549pfhjrzajbpu7tci8y5d": {
@@ -15431,7 +15431,7 @@
       19
     ],
     "created_at": "2025-12-15T15:37:13Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/g73mjxoink03s7ttko5d0oqvpj61b1dbr6id": {
@@ -15554,7 +15554,7 @@
       9
     ],
     "created_at": "2025-12-15T15:37:25Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/i1r73681dynoob4nxf8i8ofwwku3jd87kwz2": {
@@ -15697,7 +15697,7 @@
       19
     ],
     "created_at": "2025-12-15T15:37:35Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/0l7a6uq1n1852qnss4ayhkydirjsaelgcftq": {
@@ -15757,7 +15757,7 @@
       19
     ],
     "created_at": "2025-12-15T15:37:39Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/hgti27uk2qq2uklyq7ks1jbs57b7bm88u39b": {
@@ -16994,7 +16994,7 @@
       29
     ],
     "created_at": "2025-12-15T15:57:24Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/jfy8mjc49j3ljmxdo8p30ao6td2odeekaz51": {
@@ -17016,7 +17016,7 @@
       39
     ],
     "created_at": "2025-12-15T15:57:26Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/hn4jw8ggaugyqmrmaq09ibsz5i94djmz7iz4": {
@@ -17038,7 +17038,7 @@
       49
     ],
     "created_at": "2025-12-15T15:57:27Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/4ir2r3zthabw2013vo4mpmh85m1uzqv48kqh": {
@@ -17060,7 +17060,7 @@
       59
     ],
     "created_at": "2025-12-15T15:57:29Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/n90881ypbtmydglefhg882gni35xloly0abk": {
@@ -17104,7 +17104,7 @@
       79
     ],
     "created_at": "2025-12-15T15:57:33Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/lnj93bjk3w79321hrbb3gmf30996rlhfgo5u": {
@@ -17126,7 +17126,7 @@
       89
     ],
     "created_at": "2025-12-15T15:57:34Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/k1zoadfbk0wnz1o4mdg7k3cnvczlzul504nq": {
