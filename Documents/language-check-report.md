@@ -1,7 +1,7 @@
 # Language Check Report
 
 - Checked 239 document(s)
-- Total issues found: 8685
+- Total issues found: 8732
 
 ## Totals by Subject
 - Art-and-Design: 122 issue(s) across 8 document(s) (running total: 122)
@@ -24,10 +24,10 @@
 - Mathematics-and-Numeracy: 940 issue(s) across 14 document(s) (running total: 6204)
 - Music: 318 issue(s) across 11 document(s) (running total: 6522)
 - Physical-Education-and-Health: 40 issue(s) across 2 document(s) (running total: 6562)
-- Religious-Studies: 1598 issue(s) across 14 document(s) (running total: 8160)
-- Social-Studies: 103 issue(s) across 2 document(s) (running total: 8263)
-- Spanish: 276 issue(s) across 13 document(s) (running total: 8539)
-- The-Sciences-Double-Award: 146 issue(s) across 2 document(s) (running total: 8685)
+- Religious-Studies: 1633 issue(s) across 14 document(s) (running total: 8195)
+- Social-Studies: 103 issue(s) across 2 document(s) (running total: 8298)
+- Spanish: 288 issue(s) across 13 document(s) (running total: 8586)
+- The-Sciences-Double-Award: 146 issue(s) across 2 document(s) (running total: 8732)
 
 ---
 
@@ -9208,10 +9208,46 @@ Found 30 issue(s).
 
 ### Religious-Studies / gcse-religious-studies---unit-3-sample-assessment-materials.md
 
-Found 62 issue(s).
+Found 97 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 5 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Examin | Possible spelling mistake found. | Examine, Examen, Exam in | ...iefs about what makes us human. \| [6] \| **Examin**<br>only \| \|    \|                       ... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 6 | `PERSPECTIVES_ABOUT_ON` | grammar | perspectives about | The usual preposition for “perspectives” is “on”, not “about”. | perspectives on | ...beliefs and teachings and non-religious **perspectives about** abortion. \| [10] \|  \| \|----------------... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 10 | `PERSPECTIVES_ABOUT_ON` | grammar | perspectives about | The usual preposition for “perspectives” is “on”, not “about”. | perspectives on | ...beliefs and teachings and non-religious **perspectives about** abortion. \| [10] \| \|-------------------... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 12 | `MORFOLOGIK_RULE_EN_GB` | misspelling | religio | Possible spelling mistake found. | religion | ...-------------------------  \| freedom of **religio** \| • \|      \|  \| \|--------------------\|-... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 26 | `MORFOLOGIK_RULE_EN_GB` | misspelling | lyse | Possible spelling mistake found. | lose, Lyle, Lyme (+9 more) | ...----------------------------  \| Ana   \| **lyse** and evaluate Muslim beliefs and teachin... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 28 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Examin | Possible spelling mistake found. | Examine, Examen, Exam in | ...ewish teachings about abortion. \| [4] \| **Examin**<br>only \| \|----\|-----------------------... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 35 | `PERSPECTIVES_ABOUT_ON` | grammar | perspectives about | The usual preposition for “perspectives” is “on”, not “about”. | perspectives on | ...------------------  \| 7. \| Explain Sikh **perspectives about** the use of animals for medical research... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 40 | `ABLE_TO_PASSIVE` | style | be redeemed | Avoid the passive voice after ‘to be able to’. | — | ... • Humans fall into sin but are able to **be redeemed**<br>through belief in Jesus (Genesis 3, ... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 40 | `ABLE_TO_PASSIVE` | style | be saved | Avoid the passive voice after ‘to be able to’. | — | ...rn with Original Sin<br>but are able to **be saved** because Jesus died for<br>human sin. \| ... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 41 | `PERSPECTIVES_ABOUT_ON` | grammar | perspectives about | The usual preposition for “perspectives” is “on”, not “about”. | perspectives on | ...iefs and teachings<br>and non-religious **perspectives about** abortion. \|  ### Answers may refer to t... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 41 | `MORFOLOGIK_RULE_EN_GB` | misspelling | Jeremaih | Possible spelling mistake found. | Jeremiah | ...e and that abortion destroys this plan (**Jeremaih** 1:5) - Many Christians support adoption... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 41 | `MORFOLOGIK_RULE_EN_GB` | misspelling | longerterm | Possible spelling mistake found. | longer term | ...nctity of life. They would consider the **longerterm** consequences of having an abortion on t... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 42 | `PERSPECTIVES_ABOUT_ON` | grammar | perspectives about | The usual preposition for “perspectives” is “on”, not “about”. | perspectives on | ...beliefs and teachings and non-religious **perspectives about** abortion<br>• response comprehensively ... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 42 | `PERSPECTIVES_ABOUT_ON` | grammar | perspectives about | The usual preposition for “perspectives” is “on”, not “about”. | perspectives on | ...beliefs and teachings and non-religious **perspectives about** abortion<br>• response comprehensively ... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 42 | `PERSPECTIVES_ABOUT_ON` | grammar | perspectives about | The usual preposition for “perspectives” is “on”, not “about”. | perspectives on | ...beliefs and teachings and non-religious **perspectives about** abortion<br>• response adequately expla... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 42 | `PERSPECTIVES_ABOUT_ON` | grammar | perspectives about | The usual preposition for “perspectives” is “on”, not “about”. | perspectives on | ...beliefs and teachings and non-religious **perspectives about** abortion<br>• response superficially ex... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 42 | `PERSPECTIVES_ABOUT_ON` | grammar | perspectives about | The usual preposition for “perspectives” is “on”, not “about”. | perspectives on | ...beliefs and teachings and non-religious **perspectives about** abortion<br>• response loosely explains... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 43 | `COMMA_COMPOUND_SENTENCE` | uncategorized | and | Use a comma before ‘and’ if it connects two independent clauses (unless they are closely connected and short). | , and | ...believe that animals were created by God** and** he declared all creation 'very good' (G... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 43 | `EN_UNPAIRED_QUOTES` | typographical | ' | Unpaired symbol: ‘'’ seems to be missing | — | ...; you are worth more than many sparrows.**'** (Matthew 10:29-31).  {44}--------------... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 45 | `PERSPECTIVES_ABOUT_ON` | grammar | perspectives about | The usual preposition for “perspectives” is “on”, not “about”. | perspectives on | ...beliefs and teachings and non-religious **perspectives about** freedom of religious expression. \|  Ans... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 46 | `PERSPECTIVES_ABOUT_ON` | grammar | perspectives about | The usual preposition for “perspectives” is “on”, not “about”. | perspectives on | ...beliefs and teachings and non-religious **perspectives about** freedom of religious expression<br>• re... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 46 | `PERSPECTIVES_ABOUT_ON` | grammar | perspectives about | The usual preposition for “perspectives” is “on”, not “about”. | perspectives on | ...beliefs and teachings and non-religious **perspectives about** freedom of religious expression<br>• re... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 46 | `PERSPECTIVES_ABOUT_ON` | grammar | perspectives about | The usual preposition for “perspectives” is “on”, not “about”. | perspectives on | ...beliefs and teachings and non-religious **perspectives about** freedom of religious expression<br>• re... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 46 | `PERSPECTIVES_ABOUT_ON` | grammar | perspectives about | The usual preposition for “perspectives” is “on”, not “about”. | perspectives on | ...beliefs and teachings and non-religious **perspectives about** freedom of religious expression<br>• re... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 48 | `PERSPECTIVES_ABOUT_ON` | grammar | perspectives about | The usual preposition for “perspectives” is “on”, not “about”. | perspectives on | ...beliefs and teachings and non-religious **perspectives about** abortion. \|  ### Answers may refer to t... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 49 | `PERSPECTIVES_ABOUT_ON` | grammar | perspectives about | The usual preposition for “perspectives” is “on”, not “about”. | perspectives on | ...beliefs and teachings and non-religious **perspectives about** abortion<br>• response comprehensively ... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 49 | `PERSPECTIVES_ABOUT_ON` | grammar | perspectives about | The usual preposition for “perspectives” is “on”, not “about”. | perspectives on | ...beliefs and teachings and non-religious **perspectives about** abortion using detailed, relevant examp... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 49 | `PERSPECTIVES_ABOUT_ON` | grammar | perspectives about | The usual preposition for “perspectives” is “on”, not “about”. | perspectives on | ...beliefs and teachings and non-religious **perspectives about** abortion<br>• response comprehensively ... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 49 | `PERSPECTIVES_ABOUT_ON` | grammar | perspectives about | The usual preposition for “perspectives” is “on”, not “about”. | perspectives on | ...beliefs and teachings and non-religious **perspectives about** abortion using relevant examples       ... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 49 | `PERSPECTIVES_ABOUT_ON` | grammar | perspectives about | The usual preposition for “perspectives” is “on”, not “about”. | perspectives on | ...beliefs and teachings and non-religious **perspectives about** abortion<br>• response adequately expla... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 49 | `PERSPECTIVES_ABOUT_ON` | grammar | perspectives about | The usual preposition for “perspectives” is “on”, not “about”. | perspectives on | ...beliefs and teachings and non-religious **perspectives about** abortion using relevant examples       ... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 49 | `PERSPECTIVES_ABOUT_ON` | grammar | perspectives about | The usual preposition for “perspectives” is “on”, not “about”. | perspectives on | ...beliefs and teachings and non-religious **perspectives about** abortion<br>• response superficially ex... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 49 | `PERSPECTIVES_ABOUT_ON` | grammar | perspectives about | The usual preposition for “perspectives” is “on”, not “about”. | perspectives on | ...beliefs and teachings and non-religious **perspectives about** abortion using examples                ... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 49 | `PERSPECTIVES_ABOUT_ON` | grammar | perspectives about | The usual preposition for “perspectives” is “on”, not “about”. | perspectives on | ...beliefs and teachings and non-religious **perspectives about** abortion<br>• response loosely explains... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 49 | `PERSPECTIVES_ABOUT_ON` | grammar | perspectives about | The usual preposition for “perspectives” is “on”, not “about”. | perspectives on | ...beliefs and teachings and non-religious **perspectives about** abortion                               ... |
+| gcse-religious-studies---unit-3-sample-assessment-materials.md | 50 | `ALL_MOST_SOME_OF_NOUN` | grammar | all of creation | Consider using “all creation” or “all of the creation”. | all creation, all of the creation | ... - In the Book of Genesis, God declares **all of creation** including animals 'very good'. Therefor... |
 | gcse-religious-studies---unit-3-sample-assessment-materials.md | 51 | `MORFOLOGIK_RULE_EN_GB` | misspelling | liferesponse | Possible spelling mistake found. | life response | ...s and teachings about animals' right to **liferesponse** comprehensively and effectively examine... |
 | gcse-religious-studies---unit-3-sample-assessment-materials.md | 51 | `MORFOLOGIK_RULE_EN_GB` | misspelling | argumentsan | Possible spelling mistake found. | arguments an | ...in a well-structured way using reasoned **argumentsan** excellent conclusion is comprehensively... |
 | gcse-religious-studies---unit-3-sample-assessment-materials.md | 51 | `MORFOLOGIK_RULE_EN_GB` | misspelling | liferesponse | Possible spelling mistake found. | life response | ...s and teachings about animals' right to **liferesponse** comprehensively examines views about an... |
@@ -9273,7 +9309,6 @@ Found 62 issue(s).
 | gcse-religious-studies---unit-3-sample-assessment-materials.md | 78 | `PERSPECTIVES_ABOUT_ON` | grammar | perspectives about | The usual preposition for “perspectives” is “on”, not “about”. | perspectives on | ...ses relevant examples to exemplify Sikh **perspectives about** the use of animals for medical research... |
 | gcse-religious-studies---unit-3-sample-assessment-materials.md | 78 | `PERSPECTIVES_ABOUT_ON` | grammar | perspectives about | The usual preposition for “perspectives” is “on”, not “about”. | perspectives on | ...nation that superficially explains Sikh **perspectives about** the use of animals for medical research... |
 | gcse-religious-studies---unit-3-sample-assessment-materials.md | 78 | `PERSPECTIVES_ABOUT_ON` | grammar | perspectives about | The usual preposition for “perspectives” is “on”, not “about”. | perspectives on | ...ch<br>• uses examples to exemplify Sikh **perspectives about** the use of animals for medical research... |
-| gcse-religious-studies---unit-3-sample-assessment-materials.md | — | `CHECK_PARTIAL_FAILURE` | warning | — | Language check for language 'en-GB' experienced a connection error: Error: Checking took longer than 120.0 seconds, which is this server's limit. Please make sure you have selected the proper language or consider submitting a shorter text. | — | ERROR FETCHING CONTEXT |
 
 ### Religious-Studies / gcse-religious-studies---unit-4-non-exam-assessment-pack.md
 
@@ -9985,11 +10020,23 @@ Found 10 issue(s).
 
 ### Spanish / gcse-spanish---unit-4-reading-and-writing.md
 
-Found 1 issue(s).
+Found 13 issue(s).
 
 | Filename | Page | Rule | Type | Issue | Message | Suggestions | Context |
 | --- | --- | --- | --- | --- | --- | --- | --- |
-| gcse-spanish---unit-4-reading-and-writing.md | — | `CHECK_FAILURE` | error | — | Language check failed for language 'en-GB' due to connection error: Error: Your text exceeds the limit of 1000000 characters (it's 3697294 characters). Please submit a shorter text. | — | ERROR FETCHING CONTEXT |
+| gcse-spanish---unit-4-reading-and-writing.md | 4 | `OUTSIDE_OF` | style | outside of | This phrase is redundant. Consider using “outside”. | outside | ... specified in this specification. Words **outside of** the specification grammar and vocabular... |
+| gcse-spanish---unit-4-reading-and-writing.md | 4 | `COMMA_COMPOUND_SENTENCE_2` | uncategorized | but | Use a comma before ‘but’ if it connects two independent clauses (unless they are closely connected and short). | , but | ... used that is beyond the defined content** but** that fulfils the task requirements.  Th... |
+| gcse-spanish---unit-4-reading-and-writing.md | 8 | `EN_A_VS_AN` | misspelling | a | Use “an” instead of ‘a’ if the following word starts with a vowel sound, e.g. ‘an article’, ‘an hour’. | an | ... significa montaña vieja y está situada **a** unos 2,5 kilómetros encima del mar.  Si... |
+| gcse-spanish---unit-4-reading-and-writing.md | 9 | `EN_MULTITOKEN_SPELLING_TWO` | misspelling | el caso | Possible spelling mistakes found. | El Paso | ...s 1 280 euros cada año? Sin embargo, en **el caso** de elegir una universidad privada, los ... |
+| gcse-spanish---unit-4-reading-and-writing.md | 9 | `TR` | misspelling | tr | Make sure that ‘tr’ is an abbreviation for a word such as ‘translator’, ‘treasurer’ or ‘trustee’ and not a typing error. Did you mean “try”? | try | ...  \|          \|       \| \| <table><tbody><**tr**><td>thousands</td><td>cities</td><td>fr... |
+| gcse-spanish---unit-4-reading-and-writing.md | 9 | `TR` | misspelling | tr | Make sure that ‘tr’ is an abbreviation for a word such as ‘translator’, ‘treasurer’ or ‘trustee’ and not a typing error. Did you mean “try”? | try | .../td><td>fees</td><td>hundreds</td></tr><**tr**><td>countries</td><td>popular</td><td>q... |
+| gcse-spanish---unit-4-reading-and-writing.md | 12 | `EN_MULTITOKEN_SPELLING_TWO` | misspelling | La semana | Possible spelling mistake found. | La Serena | ... Centroamérica y es un país muy bonito. **La semana** pasada visité Puerto Viejo de Talamanca... |
+| gcse-spanish---unit-4-reading-and-writing.md | 19 | `EN_A_VS_AN` | misspelling | a | Use “an” instead of ‘a’ if the following word starts with a vowel sound, e.g. ‘an article’, ‘an hour’. | an | ... significa montaña vieja y está situada **a** unos 2,5 kilómetros encima del mar.    ... |
+| gcse-spanish---unit-4-reading-and-writing.md | 21 | `TR` | misspelling | tr | Make sure that ‘tr’ is an abbreviation for a word such as ‘translator’, ‘treasurer’ or ‘trustee’ and not a typing error. Did you mean “try”? | try | ...                    \|         \| <table><**tr**><td>thousands</td><td>cities</td><td>fr... |
+| gcse-spanish---unit-4-reading-and-writing.md | 21 | `TR` | misspelling | tr | Make sure that ‘tr’ is an abbreviation for a word such as ‘translator’, ‘treasurer’ or ‘trustee’ and not a typing error. Did you mean “try”? | try | .../td><td>fees</td><td>hundreds</td></tr><**tr**><td>countries</td><td>popular</td><td>q... |
+| gcse-spanish---unit-4-reading-and-writing.md | 27 | `EN_A_VS_AN` | misspelling | a | Use “an” instead of ‘a’ if the following word starts with a vowel sound, e.g. ‘an article’, ‘an hour’. | an | ...activity happened unclear:<br>Ayer, voy **a** ir<br>Mañana, fui al mercado<br>•<br>Mo... |
+| gcse-spanish---unit-4-reading-and-writing.md | 27 | `EN_MULTITOKEN_SPELLING_TWO` | misspelling | El perro | Possible spelling mistake found. | El Cerro | ...rors in agreement:<br>Ella es bonito<br>**El perro** es linda                               ... |
+| gcse-spanish---unit-4-reading-and-writing.md | 29 | `COMMA_COMPOUND_SENTENCE_2` | uncategorized | but | Use a comma before ‘but’ if it connects two independent clauses (unless they are closely connected and short). | , but | ...marked. The bullet points are compulsory** but** equal coverage is not required.  Choose... |
 
 ### Spanish / overview-of-consultation-findings.md
 
