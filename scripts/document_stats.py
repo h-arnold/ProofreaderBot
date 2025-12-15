@@ -184,15 +184,31 @@ def main():
     parser.add_argument(
         "--per-file",
         action="store_true",
-        help="Print a breakdown of page counts for each markdown file",
+        help=(
+            "Print a breakdown of page counts for each markdown file. "
+            "If --csv-output is set and --file-csv-output isn't provided, "
+            "a per-file CSV will be written next to the summary file with '-files.csv' suffix."
+        ),
     )
     parser.add_argument(
         "--file-csv-output",
         type=Path,
-        help="Optional CSV path to write per-file breakdown into",
+        help=(
+            "Optional CSV path to write per-file breakdown into. "
+            "If omitted and --csv-output is set, a per-file CSV will be derived next to the summary file."
+        ),
     )
 
     args = parser.parse_args()
+
+    # If the user requested per-file output and gave a per-subject CSV file but
+    # did not explicitly provide a per-file CSV path, derive one next to the
+    # per-subject CSV with ``-files.csv`` suffix so --per-file + --csv-output
+    # also writes file-level CSVs by default.
+    if args.per_file and args.csv_output and not args.file_csv_output:
+        args.file_csv_output = args.csv_output.with_name(
+            f"{args.csv_output.stem}-files.csv"
+        )
 
     documents_root = args.documents_dir
 
