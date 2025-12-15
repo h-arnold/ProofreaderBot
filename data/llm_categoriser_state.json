@@ -1045,6 +1045,7 @@
       "wjec-gcse-geography-unit-2-external-nea-handbook.md": {
         "completed_batches": [
           0,
+          1,
           2,
           3
         ],
@@ -1127,9 +1128,10 @@
       },
       "overview-of-consultation-findings.md": {
         "completed_batches": [
+          0,
           1
         ],
-        "total_issues": 1
+        "total_issues": 10
       },
       "wjec-gcse-german-specification.md": {
         "completed_batches": [
@@ -1158,9 +1160,10 @@
           0,
           1,
           2,
-          3
+          3,
+          4
         ],
-        "total_issues": 10
+        "total_issues": 6
       }
     },
     "History": {
@@ -1198,10 +1201,11 @@
       },
       "gcse-history---guidance-for-teaching-unit-1-option-1.4.md": {
         "completed_batches": [
+          0,
           1,
           2
         ],
-        "total_issues": 3
+        "total_issues": 10
       },
       "gcse-history---guidance-for-teaching-unit-1-option-1.5.md": {
         "completed_batches": [
@@ -1214,21 +1218,23 @@
       },
       "gcse-history---guidance-for-teaching-unit-1-option-1.6.md": {
         "completed_batches": [
+          0,
           1,
           2
         ],
-        "total_issues": 8
+        "total_issues": 10
       },
       "gcse-history---guidance-for-teaching-unit-2-option-2.1.md": {
         "completed_batches": [
           0,
           1,
+          2,
           3,
           4,
           5,
           6
         ],
-        "total_issues": 2
+        "total_issues": 10
       },
       "gcse-history---guidance-for-teaching-unit-2-option-2.2.md": {
         "completed_batches": [
@@ -1254,9 +1260,10 @@
       },
       "gcse-history---guidance-for-teaching-unit-2-option-2.5.md": {
         "completed_batches": [
+          0,
           1
         ],
-        "total_issues": 1
+        "total_issues": 10
       },
       "gcse-history---guidance-for-teaching-unit-2-option-2.6.md": {
         "completed_batches": [
@@ -1325,6 +1332,111 @@
           2
         ],
         "total_issues": 1
+      },
+      "frequently-asked-questions.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 1
+      },
+      "gcse-history---unit-1-an-in-depth-study-on-welsh-history---modern.md": {
+        "completed_batches": [
+          0,
+          1
+        ],
+        "total_issues": 10
+      },
+      "gcse-history---unit-3-a-study-of-a-period-in-world-history---early-modern.md": {
+        "completed_batches": [
+          0,
+          1
+        ],
+        "total_issues": 1
+      },
+      "wjec-gcse-history-specification.md": {
+        "completed_batches": [
+          5,
+          8,
+          9
+        ],
+        "total_issues": 10
+      },
+      "gcse-history---unit-1-an-in-depth-study-on-welsh-history---medieval.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 6
+      },
+      "overview-of-consultation-findings.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 10
+      }
+    },
+    "Integrated-Science-Single-Award": {
+      "wjec-gcse-integrated-science-specification.md": {
+        "completed_batches": [
+          0,
+          2
+        ],
+        "total_issues": 10
+      }
+    },
+    "Level-2-Additional-Mathematics": {
+      "additional-mathematics---options-evening-flyer.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 1
+      },
+      "wjec-level-2-additional-mathematics-specification.md": {
+        "completed_batches": [
+          0,
+          4,
+          5,
+          7,
+          9,
+          10
+        ],
+        "total_issues": 10
+      },
+      "september-2025.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 7
+      }
+    },
+    "Mathematics-and-Numeracy": {
+      "april-2025.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 5
+      },
+      "gcse-mathematics-and-numeracy---guidance-for-teaching.md": {
+        "completed_batches": [
+          2,
+          3,
+          6,
+          7,
+          8,
+          9,
+          11,
+          19,
+          20,
+          21,
+          22,
+          26,
+          27,
+          28,
+          30,
+          31,
+          33,
+          34
+        ],
+        "total_issues": 10
       }
     }
   }
