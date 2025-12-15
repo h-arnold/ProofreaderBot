@@ -1,0 +1,576 @@
+{
+  "batches/izkrfq1di2stb7163s1xldd0fyab1s5y04ro": {
+    "provider_name": "gemini",
+    "job_name": "batches/izkrfq1di2stb7163s1xldd0fyab1s5y04ro",
+    "subject": "Business",
+    "filename": "gcse-business---delivery-guide.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "created_at": "2025-12-15T12:38:37Z",
+    "status": "failed",
+    "error_message": "Cancelled by user"
+  },
+  "batches/xke6hlzzmgqpyue9as2gavjt6p3t51gw7au2": {
+    "provider_name": "gemini",
+    "job_name": "batches/xke6hlzzmgqpyue9as2gavjt6p3t51gw7au2",
+    "subject": "Business",
+    "filename": "gcse-business---guidance-for-teaching-unit-1.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "created_at": "2025-12-15T12:38:39Z",
+    "status": "failed",
+    "error_message": "Cancelled by user"
+  },
+  "batches/lzav2zbg5fjhkd5srk7kxkfpvhpmxmrv042h": {
+    "provider_name": "gemini",
+    "job_name": "batches/lzav2zbg5fjhkd5srk7kxkfpvhpmxmrv042h",
+    "subject": "Business",
+    "filename": "gcse-business---guidance-for-teaching-unit-1.md",
+    "batch_index": 1,
+    "issue_ids": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "created_at": "2025-12-15T12:38:40Z",
+    "status": "failed",
+    "error_message": "Cancelled by user"
+  },
+  "batches/olbk8d02oakmz0xgsgg52ofpgvmsnseg50sk": {
+    "provider_name": "gemini",
+    "job_name": "batches/olbk8d02oakmz0xgsgg52ofpgvmsnseg50sk",
+    "subject": "Business",
+    "filename": "gcse-business---guidance-for-teaching-unit-1.md",
+    "batch_index": 2,
+    "issue_ids": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "created_at": "2025-12-15T12:38:42Z",
+    "status": "failed",
+    "error_message": "Cancelled by user"
+  },
+  "batches/ewuvgn2cusbux1wby069c0wr6jqxnn7262nr": {
+    "provider_name": "gemini",
+    "job_name": "batches/ewuvgn2cusbux1wby069c0wr6jqxnn7262nr",
+    "subject": "Business",
+    "filename": "gcse-business---guidance-for-teaching-unit-1.md",
+    "batch_index": 3,
+    "issue_ids": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "created_at": "2025-12-15T12:38:43Z",
+    "status": "failed",
+    "error_message": "Cancelled by user"
+  },
+  "batches/u3l7kiprzb3j4ufxnay7b6oxqct21sb5sj3x": {
+    "provider_name": "gemini",
+    "job_name": "batches/u3l7kiprzb3j4ufxnay7b6oxqct21sb5sj3x",
+    "subject": "Business",
+    "filename": "gcse-business---guidance-for-teaching-unit-1.md",
+    "batch_index": 4,
+    "issue_ids": [
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "created_at": "2025-12-15T12:38:45Z",
+    "status": "failed",
+    "error_message": "Cancelled by user"
+  },
+  "batches/lmj4ecz3rv7933ljcnzly6b70o804zc2t9vb": {
+    "provider_name": "gemini",
+    "job_name": "batches/lmj4ecz3rv7933ljcnzly6b70o804zc2t9vb",
+    "subject": "Business",
+    "filename": "gcse-business---guidance-for-teaching-unit-1.md",
+    "batch_index": 5,
+    "issue_ids": [
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59
+    ],
+    "created_at": "2025-12-15T12:38:46Z",
+    "status": "failed",
+    "error_message": "Cancelled by user"
+  },
+  "batches/qilxp9red1wqgb0tppnt4bb14jw7tftlr1sx": {
+    "provider_name": "gemini",
+    "job_name": "batches/qilxp9red1wqgb0tppnt4bb14jw7tftlr1sx",
+    "subject": "Business",
+    "filename": "gcse-business---guidance-for-teaching-unit-1.md",
+    "batch_index": 6,
+    "issue_ids": [
+      60,
+      61
+    ],
+    "created_at": "2025-12-15T12:38:47Z",
+    "status": "failed",
+    "error_message": "Cancelled by user"
+  },
+  "batches/am5uzelpd19d4sxe4keblzo038jq27h63t11": {
+    "provider_name": "gemini",
+    "job_name": "batches/am5uzelpd19d4sxe4keblzo038jq27h63t11",
+    "subject": "Business",
+    "filename": "gcse-business---guidance-for-teaching-unit-2.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "created_at": "2025-12-15T12:38:49Z",
+    "status": "failed",
+    "error_message": "Cancelled by user"
+  },
+  "batches/rog90gvlt3npbeyd9ldqbs1v2s94a1f7v8rt": {
+    "provider_name": "gemini",
+    "job_name": "batches/rog90gvlt3npbeyd9ldqbs1v2s94a1f7v8rt",
+    "subject": "Business",
+    "filename": "gcse-business---guidance-for-teaching-unit-2.md",
+    "batch_index": 1,
+    "issue_ids": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "created_at": "2025-12-15T12:38:51Z",
+    "status": "failed",
+    "error_message": "Cancelled by user"
+  },
+  "batches/6hx7ph8uki0ko68vbb0ibiif80u1fkjtkav8": {
+    "provider_name": "gemini",
+    "job_name": "batches/6hx7ph8uki0ko68vbb0ibiif80u1fkjtkav8",
+    "subject": "Business",
+    "filename": "gcse-business---guidance-for-teaching-unit-2.md",
+    "batch_index": 2,
+    "issue_ids": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "created_at": "2025-12-15T12:38:53Z",
+    "status": "failed",
+    "error_message": "Cancelled by user"
+  },
+  "batches/m5v55fsgd0dntfaovj73iwxau2xj9gi28zon": {
+    "provider_name": "gemini",
+    "job_name": "batches/m5v55fsgd0dntfaovj73iwxau2xj9gi28zon",
+    "subject": "Business",
+    "filename": "gcse-business---guidance-for-teaching-unit-2.md",
+    "batch_index": 3,
+    "issue_ids": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "created_at": "2025-12-15T12:38:55Z",
+    "status": "failed",
+    "error_message": "Cancelled by user"
+  },
+  "batches/0w3ykpqs2eedwckkpq8yc5qaid4qc1jxr8r4": {
+    "provider_name": "gemini",
+    "job_name": "batches/0w3ykpqs2eedwckkpq8yc5qaid4qc1jxr8r4",
+    "subject": "Business",
+    "filename": "gcse-business---guidance-for-teaching-unit-2.md",
+    "batch_index": 4,
+    "issue_ids": [
+      40,
+      41
+    ],
+    "created_at": "2025-12-15T12:38:57Z",
+    "status": "failed",
+    "error_message": "Cancelled by user"
+  },
+  "batches/vd17uplndyfma82wac32lbhzucm3mav8j0vz": {
+    "provider_name": "gemini",
+    "job_name": "batches/vd17uplndyfma82wac32lbhzucm3mav8j0vz",
+    "subject": "Business",
+    "filename": "gcse-business---guidance-for-teaching-unit-3.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "created_at": "2025-12-15T12:38:58Z",
+    "status": "failed",
+    "error_message": "Cancelled by user"
+  },
+  "batches/mhdd9ryhp80wydbc6hllseg2ssgtc1tx18bk": {
+    "provider_name": "gemini",
+    "job_name": "batches/mhdd9ryhp80wydbc6hllseg2ssgtc1tx18bk",
+    "subject": "Business",
+    "filename": "gcse-business---guidance-for-teaching-unit-3.md",
+    "batch_index": 1,
+    "issue_ids": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "created_at": "2025-12-15T12:39:00Z",
+    "status": "failed",
+    "error_message": "Cancelled by user"
+  },
+  "batches/3qh63qkkn97p2tqmv0j5a2otkkh4t2uvstwr": {
+    "provider_name": "gemini",
+    "job_name": "batches/3qh63qkkn97p2tqmv0j5a2otkkh4t2uvstwr",
+    "subject": "Business",
+    "filename": "gcse-business---guidance-for-teaching-unit-3.md",
+    "batch_index": 2,
+    "issue_ids": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "created_at": "2025-12-15T12:39:01Z",
+    "status": "failed",
+    "error_message": "Cancelled by user"
+  },
+  "batches/1c5f0n0kkc2i8r9b6rovds8nxdywcfzq8iny": {
+    "provider_name": "gemini",
+    "job_name": "batches/1c5f0n0kkc2i8r9b6rovds8nxdywcfzq8iny",
+    "subject": "Business",
+    "filename": "gcse-business---guidance-for-teaching-unit-3.md",
+    "batch_index": 3,
+    "issue_ids": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "created_at": "2025-12-15T12:39:03Z",
+    "status": "failed",
+    "error_message": "Cancelled by user"
+  },
+  "batches/u01wxtxcxwhhq4nh4m2hamp4ctq1ux3gn2cu": {
+    "provider_name": "gemini",
+    "job_name": "batches/u01wxtxcxwhhq4nh4m2hamp4ctq1ux3gn2cu",
+    "subject": "Business",
+    "filename": "gcse-business---guidance-for-teaching-unit-3.md",
+    "batch_index": 4,
+    "issue_ids": [
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "created_at": "2025-12-15T12:39:05Z",
+    "status": "failed",
+    "error_message": "Cancelled by user"
+  },
+  "batches/om6go8d4f88jepoki7w1uclivgl5ky0endez": {
+    "provider_name": "gemini",
+    "job_name": "batches/om6go8d4f88jepoki7w1uclivgl5ky0endez",
+    "subject": "Business",
+    "filename": "gcse-business---guidance-for-teaching-unit-3.md",
+    "batch_index": 5,
+    "issue_ids": [
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58
+    ],
+    "created_at": "2025-12-15T12:39:06Z",
+    "status": "failed",
+    "error_message": "Cancelled by user"
+  },
+  "batches/aoqa8uti7kogxhj1xx5xcky1vvtbzdru01lk": {
+    "provider_name": "gemini",
+    "job_name": "batches/aoqa8uti7kogxhj1xx5xcky1vvtbzdru01lk",
+    "subject": "Business",
+    "filename": "gcse-business---guidance-for-teaching-unit-4.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "created_at": "2025-12-15T12:39:07Z",
+    "status": "failed",
+    "error_message": "Cancelled by user"
+  },
+  "batches/i0lyem0butif0g6ai5zj9juah96wd7njzou9": {
+    "provider_name": "gemini",
+    "job_name": "batches/i0lyem0butif0g6ai5zj9juah96wd7njzou9",
+    "subject": "Business",
+    "filename": "gcse-business---guidance-for-teaching-unit-4.md",
+    "batch_index": 1,
+    "issue_ids": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "created_at": "2025-12-15T12:39:09Z",
+    "status": "failed",
+    "error_message": "Cancelled by user"
+  },
+  "batches/iu9trlpwy3yx3i41pso3xuec6gvx5s5vq6k3": {
+    "provider_name": "gemini",
+    "job_name": "batches/iu9trlpwy3yx3i41pso3xuec6gvx5s5vq6k3",
+    "subject": "Business",
+    "filename": "gcse-business---guidance-for-teaching-unit-4.md",
+    "batch_index": 2,
+    "issue_ids": [
+      20,
+      21,
+      22,
+      23,
+      24
+    ],
+    "created_at": "2025-12-15T12:39:10Z",
+    "status": "failed",
+    "error_message": "Cancelled by user"
+  },
+  "batches/yj1l34xk7u80kn3lqr4yrb2drvhw0gxrm6w0": {
+    "provider_name": "gemini",
+    "job_name": "batches/yj1l34xk7u80kn3lqr4yrb2drvhw0gxrm6w0",
+    "subject": "Business",
+    "filename": "gcse-business---option-evening-flyer.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2
+    ],
+    "created_at": "2025-12-15T12:39:12Z",
+    "status": "failed",
+    "error_message": "Cancelled by user"
+  },
+  "batches/6fh22yglwqwdbr7aj6912m7w2qniz8dnrgvi": {
+    "provider_name": "gemini",
+    "job_name": "batches/6fh22yglwqwdbr7aj6912m7w2qniz8dnrgvi",
+    "subject": "Business",
+    "filename": "gcse-business---unit-1-introduction-to-the-business-world.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "created_at": "2025-12-15T12:39:13Z",
+    "status": "failed",
+    "error_message": "Cancelled by user"
+  },
+  "batches/4g8y14o75t3vf51mcnsejz8c1oo08525dcam": {
+    "provider_name": "gemini",
+    "job_name": "batches/4g8y14o75t3vf51mcnsejz8c1oo08525dcam",
+    "subject": "Business",
+    "filename": "gcse-business---unit-1-introduction-to-the-business-world.md",
+    "batch_index": 1,
+    "issue_ids": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "created_at": "2025-12-15T12:39:15Z",
+    "status": "failed",
+    "error_message": "Cancelled by user"
+  },
+  "batches/hfrifxtcleeezbx59iakkzbr8rgrysdkd952": {
+    "provider_name": "gemini",
+    "job_name": "batches/hfrifxtcleeezbx59iakkzbr8rgrysdkd952",
+    "subject": "Business",
+    "filename": "gcse-business---unit-1-introduction-to-the-business-world.md",
+    "batch_index": 2,
+    "issue_ids": [
+      20,
+      21
+    ],
+    "created_at": "2025-12-15T12:39:16Z",
+    "status": "failed",
+    "error_message": "Cancelled by user"
+  },
+  "batches/ssgodv8coujm0vwe11omqs1k1aors7pefn9n": {
+    "provider_name": "gemini",
+    "job_name": "batches/ssgodv8coujm0vwe11omqs1k1aors7pefn9n",
+    "subject": "Business",
+    "filename": "gcse-business---unit-2-key-business-considerations-sample.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "created_at": "2025-12-15T12:39:18Z",
+    "status": "failed",
+    "error_message": "Cancelled by user"
+  },
+  "batches/6nc26h36txm0ve8o5jesfk8kfzt9m45kwwjx": {
+    "provider_name": "gemini",
+    "job_name": "batches/6nc26h36txm0ve8o5jesfk8kfzt9m45kwwjx",
+    "subject": "Business",
+    "filename": "gcse-business---unit-2-key-business-considerations-sample.md",
+    "batch_index": 1,
+    "issue_ids": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "created_at": "2025-12-15T12:39:19Z",
+    "status": "failed",
+    "error_message": "Cancelled by user"
+  }
+}

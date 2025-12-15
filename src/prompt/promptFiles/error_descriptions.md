@@ -10,7 +10,7 @@
     - **Restriction:** Do NOT use this for simple preference variations (e.g., changing "how we assess" to "assessment methodology"). Only flag if the current phrasing actively hinders comprehension or tone.
 - - `FALSE_POSITIVE`: 
     1. The text is actually correct (tool misfire).
-    2. The issue is a valid stylistic choice common in UK English (e.g., Oxford comma omission).
+    2. The issue is a valid stylistic choice common in UK English.
     3. The issue is a structural artifact (Header Echo, Table Row) that does not require linguistic correction.
     4. Technical terminology, proper nouns, or code.
 
