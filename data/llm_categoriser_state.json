@@ -57,15 +57,194 @@
     "Business": {
       "gcse-business---guidance-for-teaching-unit-1.md": {
         "completed_batches": [
-          4
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
         ],
         "total_issues": 10
       },
       "gcse-business---guidance-for-teaching-unit-2.md": {
         "completed_batches": [
-          3
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "total_issues": 2
+      },
+      "gcse-business---delivery-guide.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 5
+      },
+      "gcse-business---guidance-for-teaching-unit-3.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "total_issues": 9
+      },
+      "gcse-business---guidance-for-teaching-unit-4.md": {
+        "completed_batches": [
+          0,
+          1,
+          2
+        ],
+        "total_issues": 5
+      },
+      "gcse-business---option-evening-flyer.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 3
+      },
+      "gcse-business---unit-1-introduction-to-the-business-world.md": {
+        "completed_batches": [
+          0,
+          1,
+          2
+        ],
+        "total_issues": 2
+      },
+      "gcse-business---unit-2-key-business-considerations-sample.md": {
+        "completed_batches": [
+          0,
+          1,
+          2
+        ],
+        "total_issues": 3
+      },
+      "gcse-business---unit-3-business-strategies-for-success.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "total_issues": 8
+      },
+      "gcse-business-3160-unit-2-nea-handbook.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 3
+      },
+      "overview-of-consultation-findings.md": {
+        "completed_batches": [
+          0,
+          1,
+          2
+        ],
+        "total_issues": 4
+      },
+      "wjec-gcse-business-specification.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21
+        ],
+        "total_issues": 2
+      }
+    },
+    "Computer-Science": {
+      "gcse-computer-science---delivery-guide.md": {
+        "completed_batches": [
+          0,
+          1
+        ],
+        "total_issues": 1
+      },
+      "gcse-computer-science---faqs.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 1
+      },
+      "gcse-computer-science---guidance-for-teaching-unit-1.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
         ],
         "total_issues": 10
+      },
+      "wjec-gcse-computer-science-specification.md": {
+        "completed_batches": [
+          13
+        ],
+        "total_issues": 7
+      }
+    },
+    "Design-and-Technology": {
+      "wjec-gcse-design-and-technology-specification.md": {
+        "completed_batches": [
+          8
+        ],
+        "total_issues": 10
+      }
+    },
+    "Digital-Technology": {
+      "wjec-gcse-digital-technology-specification.md": {
+        "completed_batches": [
+          12,
+          13
+        ],
+        "total_issues": 10
+      }
+    },
+    "Drama": {
+      "gcse-drama---delivery-guide.md": {
+        "completed_batches": [
+          0,
+          1
+        ],
+        "total_issues": 10
+      }
+    },
+    "English-Language-and-Literature": {
+      "april-2025.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 4
       }
     }
   }
