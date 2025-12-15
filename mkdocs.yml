@@ -15,7 +15,7 @@ nav:
   - Methodology: methodology.md
   - Data: data.md
   - Notebooks:
-  - Overview: notebooks/index.md
+      - Overview: notebooks/index.md
       - Data overview: notebooks/data_overview.ipynb
 
 plugins:
