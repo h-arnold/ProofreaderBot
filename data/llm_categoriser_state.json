@@ -795,7 +795,7 @@
           4,
           5
         ],
-        "total_issues": 10
+        "total_issues": 5
       },
       "resources-for-new-gcse.md": {
         "completed_batches": [
@@ -854,9 +854,10 @@
       },
       "gcse-french---unit-4-reading-and-writing.md": {
         "completed_batches": [
+          0,
           1
         ],
-        "total_issues": 9
+        "total_issues": 10
       },
       "wjec-gcse-french-specification.md": {
         "completed_batches": [
@@ -902,17 +903,25 @@
       },
       "overview-of-consultation-findings.md": {
         "completed_batches": [
+          0,
+          1
+        ],
+        "total_issues": 1
+      },
+      "gcse-french---guidance-for-teaching-unit-2.md": {
+        "completed_batches": [
           0
         ],
-        "total_issues": 10
+        "total_issues": 8
       }
     },
     "Geography": {
       "cylchlythyr-ionawr-2025.md": {
         "completed_batches": [
-          0
+          0,
+          1
         ],
-        "total_issues": 10
+        "total_issues": 2
       },
       "fsc-teacher-open-days-new-gcse-wales-geography-curriculum.md": {
         "completed_batches": [
@@ -922,28 +931,45 @@
       },
       "gcse-geography---delivery-guide.md": {
         "completed_batches": [
+          0,
           1
         ],
-        "total_issues": 3
+        "total_issues": 10
       },
       "gcse-geography---guidance-for-teaching-unit-1.md": {
         "completed_batches": [
-          6
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
         ],
-        "total_issues": 10
+        "total_issues": 5
       },
       "gcse-geography---guidance-for-teaching-unit-2.md": {
         "completed_batches": [
-          2
+          0,
+          1,
+          2,
+          3,
+          4
         ],
-        "total_issues": 10
+        "total_issues": 8
       },
       "gcse-geography---guidance-for-teaching-unit-3.md": {
         "completed_batches": [
+          0,
           1,
+          2,
+          3,
+          4,
+          5,
           6
         ],
-        "total_issues": 5
+        "total_issues": 10
       },
       "gcse-geography---option-evening-flyer.md": {
         "completed_batches": [
@@ -953,10 +979,64 @@
       },
       "gcse-geography---unit-1-our-physical-and-human-world.md": {
         "completed_batches": [
+          0,
+          1,
+          2,
           3,
           4
         ],
-        "total_issues": 8
+        "total_issues": 10
+      },
+      "fieldwork-opportunities-at-gwersyll-yr-urdd-pentre-ifan.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 2
+      },
+      "gcse-geography---faqs.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 4
+      },
+      "gcse-geography---guidance-for-teaching-unit-4.md": {
+        "completed_batches": [
+          0,
+          1
+        ],
+        "total_issues": 10
+      },
+      "gcse-geography---guided-learning-hours-table.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 1
+      },
+      "gcse-geography---unit-3-our-dynamic-and-diverse-world.md": {
+        "completed_batches": [
+          1,
+          2
+        ],
+        "total_issues": 9
+      },
+      "overview-of-consultation-findings.md": {
+        "completed_batches": [
+          0,
+          2
+        ],
+        "total_issues": 4
+      },
+      "wjec-gcse-geography-specification.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 10
+      },
+      "wjec-gcse-geography-unit-2-external-nea-handbook.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 10
       }
     }
   }

@@ -1,4 +1,4 @@
-# WJEC Copyediting Results Analysis
+# Methodology
 
 ## Overview
 

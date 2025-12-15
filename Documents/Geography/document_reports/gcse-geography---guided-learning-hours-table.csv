@@ -1,2 +1,2 @@
 issue_id,page_number,issue,highlighted_context,pass_code,error_category,confidence_score,reasoning
-0,0,2 year,...rs Table**  Based on 120 hours across a **2 year** course.  | Unit | Qualification weighti...,PassCode.LTC,ErrorCategory.PARSING_ERROR,100,The compound adjective '2-year' requires a hyphen when preceding a noun in UK English.
+0,1,2 year,...rs Table**  Based on 120 hours across a **2 year** course.  | Unit | Qualification weighti...,PassCode.LTC,ErrorCategory.FALSE_POSITIVE,100,"The issue is a hyphenation suggestion for a compound adjective, and explicit instructions state not to report hyphenation issues."
