@@ -795,7 +795,7 @@
           4,
           5
         ],
-        "total_issues": 5
+        "total_issues": 10
       },
       "resources-for-new-gcse.md": {
         "completed_batches": [
@@ -913,6 +913,50 @@
           0
         ],
         "total_issues": 10
+      },
+      "fsc-teacher-open-days-new-gcse-wales-geography-curriculum.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 2
+      },
+      "gcse-geography---delivery-guide.md": {
+        "completed_batches": [
+          1
+        ],
+        "total_issues": 3
+      },
+      "gcse-geography---guidance-for-teaching-unit-1.md": {
+        "completed_batches": [
+          6
+        ],
+        "total_issues": 10
+      },
+      "gcse-geography---guidance-for-teaching-unit-2.md": {
+        "completed_batches": [
+          2
+        ],
+        "total_issues": 10
+      },
+      "gcse-geography---guidance-for-teaching-unit-3.md": {
+        "completed_batches": [
+          1,
+          6
+        ],
+        "total_issues": 5
+      },
+      "gcse-geography---option-evening-flyer.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 2
+      },
+      "gcse-geography---unit-1-our-physical-and-human-world.md": {
+        "completed_batches": [
+          3,
+          4
+        ],
+        "total_issues": 8
       }
     }
   }

@@ -1,2 +1,2 @@
 issue_id,page_number,issue,highlighted_context,pass_code,error_category,confidence_score,reasoning
-0,3,2 year,"...learning hours, primarily designed as a **2 year** program for learners in Years 10 and 11...",PassCode.LTC,ErrorCategory.ABSOLUTE_GRAMMATICAL_ERROR,95,Compound adjectives preceding the noun they modify should be hyphenated in formal British English.
+0,3,2 year,"...learning hours, primarily designed as a **2 year** program for learners in Years 10 and 11...",PassCode.LTC,ErrorCategory.FALSE_POSITIVE,100,"Per instructions, hyphenation issues, even for compound adjectives, are not to be reported as they are often parsing artifacts or stylistic choices not requiring correction."
