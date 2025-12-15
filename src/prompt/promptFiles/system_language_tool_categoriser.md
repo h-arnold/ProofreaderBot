@@ -48,8 +48,6 @@ For **each issue** in the table:
 4. **Score:** Provide a confidence score between 0–100 (integers only).
 5. **Justify:** Supply a single concise sentence explaining the decision.
 
-
-
 {{> error_descriptions}}
 
 ## Guidance on Common Tool Misfires
