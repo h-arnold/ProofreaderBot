@@ -202,39 +202,212 @@
           7,
           8,
           9,
-          10
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22
         ],
-        "total_issues": 10
+        "total_issues": 1
       },
       "wjec-gcse-computer-science-specification.md": {
         "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
           13
         ],
+        "total_issues": 10
+      },
+      "gcse-computer-science---guidance-for-teaching-unit-2.md": {
+        "completed_batches": [
+          0,
+          1
+        ],
         "total_issues": 7
+      },
+      "gcse-computer-science---option-evening-flyer.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 1
+      },
+      "gcse-computer-science---unit-1-understanding-computer-science.md": {
+        "completed_batches": [
+          0,
+          1
+        ],
+        "total_issues": 8
+      },
+      "gcse-computer-science---unit-2-computer-programming-pre-released-materials.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 1
+      },
+      "gcse-computer-science---unit-2-computer-programming.md": {
+        "completed_batches": [
+          0,
+          1,
+          2
+        ],
+        "total_issues": 6
+      },
+      "overview-of-consultation-findings.md": {
+        "completed_batches": [
+          0,
+          1,
+          2
+        ],
+        "total_issues": 4
       }
     },
     "Design-and-Technology": {
       "wjec-gcse-design-and-technology-specification.md": {
         "completed_batches": [
-          8
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
         ],
-        "total_issues": 10
+        "total_issues": 1
       }
     },
     "Digital-Technology": {
       "wjec-gcse-digital-technology-specification.md": {
         "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
           12,
-          13
+          13,
+          14,
+          15
         ],
-        "total_issues": 10
+        "total_issues": 8
       }
     },
     "Drama": {
       "gcse-drama---delivery-guide.md": {
         "completed_batches": [
           0,
+          1,
+          2
+        ],
+        "total_issues": 2
+      },
+      "gcse-drama---faqs.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 5
+      },
+      "gcse-drama---guidance-for-teaching-unit-1.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "total_issues": 5
+      },
+      "gcse-drama---guidance-for-teaching-unit-2.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 6
+      },
+      "gcse-drama---guidance-for-teaching-unit-3.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "total_issues": 6
+      },
+      "gcse-drama---option-evening-flyer.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 2
+      },
+      "gcse-drama---unit-1-non-exam-assessment-pack-sample.md": {
+        "completed_batches": [
+          0,
+          1,
+          2
+        ],
+        "total_issues": 8
+      },
+      "gcse-drama---unit-2-non-exam-assessment-pack-sample.md": {
+        "completed_batches": [
+          0,
           1
+        ],
+        "total_issues": 3
+      },
+      "gcse-drama---unit-3-interpreting-theatre.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10
+        ],
+        "total_issues": 10
+      },
+      "gcse-drama-unit-1-nea-assessment-handbook.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 10
+      },
+      "gcse-drama-unit-2-nea-assessment-handbook.md": {
+        "completed_batches": [
+          0
         ],
         "total_issues": 10
       }
@@ -245,6 +418,32 @@
           0
         ],
         "total_issues": 4
+      }
+    },
+    "Dance": {
+      "wjec-gcse-dance-specification.md": {
+        "completed_batches": [
+          0,
+          1
+        ],
+        "total_issues": 8
+      }
+    },
+    "Digital-Media-and-Film": {
+      "digital-media-and-film---options-evening-flyer.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 1
+      },
+      "wjec-gcse-digital-media-and-film-specification.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "total_issues": 6
       }
     }
   }
