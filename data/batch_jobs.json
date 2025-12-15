@@ -13,7 +13,7 @@
       4
     ],
     "created_at": "2025-12-15T12:38:37Z",
-    "status": "failed",
+    "status": "completed",
     "error_message": "Cancelled by user"
   },
   "batches/xke6hlzzmgqpyue9as2gavjt6p3t51gw7au2": {
@@ -35,7 +35,7 @@
       9
     ],
     "created_at": "2025-12-15T12:38:39Z",
-    "status": "failed",
+    "status": "completed",
     "error_message": "Cancelled by user"
   },
   "batches/lzav2zbg5fjhkd5srk7kxkfpvhpmxmrv042h": {
@@ -57,7 +57,7 @@
       19
     ],
     "created_at": "2025-12-15T12:38:40Z",
-    "status": "failed",
+    "status": "completed",
     "error_message": "Cancelled by user"
   },
   "batches/olbk8d02oakmz0xgsgg52ofpgvmsnseg50sk": {
@@ -79,7 +79,7 @@
       29
     ],
     "created_at": "2025-12-15T12:38:42Z",
-    "status": "failed",
+    "status": "completed",
     "error_message": "Cancelled by user"
   },
   "batches/ewuvgn2cusbux1wby069c0wr6jqxnn7262nr": {
@@ -101,7 +101,7 @@
       39
     ],
     "created_at": "2025-12-15T12:38:43Z",
-    "status": "failed",
+    "status": "completed",
     "error_message": "Cancelled by user"
   },
   "batches/u3l7kiprzb3j4ufxnay7b6oxqct21sb5sj3x": {
@@ -123,7 +123,7 @@
       49
     ],
     "created_at": "2025-12-15T12:38:45Z",
-    "status": "failed",
+    "status": "completed",
     "error_message": "Cancelled by user"
   },
   "batches/lmj4ecz3rv7933ljcnzly6b70o804zc2t9vb": {
@@ -145,7 +145,7 @@
       59
     ],
     "created_at": "2025-12-15T12:38:46Z",
-    "status": "failed",
+    "status": "completed",
     "error_message": "Cancelled by user"
   },
   "batches/qilxp9red1wqgb0tppnt4bb14jw7tftlr1sx": {
@@ -159,7 +159,7 @@
       61
     ],
     "created_at": "2025-12-15T12:38:47Z",
-    "status": "failed",
+    "status": "completed",
     "error_message": "Cancelled by user"
   },
   "batches/am5uzelpd19d4sxe4keblzo038jq27h63t11": {
@@ -181,7 +181,7 @@
       9
     ],
     "created_at": "2025-12-15T12:38:49Z",
-    "status": "failed",
+    "status": "completed",
     "error_message": "Cancelled by user"
   },
   "batches/rog90gvlt3npbeyd9ldqbs1v2s94a1f7v8rt": {
@@ -203,7 +203,7 @@
       19
     ],
     "created_at": "2025-12-15T12:38:51Z",
-    "status": "failed",
+    "status": "completed",
     "error_message": "Cancelled by user"
   },
   "batches/6hx7ph8uki0ko68vbb0ibiif80u1fkjtkav8": {
@@ -225,7 +225,7 @@
       29
     ],
     "created_at": "2025-12-15T12:38:53Z",
-    "status": "failed",
+    "status": "completed",
     "error_message": "Cancelled by user"
   },
   "batches/m5v55fsgd0dntfaovj73iwxau2xj9gi28zon": {
@@ -247,7 +247,7 @@
       39
     ],
     "created_at": "2025-12-15T12:38:55Z",
-    "status": "failed",
+    "status": "completed",
     "error_message": "Cancelled by user"
   },
   "batches/0w3ykpqs2eedwckkpq8yc5qaid4qc1jxr8r4": {
@@ -261,7 +261,7 @@
       41
     ],
     "created_at": "2025-12-15T12:38:57Z",
-    "status": "failed",
+    "status": "completed",
     "error_message": "Cancelled by user"
   },
   "batches/vd17uplndyfma82wac32lbhzucm3mav8j0vz": {
@@ -283,7 +283,7 @@
       9
     ],
     "created_at": "2025-12-15T12:38:58Z",
-    "status": "failed",
+    "status": "completed",
     "error_message": "Cancelled by user"
   },
   "batches/mhdd9ryhp80wydbc6hllseg2ssgtc1tx18bk": {
@@ -305,7 +305,7 @@
       19
     ],
     "created_at": "2025-12-15T12:39:00Z",
-    "status": "failed",
+    "status": "completed",
     "error_message": "Cancelled by user"
   },
   "batches/3qh63qkkn97p2tqmv0j5a2otkkh4t2uvstwr": {
@@ -327,7 +327,7 @@
       29
     ],
     "created_at": "2025-12-15T12:39:01Z",
-    "status": "failed",
+    "status": "completed",
     "error_message": "Cancelled by user"
   },
   "batches/1c5f0n0kkc2i8r9b6rovds8nxdywcfzq8iny": {
@@ -349,7 +349,7 @@
       39
     ],
     "created_at": "2025-12-15T12:39:03Z",
-    "status": "failed",
+    "status": "completed",
     "error_message": "Cancelled by user"
   },
   "batches/u01wxtxcxwhhq4nh4m2hamp4ctq1ux3gn2cu": {
@@ -371,7 +371,7 @@
       49
     ],
     "created_at": "2025-12-15T12:39:05Z",
-    "status": "failed",
+    "status": "completed",
     "error_message": "Cancelled by user"
   },
   "batches/om6go8d4f88jepoki7w1uclivgl5ky0endez": {
@@ -392,7 +392,7 @@
       58
     ],
     "created_at": "2025-12-15T12:39:06Z",
-    "status": "failed",
+    "status": "completed",
     "error_message": "Cancelled by user"
   },
   "batches/aoqa8uti7kogxhj1xx5xcky1vvtbzdru01lk": {
@@ -414,7 +414,7 @@
       9
     ],
     "created_at": "2025-12-15T12:39:07Z",
-    "status": "failed",
+    "status": "completed",
     "error_message": "Cancelled by user"
   },
   "batches/i0lyem0butif0g6ai5zj9juah96wd7njzou9": {
@@ -436,7 +436,7 @@
       19
     ],
     "created_at": "2025-12-15T12:39:09Z",
-    "status": "failed",
+    "status": "completed",
     "error_message": "Cancelled by user"
   },
   "batches/iu9trlpwy3yx3i41pso3xuec6gvx5s5vq6k3": {
@@ -453,7 +453,7 @@
       24
     ],
     "created_at": "2025-12-15T12:39:10Z",
-    "status": "failed",
+    "status": "completed",
     "error_message": "Cancelled by user"
   },
   "batches/yj1l34xk7u80kn3lqr4yrb2drvhw0gxrm6w0": {
@@ -468,7 +468,7 @@
       2
     ],
     "created_at": "2025-12-15T12:39:12Z",
-    "status": "failed",
+    "status": "completed",
     "error_message": "Cancelled by user"
   },
   "batches/6fh22yglwqwdbr7aj6912m7w2qniz8dnrgvi": {
@@ -490,7 +490,7 @@
       9
     ],
     "created_at": "2025-12-15T12:39:13Z",
-    "status": "failed",
+    "status": "completed",
     "error_message": "Cancelled by user"
   },
   "batches/4g8y14o75t3vf51mcnsejz8c1oo08525dcam": {
@@ -512,7 +512,7 @@
       19
     ],
     "created_at": "2025-12-15T12:39:15Z",
-    "status": "failed",
+    "status": "completed",
     "error_message": "Cancelled by user"
   },
   "batches/hfrifxtcleeezbx59iakkzbr8rgrysdkd952": {
@@ -526,7 +526,7 @@
       21
     ],
     "created_at": "2025-12-15T12:39:16Z",
-    "status": "failed",
+    "status": "completed",
     "error_message": "Cancelled by user"
   },
   "batches/ssgodv8coujm0vwe11omqs1k1aors7pefn9n": {
@@ -548,7 +548,7 @@
       9
     ],
     "created_at": "2025-12-15T12:39:18Z",
-    "status": "failed",
+    "status": "completed",
     "error_message": "Cancelled by user"
   },
   "batches/6nc26h36txm0ve8o5jesfk8kfzt9m45kwwjx": {
@@ -570,7 +570,7 @@
       19
     ],
     "created_at": "2025-12-15T12:39:19Z",
-    "status": "failed",
+    "status": "completed",
     "error_message": "Cancelled by user"
   },
   "batches/6lh1qg4u4waz2fpxc0z2jmkwxocstlmb9hjh": {
@@ -6820,7 +6820,7 @@
       59
     ],
     "created_at": "2025-12-15T14:08:52Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/40sn6onyxxzb5rvigptc6rcui1zzftnmgmpi": {
@@ -6835,7 +6835,7 @@
       22
     ],
     "created_at": "2025-12-15T14:08:53Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/il4z5aeju0rt2sq45qhujvl6fj5okvy8p785": {
@@ -6850,7 +6850,7 @@
       2
     ],
     "created_at": "2025-12-15T14:08:54Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/fab1o7qo7423x65x4bt7qtbnqbl1ekmn195d": {
@@ -6872,7 +6872,7 @@
       9
     ],
     "created_at": "2025-12-15T14:08:56Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/6uv06hmryi4r5wyyr4f7pw9zxmli7jg0uh15": {
@@ -6906,7 +6906,7 @@
       0
     ],
     "created_at": "2025-12-15T14:08:59Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/odffjyp8sdan5v48sn102p43uqigm8eh0s54": {
@@ -6928,7 +6928,7 @@
       9
     ],
     "created_at": "2025-12-15T14:09:00Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/rjpgjw4qv8f4a24ewe44yalyycf2uetp1zvz": {
@@ -6950,7 +6950,7 @@
       19
     ],
     "created_at": "2025-12-15T14:09:02Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/2r0a7d4ompqeuw7dmwhxeqkajpmd72mpwful": {
@@ -6972,7 +6972,7 @@
       29
     ],
     "created_at": "2025-12-15T14:09:03Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/b6uusislqimki4f0z1foo1rr51kz8etjmekk": {
@@ -6994,7 +6994,7 @@
       39
     ],
     "created_at": "2025-12-15T14:09:05Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/mnepcvamd5d2dj3cst484yfn24s9k2kh3yu8": {
@@ -7016,7 +7016,7 @@
       49
     ],
     "created_at": "2025-12-15T14:09:07Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/qrhg7t91qb3izwtb9cyhp4kfrci15n3seel5": {
@@ -7033,7 +7033,7 @@
       54
     ],
     "created_at": "2025-12-15T14:09:08Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/r0dml4hxdqzrk8jnq3k5odu0ks36d8ornfgv": {
@@ -7055,7 +7055,7 @@
       9
     ],
     "created_at": "2025-12-15T14:09:09Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/tyreffo87222zwbvev2hcl2sqn4zhwxfib1g": {
@@ -7077,7 +7077,7 @@
       19
     ],
     "created_at": "2025-12-15T14:09:11Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/dme7hm6z9plwvl79g5ua8ni6jmoa07v8j3w1": {
@@ -7140,7 +7140,7 @@
       9
     ],
     "created_at": "2025-12-15T14:09:16Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/5jjp8sa45xn2p2zlgdlbtn5k86gylri78ba6": {
@@ -7162,7 +7162,7 @@
       19
     ],
     "created_at": "2025-12-15T14:09:17Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/yhl611mwed5tj4mx7d5p3k0pqauulg110875": {
@@ -7337,7 +7337,7 @@
       19
     ],
     "created_at": "2025-12-15T14:09:31Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/fp97tlvr0viqyemgz5hjmlcc03f124evx10w": {
@@ -7359,7 +7359,7 @@
       29
     ],
     "created_at": "2025-12-15T14:09:32Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/jgm2rxzsvehhou5lyl15q0dulwxwop6ateo2": {
@@ -7418,7 +7418,7 @@
       19
     ],
     "created_at": "2025-12-15T14:09:37Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/9g9frode2wb2zijyko16cuuzd7dm0jeeg8j4": {
@@ -7477,7 +7477,7 @@
       9
     ],
     "created_at": "2025-12-15T14:09:43Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/vtxc50hirjv8kj8ahhec9jhz0emucgd3c1cb": {
@@ -7587,7 +7587,7 @@
       59
     ],
     "created_at": "2025-12-15T14:09:52Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/ka1fsycvv3o5wjqckt7cqrx4xslkhyfgay4n": {
@@ -7670,7 +7670,7 @@
       29
     ],
     "created_at": "2025-12-15T14:09:58Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/mi3es42kymbwyt2gqylg8h2ypr3ndyamwrc8": {
@@ -7714,7 +7714,7 @@
       49
     ],
     "created_at": "2025-12-15T14:10:01Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/26owfbd3bzki7m5d4kon6k270j1pl4teblfc": {
@@ -7753,7 +7753,7 @@
       64
     ],
     "created_at": "2025-12-15T14:10:04Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/8ybmgbzcrt7k3axj5z1frjead7kfvq8tfjwk": {
@@ -7831,7 +7831,7 @@
       5
     ],
     "created_at": "2025-12-15T14:10:11Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/q55811iqt7yo2nw6656phewbyj52tl21gx2c": {
@@ -7853,7 +7853,7 @@
       9
     ],
     "created_at": "2025-12-15T14:10:13Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/e5n3vhrghgtoygoyb46k81hx04fx0vf3tw5n": {
@@ -7935,7 +7935,7 @@
       9
     ],
     "created_at": "2025-12-15T14:10:19Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/ssywn309dxitwuhyq1s5tlhmhuhl622p2533": {
@@ -7957,7 +7957,7 @@
       9
     ],
     "created_at": "2025-12-15T14:10:21Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/mmy3g9fjcrw0wsah7gkhs0p0r5ol7ix5uu42": {
@@ -8001,7 +8001,7 @@
       9
     ],
     "created_at": "2025-12-15T14:10:24Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/m32e070yvnv2729uvyp8urvf1oai1dycosts": {
@@ -8018,7 +8018,7 @@
       4
     ],
     "created_at": "2025-12-15T14:10:25Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/trc0xiwank5c7dtkjc7kkgif8ry6n72mhx5n": {
@@ -8054,7 +8054,7 @@
       11
     ],
     "created_at": "2025-12-15T14:10:28Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/dorsad105fcsb2itu99tya8p7cdxzmg80wxt": {
@@ -8116,7 +8116,7 @@
       17
     ],
     "created_at": "2025-12-15T14:10:32Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/x8hww1nm2qd0u2bkmqgkraa1wcpdrwpud8vn": {
@@ -8138,7 +8138,7 @@
       9
     ],
     "created_at": "2025-12-15T14:10:35Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/bo85la8ew8pt9dedgn8hxdjug8paphfa9bq9": {
@@ -8160,7 +8160,7 @@
       19
     ],
     "created_at": "2025-12-15T14:10:36Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/wrxk9hqzfvpyyemgxigxtu3lqhl2ywtzk5fo": {
@@ -8182,7 +8182,7 @@
       29
     ],
     "created_at": "2025-12-15T14:10:38Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/pexuj0dkx48ch1euqid4po1fpkqn03dzjk73": {
@@ -8204,7 +8204,7 @@
       9
     ],
     "created_at": "2025-12-15T14:10:40Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/7ac74w8or1nv5ginjj5d9qgx1o9vtefb5ji2": {
@@ -8369,7 +8369,7 @@
       4
     ],
     "created_at": "2025-12-15T14:10:52Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/zh5navy4h2iunmts392z6y6ikx9t95nmxboe": {
@@ -8391,7 +8391,7 @@
       9
     ],
     "created_at": "2025-12-15T14:10:54Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/z06bi41yqos6fatrcyfbh8vrc6jdqhznybm9": {
@@ -8448,7 +8448,7 @@
       19
     ],
     "created_at": "2025-12-15T14:10:59Z",
-    "status": "pending",
+    "status": "completed",
     "error_message": null
   },
   "batches/krjabjlg91b7phkj4305ieginym6w5e8c3q0": {
@@ -8800,6 +8800,1682 @@
     ],
     "created_at": "2025-12-15T14:11:25Z",
     "status": "completed",
+    "error_message": null
+  },
+  "batches/qmx0i7ptbx2jmq2coj8bqwoncl2g0vz4kkdu": {
+    "provider_name": "gemini",
+    "job_name": "batches/qmx0i7ptbx2jmq2coj8bqwoncl2g0vz4kkdu",
+    "subject": "English-Language-and-Literature",
+    "filename": "wjec-gcse-english-language-and-literature-single-and-double-award-specification.md",
+    "batch_index": 2,
+    "issue_ids": [
+      20,
+      21,
+      22
+    ],
+    "created_at": "2025-12-15T14:26:13Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/89yoiq9pbo0qh8vadi1c4qxhct12n4k44aew": {
+    "provider_name": "gemini",
+    "job_name": "batches/89yoiq9pbo0qh8vadi1c4qxhct12n4k44aew",
+    "subject": "Food-and-Nutrition",
+    "filename": "appendix-a-chart.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2
+    ],
+    "created_at": "2025-12-15T14:26:14Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/tczaged7u262qidqa2mi6xci9fzmw7cayx4t": {
+    "provider_name": "gemini",
+    "job_name": "batches/tczaged7u262qidqa2mi6xci9fzmw7cayx4t",
+    "subject": "Food-and-Nutrition",
+    "filename": "gcse-food-and-nutrition---delivery-guide.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "created_at": "2025-12-15T14:26:16Z",
+    "status": "completed",
+    "error_message": null
+  },
+  "batches/so2nlpmw2wthqgre1fjczj9ls7uc9gpfbf8c": {
+    "provider_name": "gemini",
+    "job_name": "batches/so2nlpmw2wthqgre1fjczj9ls7uc9gpfbf8c",
+    "subject": "Food-and-Nutrition",
+    "filename": "gcse-food-and-nutrition---faqs.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0
+    ],
+    "created_at": "2025-12-15T14:26:17Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/5h7rxh1r5jcd63e1dj40adw3cq0zt2oyp7lo": {
+    "provider_name": "gemini",
+    "job_name": "batches/5h7rxh1r5jcd63e1dj40adw3cq0zt2oyp7lo",
+    "subject": "Food-and-Nutrition",
+    "filename": "gcse-food-and-nutrition---guidance-for-teaching-unit-1.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "created_at": "2025-12-15T14:26:19Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/ldax7r8x00qyftvkmus0ffbg3uz5ip0q21p5": {
+    "provider_name": "gemini",
+    "job_name": "batches/ldax7r8x00qyftvkmus0ffbg3uz5ip0q21p5",
+    "subject": "Food-and-Nutrition",
+    "filename": "gcse-food-and-nutrition---guidance-for-teaching-unit-1.md",
+    "batch_index": 1,
+    "issue_ids": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "created_at": "2025-12-15T14:26:21Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/zzn9sppdx1m8k9ow72eyr2u5wc2ws6e4h25d": {
+    "provider_name": "gemini",
+    "job_name": "batches/zzn9sppdx1m8k9ow72eyr2u5wc2ws6e4h25d",
+    "subject": "Food-and-Nutrition",
+    "filename": "gcse-food-and-nutrition---guidance-for-teaching-unit-1.md",
+    "batch_index": 2,
+    "issue_ids": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "created_at": "2025-12-15T14:26:22Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/jqxxv5rcoufjnijdct5ir3jpzoq5hns9jtwk": {
+    "provider_name": "gemini",
+    "job_name": "batches/jqxxv5rcoufjnijdct5ir3jpzoq5hns9jtwk",
+    "subject": "Food-and-Nutrition",
+    "filename": "gcse-food-and-nutrition---guidance-for-teaching-unit-1.md",
+    "batch_index": 3,
+    "issue_ids": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "created_at": "2025-12-15T14:26:24Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/u3qbp003lubhtbqjj33vq7zqew39lm6qq8wl": {
+    "provider_name": "gemini",
+    "job_name": "batches/u3qbp003lubhtbqjj33vq7zqew39lm6qq8wl",
+    "subject": "Food-and-Nutrition",
+    "filename": "gcse-food-and-nutrition---guidance-for-teaching-unit-1.md",
+    "batch_index": 4,
+    "issue_ids": [
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "created_at": "2025-12-15T14:26:25Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/mp6tzuggqf4k8umpsmvpwo43juhpfqk7xdex": {
+    "provider_name": "gemini",
+    "job_name": "batches/mp6tzuggqf4k8umpsmvpwo43juhpfqk7xdex",
+    "subject": "Food-and-Nutrition",
+    "filename": "gcse-food-and-nutrition---guidance-for-teaching-unit-1.md",
+    "batch_index": 5,
+    "issue_ids": [
+      50,
+      51,
+      52,
+      53,
+      54
+    ],
+    "created_at": "2025-12-15T14:26:27Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/6kdrwtiro0qd4wlewe0ttnyuany5d5pnrm3x": {
+    "provider_name": "gemini",
+    "job_name": "batches/6kdrwtiro0qd4wlewe0ttnyuany5d5pnrm3x",
+    "subject": "Food-and-Nutrition",
+    "filename": "gcse-food-and-nutrition---guidance-for-teaching-unit-2.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "created_at": "2025-12-15T14:26:28Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/gipabwxqqb8pquj7yrzjy7savb0nf8x4eyoz": {
+    "provider_name": "gemini",
+    "job_name": "batches/gipabwxqqb8pquj7yrzjy7savb0nf8x4eyoz",
+    "subject": "Food-and-Nutrition",
+    "filename": "gcse-food-and-nutrition---guidance-for-teaching-unit-2.md",
+    "batch_index": 1,
+    "issue_ids": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "created_at": "2025-12-15T14:26:30Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/umzr2bnfhsi2ddraua2j5b15733p5gpkmyhx": {
+    "provider_name": "gemini",
+    "job_name": "batches/umzr2bnfhsi2ddraua2j5b15733p5gpkmyhx",
+    "subject": "Food-and-Nutrition",
+    "filename": "gcse-food-and-nutrition---guidance-for-teaching-unit-3.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "created_at": "2025-12-15T14:26:32Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/6i142tcr9ixuk5inm1y4rk9e1tdn9o823cqp": {
+    "provider_name": "gemini",
+    "job_name": "batches/6i142tcr9ixuk5inm1y4rk9e1tdn9o823cqp",
+    "subject": "Food-and-Nutrition",
+    "filename": "gcse-food-and-nutrition---guidance-for-teaching-unit-3.md",
+    "batch_index": 1,
+    "issue_ids": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "created_at": "2025-12-15T14:26:33Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/hdr8wo3is6nnmnfafp9aahrttp7gsm4yjehi": {
+    "provider_name": "gemini",
+    "job_name": "batches/hdr8wo3is6nnmnfafp9aahrttp7gsm4yjehi",
+    "subject": "Food-and-Nutrition",
+    "filename": "gcse-food-and-nutrition---unit-2-food-investigation.md",
+    "batch_index": 1,
+    "issue_ids": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "created_at": "2025-12-15T14:26:36Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/r1y3p3dl6soefi057m7v7if5mt59wg0gdoic": {
+    "provider_name": "gemini",
+    "job_name": "batches/r1y3p3dl6soefi057m7v7if5mt59wg0gdoic",
+    "subject": "Food-and-Nutrition",
+    "filename": "gcse-food-and-nutrition---unit-2-food-investigation.md",
+    "batch_index": 2,
+    "issue_ids": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "created_at": "2025-12-15T14:26:37Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/kwy1h4s5gregvsw1bv2odxpqhzx1634nw3qq": {
+    "provider_name": "gemini",
+    "job_name": "batches/kwy1h4s5gregvsw1bv2odxpqhzx1634nw3qq",
+    "subject": "Food-and-Nutrition",
+    "filename": "gcse-food-and-nutrition---unit-2-non-exam-assessment-pack.md",
+    "batch_index": 1,
+    "issue_ids": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "created_at": "2025-12-15T14:26:39Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/f9e5j5vxyvo025dlyva3rmlya3xepotiivmw": {
+    "provider_name": "gemini",
+    "job_name": "batches/f9e5j5vxyvo025dlyva3rmlya3xepotiivmw",
+    "subject": "Food-and-Nutrition",
+    "filename": "gcse-food-and-nutrition---unit-3-food-and-nutrition-in-action.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "created_at": "2025-12-15T14:26:41Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/2uebyxw3z54tz5i03mgmu8v2ufxu50mf7pcj": {
+    "provider_name": "gemini",
+    "job_name": "batches/2uebyxw3z54tz5i03mgmu8v2ufxu50mf7pcj",
+    "subject": "Food-and-Nutrition",
+    "filename": "gcse-food-and-nutrition---unit-3-food-and-nutrition-in-action.md",
+    "batch_index": 5,
+    "issue_ids": [
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59
+    ],
+    "created_at": "2025-12-15T14:26:43Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/9tpqhhje1qx9wletg37fjfleg3jkfa1i4rg9": {
+    "provider_name": "gemini",
+    "job_name": "batches/9tpqhhje1qx9wletg37fjfleg3jkfa1i4rg9",
+    "subject": "Food-and-Nutrition",
+    "filename": "gcse-food-and-nutrition---unit-3-non-exam-assessment-pack.md",
+    "batch_index": 2,
+    "issue_ids": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "created_at": "2025-12-15T14:26:44Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/dmd0n0f21xvoy1xy03uvrobrn451s9odiaqp": {
+    "provider_name": "gemini",
+    "job_name": "batches/dmd0n0f21xvoy1xy03uvrobrn451s9odiaqp",
+    "subject": "Food-and-Nutrition",
+    "filename": "gcse-food-and-nutrition---unit-3-non-exam-assessment-pack.md",
+    "batch_index": 4,
+    "issue_ids": [
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "created_at": "2025-12-15T14:26:46Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/x8zphnhf3pmbqhah5wjncgmdn2mgg72iclas": {
+    "provider_name": "gemini",
+    "job_name": "batches/x8zphnhf3pmbqhah5wjncgmdn2mgg72iclas",
+    "subject": "Food-and-Nutrition",
+    "filename": "gcse-food-and-nutrition---unit-3-non-exam-assessment-pack.md",
+    "batch_index": 6,
+    "issue_ids": [
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "created_at": "2025-12-15T14:26:47Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/rkccz2nvgzjgsch8mwsfx81cd2g7xzjkio2d": {
+    "provider_name": "gemini",
+    "job_name": "batches/rkccz2nvgzjgsch8mwsfx81cd2g7xzjkio2d",
+    "subject": "Food-and-Nutrition",
+    "filename": "resources-for-new-gcse.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "created_at": "2025-12-15T14:26:49Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/3rqf3mdhawrt9wqzwyexftfkunbv9sudb9xb": {
+    "provider_name": "gemini",
+    "job_name": "batches/3rqf3mdhawrt9wqzwyexftfkunbv9sudb9xb",
+    "subject": "Food-and-Nutrition",
+    "filename": "techniques-summary.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "created_at": "2025-12-15T14:26:51Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/0fppmdkw6u4md3vuvxi5we6kssru17u74lvh": {
+    "provider_name": "gemini",
+    "job_name": "batches/0fppmdkw6u4md3vuvxi5we6kssru17u74lvh",
+    "subject": "Food-and-Nutrition",
+    "filename": "unit-3---presenting-food-outcomes.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "created_at": "2025-12-15T14:26:52Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/7v3j9uf2sdk2zj1jpj7rb1trm63n6wn1o4k9": {
+    "provider_name": "gemini",
+    "job_name": "batches/7v3j9uf2sdk2zj1jpj7rb1trm63n6wn1o4k9",
+    "subject": "Food-and-Nutrition",
+    "filename": "unit-3---upskilling.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "created_at": "2025-12-15T14:26:54Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/lrtotvgxcw51r67354dua3b5lc03tpt169bo": {
+    "provider_name": "gemini",
+    "job_name": "batches/lrtotvgxcw51r67354dua3b5lc03tpt169bo",
+    "subject": "Food-and-Nutrition",
+    "filename": "wjec-gcse-food-and-nutrition-specification.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "created_at": "2025-12-15T14:26:55Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/orm1sebrjbvjqzzfv1th2tcdtpejcbm1qtft": {
+    "provider_name": "gemini",
+    "job_name": "batches/orm1sebrjbvjqzzfv1th2tcdtpejcbm1qtft",
+    "subject": "French",
+    "filename": "gcse-french---delivery-guide.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "created_at": "2025-12-15T14:26:57Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/2z9fa86sebr3een2py4airy336m9u290pood": {
+    "provider_name": "gemini",
+    "job_name": "batches/2z9fa86sebr3een2py4airy336m9u290pood",
+    "subject": "French",
+    "filename": "gcse-french---guidance-for-teaching-unit-1.md",
+    "batch_index": 1,
+    "issue_ids": [
+      10,
+      11
+    ],
+    "created_at": "2025-12-15T14:26:59Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/0zlbfafps5vh5hp5jdqdspuewvlxi1cc90u0": {
+    "provider_name": "gemini",
+    "job_name": "batches/0zlbfafps5vh5hp5jdqdspuewvlxi1cc90u0",
+    "subject": "French",
+    "filename": "gcse-french---guidance-for-teaching-unit-2.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7
+    ],
+    "created_at": "2025-12-15T14:27:01Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/74i2qzmnhn29zglob45hd2ba1jteic0jlu2x": {
+    "provider_name": "gemini",
+    "job_name": "batches/74i2qzmnhn29zglob45hd2ba1jteic0jlu2x",
+    "subject": "French",
+    "filename": "gcse-french---guidance-for-teaching-unit-3.md",
+    "batch_index": 1,
+    "issue_ids": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17
+    ],
+    "created_at": "2025-12-15T14:27:02Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/5yx4nyysfixmul4ha8e0hgf4j2bd2vngrrdt": {
+    "provider_name": "gemini",
+    "job_name": "batches/5yx4nyysfixmul4ha8e0hgf4j2bd2vngrrdt",
+    "subject": "French",
+    "filename": "gcse-french---guidance-for-teaching-unit-4.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "created_at": "2025-12-15T14:27:04Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/m0orbgw6fjj82wh39am6ms3k158xl28ni8bj": {
+    "provider_name": "gemini",
+    "job_name": "batches/m0orbgw6fjj82wh39am6ms3k158xl28ni8bj",
+    "subject": "French",
+    "filename": "gcse-french---guidance-for-teaching-unit-4.md",
+    "batch_index": 1,
+    "issue_ids": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "created_at": "2025-12-15T14:27:05Z",
+    "status": "completed",
+    "error_message": null
+  },
+  "batches/i10ojt7yykqbad0xd4n52boifbsm7u7zdgso": {
+    "provider_name": "gemini",
+    "job_name": "batches/i10ojt7yykqbad0xd4n52boifbsm7u7zdgso",
+    "subject": "French",
+    "filename": "gcse-french---guidance-for-teaching-unit-4.md",
+    "batch_index": 2,
+    "issue_ids": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "created_at": "2025-12-15T14:27:07Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/eu5i0inwuq0bof11tj2nmqojfhgnk066lvd5": {
+    "provider_name": "gemini",
+    "job_name": "batches/eu5i0inwuq0bof11tj2nmqojfhgnk066lvd5",
+    "subject": "French",
+    "filename": "gcse-french---unit-1-oracy.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "created_at": "2025-12-15T14:27:08Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/aynabyh342cowa0zs8fx10zae1iktwhi0orx": {
+    "provider_name": "gemini",
+    "job_name": "batches/aynabyh342cowa0zs8fx10zae1iktwhi0orx",
+    "subject": "French",
+    "filename": "gcse-french---unit-4-reading-and-writing.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "created_at": "2025-12-15T14:27:10Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/85g8t5wq9su82x1c35bdui34qebjoqviwtzb": {
+    "provider_name": "gemini",
+    "job_name": "batches/85g8t5wq9su82x1c35bdui34qebjoqviwtzb",
+    "subject": "French",
+    "filename": "gcse-french--faqs.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "created_at": "2025-12-15T14:27:11Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/forycvsklrvgph04o7lbf9aqzbldkk1dn2hn": {
+    "provider_name": "gemini",
+    "job_name": "batches/forycvsklrvgph04o7lbf9aqzbldkk1dn2hn",
+    "subject": "French",
+    "filename": "overview-of-consultation-findings.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "created_at": "2025-12-15T14:27:13Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/e98eadyn8iay5y5bkhbmn492hyeyou5vy7kj": {
+    "provider_name": "gemini",
+    "job_name": "batches/e98eadyn8iay5y5bkhbmn492hyeyou5vy7kj",
+    "subject": "French",
+    "filename": "overview-of-consultation-findings.md",
+    "batch_index": 1,
+    "issue_ids": [
+      10
+    ],
+    "created_at": "2025-12-15T14:27:14Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/qbqyeht517sxngt5rgkhe9zo3v3177uwqj1m": {
+    "provider_name": "gemini",
+    "job_name": "batches/qbqyeht517sxngt5rgkhe9zo3v3177uwqj1m",
+    "subject": "French",
+    "filename": "wjec-gcse-french-specification.md",
+    "batch_index": 1,
+    "issue_ids": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "created_at": "2025-12-15T14:27:16Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/q3jj3n7qpneqahbom3u3ggslgeytvzn6bxxp": {
+    "provider_name": "gemini",
+    "job_name": "batches/q3jj3n7qpneqahbom3u3ggslgeytvzn6bxxp",
+    "subject": "Geography",
+    "filename": "cylchlythyr-ionawr-2025.md",
+    "batch_index": 1,
+    "issue_ids": [
+      10,
+      11
+    ],
+    "created_at": "2025-12-15T14:27:17Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/6xdkb8cxb8dzq21ry5zk3wuzelotkw9fc9ld": {
+    "provider_name": "gemini",
+    "job_name": "batches/6xdkb8cxb8dzq21ry5zk3wuzelotkw9fc9ld",
+    "subject": "Geography",
+    "filename": "fieldwork-opportunities-at-gwersyll-yr-urdd-pentre-ifan.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1
+    ],
+    "created_at": "2025-12-15T14:27:18Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/hmmfrv7wyz2h7d6fk5r2rum9nvp12be3ycfv": {
+    "provider_name": "gemini",
+    "job_name": "batches/hmmfrv7wyz2h7d6fk5r2rum9nvp12be3ycfv",
+    "subject": "Geography",
+    "filename": "fsc-teacher-open-days-new-gcse-wales-geography-curriculum.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1
+    ],
+    "created_at": "2025-12-15T14:27:20Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/kqkj0hh7epyfmafzkjhq5ofjv6tycyefqfiv": {
+    "provider_name": "gemini",
+    "job_name": "batches/kqkj0hh7epyfmafzkjhq5ofjv6tycyefqfiv",
+    "subject": "Geography",
+    "filename": "gcse-geography---delivery-guide.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "created_at": "2025-12-15T14:27:22Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/4qk9nzu98osuua4ig30tg6gdkrq9yd180n00": {
+    "provider_name": "gemini",
+    "job_name": "batches/4qk9nzu98osuua4ig30tg6gdkrq9yd180n00",
+    "subject": "Geography",
+    "filename": "gcse-geography---delivery-guide.md",
+    "batch_index": 1,
+    "issue_ids": [
+      10,
+      11,
+      12
+    ],
+    "created_at": "2025-12-15T14:27:24Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/z5ianvqpql1ezpzdivc2q9h2qbpn37sue496": {
+    "provider_name": "gemini",
+    "job_name": "batches/z5ianvqpql1ezpzdivc2q9h2qbpn37sue496",
+    "subject": "Geography",
+    "filename": "gcse-geography---faqs.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "created_at": "2025-12-15T14:27:26Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/rjz17jitxoeovl13ln553n1vbddtzxb7oedr": {
+    "provider_name": "gemini",
+    "job_name": "batches/rjz17jitxoeovl13ln553n1vbddtzxb7oedr",
+    "subject": "Geography",
+    "filename": "gcse-geography---guidance-for-teaching-unit-1.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "created_at": "2025-12-15T14:27:27Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/o85h7sq2flmcyh3b2w1gx4k519i4m8sg9bx5": {
+    "provider_name": "gemini",
+    "job_name": "batches/o85h7sq2flmcyh3b2w1gx4k519i4m8sg9bx5",
+    "subject": "Geography",
+    "filename": "gcse-geography---guidance-for-teaching-unit-1.md",
+    "batch_index": 1,
+    "issue_ids": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "created_at": "2025-12-15T14:27:29Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/piw6usvixjas4wi5nmzh082zzjiqa7mjz0ul": {
+    "provider_name": "gemini",
+    "job_name": "batches/piw6usvixjas4wi5nmzh082zzjiqa7mjz0ul",
+    "subject": "Geography",
+    "filename": "gcse-geography---guidance-for-teaching-unit-1.md",
+    "batch_index": 2,
+    "issue_ids": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "created_at": "2025-12-15T14:27:31Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/nskr5sbs2htlhbnedx28tn5ne7062b1sffag": {
+    "provider_name": "gemini",
+    "job_name": "batches/nskr5sbs2htlhbnedx28tn5ne7062b1sffag",
+    "subject": "Geography",
+    "filename": "gcse-geography---guidance-for-teaching-unit-1.md",
+    "batch_index": 3,
+    "issue_ids": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "created_at": "2025-12-15T14:27:32Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/xsv3vgr4eueddm31fv1sshbehbmnps8464jo": {
+    "provider_name": "gemini",
+    "job_name": "batches/xsv3vgr4eueddm31fv1sshbehbmnps8464jo",
+    "subject": "Geography",
+    "filename": "gcse-geography---guidance-for-teaching-unit-1.md",
+    "batch_index": 4,
+    "issue_ids": [
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "created_at": "2025-12-15T14:27:34Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/9aigh8eyeahfijihfu1bznadtj351cdehjf5": {
+    "provider_name": "gemini",
+    "job_name": "batches/9aigh8eyeahfijihfu1bznadtj351cdehjf5",
+    "subject": "Geography",
+    "filename": "gcse-geography---guidance-for-teaching-unit-1.md",
+    "batch_index": 5,
+    "issue_ids": [
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59
+    ],
+    "created_at": "2025-12-15T14:27:35Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/xokkjthdwfc276sq4xu6p5imlitg0376t91q": {
+    "provider_name": "gemini",
+    "job_name": "batches/xokkjthdwfc276sq4xu6p5imlitg0376t91q",
+    "subject": "Geography",
+    "filename": "gcse-geography---guidance-for-teaching-unit-1.md",
+    "batch_index": 6,
+    "issue_ids": [
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69
+    ],
+    "created_at": "2025-12-15T14:27:37Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/1pmegamp8r6d0gff2kghirebmzqsqlnwzhw9": {
+    "provider_name": "gemini",
+    "job_name": "batches/1pmegamp8r6d0gff2kghirebmzqsqlnwzhw9",
+    "subject": "Geography",
+    "filename": "gcse-geography---guidance-for-teaching-unit-1.md",
+    "batch_index": 7,
+    "issue_ids": [
+      70,
+      71,
+      72,
+      73,
+      74
+    ],
+    "created_at": "2025-12-15T14:27:38Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/c09njyib2oc5w6zkxumhzo20uscd10waqjtd": {
+    "provider_name": "gemini",
+    "job_name": "batches/c09njyib2oc5w6zkxumhzo20uscd10waqjtd",
+    "subject": "Geography",
+    "filename": "gcse-geography---guidance-for-teaching-unit-2.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "created_at": "2025-12-15T14:27:40Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/9dr09qixxkkzogoqqfjgf69zek3a6ic5xsc8": {
+    "provider_name": "gemini",
+    "job_name": "batches/9dr09qixxkkzogoqqfjgf69zek3a6ic5xsc8",
+    "subject": "Geography",
+    "filename": "gcse-geography---guidance-for-teaching-unit-2.md",
+    "batch_index": 1,
+    "issue_ids": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "created_at": "2025-12-15T14:27:41Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/taav5t9t84ru1nhdf5o0hg7s5n4w78m8g707": {
+    "provider_name": "gemini",
+    "job_name": "batches/taav5t9t84ru1nhdf5o0hg7s5n4w78m8g707",
+    "subject": "Geography",
+    "filename": "gcse-geography---guidance-for-teaching-unit-2.md",
+    "batch_index": 2,
+    "issue_ids": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "created_at": "2025-12-15T14:27:43Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/fa9pktay11dgz5p6zvxxytkpi360nmiylnpi": {
+    "provider_name": "gemini",
+    "job_name": "batches/fa9pktay11dgz5p6zvxxytkpi360nmiylnpi",
+    "subject": "Geography",
+    "filename": "gcse-geography---guidance-for-teaching-unit-2.md",
+    "batch_index": 3,
+    "issue_ids": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "created_at": "2025-12-15T14:27:44Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/8ne7c9e433t4c0ru0o8fk2flzwbracey68rn": {
+    "provider_name": "gemini",
+    "job_name": "batches/8ne7c9e433t4c0ru0o8fk2flzwbracey68rn",
+    "subject": "Geography",
+    "filename": "gcse-geography---guidance-for-teaching-unit-2.md",
+    "batch_index": 4,
+    "issue_ids": [
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47
+    ],
+    "created_at": "2025-12-15T14:27:46Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/xgcgh80o24txteiqyl6bslh661kmph5uckmj": {
+    "provider_name": "gemini",
+    "job_name": "batches/xgcgh80o24txteiqyl6bslh661kmph5uckmj",
+    "subject": "Geography",
+    "filename": "gcse-geography---guidance-for-teaching-unit-3.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "created_at": "2025-12-15T14:27:47Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/4dyj65vdavvc8khkkw4xcu2ku9bd4ui846ik": {
+    "provider_name": "gemini",
+    "job_name": "batches/4dyj65vdavvc8khkkw4xcu2ku9bd4ui846ik",
+    "subject": "Geography",
+    "filename": "gcse-geography---guidance-for-teaching-unit-3.md",
+    "batch_index": 1,
+    "issue_ids": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "created_at": "2025-12-15T14:27:49Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/gtryqqegmnqk8dtid0s9rw5rfiu5lil3erog": {
+    "provider_name": "gemini",
+    "job_name": "batches/gtryqqegmnqk8dtid0s9rw5rfiu5lil3erog",
+    "subject": "Geography",
+    "filename": "gcse-geography---guidance-for-teaching-unit-3.md",
+    "batch_index": 2,
+    "issue_ids": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "created_at": "2025-12-15T14:27:51Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/6jzszssqn1kx1c5w3djxlgdgfpich0iurdrd": {
+    "provider_name": "gemini",
+    "job_name": "batches/6jzszssqn1kx1c5w3djxlgdgfpich0iurdrd",
+    "subject": "Geography",
+    "filename": "gcse-geography---guidance-for-teaching-unit-3.md",
+    "batch_index": 3,
+    "issue_ids": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "created_at": "2025-12-15T14:27:52Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/ysipowllt1vx8wl9f5fkia3g7df4vsj6psyf": {
+    "provider_name": "gemini",
+    "job_name": "batches/ysipowllt1vx8wl9f5fkia3g7df4vsj6psyf",
+    "subject": "Geography",
+    "filename": "gcse-geography---guidance-for-teaching-unit-3.md",
+    "batch_index": 4,
+    "issue_ids": [
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49
+    ],
+    "created_at": "2025-12-15T14:27:54Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/v6bbsret7u9jps60iydiq303nng770wiml8j": {
+    "provider_name": "gemini",
+    "job_name": "batches/v6bbsret7u9jps60iydiq303nng770wiml8j",
+    "subject": "Geography",
+    "filename": "gcse-geography---guidance-for-teaching-unit-3.md",
+    "batch_index": 5,
+    "issue_ids": [
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59
+    ],
+    "created_at": "2025-12-15T14:27:55Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/lywtt0tc6vbwh83j9wbgen01m2wir51sa7i4": {
+    "provider_name": "gemini",
+    "job_name": "batches/lywtt0tc6vbwh83j9wbgen01m2wir51sa7i4",
+    "subject": "Geography",
+    "filename": "gcse-geography---guidance-for-teaching-unit-3.md",
+    "batch_index": 6,
+    "issue_ids": [
+      60,
+      61,
+      62,
+      63,
+      64
+    ],
+    "created_at": "2025-12-15T14:27:57Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/douvcm3chtlnys3f90m5yhr5fn8m977ugnac": {
+    "provider_name": "gemini",
+    "job_name": "batches/douvcm3chtlnys3f90m5yhr5fn8m977ugnac",
+    "subject": "Geography",
+    "filename": "gcse-geography---guidance-for-teaching-unit-4.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "created_at": "2025-12-15T14:27:59Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/iag23fyli6qa9892in386322j1ompaw7bh33": {
+    "provider_name": "gemini",
+    "job_name": "batches/iag23fyli6qa9892in386322j1ompaw7bh33",
+    "subject": "Geography",
+    "filename": "gcse-geography---guidance-for-teaching-unit-4.md",
+    "batch_index": 1,
+    "issue_ids": [
+      10,
+      11,
+      12
+    ],
+    "created_at": "2025-12-15T14:28:00Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/0hyz18mck2ezivre15817zac6egtfqxhxkgm": {
+    "provider_name": "gemini",
+    "job_name": "batches/0hyz18mck2ezivre15817zac6egtfqxhxkgm",
+    "subject": "Geography",
+    "filename": "gcse-geography---guided-learning-hours-table.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0
+    ],
+    "created_at": "2025-12-15T14:28:02Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/27zmp22qx03zjjof2hitjymb2yvtzqfye4iv": {
+    "provider_name": "gemini",
+    "job_name": "batches/27zmp22qx03zjjof2hitjymb2yvtzqfye4iv",
+    "subject": "Geography",
+    "filename": "gcse-geography---option-evening-flyer.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1
+    ],
+    "created_at": "2025-12-15T14:28:04Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/xc0ksbrz6npof53n5bureys4v2osg0xw9oli": {
+    "provider_name": "gemini",
+    "job_name": "batches/xc0ksbrz6npof53n5bureys4v2osg0xw9oli",
+    "subject": "Geography",
+    "filename": "gcse-geography---unit-1-our-physical-and-human-world.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "created_at": "2025-12-15T14:28:06Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/ssvt4xylvolkvf91iex01oni8xagduzgbmny": {
+    "provider_name": "gemini",
+    "job_name": "batches/ssvt4xylvolkvf91iex01oni8xagduzgbmny",
+    "subject": "Geography",
+    "filename": "gcse-geography---unit-1-our-physical-and-human-world.md",
+    "batch_index": 1,
+    "issue_ids": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "created_at": "2025-12-15T14:28:08Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/ej9l9xj8np3omee5tlzy5l27p9bn96u4f8ty": {
+    "provider_name": "gemini",
+    "job_name": "batches/ej9l9xj8np3omee5tlzy5l27p9bn96u4f8ty",
+    "subject": "Geography",
+    "filename": "gcse-geography---unit-1-our-physical-and-human-world.md",
+    "batch_index": 2,
+    "issue_ids": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "created_at": "2025-12-15T14:28:10Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/ex86jludc2o4mqe3nougbx985lbegx1raowz": {
+    "provider_name": "gemini",
+    "job_name": "batches/ex86jludc2o4mqe3nougbx985lbegx1raowz",
+    "subject": "Geography",
+    "filename": "gcse-geography---unit-1-our-physical-and-human-world.md",
+    "batch_index": 3,
+    "issue_ids": [
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ],
+    "created_at": "2025-12-15T14:28:12Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/mpm108lbdchtvu76bemkx91o20d4ob37ny78": {
+    "provider_name": "gemini",
+    "job_name": "batches/mpm108lbdchtvu76bemkx91o20d4ob37ny78",
+    "subject": "Geography",
+    "filename": "gcse-geography---unit-1-our-physical-and-human-world.md",
+    "batch_index": 4,
+    "issue_ids": [
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47
+    ],
+    "created_at": "2025-12-15T14:28:13Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/lthaxp4yg5yeosmhhlxz1xtief63f4ukfe4n": {
+    "provider_name": "gemini",
+    "job_name": "batches/lthaxp4yg5yeosmhhlxz1xtief63f4ukfe4n",
+    "subject": "Geography",
+    "filename": "gcse-geography---unit-3-our-dynamic-and-diverse-world.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "created_at": "2025-12-15T14:28:15Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/c462qjpxno2hp0xl978u1k5m0hdiy2v4ymdy": {
+    "provider_name": "gemini",
+    "job_name": "batches/c462qjpxno2hp0xl978u1k5m0hdiy2v4ymdy",
+    "subject": "Geography",
+    "filename": "gcse-geography---unit-3-our-dynamic-and-diverse-world.md",
+    "batch_index": 1,
+    "issue_ids": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "created_at": "2025-12-15T14:28:17Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/8l0tlfvstuesubt8a33ejxol9fdgwkmxovyt": {
+    "provider_name": "gemini",
+    "job_name": "batches/8l0tlfvstuesubt8a33ejxol9fdgwkmxovyt",
+    "subject": "Geography",
+    "filename": "gcse-geography---unit-3-our-dynamic-and-diverse-world.md",
+    "batch_index": 2,
+    "issue_ids": [
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28
+    ],
+    "created_at": "2025-12-15T14:28:18Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/qjzzr0scrnxqpqidhq7c9ekqsqfz0s7r9sqf": {
+    "provider_name": "gemini",
+    "job_name": "batches/qjzzr0scrnxqpqidhq7c9ekqsqfz0s7r9sqf",
+    "subject": "Geography",
+    "filename": "overview-of-consultation-findings.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "created_at": "2025-12-15T14:28:19Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/p22o5gynji5ddk3yjclb5xgqilaxv8uganza": {
+    "provider_name": "gemini",
+    "job_name": "batches/p22o5gynji5ddk3yjclb5xgqilaxv8uganza",
+    "subject": "Geography",
+    "filename": "overview-of-consultation-findings.md",
+    "batch_index": 1,
+    "issue_ids": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "created_at": "2025-12-15T14:28:21Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/0bmfapg6v3e9n95drmm6017dztfemtwuv4qp": {
+    "provider_name": "gemini",
+    "job_name": "batches/0bmfapg6v3e9n95drmm6017dztfemtwuv4qp",
+    "subject": "Geography",
+    "filename": "overview-of-consultation-findings.md",
+    "batch_index": 2,
+    "issue_ids": [
+      20,
+      21,
+      22,
+      23
+    ],
+    "created_at": "2025-12-15T14:28:22Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/yslknrat5b9w8am47ka3ka9a96lv1aks64zn": {
+    "provider_name": "gemini",
+    "job_name": "batches/yslknrat5b9w8am47ka3ka9a96lv1aks64zn",
+    "subject": "Geography",
+    "filename": "wjec-gcse-geography-specification.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "created_at": "2025-12-15T14:28:24Z",
+    "status": "pending",
+    "error_message": null
+  },
+  "batches/uj8fam5cvivo7hkecvgheodwkxurvombn420": {
+    "provider_name": "gemini",
+    "job_name": "batches/uj8fam5cvivo7hkecvgheodwkxurvombn420",
+    "subject": "Geography",
+    "filename": "wjec-gcse-geography-unit-2-external-nea-handbook.md",
+    "batch_index": 0,
+    "issue_ids": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "created_at": "2025-12-15T14:28:27Z",
+    "status": "pending",
     "error_message": null
   }
 }

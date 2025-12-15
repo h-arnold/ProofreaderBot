@@ -65,7 +65,7 @@
           5,
           6
         ],
-        "total_issues": 10
+        "total_issues": 2
       },
       "gcse-business---guidance-for-teaching-unit-2.md": {
         "completed_batches": [
@@ -122,7 +122,7 @@
           1,
           2
         ],
-        "total_issues": 3
+        "total_issues": 10
       },
       "gcse-business---unit-3-business-strategies-for-success.md": {
         "completed_batches": [
@@ -630,9 +630,10 @@
       "wjec-gcse-english-language-and-literature-single-and-double-award-specification.md": {
         "completed_batches": [
           0,
-          1
+          1,
+          2
         ],
-        "total_issues": 10
+        "total_issues": 3
       }
     },
     "Dance": {
@@ -664,22 +665,27 @@
     "Food-and-Nutrition": {
       "gcse-food-and-nutrition---delivery-guide.md": {
         "completed_batches": [
+          0,
           1
         ],
-        "total_issues": 9
+        "total_issues": 10
       },
       "gcse-food-and-nutrition---guidance-for-teaching-unit-2.md": {
         "completed_batches": [
+          0,
+          1,
           2,
           3
         ],
-        "total_issues": 7
+        "total_issues": 10
       },
       "gcse-food-and-nutrition---guidance-for-teaching-unit-3.md": {
         "completed_batches": [
+          0,
+          1,
           2
         ],
-        "total_issues": 4
+        "total_issues": 10
       },
       "gcse-food-and-nutrition---option-evening-flyer.md": {
         "completed_batches": [
@@ -700,36 +706,44 @@
       "gcse-food-and-nutrition---unit-2-food-investigation.md": {
         "completed_batches": [
           0,
+          1,
+          2,
           3
         ],
-        "total_issues": 3
+        "total_issues": 10
       },
       "gcse-food-and-nutrition---unit-2-non-exam-assessment-pack.md": {
         "completed_batches": [
           0,
+          1,
           2,
           3
         ],
-        "total_issues": 3
+        "total_issues": 10
       },
       "gcse-food-and-nutrition---unit-3-food-and-nutrition-in-action.md": {
         "completed_batches": [
+          0,
           1,
           2,
           3,
           4,
+          5,
           6
         ],
-        "total_issues": 5
+        "total_issues": 10
       },
       "gcse-food-and-nutrition---unit-3-non-exam-assessment-pack.md": {
         "completed_batches": [
           0,
           1,
+          2,
           3,
-          5
+          4,
+          5,
+          6
         ],
-        "total_issues": 10
+        "total_issues": 5
       },
       "overview-of-consultation-findings.md": {
         "completed_batches": [
@@ -741,10 +755,11 @@
       },
       "techniques-summary.md": {
         "completed_batches": [
+          0,
           1,
           2
         ],
-        "total_issues": 4
+        "total_issues": 10
       },
       "unit-2---work-smarter-not-harder.md": {
         "completed_batches": [
@@ -754,7 +769,49 @@
       },
       "unit-3---upskilling.md": {
         "completed_batches": [
+          0,
           1
+        ],
+        "total_issues": 10
+      },
+      "appendix-a-chart.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 3
+      },
+      "gcse-food-and-nutrition---faqs.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 1
+      },
+      "gcse-food-and-nutrition---guidance-for-teaching-unit-1.md": {
+        "completed_batches": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "total_issues": 5
+      },
+      "resources-for-new-gcse.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 6
+      },
+      "unit-3---presenting-food-outcomes.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 10
+      },
+      "wjec-gcse-food-and-nutrition-specification.md": {
+        "completed_batches": [
+          0
         ],
         "total_issues": 10
       }
@@ -762,18 +819,21 @@
     "French": {
       "gcse-french---guidance-for-teaching-unit-1.md": {
         "completed_batches": [
-          0
+          0,
+          1
         ],
-        "total_issues": 10
+        "total_issues": 2
       },
       "gcse-french---guidance-for-teaching-unit-3.md": {
         "completed_batches": [
-          0
+          0,
+          1
         ],
-        "total_issues": 10
+        "total_issues": 8
       },
       "gcse-french---unit-1-oracy.md": {
         "completed_batches": [
+          0,
           1,
           2,
           3
@@ -801,6 +861,7 @@
       "wjec-gcse-french-specification.md": {
         "completed_batches": [
           0,
+          1,
           2,
           3,
           4,
@@ -817,7 +878,33 @@
           15,
           16
         ],
-        "total_issues": 9
+        "total_issues": 10
+      },
+      "gcse-french---delivery-guide.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 5
+      },
+      "gcse-french---guidance-for-teaching-unit-4.md": {
+        "completed_batches": [
+          0,
+          1,
+          2
+        ],
+        "total_issues": 10
+      },
+      "gcse-french--faqs.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 5
+      },
+      "overview-of-consultation-findings.md": {
+        "completed_batches": [
+          0
+        ],
+        "total_issues": 10
       }
     },
     "Geography": {

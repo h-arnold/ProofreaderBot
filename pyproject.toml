@@ -31,6 +31,15 @@ dev = [
     # Ruff is the fast linter + autofixer; we install it as a dev tool
     "ruff>=0.13.0",
 ]
+docs = [
+    "jupyter>=1.1.1",
+    "mkdocs>=1.6.1",
+    "mkdocs-jupyter>=0.25.1",
+    "mkdocs-material>=9.7.0",
+    "nbconvert>=7.16.6",
+    "pandas>=2.3.3",
+    "plotly>=6.5.0",
+]
 
 [tool.ruff]
 # Keep formatting similar to Black defaults used across the project
