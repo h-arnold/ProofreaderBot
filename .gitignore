@@ -19,6 +19,8 @@ pr-progress.log
 # This one is because I typed out my nohup command wrong but didn't want to stop the job.
 2 
 
+# Mkdocs site renders. This happens as a GitHub action so no need to push taht.
+site
 
 # LLM categoriser artifacts
 data/language-ignore
