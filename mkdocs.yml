@@ -42,7 +42,7 @@ plugins:
   - mkdocs-jupyter:
       execute: false
       include_source: true
-      show_input: False
+      show_input: false
 
 markdown_extensions:
   - admonition
