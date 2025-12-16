@@ -25,6 +25,7 @@ plugins:
   - mkdocs-jupyter:
       execute: false
       include_source: true
+      show_input: False
 
 markdown_extensions:
   - admonition
