@@ -1,3 +1,3 @@
 issue_id,page_number,issue,highlighted_context,pass_code,error_category,confidence_score,reasoning
-0,2,Pigeon,...Broken Mirror* Kalhan  *Foster* Keegan ***Pigeon** English* Kelman *Orange Boy* Lawrence  ...,PassCode.LTC,ErrorCategory.FALSE_POSITIVE,100,The word 'Pigeon' is correctly spelled as part of the book title 'Pigeon English'.
-1,3,Mah,"...Cinderella                        | Yen **Mah**     | | Everything, Everything         ...",PassCode.LTC,ErrorCategory.FALSE_POSITIVE,100,The name 'Mah' is correctly spelled as part of the author's name 'Yen Mah'.
+0,3,Pigeon,...Broken Mirror* Kalhan  *Foster* Keegan ***Pigeon** English* Kelman *Orange Boy* Lawrence  ...,PassCode.LTC,ErrorCategory.FALSE_POSITIVE,100,"The word 'Pigeon' is correctly used as part of the proper noun 'Pigeon English', which is a book title."
+1,4,Mah,"...erella</i>                        | Yen **Mah**     | | <i>Everything, Everything</i>  ...",PassCode.LTC,ErrorCategory.FALSE_POSITIVE,100,"The word 'Mah' is correctly used as a surname, forming part of the author's proper name 'Yen Mah'."

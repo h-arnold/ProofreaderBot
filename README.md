@@ -200,6 +200,10 @@ uv run python scripts/process_all_subjects.py --root ./MyDocuments --state-file 
 
 The script discovers all subject directories in the Documents folder, processes each one using `main.py --post-process-only`, and commits the changes to a dedicated branch. If interrupted (e.g., server restart), simply run the script again to continue from where it left off.
 
+## Notebooks
+
+- Starter data overview notebook: [notebooks/data_overview.ipynb](notebooks/data_overview.ipynb) — loads the main CSVs, runs EDA, shows an example join between `document_stats.csv` and `document_stats-files.csv`, and produces a few interactive plots.
+
 ## Page utilities
 
 The `page_utils.py` module provides utilities for working with page markers in Markdown documents. After post-processing, Markdown files contain page markers in the format `{N}------------------------------------------------` where N is the page number.
