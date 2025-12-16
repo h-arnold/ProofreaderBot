@@ -4179,7 +4179,6 @@ dependencies = [
     { name = "isort" },
     { name = "json-repair" },
     { name = "language-tool-python" },
-    { name = "marker-pdf" },
     { name = "mistralai" },
     { name = "pre-commit" },
     { name = "pydantic" },
@@ -4204,6 +4203,9 @@ docs = [
     { name = "pandas" },
     { name = "plotly" },
 ]
+pdf = [
+    { name = "marker-pdf" },
+]
 
 [package.metadata]
 requires-dist = [
@@ -4213,7 +4215,6 @@ requires-dist = [
     { name = "isort", specifier = ">=7.0.0" },
     { name = "json-repair", specifier = ">=0.53.0" },
     { name = "language-tool-python", specifier = ">=2.9.5" },
-    { name = "marker-pdf", git = "https://github.com/datalab-to/marker.git" },
     { name = "mistralai", specifier = ">=1.9.11" },
     { name = "pre-commit", specifier = ">=4.3.0" },
     { name = "pydantic", specifier = ">=2.12.4" },
@@ -4238,6 +4239,7 @@ docs = [
     { name = "pandas", specifier = ">=2.3.3" },
     { name = "plotly", specifier = ">=6.5.0" },
 ]
+pdf = [{ name = "marker-pdf", git = "https://github.com/datalab-to/marker.git" }]
 
 [[package]]
 name = "xlsxwriter"
