@@ -9,7 +9,6 @@ dependencies = [
     "google-genai>=1.49.0",
     "json-repair>=0.53.0",
     "language-tool-python>=2.9.5",
-    "marker-pdf",
     "pyspellchecker>=0.8.3",
     "python-dotenv>=1.2.1",
     "requests>=2.32.5",
@@ -39,6 +38,12 @@ docs = [
     "nbconvert>=7.16.6",
     "pandas>=2.3.3",
     "plotly>=6.5.0",
+]
+
+# Optional dependencies for non-core workflows
+pdf = [
+    # Marker (PDF conversion) is large; install this group only when you need to convert PDFs
+    "marker-pdf",
 ]
 
 [tool.ruff]

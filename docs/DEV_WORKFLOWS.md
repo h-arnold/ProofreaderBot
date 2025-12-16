@@ -24,6 +24,10 @@ uv run python main.py --post-process-only --post-process-workers 4
 ```bash
 uv run python main.py --subjects Geography --post-process
 ```
+- Optional: install PDF conversion extras when you need them (this installs `marker-pdf`):
+```bash
+uv sync --only-group pdf
+```
 
 ## Interactive Debugging
 
