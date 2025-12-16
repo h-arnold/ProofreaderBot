@@ -12,8 +12,9 @@ theme:
 
 nav:
   - Home: index.md
-  - Methodology: methodology.md
-    - Issue Categories: issue_categories.md
+  - Methodology: 
+      - Methodology: methodology.md
+      - Issue Categories: issue_categories.md
   - Data: data.md
   - Notebooks:
       - Overview: notebooks/index.md
