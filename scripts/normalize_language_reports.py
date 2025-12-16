@@ -40,7 +40,6 @@ OUTPUT_COLUMNS = [
     "Error Category",
     "Confidence Score",
     "Reasoning",
-    "Likely False Positive",
 ]
 
 
@@ -117,7 +116,7 @@ def normalise_row(row: MutableMapping[str, str]) -> dict[str, str]:
 
     context = lower_row.get("context") or lower_row.get("highlighted_context", "")
 
-    return {
+    result: dict[str, str] = {
         "Subject": subject,
         "File Name": filename,
         "Document Name": document_name,
@@ -137,10 +136,14 @@ def normalise_row(row: MutableMapping[str, str]) -> dict[str, str]:
         "Confidence Score": normalise_string(lower_row.get("confidence_score"))
         or normalise_string(lower_row.get("confidence score")),
         "Reasoning": normalise_string(lower_row.get("reasoning")),
-        "Likely False Positive": normalise_string(
-            lower_row.get("likely false positive")
-        ),
     }
+
+    likely_fp = normalise_string(lower_row.get("likely false positive"))
+    if likely_fp and likely_fp.strip().upper() == "TRUE":
+        # Force category to False Positive when the flag is set
+        result["Error Category"] = "False Positive"
+
+    return result
 
 
 def iter_rows(path: Path) -> Iterable[dict[str, str]]:
