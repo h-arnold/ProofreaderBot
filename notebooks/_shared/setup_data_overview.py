@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-import sys
 from importlib import import_module
 from pathlib import Path
 from typing import Any, Sequence
@@ -58,14 +57,16 @@ def load_document_stats() -> tuple[Any, Any]:
     return issues, files
 
 
-def print_environment_info() -> None:
-    print("Python:", sys.version.splitlines()[0])
-    print("Pandas:", pd.__version__)
-    print("Plotly:", plotly.__version__)
-    print("Repo root:", REPO_ROOT)
-    print("Data dir:", DATA_DIR)
+# Commented out debugging information. Can re-add if something breaks
+
+# def print_environment_info() -> None:
+#    print("Python:", sys.version.splitlines()[0])
+#    print("Pandas:", pd.__version__)
+#    print("Plotly:", plotly.__version__)
+#    print("Repo root:", REPO_ROOT)
+#    print("Data dir:", DATA_DIR)
 
 
-print_environment_info()
+# print_environment_info()
 issues, files = load_document_stats()
-print("Loaded issues:", issues.shape, "files:", files.shape)
+# print("Loaded issues:", issues.shape, "files:", files.shape)
