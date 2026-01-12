@@ -32,7 +32,7 @@ jobs:
           enable-cache: true
 
       - name: Sync docs dependencies
-        run: uv sync --frozen --group docs
+        run: uv sync
 
       - name: Execute notebooks
         env:
