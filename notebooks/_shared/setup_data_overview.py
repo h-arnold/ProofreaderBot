@@ -6,6 +6,8 @@ from importlib import import_module
 from pathlib import Path
 from typing import Any, Sequence
 
+## Imports library to display markdown from code cell outputs
+
 
 def require_modules(names: Sequence[str], group: str = "docs") -> dict[str, Any]:
     modules: dict[str, Any] = {}
