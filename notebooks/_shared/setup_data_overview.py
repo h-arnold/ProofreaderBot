@@ -49,14 +49,19 @@ DATA_FILES = DATA_DIR / "document-stats-files.csv"
 DATA_ISSUES = DATA_DIR / "normalised-language-reports.csv"
 
 
-def load_document_stats() -> tuple[Any, Any]:
+def load_document_stats() -> tuple[Any, Any, Any]:
     missing_files = [path for path in (DATA_ISSUES, DATA_FILES) if not path.exists()]
     if missing_files:
         names = ", ".join(str(path) for path in missing_files)
         raise FileNotFoundError(f"Required cleansed data files are missing: {names}.")
-    issues = pd.read_csv(DATA_ISSUES)
+    # Load the full issues dataframe (including parsing errors and false positives)
+    issues_all = pd.read_csv(DATA_ISSUES)
     files = pd.read_csv(DATA_FILES)
-    return issues, files
+    # Create the primary `issues` dataframe by removing False Positives and Parsing Errors
+    issues = issues_all[
+        ~issues_all["Issue Category"].isin(["False Positive", "Parsing Error"])
+    ].copy()
+    return issues, files, issues_all
 
 
 # Commented out debugging information. Can re-add if something breaks
@@ -70,5 +75,6 @@ def load_document_stats() -> tuple[Any, Any]:
 
 
 # print_environment_info()
-issues, files = load_document_stats()
+issues, files, issues_all = load_document_stats()
 # print("Loaded issues:", issues.shape, "files:", files.shape)
+# `issues_all` contains every reported issue, including false positives and parsing errors
