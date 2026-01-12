@@ -4174,12 +4174,18 @@ version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
     { name = "beautifulsoup4" },
-    { name = "docling" },
     { name = "google-genai" },
     { name = "isort" },
     { name = "json-repair" },
+    { name = "jupyter" },
     { name = "language-tool-python" },
     { name = "mistralai" },
+    { name = "mkdocs" },
+    { name = "mkdocs-jupyter" },
+    { name = "mkdocs-material" },
+    { name = "nbconvert" },
+    { name = "pandas" },
+    { name = "plotly" },
     { name = "pre-commit" },
     { name = "pydantic" },
     { name = "pyspellchecker" },
@@ -4194,28 +4200,26 @@ dev = [
     { name = "pytest" },
     { name = "ruff" },
 ]
-docs = [
-    { name = "jupyter" },
-    { name = "mkdocs" },
-    { name = "mkdocs-jupyter" },
-    { name = "mkdocs-material" },
-    { name = "nbconvert" },
-    { name = "pandas" },
-    { name = "plotly" },
-]
 pdf = [
+    { name = "docling" },
     { name = "marker-pdf" },
 ]
 
 [package.metadata]
 requires-dist = [
     { name = "beautifulsoup4", specifier = ">=4.14.2" },
-    { name = "docling", specifier = ">=2.63.0" },
     { name = "google-genai", specifier = ">=1.49.0" },
     { name = "isort", specifier = ">=7.0.0" },
     { name = "json-repair", specifier = ">=0.53.0" },
+    { name = "jupyter", specifier = ">=1.1.1" },
     { name = "language-tool-python", specifier = ">=2.9.5" },
     { name = "mistralai", specifier = ">=1.9.11" },
+    { name = "mkdocs", specifier = ">=1.6.1" },
+    { name = "mkdocs-jupyter", specifier = ">=0.25.1" },
+    { name = "mkdocs-material", specifier = ">=9.7.0" },
+    { name = "nbconvert", specifier = ">=7.16.6" },
+    { name = "pandas", specifier = ">=2.3.3" },
+    { name = "plotly", specifier = ">=6.5.0" },
     { name = "pre-commit", specifier = ">=4.3.0" },
     { name = "pydantic", specifier = ">=2.12.4" },
     { name = "pyspellchecker", specifier = ">=0.8.3" },
@@ -4230,16 +4234,10 @@ dev = [
     { name = "pytest", specifier = ">=8.4.2" },
     { name = "ruff", specifier = ">=0.13.0" },
 ]
-docs = [
-    { name = "jupyter", specifier = ">=1.1.1" },
-    { name = "mkdocs", specifier = ">=1.6.1" },
-    { name = "mkdocs-jupyter", specifier = ">=0.25.1" },
-    { name = "mkdocs-material", specifier = ">=9.7.0" },
-    { name = "nbconvert", specifier = ">=7.16.6" },
-    { name = "pandas", specifier = ">=2.3.3" },
-    { name = "plotly", specifier = ">=6.5.0" },
+pdf = [
+    { name = "docling", specifier = ">=2.63.0" },
+    { name = "marker-pdf", git = "https://github.com/datalab-to/marker.git" },
 ]
-pdf = [{ name = "marker-pdf", git = "https://github.com/datalab-to/marker.git" }]
 
 [[package]]
 name = "xlsxwriter"

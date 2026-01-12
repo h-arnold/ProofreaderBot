@@ -15,8 +15,14 @@ dependencies = [
     "pystache>=0.5.0",
     "pydantic>=2.12.4",
     "mistralai>=1.9.11",
+    "jupyter>=1.1.1",
+    "mkdocs>=1.6.1",
+    "mkdocs-jupyter>=0.25.1",
+    "mkdocs-material>=9.7.0",
+    "nbconvert>=7.16.6",
+    "pandas>=2.3.3",
+    "plotly>=6.5.0",
     "isort>=7.0.0",
-    "docling>=2.63.0",
     "pre-commit>=4.3.0",
 ]
 
@@ -30,20 +36,12 @@ dev = [
     # Ruff is the fast linter + autofixer; we install it as a dev tool
     "ruff>=0.13.0",
 ]
-docs = [
-    "jupyter>=1.1.1",
-    "mkdocs>=1.6.1",
-    "mkdocs-jupyter>=0.25.1",
-    "mkdocs-material>=9.7.0",
-    "nbconvert>=7.16.6",
-    "pandas>=2.3.3",
-    "plotly>=6.5.0",
-]
 
 # Optional dependencies for non-core workflows
 pdf = [
     # Marker (PDF conversion) is large; install this group only when you need to convert PDFs
     "marker-pdf",
+    "docling>=2.63.0",
 ]
 
 [tool.ruff]
