@@ -135,7 +135,7 @@ Key environment variables used by the LLM integrations:
 - `LLM_PRIMARY`, `LLM_FALLBACK`
 - `LLM_CATEGORISER_BATCH_SIZE`, `LLM_CATEGORISER_MAX_RETRIES`
 
-Refer to the README in `docs/developer/LLM_PROVIDER_SPEC.md` for the full list and behavioural details.
+Refer to `docs/developer/LLM_PROVIDER_SPEC.md` for the full list and behavioural details.
 
 ## Known limitations
 
