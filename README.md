@@ -1,104 +1,59 @@
 # WJEC Document Scraper
 
-A command-line tool that:
+A command-line pipeline for bulk acquisition and multi-pass proofreading of WJEC GCSE "Made for Wales" PDF documents. The project automates document collection, conversion to Markdown, language checks, and LLM-assisted review so large document sets can be analysed consistently and at scale.
 
- - Scrapes WJEC GCSE "Made-for-Wales" qualification pages for linked PDF documents.
- - Converts PDFs to Markdown for easier reading and processing.
- - Uses LanguageTool to check converted documents for spelling and grammar issues, with multi-language support for French and German (Spanish support coming soon).
- - Uses LLMs to help categorise and prioritise issues, and to assist with advanced proofreading.
+## What this tool does
 
-## Why does this tool need to exist?
+- **Scrapes and downloads PDFs** from the WJEC qualification pages.
+- **Normalises and organises files** into subject-specific folders.
+- **Converts PDFs to Markdown** using high-fidelity converters (default: Marker).
+- **Runs automated language checks** with LanguageTool to identify spelling and grammar issues.
+- **Performs LLM-based review passes** to categorise issues, de-duplicate false positives, and catch contextual errors.
+- **Exports structured outputs** (CSV reports) for auditing and analysis.
 
-[See the comment thread on LinkedIn that started all of this off.](https://www.linkedin.com/feed/update/urn:li:ugcPost:7386346400038682624?commentUrn=urn%3Ali%3Acomment%3A%28ugcPost%3A7386346400038682624%2C7386507884081270784%29&dashCommentUrn=urn%3Ali%3Afsd_comment%3A%287386507884081270784%2Curn%3Ali%3AugcPost%3A7386346400038682624%29)
+## Technology stack
 
-Because it's clear that the WJEC do not have any quality assurance process for their qualification materials, and teachers in Wales are left to pick up the pieces.
+The project combines conventional scraping and text processing with LLM-assisted review:
 
-At the moment, no one with any power to do anything seems to care. It's too easy to dismiss concerns as isolated incidents. I intend to change that by demonstrating this is a systemic issue across *all* WJEC GCSE Made-for-Wales qualification materials—and I will make some pretty graphs to prove it.
+- **Python 3.12** runtime with `uv` for dependency management and execution.
+- **Requests + BeautifulSoup** style HTML parsing for PDF discovery.
+- **Marker** (default) or **Docling** for PDF-to-Markdown conversion with OCR support.
+- **LanguageTool** via `language-tool-python` for rule-based spelling and grammar checks.
+- **Gemini and Mistral APIs** for LLM-assisted categorisation and proofreading passes.
+- **Pydantic models** (notably `LanguageIssue`) to validate and normalise issue payloads.
+- **json-repair** integration to recover malformed JSON responses before validation.
 
-Speaking of pretty graphs, here's a sneak preview of what's to come:
+## Multi-pass proofreading pipeline
 
-Leaner count so far: <img src="badges/leaners.svg" alt="Leaner count" />
-American spellings found: <img src="badges/ize-suffixes.svg" alt="Ize suffixes count" />
+The workflow is intentionally staged so each pass refines the results of the previous one:
 
-### Why count the word 'Leaner'?
+1. **Acquisition pass**
+   - Scrape subject pages and download linked PDFs into `Documents/<Subject>/`.
+2. **Conversion pass**
+   - Convert PDFs to Markdown, preserving layout cues and page markers for downstream processing.
+3. **LanguageTool pass**
+   - Run spelling/grammar checks and create a baseline issue list.
+4. **LLM categorisation pass**
+   - Use LLMs to filter false positives, classify issues, and prioritise review effort.
+   - LLM outputs are repaired with `repair_json` before being parsed and validated.
+   - The `LanguageIssue` model enforces required fields, normalises values, and rejects partial LLM payloads to keep the results consistent.
+5. **LLM proofreading pass**
+   - Review document text in small page chunks to catch contextual, consistency, and factual errors.
+   - Outputs are validated against the same `LanguageIssue` schema to keep issue metadata aligned with earlier passes.
+6. **Reporting pass**
+   - Emit per-document CSV reports for analysis and aggregation.
 
-'Leaner' and 'leaners' are common misspellings of 'learner' and 'learners' in educational documents. 'Learners' are referred to often; 'leaners' rarely. This makes it an easy metric for whether basic proofreading has taken place—one of the first things someone should do on receiving a draft is use `Ctrl` + `F` to find and replace any instances of 'leaner' with 'learner'.
+This layered approach reduces noise from OCR artefacts while making the remaining issues easier to triage.
 
-## Progress on the Process
+## Architecture at a glance
 
-This project has been designed to use a multi-pass approach to document processing, with each subsequent pass building on the previous one to gradually improve the quality of the documents.
-
-### 1. Document Acquisition and Processing
-
-1. ✅ [COMPLETE] Scrape all WJEC GCSE Made-for-Wales qualification pages for linked PDF documents.
-2. ⏳ [IN PROGRESS] Convert PDFs to Markdown format for easier reading and processing. See the [processedDocuments](https://github.com/h-arnold/WjecDocumentScraper/tree/processedDocuments) for progress. 
-
-Third time's the charm! After experimenting with a few different converters, I've settled on [Marker + LLM (Gemini 2.5 Flash Lite)](https://github.com/datalab-to/marker) as it gives the most reliable output with the fewest errors. Previous attempts resulted in too many false positives due to conversion errors.
-
-### 2. Multi-pass copyediting and proofreading
-
-3. ✅ [COMPLETE]  **Do the equivalent for running a spellcheck on all the documents**: Use [Language Tool](https://languagetool.org/) to check the converted documents for spelling and grammar issues and create an ignore and exception list to reduce false positives. 
-	- Ignore list created. Still lots of false positives but it is now skimmable to find the real issues.
-4. ✅ [COMPLETE] **Get Gemini whittle down the false positives and categorise the issues**: Use LLMs to categorise the issues identified in 3. 
-	- I will probably run this step again once the final conversion to markdown is complete.
-5. ⏳ [IN PROGRESS]**Get Gemini to pretend to be a proofreader, focusing on small details**: Use LLMs to proofread documents in small chunks (maximum 10 pages to reduce hallucinations) to spot issues missed by traditional grammar and spell checkers like incorrect homophones, missing words, and contextually incorrect phrases.
- - With 250 free requests to Gemini 2.5. Flash per day, this will take a while. I experimented with other Mistral models (who also offer a free tier) but I found that it was too strict on some rules and too lax on others. Gemini has clearly been well trained!
- - To maintain accuracy and minimise the chances of hallucinations, each document is broken into 3-page chunks. While slow, my experiments show that any more than that and Gemini Flash starts missing certain details.
-6. ⏳ [IN PROGRESS] Use LLMs to check for factual errors.
-
-### 3. Consistency Checking
-
-7. ❌ [NOT STARTED] Check style guide adherence. I don't have access to the WJEC style guide, so I will need to settle for internal consistency checks instead. 
-8. ❌ [NOT STARTED] Use LLMs to check for factual consistency *within documents*. E.g. all Unit weightings are consistent within the document.
-9. ❌ [NOT STARTED] **Stretch Goal**: Construct a 'truth document' by aggregating the data from all the documents for a subject and identify inconsistencies between documents for the same subject.
-
-### 4. The pretty graphs
-
-10. ⏳ [IN PROGRESS] Take the eventual ~~json~~ csv file containing the fully cleansed data and create some pretty graphs to illustrate the issues found.
-11. ❌ [NOT STARTED] Send this report to the Welsh Education Minister and the national press.
-
-## Limitations
-
-The goal of this project is to shine a light on the absence of quality assurance at the WJEC. It is not designed to be a fully comprehensive copy-editing solution, nor will it come close in accuracy or quality of a proper, human-led proofreading process.
-
-### False Positives
-
-There will inevitably be some false positives. These can come from PDF conversion errors being mistaken as real errors (this is the most common), or from the LLM misinterpreting the context of a sentence. I've tried to keep these to a minimum, and when I'm done, I'll randomly sample some of the errors and verify them to estimate a false positive percentage and use that to adjust the final counts.
-
-### False Negatives
-
-This tool doesn't currently check images in the documents. There are errors in some of them. See *'Potfolio'* from one of the Art documents below:
-
-![](Documents/Art-and-Design/markdown/_page_6_Figure_3.jpeg)
-
- Thankfully(?) there are *so* many errors across the different documents that missing a few does not affect the overall picture. Remember, for public-facing, national documents, the only acceptable number of errors is zero.
-
-False negatives will certainly result from:
-
- - **The PDF Conversion Process**: [Marker](https://github.com/datalab-to/marker) is great, but it combines words, misses hyphens, misinterprets characters, and breaks some tables. As a result, I've had to filter out any of those types of errors, whether they exist or not.
- - **Lack of specialist knowledge**: I'm reliant on LLMs to correctly identify specialist terminology. I don't have the skills, subject knowledge or time to verify each item in each subject. That is what the WJEC should be doing.
-
- ### Code Quality
-
- This project is a throwaway project to prove a point and hopefully inspire meaningful change.
-
- Like the Made-for-Wales GCSEs, this code has been hastily cobbled together without any thoughts for long-term maintainability. Thankfully, this is a personal passion project, not a set of national qualifications that the students of Wales will all be studying for the next few years.
-
- The project is simple enough that it's easier to ask Claude/Codex/Gemini to generate the code and for me to not care too much about whether it's duplicated. I haven't reached the point where LLMs have weaved an unintelligible web of code, and I'm hoping I'll be done before I do.
-
- If you want to contribute or adjust the code, I suggest you [heed the following warning](https://en.wikipedia.org/wiki/Long-term_nuclear_waste_warning_messages#Message):
-
- 
-> This ~~place~~ code is not a place of honor... no highly esteemed ~~deed~~ code is commemorated here... nothing valued is here.<br>
-> <br>
-> What is here was dangerous and repulsive to us. This message is a warning about danger.<br>
-> <br>
-> The danger is in a particular location... it increases towards ~~a center~~ `./src`...<br>
-
-
-# Technical Details
-
-Command-line tool for downloading PDF documents exposed on the WJEC GCSE Made-for-Wales qualification pages. The scraping logic lives in `src/scraper/__init__.py` and can be reused programmatically, while `main.py` provides a friendly CLI.
+- **CLI entry point:** `main.py` (delegates to `src/cli`)
+- **Scraper:** `src/scraper/__init__.py` (subject list, URL discovery, file naming)
+- **Post-processing:** `src/postprocessing/__init__.py` (organises PDFs, converts to Markdown)
+- **Converters:** `src/converters/converters.py` (Marker and Docling backends)
+- **Language checking:** `src/language_check/language_check.py`
+- **LLM review modules:** `src/llm_review/` (categoriser, proofreader, batch orchestration)
+- **Reporting utilities:** `src/utils/page_utils.py`, `scripts/document_stats.py`
 
 ## Setup
 
@@ -108,197 +63,89 @@ Dependencies are managed with [uv](https://github.com/astral-sh/uv).
 uv sync
 ```
 
-## CLI Usage
+## CLI usage
 
-List every subject that the scraper knows about:
+List available subjects:
 
 ```bash
 uv run python main.py --list-subjects
 ```
 
-Download all configured subjects into the default `Documents/` folder:
+Download all subjects:
 
 ```bash
 uv run python main.py
 ```
 
-Download a subset of subjects into a custom directory:
+Download selected subjects to a custom location:
 
 ```bash
-uv run python main.py --subjects "Art and Design" French --output ./wjec-pdfs
+uv run python main.py --subjects "Art and Design" French --root ./wjec-pdfs
 ```
 
-Preview what would be downloaded without touching the filesystem:
+Preview downloads without writing files:
 
 ```bash
 uv run python main.py --subjects Geography --dry-run
 ```
 
-All files are grouped by subject using a filesystem-safe folder name, and duplicate filenames are handled automatically by appending numeric suffixes where required.
+## Post-processing downloads
 
-### Post-processing downloads
+The CLI can organise PDFs into `pdfs/`, convert them to `markdown/`, and extract images as needed:
 
-The CLI can tidy downloaded folders and convert PDFs to Markdown using your choice of converter:
-
-- `--post-process` runs the organiser once downloads finish (skipped during `--dry-run`).
-- `--post-process-only` skips downloading and processes the existing output directory.
-- `--post-process-file <path>` processes a single PDF file (copy to pdfs/ if needed, convert to Markdown). Cannot be combined with `--post-process` or `--post-process-only`.
-- `--post-process-workers N` limits how many subject folders are handled concurrently (ignored for the `marker` converter, which always runs a single worker).
--- `--converter {marker}` selects the PDF to Markdown converter (default: `marker`).
-
-#### Available Converters
-
-**Marker** (default): Advanced converter using the [marker](https://github.com/datalab-to/marker) library with superior OCR and layout detection capabilities. Requires downloading ML models on first use and may need GPU resources for optimal performance. Post-processing always runs with a single worker to avoid duplicate model downloads, even if a higher worker count is requested.
+- `--post-process` runs the organiser after downloading.
+- `--post-process-only` skips downloading and processes existing PDFs.
+- `--post-process-file <path>` converts a single PDF.
+- `--post-process-workers N` caps concurrent subject processing.
+- `--converter {marker,docling}` chooses the PDF-to-Markdown backend (default: `marker`).
 
 Examples:
 
 ```bash
-# Download, then organise PDFs into a pdfs/ folder and create markdown/ outputs (default converter)
+# Download and convert
 uv run python main.py --subjects Geography --post-process
 
-# Use marker for higher quality conversion
-uv run python main.py --subjects Geography --post-process --converter marker
+# Convert an existing folder
+uv run python main.py --root Documents --post-process-only --converter marker
 
-# Only re-run the organiser against an existing output directory with marker (single worker enforced)
-uv run python main.py --output Documents --post-process-only --converter marker
-
-# Process a single PDF file
-uv run python main.py --post-process-file Documents/Art-and-Design/sample.pdf --converter marker
+# Convert a single PDF
+uv run python main.py --post-process-file Documents/Art-and-Design/sample.pdf
 ```
 
-### Long-running batch processing
+## LLM review tooling
 
-For processing all subjects over an extended period (potentially days), use the `scripts/process_all_subjects.py` script. This script is designed for unattended operation on a server with automatic progress tracking and resumption capabilities.
+The LLM review modules build on the LanguageTool output and the Markdown page markers. They support both live and batch modes, with resumable state tracking and per-document CSV outputs. See `docs/developer/LLM_REVIEW_MODULE_GUIDE.md` for implementation details and `docs/developer/LLM_PROVIDER_SPEC.md` for provider integration.
 
-Features:
-- **Git-based checkpointing**: Creates or checks out a branch (default: `processedDocuments`) and commits after each subject completes
-- **State file tracking**: Maintains `unprocessedSubjects.txt` to track remaining subjects
-- **Resumable**: Can be interrupted and resumed from where it left off
-- **Sequential processing**: Processes subjects one at a time to avoid resource exhaustion
-- **Robust error handling**: Continues processing if a single subject fails
+## Outputs and data layout
 
-Usage:
+Typical output layout under `Documents/<Subject>/`:
 
-```bash
-# Start processing all subjects (or resume if previously interrupted)
-uv run python scripts/process_all_subjects.py
+- `pdfs/` — normalised PDF copies
+- `markdown/` — converted Markdown and extracted images
+- `document_reports/` — per-document CSV reports from LLM review passes
 
-# Preview what would be processed without making changes
-uv run python scripts/process_all_subjects.py --dry-run
+Additional data artefacts are produced under `data/` (state files, logs, and categoriser outputs). Notebooks under `notebooks/` and `docs/notebooks/` provide analysis and reporting examples.
 
-# Reset and start from scratch
-uv run python scripts/process_all_subjects.py --reset
+## Configuration and environment variables
 
-# Use a different branch name
-uv run python scripts/process_all_subjects.py --branch my-processed-docs
+Key environment variables used by the LLM integrations:
 
-# Marker is the only supported converter backend now
+- `GEMINI_API_KEY`
+- `MISTRAL_API_KEY`
+- `LLM_PRIMARY`, `LLM_FALLBACK`
+- `LLM_CATEGORISER_BATCH_SIZE`, `LLM_CATEGORISER_MAX_RETRIES`
 
-# Specify custom paths
-uv run python scripts/process_all_subjects.py --root ./MyDocuments --state-file ./state.txt
-```
+Refer to `docs/developer/LLM_PROVIDER_SPEC.md` for the full list and behavioural details.
 
-The script discovers all subject directories in the Documents folder, processes each one using `main.py --post-process-only`, and commits the changes to a dedicated branch. If interrupted (e.g., server restart), simply run the script again to continue from where it left off.
+## Known limitations
 
-## Notebooks
+- **PDF conversion noise:** OCR artefacts (merged words, missing hyphens) can still surface; multi-pass filtering reduces, but does not eliminate, them.
+- **Images are not fully checked:** Image-based text is only analysed if the converter extracts it into Markdown.
+- **LLM runs require API keys:** Provider quotas and rate limits apply.
 
-- Starter data overview notebook: [notebooks/data_overview.ipynb](notebooks/data_overview.ipynb) — loads the main CSVs, runs EDA, shows an example join between `document_stats.csv` and `document_stats-files.csv`, and produces a few interactive plots.
+## Further documentation
 
-## Page utilities
-
-The `page_utils.py` module provides utilities for working with page markers in Markdown documents. After post-processing, Markdown files contain page markers in the format `{N}------------------------------------------------` where N is the page number.
-
-Key functions:
-
-- `find_page_markers(text)` - Find all page markers in a document
-- `build_page_number_map(text)` - Create a position-to-page-number mapping (used by language checking)
-- `extract_page_text(text, page_number=N)` - Extract text from a specific page
-- `extract_page_text(text, start_page=N, end_page=M)` - Extract a range of pages
-- `extract_pages_text(text, [N, M, ...])` - Extract multiple non-consecutive pages
-
-Example:
-
-```python
-from page_utils import extract_page_text, find_page_markers
-from pathlib import Path
-
-# Load a document
-doc = Path("Documents/Business/markdown/gcse-business---guidance-for-teaching-unit-1.md")
-text = doc.read_text()
-
-# Find all pages
-markers = find_page_markers(text)
-print(f"Document has {len(markers)} pages")
-
-# Extract a specific page (includes the page marker)
-page_3 = extract_page_text(text, page_number=3)
-
-# Extract a range of pages
-pages_0_to_2 = extract_page_text(text, start_page=0, end_page=2)
-```
-
-The extracted text includes the page markers themselves to maintain context. See `tests/test_page_utils.py` for comprehensive examples.
-
-## Gemini LLM helper
-
-The `GeminiLLM` helper in `gemini_llm.py` wraps the Google GenAI SDK so you can reuse system prompts stored in Markdown files when calling the Gemini API.
-
-- Reads the system instruction from a Markdown file when instantiated.
-- Joins user prompt fragments with newlines before sending them to the API.
--- Calls the `gemini-2.5-flash` model with the maximum supported thinking budget (24,576 tokens) via `google.genai.types.ThinkingConfig`.
-- Loads environment variables from a `.env` file automatically (useful for storing `GEMINI_API_KEY`).
-- Expects `GEMINI_API_KEY` to be present in the environment, matching [Google's Python quickstart](https://ai.google.dev/gemini-api/docs/get-started/python).
-
-Example:
-
-```python
-from src.llm.gemini_llm import GeminiLLM
-
-llm = GeminiLLM("prompts/system.md")
-response = llm.generate([
-	"Summarise the recent downloads.",
-	"Highlight any missing PDFs."
-])
-print(response.text)
-```
-
-Refer to the [Gemini text generation guide](https://ai.google.dev/gemini-api/docs/text-generation) for additional configuration options.
-
-## Mistral LLM helper
-
-`MistralLLM` in `src/llm/mistral_llm.py` provides both live and batch access to the Mistral API:
-
-- Live calls (`generate`) use `beta.conversations.start` with the configured system prompt and merged user prompts.
-- Batch calls (`batch_generate`) serialise each prompt group into a JSONL request file, upload it with `files.upload(purpose="batch")`, submit a job via `batch.jobs.create(endpoint="/v1/conversations")`, and poll until completion. Successful jobs download the output artefact and parse each line back into either a `ConversationResponse` or JSON payload when `filter_json=True`.
-- HTTP 429 responses are normalised into `LLMQuotaError` so the orchestrator can fall back to the next provider automatically.
-
-See `docs/LLM_PROVIDER_SPEC.md` for details on the data shapes and failure handling used by the batch implementation.
-
-## Environment variables
-
-The project uses a few environment variables (and supports loading them from a `.env` file). These are the variables you may want to set when running the LLM or categoriser features:
-
-- GEMINI_API_KEY — Google Gemini API key used by the `GeminiLLM` wrapper. Example: `GEMINI_API_KEY=xxxx`.
-- MISTRAL_API_KEY — API key for the Mistral provider integration. Required when `mistral` is present in `LLM_PRIMARY` or `LLM_FALLBACK`.
-- MISTRAL_BATCH_POLL_INTERVAL — Optional float (seconds) that controls how often `MistralLLM` polls the batch job status. Default: `2.0`.
-- MISTRAL_BATCH_TIMEOUT — Optional float (seconds) that caps the total wait time for a batch job before failing. Default: `900` (15 minutes).
-- LLM_PRIMARY — Comma-separated primary LLM provider name(s). Default: `gemini`.
-- LLM_FALLBACK — Comma-separated fallback LLM providers. Example: `mistral`.
-- LLM_CATEGORISER_BATCH_SIZE — Batch size used by the LLM categoriser (default: 10). Adjustable via the CLI or by setting this environment variable.
-- LLM_CATEGORISER_MAX_RETRIES — Maximum retries for the categoriser when a batch fails (default: 2).
-- LLM_CATEGORISER_STATE_FILE — File path used to persist state for the categoriser (default: `data/llm_categoriser_state.json`).
-- LLM_CATEGORISER_LOG_RESPONSES — Set to `1`, `true`, `yes`, or `on` to dump every raw LLM response to disk for debugging.
-- LLM_CATEGORISER_LOG_DIR — Directory where raw responses should be stored (default: `data/llm_categoriser_responses`).
-- LLM_FAIL_ON_QUOTA — When set (true/1/yes/on) the LLM categoriser will abort the run on provider quota/rate-limit exhaustion. Default: `true`. Use `--no-fail-on-quota` or set the var to false to continue processing other documents.
-- GEMINI_MIN_REQUEST_INTERVAL — Minimum number of seconds to wait between Gemini requests (default: 0). Useful to avoid rate limits.
-- GEMINI_ENABLE_GROUNDING_TOOL — Set to `1`, `true`, `yes` to enable the Gemini grounding/tooling feature (e.g., GoogleSearch tools). Default: `false`.
-
-Notes:
-- The `--dotenv` flag in the LLM categoriser CLI (`src/llm_review/llm_categoriser/cli.py`) can be used to point to a `.env` file with these variables. You can also override the logging behaviour directly via `--log-responses` and `--log-responses-dir` when running the CLI.
-- The `google-genai` client used by `GeminiLLM` will also read `GEMINI_API_KEY` or `GOOGLE_API_KEY` from the environment; we recommend using `GEMINI_API_KEY` for clarity.
-
-Example: enable grounding tool via environment
-
-```bash
-GEMINI_ENABLE_GROUNDING_TOOL=true GEMINI_API_KEY=xxx uv run python -m src.llm_review.llm_categoriser --help
-```
+- `docs/developer/ARCHITECTURE.md` — data flow, parsing rules, invariants
+- `docs/developer/DEV_WORKFLOWS.md` — testing and debugging workflows
+- `docs/methodology.md` — explanation of the proofreading approach
+- `SCRIPTS.md` — helper scripts and batch processing utilities
