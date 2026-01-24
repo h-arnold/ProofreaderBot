@@ -51,7 +51,7 @@ This layered approach reduces noise from OCR artefacts while making the remainin
 - **Scraper:** `src/scraper/__init__.py` (subject list, URL discovery, file naming)
 - **Post-processing:** `src/postprocessing/__init__.py` (organises PDFs, converts to Markdown)
 - **Converters:** `src/converters/converters.py` (Marker and Docling backends)
-- **Language checking:** `src/language_check/`
+- **Language checking:** `src/language_check/language_check.py`
 - **LLM review modules:** `src/llm_review/` (categoriser, proofreader, batch orchestration)
 - **Reporting utilities:** `src/utils/page_utils.py`, `src/scripts/document_stats.py`
 
