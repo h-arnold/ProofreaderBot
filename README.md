@@ -53,7 +53,7 @@ This layered approach reduces noise from OCR artefacts while making the remainin
 - **Converters:** `src/converters/converters.py` (Marker and Docling backends)
 - **Language checking:** `src/language_check/language_check.py`
 - **LLM review modules:** `src/llm_review/` (categoriser, proofreader, batch orchestration)
-- **Reporting utilities:** `src/utils/page_utils.py`, `src/scripts/document_stats.py`
+- **Reporting utilities:** `src/utils/page_utils.py`, `scripts/document_stats.py`
 
 ## Setup
 
