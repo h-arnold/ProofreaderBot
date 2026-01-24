@@ -25,10 +25,10 @@ Read this primer first, then consult the linked focus docs before changing code 
 
 - Subject list: Controlled by `QUALIFICATION_URLS` in `src/scraper/__init__.py`. CLI matching is case-insensitive.
 - Filename/dir normalisation (stable behaviour):
-  - `subject_directory_name(subject)` in `src.scraper` -> filesystem-safe folder name (non-alphanumerics to `-`).
-  - `sanitise_filename(title, url, existing)` in `src.scraper` -> lowercase, hyphenated; appends `-N` to avoid collisions.
+  - `subject_directory_name(subject)` in `src/scraper/__init__.py` -> filesystem-safe folder name (non-alphanumerics to `-`).
+  - `sanitise_filename(title, url, existing)` in `src/scraper/__init__.py` -> lowercase, hyphenated; appends `-N` to avoid collisions.
 - Link discovery: de-duplicate by URL; prefer the longest available title per URL.
-- Progress reporting: `download_subject_pdfs(..., reporter=Callable[[label, destination, url], None])` in `src.scraper` is used by the CLI to surface progress.
+- Progress reporting: `download_subject_pdfs(..., reporter=Callable[[label, destination, url], None])` in `src/scraper/__init__.py` is used by the CLI to surface progress.
 
 If you need details or examples for any of the above, see docs/developer/ARCHITECTURE.md (must consult before edits).
 
