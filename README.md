@@ -16,7 +16,7 @@ A command-line pipeline for bulk acquisition and multi-pass proofreading of WJEC
 The project combines conventional scraping and text processing with LLM-assisted review:
 
 - **Python 3.12** runtime with `uv` for dependency management and execution.
-- **Requests + BeautifulSoup** style HTML parsing for PDF discovery.
+- **Requests + BeautifulSoup**-style HTML parsing for PDF discovery.
 - **Marker** (default) or **Docling** for PDF-to-Markdown conversion with OCR support.
 - **LanguageTool** via `language-tool-python` for rule-based spelling and grammar checks.
 - **Gemini and Mistral APIs** for LLM-assisted categorisation and proofreading passes.
