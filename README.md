@@ -1,7 +1,16 @@
 # WJEC Document Scraper
 
 A command-line pipeline for bulk acquisition and multi-pass proofreading of WJEC GCSE "Made for Wales" PDF documents. The project automates document collection, conversion to Markdown, language checks, and LLM-assisted review so large document sets can be analysed consistently and at scale.
+A command-line pipeline for bulk acquisition and multi-pass proofreading of WJEC GCSE "Made for Wales" PDF documents. The project automates document collection, conversion to Markdown, language checks, and LLM-assisted review so large document sets can be analysed consistently and at scale.
 
+## What this tool does
+
+- **Scrapes and downloads PDFs** from the WJEC qualification pages.
+- **Normalises and organises files** into subject-specific folders.
+- **Converts PDFs to Markdown** using high-fidelity converters (default: Marker).
+- **Runs automated language checks** with LanguageTool to identify spelling and grammar issues.
+- **Performs LLM-based review passes** to categorise issues, de-duplicate false positives, and catch contextual errors.
+- **Exports structured outputs** (CSV reports) for auditing and analysis.
 ## What this tool does
 
 - **Scrapes and downloads PDFs** from the WJEC qualification pages.
@@ -64,7 +73,9 @@ uv sync
 ```
 
 ## CLI usage
+## CLI usage
 
+List available subjects:
 List available subjects:
 
 ```bash
@@ -72,17 +83,21 @@ uv run python main.py --list-subjects
 ```
 
 Download all subjects:
+Download all subjects:
 
 ```bash
 uv run python main.py
 ```
 
 Download selected subjects to a custom location:
+Download selected subjects to a custom location:
 
 ```bash
 uv run python main.py --subjects "Art and Design" French --root ./wjec-pdfs
+uv run python main.py --subjects "Art and Design" French --root ./wjec-pdfs
 ```
 
+Preview downloads without writing files:
 Preview downloads without writing files:
 
 ```bash
@@ -90,9 +105,16 @@ uv run python main.py --subjects Geography --dry-run
 ```
 
 ## Post-processing downloads
+## Post-processing downloads
 
 The CLI can organise PDFs into `pdfs/`, convert them to `markdown/`, and extract images as needed:
+The CLI can organise PDFs into `pdfs/`, convert them to `markdown/`, and extract images as needed:
 
+- `--post-process` runs the organiser after downloading.
+- `--post-process-only` skips downloading and processes existing PDFs.
+- `--post-process-file <path>` converts a single PDF.
+- `--post-process-workers N` caps concurrent subject processing.
+- `--converter {marker,docling}` chooses the PDF-to-Markdown backend (default: `marker`).
 - `--post-process` runs the organiser after downloading.
 - `--post-process-only` skips downloading and processes existing PDFs.
 - `--post-process-file <path>` converts a single PDF.
@@ -103,11 +125,31 @@ Examples:
 
 ```bash
 # Download and convert
+# Download and convert
 uv run python main.py --subjects Geography --post-process
 
 # Convert an existing folder
 uv run python main.py --root Documents --post-process-only --converter marker
+# Convert an existing folder
+uv run python main.py --root Documents --post-process-only --converter marker
 
+# Convert a single PDF
+uv run python main.py --post-process-file Documents/Art-and-Design/sample.pdf
+```
+
+## LLM review tooling
+
+The LLM review modules build on the LanguageTool output and the Markdown page markers. They support both live and batch modes, with resumable state tracking and per-document CSV outputs. See `docs/developer/LLM_REVIEW_MODULE_GUIDE.md` for implementation details and `docs/developer/LLM_PROVIDER_SPEC.md` for provider integration.
+
+## Outputs and data layout
+
+Typical output layout under `Documents/<Subject>/`:
+
+- `pdfs/` — normalised PDF copies
+- `markdown/` — converted Markdown and extracted images
+- `document_reports/` — per-document CSV reports from LLM review passes
+
+Additional data artefacts are produced under `data/` (state files, logs, and categoriser outputs). Notebooks under `notebooks/` and `docs/notebooks/` provide analysis and reporting examples.
 # Convert a single PDF
 uv run python main.py --post-process-file Documents/Art-and-Design/sample.pdf
 ```
@@ -129,7 +171,29 @@ Additional data artefacts are produced under `data/` (state files, logs, and cat
 ## Configuration and environment variables
 
 Key environment variables used by the LLM integrations:
+## Configuration and environment variables
 
+Key environment variables used by the LLM integrations:
+
+- `GEMINI_API_KEY`
+- `MISTRAL_API_KEY`
+- `LLM_PRIMARY`, `LLM_FALLBACK`
+- `LLM_CATEGORISER_BATCH_SIZE`, `LLM_CATEGORISER_MAX_RETRIES`
+
+Refer to `docs/developer/LLM_PROVIDER_SPEC.md` for the full list and behavioural details.
+
+## Known limitations
+
+- **PDF conversion noise:** OCR artefacts (merged words, missing hyphens) can still surface; multi-pass filtering reduces, but does not eliminate, them.
+- **Images are not fully checked:** Image-based text is only analysed if the converter extracts it into Markdown.
+- **LLM runs require API keys:** Provider quotas and rate limits apply.
+
+## Further documentation
+
+- `docs/developer/ARCHITECTURE.md` — data flow, parsing rules, invariants
+- `docs/developer/DEV_WORKFLOWS.md` — testing and debugging workflows
+- `docs/methodology.md` — explanation of the proofreading approach
+- `SCRIPTS.md` — helper scripts and batch processing utilities
 - `GEMINI_API_KEY`
 - `MISTRAL_API_KEY`
 - `LLM_PRIMARY`, `LLM_FALLBACK`
