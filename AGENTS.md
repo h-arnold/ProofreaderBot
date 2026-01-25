@@ -25,17 +25,17 @@ Read this primer first, then consult the linked focus docs before changing code 
 
 - Subject list: Controlled by `QUALIFICATION_URLS` in `src/scraper/__init__.py`. CLI matching is case-insensitive.
 - Filename/dir normalisation (stable behaviour):
-  - `subject_directory_name(subject)` in `src.scraper` -> filesystem-safe folder name (non-alphanumerics to `-`).
-  - `sanitise_filename(title, url, existing)` in `src.scraper` -> lowercase, hyphenated; appends `-N` to avoid collisions.
+  - `subject_directory_name(subject)` in `src/scraper/__init__.py` -> filesystem-safe folder name (non-alphanumerics to `-`).
+  - `sanitise_filename(title, url, existing)` in `src/scraper/__init__.py` -> lowercase, hyphenated; appends `-N` to avoid collisions.
 - Link discovery: de-duplicate by URL; prefer the longest available title per URL.
-- Progress reporting: `download_subject_pdfs(..., reporter=Callable[[label, destination, url], None])` in `src.scraper` is used by the CLI to surface progress.
+- Progress reporting: `download_subject_pdfs(..., reporter=Callable[[label, destination, url], None])` in `src/scraper/__init__.py` is used by the CLI to surface progress.
 
-If you need details or examples for any of the above, see docs/ARCHITECTURE.md (must consult before edits).
+If you need details or examples for any of the above, see docs/developer/ARCHITECTURE.md (must consult before edits).
 
 ## What to edit for common changes
 
 - Add/remove subjects: Edit `QUALIFICATION_URLS` in `src/scraper/__init__.py` (keep exact subject strings; CLI matches case-insensitively).
-- Adjust parsing or fetching: Update functions in `src/scraper/__init__.py` (see docs/ARCHITECTURE.md for the data flow and parsing rules, including React-props parsing and the optional key-documents endpoint).
+- Adjust parsing or fetching: Update functions in `src/scraper/__init__.py` (see docs/developer/ARCHITECTURE.md for the data flow and parsing rules, including React-props parsing and the optional key-documents endpoint).
 - CLI behaviour or options: Modify `src/cli/__init__.py` (keep `--subjects`, `--list-subjects`, `--dry-run`, `--root`).
   - Post-processing workflow: Edit `src/postprocessing/__init__.py` (ThreadPool orchestrator that copies PDFs into `pdfs/`, converts them to Markdown via Marker, and surfaces errors). Keep CLI worker limits and summary messaging consistent with `src/cli/__init__.py`.
 - Converter behaviour: Edit `src/converters/converters.py` (converter classes and factory function).
@@ -44,9 +44,9 @@ If you need details or examples for any of the above, see docs/ARCHITECTURE.md (
 
 ## Must-consult reference docs
 
-- docs/ARCHITECTURE.md — architecture, API contracts, data flow, parsing rules, invariants. You must read this before changing `src/scraper/__init__.py` or anything affecting filenames/subjects.
-- docs/UV_GUIDE.md — how to run code, manage dependencies, sync/lock the environment. You must use these uv commands for all workflows.
-- docs/DEV_WORKFLOWS.md — quick checks, debugging, and testing patterns. Read before adding tests or doing parsing diagnostics.
+- docs/developer/ARCHITECTURE.md — architecture, API contracts, data flow, parsing rules, invariants. You must read this before changing `src/scraper/__init__.py` or anything affecting filenames/subjects.
+- docs/developer/UV_GUIDE.md — how to run code, manage dependencies, sync/lock the environment. You must use these uv commands for all workflows.
+- docs/developer/DEV_WORKFLOWS.md — quick checks, debugging, and testing patterns. Read before adding tests or doing parsing diagnostics.
 - docs/developer/manage_language_ignore.md — guide for amending `DEFAULT_IGNORED_WORDS`. Read before editing `scripts/manage_language_ignore.py` or its payload JSON.
 
 ## Notes on edge cases (already handled)
@@ -55,6 +55,6 @@ If you need details or examples for any of the above, see docs/ARCHITECTURE.md (
 - Duplicate URLs are coalesced; duplicate filenames get a numeric suffix.
 - Network/IO failures are logged without halting other downloads.
 
-For deeper context (function-by-function), see docs/ARCHITECTURE.md.
+For deeper context (function-by-function), see docs/developer/ARCHITECTURE.md.
 
 **IMPORTANT**: Remember your prime directives! Always follow them.

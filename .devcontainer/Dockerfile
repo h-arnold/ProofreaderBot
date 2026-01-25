@@ -1,5 +1,8 @@
 FROM mcr.microsoft.com/devcontainers/python:1-3.12
 
+# Remove Yarn apt source (if present) to avoid expired GPG key failure
+RUN rm -f /etc/apt/sources.list.d/yarn.list || true
+
 # Install system dependencies needed for building Python packages and for PDF tools
 RUN apt-get update \
  && apt-get install -y --no-install-recommends \
