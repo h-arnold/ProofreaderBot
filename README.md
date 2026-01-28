@@ -1,4 +1,4 @@
-# WJEC Document Scraper
+# ProofreaderBot
 
 A command-line pipeline for bulk acquisition and multi-pass proofreading of WJEC GCSE "Made for Wales" PDF documents. The project automates document collection, conversion to Markdown, language checks, and LLM-assisted review so large document sets can be analysed consistently and at scale.
 A command-line pipeline for bulk acquisition and multi-pass proofreading of WJEC GCSE "Made for Wales" PDF documents. The project automates document collection, conversion to Markdown, language checks, and LLM-assisted review so large document sets can be analysed consistently and at scale.
